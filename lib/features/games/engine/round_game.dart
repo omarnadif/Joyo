@@ -75,8 +75,7 @@ class RoundGameState {
   /// Voti raggruppati per un campo di `value` (es. 'choice').
   List<Player> votersWhere(bool Function(Vote vote) test) => [
     for (final vote in votes)
-      if (test(vote))
-        if (playerById(vote.playerId) case final player?) player,
+      if (test(vote)) ?playerById(vote.playerId),
   ];
 }
 

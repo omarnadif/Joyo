@@ -134,9 +134,9 @@ class RoomRepository {
   }) async => await _client
       .from('rooms')
       .update({
-        if (mode != null) 'mode': mode,
-        if (tone != null) 'tone': tone,
-        if (roundsTotal != null) 'rounds_total': roundsTotal,
+        'mode': ?mode,
+        'tone': ?tone,
+        'rounds_total': ?roundsTotal,
       })
       .eq('id', roomId);
 
