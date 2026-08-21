@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <!--
+    Configurazione di avvio per Android Studio / IntelliJ.
+
+    Serve per una cosa sola, ma indispensabile: passare le chiavi Supabase con
+    l'argomento dart-define-from-file. Premendo Play senza, l'app parte e mostra
+    la schermata "configurazione mancante", perché le chiavi non stanno nel
+    codice.
+
+    Il device (emulatore, telefono, Chrome) si sceglie dal menu a tendina
+    accanto al tasto Play: questa configurazione va bene per tutti.
+  -->
+  <configuration default="false" name="Joyo" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+    <option name="additionalArgs" value="--dart-define-from-file=env.json" />
+    <method v="2" />
+  </configuration>
+</component>

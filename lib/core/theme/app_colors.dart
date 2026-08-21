@@ -20,6 +20,14 @@ class JoyoColors {
   static const Color textPrimary = Color(0xFFF4F2FF);
   static const Color textSecondary = Color(0xFF9C96C4);
 
+  // Colori avatar aggiuntivi: con 10 giocatori servono 10 tinte distinguibili
+  // a colpo d'occhio anche su sfondo scuro.
+  static const Color sky = Color(0xFF5AB0FF);
+  static const Color magenta = Color(0xFFE85CFF);
+  static const Color gold = Color(0xFFFFD84D);
+  static const Color teal = Color(0xFF3FD9D1);
+  static const Color rose = Color(0xFFFF9AC1);
+
   /// Colori selezionabili come avatar dai giocatori.
   /// La chiave è quella salvata in `players.color`.
   static const Map<String, Color> avatarPalette = <String, Color>{
@@ -28,6 +36,11 @@ class JoyoColors {
     'violet': violet,
     'aqua': aqua,
     'amber': amber,
+    'sky': sky,
+    'magenta': magenta,
+    'gold': gold,
+    'teal': teal,
+    'rose': rose,
   };
 
   static Color avatar(String key) => avatarPalette[key] ?? violet;

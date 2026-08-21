@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <!--
+    Avvio con il premium AI sbloccato, per provare l'app senza passare da un
+    acquisto o da un annuncio.
+
+    Vale solo su questo telefono: il server continua a rifiutare le generazioni
+    AI a chi non ha pagato. Con le Edge Function non ancora pubblicate i giochi
+    provano a chiamare l'AI e ripiegano sui pool fissi, quindi si vedono le
+    schermate premium ma i contenuti restano quelli di sempre.
+
+    Da NON usare per le build da pubblicare.
+  -->
+  <configuration default="false" name="Joyo premium dev" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+    <option name="additionalArgs" value="--dart-define-from-file=env.json --dart-define=DEV_UNLOCK_PREMIUM=true" />
+    <method v="2" />
+  </configuration>
+</component>

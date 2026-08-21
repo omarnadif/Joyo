@@ -9,8 +9,13 @@ void main() {
     expect(AppEnv.missingKeys, contains('SUPABASE_URL'));
   });
 
-  test('la palette avatar copre i cinque colori accento', () {
-    expect(JoyoColors.avatarPalette.length, 5);
+  test('c\'è un colore avatar per ognuno dei 10 giocatori massimi', () {
+    expect(JoyoColors.avatarPalette.length, 10);
+    expect(
+      JoyoColors.avatarPalette.values.toSet().length,
+      10,
+      reason: 'due giocatori non devono poter avere lo stesso colore',
+    );
     expect(JoyoColors.avatar('lime'), JoyoColors.lime);
     expect(JoyoColors.avatar('inesistente'), JoyoColors.violet);
   });

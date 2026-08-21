@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <!--
+    Come la configurazione "Joyo", ma con la porta web fissa.
+
+    Serve per provare il multiplayer: si sceglie Chrome dal menu dei device e
+    l'app risponde sempre su http://127.0.0.1:8123, così la si può aprire anche
+    in una finestra in incognito come secondo giocatore (in incognito perché
+    l'identità anonima è salvata nel browser: in una scheda normale si
+    rientrerebbe come lo stesso giocatore).
+  -->
+  <configuration default="false" name="Joyo web 8123" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+    <option name="additionalArgs" value="--dart-define-from-file=env.json --web-port=8123 --web-hostname=127.0.0.1" />
+    <method v="2" />
+  </configuration>
+</component>

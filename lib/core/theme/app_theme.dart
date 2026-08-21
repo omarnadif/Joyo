@@ -26,10 +26,10 @@ class JoyoTheme {
     final textTheme = baseText
         .copyWith(
           displayLarge: GoogleFonts.spaceGrotesk(
-            fontSize: 52,
+            fontSize: 56,
             fontWeight: FontWeight.w700,
-            letterSpacing: -1.5,
-            height: 1.05,
+            letterSpacing: -2,
+            height: 1,
           ),
           displayMedium: GoogleFonts.spaceGrotesk(
             fontSize: 40,
@@ -55,8 +55,17 @@ class JoyoTheme {
           labelLarge: GoogleFonts.spaceGrotesk(
             fontSize: 15,
             fontWeight: FontWeight.w700,
-            letterSpacing: 0.4,
+            letterSpacing: 0.6,
           ),
+          // faccia di servizio: etichette, occhielli, contatori
+          labelSmall: GoogleFonts.spaceGrotesk(
+            fontSize: 11,
+            fontWeight: FontWeight.w700,
+            letterSpacing: 2.2,
+          ),
+          bodyLarge: GoogleFonts.sora(fontSize: 16, height: 1.5),
+          bodyMedium: GoogleFonts.sora(fontSize: 14, height: 1.55),
+          bodySmall: GoogleFonts.sora(fontSize: 12.5, height: 1.55),
         )
         .apply(
           bodyColor: JoyoColors.textPrimary,

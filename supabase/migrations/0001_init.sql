@@ -22,7 +22,7 @@ exception when duplicate_object then null; end $$;
 -- rooms ------------------------------------------------------------------------
 create table if not exists public.rooms (
   id            uuid primary key default gen_random_uuid(),
-  code          text not null unique check (code ~ '^[A-Z0-9]{4}$'),
+  code          text not null unique check (code ~ '^[A-Z0-9]{6}$'),
   host_id       uuid,                       -- FK a players, popolata dopo (vedi sotto)
   status        public.room_status not null default 'lobby',
   active_game   text,
@@ -140,6 +140,12 @@ create policy rooms_update_host on public.rooms
   using (public.is_room_host(id))
   with check (public.is_room_host(id));
 
+-- quando l'host esce, la stanza si chiude per tutti
+drop policy if exists rooms_delete_host on public.rooms;
+create policy rooms_delete_host on public.rooms
+  for delete to authenticated
+  using (public.is_room_host(id));
+
 -- Privilegi per colonna: in Postgres un GRANT UPDATE sulla tabella copre tutte
 -- le colonne e non è scalfito da un REVOKE per colonna. Va prima revocato
 -- l'UPDATE sulla tabella, poi concesso solo sulle colonne modificabili.
@@ -165,6 +171,12 @@ drop policy if exists players_delete_self on public.players;
 create policy players_delete_self on public.players
   for delete to authenticated
   using (user_id = auth.uid());
+
+-- se un giocatore chiude l'app senza uscire, l'host può rimuoverlo
+drop policy if exists players_delete_by_host on public.players;
+create policy players_delete_by_host on public.players
+  for delete to authenticated
+  using (public.is_room_host(room_id));
 
 -- il giocatore può cambiare solo nome e colore: il punteggio lo assegna il
 -- server (RPC security definer)
@@ -223,7 +235,7 @@ create policy votes_insert_self on public.votes
 -- 5. RPC: creazione stanza e ingresso
 -- -----------------------------------------------------------------------------
 
--- Codice di 4 caratteri, alfabeto senza caratteri ambigui (niente O/0, I/1)
+-- Codice di 6 caratteri, alfabeto senza caratteri ambigui (niente O/0, I/1)
 -- perché il codice viene letto ad alta voce.
 create or replace function public.gen_room_code()
 returns text
@@ -235,7 +247,7 @@ declare
   result text := '';
   i int;
 begin
-  for i in 1..4 loop
+  for i in 1..6 loop
     result := result || substr(alphabet, 1 + floor(random() * length(alphabet))::int, 1);
   end loop;
   return result;

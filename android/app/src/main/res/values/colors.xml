@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lo stesso viola di JoyoColors.background: la finestra nativa e la
+         prima schermata Flutter devono avere esattamente lo stesso colore,
+         altrimenti all'avvio si vede uno stacco. -->
+    <color name="joyo_background">#17142A</color>
+</resources>

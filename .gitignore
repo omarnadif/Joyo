@@ -56,3 +56,6 @@ env.*.json
 # Supabase CLI
 supabase/.branches
 supabase/.temp
+
+# stringa di connessione al database (contiene la password postgres)
+supabase/.db_url

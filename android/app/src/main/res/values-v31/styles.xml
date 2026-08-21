@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12 e successivi non usano più il disegno launch_background: il sistema
+  disegna da sé la schermata di avvio, con l'icona dell'app al centro e un colore
+  di sfondo. Qui si imposta quel colore, così l'avvio resta viola come il resto.
+
+  L'immagine con la scritta continua a valere su Android 11 e precedenti.
+-->
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowSplashScreenBackground">@color/joyo_background</item>
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/joyo_background</item>
+    </style>
+</resources>
