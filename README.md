@@ -47,18 +47,31 @@ istruzioni di configurazione, invece di crashare.
 
 ### Da Android Studio
 
-Nel progetto ci sono due configurazioni pronte in `.run/`, che compaiono nel
+Nel progetto ci sono quattro configurazioni pronte in `.run/`, che compaiono nel
 menu accanto al tasto Play:
 
 | Configurazione | A cosa serve |
 |---|---|
 | **Joyo** | avvio normale sul device scelto nel menu a tendina |
+| **Joyo emulatori** | come la prima, ma con l'esecuzione in parallelo: si preme Play su un emulatore, si cambia device nel menu e si preme Play di nuovo — un'istanza per emulatore, per provare il multiplayer |
 | **Joyo web 8123** | Chrome su porta fissa, per aprire una seconda finestra in incognito come secondo giocatore |
 | **Joyo premium dev** | come la prima, ma con il premium AI sbloccato per le prove |
 
-Entrambe passano già `--dart-define-from-file=env.json`: premendo Play con una
+Tutte passano già `--dart-define-from-file=env.json`: premendo Play con una
 configurazione creata a mano l'app mostrerebbe la schermata "configurazione
 mancante".
+
+### Emulatori da terminale
+
+```bash
+flutter emulators                          # elenca gli AVD (es. Pixel_10)
+flutter emulators --launch Pixel_10        # avvia l'emulatore
+flutter devices                            # id runtime (es. emulator-5554)
+flutter run -d emulator-5554 --dart-define-from-file=env.json
+```
+
+Con due emulatori accesi basta ripetere `flutter run` con il secondo id
+(`emulator-5556`) in un altro terminale.
 
 ---
 
@@ -98,6 +111,7 @@ lib/
   features/
     onboarding/                presentazione iniziale e scelta lingua
     home/                      home con i due bottoni e la griglia dei giochi
+    diagnostics/               health check (long-press sul marchio) e schermata "configurazione mancante"
     room/                      lobby, impostazioni, ingresso/uscita, stato stanza
     games/
       engine/                  motore comune ai round: voto, timer, punti

@@ -18,6 +18,12 @@ class PendingVote {
     _value = null;
   }
 
+  /// Azzera il voto solo se riguarda il round indicato: un errore arrivato
+  /// dopo il cambio round non deve cancellare il voto del round nuovo.
+  void clearRound(String roundId) {
+    if (_roundId == roundId) clear();
+  }
+
   /// Il voto in sospeso, ma solo se riguarda il round richiesto.
   Map<String, dynamic>? forRound(String roundId) =>
       _roundId == roundId ? _value : null;

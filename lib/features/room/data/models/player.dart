@@ -2,7 +2,6 @@
 class Player {
   const Player({
     required this.id,
-    required this.roomId,
     required this.name,
     required this.color,
     required this.isHost,
@@ -12,7 +11,6 @@ class Player {
 
   factory Player.fromMap(Map<String, dynamic> map) => Player(
     id: map['id'] as String,
-    roomId: map['room_id'] as String,
     name: map['name'] as String,
     color: map['color'] as String,
     isHost: map['is_host'] as bool? ?? false,
@@ -21,7 +19,6 @@ class Player {
   );
 
   final String id;
-  final String roomId;
   final String name;
   final String color;
   final bool isHost;
@@ -29,5 +26,6 @@ class Player {
   final DateTime joinedAt;
 
   /// Iniziale mostrata nell'avatar.
-  String get initial => name.trim().isEmpty ? '?' : name.trim()[0].toUpperCase();
+  String get initial =>
+      name.trim().isEmpty ? '?' : name.trim()[0].toUpperCase();
 }

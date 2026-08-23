@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -71,8 +73,13 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
 
       if (!mounted) return;
       ref.read(roomSessionProvider.notifier).enter(session);
-      await Navigator.of(context).pushReplacement(
-        MaterialPageRoute<void>(builder: (_) => const RoomShell()),
+      // Senza await: il Future di pushReplacement si completa solo quando la
+      // stanza viene chiusa, e attenderlo terrebbe vivo questo State (e il
+      // suo `finally`) per tutta la sessione di gioco.
+      unawaited(
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute<void>(builder: (_) => const RoomShell()),
+        ),
       );
     } on RoomException catch (e) {
       if (mounted) setState(() => _error = t(e.messageKey));

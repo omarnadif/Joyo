@@ -15,7 +15,6 @@ class GameDefinition {
     required this.taglineKey,
     required this.color,
     required this.icon,
-    required this.phase,
     this.implemented = false,
   });
 
@@ -24,9 +23,6 @@ class GameDefinition {
   final String taglineKey;
   final Color color;
   final IconData icon;
-
-  /// Fase di sviluppo in cui viene implementato (serve al segnaposto).
-  final int phase;
   final bool implemented;
 }
 
@@ -40,7 +36,6 @@ class GameCatalog {
       taglineKey: 'preferisci.tagline',
       color: JoyoColors.lime,
       icon: Icons.swap_horiz_rounded,
-      phase: 3,
       implemented: true,
     ),
     GameDefinition(
@@ -49,7 +44,6 @@ class GameCatalog {
       taglineKey: 'non_ho_mai.tagline',
       color: JoyoColors.coral,
       icon: Icons.local_bar_rounded,
-      phase: 4,
       implemented: true,
     ),
     GameDefinition(
@@ -58,7 +52,6 @@ class GameCatalog {
       taglineKey: 'chi.tagline',
       color: JoyoColors.sky,
       icon: Icons.groups_rounded,
-      phase: 5,
       implemented: true,
     ),
     GameDefinition(
@@ -67,7 +60,6 @@ class GameCatalog {
       taglineKey: 'obbligo.tagline',
       color: JoyoColors.aqua,
       icon: Icons.rotate_right_rounded,
-      phase: 6,
       implemented: true,
     ),
     GameDefinition(
@@ -76,7 +68,6 @@ class GameCatalog {
       taglineKey: 'bluff.tagline',
       color: JoyoColors.amber,
       icon: Icons.auto_stories_rounded,
-      phase: 7,
       implemented: true,
     ),
     GameDefinition(
@@ -85,7 +76,6 @@ class GameCatalog {
       taglineKey: 'impostore.tagline',
       color: JoyoColors.magenta,
       icon: Icons.visibility_off_rounded,
-      phase: 11,
       implemented: true,
     ),
   ];
@@ -112,6 +102,4 @@ class GameCatalog {
     }
     return null;
   }
-
-  static Color colorOf(String? id) => byId(id)?.color ?? JoyoColors.violet;
 }

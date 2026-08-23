@@ -254,10 +254,7 @@ class _Discussion extends ConsumerWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
-                  t('impostore.round_of_words'),
-                  style: text.headlineMedium,
-                ),
+                Text(t('impostore.round_of_words'), style: text.headlineMedium),
                 const SizedBox(height: 12),
                 Text(
                   t('impostore.round_of_words_body'),
@@ -351,9 +348,7 @@ class _VoteState extends State<_Vote> {
                 'n': '${state.votes.length}',
                 'total': '${state.players.length}',
               }),
-              style: text.bodyMedium?.copyWith(
-                color: JoyoColors.textSecondary,
-              ),
+              style: text.bodyMedium?.copyWith(color: JoyoColors.textSecondary),
             ),
           ],
         ),
@@ -396,10 +391,7 @@ class _VoteState extends State<_Vote> {
                             PlayerAvatar(player: player),
                             const SizedBox(width: 14),
                             Expanded(
-                              child: Text(
-                                player.name,
-                                style: text.titleMedium,
-                              ),
+                              child: Text(player.name, style: text.titleMedium),
                             ),
                             if (chosen == player.id)
                               const Icon(
@@ -439,8 +431,7 @@ class _VoteState extends State<_Vote> {
               ? null
               : () => state.vote({
                   'suspect': chosen,
-                  if (isImpostor)
-                    'guess': widget.guessController.text.trim(),
+                  if (isImpostor) 'guess': widget.guessController.text.trim(),
                 }),
         ),
       ],
@@ -533,9 +524,7 @@ class _Result extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Row(
                   children: [
-                    Expanded(
-                      child: Text(player.name, style: text.bodyMedium),
-                    ),
+                    Expanded(child: Text(player.name, style: text.bodyMedium)),
                     Text(
                       t.n('impostore.votes', counts[player.id] ?? 0),
                       style: text.bodySmall?.copyWith(

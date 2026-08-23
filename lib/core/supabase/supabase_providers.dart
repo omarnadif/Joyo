@@ -30,11 +30,6 @@ final anonSessionProvider = FutureProvider<Session>((ref) async {
   return session;
 });
 
-/// Id dell'utente Supabase corrente (null finché il login anonimo non è fatto).
-final currentUserIdProvider = Provider<String?>((ref) {
-  return ref.watch(anonSessionProvider).value?.user.id;
-});
-
 /// Verifica che PostgREST risponda e che le policy RLS siano attive.
 /// Restituisce sempre una lista vuota: un utente senza stanze non vede righe.
 final databasePingProvider = FutureProvider<int>((ref) async {
@@ -50,13 +45,24 @@ final databasePingProvider = FutureProvider<int>((ref) async {
 
 /// Verifica che il websocket Realtime si apra e accetti la sessione.
 final realtimePingProvider = FutureProvider.autoDispose<String>((ref) async {
-  await ref.watch(anonSessionProvider.future);
   final client = ref.watch(supabaseProvider);
 
-  final completer = Completer<String>();
-  final channel = client.channel('joyo-health');
+  // Registrato prima dell'await: se il provider viene eliminato durante
+  // l'attesa della sessione, il canale non deve né aprirsi né restare appeso.
+  RealtimeChannel? channel;
+  ref.onDispose(() {
+    final open = channel;
+    if (open != null) client.removeChannel(open);
+  });
 
-  channel.subscribe((status, error) {
+  await ref.watch(anonSessionProvider.future);
+  if (!ref.mounted) throw StateError('provider dismesso durante il login');
+
+  final completer = Completer<String>();
+  final health = client.channel('joyo-health');
+  channel = health;
+
+  health.subscribe((status, error) {
     if (completer.isCompleted) return;
     switch (status) {
       case RealtimeSubscribeStatus.subscribed:
@@ -67,8 +73,6 @@ final realtimePingProvider = FutureProvider.autoDispose<String>((ref) async {
         completer.completeError(error ?? 'Realtime: ${status.name}');
     }
   });
-
-  ref.onDispose(() => client.removeChannel(channel));
 
   return completer.future.timeout(
     const Duration(seconds: 15),

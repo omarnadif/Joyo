@@ -104,20 +104,16 @@ class _Turn extends StatefulWidget {
 }
 
 class _TurnState extends State<_Turn> {
+  // Al cambio round lo stato riparte da solo: RoundGame monta la schermata
+  // sotto una chiave legata all'id del round, quindi qui arriva sempre un
+  // elemento nuovo con _spinDone = false.
   bool _spinDone = false;
-  String? _spunRoundId;
 
   @override
   Widget build(BuildContext context) {
     final state = widget.state;
     final t = widget.t;
     final text = Theme.of(context).textTheme;
-
-    // Nuovo round: la bottiglia riparte.
-    if (_spunRoundId != state.round.id) {
-      _spunRoundId = state.round.id;
-      _spinDone = false;
-    }
 
     final targetId = state.content['target'] as String?;
     final target = targetId == null ? null : state.playerById(targetId);
@@ -128,7 +124,6 @@ class _TurnState extends State<_Turn> {
         Expanded(
           child: Center(
             child: BottleWheel(
-              key: ValueKey(state.round.id),
               players: state.players,
               targetId: targetId,
               turns: (state.content['turns'] as num?)?.toInt() ?? 4,
@@ -181,9 +176,7 @@ class _TurnState extends State<_Turn> {
           else
             Text(
               t('obbligo.choosing'),
-              style: text.bodyMedium?.copyWith(
-                color: JoyoColors.textSecondary,
-              ),
+              style: text.bodyMedium?.copyWith(color: JoyoColors.textSecondary),
             ),
         ],
       ],
@@ -238,10 +231,12 @@ class _Result extends StatelessWidget {
     final text = Theme.of(context).textTheme;
     final targetId = state.content['target'] as String?;
     final target = targetId == null ? null : state.playerById(targetId);
-    final choice = state.votes
-        .where((v) => v.playerId == targetId)
-        .firstOrNull
-        ?.value['kind'] as String?;
+    final choice =
+        state.votes
+                .where((v) => v.playerId == targetId)
+                .firstOrNull
+                ?.value['kind']
+            as String?;
 
     if (choice == null) {
       return Center(

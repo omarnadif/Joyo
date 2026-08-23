@@ -11,10 +11,10 @@ import 'content_fr.dart';
 
 /// Punto unico da cui i giochi prendono i contenuti nella lingua del gruppo.
 ///
-/// L'italiano è la lingua di partenza e ha i pool più ampi; le altre quattro
-/// hanno un mazzo più corto ma completo per tutti i giochi e tutti i toni.
-/// Ampliarle significa aggiungere righe a `content_xx.dart`, senza toccare il
-/// resto dell'app.
+/// L'italiano è la lingua di partenza; le altre quattro hanno la parità
+/// completa (stesse quantità per ogni gioco e tono, tradotte 1:1 dai pool
+/// italiani). Ampliarle significa aggiungere righe a `content_xx.dart`,
+/// senza toccare il resto dell'app.
 class GameContent {
   const GameContent._();
 
@@ -37,22 +37,28 @@ class GameContent {
     AppLocale.de => ContentDe.chiLoPotrebbeFare,
   };
 
+  // Se a una lingua manca il mazzo di un tono si ripiega su quello italiano:
+  // una domanda nella lingua sbagliata è meglio di un pool vuoto, che
+  // manderebbe in errore la pesca dell'indice.
   static List<String> obblighi(AppLocale locale, String tone) =>
       switch (locale) {
         AppLocale.it => ObbligoOVeritaPool.obblighi(tone),
-        AppLocale.en => ContentEn.obblighi[tone] ?? const [],
-        AppLocale.es => ContentEs.obblighi[tone] ?? const [],
-        AppLocale.fr => ContentFr.obblighi[tone] ?? const [],
-        AppLocale.de => ContentDe.obblighi[tone] ?? const [],
-      };
+        AppLocale.en => ContentEn.obblighi[tone],
+        AppLocale.es => ContentEs.obblighi[tone],
+        AppLocale.fr => ContentFr.obblighi[tone],
+        AppLocale.de => ContentDe.obblighi[tone],
+      } ??
+      ObbligoOVeritaPool.obblighi(tone);
 
-  static List<String> verita(AppLocale locale, String tone) => switch (locale) {
-    AppLocale.it => ObbligoOVeritaPool.verita(tone),
-    AppLocale.en => ContentEn.verita[tone] ?? const [],
-    AppLocale.es => ContentEs.verita[tone] ?? const [],
-    AppLocale.fr => ContentFr.verita[tone] ?? const [],
-    AppLocale.de => ContentDe.verita[tone] ?? const [],
-  };
+  static List<String> verita(AppLocale locale, String tone) =>
+      switch (locale) {
+        AppLocale.it => ObbligoOVeritaPool.verita(tone),
+        AppLocale.en => ContentEn.verita[tone],
+        AppLocale.es => ContentEs.verita[tone],
+        AppLocale.fr => ContentFr.verita[tone],
+        AppLocale.de => ContentDe.verita[tone],
+      } ??
+      ObbligoOVeritaPool.verita(tone);
 
   static List<String> bluffFakes(AppLocale locale) => switch (locale) {
     AppLocale.it => BluffStoryPool.fakes,

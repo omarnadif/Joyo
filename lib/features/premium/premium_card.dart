@@ -34,13 +34,12 @@ class _PremiumCardState extends ConsumerState<PremiumCard> {
     try {
       final purchases = ref.read(purchaseServiceProvider);
       if (!await purchases.isAvailable()) {
-        messenger.showSnackBar(
-          SnackBar(content: Text(t('premium.no_store'))),
-        );
+        messenger.showSnackBar(SnackBar(content: Text(t('premium.no_store'))));
         return;
       }
       final token = await purchases.buyPremium();
-      if (token == null) return;
+      // L'acquisto può durare minuti: la schermata potrebbe non esserci più.
+      if (token == null || !mounted) return;
 
       final ok = await ref
           .read(aiContentRepositoryProvider)
@@ -50,9 +49,7 @@ class _PremiumCardState extends ConsumerState<PremiumCard> {
             productId: AppEnv.premiumProductId,
           );
       messenger.showSnackBar(
-        SnackBar(
-          content: Text(ok ? t('premium.unlocked') : t('common.retry')),
-        ),
+        SnackBar(content: Text(ok ? t('premium.unlocked') : t('common.retry'))),
       );
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -72,6 +69,7 @@ class _PremiumCardState extends ConsumerState<PremiumCard> {
         return;
       }
       final earned = await ads.showRewarded();
+      if (!mounted) return;
       if (!earned) {
         messenger.showSnackBar(
           SnackBar(content: Text(t('premium.ad_incomplete'))),
@@ -114,7 +112,10 @@ class _PremiumCardState extends ConsumerState<PremiumCard> {
                   Row(
                     children: [
                       Expanded(
-                        child: Text(t('premium.active'), style: text.titleMedium),
+                        child: Text(
+                          t('premium.active'),
+                          style: text.titleMedium,
+                        ),
                       ),
                       if (!room.isPremiumAi)
                         Container(
@@ -159,7 +160,9 @@ class _PremiumCardState extends ConsumerState<PremiumCard> {
             children: [
               const Icon(Icons.auto_awesome, color: JoyoColors.violet),
               const SizedBox(width: 10),
-              Expanded(child: Text(t('premium.title'), style: text.titleMedium)),
+              Expanded(
+                child: Text(t('premium.title'), style: text.titleMedium),
+              ),
               if (room.aiCredits > 0)
                 Container(
                   padding: const EdgeInsets.symmetric(

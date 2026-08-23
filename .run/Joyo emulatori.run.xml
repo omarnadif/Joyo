@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <!--
+    Come la configurazione "Joyo", ma con l'esecuzione in parallelo abilitata:
+    serve a provare il multiplayer su più emulatori Android insieme.
+
+    Come si usa:
+      1. avvia gli emulatori dal Device Manager di Android Studio;
+      2. scegli il primo emulatore dal menu dei device e premi Play;
+      3. scegli il secondo emulatore dallo stesso menu e premi Play di nuovo:
+         la prima istanza resta viva, ogni emulatore è un giocatore.
+
+    Con la configurazione "Joyo" normale il secondo Play fermerebbe il primo.
+  -->
+  <configuration default="false" name="Joyo emulatori" type="FlutterRunConfigurationType" factoryName="Flutter" allowRunningInParallel="true">
+    <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+    <option name="additionalArgs" value="--dart-define-from-file=env.json" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/i18n/i18n.dart';
 import '../../core/theme/app_colors.dart';
 import '../room/data/models/room.dart';
-import '../room/state/room_providers.dart';
 import 'bluff_story/bluff_story_screen.dart';
 import 'chi_lo_potrebbe_fare/chi_lo_potrebbe_fare_screen.dart';
 import 'end_of_game_screen.dart';
@@ -51,7 +50,6 @@ class _ComingSoon extends ConsumerWidget {
     final text = Theme.of(context).textTheme;
     final t = ref.watch(tProvider);
     final game = GameCatalog.byId(room.activeGame);
-    final players = ref.watch(playersProvider(room.id)).value ?? const [];
 
     return GameScaffold(
       title: game == null ? 'Joyo' : t(game.nameKey),
@@ -70,11 +68,6 @@ class _ComingSoon extends ConsumerWidget {
               t('game.coming_soon'),
               textAlign: TextAlign.center,
               style: text.titleMedium,
-            ),
-            const SizedBox(height: 10),
-            Text(
-              '${players.length}',
-              style: text.bodySmall?.copyWith(color: JoyoColors.textSecondary),
             ),
           ],
         ),

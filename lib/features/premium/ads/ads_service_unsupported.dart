@@ -15,6 +15,9 @@ class UnsupportedAdsService implements AdsService {
 
   @override
   Future<bool> showRewarded() async => false;
+
+  @override
+  void dispose() {}
 }
 
 AdsService createAdsService() => const UnsupportedAdsService();

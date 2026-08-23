@@ -34,10 +34,15 @@ class NonHoMaiScreen extends ConsumerWidget {
       buildContent: (ctx) async {
         final entries = GameContent.nonHoMai(locale);
         final allowed = ctx.room.mode.indexesFor(entries, (e) => e.tone);
-        final fresh = allowed
+        // Se la lingua non ha frasi nei toni ammessi si pesca da tutto il
+        // mazzo: mai lasciare il pool vuoto, farebbe fallire la pesca.
+        final candidates = allowed.isEmpty
+            ? [for (var i = 0; i < entries.length; i++) i]
+            : allowed;
+        final fresh = candidates
             .where((i) => !ctx.usedIndexes.contains(i))
             .toList();
-        final pool = fresh.isEmpty ? allowed : fresh;
+        final pool = fresh.isEmpty ? candidates : fresh;
         final index = pool[Random().nextInt(pool.length)];
         return {'text': entries[index].text, 'i': index};
       },
@@ -245,10 +250,7 @@ class _Counter extends StatelessWidget {
       duration: const Duration(milliseconds: 700),
       curve: Curves.easeOutCubic,
       builder: (context, value, _) => Text(
-        t('non_ho_mai.count', {
-          'n': '${value.round()}',
-          'total': '$total',
-        }),
+        t('non_ho_mai.count', {'n': '${value.round()}', 'total': '$total'}),
         style: Theme.of(
           context,
         ).textTheme.displayMedium?.copyWith(color: JoyoColors.coral),

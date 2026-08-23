@@ -19,23 +19,31 @@ class RoomSessionNotifier extends Notifier<RoomSession?> {
   void exit() => state = null;
 }
 
-final roomSessionProvider =
-    NotifierProvider<RoomSessionNotifier, RoomSession?>(
-      RoomSessionNotifier.new,
-    );
+final roomSessionProvider = NotifierProvider<RoomSessionNotifier, RoomSession?>(
+  RoomSessionNotifier.new,
+);
 
 /// Giocatori della stanza, aggiornati in tempo reale.
-final playersProvider = StreamProvider.family<List<Player>, String>(
+///
+/// `autoDispose` su tutta la famiglia: uscendo dalla stanza il canale
+/// Realtime si chiude e la cache si svuota. Senza, rientrare nella stessa
+/// stanza riproporrebbe la lista giocatori della sessione precedente (con il
+/// vecchio playerId → "stanza chiusa" a torto) e ogni stanza visitata
+/// lascerebbe un websocket aperto per tutta la vita dell'app.
+final playersProvider = StreamProvider.autoDispose.family<List<Player>, String>(
   (ref, roomId) => ref.watch(roomRepositoryProvider).watchPlayers(roomId),
 );
 
 /// Stato della stanza, aggiornato in tempo reale.
-final roomProvider = StreamProvider.family<Room?, String>(
+final roomProvider = StreamProvider.autoDispose.family<Room?, String>(
   (ref, roomId) => ref.watch(roomRepositoryProvider).watchRoom(roomId),
 );
 
 /// Il giocatore che sta usando questo telefono.
-final myPlayerProvider = Provider.family<Player?, String>((ref, roomId) {
+final myPlayerProvider = Provider.autoDispose.family<Player?, String>((
+  ref,
+  roomId,
+) {
   final session = ref.watch(roomSessionProvider);
   final players = ref.watch(playersProvider(roomId)).value;
   if (session == null || players == null) return null;
@@ -46,6 +54,6 @@ final myPlayerProvider = Provider.family<Player?, String>((ref, roomId) {
 });
 
 /// True se questo telefono è quello dell'host.
-final isHostProvider = Provider.family<bool, String>(
+final isHostProvider = Provider.autoDispose.family<bool, String>(
   (ref, roomId) => ref.watch(myPlayerProvider(roomId))?.isHost ?? false,
 );

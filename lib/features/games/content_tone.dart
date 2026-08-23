@@ -8,18 +8,6 @@ class ContentTone {
 
   static const List<String> all = <String>[soft, piccante, cattivo];
 
-  static const Map<String, String> labels = <String, String>{
-    soft: 'Soft',
-    piccante: 'Piccante',
-    cattivo: 'Cattivo',
-  };
-
-  static const Map<String, String> descriptions = <String, String>{
-    soft: 'Va bene con chiunque, anche in famiglia',
-    piccante: 'Qualche domanda imbarazzante',
-    cattivo: 'Niente filtri: solo tra amici stretti',
-  };
-
   /// Un tono più alto include anche i contenuti dei toni più bassi.
   static bool allows(String roomTone, String itemTone) => switch (roomTone) {
     soft => itemTone == soft,

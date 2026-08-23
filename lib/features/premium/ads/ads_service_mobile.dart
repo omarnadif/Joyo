@@ -5,6 +5,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../../../core/env/app_env.dart';
 import 'ads_service.dart';
+import 'ads_service_unsupported.dart' show UnsupportedAdsService;
 
 /// AdMob su Android e iOS.
 ///
@@ -18,6 +19,8 @@ class MobileAdsService implements AdsService {
   InterstitialAd? _interstitial;
   RewardedAd? _rewarded;
   bool _initialized = false;
+  bool _loadingInterstitial = false;
+  bool _loadingRewarded = false;
 
   @override
   bool get isSupported => true;
@@ -26,7 +29,12 @@ class MobileAdsService implements AdsService {
   Future<void> initialize() async {
     if (_initialized) return;
     _initialized = true;
-    await MobileAds.instance.initialize();
+    try {
+      await MobileAds.instance.initialize();
+    } catch (_) {
+      // Se l'SDK non parte, i metodi show* proseguono comunque a vuoto.
+      return;
+    }
     unawaited(_loadInterstitial());
     unawaited(_loadRewarded());
   }
@@ -44,31 +52,54 @@ class MobileAdsService implements AdsService {
       : 'ca-app-pub-3940256099942544/1712485313';
 
   Future<void> _loadInterstitial() async {
-    await InterstitialAd.load(
-      adUnitId: _interstitialUnit,
-      request: const AdRequest(),
-      adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (ad) => _interstitial = ad,
-        onAdFailedToLoad: (_) => _interstitial = null,
-      ),
-    );
+    if (_loadingInterstitial || _interstitial != null) return;
+    _loadingInterstitial = true;
+    try {
+      await InterstitialAd.load(
+        adUnitId: _interstitialUnit,
+        request: const AdRequest(),
+        adLoadCallback: InterstitialAdLoadCallback(
+          onAdLoaded: (ad) {
+            _interstitial = ad;
+            _loadingInterstitial = false;
+          },
+          // Niente retry immediato: il prossimo show* riprova a caricare,
+          // così un avvio offline non spegne il formato per tutta la sessione.
+          onAdFailedToLoad: (_) => _loadingInterstitial = false,
+        ),
+      );
+    } catch (_) {
+      _loadingInterstitial = false;
+    }
   }
 
   Future<void> _loadRewarded() async {
-    await RewardedAd.load(
-      adUnitId: _rewardedUnit,
-      request: const AdRequest(),
-      rewardedAdLoadCallback: RewardedAdLoadCallback(
-        onAdLoaded: (ad) => _rewarded = ad,
-        onAdFailedToLoad: (_) => _rewarded = null,
-      ),
-    );
+    if (_loadingRewarded || _rewarded != null) return;
+    _loadingRewarded = true;
+    try {
+      await RewardedAd.load(
+        adUnitId: _rewardedUnit,
+        request: const AdRequest(),
+        rewardedAdLoadCallback: RewardedAdLoadCallback(
+          onAdLoaded: (ad) {
+            _rewarded = ad;
+            _loadingRewarded = false;
+          },
+          onAdFailedToLoad: (_) => _loadingRewarded = false,
+        ),
+      );
+    } catch (_) {
+      _loadingRewarded = false;
+    }
   }
 
   @override
   Future<void> showInterstitial() async {
     final ad = _interstitial;
-    if (ad == null) return; // non pronto: si va avanti senza
+    if (ad == null) {
+      unawaited(_loadInterstitial());
+      return;
+    }
     _interstitial = null;
 
     final closed = Completer<void>();
@@ -84,17 +115,30 @@ class MobileAdsService implements AdsService {
         unawaited(_loadInterstitial());
       },
     );
-    await ad.show();
+    try {
+      await ad.show();
+    } catch (_) {
+      // Il contratto è "non blocca mai il flusso": si prosegue senza annuncio.
+      ad.dispose();
+      unawaited(_loadInterstitial());
+      return;
+    }
     await closed.future.timeout(
       const Duration(seconds: 60),
-      onTimeout: () {},
+      onTimeout: () {
+        ad.dispose();
+        unawaited(_loadInterstitial());
+      },
     );
   }
 
   @override
   Future<bool> showRewarded() async {
     final ad = _rewarded;
-    if (ad == null) return false;
+    if (ad == null) {
+      unawaited(_loadRewarded());
+      return false;
+    }
     _rewarded = null;
 
     var earned = false;
@@ -112,15 +156,34 @@ class MobileAdsService implements AdsService {
       },
     );
 
-    await ad.show(
-      onUserEarnedReward: (_, _) => earned = true,
-    );
+    try {
+      await ad.show(onUserEarnedReward: (_, _) => earned = true);
+    } catch (_) {
+      ad.dispose();
+      unawaited(_loadRewarded());
+      return false;
+    }
     await closed.future.timeout(
       const Duration(minutes: 3),
-      onTimeout: () {},
+      onTimeout: () {
+        ad.dispose();
+        unawaited(_loadRewarded());
+      },
     );
     return earned;
   }
+
+  @override
+  void dispose() {
+    _interstitial?.dispose();
+    _interstitial = null;
+    _rewarded?.dispose();
+    _rewarded = null;
+  }
 }
 
-AdsService createAdsService() => MobileAdsService();
+/// `dart.library.io` è vero anche su desktop e nei test su VM, dove il plugin
+/// AdMob non esiste: lì si ripiega sulla versione a vuoto.
+AdsService createAdsService() => Platform.isAndroid || Platform.isIOS
+    ? MobileAdsService()
+    : const UnsupportedAdsService();

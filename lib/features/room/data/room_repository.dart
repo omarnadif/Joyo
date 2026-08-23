@@ -69,7 +69,10 @@ class RoomRepository {
     'p_color': color,
   });
 
-  Future<RoomSession> _rpcSession(String fn, Map<String, dynamic> params) async {
+  Future<RoomSession> _rpcSession(
+    String fn,
+    Map<String, dynamic> params,
+  ) async {
     try {
       final rows = await _client.rpc(fn, params: params) as List<dynamic>;
       if (rows.isEmpty) throw const RoomException('error.connection');
@@ -133,11 +136,7 @@ class RoomRepository {
     int? roundsTotal,
   }) async => await _client
       .from('rooms')
-      .update({
-        'mode': ?mode,
-        'tone': ?tone,
-        'rounds_total': ?roundsTotal,
-      })
+      .update({'mode': ?mode, 'tone': ?tone, 'rounds_total': ?roundsTotal})
       .eq('id', roomId);
 
   /// Solo l'host: cambia gioco senza toccare i round già giocati.
@@ -155,15 +154,6 @@ class RoomRepository {
       .from('rooms')
       .update({'status': 'lobby', 'active_game': null})
       .eq('id', roomId);
-
-  Future<void> updateProfile({
-    required String playerId,
-    required String name,
-    required String color,
-  }) async => await _client
-      .from('players')
-      .update({'name': name, 'color': color})
-      .eq('id', playerId);
 
   Future<void> leaveRoom(String playerId) async =>
       await _client.from('players').delete().eq('id', playerId);

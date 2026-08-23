@@ -74,7 +74,6 @@ class JoyoButton extends StatelessWidget {
     this.accent = JoyoColors.lime,
     this.icon,
     this.busy = false,
-    this.expand = true,
     super.key,
   });
 
@@ -83,7 +82,6 @@ class JoyoButton extends StatelessWidget {
   final Color accent;
   final IconData? icon;
   final bool busy;
-  final bool expand;
 
   @override
   Widget build(BuildContext context) {
@@ -146,9 +144,7 @@ class JoyoButton extends StatelessWidget {
       ),
     );
 
-    final sized = expand
-        ? SizedBox(width: double.infinity, child: button)
-        : button;
+    final sized = SizedBox(width: double.infinity, child: button);
     return enabled ? _Pressable(onTap: onPressed, child: sized) : sized;
   }
 }
@@ -159,14 +155,12 @@ class JoyoGhostButton extends StatelessWidget {
     required this.label,
     required this.onPressed,
     this.accent = JoyoColors.textSecondary,
-    this.expand = true,
     super.key,
   });
 
   final String label;
   final VoidCallback? onPressed;
   final Color accent;
-  final bool expand;
 
   @override
   Widget build(BuildContext context) {
@@ -182,68 +176,14 @@ class JoyoGhostButton extends StatelessWidget {
         label,
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
-        style: Theme.of(context).textTheme.labelLarge?.copyWith(
-          color: JoyoColors.textPrimary,
-        ),
+        style: Theme.of(
+          context,
+        ).textTheme.labelLarge?.copyWith(color: JoyoColors.textPrimary),
       ),
     );
 
-    final sized = expand
-        ? SizedBox(width: double.infinity, child: button)
-        : button;
+    final sized = SizedBox(width: double.infinity, child: button);
     return _Pressable(onTap: onPressed, child: sized);
-  }
-}
-
-/// Punto luminoso che respira: è la "o" accesa del marchio Joyo.
-class PulseDot extends StatefulWidget {
-  const PulseDot({this.size = 16, this.color = JoyoColors.lime, super.key});
-
-  final double size;
-  final Color color;
-
-  @override
-  State<PulseDot> createState() => _PulseDotState();
-}
-
-class _PulseDotState extends State<PulseDot>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _controller = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 2200),
-  )..repeat(reverse: true);
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final still = MediaQuery.disableAnimationsOf(context);
-
-    return AnimatedBuilder(
-      animation: _controller,
-      builder: (context, _) {
-        final t = still ? 0.5 : Curves.easeInOut.transform(_controller.value);
-        return Container(
-          width: widget.size,
-          height: widget.size,
-          decoration: BoxDecoration(
-            color: widget.color,
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: widget.color.withValues(alpha: 0.45 + 0.35 * t),
-                blurRadius: 16 + 14 * t,
-                spreadRadius: 1 + 3 * t,
-              ),
-            ],
-          ),
-        );
-      },
-    );
   }
 }
 
@@ -332,9 +272,15 @@ class _PressableState extends State<_Pressable> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTapDown: widget.onTap == null ? null : (_) => setState(() => _down = true),
-      onTapUp: widget.onTap == null ? null : (_) => setState(() => _down = false),
-      onTapCancel: widget.onTap == null ? null : () => setState(() => _down = false),
+      onTapDown: widget.onTap == null
+          ? null
+          : (_) => setState(() => _down = true),
+      onTapUp: widget.onTap == null
+          ? null
+          : (_) => setState(() => _down = false),
+      onTapCancel: widget.onTap == null
+          ? null
+          : () => setState(() => _down = false),
       onTap: widget.onTap,
       child: AnimatedScale(
         scale: _down ? 0.97 : 1,

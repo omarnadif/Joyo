@@ -51,10 +51,15 @@ class ChiLoPotrebbeFareScreen extends ConsumerWidget {
 
         final entries = GameContent.chiLoPotrebbeFare(locale);
         final allowed = ctx.room.mode.indexesFor(entries, (e) => e.tone);
-        final fresh = allowed
+        // Se la lingua non ha domande nei toni ammessi si pesca da tutto il
+        // mazzo: mai lasciare il pool vuoto, farebbe fallire la pesca.
+        final candidates = allowed.isEmpty
+            ? [for (var i = 0; i < entries.length; i++) i]
+            : allowed;
+        final fresh = candidates
             .where((i) => !ctx.usedIndexes.contains(i))
             .toList();
-        final pool = fresh.isEmpty ? allowed : fresh;
+        final pool = fresh.isEmpty ? candidates : fresh;
         final index = pool[Random().nextInt(pool.length)];
         return {'text': entries[index].text, 'i': index, 'ai': false};
       },
@@ -98,7 +103,9 @@ class _Voting extends StatelessWidget {
                 player: player,
                 selected: selected,
                 dimmed: chosen != null && !selected,
-                isMe: player.id == state.me?.id,
+                label: player.id == state.me?.id
+                    ? '${player.name} (${t('common.you')})'
+                    : player.name,
                 onTap: state.hasVoted
                     ? null
                     : () => state.vote({'player_id': player.id}),
@@ -116,14 +123,14 @@ class _PlayerOption extends StatelessWidget {
     required this.player,
     required this.selected,
     required this.dimmed,
-    required this.isMe,
+    required this.label,
     required this.onTap,
   });
 
   final Player player;
   final bool selected;
   final bool dimmed;
-  final bool isMe;
+  final String label;
   final VoidCallback? onTap;
 
   @override
@@ -140,7 +147,9 @@ class _PlayerOption extends StatelessWidget {
           duration: const Duration(milliseconds: 160),
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
           decoration: BoxDecoration(
-            color: selected ? color.withValues(alpha: 0.18) : JoyoColors.surface,
+            color: selected
+                ? color.withValues(alpha: 0.18)
+                : JoyoColors.surface,
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
               color: selected ? color : Colors.transparent,
@@ -153,7 +162,7 @@ class _PlayerOption extends StatelessWidget {
               const SizedBox(width: 14),
               Expanded(
                 child: Text(
-                  isMe ? '${player.name} (tu)' : player.name,
+                  label,
                   style: text.titleMedium,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -186,7 +195,9 @@ class _Result extends StatelessWidget {
     final ranking = state.players.toList()
       ..sort((a, b) => (counts[b.id] ?? 0).compareTo(counts[a.id] ?? 0));
     final topVotes = ranking.isEmpty ? 0 : counts[ranking.first.id] ?? 0;
-    final winners = ranking.where((p) => (counts[p.id] ?? 0) == topVotes && topVotes > 0);
+    final winners = ranking.where(
+      (p) => (counts[p.id] ?? 0) == topVotes && topVotes > 0,
+    );
 
     return SingleChildScrollView(
       child: Column(
@@ -209,9 +220,7 @@ class _Result extends StatelessWidget {
           else
             Column(
               children: [
-                Eyebrow(
-                  winners.length > 1 ? t('chi.tie') : t('chi.decided'),
-                ),
+                Eyebrow(winners.length > 1 ? t('chi.tie') : t('chi.decided')),
                 const SizedBox(height: 8),
                 Wrap(
                   alignment: WrapAlignment.center,

@@ -3,7 +3,7 @@ import 'pool_cattivo.dart';
 import 'pool_piccante.dart';
 import 'pool_soft.dart';
 
-/// Obbligo o Verità: 100 obblighi + 100 verità per ciascuno dei tre toni.
+/// Obbligo o Verità: un centinaio di obblighi e di verità per ciascun tono.
 ///
 /// I toni non si sommano come negli altri giochi: qui una stanza "cattivo"
 /// vuole domande cattive, non un misto in cui esce di nuovo "canta una

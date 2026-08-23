@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'ads_service_unsupported.dart'
@@ -12,8 +14,8 @@ import 'ads_service_unsupported.dart'
 /// darebbero solo fastidio.
 ///
 /// L'implementazione vera esiste solo su Android/iOS: google_mobile_ads
-/// importa dart:io e non compila per il web, dove tutti i metodi diventano
-/// operazioni a vuoto.
+/// importa dart:io e non compila per il web; su desktop e nei test
+/// `createAdsService` ripiega comunque sulla versione a vuoto.
 abstract class AdsService {
   Future<void> initialize();
 
@@ -26,10 +28,14 @@ abstract class AdsService {
   Future<bool> showRewarded();
 
   bool get isSupported;
+
+  /// Rilascia gli annunci precaricati e non ancora mostrati.
+  void dispose();
 }
 
 final adsServiceProvider = Provider<AdsService>((ref) {
   final service = impl.createAdsService();
-  service.initialize();
+  ref.onDispose(service.dispose);
+  unawaited(service.initialize());
   return service;
 });

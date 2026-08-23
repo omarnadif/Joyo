@@ -47,6 +47,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'fr': 'Un instant…',
     'de': 'Einen Moment…',
   },
+  'common.you': {'it': 'tu', 'en': 'you', 'es': 'tú', 'fr': 'toi', 'de': 'du'},
 
   // -------------------------------------------------------------- onboarding
   'onboarding.slide1.title': {
@@ -57,11 +58,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Das Wohnzimmer\nwird zum Spielraum',
   },
   'onboarding.slide1.body': {
-    'it': 'Un telefono a testa e si parte. Joyo collega gli schermi, la serata resta nella stanza.',
-    'en': "One phone each and you're off. Joyo connects the screens, the night stays in the room.",
-    'es': 'Un móvil cada uno y listo. Joyo conecta las pantallas, la noche se queda en la sala.',
-    'fr': "Un téléphone chacun et c'est parti. Joyo relie les écrans, la soirée reste dans la pièce.",
-    'de': 'Ein Handy pro Person und los. Joyo verbindet die Bildschirme, der Abend bleibt im Raum.',
+    'it':
+        'Un telefono a testa e si parte. Joyo collega gli schermi, la serata resta nella stanza.',
+    'en':
+        "One phone each and you're off. Joyo connects the screens, the night stays in the room.",
+    'es':
+        'Un móvil cada uno y listo. Joyo conecta las pantallas, la noche se queda en la sala.',
+    'fr':
+        "Un téléphone chacun et c'est parti. Joyo relie les écrans, la soirée reste dans la pièce.",
+    'de':
+        'Ein Handy pro Person und los. Joyo verbindet die Bildschirme, der Abend bleibt im Raum.',
   },
   'onboarding.slide2.title': {
     'it': 'Crea, condividi\nil codice, giocate',
@@ -71,11 +77,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Erstellen, Code\nteilen, losspielen',
   },
   'onboarding.slide2.body': {
-    'it': 'Uno apre la stanza e legge il codice ad alta voce. Gli altri entrano in dieci secondi.',
-    'en': 'One person opens the room and reads the code out loud. The others join in ten seconds.',
-    'es': 'Uno abre la sala y lee el código en voz alta. Los demás entran en diez segundos.',
-    'fr': 'Une personne ouvre le salon et lit le code à voix haute. Les autres rejoignent en dix secondes.',
-    'de': 'Eine Person öffnet den Raum und liest den Code vor. Die anderen treten in zehn Sekunden bei.',
+    'it':
+        'Uno apre la stanza e legge il codice ad alta voce. Gli altri entrano in dieci secondi.',
+    'en':
+        'One person opens the room and reads the code out loud. The others join in ten seconds.',
+    'es':
+        'Uno abre la sala y lee el código en voz alta. Los demás entran en diez segundos.',
+    'fr':
+        'Une personne ouvre le salon et lit le code à voix haute. Les autres rejoignent en dix secondes.',
+    'de':
+        'Eine Person öffnet den Raum und liest den Code vor. Die anderen treten in zehn Sekunden bei.',
   },
   'onboarding.slide3.title': {
     'it': 'Sei giochi,\nsi gioca subito',
@@ -85,11 +96,15 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Sechs Spiele,\nsofort losspielen',
   },
   'onboarding.slide3.body': {
-    'it': 'Si vota, si mente, si gira la bottiglia. Ogni round dura meno di un minuto.',
+    'it':
+        'Si vota, si mente, si gira la bottiglia. Ogni round dura meno di un minuto.',
     'en': 'Vote, lie, spin the bottle. Every round takes less than a minute.',
-    'es': 'Se vota, se miente, se gira la botella. Cada ronda dura menos de un minuto.',
-    'fr': 'On vote, on ment, on fait tourner la bouteille. Chaque manche dure moins d\'une minute.',
-    'de': 'Abstimmen, lügen, Flasche drehen. Jede Runde dauert unter einer Minute.',
+    'es':
+        'Se vota, se miente, se gira la botella. Cada ronda dura menos de un minuto.',
+    'fr':
+        'On vote, on ment, on fait tourner la bouteille. Chaque manche dure moins d\'une minute.',
+    'de':
+        'Abstimmen, lügen, Flasche drehen. Jede Runde dauert unter einer Minute.',
   },
   'onboarding.slide4.title': {
     'it': 'Scegli quanto\nsalire di temperatura',
@@ -99,11 +114,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Entscheidet, wie heiß\nder Abend wird',
   },
   'onboarding.slide4.body': {
-    'it': 'Normale con chiunque, Mix quando la serata gira, Hot solo tra amici stretti.',
-    'en': 'Normal with anyone, Mix when the night gets going, Hot for close friends only.',
-    'es': 'Normal con cualquiera, Mix cuando la noche se anima, Hot solo entre amigos íntimos.',
-    'fr': "Normal avec tout le monde, Mix quand la soirée démarre, Hot entre amis proches.",
-    'de': 'Normal für alle, Mix wenn der Abend läuft, Hot nur unter engen Freunden.',
+    'it':
+        'Normale con chiunque, Mix quando la serata gira, Hot solo tra amici stretti.',
+    'en':
+        'Normal with anyone, Mix when the night gets going, Hot for close friends only.',
+    'es':
+        'Normal con cualquiera, Mix cuando la noche se anima, Hot solo entre amigos íntimos.',
+    'fr':
+        "Normal avec tout le monde, Mix quand la soirée démarre, Hot entre amis proches.",
+    'de':
+        'Normal für alle, Mix wenn der Abend läuft, Hot nur unter engen Freunden.',
   },
   'onboarding.language': {
     'it': 'In che lingua giocate?',
@@ -300,13 +320,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'fr': 'Joueurs',
     'de': 'Spieler',
   },
-  'lobby.you': {
-    'it': 'tu',
-    'en': 'you',
-    'es': 'tú',
-    'fr': 'toi',
-    'de': 'du',
-  },
+  'lobby.you': {'it': 'tu', 'en': 'you', 'es': 'tú', 'fr': 'toi', 'de': 'du'},
   'lobby.host_badge': {
     'it': 'HOST',
     'en': 'HOST',
@@ -343,11 +357,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': '{name} entfernen?',
   },
   'lobby.remove_player_body': {
-    'it': 'Usalo se qualcuno ha chiuso l\'app senza uscire. Potrà sempre rientrare con il codice.',
-    'en': 'Use this if someone closed the app without leaving. They can always rejoin with the code.',
-    'es': 'Úsalo si alguien cerró la app sin salir. Siempre podrá volver a entrar con el código.',
-    'fr': "À utiliser si quelqu'un a fermé l'app sans quitter. Il pourra revenir avec le code.",
-    'de': 'Nutze das, wenn jemand die App geschlossen hat, ohne zu gehen. Er kann jederzeit mit dem Code zurückkommen.',
+    'it':
+        'Usalo se qualcuno ha chiuso l\'app senza uscire. Potrà sempre rientrare con il codice.',
+    'en':
+        'Use this if someone closed the app without leaving. They can always rejoin with the code.',
+    'es':
+        'Úsalo si alguien cerró la app sin salir. Siempre podrá volver a entrar con el código.',
+    'fr':
+        "À utiliser si quelqu'un a fermé l'app sans quitter. Il pourra revenir avec le code.",
+    'de':
+        'Nutze das, wenn jemand die App geschlossen hat, ohne zu gehen. Er kann jederzeit mit dem Code zurückkommen.',
   },
   'lobby.remove': {
     'it': 'Rimuovi',
@@ -364,10 +383,13 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Raum schließen?',
   },
   'lobby.exit_host_body': {
-    'it': 'La stanza si chiude per tutti: gli altri giocatori tornano alla home.',
-    'en': 'The room closes for everyone: the other players go back to the home screen.',
+    'it':
+        'La stanza si chiude per tutti: gli altri giocatori tornano alla home.',
+    'en':
+        'The room closes for everyone: the other players go back to the home screen.',
     'es': 'La sala se cierra para todos: los demás vuelven al inicio.',
-    'fr': "Le salon se ferme pour tout le monde : les autres reviennent à l'accueil.",
+    'fr':
+        "Le salon se ferme pour tout le monde : les autres reviennent à l'accueil.",
     'de': 'Der Raum schließt für alle: Die anderen kehren zum Start zurück.',
   },
   'lobby.exit_title': {
@@ -404,6 +426,13 @@ const Map<String, Map<String, String>> kTranslations = {
     'es': 'Salir',
     'fr': 'Quitter',
     'de': 'Verlassen',
+  },
+  'lobby.exit_failed': {
+    'it': 'Uscita non riuscita: {detail}',
+    'en': "Couldn't leave the room: {detail}",
+    'es': 'No se pudo salir: {detail}',
+    'fr': 'Impossible de quitter : {detail}',
+    'de': 'Verlassen fehlgeschlagen: {detail}',
   },
   'lobby.room_closed': {
     'it': 'La stanza è stata chiusa dall\'host.',
@@ -488,6 +517,27 @@ const Map<String, Map<String, String>> kTranslations = {
     'fr': 'Préparation de la manche…',
     'de': 'Runde wird vorbereitet…',
   },
+  'game.create_failed': {
+    'it': 'Non riesco a creare il round: {detail}',
+    'en': "Couldn't create the round: {detail}",
+    'es': 'No se pudo crear la ronda: {detail}',
+    'fr': 'Impossible de créer la manche : {detail}',
+    'de': 'Runde konnte nicht erstellt werden: {detail}',
+  },
+  'game.close_failed': {
+    'it': 'Non riesco a chiudere il round: {detail}',
+    'en': "Couldn't close the round: {detail}",
+    'es': 'No se pudo cerrar la ronda: {detail}',
+    'fr': 'Impossible de clore la manche : {detail}',
+    'de': 'Runde konnte nicht beendet werden: {detail}',
+  },
+  'game.vote_failed': {
+    'it': 'Risposta non registrata: {detail}',
+    'en': 'Answer not registered: {detail}',
+    'es': 'Respuesta no registrada: {detail}',
+    'fr': 'Réponse non enregistrée : {detail}',
+    'de': 'Antwort nicht gespeichert: {detail}',
+  },
   'game.next_round': {
     'it': 'PROSSIMO ROUND',
     'en': 'NEXT ROUND',
@@ -568,7 +618,8 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': '{name} gewinnt',
   },
   'podium.no_scores': {
-    'it': 'Questo gioco non assegna punti: nessuna classifica, solo la partita.',
+    'it':
+        'Questo gioco non assegna punti: nessuna classifica, solo la partita.',
     'en': 'This game has no points: no ranking, just the game.',
     'es': 'Este juego no da puntos: sin clasificación, solo la partida.',
     'fr': 'Ce jeu ne donne pas de points : pas de classement, juste la partie.',
@@ -830,11 +881,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': '{name} schreibt\netwas Wahres über sich',
   },
   'bluff.your_turn_body': {
-    'it': 'Scrivi un fatto vero su di te. Il gioco ci metterà in mezzo due bugie: gli altri dovranno indovinare qual è il tuo.',
-    'en': 'Write something true about you. The game adds two lies: the others have to spot yours.',
-    'es': 'Escribe algo verdadero sobre ti. El juego añadirá dos mentiras: los demás deben acertar cuál es la tuya.',
-    'fr': 'Écris quelque chose de vrai sur toi. Le jeu ajoute deux mensonges : aux autres de trouver le vrai.',
-    'de': 'Schreib etwas Wahres über dich. Das Spiel fügt zwei Lügen hinzu: Die anderen müssen deine Wahrheit finden.',
+    'it':
+        'Scrivi un fatto vero su di te. Il gioco ci metterà in mezzo due bugie: gli altri dovranno indovinare qual è il tuo.',
+    'en':
+        'Write something true about you. The game adds two lies: the others have to spot yours.',
+    'es':
+        'Escribe algo verdadero sobre ti. El juego añadirá dos mentiras: los demás deben acertar cuál es la tuya.',
+    'fr':
+        'Écris quelque chose de vrai sur toi. Le jeu ajoute deux mensonges : aux autres de trouver le vrai.',
+    'de':
+        'Schreib etwas Wahres über dich. Das Spiel fügt zwei Lügen hinzu: Die anderen müssen deine Wahrheit finden.',
   },
   'bluff.hint': {
     'it': 'Una volta ho…',
@@ -972,11 +1028,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Du bist der Betrüger',
   },
   'impostore.you_are_body': {
-    'it': 'Non conosci la parola. Ascolta, improvvisa e non farti scoprire: se indovini la parola alla fine recuperi punti.',
-    'en': 'You do not know the word. Listen, improvise, stay hidden: guessing the word at the end wins points back.',
-    'es': 'No conoces la palabra. Escucha, improvisa y que no te pillen: si aciertas la palabra al final recuperas puntos.',
-    'fr': "Tu ne connais pas le mot. Écoute, improvise, reste discret : deviner le mot à la fin rapporte des points.",
-    'de': 'Du kennst das Wort nicht. Hör zu, improvisiere, bleib unentdeckt: Errätst du das Wort am Ende, holst du Punkte zurück.',
+    'it':
+        'Non conosci la parola. Ascolta, improvvisa e non farti scoprire: se indovini la parola alla fine recuperi punti.',
+    'en':
+        'You do not know the word. Listen, improvise, stay hidden: guessing the word at the end wins points back.',
+    'es':
+        'No conoces la palabra. Escucha, improvisa y que no te pillen: si aciertas la palabra al final recuperas puntos.',
+    'fr':
+        "Tu ne connais pas le mot. Écoute, improvise, reste discret : deviner le mot à la fin rapporte des points.",
+    'de':
+        'Du kennst das Wort nicht. Hör zu, improvisiere, bleib unentdeckt: Errätst du das Wort am Ende, holst du Punkte zurück.',
   },
   'impostore.the_word': {
     'it': 'La parola è',
@@ -1000,11 +1061,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Wortrunde',
   },
   'impostore.round_of_words_body': {
-    'it': 'A turno, ognuno dice una sola parola legata al segreto.\nTroppo precisa e l\'impostore capisce, troppo vaga e sembrate voi l\'impostore.',
-    'en': 'One at a time, say a single word linked to the secret.\nToo precise and the impostor learns it, too vague and you look like the impostor.',
-    'es': 'Por turnos, cada uno dice una sola palabra ligada al secreto.\nDemasiado precisa y el impostor lo pilla, demasiado vaga y pareces tú el impostor.',
-    'fr': "Chacun son tour, dites un seul mot lié au secret.\nTrop précis, l'imposteur comprend ; trop vague, c'est vous le suspect.",
-    'de': 'Reihum sagt jeder ein einziges Wort zum Geheimnis.\nZu genau, und der Betrüger versteht es; zu vage, und du wirkst verdächtig.',
+    'it':
+        'A turno, ognuno dice una sola parola legata al segreto.\nTroppo precisa e l\'impostore capisce, troppo vaga e sembrate voi l\'impostore.',
+    'en':
+        'One at a time, say a single word linked to the secret.\nToo precise and the impostor learns it, too vague and you look like the impostor.',
+    'es':
+        'Por turnos, cada uno dice una sola palabra ligada al secreto.\nDemasiado precisa y el impostor lo pilla, demasiado vaga y pareces tú el impostor.',
+    'fr':
+        "Chacun son tour, dites un seul mot lié au secret.\nTrop précis, l'imposteur comprend ; trop vague, c'est vous le suspect.",
+    'de':
+        'Reihum sagt jeder ein einziges Wort zum Geheimnis.\nZu genau, und der Betrüger versteht es; zu vage, und du wirkst verdächtig.',
   },
   'impostore.your_word': {
     'it': 'La tua parola: {word}',
@@ -1035,11 +1101,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Das geheime Wort war…',
   },
   'impostore.guess_body': {
-    'it': 'Sei l\'impostore: prova a indovinare la parola. Se ti scoprono ma la azzecchi, recuperi punti.',
-    'en': 'You are the impostor: try to guess the word. Even if caught, a correct guess wins points back.',
-    'es': 'Eres el impostor: intenta adivinar la palabra. Aunque te pillen, acertarla te devuelve puntos.',
-    'fr': "Tu es l'imposteur : devine le mot. Même démasqué, une bonne réponse rapporte des points.",
-    'de': 'Du bist der Betrüger: Rate das Wort. Selbst entlarvt bringt ein Treffer Punkte zurück.',
+    'it':
+        'Sei l\'impostore: prova a indovinare la parola. Se ti scoprono ma la azzecchi, recuperi punti.',
+    'en':
+        'You are the impostor: try to guess the word. Even if caught, a correct guess wins points back.',
+    'es':
+        'Eres el impostor: intenta adivinar la palabra. Aunque te pillen, acertarla te devuelve puntos.',
+    'fr':
+        "Tu es l'imposteur : devine le mot. Même démasqué, une bonne réponse rapporte des points.",
+    'de':
+        'Du bist der Betrüger: Rate das Wort. Selbst entlarvt bringt ein Treffer Punkte zurück.',
   },
   'impostore.confirm': {
     'it': 'CONFERMA',
@@ -1128,11 +1199,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'de': 'Maßgeschneiderte Inhalte',
   },
   'premium.body': {
-    'it': 'In "Chi lo potrebbe fare" e "Bluff Story" le frasi vengono scritte sul vostro gruppo invece che pescate da un elenco.',
-    'en': 'In "Most likely to" and "Bluff Story" the lines are written for your group instead of picked from a list.',
-    'es': 'En "Quién sería capaz" y "Bluff Story" las frases se escriben para vuestro grupo en vez de salir de una lista.',
-    'fr': 'Dans « Qui serait capable » et « Bluff Story », les phrases sont écrites pour votre groupe.',
-    'de': 'Bei „Wer würde eher" und „Bluff Story" werden die Sätze für eure Gruppe geschrieben statt aus einer Liste gezogen.',
+    'it':
+        'In "Chi lo potrebbe fare" e "Bluff Story" le frasi vengono scritte sul vostro gruppo invece che pescate da un elenco.',
+    'en':
+        'In "Most likely to" and "Bluff Story" the lines are written for your group instead of picked from a list.',
+    'es':
+        'En "Quién sería capaz" y "Bluff Story" las frases se escriben para vuestro grupo en vez de salir de una lista.',
+    'fr':
+        'Dans « Qui serait capable » et « Bluff Story », les phrases sont écrites pour votre groupe.',
+    'de':
+        'Bei „Wer würde eher" und „Bluff Story" werden die Sätze für eure Gruppe geschrieben statt aus einer Liste gezogen.',
   },
   'premium.active': {
     'it': 'AI attiva in questa stanza',
@@ -1199,9 +1275,11 @@ const Map<String, Map<String, String>> kTranslations = {
   },
   'premium.no_store': {
     'it': 'Acquisti non disponibili qui: servono Google Play o App Store.',
-    'en': 'Purchases are not available here: Google Play or the App Store is required.',
+    'en':
+        'Purchases are not available here: Google Play or the App Store is required.',
     'es': 'Compras no disponibles aquí: hacen falta Google Play o App Store.',
-    'fr': "Achats indisponibles ici : Google Play ou l'App Store sont nécessaires.",
+    'fr':
+        "Achats indisponibles ici : Google Play ou l'App Store sont nécessaires.",
     'de': 'Käufe hier nicht möglich: Google Play oder App Store nötig.',
   },
   'premium.ads_mobile_only': {

@@ -19,7 +19,6 @@ class Room {
   const Room({
     required this.id,
     required this.code,
-    required this.hostId,
     required this.status,
     required this.activeGame,
     required this.isPremiumAi,
@@ -32,7 +31,6 @@ class Room {
   factory Room.fromMap(Map<String, dynamic> map) => Room(
     id: map['id'] as String,
     code: map['code'] as String,
-    hostId: map['host_id'] as String?,
     status: RoomStatus.fromDb(map['status'] as String),
     activeGame: map['active_game'] as String?,
     isPremiumAi: map['is_premium_ai'] as bool? ?? false,
@@ -44,7 +42,6 @@ class Room {
 
   final String id;
   final String code;
-  final String? hostId;
   final RoomStatus status;
   final String? activeGame;
   final bool isPremiumAi;
@@ -60,6 +57,5 @@ class Room {
 
   /// Se questa stanza può usare i contenuti generati dall'AI: premium
   /// acquistato, crediti da annuncio, oppure l'interruttore di sviluppo.
-  bool get canUseAi =>
-      isPremiumAi || aiCredits > 0 || AppEnv.devUnlockPremium;
+  bool get canUseAi => isPremiumAi || aiCredits > 0 || AppEnv.devUnlockPremium;
 }

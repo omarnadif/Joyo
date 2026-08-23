@@ -1,4 +1,4 @@
-/// Bugie pre-scritte per Bluff Story (versione gratuita): 130 affermazioni
+/// Bugie pre-scritte per Bluff Story (versione gratuita): 150 affermazioni
 /// generiche ma plausibili, nella stessa forma in cui i giocatori scrivono la
 /// propria verità.
 ///
@@ -139,7 +139,24 @@ class BluffStoryPool {
     'Ho dormito su una panchina in un parco di pomeriggio.',
     'Ho passato un\'intera giornata senza parlare con nessuno.',
     'Ho parlato con uno sconosciuto per due ore in treno.',
+    'Ho restituito un portafoglio pieno trovato per strada.',
+    'Ho vinto un premio a una lotteria di paese e non l\'ho mai ritirato.',
+    'Ho mangiato la stessa cosa a pranzo per un mese intero.',
+    'Ho finto di parlare una lingua straniera per non farmi riconoscere.',
+    'Sono rimasto chiuso fuori casa in pigiama per tre ore.',
+    'Ho risposto a una chiamata importante fingendo di non essere a letto.',
+    'Ho applaudito da solo al cinema alla fine del film.',
+    'Ho portato a spasso il cane sbagliato per venti minuti.',
+    'Ho salutato con entusiasmo una persona che non conoscevo affatto.',
+    'Ho seguito un tour turistico della mia stessa città fingendomi straniero.',
+    'Ho mandato gli auguri di compleanno alla persona sbagliata due anni di fila.',
+    'Ho vinto una discussione citando una statistica inventata sul momento.',
+    'Ho tenuto l\'ombrello aperto per dieci minuti dopo che aveva smesso di piovere.',
+    'Ho fatto una figuraccia a un colloquio e mi hanno preso lo stesso.',
+    'Ho tenuto una pianta finta in casa per anni innaffiandola ogni tanto.',
+    'Ho perso le chiavi e le ho ritrovate nel frigorifero.',
+    'Ho detto "buon appetito" al cameriere che me lo aveva augurato.',
+    'Ho corso dietro a un autobus per duecento metri e l\'ho preso.',
+    'Ho dimenticato dove avevo parcheggiato e ho girato per un\'ora.',
   ];
-
-  static int get length => fakes.length;
 }

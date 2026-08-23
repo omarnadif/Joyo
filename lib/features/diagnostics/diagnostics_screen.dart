@@ -5,9 +5,8 @@ import '../../core/env/app_env.dart';
 import '../../core/supabase/supabase_providers.dart';
 import '../../core/theme/app_colors.dart';
 
-/// Schermata della Fase 1: verifica che la fondazione regga davvero
-/// (chiavi, login anonimo, database + RLS, websocket realtime).
-/// Verrà sostituita dalla Home vera nella Fase 2.
+/// Diagnostica di connessione, aperta tenendo premuto il marchio in home:
+/// verifica chiavi, login anonimo, database + RLS e websocket realtime.
 class DiagnosticsScreen extends ConsumerWidget {
   const DiagnosticsScreen({super.key});
 
@@ -29,7 +28,7 @@ class DiagnosticsScreen extends ConsumerWidget {
               Text('Joyo', style: text.displayLarge),
               const SizedBox(height: 4),
               Text(
-                'Fase 1 — fondazione',
+                'Diagnostica di connessione',
                 style: text.bodyMedium?.copyWith(
                   color: JoyoColors.textSecondary,
                 ),
@@ -48,7 +47,8 @@ class DiagnosticsScreen extends ConsumerWidget {
                 accent: JoyoColors.aqua,
                 state: _stateOf(session),
                 detail: session.when(
-                  data: (s) => 'uid ${s.user.id.substring(0, 8)}…',
+                  data: (s) =>
+                      'uid ${s.user.id.length > 8 ? '${s.user.id.substring(0, 8)}…' : s.user.id}',
                   loading: () => 'in corso…',
                   error: (e, _) => '$e',
                 ),

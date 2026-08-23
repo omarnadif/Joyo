@@ -45,9 +45,7 @@ class _Entry extends ConsumerWidget {
     final onboarded = ref.watch(onboardingProvider);
     return switch (onboarded) {
       null => const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(color: JoyoColors.lime),
-        ),
+        body: Center(child: CircularProgressIndicator(color: JoyoColors.lime)),
       ),
       false => const OnboardingScreen(),
       true => const HomeScreen(),

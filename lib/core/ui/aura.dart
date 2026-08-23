@@ -50,9 +50,7 @@ class _AuraState extends State<Aura> with SingleTickerProviderStateMixin {
 
     return Stack(
       children: [
-        Positioned.fill(
-          child: ColoredBox(color: JoyoColors.background),
-        ),
+        Positioned.fill(child: ColoredBox(color: JoyoColors.background)),
         Positioned.fill(
           child: AnimatedBuilder(
             animation: _controller,

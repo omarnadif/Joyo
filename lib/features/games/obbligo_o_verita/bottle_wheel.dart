@@ -37,7 +37,7 @@ class _BottleWheelState extends State<BottleWheel>
     vsync: this,
     duration: BottleWheel.spinDuration,
   );
-  late final Animation<double> _spin = CurvedAnimation(
+  late final CurvedAnimation _spin = CurvedAnimation(
     parent: _controller,
     curve: Curves.easeOutCubic,
   );
@@ -53,6 +53,7 @@ class _BottleWheelState extends State<BottleWheel>
 
   @override
   void dispose() {
+    _spin.dispose();
     _controller.dispose();
     super.dispose();
   }
@@ -69,8 +70,10 @@ class _BottleWheelState extends State<BottleWheel>
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        final size = min(constraints.maxWidth, constraints.maxHeight)
-            .clamp(220.0, 320.0);
+        final size = min(
+          constraints.maxWidth,
+          constraints.maxHeight,
+        ).clamp(220.0, 320.0);
         final radius = size / 2 - 26;
 
         final bottleHeight = size * 0.54;
@@ -182,9 +185,9 @@ class _Seat extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    fontSize: 11,
-                  ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(fontSize: 11),
                 ),
               ),
             ],
@@ -203,14 +206,26 @@ class _Seat extends StatelessWidget {
 /// La luce arriva da sinistra e ruota con la bottiglia, come un riflesso su
 /// vetro lucido.
 class _BottlePainter extends CustomPainter {
-  static final Color _glassDark =
-      Color.lerp(JoyoColors.lime, JoyoColors.background, 0.78)!;
-  static final Color _glassMid =
-      Color.lerp(JoyoColors.lime, JoyoColors.background, 0.42)!;
-  static final Color _glassLight =
-      Color.lerp(JoyoColors.lime, Colors.white, 0.2)!;
-  static final Color _labelBase =
-      Color.lerp(JoyoColors.textPrimary, JoyoColors.amber, 0.28)!;
+  static final Color _glassDark = Color.lerp(
+    JoyoColors.lime,
+    JoyoColors.background,
+    0.78,
+  )!;
+  static final Color _glassMid = Color.lerp(
+    JoyoColors.lime,
+    JoyoColors.background,
+    0.42,
+  )!;
+  static final Color _glassLight = Color.lerp(
+    JoyoColors.lime,
+    Colors.white,
+    0.2,
+  )!;
+  static final Color _labelBase = Color.lerp(
+    JoyoColors.textPrimary,
+    JoyoColors.amber,
+    0.28,
+  )!;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -324,8 +339,11 @@ class _BottlePainter extends CustomPainter {
         height: h * 0.045,
       ),
       Paint()
-        ..color = Color.lerp(JoyoColors.coral, Colors.white, 0.28)!
-            .withValues(alpha: 0.9),
+        ..color = Color.lerp(
+          JoyoColors.coral,
+          Colors.white,
+          0.28,
+        )!.withValues(alpha: 0.9),
     );
   }
 
@@ -381,12 +399,7 @@ class _BottlePainter extends CustomPainter {
     // due righe di stampa, appena accennate
     for (final t in const [0.35, 0.62]) {
       canvas.drawRect(
-        Rect.fromLTWH(
-          w * 0.2,
-          rect.top + rect.height * t,
-          w * 0.6,
-          h * 0.018,
-        ),
+        Rect.fromLTWH(w * 0.2, rect.top + rect.height * t, w * 0.6, h * 0.018),
         Paint()..color = JoyoColors.violet.withValues(alpha: 0.75),
       );
     }

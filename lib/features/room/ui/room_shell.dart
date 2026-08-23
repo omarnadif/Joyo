@@ -52,20 +52,35 @@ class RoomShell extends ConsumerWidget {
 
     final screen = switch (room.status) {
       RoomStatus.lobby => LobbyScreen(room: room),
-      RoomStatus.inGame => GameStageScreen(room: room),
-      RoomStatus.finished => GameStageScreen(room: room),
+      RoomStatus.inGame || RoomStatus.finished => GameStageScreen(room: room),
     };
 
     // Riconnessione in corso: mostro i dati che ho già, con un avviso
     // discreto, invece di sostituire tutto con uno spinner a schermo intero.
     final reconnecting = roomAsync.isLoading || roomAsync.hasError;
 
-    return Stack(
-      children: [
-        screen,
-        if (reconnecting)
-          const Positioned(top: 0, left: 0, right: 0, child: _ReconnectBanner()),
-      ],
+    final isHost = ref.watch(isHostProvider(session.roomId));
+
+    // Il back di sistema non deve sgusciare fuori dalla stanza senza passare
+    // da exitRoom: lascerebbe un giocatore fantasma nella lista degli altri.
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, _) {
+        if (didPop) return;
+        confirmExitRoom(context, ref, isHost: isHost, roomId: room.id);
+      },
+      child: Stack(
+        children: [
+          screen,
+          if (reconnecting)
+            const Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              child: _ReconnectBanner(),
+            ),
+        ],
+      ),
     );
   }
 
@@ -96,6 +111,7 @@ Future<void> exitRoom(
   required String roomId,
 }) async {
   final session = ref.read(roomSessionProvider);
+  final t = ref.read(tProvider);
   final messenger = ScaffoldMessenger.of(context);
   final repo = ref.read(roomRepositoryProvider);
 
@@ -107,7 +123,7 @@ Future<void> exitRoom(
     }
   } catch (e) {
     messenger.showSnackBar(
-      SnackBar(content: Text('Uscita non riuscita: $e')),
+      SnackBar(content: Text(t('lobby.exit_failed', {'detail': '$e'}))),
     );
     return;
   }

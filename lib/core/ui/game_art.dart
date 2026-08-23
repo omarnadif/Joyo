@@ -80,10 +80,7 @@ class _BlendMask extends SingleChildRenderObjectWidget {
       _RenderBlendMask(blendMode);
 
   @override
-  void updateRenderObject(
-    BuildContext context,
-    _RenderBlendMask renderObject,
-  ) {
+  void updateRenderObject(BuildContext context, _RenderBlendMask renderObject) {
     renderObject.blendMode = blendMode;
   }
 }
@@ -110,13 +107,22 @@ class _RenderBlendMask extends RenderProxyBox {
 // ---------------------------------------------------------------- strumenti
 
 /// Alone morbido: è l'elemento che tiene insieme tutte le illustrazioni.
-void _glow(Canvas canvas, Offset center, double radius, Color color, double alpha) {
+void _glow(
+  Canvas canvas,
+  Offset center,
+  double radius,
+  Color color,
+  double alpha,
+) {
   canvas.drawCircle(
     center,
     radius,
     Paint()
       ..shader = RadialGradient(
-        colors: [color.withValues(alpha: alpha), color.withValues(alpha: 0)],
+        colors: [
+          color.withValues(alpha: alpha),
+          color.withValues(alpha: 0),
+        ],
       ).createShader(Rect.fromCircle(center: center, radius: radius)),
   );
 }
@@ -228,10 +234,7 @@ class _NonHoMaiArt extends CustomPainter {
     // bollicine che salgono
     for (var i = 0; i < 3; i++) {
       canvas.drawCircle(
-        Offset(
-          c.dx + (i - 1) * w * 0.26,
-          top - s * (0.06 + i * 0.05),
-        ),
+        Offset(c.dx + (i - 1) * w * 0.26, top - s * (0.06 + i * 0.05)),
         2.5 + i.toDouble(),
         _fill(color, 0.8 - i * 0.2),
       );
@@ -404,8 +407,11 @@ class _BluffArt extends CustomPainter {
         )
         ..drawRRect(
           rect,
-          _stroke(bright ? color : JoyoColors.textSecondary, bright ? 3 : 2,
-              bright ? 1 : 0.5),
+          _stroke(
+            bright ? color : JoyoColors.textSecondary,
+            bright ? 3 : 2,
+            bright ? 1 : 0.5,
+          ),
         );
       // righe di testo accennate
       for (var i = 0; i < 3; i++) {

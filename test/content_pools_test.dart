@@ -33,19 +33,13 @@ void main() {
   }
 
   group('Preferisci', () {
-    checkList(
-      'coppie italiane (a)',
-      [for (final p in PreferisciPool.it) p.a],
-      100,
-    );
+    checkList('coppie italiane (a)', [
+      for (final p in PreferisciPool.it) p.a,
+    ], 100);
   });
 
   group('Non ho mai', () {
-    checkList(
-      'frasi',
-      [for (final e in NonHoMaiPool.entries) e.text],
-      150,
-    );
+    checkList('frasi', [for (final e in NonHoMaiPool.entries) e.text], 150);
 
     test('sono presenti entrambi i toni previsti', () {
       final tones = NonHoMaiPool.entries.map((e) => e.tone).toSet();
@@ -86,11 +80,9 @@ void main() {
   });
 
   group('Chi lo potrebbe fare', () {
-    checkList(
-      'domande',
-      [for (final e in ChiLoPotrebbeFarePool.entries) e.text],
-      150,
-    );
+    checkList('domande', [
+      for (final e in ChiLoPotrebbeFarePool.entries) e.text,
+    ], 150);
 
     test('sono tutte domande', () {
       for (final entry in ChiLoPotrebbeFarePool.entries) {
@@ -178,6 +170,46 @@ void main() {
         }
       });
     }
+  });
+
+  group('quota per modalità (italiano)', () {
+    // L'italiano è la lingua di riferimento: ogni modalità deve poter
+    // pescare almeno 150 contenuti per gioco, così nemmeno una partita
+    // lunghissima ricicla le stesse domande.
+    test('ogni modalità pesca almeno 150 contenuti per gioco', () {
+      for (final mode in GameMode.values) {
+        expect(
+          mode
+              .indexesFor(GameContent.nonHoMai(AppLocale.it), (e) => e.tone)
+              .length,
+          greaterThanOrEqualTo(150),
+          reason: 'Non ho mai in ${mode.id}',
+        );
+        expect(
+          mode
+              .indexesFor(
+                GameContent.chiLoPotrebbeFare(AppLocale.it),
+                (e) => e.tone,
+              )
+              .length,
+          greaterThanOrEqualTo(150),
+          reason: 'Chi lo potrebbe fare in ${mode.id}',
+        );
+        expect(
+          mode
+              .indexesFor(PreferisciPool.entries(AppLocale.it), (e) => e.tone)
+              .length,
+          greaterThanOrEqualTo(150),
+          reason: 'Preferisci in ${mode.id}',
+        );
+        expect(
+          GameContent.obblighi(AppLocale.it, mode.primaryTone).length +
+              GameContent.verita(AppLocale.it, mode.primaryTone).length,
+          greaterThanOrEqualTo(150),
+          reason: 'Obbligo o Verità in ${mode.id}',
+        );
+      }
+    });
   });
 
   group('Impostore', () {

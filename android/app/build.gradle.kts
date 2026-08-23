@@ -8,7 +8,9 @@ plugins {
 android {
     namespace = "com.mmih.joyo"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // I plugin (google_mobile_ads, in_app_purchase, ecc.) richiedono un NDK
+    // più nuovo di quello proposto dal Flutter Gradle Plugin.
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

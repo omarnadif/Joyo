@@ -5,10 +5,9 @@ import '../../room/data/models/player.dart';
 
 /// Nome + pallino colorato: si usa ovunque si mostri "chi ha votato cosa".
 class PlayerChip extends StatelessWidget {
-  const PlayerChip({required this.player, this.trailing, super.key});
+  const PlayerChip({required this.player, super.key});
 
   final Player player;
-  final String? trailing;
 
   @override
   Widget build(BuildContext context) {
@@ -30,15 +29,6 @@ class PlayerChip extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           Text(player.name, style: Theme.of(context).textTheme.bodySmall),
-          if (trailing != null) ...[
-            const SizedBox(width: 6),
-            Text(
-              trailing!,
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: JoyoColors.textSecondary,
-              ),
-            ),
-          ],
         ],
       ),
     );

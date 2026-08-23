@@ -312,7 +312,7 @@ class _Scene extends StatelessWidget {
   Widget build(BuildContext context) => switch (index) {
     0 => const _PhonesScene(),
     1 => const _CodeScene(),
-    2 => _GamesScene(t: t),
+    2 => const _GamesScene(),
     _ => _ModesScene(t: t),
   };
 }
@@ -424,9 +424,7 @@ class _CodeScene extends StatelessWidget {
 
 /// I sei giochi, disposti come nella home.
 class _GamesScene extends StatelessWidget {
-  const _GamesScene({required this.t});
-
-  final Translator t;
+  const _GamesScene();
 
   @override
   Widget build(BuildContext context) {

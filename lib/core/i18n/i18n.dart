@@ -42,19 +42,27 @@ const _prefsKey = 'joyo.locale';
 
 /// Lingua scelta dal gruppo. Parte da quella del telefono e resta salvata.
 class LocaleNotifier extends Notifier<AppLocale> {
+  bool _chosen = false;
+
   @override
   AppLocale build() {
     _restore();
-    return AppLocale.fromSystem(ui.PlatformDispatcher.instance.locale.toString());
+    return AppLocale.fromSystem(
+      ui.PlatformDispatcher.instance.locale.toString(),
+    );
   }
 
   Future<void> _restore() async {
     final prefs = await SharedPreferences.getInstance();
+    // Se nel frattempo l'utente ha già scelto una lingua (il selettore è la
+    // prima schermata dell'onboarding), il valore salvato non deve vincere.
+    if (_chosen || !ref.mounted) return;
     final saved = prefs.getString(_prefsKey);
     if (saved != null) state = AppLocale.fromCode(saved);
   }
 
   Future<void> set(AppLocale locale) async {
+    _chosen = true;
     state = locale;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_prefsKey, locale.code);

@@ -14,6 +14,7 @@ class OnboardingNotifier extends Notifier<bool?> {
 
   Future<void> _load() async {
     final prefs = await SharedPreferences.getInstance();
+    if (!ref.mounted) return;
     state = prefs.getBool(_key) ?? false;
   }
 
@@ -21,13 +22,6 @@ class OnboardingNotifier extends Notifier<bool?> {
     state = true;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, true);
-  }
-
-  /// Utile per rivedere la presentazione dalle impostazioni.
-  Future<void> reset() async {
-    state = false;
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_key, false);
   }
 }
 

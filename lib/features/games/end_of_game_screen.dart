@@ -15,9 +15,9 @@ import 'widgets/player_chip.dart';
 
 /// Podio di fine partita.
 ///
-/// I giochi senza punteggio (Preferisci, Non ho mai, Obbligo o Verità) non
-/// producono una classifica: in quel caso non invento vincitori e mostro
-/// semplicemente chi ha giocato.
+/// I giochi senza punteggio (Preferisci, Non ho mai, Chi lo potrebbe fare,
+/// Obbligo o Verità) non producono una classifica: in quel caso non invento
+/// vincitori e mostro semplicemente chi ha giocato.
 class EndOfGameScreen extends ConsumerWidget {
   const EndOfGameScreen({required this.room, super.key});
 
@@ -28,9 +28,9 @@ class EndOfGameScreen extends ConsumerWidget {
     final text = Theme.of(context).textTheme;
     final t = ref.watch(tProvider);
     final isHost = ref.watch(isHostProvider(room.id));
-    final players =
-        [...ref.watch(playersProvider(room.id)).value ?? const <Player>[]]
-          ..sort((a, b) => b.score.compareTo(a.score));
+    final players = [
+      ...ref.watch(playersProvider(room.id)).value ?? const <Player>[],
+    ]..sort((a, b) => b.score.compareTo(a.score));
     final game = GameCatalog.byId(room.activeGame);
     final hasScores = players.any((p) => p.score != 0);
 
@@ -70,11 +70,7 @@ class EndOfGameScreen extends ConsumerWidget {
                   for (var i = 0; i < others.length; i++)
                     Padding(
                       padding: const EdgeInsets.only(bottom: 10),
-                      child: _RankRow(
-                        position: i + 4,
-                        player: others[i],
-                        showScore: true,
-                      ),
+                      child: _RankRow(position: i + 4, player: others[i]),
                     ),
                 ] else ...[
                   Text(
@@ -104,9 +100,14 @@ class EndOfGameScreen extends ConsumerWidget {
               // L'interstiziale sta qui e solo qui: a partita finita, mentre
               // il gruppo commenta il podio. Durante il gioco non compare
               // nessuna pubblicità.
+              // Il repository va letto prima dell'attesa: durante
+              // l'interstiziale questo widget può uscire dall'albero e `ref`
+              // non sarebbe più utilizzabile.
               onPressed: () async {
-                await ref.read(adsServiceProvider).showInterstitial();
-                await ref.read(roomRepositoryProvider).backToLobby(room.id);
+                final ads = ref.read(adsServiceProvider);
+                final repo = ref.read(roomRepositoryProvider);
+                await ads.showInterstitial();
+                await repo.backToLobby(room.id);
               },
             )
           else
@@ -262,15 +263,10 @@ class _Step extends StatelessWidget {
 }
 
 class _RankRow extends StatelessWidget {
-  const _RankRow({
-    required this.position,
-    required this.player,
-    required this.showScore,
-  });
+  const _RankRow({required this.position, required this.player});
 
   final int position;
   final Player player;
-  final bool showScore;
 
   @override
   Widget build(BuildContext context) {
@@ -296,11 +292,10 @@ class _RankRow extends StatelessWidget {
           PlayerAvatar(player: player, size: 34),
           const SizedBox(width: 12),
           Expanded(child: Text(player.name, style: text.titleMedium)),
-          if (showScore)
-            Text(
-              '${player.score}',
-              style: text.titleMedium?.copyWith(color: JoyoColors.lime),
-            ),
+          Text(
+            '${player.score}',
+            style: text.titleMedium?.copyWith(color: JoyoColors.lime),
+          ),
         ],
       ),
     );

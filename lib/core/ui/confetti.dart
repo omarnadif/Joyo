@@ -10,9 +10,9 @@ import '../theme/app_colors.dart';
 /// pena farlo bene: pezzi che ruotano, cadono con gravità e svaniscono, nei
 /// colori degli avatar.
 class Confetti extends StatefulWidget {
-  const Confetti({this.pieces = 90, super.key});
+  const Confetti({super.key});
 
-  final int pieces;
+  static const int _pieceCount = 90;
 
   @override
   State<Confetti> createState() => _ConfettiState();
@@ -32,7 +32,7 @@ class _ConfettiState extends State<Confetti>
     final random = Random();
     final colors = JoyoColors.avatarPalette.values.toList();
     _pieces = [
-      for (var i = 0; i < widget.pieces; i++)
+      for (var i = 0; i < Confetti._pieceCount; i++)
         _Piece(
           origin: Offset(0.5 + (random.nextDouble() - 0.5) * 0.25, 0.42),
           velocity: Offset(

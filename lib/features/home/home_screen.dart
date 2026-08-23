@@ -101,15 +101,13 @@ class HomeScreen extends ConsumerWidget {
   }
 
   void _open(BuildContext context, JoinFlowMode mode) {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(builder: (_) => JoinFlowScreen(mode: mode)),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (_) => JoinFlowScreen(mode: mode)));
   }
 }
 
 /// Il marchio della home: la scritta al neon del logo, la stessa dell'icona.
-/// Prima era testo Space Grotesk con un punto accanto, e non aveva niente a
-/// che vedere con il marchio vero.
 /// Tenendola premuta si apre la diagnostica di connessione.
 class _Wordmark extends StatelessWidget {
   const _Wordmark({required this.t});
@@ -272,7 +270,7 @@ Future<void> showLanguagePicker(BuildContext context, WidgetRef ref) async {
             for (final locale in AppLocale.values)
               Padding(
                 padding: const EdgeInsets.only(bottom: 10),
-                child: LanguageRow(
+                child: _LanguageRow(
                   locale: locale,
                   selected: locale == current,
                   onTap: () => Navigator.of(context).pop(locale),
@@ -287,12 +285,11 @@ Future<void> showLanguagePicker(BuildContext context, WidgetRef ref) async {
   if (chosen != null) await ref.read(localeProvider.notifier).set(chosen);
 }
 
-class LanguageRow extends StatelessWidget {
-  const LanguageRow({
+class _LanguageRow extends StatelessWidget {
+  const _LanguageRow({
     required this.locale,
     required this.selected,
     required this.onTap,
-    super.key,
   });
 
   final AppLocale locale;

@@ -166,23 +166,30 @@ class _PlayingState extends ConsumerState<_Playing> {
     if (_upgradingRoundId == state.round.id) return;
     _upgradingRoundId = state.round.id;
 
-    final fakes = await ref
-        .read(aiContentRepositoryProvider)
-        .bluffStoryFakes(
-          roomId: state.room.id,
-          truth: truth,
-          tone: state.room.tone,
-        );
+    try {
+      final fakes = await ref
+          .read(aiContentRepositoryProvider)
+          .bluffStoryFakes(
+            roomId: state.room.id,
+            truth: truth,
+            tone: state.room.tone,
+          );
 
-    await state.repository.updateContent(
-      roundId: state.round.id,
-      content: {
-        ...state.content,
-        if (fakes != null) 'fake1': fakes[0],
-        if (fakes != null) 'fake2': fakes[1],
-        'ai': fakes != null,
-      },
-    );
+      await state.repository.updateContent(
+        roundId: state.round.id,
+        content: {
+          ...state.content,
+          if (fakes != null) 'fake1': fakes[0],
+          if (fakes != null) 'fake2': fakes[1],
+          'ai': fakes != null,
+        },
+      );
+    } catch (_) {
+      // Se la scrittura fallisce il round deve comunque partire con le bugie
+      // del pool: senza, tutti resterebbero sullo spinner "AI al lavoro"
+      // fino allo scadere del tempo. Il guard si riarma per poter riprovare.
+      _upgradingRoundId = null;
+    }
   }
 
   @override
@@ -224,7 +231,9 @@ class _PlayingState extends ConsumerState<_Playing> {
     // altrimenti chi ha già scelto si ritroverebbe opzioni diverse.
     if (!state.content.containsKey('ai')) {
       if (state.isHost) {
-        Future.microtask(() => _upgradeWithAi(state, truth));
+        Future.microtask(() {
+          if (mounted) _upgradeWithAi(state, truth);
+        });
       }
       return Center(
         child: Column(
@@ -236,9 +245,7 @@ class _PlayingState extends ConsumerState<_Playing> {
             const SizedBox(height: 6),
             Text(
               t('bluff.ai_working_sub', {'name': teller.name}),
-              style: text.bodySmall?.copyWith(
-                color: JoyoColors.textSecondary,
-              ),
+              style: text.bodySmall?.copyWith(color: JoyoColors.textSecondary),
             ),
           ],
         ),
@@ -303,7 +310,9 @@ class _PlayingState extends ConsumerState<_Playing> {
                     text: statements[i],
                     selected: myPick == i,
                     dimmed: myPick != null && myPick != i,
-                    onTap: state.hasVoted ? null : () => state.vote({'pick': i}),
+                    onTap: state.hasVoted
+                        ? null
+                        : () => state.vote({'pick': i}),
                   ),
                 ),
             ],
@@ -337,9 +346,9 @@ class _WriteTruthState extends State<_WriteTruth> {
   Future<void> _send() async {
     final value = _controller.text.trim();
     if (value.length < 8) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(widget.t('bluff.too_short'))),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(widget.t('bluff.too_short'))));
       return;
     }
     setState(() => _sending = true);
@@ -419,9 +428,7 @@ class _StatementCard extends StatelessWidget {
                 : JoyoColors.surface,
             borderRadius: BorderRadius.circular(22),
             border: Border.all(
-              color: selected || highlighted
-                  ? accent
-                  : JoyoColors.surfaceHigh,
+              color: selected || highlighted ? accent : JoyoColors.surfaceHigh,
               width: 2,
             ),
           ),

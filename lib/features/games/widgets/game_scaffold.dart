@@ -59,10 +59,7 @@ class GameScaffold extends ConsumerWidget {
           ),
           title: Column(
             children: [
-              Text(
-                title,
-                style: text.titleLarge?.copyWith(color: accent),
-              ),
+              Text(title, style: text.titleLarge?.copyWith(color: accent)),
               if (subtitle != null)
                 Text(
                   subtitle!.toUpperCase(),

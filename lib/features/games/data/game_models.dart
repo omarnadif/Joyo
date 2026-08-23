@@ -60,6 +60,4 @@ class Vote {
   final String roundId;
   final String playerId;
   final Map<String, dynamic> value;
-
-  String? get choice => value['choice'] as String?;
 }

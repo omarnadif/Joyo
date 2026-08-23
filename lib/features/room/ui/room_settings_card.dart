@@ -16,13 +16,25 @@ import '../state/room_providers.dart';
 class RoomSettingsCard extends ConsumerWidget {
   const RoomSettingsCard({required this.room, required this.isHost, super.key});
 
-  static const List<int> roundOptions = <int>[5, 10, 15, 20];
+  final Room room;
+  final bool isHost;
+
+  static const List<int> _roundOptions = <int>[5, 10, 15, 20];
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final text = Theme.of(context).textTheme;
     final t = ref.watch(tProvider);
     final repo = ref.read(roomRepositoryProvider);
+
+    // Le scritture partono senza attendere (il feedback è la card che si
+    // aggiorna via Realtime), ma un errore non deve sparire in silenzio.
+    void update(Future<void> Function() write) {
+      final messenger = ScaffoldMessenger.of(context);
+      write().catchError((Object _) {
+        messenger.showSnackBar(SnackBar(content: Text(t('common.retry'))));
+      });
+    }
 
     return GlowCard(
       accent: room.mode.color,
@@ -40,9 +52,17 @@ class RoomSettingsCard extends ConsumerWidget {
                     mode: mode,
                     label: t('mode.${mode.id}'),
                     selected: room.mode == mode,
+                    // Il tono va scritto insieme alla modalità: è quello che
+                    // la Edge Function AI legge da `rooms.tone`. Senza questo
+                    // i contenuti AI resterebbero soft anche in Hot.
                     onTap: isHost
-                        ? () =>
-                              repo.updateSettings(roomId: room.id, mode: mode.id)
+                        ? () => update(
+                            () => repo.updateSettings(
+                              roomId: room.id,
+                              mode: mode.id,
+                              tone: mode.primaryTone,
+                            ),
+                          )
                         : null,
                   ),
                 ),
@@ -65,14 +85,16 @@ class RoomSettingsCard extends ConsumerWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              for (final count in roundOptions)
+              for (final count in _roundOptions)
                 _RoundChip(
                   label: '$count',
                   selected: room.roundsTotal == count,
                   onTap: isHost
-                      ? () => repo.updateSettings(
-                          roomId: room.id,
-                          roundsTotal: count,
+                      ? () => update(
+                          () => repo.updateSettings(
+                            roomId: room.id,
+                            roundsTotal: count,
+                          ),
                         )
                       : null,
                 ),
@@ -82,9 +104,6 @@ class RoomSettingsCard extends ConsumerWidget {
       ),
     );
   }
-
-  final Room room;
-  final bool isHost;
 }
 
 class _ModeTile extends StatelessWidget {

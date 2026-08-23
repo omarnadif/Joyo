@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:joyo/core/i18n/app_locale.dart';
+import 'package:joyo/features/games/content_tone.dart';
 import 'package:joyo/features/games/preferisci/preferisci_pool.dart';
 
 void main() {
@@ -25,7 +26,8 @@ void main() {
 
   for (final locale in AppLocale.values) {
     test('${locale.label}: nessuna coppia duplicata o incoerente', () {
-      final pairs = PreferisciPool.pairs(locale);
+      // `entries` include anche il mazzo Hot: i vincoli valgono per tutti.
+      final pairs = PreferisciPool.entries(locale);
       final keys = pairs.map((p) => '${p.a}|${p.b}').toList();
       expect(keys.toSet().length, keys.length, reason: 'coppie duplicate');
 
@@ -38,4 +40,15 @@ void main() {
       }
     });
   }
+
+  test('il mazzo Hot italiano esiste e ha solo toni piccante/cattivo', () {
+    expect(PreferisciPool.hotIt.length, greaterThanOrEqualTo(20));
+    for (final pair in PreferisciPool.hotIt) {
+      expect(
+        pair.tone == ContentTone.piccante || pair.tone == ContentTone.cattivo,
+        isTrue,
+        reason: '${pair.a} | ${pair.b}',
+      );
+    }
+  });
 }

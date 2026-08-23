@@ -33,8 +33,7 @@ void main() {
             .allMatches(entry.value[locale.code] ?? '')
             .map((m) => m.group(1))
             .toSet();
-        if (found.length != reference.length ||
-            !found.containsAll(reference)) {
+        if (found.length != reference.length || !found.containsAll(reference)) {
           problems.add('${entry.key} → ${locale.code}: $found != $reference');
         }
       }

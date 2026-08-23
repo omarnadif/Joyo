@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -6,7 +8,6 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
 import '../../room/data/models/player.dart';
 import '../../room/data/models/room.dart';
-import '../engine/pool_picker.dart';
 import '../engine/round_game.dart';
 import '../widgets/player_chip.dart';
 import 'preferisci_pool.dart';
@@ -32,9 +33,19 @@ class PreferisciScreen extends ConsumerWidget {
       accent: accent,
       title: t('preferisci.name'),
       buildContent: (ctx) async {
-        final pairs = PreferisciPool.pairs(locale);
-        final index = pickPoolIndex(ctx.usedIndexes, pairs.length);
-        return {'a': pairs[index].a, 'b': pairs[index].b, 'i': index};
+        final entries = PreferisciPool.entries(locale);
+        final allowed = ctx.room.mode.indexesFor(entries, (e) => e.tone);
+        // Lingue senza coppie nei toni ammessi (Hot fuori dall'italiano):
+        // si ripiega su tutto il mazzo invece di lasciare il pool vuoto.
+        final candidates = allowed.isEmpty
+            ? [for (var i = 0; i < entries.length; i++) i]
+            : allowed;
+        final fresh = candidates
+            .where((i) => !ctx.usedIndexes.contains(i))
+            .toList();
+        final pool = fresh.isEmpty ? candidates : fresh;
+        final index = pool[Random().nextInt(pool.length)];
+        return {'a': entries[index].a, 'b': entries[index].b, 'i': index};
       },
       votingBuilder: (context, state) => _Voting(state: state, t: t),
       resultBuilder: (context, state) => _Result(state: state, t: t),

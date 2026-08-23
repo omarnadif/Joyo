@@ -69,8 +69,7 @@ class RoundGameState {
   bool get hasVoted => myValue != null;
   Map<String, dynamic> get content => round.content;
 
-  Player? playerById(String id) =>
-      players.where((p) => p.id == id).firstOrNull;
+  Player? playerById(String id) => players.where((p) => p.id == id).firstOrNull;
 
   /// Voti raggruppati per un campo di `value` (es. 'choice').
   List<Player> votersWhere(bool Function(Vote vote) test) => [
@@ -130,8 +129,10 @@ class RoundGame extends ConsumerStatefulWidget {
   /// giochi il cui punteggio si calcola sul server.
   final Future<void> Function(RoundGameState state)? onClose;
 
-  final Widget Function(BuildContext context, RoundGameState state) votingBuilder;
-  final Widget Function(BuildContext context, RoundGameState state) resultBuilder;
+  final Widget Function(BuildContext context, RoundGameState state)
+  votingBuilder;
+  final Widget Function(BuildContext context, RoundGameState state)
+  resultBuilder;
 
   final Duration votingWindow;
 
@@ -154,6 +155,12 @@ class _RoundGameState extends ConsumerState<RoundGame> {
   String? _closingRoundId;
   bool _creatingRound = false;
   int? _lastRequestedNumber;
+
+  /// Ultimo stato visto da `_drive`: il timer di scadenza legge questo invece
+  /// dello stato catturato alla sua creazione, altrimenti chiuderebbe il round
+  /// con i voti fotografati al primo build (quasi sempre zero) e i giochi che
+  /// assegnano punti al reveal non li darebbero mai sui round scaduti.
+  RoundGameState? _latestState;
 
   /// Voto toccato su questo telefono e non ancora tornato dal server.
   /// È legato al round: cambiando round si azzera da solo.
@@ -187,7 +194,9 @@ class _RoundGameState extends ConsumerState<RoundGame> {
       // In modalità Mix il gioco cambia a ogni round: la numerazione prosegue
       // da dove l'ha lasciata il gioco precedente, non riparte da 1.
       final nextNumber = (latest?.roundNumber ?? 0) + 1;
-      if (isHost) _createRound(room, players, nextNumber);
+      // Senza giocatori (lista ancora in caricamento) il round non si crea:
+      // nascerebbe senza narratore/bersaglio e resterebbe morto.
+      if (isHost && players.isNotEmpty) _createRound(room, players, nextNumber);
       return GameScaffold(
         title: widget.title,
         accent: widget.accent,
@@ -274,9 +283,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
                         : () => _advance(room, players, round),
                   )
                 : Text(
-                    isLastRound
-                        ? t('game.finished')
-                        : t('game.waiting_next'),
+                    isLastRound ? t('game.finished') : t('game.waiting_next'),
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: JoyoColors.textSecondary,
@@ -288,9 +295,9 @@ class _RoundGameState extends ConsumerState<RoundGame> {
                 'n': '${votes.length}',
                 'total': '${players.length}',
               }),
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: JoyoColors.textSecondary,
-              ),
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium?.copyWith(color: JoyoColors.textSecondary),
             ),
         ],
       ),
@@ -300,6 +307,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
   // ------------------------------------------------------------- motore host
 
   void _drive(RoundGameState state) {
+    _latestState = state;
     final round = state.round;
     if (round.isRevealed) {
       _revealTimer?.cancel();
@@ -323,7 +331,12 @@ class _RoundGameState extends ConsumerState<RoundGame> {
       final remaining = state.deadline.difference(DateTime.now().toUtc());
       _revealTimer = Timer(
         remaining.isNegative ? Duration.zero : remaining,
-        () => _closeRound(state),
+        () {
+          final latest = _latestState;
+          if (latest != null && latest.round.id == round.id) {
+            _closeRound(latest);
+          }
+        },
       );
     }
   }
@@ -379,8 +392,11 @@ class _RoundGameState extends ConsumerState<RoundGame> {
         );
       }
     } catch (e) {
-      _lastRequestedNumber = null; // così l'host può riprovare
-      _snack('Non riesco a creare il round: $e');
+      _snack(_t('game.create_failed', {'detail': '$e'}));
+      // Piccola pausa prima di riarmare il tentativo: senza, un errore
+      // persistente farebbe girare a vuoto crea → fallisci → ricrea.
+      await Future<void>.delayed(const Duration(seconds: 2));
+      _lastRequestedNumber = null;
     } finally {
       _creatingRound = false;
     }
@@ -405,24 +421,31 @@ class _RoundGameState extends ConsumerState<RoundGame> {
       }
     } catch (e) {
       _closingRoundId = null;
-      _snack('Non riesco a chiudere il round: $e');
+      _snack(_t('game.close_failed', {'detail': '$e'}));
     }
   }
 
-  Future<void> _vote(Round round, Player? me, Map<String, dynamic> value) async {
+  Future<void> _vote(
+    Round round,
+    Player? me,
+    Map<String, dynamic> value,
+  ) async {
     if (me == null) return;
     setState(() => _pending.set(round.id, value));
     try {
-      await ref.read(gameRepositoryProvider).castVote(
-        roundId: round.id,
-        playerId: me.id,
-        value: value,
-      );
+      await ref
+          .read(gameRepositoryProvider)
+          .castVote(roundId: round.id, playerId: me.id, value: value);
     } catch (e) {
-      if (mounted) setState(_pending.clear);
-      _snack('Risposta non registrata: $e');
+      // Si azzera solo il voto di questo round: se nel frattempo il round è
+      // cambiato, il voto in sospeso appartiene già a quello nuovo.
+      if (mounted) setState(() => _pending.clearRound(round.id));
+      _snack(_t('game.vote_failed', {'detail': '$e'}));
     }
   }
+
+  String _t(String key, Map<String, String> args) =>
+      ref.read(tProvider)(key, args);
 
   void _snack(String message) {
     if (!mounted) return;
