@@ -30,12 +30,13 @@ enum GameMode {
 
   /// Toni dei contenuti ammessi.
   ///
-  /// Hot esclude di proposito i contenuti soft: se hai scelto Hot non vuoi
-  /// ritrovarti "qual è il tuo film preferito".
+  /// Hot pesca solo dal mazzo cattivo: chi la sceglie non vuole né i contenuti
+  /// per tutti né quelli di mezzo, vuole solo i più spinti. Le altre due
+  /// modalità restano cumulative, così il tono sale senza vuoti.
   Set<String> get tones => switch (this) {
     GameMode.normale => const {ContentTone.soft},
     GameMode.mix => const {ContentTone.soft, ContentTone.piccante},
-    GameMode.hot => const {ContentTone.piccante, ContentTone.cattivo},
+    GameMode.hot => const {ContentTone.cattivo},
   };
 
   bool allows(String tone) => tones.contains(tone);

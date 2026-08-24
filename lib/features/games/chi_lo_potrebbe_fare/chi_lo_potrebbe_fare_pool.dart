@@ -1447,5 +1447,15 @@ class ChiLoPotrebbeFarePool {
     (text: 'Chi ha mentito dicendo "ero a casa a dormire"?', tone: ContentTone.cattivo),
     (text: 'Chi lo sta facendo di più in questo periodo, senza dirlo a nessuno?', tone: ContentTone.cattivo),
     (text: 'Chi finirà questa partita con un segreto in meno e un piano in più?', tone: ContentTone.cattivo),
+    (text: 'Chi accetterebbe di farsi urinare addosso per un milione di euro?', tone: ContentTone.cattivo),
+    (text: 'Chi ha già fatto sesso anale stasera prima di venire qui?', tone: ContentTone.cattivo),
+    (text: 'Chi in questo gruppo ha lo sperma più buono, a naso?', tone: ContentTone.cattivo),
+    (text: 'Chi si farebbe leccare il culo da un perfetto sconosciuto?', tone: ContentTone.cattivo),
+    (text: 'Chi ha sicuramente già provato a ingoiare la propria eiaculazione?', tone: ContentTone.cattivo),
+    (text: 'Chi scambierebbe il proprio partner per una notte di sesso estremo con un altro dei presenti?', tone: ContentTone.cattivo),
+    (text: 'Chi ha le mutande più bagnate in questo momento?', tone: ContentTone.cattivo),
+    (text: 'Chi farebbe sesso orale a chi ha alla sua sinistra per saltare un round?', tone: ContentTone.cattivo),
+    (text: 'Chi di noi finirebbe a fare un film porno se pagato bene?', tone: ContentTone.cattivo),
+    (text: 'Chi ha il sex toy più grosso in camera sua?', tone: ContentTone.cattivo),
   ];
 }

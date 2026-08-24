@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:joyo/features/games/content_tone.dart';
 import 'package:joyo/features/games/engine/pool_picker.dart';
+import 'package:joyo/features/games/game_mode.dart';
 
 void main() {
   test('non ripesca mai un contenuto già uscito, finché ce ne sono altri', () {
@@ -53,6 +54,22 @@ void main() {
       for (final tone in ContentTone.all) {
         expect(ContentTone.allows(ContentTone.cattivo, tone), isTrue);
       }
+    });
+  });
+
+  group('modalità', () {
+    // Le modalità non seguono la regola cumulativa dei toni: Hot è una scelta
+    // netta, non "tutto quello che c'è sopra il soft".
+    test('Normale solo soft, Mix soft e piccante, Hot solo cattivo', () {
+      expect(GameMode.normale.tones, {ContentTone.soft});
+      expect(GameMode.mix.tones, {ContentTone.soft, ContentTone.piccante});
+      expect(GameMode.hot.tones, {ContentTone.cattivo});
+    });
+
+    test('Hot non fa passare né soft né piccante', () {
+      expect(GameMode.hot.allows(ContentTone.soft), isFalse);
+      expect(GameMode.hot.allows(ContentTone.piccante), isFalse);
+      expect(GameMode.hot.allows(ContentTone.cattivo), isTrue);
     });
   });
 }

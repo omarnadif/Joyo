@@ -9,18 +9,30 @@ class ContentEs {
   static const List<({String text, String tone})>
   nonHoMai = <({String text, String tone})>[
     // ---------------------------------------------------------- soft
-    (text: 'fingido estar enfermo para no ir a trabajar', tone: ContentTone.soft),
+    (
+      text: 'fingido estar enfermo para no ir a trabajar',
+      tone: ContentTone.soft,
+    ),
     (text: 'dormido hasta media tarde', tone: ContentTone.soft),
     (text: 'comido algo que se había caído al suelo', tone: ContentTone.soft),
     (text: 'cantado en la ducha a todo volumen', tone: ContentTone.soft),
-    (text: 'fingido conocer una canción para no quedar mal', tone: ContentTone.soft),
-    (text: 'olvidado el cumpleaños de un amigo cercano', tone: ContentTone.soft),
+    (
+      text: 'fingido conocer una canción para no quedar mal',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'olvidado el cumpleaños de un amigo cercano',
+      tone: ContentTone.soft,
+    ),
     (text: 'perdido un vuelo o un tren', tone: ContentTone.soft),
     (text: 'viajado completamente solo', tone: ContentTone.soft),
     (text: 'roto un hueso', tone: ContentTone.soft),
     (text: 'hecho un tatuaje', tone: ContentTone.soft),
     (text: 'teñido el pelo de un color absurdo', tone: ContentTone.soft),
-    (text: 'enviado un mensaje a la persona equivocada', tone: ContentTone.soft),
+    (
+      text: 'enviado un mensaje a la persona equivocada',
+      tone: ContentTone.soft,
+    ),
     (text: 'reído de un chiste que no había entendido', tone: ContentTone.soft),
     (text: 'hablado solo en voz alta', tone: ContentTone.soft),
     (text: 'llorado viendo una película', tone: ContentTone.soft),
@@ -29,14 +41,20 @@ class ContentEs {
     (text: 'puesto piña en la pizza', tone: ContentTone.soft),
     (text: 'cocinado algo incomible', tone: ContentTone.soft),
     (text: 'quemado la cena sin remedio', tone: ContentTone.soft),
-    (text: 'dejado el fuego encendido al salir de casa', tone: ContentTone.soft),
+    (
+      text: 'dejado el fuego encendido al salir de casa',
+      tone: ContentTone.soft,
+    ),
     (text: 'dejado las llaves dentro de casa', tone: ContentTone.soft),
     (text: 'olvidado dónde había aparcado', tone: ContentTone.soft),
     (text: 'recibido una multa', tone: ContentTone.soft),
     (text: 'fingido no ver a un conocido por la calle', tone: ContentTone.soft),
     (text: 'inventado una excusa para no salir', tone: ContentTone.soft),
     (text: 'cancelado un plan en el último momento', tone: ContentTone.soft),
-    (text: 'dicho "llego en cinco minutos" desde el sofá', tone: ContentTone.soft),
+    (
+      text: 'dicho "llego en cinco minutos" desde el sofá',
+      tone: ContentTone.soft,
+    ),
     (text: 'ido a la compra con hambre', tone: ContentTone.soft),
     (text: 'comprado algo que no he usado nunca', tone: ContentTone.soft),
     (text: 'gastado demasiado en algo inútil', tone: ContentTone.soft),
@@ -49,7 +67,10 @@ class ContentEs {
     (text: 'dormido en una tienda de campaña', tone: ContentTone.soft),
     (text: 'nadado de noche en el mar', tone: ContentTone.soft),
     (text: 'tenido miedo a la oscuridad siendo adulto', tone: ContentTone.soft),
-    (text: 'dormido con la luz encendida siendo adulto', tone: ContentTone.soft),
+    (
+      text: 'dormido con la luz encendida siendo adulto',
+      tone: ContentTone.soft,
+    ),
     (text: 'gritado por una pesadilla', tone: ContentTone.soft),
     (text: 'caminado dormido', tone: ContentTone.soft),
     (text: 'roncado tan fuerte que desperté a alguien', tone: ContentTone.soft),
@@ -60,21 +81,45 @@ class ContentEs {
     (text: 'roto algo valioso sin decirlo', tone: ContentTone.soft),
     (text: 'culpado a otro de algo mío', tone: ContentTone.soft),
     (text: 'copiado en un examen', tone: ContentTone.soft),
-    (text: 'terminado un trabajo la última noche posible', tone: ContentTone.soft),
+    (
+      text: 'terminado un trabajo la última noche posible',
+      tone: ContentTone.soft,
+    ),
     (text: 'enviado un correo sin el adjunto', tone: ContentTone.soft),
-    (text: 'llamado a alguien por el nombre equivocado a la cara', tone: ContentTone.soft),
+    (
+      text: 'llamado a alguien por el nombre equivocado a la cara',
+      tone: ContentTone.soft,
+    ),
     (text: 'olvidado una contraseña importante', tone: ContentTone.soft),
     (text: 'buscado mi nombre en internet', tone: ContentTone.soft),
     (text: 'bloqueado a alguien en redes', tone: ContentTone.soft),
-    (text: 'publicado algo y borrado a los cinco minutos', tone: ContentTone.soft),
-    (text: 'fingido que el móvil estaba sin batería para no contestar', tone: ContentTone.soft),
-    (text: 'respondido días después fingiendo no haberlo visto', tone: ContentTone.soft),
+    (
+      text: 'publicado algo y borrado a los cinco minutos',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'fingido que el móvil estaba sin batería para no contestar',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'respondido días después fingiendo no haberlo visto',
+      tone: ContentTone.soft,
+    ),
     (text: 'usado el wifi del vecino sin permiso', tone: ContentTone.soft),
-    (text: 'cantado en el coche mirando a los demás conductores', tone: ContentTone.soft),
+    (
+      text: 'cantado en el coche mirando a los demás conductores',
+      tone: ContentTone.soft,
+    ),
     (text: 'bailado solo en un ascensor', tone: ContentTone.soft),
-    (text: 'hablado con un animal como si lo entendiera todo', tone: ContentTone.soft),
+    (
+      text: 'hablado con un animal como si lo entendiera todo',
+      tone: ContentTone.soft,
+    ),
     (text: 'puesto nombre a mi coche', tone: ContentTone.soft),
-    (text: 'hecho una promesa sabiendo que no la cumpliría', tone: ContentTone.soft),
+    (
+      text: 'hecho una promesa sabiendo que no la cumpliría',
+      tone: ContentTone.soft,
+    ),
     (text: 'mentido sobre mi edad', tone: ContentTone.soft),
     (text: 'exagerado cuánto me gustaba un regalo', tone: ContentTone.soft),
     (text: 'regalado algo que me habían regalado a mí', tone: ContentTone.soft),
@@ -82,843 +127,3213 @@ class ContentEs {
     (text: 'prestado dinero que nunca volví a ver', tone: ContentTone.soft),
     (text: 'pedido un aumento de sueldo', tone: ContentTone.soft),
     (text: 'cambiado de trabajo de un día para otro', tone: ContentTone.soft),
-    (text: 'hecho una entrevista para un puesto que no quería', tone: ContentTone.soft),
-    (text: 'comido comida rápida dos veces el mismo día', tone: ContentTone.soft),
+    (
+      text: 'hecho una entrevista para un puesto que no quería',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'comido comida rápida dos veces el mismo día',
+      tone: ContentTone.soft,
+    ),
     (text: 'desayunado helado', tone: ContentTone.soft),
     (text: 'hecho horas de cola por algo', tone: ContentTone.soft),
     (text: 'olvidado una cita importante', tone: ContentTone.soft),
     (text: 'discutido por el mando de la tele', tone: ContentTone.soft),
-    (text: 'visto la misma película más de cinco veces', tone: ContentTone.soft),
-    (text: 'aprendido de memoria una escena de una película', tone: ContentTone.soft),
+    (
+      text: 'visto la misma película más de cinco veces',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'aprendido de memoria una escena de una película',
+      tone: ContentTone.soft,
+    ),
     (text: 'perdido una apuesta absurda', tone: ContentTone.soft),
     (text: 'ganado a las cartas haciendo trampas', tone: ContentTone.soft),
     (text: 'roto la pantalla del móvil', tone: ContentTone.soft),
     (text: 'dejado el móvil olvidado en un bar', tone: ContentTone.soft),
-    (text: 'chocado contra una puerta de cristal limpísima', tone: ContentTone.soft),
-    (text: 'saludado a alguien que en realidad saludaba a la persona de detrás', tone: ContentTone.soft),
+    (
+      text: 'chocado contra una puerta de cristal limpísima',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          'saludado a alguien que en realidad saludaba a la persona de detrás',
+      tone: ContentTone.soft,
+    ),
     (text: 'tirado de una puerta que ponía "empujar"', tone: ContentTone.soft),
-    (text: 'buscado el móvil en pánico mientras lo tenía en la mano', tone: ContentTone.soft),
-    (text: 'llamado "mamá" a un profesor delante de todos', tone: ContentTone.soft),
-    (text: 'mandado un audio de cinco minutos para algo de diez segundos', tone: ContentTone.soft),
-    (text: 'escuchado mi voz en un audio y sentido vergüenza', tone: ContentTone.soft),
-    (text: 'fingido hablar por teléfono para no hablar con alguien', tone: ContentTone.soft),
+    (
+      text: 'buscado el móvil en pánico mientras lo tenía en la mano',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'llamado "mamá" a un profesor delante de todos',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'mandado un audio de cinco minutos para algo de diez segundos',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'escuchado mi voz en un audio y sentido vergüenza',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'fingido hablar por teléfono para no hablar con alguien',
+      tone: ContentTone.soft,
+    ),
     (text: 'aplaudido al aterrizar el avión', tone: ContentTone.soft),
     (text: 'reído en el peor momento posible', tone: ContentTone.soft),
-    (text: 'tropezado en público y seguido andando como si nada', tone: ContentTone.soft),
-    (text: 'puesto diez alarmas y las he ignorado todas', tone: ContentTone.soft),
-    (text: 'buscado mis síntomas en internet convencido de tener algo rarísimo', tone: ContentTone.soft),
+    (
+      text: 'tropezado en público y seguido andando como si nada',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'puesto diez alarmas y las he ignorado todas',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          'buscado mis síntomas en internet convencido de tener algo rarísimo',
+      tone: ContentTone.soft,
+    ),
     (text: 'llorado con un anuncio', tone: ContentTone.soft),
-    (text: 'respondido "igualmente" al camarero que me deseaba buen provecho', tone: ContentTone.soft),
-    (text: 'dormido en una videollamada con la cámara encendida', tone: ContentTone.soft),
-    (text: 'llevado la misma camiseta una semana seguida', tone: ContentTone.soft),
-    (text: 'olido una camiseta para decidir si aguantaba otro día', tone: ContentTone.soft),
-    (text: 'comido de pie directamente de la olla en la cocina', tone: ContentTone.soft),
-    (text: 'dicho "el último capítulo y a dormir" y visto amanecer', tone: ContentTone.soft),
-    (text: 'olvidado por qué había entrado en una habitación', tone: ContentTone.soft),
-    (text: 'reído solo recordando un ridículo de hace años', tone: ContentTone.soft),
-    (text: 'comido crema de cacao a cucharadas directamente del bote', tone: ContentTone.soft),
+    (
+      text: 'respondido "igualmente" al camarero que me deseaba buen provecho',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'dormido en una videollamada con la cámara encendida',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'llevado la misma camiseta una semana seguida',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'olido una camiseta para decidir si aguantaba otro día',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'comido de pie directamente de la olla en la cocina',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'dicho "el último capítulo y a dormir" y visto amanecer',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'olvidado por qué había entrado en una habitación',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'reído solo recordando un ridículo de hace años',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'comido crema de cacao a cucharadas directamente del bote',
+      tone: ContentTone.soft,
+    ),
     (text: 'llorado de hambre', tone: ContentTone.soft),
-    (text: 'pedido una pizza entera solo para mí y terminarla', tone: ContentTone.soft),
+    (
+      text: 'pedido una pizza entera solo para mí y terminarla',
+      tone: ContentTone.soft,
+    ),
     (text: 'discutido a gritos con el GPS', tone: ContentTone.soft),
-    (text: 'releído veinte veces un mensaje antes de enviarlo', tone: ContentTone.soft),
-    (text: 'pedido "solo las puntas" y salido irreconocible de la peluquería', tone: ContentTone.soft),
+    (
+      text: 'releído veinte veces un mensaje antes de enviarlo',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'pedido "solo las puntas" y salido irreconocible de la peluquería',
+      tone: ContentTone.soft,
+    ),
     (text: 'perdido horas viendo vídeos de animales', tone: ContentTone.soft),
-    (text: 'convencido a alguien de algo inventado por broma', tone: ContentTone.soft),
+    (
+      text: 'convencido a alguien de algo inventado por broma',
+      tone: ContentTone.soft,
+    ),
     (text: 'fingido trabajar cuando llegaba el jefe', tone: ContentTone.soft),
-    (text: 'mandado "ok" solo para cerrar una discusión', tone: ContentTone.soft),
+    (
+      text: 'mandado "ok" solo para cerrar una discusión',
+      tone: ContentTone.soft,
+    ),
     (text: 'puesto el pijama a las seis de la tarde', tone: ContentTone.soft),
     (text: 'saltado el gimnasio para irme a comer', tone: ContentTone.soft),
-    (text: 'aplazado la dieta "al lunes" durante meses', tone: ContentTone.soft),
+    (
+      text: 'aplazado la dieta "al lunes" durante meses',
+      tone: ContentTone.soft,
+    ),
     (text: 'usado la bicicleta estática de perchero', tone: ContentTone.soft),
-    (text: 'dicho "nos vemos pronto" esperando no volver a ver a esa persona', tone: ContentTone.soft),
+    (
+      text: 'dicho "nos vemos pronto" esperando no volver a ver a esa persona',
+      tone: ContentTone.soft,
+    ),
     (text: 'hablado con las plantas de casa', tone: ContentTone.soft),
-    (text: 'culpado al perro de algo que había hecho yo', tone: ContentTone.soft),
-    (text: 'terminado las palomitas antes de que empezara la película', tone: ContentTone.soft),
+    (
+      text: 'culpado al perro de algo que había hecho yo',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'terminado las palomitas antes de que empezara la película',
+      tone: ContentTone.soft,
+    ),
     (text: 'escondido los dulces para no compartirlos', tone: ContentTone.soft),
-    (text: 'abierto la nevera diez veces esperando encontrar comida nueva', tone: ContentTone.soft),
-    (text: 'usado la excusa "mañana madrugo" para irme de una fiesta', tone: ContentTone.soft),
-    (text: 'envuelto un regalo cinco minutos antes de entregarlo', tone: ContentTone.soft),
-    (text: 'pedido comida a domicilio tras olvidar descongelar la cena', tone: ContentTone.soft),
-    (text: 'leído solo el titular y opinado como un experto', tone: ContentTone.soft),
-    (text: 'animado a un equipo solo porque iba ganando', tone: ContentTone.soft),
-    (text: 'acabado empapado por no mirar la previsión del tiempo', tone: ContentTone.soft),
+    (
+      text: 'abierto la nevera diez veces esperando encontrar comida nueva',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'usado la excusa "mañana madrugo" para irme de una fiesta',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'envuelto un regalo cinco minutos antes de entregarlo',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'pedido comida a domicilio tras olvidar descongelar la cena',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'leído solo el titular y opinado como un experto',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'animado a un equipo solo porque iba ganando',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'acabado empapado por no mirar la previsión del tiempo',
+      tone: ContentTone.soft,
+    ),
     (text: 'empezado diez libros sin terminar ninguno', tone: ContentTone.soft),
     (text: 'dado like a una publicación sin leerla', tone: ContentTone.soft),
     (text: 'hecho cien fotos iguales para elegir una', tone: ContentTone.soft),
-    (text: 'pedido consejo sobre una foto y luego ignorado la respuesta', tone: ContentTone.soft),
-    (text: 'usado un filtro en todas las fotos que he publicado', tone: ContentTone.soft),
+    (
+      text: 'pedido consejo sobre una foto y luego ignorado la respuesta',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'usado un filtro en todas las fotos que he publicado',
+      tone: ContentTone.soft,
+    ),
     (text: 'visto mis propias historias más que nadie', tone: ContentTone.soft),
-    (text: 'bailado en mi cuarto como si estuviera en un concierto', tone: ContentTone.soft),
-    (text: 'ensayado un discurso importante delante del espejo', tone: ContentTone.soft),
-    (text: 'ganado una discusión imaginaria en la ducha', tone: ContentTone.soft),
+    (
+      text: 'bailado en mi cuarto como si estuviera en un concierto',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'ensayado un discurso importante delante del espejo',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'ganado una discusión imaginaria en la ducha',
+      tone: ContentTone.soft,
+    ),
     (text: 'puesto diez apodos distintos a mi mascota', tone: ContentTone.soft),
-    (text: 'comido el último trozo sin preguntar a nadie', tone: ContentTone.soft),
-    (text: 'bebido directamente del cartón delante de la nevera', tone: ContentTone.soft),
-    (text: 'llevado calcetines desparejados esperando que nadie lo notara', tone: ContentTone.soft),
+    (
+      text: 'comido el último trozo sin preguntar a nadie',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'bebido directamente del cartón delante de la nevera',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'llevado calcetines desparejados esperando que nadie lo notara',
+      tone: ContentTone.soft,
+    ),
     (text: 'dormido con un peluche siendo adulto', tone: ContentTone.soft),
-    (text: 'mirado detrás de las cortinas después de una peli de miedo', tone: ContentTone.soft),
-    (text: 'subido las escaleras corriendo tras apagar la luz', tone: ContentTone.soft),
-    (text: 'celebrado un aparcamiento perfecto a la primera', tone: ContentTone.soft),
+    (
+      text: 'mirado detrás de las cortinas después de una peli de miedo',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'subido las escaleras corriendo tras apagar la luz',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'celebrado un aparcamiento perfecto a la primera',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'declarado la guerra a un mosquito a las tres de la mañana',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'puesto el aire acondicionado para dormir bajo el edredón',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: 'escrito una lista de tareas y no hecho ni una',
+      tone: ContentTone.soft,
+    ),
+    (text: 'fingido haber leído un libro famoso', tone: ContentTone.soft),
+    (
+      text: 'perdido el hilo de lo que estaba contando yo mismo',
+      tone: ContentTone.soft,
+    ),
     // ------------------------------------------------------ piccante
     (text: 'besado a alguien la primera noche', tone: ContentTone.piccante),
-    (text: 'estado colado por alguien de esta sala', tone: ContentTone.piccante),
-    (text: 'estado colado por la pareja de un amigo', tone: ContentTone.piccante),
+    (
+      text: 'estado colado por alguien de esta sala',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'estado colado por la pareja de un amigo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'escrito a un ex de madrugada', tone: ContentTone.piccante),
-    (text: 'contestado a un ex después de meses de silencio', tone: ContentTone.piccante),
-    (text: 'fingido dormir para evitar un momento de intimidad', tone: ContentTone.piccante),
-    (text: 'mentido a alguien con quien estaba saliendo', tone: ContentTone.piccante),
+    (
+      text: 'contestado a un ex después de meses de silencio',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'fingido dormir para evitar un momento de intimidad',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'mentido a alguien con quien estaba saliendo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'mirado el móvil de mi pareja', tone: ContentTone.piccante),
     (text: 'tenido dos citas el mismo día', tone: ContentTone.piccante),
     (text: 'besado a dos personas la misma noche', tone: ContentTone.piccante),
-    (text: 'dicho "te quiero" sin sentirlo de verdad', tone: ContentTone.piccante),
+    (
+      text: 'dicho "te quiero" sin sentirlo de verdad',
+      tone: ContentTone.piccante,
+    ),
     (text: 'cortado una relación por mensaje', tone: ContentTone.piccante),
     (text: 'vuelto con un ex', tone: ContentTone.piccante),
     (text: 'mantenido una relación en secreto', tone: ContentTone.piccante),
     (text: 'flirteado para conseguir algo', tone: ContentTone.piccante),
     (text: 'usado una app de citas', tone: ContentTone.piccante),
-    (text: 'usado una foto de perfil de hace diez años', tone: ContentTone.piccante),
-    (text: 'quedado en persona con alguien conocido por internet', tone: ContentTone.piccante),
-    (text: 'dedicado una canción a alguien presente en esta sala', tone: ContentTone.piccante),
-    (text: 'dormido en casa de alguien recién conocido', tone: ContentTone.piccante),
-    (text: 'perdido la cuenta de lo que había bebido', tone: ContentTone.piccante),
-    (text: 'hecho algo vergonzoso estando borracho', tone: ContentTone.piccante),
-    (text: 'arrepentido por la mañana de los mensajes de la noche anterior', tone: ContentTone.piccante),
+    (
+      text: 'usado una foto de perfil de hace diez años',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'quedado en persona con alguien conocido por internet',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dedicado una canción a alguien presente en esta sala',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dormido en casa de alguien recién conocido',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'perdido la cuenta de lo que había bebido',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'hecho algo vergonzoso estando borracho',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'arrepentido por la mañana de los mensajes de la noche anterior',
+      tone: ContentTone.piccante,
+    ),
     (text: 'olvidado trozos de una noche entera', tone: ContentTone.piccante),
-    (text: 'cantado por la calle a las cuatro de la mañana', tone: ContentTone.piccante),
+    (
+      text: 'cantado por la calle a las cuatro de la mañana',
+      tone: ContentTone.piccante,
+    ),
     (text: 'bañado sin bañador', tone: ContentTone.piccante),
-    (text: 'paseado por casa sin ropa con visitas dentro', tone: ContentTone.piccante),
+    (
+      text: 'paseado por casa sin ropa con visitas dentro',
+      tone: ContentTone.piccante,
+    ),
     (text: 'olvidado cerrar la puerta del baño', tone: ContentTone.piccante),
-    (text: 'soltado una mentira enorme en una primera cita', tone: ContentTone.piccante),
+    (
+      text: 'soltado una mentira enorme en una primera cita',
+      tone: ContentTone.piccante,
+    ),
     (text: 'fingido estar soltero', tone: ContentTone.piccante),
-    (text: 'espiado el perfil de la nueva pareja de mi ex', tone: ContentTone.piccante),
+    (
+      text: 'espiado el perfil de la nueva pareja de mi ex',
+      tone: ContentTone.piccante,
+    ),
     (text: 'discutido en público con una pareja', tone: ContentTone.piccante),
-    (text: 'hecho las paces con un beso sin aclarar nada', tone: ContentTone.piccante),
+    (
+      text: 'hecho las paces con un beso sin aclarar nada',
+      tone: ContentTone.piccante,
+    ),
     (text: 'besado a alguien por una apuesta', tone: ContentTone.piccante),
-    (text: 'arrepentido de una respuesta dada en verdad o reto', tone: ContentTone.piccante),
-    (text: 'oído a los vecinos haciéndolo a través de la pared', tone: ContentTone.piccante),
+    (
+      text: 'arrepentido de una respuesta dada en verdad o reto',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'oído a los vecinos haciéndolo a través de la pared',
+      tone: ContentTone.piccante,
+    ),
     (text: 'tenido un flirteo en el trabajo', tone: ContentTone.piccante),
     (text: 'escrito al jefe cosas que no debería', tone: ContentTone.piccante),
     (text: 'dejado plantada una cita sin avisar', tone: ContentTone.piccante),
-    (text: 'dicho "¿subes a tomar algo?" sabiendo perfectamente lo que quería decir', tone: ContentTone.piccante),
+    (
+      text:
+          'dicho "¿subes a tomar algo?" sabiendo perfectamente lo que quería decir',
+      tone: ContentTone.piccante,
+    ),
     (text: 'besado a alguien en el baño de un bar', tone: ContentTone.piccante),
-    (text: 'pasado una película entera en el cine sin ver ni una escena', tone: ContentTone.piccante),
-    (text: 'guardado una foto vergonzosa de un amigo', tone: ContentTone.piccante),
-    (text: 'llegado tres años atrás cotilleando el perfil de alguien', tone: ContentTone.piccante),
-    (text: 'respondido a una historia solo para hacerme notar', tone: ContentTone.piccante),
-    (text: 'mentido sobre dónde estaba pasando la noche', tone: ContentTone.piccante),
-    (text: 'dicho que estaba en casa estando fuera', tone: ContentTone.piccante),
+    (
+      text: 'pasado una película entera en el cine sin ver ni una escena',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'guardado una foto vergonzosa de un amigo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'llegado tres años atrás cotilleando el perfil de alguien',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'respondido a una historia solo para hacerme notar',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'mentido sobre dónde estaba pasando la noche',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dicho que estaba en casa estando fuera',
+      tone: ContentTone.piccante,
+    ),
     (text: 'escondido una relación a mi familia', tone: ContentTone.piccante),
-    (text: 'besado a alguien cuyo nombre no recordaba', tone: ContentTone.piccante),
-    (text: 'pedido a un amigo que me llamara para escapar de una cita', tone: ContentTone.piccante),
-    (text: 'salido de un bar a escondidas para no despedirme', tone: ContentTone.piccante),
-    (text: 'terminado la noche en un sitio que no recuerdo', tone: ContentTone.piccante),
-    (text: 'dado mi número a alguien recién conocido en un bar', tone: ContentTone.piccante),
+    (
+      text: 'besado a alguien cuyo nombre no recordaba',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'pedido a un amigo que me llamara para escapar de una cita',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'salido de un bar a escondidas para no despedirme',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'terminado la noche en un sitio que no recuerdo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dado mi número a alguien recién conocido en un bar',
+      tone: ContentTone.piccante,
+    ),
     (text: 'mentido durante esta partida', tone: ContentTone.piccante),
-    (text: 'hecho ghosting a alguien sin explicaciones', tone: ContentTone.piccante),
+    (
+      text: 'hecho ghosting a alguien sin explicaciones',
+      tone: ContentTone.piccante,
+    ),
     (text: 'releído un chat antiguo por nostalgia', tone: ContentTone.piccante),
-    (text: 'dado like a una foto de hace tres años en pleno cotilleo nocturno', tone: ContentTone.piccante),
-    (text: 'inventado una pareja imaginaria para quitarme a alguien de encima', tone: ContentTone.piccante),
-    (text: 'ensayado frases para ligar delante del espejo', tone: ContentTone.piccante),
+    (
+      text: 'dado like a una foto de hace tres años en pleno cotilleo nocturno',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'inventado una pareja imaginaria para quitarme a alguien de encima',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'ensayado frases para ligar delante del espejo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'besado al ex de un amigo', tone: ContentTone.piccante),
-    (text: 'pedido a un amigo que investigara si le gustaba a alguien', tone: ContentTone.piccante),
-    (text: 'vomitado en un sitio absurdo durante una fiesta', tone: ContentTone.piccante),
+    (
+      text: 'pedido a un amigo que investigara si le gustaba a alguien',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'vomitado en un sitio absurdo durante una fiesta',
+      tone: ContentTone.piccante,
+    ),
     (text: 'tenido un rollo de una noche', tone: ContentTone.piccante),
-    (text: 'hecho el paseo de la vergüenza con la ropa de la noche anterior', tone: ContentTone.piccante),
-    (text: 'mandado una foto que jamás enviaría a mis padres', tone: ContentTone.piccante),
-    (text: 'tenido un sueño subido de tono con alguien de esta sala', tone: ContentTone.piccante),
-    (text: 'flirteado con el personal para que me invitaran a algo', tone: ContentTone.piccante),
-    (text: 'pasado la noche fuera mintiendo sobre dónde estaba', tone: ContentTone.piccante),
-    (text: 'guardado un contacto con nombre falso para que no me pillaran', tone: ContentTone.piccante),
-    (text: 'besado a alguien solo porque era medianoche en Nochevieja', tone: ContentTone.piccante),
+    (
+      text: 'hecho el paseo de la vergüenza con la ropa de la noche anterior',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'mandado una foto que jamás enviaría a mis padres',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido un sueño subido de tono con alguien de esta sala',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'flirteado con el personal para que me invitaran a algo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'pasado la noche fuera mintiendo sobre dónde estaba',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'guardado un contacto con nombre falso para que no me pillaran',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'besado a alguien solo porque era medianoche en Nochevieja',
+      tone: ContentTone.piccante,
+    ),
     (text: 'hecho sexting hasta altas horas', tone: ContentTone.piccante),
-    (text: 'empezado yo una conversación que acabó en sexting', tone: ContentTone.piccante),
-    (text: 'besado a alguien mucho mayor o mucho más joven que yo', tone: ContentTone.piccante),
-    (text: 'tenido una fantasía con un compañero de trabajo', tone: ContentTone.piccante),
+    (
+      text: 'empezado yo una conversación que acabó en sexting',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'besado a alguien mucho mayor o mucho más joven que yo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido una fantasía con un compañero de trabajo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'dado un masaje que acabó en otra cosa', tone: ContentTone.piccante),
-    (text: 'besado a alguien antes de una hora de conocerlo', tone: ContentTone.piccante),
-    (text: 'comprado ropa interior pensando en quién la iba a ver', tone: ContentTone.piccante),
-    (text: 'flirteado en el gimnasio en vez de entrenar', tone: ContentTone.piccante),
-    (text: 'tenido un romance de verano que terminó con las vacaciones', tone: ContentTone.piccante),
+    (
+      text: 'besado a alguien antes de una hora de conocerlo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'comprado ropa interior pensando en quién la iba a ver',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'flirteado en el gimnasio en vez de entrenar',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido un romance de verano que terminó con las vacaciones',
+      tone: ContentTone.piccante,
+    ),
     (text: 'besado a alguien en un ascensor', tone: ContentTone.piccante),
     (text: 'compartido ducha con otra persona', tone: ContentTone.piccante),
-    (text: 'compartido cama con un amigo preguntándome si pasaría algo', tone: ContentTone.piccante),
-    (text: 'besado a alguien durante un juego como este', tone: ContentTone.piccante),
-    (text: 'mandado mi ubicación a un amigo antes de una cita a ciegas', tone: ContentTone.piccante),
-    (text: 'intentado ligar con una frase sacada de internet', tone: ContentTone.piccante),
-    (text: 'hecho un cumplido atrevido a un desconocido', tone: ContentTone.piccante),
-    (text: 'recibido unas calabazas delante de todos', tone: ContentTone.piccante),
+    (
+      text: 'compartido cama con un amigo preguntándome si pasaría algo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'besado a alguien durante un juego como este',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'mandado mi ubicación a un amigo antes de una cita a ciegas',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'intentado ligar con una frase sacada de internet',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'hecho un cumplido atrevido a un desconocido',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'recibido unas calabazas delante de todos',
+      tone: ContentTone.piccante,
+    ),
     (text: 'tenido sexo en la primera cita', tone: ContentTone.piccante),
     (text: 'fingido un orgasmo', tone: ContentTone.piccante),
-    (text: 'hecho sexting con alguien conocido hacía menos de veinticuatro horas', tone: ContentTone.piccante),
+    (
+      text:
+          'hecho sexting con alguien conocido hacía menos de veinticuatro horas',
+      tone: ContentTone.piccante,
+    ),
     (text: 'pedido yo primero una foto atrevida', tone: ContentTone.piccante),
-    (text: 'recibido una foto subida de tono sin pedirla y respondido con un cumplido', tone: ContentTone.piccante),
-    (text: 'empañado los cristales de un coche, y no por el frío', tone: ContentTone.piccante),
-    (text: 'tenido sexo en casa de desconocidos durante una fiesta', tone: ContentTone.piccante),
-    (text: 'pasado la noche con alguien y descubierto que no sabía su nombre', tone: ContentTone.piccante),
-    (text: 'cruzado a un conocido en pleno paseo de la vergüenza y saludado como si nada', tone: ContentTone.piccante),
-    (text: 'besado a alguien solo porque la noche lo pedía', tone: ContentTone.piccante),
-    (text: 'besado a alguien en los primeros diez minutos de la primera cita', tone: ContentTone.piccante),
+    (
+      text:
+          'recibido una foto subida de tono sin pedirla y respondido con un cumplido',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'empañado los cristales de un coche, y no por el frío',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido sexo en casa de desconocidos durante una fiesta',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'pasado la noche con alguien y descubierto que no sabía su nombre',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'cruzado a un conocido en pleno paseo de la vergüenza y saludado como si nada',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'besado a alguien solo porque la noche lo pedía',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'besado a alguien en los primeros diez minutos de la primera cita',
+      tone: ContentTone.piccante,
+    ),
     (text: 'besado a una persona de mi mismo sexo', tone: ContentTone.piccante),
-    (text: 'deseado a alguien presente en esta sala', tone: ContentTone.piccante),
+    (
+      text: 'deseado a alguien presente en esta sala',
+      tone: ContentTone.piccante,
+    ),
     (text: 'tenido un sueño erótico con un amigo', tone: ContentTone.piccante),
-    (text: 'imaginado un futuro entero con alguien recién conocido', tone: ContentTone.piccante),
-    (text: 'tenido una relación solo física durante más de seis meses', tone: ContentTone.piccante),
-    (text: 'dicho "te quiero" solo para salvar la noche', tone: ContentTone.piccante),
-    (text: 'hecho las paces en la cama tras una pelea empezada a propósito', tone: ContentTone.piccante),
-    (text: 'flirteado con dos personas a la vez la misma noche', tone: ContentTone.piccante),
-    (text: 'dado un número falso a alguien que intentaba ligar conmigo', tone: ContentTone.piccante),
+    (
+      text: 'imaginado un futuro entero con alguien recién conocido',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido una relación solo física durante más de seis meses',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dicho "te quiero" solo para salvar la noche',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'hecho las paces en la cama tras una pelea empezada a propósito',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'flirteado con dos personas a la vez la misma noche',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dado un número falso a alguien que intentaba ligar conmigo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'ligado en el gimnasio', tone: ContentTone.piccante),
     (text: 'ligado en una boda', tone: ContentTone.piccante),
     (text: 'ligado en el supermercado', tone: ContentTone.piccante),
-    (text: 'besado a mi mejor amigo o a mi mejor amiga', tone: ContentTone.piccante),
-    (text: 'sentido atracción por la pareja de un amigo', tone: ContentTone.piccante),
-    (text: 'tenido sexo con un compañero de trabajo', tone: ContentTone.piccante),
-    (text: 'tenido una historia con alguien mucho mayor que yo', tone: ContentTone.piccante),
+    (
+      text: 'besado a mi mejor amigo o a mi mejor amiga',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'sentido atracción por la pareja de un amigo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido sexo con un compañero de trabajo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido una historia con alguien mucho mayor que yo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'mentido sobre mi body count', tone: ContentTone.piccante),
-    (text: 'olvidado el nombre de alguien estando en la cama', tone: ContentTone.piccante),
-    (text: 'tenido sexo con los calcetines puestos', tone: ContentTone.piccante),
-    (text: 'reído en pleno momento íntimo estropeándolo todo', tone: ContentTone.piccante),
-    (text: 'mandado un mensaje subido de tono a la persona equivocada', tone: ContentTone.piccante),
-    (text: 'releído mi propio sexting y sentido orgullo', tone: ContentTone.piccante),
-    (text: 'creado una playlist especial para las noches acompañado', tone: ContentTone.piccante),
-    (text: 'mirado el móvil mientras la otra persona dormía a mi lado', tone: ContentTone.piccante),
-    (text: 'buscado en internet cómo mejorar en la cama', tone: ContentTone.piccante),
-    (text: 'pedido a un amigo una opinión sincera sobre mis dotes', tone: ContentTone.piccante),
-    (text: 'visto una película para adultos en compañía', tone: ContentTone.piccante),
-    (text: 'comprado lencería para una noche concreta', tone: ContentTone.piccante),
+    (
+      text: 'olvidado el nombre de alguien estando en la cama',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido sexo con los calcetines puestos',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'reído en pleno momento íntimo estropeándolo todo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'mandado un mensaje subido de tono a la persona equivocada',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'releído mi propio sexting y sentido orgullo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'creado una playlist especial para las noches acompañado',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'mirado el móvil mientras la otra persona dormía a mi lado',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'buscado en internet cómo mejorar en la cama',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'pedido a un amigo una opinión sincera sobre mis dotes',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'visto una película para adultos en compañía',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'comprado lencería para una noche concreta',
+      tone: ContentTone.piccante,
+    ),
     (text: 'tenido sexo en la ducha', tone: ContentTone.piccante),
-    (text: 'tenido sexo en el sofá de otra persona', tone: ContentTone.piccante),
-    (text: 'hecho ruido a propósito para que nos oyeran', tone: ContentTone.piccante),
-    (text: 'tenido que esconderme a toda prisa cuando llegaba alguien', tone: ContentTone.piccante),
-    (text: 'vestido a toda prisa y salido con la camiseta equivocada', tone: ContentTone.piccante),
-    (text: 'dejado marcas visibles en el cuello de alguien', tone: ContentTone.piccante),
-    (text: 'tapado una marca en el cuello con maquillaje o una bufanda', tone: ContentTone.piccante),
-    (text: 'dicho a una pareja que era la mejor, mintiendo', tone: ContentTone.piccante),
-    (text: 'puesto nota a una noche contándosela a los amigos al día siguiente', tone: ContentTone.piccante),
-    (text: 'hecho rankings de mis ex con los amigos', tone: ContentTone.piccante),
-    (text: 'reencontrado a un rollo de una noche en el trabajo', tone: ContentTone.piccante),
-    (text: 'usado una app de citas sentado al lado de mis padres', tone: ContentTone.piccante),
-    (text: 'tenido un match al que no escribí jamás por miedo', tone: ContentTone.piccante),
+    (
+      text: 'tenido sexo en el sofá de otra persona',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'hecho ruido a propósito para que nos oyeran',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido que esconderme a toda prisa cuando llegaba alguien',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'vestido a toda prisa y salido con la camiseta equivocada',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dejado marcas visibles en el cuello de alguien',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tapado una marca en el cuello con maquillaje o una bufanda',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dicho a una pareja que era la mejor, mintiendo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'puesto nota a una noche contándosela a los amigos al día siguiente',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'hecho rankings de mis ex con los amigos',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'reencontrado a un rollo de una noche en el trabajo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'usado una app de citas sentado al lado de mis padres',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenido un match al que no escribí jamás por miedo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'dado el primer paso y llevado un no', tone: ContentTone.piccante),
-    (text: 'besado a alguien bajo la lluvia sintiéndome en una película', tone: ContentTone.piccante),
-    (text: 'organizado un encuentro "casual" con mi crush', tone: ContentTone.piccante),
-    (text: 'ofrecido un masaje con segundas intenciones evidentes', tone: ContentTone.piccante),
-    (text: 'aceptado un masaje sabiendo perfectamente cómo iba a acabar', tone: ContentTone.piccante),
-    (text: 'desayunado en la cama con alguien conocido la noche anterior', tone: ContentTone.piccante),
-    (text: 'guardado un cepillo de dientes de reserva para invitados de una noche', tone: ContentTone.piccante),
-    (text: 'coqueteado por mensajes durante una cena familiar entera', tone: ContentTone.piccante),
-    (text: 'guardado el chat de un ex solo para releerlo de vez en cuando', tone: ContentTone.piccante),
-    (text: 'escrito y borrado el mismo mensaje diez veces esta semana', tone: ContentTone.piccante),
-    (text: 'dejado mi número apuntado en una servilleta o en un tique', tone: ContentTone.piccante),
+    (
+      text: 'besado a alguien bajo la lluvia sintiéndome en una película',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'organizado un encuentro "casual" con mi crush',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'ofrecido un masaje con segundas intenciones evidentes',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'aceptado un masaje sabiendo perfectamente cómo iba a acabar',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'desayunado en la cama con alguien conocido la noche anterior',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'guardado un cepillo de dientes de reserva para invitados de una noche',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'coqueteado por mensajes durante una cena familiar entera',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'guardado el chat de un ex solo para releerlo de vez en cuando',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'escrito y borrado el mismo mensaje diez veces esta semana',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dejado mi número apuntado en una servilleta o en un tique',
+      tone: ContentTone.piccante,
+    ),
     // ------------------------------------------------------- cattivo
-    (text: 'hablado mal de una persona presente en esta sala', tone: ContentTone.cattivo),
+    (
+      text: 'hablado mal de una persona presente en esta sala',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'revelado el secreto de un amigo', tone: ContentTone.cattivo),
-    (text: 'compartido la captura de un chat privado', tone: ContentTone.cattivo),
-    (text: 'creado un perfil falso para espiar a alguien', tone: ContentTone.cattivo),
-    (text: 'alegrado en secreto del fracaso de alguien que me cae mal', tone: ContentTone.cattivo),
-    (text: 'fingido alegrarme por un amigo mientras me moría de envidia', tone: ContentTone.cattivo),
-    (text: 'pensado que la pareja de un amigo no se lo merecía en absoluto', tone: ContentTone.cattivo),
-    (text: 'deseado que la relación de una pareja de amigos se acabara', tone: ContentTone.cattivo),
-    (text: 'dicho "no se lo cuento a nadie" y soltado todo en menos de una hora', tone: ContentTone.cattivo),
-    (text: 'creado un grupo sin una persona solo para hablar de ella', tone: ContentTone.cattivo),
-    (text: 'flirteado con alguien solo para dar celos a otra persona', tone: ContentTone.cattivo),
+    (
+      text: 'compartido la captura de un chat privado',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'creado un perfil falso para espiar a alguien',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'alegrado en secreto del fracaso de alguien que me cae mal',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fingido alegrarme por un amigo mientras me moría de envidia',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'pensado que la pareja de un amigo no se lo merecía en absoluto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'deseado que la relación de una pareja de amigos se acabara',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'dicho "no se lo cuento a nadie" y soltado todo en menos de una hora',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'creado un grupo sin una persona solo para hablar de ella',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'flirteado con alguien solo para dar celos a otra persona',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'dado un mal consejo a propósito', tone: ContentTone.cattivo),
     (text: 'estropeado una sorpresa a propósito', tone: ContentTone.cattivo),
-    (text: 'fingido olvidar la cartera para no pagar', tone: ContentTone.cattivo),
-    (text: 'contado un cotilleo añadiendo detalles inventados', tone: ContentTone.cattivo),
-    (text: 'usado las lágrimas para conseguir lo que quería', tone: ContentTone.cattivo),
-    (text: 'leído un chat en el móvil de un amigo mientras estaba en el baño', tone: ContentTone.cattivo),
-    (text: 'fingido escuchar los problemas de un amigo pensando en mis cosas', tone: ContentTone.cattivo),
-    (text: 'negado hasta la muerte algo que sí había hecho', tone: ContentTone.cattivo),
-    (text: 'criticado a alguien y negado todo cuando me lo preguntaron a la cara', tone: ContentTone.cattivo),
-    (text: 'usado un secreto de alguien para ganar una discusión', tone: ContentTone.cattivo),
-    (text: 'dividido la cuenta a partes iguales sabiendo que había pedido el triple', tone: ContentTone.cattivo),
-    (text: 'invitado a una persona solo porque tenía coche', tone: ContentTone.cattivo),
-    (text: 'callado a un amigo que su pareja flirteaba con otros', tone: ContentTone.cattivo),
-    (text: 'borrado un mensaje del móvil de otra persona', tone: ContentTone.cattivo),
+    (
+      text: 'fingido olvidar la cartera para no pagar',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'contado un cotilleo añadiendo detalles inventados',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado las lágrimas para conseguir lo que quería',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'leído un chat en el móvil de un amigo mientras estaba en el baño',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fingido escuchar los problemas de un amigo pensando en mis cosas',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'negado hasta la muerte algo que sí había hecho',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'criticado a alguien y negado todo cuando me lo preguntaron a la cara',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado un secreto de alguien para ganar una discusión',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'dividido la cuenta a partes iguales sabiendo que había pedido el triple',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'invitado a una persona solo porque tenía coche',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'callado a un amigo que su pareja flirteaba con otros',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'borrado un mensaje del móvil de otra persona',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'tenido sexo en un lugar público', tone: ContentTone.cattivo),
-    (text: 'tenido un amigo con derecho a roce en secreto', tone: ContentTone.cattivo),
-    (text: 'vuelto a ver a un ex solo por una noche jurando que era la última', tone: ContentTone.cattivo),
-    (text: 'olvidado el nombre de alguien con quien había pasado la noche', tone: ContentTone.cattivo),
-    (text: 'pensado en otra persona mientras besaba a mi pareja', tone: ContentTone.cattivo),
-    (text: 'mentido sobre el número de mis conquistas', tone: ContentTone.cattivo),
-    (text: 'tenido sexo en una fiesta con la casa llena de gente', tone: ContentTone.cattivo),
-    (text: 'usado mi encanto para que me perdonaran algo grave', tone: ContentTone.cattivo),
-    (text: 'pasado la noche con alguien conocido esa misma tarde en una app', tone: ContentTone.cattivo),
+    (
+      text: 'tenido un amigo con derecho a roce en secreto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'vuelto a ver a un ex solo por una noche jurando que era la última',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'olvidado el nombre de alguien con quien había pasado la noche',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'pensado en otra persona mientras besaba a mi pareja',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'mentido sobre el número de mis conquistas',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo en una fiesta con la casa llena de gente',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado mi encanto para que me perdonaran algo grave',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'pasado la noche con alguien conocido esa misma tarde en una app',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'deseado seriamente probar un trío', tone: ContentTone.cattivo),
     (text: 'sido infiel a una pareja', tone: ContentTone.cattivo),
     (text: 'besado a otra persona teniendo pareja', tone: ContentTone.cattivo),
     (text: 'mandado una foto mía sin ropa', tone: ContentTone.cattivo),
-    (text: 'enseñado a un amigo una foto íntima recibida en privado', tone: ContentTone.cattivo),
+    (
+      text: 'enseñado a un amigo una foto íntima recibida en privado',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'pasado la noche con el ex de un amigo', tone: ContentTone.cattivo),
     (text: 'tenido sexo en un coche', tone: ContentTone.cattivo),
-    (text: 'tenido sexo en casa de los padres de mi pareja', tone: ContentTone.cattivo),
-    (text: 'tenido sexo con dos personas distintas en la misma semana', tone: ContentTone.cattivo),
-    (text: 'tenido una historia con una persona comprometida', tone: ContentTone.cattivo),
+    (
+      text: 'tenido sexo en casa de los padres de mi pareja',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo con dos personas distintas en la misma semana',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido una historia con una persona comprometida',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'fingido placer en la cama', tone: ContentTone.cattivo),
-    (text: 'puesto nota a mis ex hablando con los amigos', tone: ContentTone.cattivo),
-    (text: 'usado el sexo para que me perdonaran después de una pelea', tone: ContentTone.cattivo),
-    (text: 'escrito a alguien a las tres de la mañana con un solo objetivo en mente', tone: ContentTone.cattivo),
-    (text: 'tenido una noche de pasión con alguien de este grupo', tone: ContentTone.cattivo),
-    (text: 'imaginado cómo sería en la cama una persona presente en esta sala', tone: ContentTone.cattivo),
-    (text: 'comparado en la cama a una pareja con un ex', tone: ContentTone.cattivo),
-    (text: 'mantenido un chat secreto con un ex teniendo pareja', tone: ContentTone.cattivo),
-    (text: 'aceptado un "ven a ver una peli" sabiendo cómo iba a acabar', tone: ContentTone.cattivo),
+    (
+      text: 'puesto nota a mis ex hablando con los amigos',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado el sexo para que me perdonaran después de una pelea',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'escrito a alguien a las tres de la mañana con un solo objetivo en mente',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido una noche de pasión con alguien de este grupo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'imaginado cómo sería en la cama una persona presente en esta sala',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'comparado en la cama a una pareja con un ex',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'mantenido un chat secreto con un ex teniendo pareja',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'aceptado un "ven a ver una peli" sabiendo cómo iba a acabar',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'flirteado con la pareja de un amigo', tone: ContentTone.cattivo),
-    (text: 'mandado un mensaje muy subido de tono cenando con más gente', tone: ContentTone.cattivo),
-    (text: 'hecho sexting con mi pareja en la habitación de al lado', tone: ContentTone.cattivo),
-    (text: 'tenido un plan B preparado estando en una relación', tone: ContentTone.cattivo),
-    (text: 'besado a alguien solo por venganza contra un ex', tone: ContentTone.cattivo),
-    (text: 'tenido sexo con una persona que me caía fatal', tone: ContentTone.cattivo),
-    (text: 'ilusionado a alguien solo para llevármelo a la cama', tone: ContentTone.cattivo),
-    (text: 'hecho ghosting a alguien después de pasar la noche juntos', tone: ContentTone.cattivo),
-    (text: 'guardado las fotos íntimas de un ex tras la ruptura', tone: ContentTone.cattivo),
-    (text: 'contado por ahí los detalles íntimos de un ex', tone: ContentTone.cattivo),
-    (text: 'fingido sentimientos solo para no quedarme solo', tone: ContentTone.cattivo),
-    (text: 'intentado ligarme a la persona que le gustaba a un amigo', tone: ContentTone.cattivo),
-    (text: 'desaparecido justo después de conseguir lo que quería', tone: ContentTone.cattivo),
-    (text: 'dicho "te quiero" en la cama solo por el momento', tone: ContentTone.cattivo),
-    (text: 'tenido sexo sabiendo que desde la habitación de al lado nos oían', tone: ContentTone.cattivo),
-    (text: 'contestado a un ex estando en la cama con otra persona', tone: ContentTone.cattivo),
-    (text: 'tenido sexo con alguien presente en esta sala', tone: ContentTone.cattivo),
-    (text: 'tenido sexo con más de una persona en las mismas veinticuatro horas', tone: ContentTone.cattivo),
+    (
+      text: 'mandado un mensaje muy subido de tono cenando con más gente',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'hecho sexting con mi pareja en la habitación de al lado',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido un plan B preparado estando en una relación',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'besado a alguien solo por venganza contra un ex',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo con una persona que me caía fatal',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'ilusionado a alguien solo para llevármelo a la cama',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'hecho ghosting a alguien después de pasar la noche juntos',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'guardado las fotos íntimas de un ex tras la ruptura',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'contado por ahí los detalles íntimos de un ex',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fingido sentimientos solo para no quedarme solo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'intentado ligarme a la persona que le gustaba a un amigo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'desaparecido justo después de conseguir lo que quería',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'dicho "te quiero" en la cama solo por el momento',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo sabiendo que desde la habitación de al lado nos oían',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'contestado a un ex estando en la cama con otra persona',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo con alguien presente en esta sala',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'tenido sexo con más de una persona en las mismas veinticuatro horas',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'hecho un trío', tone: ContentTone.cattivo),
-    (text: 'recibido una propuesta de trío y aceptado', tone: ContentTone.cattivo),
-    (text: 'tenido sexo con una persona comprometida sabiéndolo', tone: ContentTone.cattivo),
+    (
+      text: 'recibido una propuesta de trío y aceptado',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo con una persona comprometida sabiéndolo',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'sido infiel sin confesarlo jamás', tone: ContentTone.cattivo),
-    (text: 'descubierto una infidelidad y hecho como si nada', tone: ContentTone.cattivo),
-    (text: 'tenido sexo con el ex de mi mejor amigo', tone: ContentTone.cattivo),
+    (
+      text: 'descubierto una infidelidad y hecho como si nada',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo con el ex de mi mejor amigo',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'usado juguetes, solo o en compañía', tone: ContentTone.cattivo),
-    (text: 'comprado un juguete online mirando el seguimiento del paquete cada hora', tone: ContentTone.cattivo),
+    (
+      text:
+          'comprado un juguete online mirando el seguimiento del paquete cada hora',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'grabado un vídeo mientras tenía sexo', tone: ContentTone.cattivo),
     (text: 'vuelto a ver ese vídeo', tone: ContentTone.cattivo),
-    (text: 'guardado fotos subidas de tono en el móvil sin contraseña', tone: ContentTone.cattivo),
-    (text: 'mandado la misma foto atrevida a varias personas', tone: ContentTone.cattivo),
-    (text: 'fingido un orgasmo más de una vez con la misma persona', tone: ContentTone.cattivo),
+    (
+      text: 'guardado fotos subidas de tono en el móvil sin contraseña',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'mandado la misma foto atrevida a varias personas',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fingido un orgasmo más de una vez con la misma persona',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'dicho el nombre equivocado en la cama', tone: ContentTone.cattivo),
-    (text: 'oído el nombre equivocado y hecho como si no pasara nada', tone: ContentTone.cattivo),
+    (
+      text: 'oído el nombre equivocado y hecho como si no pasara nada',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'tenido sexo en un baño público', tone: ContentTone.cattivo),
-    (text: 'tenido sexo al aire libre arriesgándome a que me vieran', tone: ContentTone.cattivo),
+    (
+      text: 'tenido sexo al aire libre arriesgándome a que me vieran',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'sido pillado en pleno acto por alguien', tone: ContentTone.cattivo),
     (text: 'pillado yo a alguien en pleno acto', tone: ContentTone.cattivo),
-    (text: 'tenido sexo mientras otros dormían en la misma habitación', tone: ContentTone.cattivo),
-    (text: 'tenido sexo en casa de mis padres con mis padres en casa', tone: ContentTone.cattivo),
-    (text: 'tenido sexo en casa de sus padres con sus padres en casa', tone: ContentTone.cattivo),
-    (text: 'faltado al trabajo para quedarme en la cama acompañado', tone: ContentTone.cattivo),
+    (
+      text: 'tenido sexo mientras otros dormían en la misma habitación',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo en casa de mis padres con mis padres en casa',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo en casa de sus padres con sus padres en casa',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'faltado al trabajo para quedarme en la cama acompañado',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'tenido sexo en horario de trabajo', tone: ContentTone.cattivo),
-    (text: 'usado la oficina de un modo nada profesional', tone: ContentTone.cattivo),
-    (text: 'tenido una debilidad seria por un superior', tone: ContentTone.cattivo),
-    (text: 'tenido sexo con un amigo y no vuelto a hablar del tema jamás', tone: ContentTone.cattivo),
+    (
+      text: 'usado la oficina de un modo nada profesional',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido una debilidad seria por un superior',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo con un amigo y no vuelto a hablar del tema jamás',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'arruinado una amistad por una noche', tone: ContentTone.cattivo),
-    (text: 'tenido dos historias paralelas sin que se supieran', tone: ContentTone.cattivo),
-    (text: 'quedado con los dos la misma noche sin que me descubrieran', tone: ContentTone.cattivo),
-    (text: 'usado la casa de un amigo para un encuentro secreto', tone: ContentTone.cattivo),
-    (text: 'colado a alguien en casa de noche y sacado al alba', tone: ContentTone.cattivo),
-    (text: 'escondido a una persona en el armario o en el balcón, literalmente', tone: ContentTone.cattivo),
-    (text: 'borrado mensajes para que no los encontraran', tone: ContentTone.cattivo),
-    (text: 'guardado a una persona en la agenda con un nombre en clave', tone: ContentTone.cattivo),
-    (text: 'pensado en alguien de esta sala estando con otra persona', tone: ContentTone.cattivo),
-    (text: 'empezado algo en un bar y terminado en el aparcamiento', tone: ContentTone.cattivo),
-    (text: 'tenido sexo sin saber el apellido de la otra persona', tone: ContentTone.cattivo),
-    (text: 'cruzado la línea con un amigo con derecho y fingido que nada había cambiado', tone: ContentTone.cattivo),
-    (text: 'mantenido un amigo con derecho en secreto más de un año', tone: ContentTone.cattivo),
-    (text: 'mandado "¿estás despierto?" a las tres de la mañana y conseguido respuesta', tone: ContentTone.cattivo),
-    (text: 'respondido a un "¿estás despierto?" a las tres de la mañana y salido de casa', tone: ContentTone.cattivo),
+    (
+      text: 'tenido dos historias paralelas sin que se supieran',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'quedado con los dos la misma noche sin que me descubrieran',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado la casa de un amigo para un encuentro secreto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'colado a alguien en casa de noche y sacado al alba',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'escondido a una persona en el armario o en el balcón, literalmente',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'borrado mensajes para que no los encontraran',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'guardado a una persona en la agenda con un nombre en clave',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'pensado en alguien de esta sala estando con otra persona',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'empezado algo en un bar y terminado en el aparcamiento',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo sin saber el apellido de la otra persona',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'cruzado la línea con un amigo con derecho y fingido que nada había cambiado',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'mantenido un amigo con derecho en secreto más de un año',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'mandado "¿estás despierto?" a las tres de la mañana y conseguido respuesta',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'respondido a un "¿estás despierto?" a las tres de la mañana y salido de casa',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'tenido sexo con alguien que detestaba', tone: ContentTone.cattivo),
-    (text: 'usado el sexo para que me perdonaran algo', tone: ContentTone.cattivo),
+    (
+      text: 'usado el sexo para que me perdonaran algo',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'usado el sexo para conseguir algo', tone: ContentTone.cattivo),
-    (text: 'dicho que no al empezar la noche y cambiado de idea a mitad', tone: ContentTone.cattivo),
-    (text: 'dicho "no volverá a pasar" cuando ya había pasado tres veces', tone: ContentTone.cattivo),
-    (text: 'contado mi body count y tenido que empezar de nuevo', tone: ContentTone.cattivo),
-    (text: 'dicho a mi pareja un body count más bajo que el real', tone: ContentTone.cattivo),
-    (text: 'tenido una lista escrita de las personas con las que he estado', tone: ContentTone.cattivo),
-    (text: 'puesto un nombre en clave a una aventura para hablar de ella tranquilamente', tone: ContentTone.cattivo),
-    (text: 'contado los detalles de una noche a un grupo entero', tone: ContentTone.cattivo),
-    (text: 'reconocido en una app de citas a una persona comprometida que conozco', tone: ContentTone.cattivo),
-    (text: 'encontrado un perfil que no debía existir y hecho una captura', tone: ContentTone.cattivo),
-    (text: 'usado un perfil falso para controlar a alguien', tone: ContentTone.cattivo),
-    (text: 'mirado el móvil de mi pareja mientras dormía', tone: ContentTone.cattivo),
-    (text: 'encontrado algo que habría preferido no encontrar', tone: ContentTone.cattivo),
-    (text: 'hecho como si nada después de encontrarlo todo', tone: ContentTone.cattivo),
-    (text: 'probado un fetiche y descubierto que me gustaba', tone: ContentTone.cattivo),
-    (text: 'confesado un fetiche y visto cambiar la cara de la otra persona', tone: ContentTone.cattivo),
-    (text: 'atado a alguien o dejado que me ataran por juego', tone: ContentTone.cattivo),
+    (
+      text: 'dicho que no al empezar la noche y cambiado de idea a mitad',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'dicho "no volverá a pasar" cuando ya había pasado tres veces',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'contado mi body count y tenido que empezar de nuevo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'dicho a mi pareja un body count más bajo que el real',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido una lista escrita de las personas con las que he estado',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'puesto un nombre en clave a una aventura para hablar de ella tranquilamente',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'contado los detalles de una noche a un grupo entero',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'reconocido en una app de citas a una persona comprometida que conozco',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'encontrado un perfil que no debía existir y hecho una captura',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado un perfil falso para controlar a alguien',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'mirado el móvil de mi pareja mientras dormía',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'encontrado algo que habría preferido no encontrar',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'hecho como si nada después de encontrarlo todo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'probado un fetiche y descubierto que me gustaba',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'confesado un fetiche y visto cambiar la cara de la otra persona',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'atado a alguien o dejado que me ataran por juego',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'usado hielo o comida en la cama', tone: ContentTone.cattivo),
-    (text: 'vendado los ojos a alguien o dejado que me los vendaran', tone: ContentTone.cattivo),
-    (text: 'puesto la música alta para tapar los ruidos', tone: ContentTone.cattivo),
+    (
+      text: 'vendado los ojos a alguien o dejado que me los vendaran',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'puesto la música alta para tapar los ruidos',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'recibido quejas de los vecinos', tone: ContentTone.cattivo),
     (text: 'roto algo en casa durante el sexo', tone: ContentTone.cattivo),
-    (text: 'explicado un moratón o un arañazo con una excusa inventada', tone: ContentTone.cattivo),
-    (text: 'usado la mesa de la cocina para algo que no era una cena', tone: ContentTone.cattivo),
-    (text: 'tenido sexo en un ascensor o en unas escaleras', tone: ContentTone.cattivo),
-    (text: 'tenido sexo en la playa y encontrado arena por todas partes durante días', tone: ContentTone.cattivo),
+    (
+      text: 'explicado un moratón o un arañazo con una excusa inventada',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado la mesa de la cocina para algo que no era una cena',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo en un ascensor o en unas escaleras',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'tenido sexo en la playa y encontrado arena por todas partes durante días',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'tenido sexo en la piscina o en el mar', tone: ContentTone.cattivo),
-    (text: 'tenido sexo en una tienda de campaña con el camping lleno', tone: ContentTone.cattivo),
+    (
+      text: 'tenido sexo en una tienda de campaña con el camping lleno',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'tenido sexo en un tren o en un avión', tone: ContentTone.cattivo),
-    (text: 'pagado una habitación solo por unas horas', tone: ContentTone.cattivo),
-    (text: 'usado la pausa de la comida de un modo muy creativo', tone: ContentTone.cattivo),
-    (text: 'tenido un despertar del que no hablaré jamás en detalle', tone: ContentTone.cattivo),
-    (text: 'hecho algo en la cama que este grupo no se creería de mí', tone: ContentTone.cattivo),
-    (text: 'salido por la ventana para que no me vieran salir por la puerta', tone: ContentTone.cattivo),
-    (text: 'jurado "solo subo a por un café" sabiendo perfectamente cómo acabaría', tone: ContentTone.cattivo),
+    (
+      text: 'pagado una habitación solo por unas horas',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usado la pausa de la comida de un modo muy creativo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido un despertar del que no hablaré jamás en detalle',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'hecho algo en la cama que este grupo no se creería de mí',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'salido por la ventana para que no me vieran salir por la puerta',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'jurado "solo subo a por un café" sabiendo perfectamente cómo acabaría',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'tragado el esperma de mi pareja', tone: ContentTone.cattivo),
+    (text: 'lamido el ano a alguien', tone: ContentTone.cattivo),
+    (text: 'tenido sexo anal sin protección', tone: ContentTone.cattivo),
+    (
+      text: 'usado un vibrador o dildo durante una relación',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'grabado un vídeo mientras tenía sexo y luego lo he guardado',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'venido en la cara de alguien', tone: ContentTone.cattivo),
+    (
+      text: 'tenido sexo con una persona de la que no sabía el nombre',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido relaciones en un lugar público muy concurrido',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'probado mi propio esperma o eyaculación', tone: ContentTone.cattivo),
+    (
+      text: 'tenido sexo con dos personas distintas en la misma noche',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'recibido o hecho bondage pesado', tone: ContentTone.cattivo),
+    (text: 'tenido sexo oral en un lugar público', tone: ContentTone.cattivo),
+    (
+      text: 'usado objetos domésticos como juguetes sexuales',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'recibido sexo oral mientras conducía', tone: ContentTone.cattivo),
+    (text: 'tenido sexo durante la regla', tone: ContentTone.cattivo),
+    (
+      text: 'tenido un orgasmo múltiple en la misma relación',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tenido sexo con alguien conocido hace menos de una hora',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'pagado o recibido dinero por sexo', tone: ContentTone.cattivo),
   ];
+
   /// Domande sul gruppo (150 soft, 150 piccante, 150 cattivo).
   static const List<({String text, String tone})>
   chiLoPotrebbeFare = <({String text, String tone})>[
     // ---------------------------------------------------------- soft
-    (text: '¿Quién se perdería en una ciudad que conoce de sobra?', tone: ContentTone.soft),
+    (
+      text: '¿Quién se perdería en una ciudad que conoce de sobra?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién llegaría tarde a su propia boda?', tone: ContentTone.soft),
     (text: '¿Quién se haría famoso por accidente?', tone: ContentTone.soft),
-    (text: '¿Quién sobreviviría más tiempo en una isla desierta?', tone: ContentTone.soft),
-    (text: '¿Quién pasaría un fin de semana entero sin salir de casa?', tone: ContentTone.soft),
-    (text: '¿Quién daría conversación a un desconocido en un ascensor?', tone: ContentTone.soft),
+    (
+      text: '¿Quién sobreviviría más tiempo en una isla desierta?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pasaría un fin de semana entero sin salir de casa?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién daría conversación a un desconocido en un ascensor?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién olvidaría su propio aniversario?', tone: ContentTone.soft),
     (text: '¿Quién discutiría con el GPS?', tone: ContentTone.soft),
-    (text: '¿Quién compraría algo por internet a las tres de la mañana?', tone: ContentTone.soft),
+    (
+      text: '¿Quién compraría algo por internet a las tres de la mañana?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién comería pizza siete días seguidos?', tone: ContentTone.soft),
     (text: '¿Quién se dormiría en el cine?', tone: ContentTone.soft),
-    (text: '¿Quién cantaría en un karaoke sin dudarlo?', tone: ContentTone.soft),
-    (text: '¿Quién sería el primero en la pista de baile?', tone: ContentTone.soft),
-    (text: '¿Quién organizaría el viaje de todo el grupo?', tone: ContentTone.soft),
-    (text: '¿Quién perdería el pasaporte en el aeropuerto?', tone: ContentTone.soft),
-    (text: '¿Quién llevaría tres maletas para dos días?', tone: ContentTone.soft),
-    (text: '¿Quién se iría mañana de viaje solo con una mochila?', tone: ContentTone.soft),
-    (text: '¿Quién se mudaría al extranjero sin pensarlo?', tone: ContentTone.soft),
-    (text: '¿Quién volvería a vivir con sus padres sin problema?', tone: ContentTone.soft),
+    (
+      text: '¿Quién cantaría en un karaoke sin dudarlo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién sería el primero en la pista de baile?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién organizaría el viaje de todo el grupo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién perdería el pasaporte en el aeropuerto?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién llevaría tres maletas para dos días?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se iría mañana de viaje solo con una mochila?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se mudaría al extranjero sin pensarlo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién volvería a vivir con sus padres sin problema?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién adoptaría diez gatos?', tone: ContentTone.soft),
-    (text: '¿Quién hablaría a su perro como a una persona?', tone: ContentTone.soft),
-    (text: '¿Quién dejaría morir todas las plantas de casa?', tone: ContentTone.soft),
-    (text: '¿Quién cocinaría para veinte personas sin motivo?', tone: ContentTone.soft),
-    (text: '¿Quién sería capaz de quemar hasta el agua de la pasta?', tone: ContentTone.soft),
-    (text: '¿Quién probaría cualquier comida, hasta la más rara?', tone: ContentTone.soft),
-    (text: '¿Quién olvidaría la cartera justo cuando le toca pagar?', tone: ContentTone.soft),
-    (text: '¿Quién se gastaría el sueldo en una semana?', tone: ContentTone.soft),
-    (text: '¿Quién se haría rico con una idea absurda?', tone: ContentTone.soft),
-    (text: '¿Quién ganaría la lotería y no se lo diría a nadie?', tone: ContentTone.soft),
-    (text: '¿Quién regatearía hasta en el supermercado?', tone: ContentTone.soft),
-    (text: '¿Quién compraría una máquina de gimnasio y no la usaría jamás?', tone: ContentTone.soft),
-    (text: '¿Quién se apuntaría al gimnasio en enero y lo dejaría en febrero?', tone: ContentTone.soft),
+    (
+      text: '¿Quién hablaría a su perro como a una persona?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién dejaría morir todas las plantas de casa?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién cocinaría para veinte personas sin motivo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién sería capaz de quemar hasta el agua de la pasta?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién probaría cualquier comida, hasta la más rara?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién olvidaría la cartera justo cuando le toca pagar?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se gastaría el sueldo en una semana?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se haría rico con una idea absurda?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién ganaría la lotería y no se lo diría a nadie?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién regatearía hasta en el supermercado?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién compraría una máquina de gimnasio y no la usaría jamás?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se apuntaría al gimnasio en enero y lo dejaría en febrero?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién correría una maratón sin entrenar?', tone: ContentTone.soft),
-    (text: '¿Quién se haría daño haciendo algo facilísimo?', tone: ContentTone.soft),
+    (
+      text: '¿Quién se haría daño haciendo algo facilísimo?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién iría a urgencias por una uña rota?', tone: ContentTone.soft),
-    (text: '¿Quién no iría al médico ni con 39 de fiebre?', tone: ContentTone.soft),
-    (text: '¿Quién buscaría sus síntomas en internet y entraría en pánico?', tone: ContentTone.soft),
-    (text: '¿Quién dormiría hasta las dos de la tarde?', tone: ContentTone.soft),
-    (text: '¿Quién pondría diez alarmas y las apagaría todas?', tone: ContentTone.soft),
-    (text: '¿Quién mandaría un audio de siete minutos?', tone: ContentTone.soft),
+    (
+      text: '¿Quién no iría al médico ni con 39 de fiebre?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién buscaría sus síntomas en internet y entraría en pánico?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién dormiría hasta las dos de la tarde?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pondría diez alarmas y las apagaría todas?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién mandaría un audio de siete minutos?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién respondería solo con emojis?', tone: ContentTone.soft),
     (text: '¿Quién te dejaría en visto durante días?', tone: ContentTone.soft),
     (text: '¿Quién siempre tiene el móvil al 1%?', tone: ContentTone.soft),
-    (text: '¿Quién haría cien fotos para publicar una?', tone: ContentTone.soft),
-    (text: '¿Quién diría que sí a todo y luego se arrepentiría?', tone: ContentTone.soft),
-    (text: '¿Quién cancelaría un plan en el último minuto?', tone: ContentTone.soft),
-    (text: '¿Quién sería el último en irse de la fiesta?', tone: ContentTone.soft),
-    (text: '¿Quién se iría de una fiesta sin despedirse de nadie?', tone: ContentTone.soft),
-    (text: '¿Quién se llevaría a casa las sobras del bufé?', tone: ContentTone.soft),
-    (text: '¿Quién pelearía por el último trozo de tarta?', tone: ContentTone.soft),
-    (text: '¿Quién conduciría cantando a pleno pulmón?', tone: ContentTone.soft),
-    (text: '¿Quién se perdería incluso con el GPS encendido?', tone: ContentTone.soft),
-    (text: '¿Quién recibiría dos multas de aparcamiento el mismo día?', tone: ContentTone.soft),
+    (
+      text: '¿Quién haría cien fotos para publicar una?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién diría que sí a todo y luego se arrepentiría?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién cancelaría un plan en el último minuto?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién sería el último en irse de la fiesta?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se iría de una fiesta sin despedirse de nadie?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se llevaría a casa las sobras del bufé?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pelearía por el último trozo de tarta?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién conduciría cantando a pleno pulmón?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se perdería incluso con el GPS encendido?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién recibiría dos multas de aparcamiento el mismo día?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién pondría nombre a su coche?', tone: ContentTone.soft),
-    (text: '¿Quién tendría la habitación en desorden perpetuo?', tone: ContentTone.soft),
-    (text: '¿Quién limpiaría la casa a las dos de la madrugada?', tone: ContentTone.soft),
-    (text: '¿Quién compraría un mueble y no lograría montarlo?', tone: ContentTone.soft),
-    (text: '¿Quién arreglaría cualquier cosa con cinta adhesiva?', tone: ContentTone.soft),
-    (text: '¿Quién llamaría a un técnico para cambiar una bombilla?', tone: ContentTone.soft),
-    (text: '¿Quién vería un tutorial y se sentiría un experto?', tone: ContentTone.soft),
-    (text: '¿Quién terminaría una serie en una sola noche?', tone: ContentTone.soft),
+    (
+      text: '¿Quién tendría la habitación en desorden perpetuo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién limpiaría la casa a las dos de la madrugada?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién compraría un mueble y no lograría montarlo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién arreglaría cualquier cosa con cinta adhesiva?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién llamaría a un técnico para cambiar una bombilla?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién vería un tutorial y se sentiría un experto?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién terminaría una serie en una sola noche?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién haría spoiler sin darse cuenta?', tone: ContentTone.soft),
     (text: '¿Quién lloraría con un anuncio?', tone: ContentTone.soft),
-    (text: '¿Quién se reiría en el momento menos oportuno?', tone: ContentTone.soft),
-    (text: '¿Quién contaría la misma historia por décima vez?', tone: ContentTone.soft),
+    (
+      text: '¿Quién se reiría en el momento menos oportuno?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién contaría la misma historia por décima vez?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién interrumpiría siempre a los demás?', tone: ContentTone.soft),
-    (text: '¿Quién daría consejos que nadie ha pedido?', tone: ContentTone.soft),
-    (text: '¿Quién estropearía una sorpresa por hablar demasiado?', tone: ContentTone.soft),
-    (text: '¿Quién compraría el regalo en el último minuto?', tone: ContentTone.soft),
-    (text: '¿Quién envolvería un regalo de forma desastrosa?', tone: ContentTone.soft),
-    (text: '¿Quién tendría el árbol de Navidad puesto hasta marzo?', tone: ContentTone.soft),
-    (text: '¿Quién se emocionaría en la boda de un amigo?', tone: ContentTone.soft),
-    (text: '¿Quién daría el discurso más largo en una cena?', tone: ContentTone.soft),
-    (text: '¿Quién se apuntaría a un curso y no iría jamás?', tone: ContentTone.soft),
-    (text: '¿Quién ganaría un concurso de comer perritos calientes?', tone: ContentTone.soft),
-    (text: '¿Quién escribiría un libro sobre su propia vida?', tone: ContentTone.soft),
-    (text: '¿Quién abriría un canal y lo abandonaría tras tres vídeos?', tone: ContentTone.soft),
+    (
+      text: '¿Quién daría consejos que nadie ha pedido?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién estropearía una sorpresa por hablar demasiado?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién compraría el regalo en el último minuto?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién envolvería un regalo de forma desastrosa?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién tendría el árbol de Navidad puesto hasta marzo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se emocionaría en la boda de un amigo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién daría el discurso más largo en una cena?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se apuntaría a un curso y no iría jamás?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién ganaría un concurso de comer perritos calientes?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién escribiría un libro sobre su propia vida?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién abriría un canal y lo abandonaría tras tres vídeos?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién se presentaría a un reality?', tone: ContentTone.soft),
-    (text: '¿Quién se haría viral por un vídeo grabado sin querer?', tone: ContentTone.soft),
-    (text: '¿Quién respondería "llego en cinco minutos" todavía en la cama?', tone: ContentTone.soft),
-    (text: '¿Quién mandaría un mensaje al chat equivocado hablando justo de ese chat?', tone: ContentTone.soft),
-    (text: '¿Quién pondría piña en la pizza sin ninguna vergüenza?', tone: ContentTone.soft),
-    (text: '¿Quién pediría un capuchino después de cenar en un restaurante?', tone: ContentTone.soft),
-    (text: '¿Quién haría trampas en un juego de mesa con tal de ganar?', tone: ContentTone.soft),
-    (text: '¿Quién sería el primero en morir en una película de terror?', tone: ContentTone.soft),
-    (text: '¿Quién se creería una noticia falsa y la compartiría con todos?', tone: ContentTone.soft),
-    (text: '¿Quién olvidaría dónde ha aparcado el coche?', tone: ContentTone.soft),
-    (text: '¿Quién se terminaría las patatas de los demás "solo por probar"?', tone: ContentTone.soft),
-    (text: '¿Quién se haría amigo del taxista en diez minutos?', tone: ContentTone.soft),
-    (text: '¿Quién consultaría el horóscopo para tomar decisiones importantes?', tone: ContentTone.soft),
-    (text: '¿Quién usaría el móvil con la pantalla completamente rota?', tone: ContentTone.soft),
-    (text: '¿Quién llegaría puntual solo el día en que los demás llegan tarde?', tone: ContentTone.soft),
-    (text: '¿Quién haría cola de noche por el lanzamiento de un móvil nuevo?', tone: ContentTone.soft),
-    (text: '¿Quién saludaría con entusiasmo a alguien confundiéndolo con otro?', tone: ContentTone.soft),
-    (text: '¿Quién respondería "todo bien" mientras todo va fatal?', tone: ContentTone.soft),
-    (text: '¿Quién se ofendería por una broma y juraría que no se ha ofendido?', tone: ContentTone.soft),
-    (text: '¿Quién compraría diez libros sin haber terminado ni uno?', tone: ContentTone.soft),
-    (text: '¿Quién llevaría el paraguas un mes y lo olvidaría el día de lluvia?', tone: ContentTone.soft),
-    (text: '¿Quién tendría una playlist para cada estado de ánimo posible?', tone: ContentTone.soft),
+    (
+      text: '¿Quién se haría viral por un vídeo grabado sin querer?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién respondería "llego en cinco minutos" todavía en la cama?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién mandaría un mensaje al chat equivocado hablando justo de ese chat?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pondría piña en la pizza sin ninguna vergüenza?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pediría un capuchino después de cenar en un restaurante?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién haría trampas en un juego de mesa con tal de ganar?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién sería el primero en morir en una película de terror?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se creería una noticia falsa y la compartiría con todos?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién olvidaría dónde ha aparcado el coche?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se terminaría las patatas de los demás "solo por probar"?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se haría amigo del taxista en diez minutos?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién consultaría el horóscopo para tomar decisiones importantes?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién usaría el móvil con la pantalla completamente rota?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién llegaría puntual solo el día en que los demás llegan tarde?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién haría cola de noche por el lanzamiento de un móvil nuevo?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién saludaría con entusiasmo a alguien confundiéndolo con otro?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién respondería "todo bien" mientras todo va fatal?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién se ofendería por una broma y juraría que no se ha ofendido?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién compraría diez libros sin haber terminado ni uno?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién llevaría el paraguas un mes y lo olvidaría el día de lluvia?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién tendría una playlist para cada estado de ánimo posible?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién hablaría solo mientras cocina?', tone: ContentTone.soft),
-    (text: '¿Quién pediría consejo al camarero y luego pediría lo de siempre?', tone: ContentTone.soft),
-    (text: '¿Quién presumiría de una receta copiada de internet?', tone: ContentTone.soft),
-    (text: '¿Quién pondría la alarma a las seis para correr y no iría jamás?', tone: ContentTone.soft),
-    (text: '¿Quién organizaría una cena elaborada y acabaría pidiendo pizzas?', tone: ContentTone.soft),
-    (text: '¿Quién perdería las llaves de casa una vez al mes?', tone: ContentTone.soft),
-    (text: '¿Quién guardaría en la cartera tiques de hace tres años?', tone: ContentTone.soft),
+    (
+      text: '¿Quién pediría consejo al camarero y luego pediría lo de siempre?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién presumiría de una receta copiada de internet?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pondría la alarma a las seis para correr y no iría jamás?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién organizaría una cena elaborada y acabaría pidiendo pizzas?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién perdería las llaves de casa una vez al mes?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién guardaría en la cartera tiques de hace tres años?',
+      tone: ContentTone.soft,
+    ),
     (text: '¿Quién aplaudiría al aterrizar el avión?', tone: ContentTone.soft),
-    (text: '¿Quién llevaría el cargador a todas partes como si fuera el DNI?', tone: ContentTone.soft),
-    (text: '¿Quién escribiría una reseña larguísima por una pizza fría?', tone: ContentTone.soft),
-    (text: '¿Quién llamaría a su madre para saber cómo se cuece el arroz?', tone: ContentTone.soft),
-    (text: '¿Quién viviría de maravilla un año entero sin redes?', tone: ContentTone.soft),
-    (text: '¿Quién volvería tres veces a comprobar si ha cerrado la puerta?', tone: ContentTone.soft),
-    (text: '¿Quién compraría cualquier cosa a un vendedor simpático?', tone: ContentTone.soft),
-    (text: '¿Quién cambiaría de equipo según quién vaya ganando?', tone: ContentTone.soft),
-    (text: '¿Quién vería las historias de todos sin publicar jamás una?', tone: ContentTone.soft),
-    (text: '¿Quién se emocionaría en un viaje más por la comida que por los monumentos?', tone: ContentTone.soft),
-    (text: '¿Quién pediría siempre el mismo plato en cualquier restaurante?', tone: ContentTone.soft),
-    (text: '¿Quién elegiría el destino de vacaciones mirando solo fotos de restaurantes?', tone: ContentTone.soft),
-    (text: '¿Quién discutiría con la impresora hasta amenazarla?', tone: ContentTone.soft),
-    (text: '¿Quién pasaría más tiempo eligiendo la película que viéndola?', tone: ContentTone.soft),
-    (text: '¿Quién usaría todavía la excusa "no me llegó el mensaje"?', tone: ContentTone.soft),
-    (text: '¿Quién contestaría correos de trabajo hasta a medianoche?', tone: ContentTone.soft),
-    (text: '¿Quién dejaría el trabajo para abrir un chiringuito en la playa?', tone: ContentTone.soft),
-    (text: '¿Quién se presentaría a una entrevista con la camiseta del revés?', tone: ContentTone.soft),
-    (text: '¿Quién haría una siesta "de diez minutos" de tres horas?', tone: ContentTone.soft),
-    (text: '¿Quién tendría doscientas pestañas abiertas en el navegador?', tone: ContentTone.soft),
-    (text: '¿Quién fotografiaría el plato antes de dejar comer a nadie?', tone: ContentTone.soft),
-    (text: '¿Quién se sabría las canciones de memoria pero jamás el nombre del cantante?', tone: ContentTone.soft),
-    (text: '¿Quién se perdería dentro de un centro comercial?', tone: ContentTone.soft),
-    (text: '¿Quién se tomaría demasiado en serio un disfraz para una fiesta temática?', tone: ContentTone.soft),
-    (text: '¿Quién ganaría una discusión por puro agotamiento del rival?', tone: ContentTone.soft),
-    (text: '¿Quién se cambiaría de peinado después de cada desilusión?', tone: ContentTone.soft),
-    (text: '¿Quién se cortaría el flequillo solo a las dos de la madrugada?', tone: ContentTone.soft),
-    (text: '¿Quién compraría ropa y la dejaría meses en el armario con la etiqueta?', tone: ContentTone.soft),
-    (text: '¿Quién juraría "el lunes empiezo la dieta" cada domingo por la noche?', tone: ContentTone.soft),
-    (text: '¿Quién pediría postre justo después de decir "estoy llenísimo"?', tone: ContentTone.soft),
-    (text: '¿Quién probaría del plato de los demás sin pedir permiso?', tone: ContentTone.soft),
-    (text: '¿Quién pondría kétchup hasta en un plato gourmet?', tone: ContentTone.soft),
-    (text: '¿Quién compraría los regalos de Navidad ya en octubre?', tone: ContentTone.soft),
-    (text: '¿Quién compraría los regalos de Navidad la tarde del 24?', tone: ContentTone.soft),
-    (text: '¿Quién empezaría un hobby nuevo cada dos meses abandonando el anterior?', tone: ContentTone.soft),
-    (text: '¿Quién tardaría una hora en elegir el look para salir luego en sudadera?', tone: ContentTone.soft),
-    (text: '¿Quién hablaría a las plantas convencido de que así crecen mejor?', tone: ContentTone.soft),
-    (text: '¿Quién usaría audios hasta para responder "ok"?', tone: ContentTone.soft),
-    (text: '¿Quién escribiría "jajaja" completamente serio?', tone: ContentTone.soft),
-    (text: '¿Quién llegaría el primero a un bufé gratis?', tone: ContentTone.soft),
-    (text: '¿Quién contaría los días para las vacaciones desde enero?', tone: ContentTone.soft),
-    (text: '¿Quién se dormiría viendo la película que ha elegido?', tone: ContentTone.soft),
-    (text: '¿Quién haría amistad con un desconocido en la cola de correos?', tone: ContentTone.soft),
-    (text: '¿Quién pediría indicaciones y luego iría en dirección contraria?', tone: ContentTone.soft),
+    (
+      text: '¿Quién llevaría el cargador a todas partes como si fuera el DNI?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién escribiría una reseña larguísima por una pizza fría?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién llamaría a su madre para saber cómo se cuece el arroz?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién viviría de maravilla un año entero sin redes?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién volvería tres veces a comprobar si ha cerrado la puerta?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién compraría cualquier cosa a un vendedor simpático?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién cambiaría de equipo según quién vaya ganando?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién vería las historias de todos sin publicar jamás una?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién se emocionaría en un viaje más por la comida que por los monumentos?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pediría siempre el mismo plato en cualquier restaurante?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién elegiría el destino de vacaciones mirando solo fotos de restaurantes?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién discutiría con la impresora hasta amenazarla?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pasaría más tiempo eligiendo la película que viéndola?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién usaría todavía la excusa "no me llegó el mensaje"?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién contestaría correos de trabajo hasta a medianoche?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién dejaría el trabajo para abrir un chiringuito en la playa?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se presentaría a una entrevista con la camiseta del revés?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién haría una siesta "de diez minutos" de tres horas?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién tendría doscientas pestañas abiertas en el navegador?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién fotografiaría el plato antes de dejar comer a nadie?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién se sabría las canciones de memoria pero jamás el nombre del cantante?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se perdería dentro de un centro comercial?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién se tomaría demasiado en serio un disfraz para una fiesta temática?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién ganaría una discusión por puro agotamiento del rival?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se cambiaría de peinado después de cada desilusión?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se cortaría el flequillo solo a las dos de la madrugada?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién compraría ropa y la dejaría meses en el armario con la etiqueta?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién juraría "el lunes empiezo la dieta" cada domingo por la noche?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pediría postre justo después de decir "estoy llenísimo"?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién probaría del plato de los demás sin pedir permiso?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pondría kétchup hasta en un plato gourmet?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién compraría los regalos de Navidad ya en octubre?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién compraría los regalos de Navidad la tarde del 24?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién empezaría un hobby nuevo cada dos meses abandonando el anterior?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién tardaría una hora en elegir el look para salir luego en sudadera?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién hablaría a las plantas convencido de que así crecen mejor?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién usaría audios hasta para responder "ok"?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién escribiría "jajaja" completamente serio?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién llegaría el primero a un bufé gratis?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién contaría los días para las vacaciones desde enero?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se dormiría viendo la película que ha elegido?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién haría amistad con un desconocido en la cola de correos?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pediría indicaciones y luego iría en dirección contraria?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién se apuntaría a un concurso de la tele convencido de ganar?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién ganaría un premio por la excusa más creativa?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién tendría el móvil en silencio y se quejaría de las llamadas perdidas?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién vería vídeos de cocina de madrugada sin saber cocinar nada?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién llevaría crema solar y se quemaría igualmente?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién celebraría su cumpleaños durante una semana entera?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text:
+          '¿Quién olvidaría el cumpleaños de su mejor amigo y culparía al móvil?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién intentaría usar un cupón caducado como si nada?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién pediría comida a domicilio con la nevera llena?',
+      tone: ContentTone.soft,
+    ),
+    (
+      text: '¿Quién viviría a base de café negando ser adicto?',
+      tone: ContentTone.soft,
+    ),
     // ------------------------------------------------------ piccante
-    (text: '¿Quién escribiría a un ex a las tres de la mañana?', tone: ContentTone.piccante),
-    (text: '¿Quién volvería con un ex por tercera vez?', tone: ContentTone.piccante),
-    (text: '¿Quién se enamoraría en dos días de vacaciones?', tone: ContentTone.piccante),
+    (
+      text: '¿Quién escribiría a un ex a las tres de la mañana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién volvería con un ex por tercera vez?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se enamoraría en dos días de vacaciones?',
+      tone: ContentTone.piccante,
+    ),
     (text: '¿Quién diría "te quiero" primero?', tone: ContentTone.piccante),
     (text: '¿Quién cortaría por mensaje?', tone: ContentTone.piccante),
-    (text: '¿Quién flirtearía con el camarero delante de todos?', tone: ContentTone.piccante),
-    (text: '¿Quién usaría la misma frase para ligar desde hace diez años?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene más chats abiertos ahora mismo?', tone: ContentTone.piccante),
+    (
+      text: '¿Quién flirtearía con el camarero delante de todos?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién usaría la misma frase para ligar desde hace diez años?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene más chats abiertos ahora mismo?',
+      tone: ContentTone.piccante,
+    ),
     (text: '¿Quién miraría el móvil de su pareja?', tone: ContentTone.piccante),
-    (text: '¿Quién escondería una relación a todo el grupo?', tone: ContentTone.piccante),
-    (text: '¿Quién besaría a alguien por una apuesta?', tone: ContentTone.piccante),
-    (text: '¿Quién se declararía delante de todos?', tone: ContentTone.piccante),
-    (text: '¿Quién haría ghosting sin explicaciones?', tone: ContentTone.piccante),
-    (text: '¿Quién respondería a una historia solo para hacerse notar?', tone: ContentTone.piccante),
-    (text: '¿Quién miraría el perfil de un ex cada semana?', tone: ContentTone.piccante),
-    (text: '¿Quién daría like a una foto de hace tres años sin querer?', tone: ContentTone.piccante),
-    (text: '¿Quién contaría un secreto después de dos copas?', tone: ContentTone.piccante),
-    (text: '¿Quién acabaría cantando encima de una mesa?', tone: ContentTone.piccante),
-    (text: '¿Quién se dormiría en su propia fiesta de cumpleaños?', tone: ContentTone.piccante),
+    (
+      text: '¿Quién escondería una relación a todo el grupo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién besaría a alguien por una apuesta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se declararía delante de todos?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién haría ghosting sin explicaciones?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién respondería a una historia solo para hacerse notar?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién miraría el perfil de un ex cada semana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién daría like a una foto de hace tres años sin querer?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién contaría un secreto después de dos copas?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién acabaría cantando encima de una mesa?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se dormiría en su propia fiesta de cumpleaños?',
+      tone: ContentTone.piccante,
+    ),
     (text: '¿Quién olvidaría una noche entera?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría mensajes de los que arrepentirse por la mañana?', tone: ContentTone.piccante),
-    (text: '¿Quién llamaría a un amigo para que lo rescatara de una cita?', tone: ContentTone.piccante),
-    (text: '¿Quién mentiría sobre su edad en una cita?', tone: ContentTone.piccante),
-    (text: '¿Quién usaría una foto de perfil de hace diez años?', tone: ContentTone.piccante),
-    (text: '¿Quién llegaría una hora tarde a una primera cita?', tone: ContentTone.piccante),
-    (text: '¿Quién hablaría de su ex en una primera cita?', tone: ContentTone.piccante),
-    (text: '¿Quién se haría un tatuaje de vacaciones por impulso?', tone: ContentTone.piccante),
-    (text: '¿Quién bailaría encima de la barra tras el tercer cóctel?', tone: ContentTone.piccante),
-    (text: '¿Quién se tiraría a la piscina vestido?', tone: ContentTone.piccante),
+    (
+      text: '¿Quién mandaría mensajes de los que arrepentirse por la mañana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién llamaría a un amigo para que lo rescatara de una cita?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién mentiría sobre su edad en una cita?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién usaría una foto de perfil de hace diez años?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién llegaría una hora tarde a una primera cita?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién hablaría de su ex en una primera cita?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se haría un tatuaje de vacaciones por impulso?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién bailaría encima de la barra tras el tercer cóctel?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se tiraría a la piscina vestido?',
+      tone: ContentTone.piccante,
+    ),
     (text: '¿Quién se bañaría sin bañador?', tone: ContentTone.piccante),
-    (text: '¿Quién convencería a todos de hacer algo que no querían hacer?', tone: ContentTone.piccante),
-    (text: '¿Quién se llevaría un vaso del bar de recuerdo?', tone: ContentTone.piccante),
-    (text: '¿Quién acabaría discutiendo con el portero de la discoteca?', tone: ContentTone.piccante),
-    (text: '¿Quién se encerraría en el baño de una fiesta con alguien, y no precisamente a hablar?', tone: ContentTone.piccante),
-    (text: '¿Quién se despertaría en la cama de alguien sin recordar cómo llegó?', tone: ContentTone.piccante),
-    (text: '¿Quién pasaría la noche con alguien y se escaparía antes del amanecer?', tone: ContentTone.piccante),
-    (text: '¿Quién leería los mensajes en la pantalla de otro?', tone: ContentTone.piccante),
-    (text: '¿Quién diría que está en casa estando fuera?', tone: ContentTone.piccante),
-    (text: '¿Quién dejaría plantado a alguien sin avisar?', tone: ContentTone.piccante),
-    (text: '¿Quién fingiría estar enfermo para saltarse un compromiso?', tone: ContentTone.piccante),
-    (text: '¿Quién acabaría llorando en el baño en una fiesta?', tone: ContentTone.piccante),
-    (text: '¿Quién se apuntaría a una app de citas al día siguiente de una ruptura?', tone: ContentTone.piccante),
-    (text: '¿Quién se haría pasar por soltero en una fiesta?', tone: ContentTone.piccante),
-    (text: '¿Quién flirtearía solo para que le invitaran a una copa?', tone: ContentTone.piccante),
-    (text: '¿Quién daría su número a alguien conocido hace cinco minutos?', tone: ContentTone.piccante),
-    (text: '¿Quién besaría a un desconocido en Nochevieja?', tone: ContentTone.piccante),
-    (text: '¿Quién contaría los detalles de la primera cita en el chat de grupo?', tone: ContentTone.piccante),
-    (text: '¿Quién releería los chats con su ex antes de dormir?', tone: ContentTone.piccante),
-    (text: '¿Quién subiría una historia solo para que la vea una persona concreta?', tone: ContentTone.piccante),
-    (text: '¿Quién diría "la última y nos vamos" cinco veces la misma noche?', tone: ContentTone.piccante),
-    (text: '¿Quién tendría un rollo de una noche en vacaciones sin pensarlo?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene la lista de conquistas más larga de lo que admite?', tone: ContentTone.piccante),
-    (text: '¿Quién se ha vestido hoy así para llamar la atención de alguien concreto?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría un mensaje atrevido y le echaría la culpa al móvil?', tone: ContentTone.piccante),
-    (text: '¿Quién saldría con dos personas distintas el mismo fin de semana?', tone: ContentTone.piccante),
-    (text: '¿Quién se quedaría hasta el desayuno tras una primera noche?', tone: ContentTone.piccante),
-    (text: '¿Quién ha tenido más rollos de una noche de todo el grupo?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría un nude y luego miraría el móvil en pánico esperando respuesta?', tone: ContentTone.piccante),
-    (text: '¿Quién diría "yo no soy de esos" mintiendo descaradamente?', tone: ContentTone.piccante),
-    (text: '¿Quién probaría un trío al menos una vez en la vida?', tone: ContentTone.piccante),
-    (text: '¿Quién pasaría la noche con alguien conocido dos horas antes en el bar?', tone: ContentTone.piccante),
-    (text: '¿Quién volvería a casa a las seis de la mañana con la ropa de la noche anterior?', tone: ContentTone.piccante),
-    (text: '¿Quién habrá tenido sexo en el sitio más absurdo?', tone: ContentTone.piccante),
-    (text: '¿Quién tendría sexo en la playa arriesgándose a que lo pillen?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría un mensaje picante a la persona equivocada?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene un cajón que es mejor no abrir delante de las visitas?', tone: ContentTone.piccante),
-    (text: '¿Quién presumiría de sus dotes en la cama sin que nadie pregunte?', tone: ContentTone.piccante),
-    (text: '¿Quién decidiría si repetir con alguien según cómo besa?', tone: ContentTone.piccante),
-    (text: '¿Quién habrá besado a más gente en una sola noche?', tone: ContentTone.piccante),
-    (text: '¿Quién aceptaría un "vente a ver una peli" sabiendo que la peli no empezará jamás?', tone: ContentTone.piccante),
-    (text: '¿Quién propondría la ducha en pareja "para ahorrar agua"?', tone: ContentTone.piccante),
-    (text: '¿Quién habrá tenido ya sexo en un coche?', tone: ContentTone.piccante),
-    (text: '¿Quién usaría las apps de citas solo para aventuras de una noche?', tone: ContentTone.piccante),
-    (text: '¿Quién respondería a un "¿qué haces esta noche?" recibido a las dos de la mañana?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene un ex que todavía lo busca de vez en cuando para una noche?', tone: ContentTone.piccante),
-    (text: '¿Quién llamaría "amistad" a algo que de amistoso tiene bien poco?', tone: ContentTone.piccante),
-    (text: '¿Quién conquistaría a alguien con un solo mensaje?', tone: ContentTone.piccante),
-    (text: '¿Quién publicaría una foto en bañador solo para provocar a alguien concreto?', tone: ContentTone.piccante),
-    (text: '¿Quién propondría sexo de reconciliación tras cada pelea?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene una fantasía que nunca se ha atrevido a confesar?', tone: ContentTone.piccante),
-    (text: '¿Quién compraría lencería nueva solo para una cita prometedora?', tone: ContentTone.piccante),
-    (text: '¿Quién dejaría una marca visible en el cuello de alguien sin disculparse?', tone: ContentTone.piccante),
-    (text: '¿Quién recordaría el nombre de todas las personas con las que ha estado?', tone: ContentTone.piccante),
-    (text: '¿Quién saldría de casa sin ropa interior y lo revelaría solo al final de la noche?', tone: ContentTone.piccante),
-    (text: '¿Quién convertiría un masaje inocente en algo mucho menos inocente?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría un audio susurrado solo para volver loco a alguien?', tone: ContentTone.piccante),
-    (text: '¿Quién aceptaría una última noche con un ex "solo para cerrar el círculo"?', tone: ContentTone.piccante),
-    (text: '¿Quién habrá fingido un orgasmo al menos una vez, seguro?', tone: ContentTone.piccante),
-    (text: '¿Quién acabaría en la cama con un desconocido esta misma noche?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene el body count más alto del grupo?', tone: ContentTone.piccante),
-    (text: '¿Quién miente más sobre su body count?', tone: ContentTone.piccante),
-    (text: '¿Quién ha hecho sexting esta última semana?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría una foto atrevida tras dos cumplidos bien puestos?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene una carpeta oculta en la galería?', tone: ContentTone.piccante),
-    (text: '¿Quién flirtearía con quien atiende la barra para que le sirvan antes?', tone: ContentTone.piccante),
-    (text: '¿Quién se enamoraría después de una sola noche?', tone: ContentTone.piccante),
-    (text: '¿Quién desaparecería después de una sola noche?', tone: ContentTone.piccante),
-    (text: '¿Quién haría el paseo de la vergüenza con orgullo?', tone: ContentTone.piccante),
-    (text: '¿Quién volvería con un ex por puro aburrimiento?', tone: ContentTone.piccante),
-    (text: '¿Quién escribe a sus ex cuando la noche se alarga?', tone: ContentTone.piccante),
-    (text: '¿Quién mira las redes de su crush todos los días?', tone: ContentTone.piccante),
-    (text: '¿Quién tendría más matches en una app de citas?', tone: ContentTone.piccante),
-    (text: '¿Quién respondería a un "¿estás despierto?" a las tres de la mañana?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría un "¿estás despierto?" a las tres de la mañana?', tone: ContentTone.piccante),
-    (text: '¿Quién besaría a alguien del grupo por una apuesta de diez euros?', tone: ContentTone.piccante),
-    (text: '¿Quién pasaría más vergüenza enseñando su historial de búsqueda?', tone: ContentTone.piccante),
-    (text: '¿Quién ha pensado ya cómo sería una noche con alguien de los presentes?', tone: ContentTone.piccante),
-    (text: '¿Quién se casaría con un desconocido en Las Vegas?', tone: ContentTone.piccante),
+    (
+      text: '¿Quién convencería a todos de hacer algo que no querían hacer?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se llevaría un vaso del bar de recuerdo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién acabaría discutiendo con el portero de la discoteca?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién se encerraría en el baño de una fiesta con alguien, y no precisamente a hablar?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién se despertaría en la cama de alguien sin recordar cómo llegó?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién pasaría la noche con alguien y se escaparía antes del amanecer?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién leería los mensajes en la pantalla de otro?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién diría que está en casa estando fuera?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién dejaría plantado a alguien sin avisar?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién fingiría estar enfermo para saltarse un compromiso?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién acabaría llorando en el baño en una fiesta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién se apuntaría a una app de citas al día siguiente de una ruptura?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se haría pasar por soltero en una fiesta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién flirtearía solo para que le invitaran a una copa?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién daría su número a alguien conocido hace cinco minutos?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién besaría a un desconocido en Nochevieja?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién contaría los detalles de la primera cita en el chat de grupo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién releería los chats con su ex antes de dormir?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién subiría una historia solo para que la vea una persona concreta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién diría "la última y nos vamos" cinco veces la misma noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tendría un rollo de una noche en vacaciones sin pensarlo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene la lista de conquistas más larga de lo que admite?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién se ha vestido hoy así para llamar la atención de alguien concreto?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién mandaría un mensaje atrevido y le echaría la culpa al móvil?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién saldría con dos personas distintas el mismo fin de semana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se quedaría hasta el desayuno tras una primera noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién ha tenido más rollos de una noche de todo el grupo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién mandaría un nude y luego miraría el móvil en pánico esperando respuesta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién diría "yo no soy de esos" mintiendo descaradamente?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién probaría un trío al menos una vez en la vida?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién pasaría la noche con alguien conocido dos horas antes en el bar?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién volvería a casa a las seis de la mañana con la ropa de la noche anterior?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién habrá tenido sexo en el sitio más absurdo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tendría sexo en la playa arriesgándose a que lo pillen?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién mandaría un mensaje picante a la persona equivocada?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién tiene un cajón que es mejor no abrir delante de las visitas?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién presumiría de sus dotes en la cama sin que nadie pregunte?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién decidiría si repetir con alguien según cómo besa?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién habrá besado a más gente en una sola noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién aceptaría un "vente a ver una peli" sabiendo que la peli no empezará jamás?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién propondría la ducha en pareja "para ahorrar agua"?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién habrá tenido ya sexo en un coche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién usaría las apps de citas solo para aventuras de una noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién respondería a un "¿qué haces esta noche?" recibido a las dos de la mañana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién tiene un ex que todavía lo busca de vez en cuando para una noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién llamaría "amistad" a algo que de amistoso tiene bien poco?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién conquistaría a alguien con un solo mensaje?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién publicaría una foto en bañador solo para provocar a alguien concreto?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién propondría sexo de reconciliación tras cada pelea?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene una fantasía que nunca se ha atrevido a confesar?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién compraría lencería nueva solo para una cita prometedora?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién dejaría una marca visible en el cuello de alguien sin disculparse?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién recordaría el nombre de todas las personas con las que ha estado?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién saldría de casa sin ropa interior y lo revelaría solo al final de la noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién convertiría un masaje inocente en algo mucho menos inocente?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién mandaría un audio susurrado solo para volver loco a alguien?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién aceptaría una última noche con un ex "solo para cerrar el círculo"?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién habrá fingido un orgasmo al menos una vez, seguro?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién acabaría en la cama con un desconocido esta misma noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene el body count más alto del grupo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién miente más sobre su body count?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién ha hecho sexting esta última semana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién mandaría una foto atrevida tras dos cumplidos bien puestos?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene una carpeta oculta en la galería?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién flirtearía con quien atiende la barra para que le sirvan antes?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se enamoraría después de una sola noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién desaparecería después de una sola noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién haría el paseo de la vergüenza con orgullo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién volvería con un ex por puro aburrimiento?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién escribe a sus ex cuando la noche se alarga?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién mira las redes de su crush todos los días?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tendría más matches en una app de citas?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién respondería a un "¿estás despierto?" a las tres de la mañana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién mandaría un "¿estás despierto?" a las tres de la mañana?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién besaría a alguien del grupo por una apuesta de diez euros?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién pasaría más vergüenza enseñando su historial de búsqueda?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién ha pensado ya cómo sería una noche con alguien de los presentes?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se casaría con un desconocido en Las Vegas?',
+      tone: ContentTone.piccante,
+    ),
     (text: '¿Quién ligaría en una boda?', tone: ContentTone.piccante),
-    (text: '¿Quién flirtearía con el médico en plena consulta?', tone: ContentTone.piccante),
-    (text: '¿Quién daría un beso de verdad durante un juego como este?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene el móvil en silencio por motivos sospechosos?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene más chats archivados que visibles?', tone: ContentTone.piccante),
-    (text: '¿Quién sabría seducir a alguien en menos de diez minutos?', tone: ContentTone.piccante),
-    (text: '¿Quién lo intenta siempre pero no concreta nunca?', tone: ContentTone.piccante),
-    (text: '¿Quién concreta siempre y no lo cuenta jamás?', tone: ContentTone.piccante),
-    (text: '¿Quién lo cuenta todo pero concreta poco?', tone: ContentTone.piccante),
-    (text: '¿Quién tendría una historia con un compañero de trabajo?', tone: ContentTone.piccante),
-    (text: '¿Quién se enamoraría de su entrenador personal?', tone: ContentTone.piccante),
-    (text: '¿Quién caería mejor a los padres de su pareja que a la propia pareja?', tone: ContentTone.piccante),
-    (text: '¿Quién acabará besando a alguien antes de que termine la noche?', tone: ContentTone.piccante),
-    (text: '¿Quién ha besado ya a alguien de esta sala?', tone: ContentTone.piccante),
-    (text: '¿Quién flirtearía hasta en la cola de correos?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene un tipo ideal tan concreto que parece un retrato robot?', tone: ContentTone.piccante),
-    (text: '¿Quién no tiene ningún tipo ideal, y se nota?', tone: ContentTone.piccante),
+    (
+      text: '¿Quién flirtearía con el médico en plena consulta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién daría un beso de verdad durante un juego como este?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene el móvil en silencio por motivos sospechosos?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene más chats archivados que visibles?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién sabría seducir a alguien en menos de diez minutos?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién lo intenta siempre pero no concreta nunca?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién concreta siempre y no lo cuenta jamás?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién lo cuenta todo pero concreta poco?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tendría una historia con un compañero de trabajo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se enamoraría de su entrenador personal?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién caería mejor a los padres de su pareja que a la propia pareja?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién acabará besando a alguien antes de que termine la noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién ha besado ya a alguien de esta sala?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién flirtearía hasta en la cola de correos?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién tiene un tipo ideal tan concreto que parece un retrato robot?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién no tiene ningún tipo ideal, y se nota?',
+      tone: ContentTone.piccante,
+    ),
     (text: '¿Quién se declararía por audio?', tone: ContentTone.piccante),
-    (text: '¿Quién daría el primer paso con la persona más guapa de la fiesta?', tone: ContentTone.piccante),
-    (text: '¿Quién se mira en cada escaparate antes de una cita?', tone: ContentTone.piccante),
-    (text: '¿Quién llegaría a una cita con rosas y playlist preparada?', tone: ContentTone.piccante),
-    (text: '¿Quién llevaría una cita al fast food llamándolo romántico?', tone: ContentTone.piccante),
-    (text: '¿Quién duerme abrazado a la almohada desde que está soltero?', tone: ContentTone.piccante),
+    (
+      text:
+          '¿Quién daría el primer paso con la persona más guapa de la fiesta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se mira en cada escaparate antes de una cita?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién llegaría a una cita con rosas y playlist preparada?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién llevaría una cita al fast food llamándolo romántico?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién duerme abrazado a la almohada desde que está soltero?',
+      tone: ContentTone.piccante,
+    ),
     (text: '¿Quién ha llorado por amor este mes?', tone: ContentTone.piccante),
-    (text: '¿Quién miraría las fotos de su ex la noche de Fin de Año?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría un audio de diez minutos para explicar un "me gustas"?', tone: ContentTone.piccante),
-    (text: '¿Quién ha escrito y borrado un mensaje esta misma noche?', tone: ContentTone.piccante),
-    (text: '¿Quién besa mejor según la leyenda del grupo?', tone: ContentTone.piccante),
-    (text: '¿Quién usaría una frase de ligue sacada de una película?', tone: ContentTone.piccante),
-    (text: '¿Quién se ofendería si nadie intentara ligar con él jamás?', tone: ContentTone.piccante),
-    (text: '¿Quién diría que no a su celebrity crush por timidez?', tone: ContentTone.piccante),
-    (text: '¿Quién se iría mañana de fin de semana con su último flirteo?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene a su crush guardada en la agenda con nombre en clave?', tone: ContentTone.piccante),
-    (text: '¿Quién entrena solo para los resultados de playa?', tone: ContentTone.piccante),
-    (text: '¿Quién mandaría un mensaje atrevido y apagaría el móvil del miedo?', tone: ContentTone.piccante),
-    (text: '¿Quién se dormiría en mitad de una cita aburrida?', tone: ContentTone.piccante),
-    (text: '¿Quién daría celos a su crush a propósito?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene ya una fecha marcada en el calendario por alguien?', tone: ContentTone.piccante),
-    (text: '¿Quién pasaría la noche hablando en vez de dormir, con la persona adecuada?', tone: ContentTone.piccante),
-    (text: '¿Quién confesaría un flechazo solo bajo interrogatorio, como ahora?', tone: ContentTone.piccante),
-    (text: '¿Quién tiene una frase infalible y jamás la comparte con el grupo?', tone: ContentTone.piccante),
-    (text: '¿Quién sabría convertir una cita desastrosa en una gran noche?', tone: ContentTone.piccante),
+    (
+      text: '¿Quién miraría las fotos de su ex la noche de Fin de Año?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién mandaría un audio de diez minutos para explicar un "me gustas"?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién ha escrito y borrado un mensaje esta misma noche?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién besa mejor según la leyenda del grupo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién usaría una frase de ligue sacada de una película?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se ofendería si nadie intentara ligar con él jamás?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién diría que no a su celebrity crush por timidez?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se iría mañana de fin de semana con su último flirteo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién tiene a su crush guardada en la agenda con nombre en clave?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién entrena solo para los resultados de playa?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién mandaría un mensaje atrevido y apagaría el móvil del miedo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién se dormiría en mitad de una cita aburrida?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién daría celos a su crush a propósito?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién tiene ya una fecha marcada en el calendario por alguien?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién pasaría la noche hablando en vez de dormir, con la persona adecuada?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién confesaría un flechazo solo bajo interrogatorio, como ahora?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          '¿Quién tiene una frase infalible y jamás la comparte con el grupo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: '¿Quién sabría convertir una cita desastrosa en una gran noche?',
+      tone: ContentTone.piccante,
+    ),
     // ------------------------------------------------------- cattivo
-    (text: '¿Quién besaría a alguien de este grupo si no fuera un juego?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mentido ya al menos una vez esta noche?', tone: ContentTone.cattivo),
-    (text: '¿Quién está pensando en alguien ahora mismo?', tone: ContentTone.cattivo),
-    (text: '¿Quién compartiría la captura de un chat privado?', tone: ContentTone.cattivo),
-    (text: '¿Quién crearía un perfil falso para cotillear?', tone: ContentTone.cattivo),
+    (
+      text: '¿Quién besaría a alguien de este grupo si no fuera un juego?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha mentido ya al menos una vez esta noche?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién está pensando en alguien ahora mismo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién compartiría la captura de un chat privado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién crearía un perfil falso para cotillear?',
+      tone: ContentTone.cattivo,
+    ),
     (text: '¿Quién mentiría mirándote a los ojos?', tone: ContentTone.cattivo),
-    (text: '¿Quién criticaría a un amigo en cuanto sale de la habitación?', tone: ContentTone.cattivo),
-    (text: '¿Quién tendría un chat secreto sin alguno de los presentes?', tone: ContentTone.cattivo),
-    (text: '¿Quién desaparecería del grupo en cuanto tenga pareja?', tone: ContentTone.cattivo),
-    (text: '¿Quién vendería un secreto de un amigo por mil euros?', tone: ContentTone.cattivo),
-    (text: '¿Quién soltaría un secreto en menos de veinticuatro horas?', tone: ContentTone.cattivo),
-    (text: '¿Quién se atribuiría el mérito de una idea ajena?', tone: ContentTone.cattivo),
-    (text: '¿Quién fingiría alegrarse por un amigo mientras se muere de envidia?', tone: ContentTone.cattivo),
-    (text: '¿Quién borraría a un amigo de su vida sin explicaciones?', tone: ContentTone.cattivo),
-    (text: '¿Quién no devolvería jamás el dinero prestado?', tone: ContentTone.cattivo),
-    (text: '¿Quién culparía a otro con tal de salvarse?', tone: ContentTone.cattivo),
-    (text: '¿Quién miraría el móvil de un amigo dejado desbloqueado?', tone: ContentTone.cattivo),
-    (text: '¿Quién flirtearía con el ex de un amigo?', tone: ContentTone.cattivo),
-    (text: '¿Quién abandonaría un plan con amigos por una invitación mejor?', tone: ContentTone.cattivo),
-    (text: '¿Quién llevaría una lista mental de todas las ofensas recibidas?', tone: ContentTone.cattivo),
-    (text: '¿Quién diría "no te juzgo" mientras te está juzgando?', tone: ContentTone.cattivo),
-    (text: '¿Quién no aguantaría una semana sin criticar a nadie?', tone: ContentTone.cattivo),
-    (text: '¿Quién fingiría no ver un mensaje para librarse de una mudanza?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha juzgado ya en silencio a todos los de esta sala?', tone: ContentTone.cattivo),
-    (text: '¿Quién haría un cumplido falso sin pestañear?', tone: ContentTone.cattivo),
-    (text: '¿Quién acabaría en la cama con un ex esta misma noche si diera señales de vida?', tone: ContentTone.cattivo),
-    (text: '¿Quién tendría sexo en la primera cita sin ningún problema?', tone: ContentTone.cattivo),
-    (text: '¿Quién tendría un amigo con derecho secreto sin decírnoslo a ninguno?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mirado ya a alguno de los presentes de un modo nada inocente?', tone: ContentTone.cattivo),
-    (text: '¿Quién contaría por ahí cada detalle de sus noches locas?', tone: ContentTone.cattivo),
-    (text: '¿Quién se ha imaginado ya en la cama con alguno de los presentes?', tone: ContentTone.cattivo),
-    (text: '¿Quién se acostaría con el ex de su mejor amigo si nadie lo supiera jamás?', tone: ContentTone.cattivo),
-    (text: '¿Quién sería infiel y lograría que no lo pillaran en años?', tone: ContentTone.cattivo),
-    (text: '¿Quién perdonaría una infidelidad aunque jure delante de todos lo contrario?', tone: ContentTone.cattivo),
-    (text: '¿Quién escribiría "te echo de menos" a dos personas distintas la misma noche?', tone: ContentTone.cattivo),
-    (text: '¿Quién tendría una historia secreta con un compañero de trabajo y la negaría hasta el final?', tone: ContentTone.cattivo),
-    (text: '¿Quién pasaría una noche con una persona comprometida sin remordimientos?', tone: ContentTone.cattivo),
-    (text: '¿Quién se sabría el código de desbloqueo de su pareja sin que su pareja lo sepa?', tone: ContentTone.cattivo),
-    (text: '¿Quién diría "llego tarde al trabajo" desde la cama de otra persona?', tone: ContentTone.cattivo),
-    (text: '¿Quién flirtearía con la pareja de uno de los presentes en cuanto se queden solos?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha besado ya a escondidas a una persona que todos conocemos?', tone: ContentTone.cattivo),
-    (text: '¿Quién aceptaría una propuesta indecente de un desconocido rico sin pensarlo mucho?', tone: ContentTone.cattivo),
-    (text: '¿Quién mandaría un nude a un casi desconocido solo por sentirse deseado?', tone: ContentTone.cattivo),
-    (text: '¿Quién se acostaría con el jefe por un ascenso?', tone: ContentTone.cattivo),
-    (text: '¿Quién negaría una infidelidad incluso ante las pruebas?', tone: ContentTone.cattivo),
-    (text: '¿Quién tendría todavía las fotos picantes de un ex guardadas en alguna parte?', tone: ContentTone.cattivo),
-    (text: '¿Quién contaría a los amigos los detalles íntimos de su pareja sin decírselo?', tone: ContentTone.cattivo),
-    (text: '¿Quién negaría hasta la muerte una noche de la que ya todos sabemos todo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha pensado "contigo sí" mirando a alguien de esta sala?', tone: ContentTone.cattivo),
-    (text: '¿Quién intentaría compensar una infidelidad con un regalo caro?', tone: ContentTone.cattivo),
-    (text: '¿Quién escribiría a un ex comprometido sabiendo perfectamente que está comprometido?', tone: ContentTone.cattivo),
-    (text: '¿Quién guardaría a un amante en la agenda con nombre falso?', tone: ContentTone.cattivo),
-    (text: '¿Quién sería infiel por despecho tras una pelea?', tone: ContentTone.cattivo),
-    (text: '¿Quién se acostaría con un ex aun sabiendo que ahora tiene pareja?', tone: ContentTone.cattivo),
-    (text: '¿Quién probaría un trío con dos personas de este grupo?', tone: ContentTone.cattivo),
-    (text: '¿Quién besaría a la pareja de un amigo tras un par de copas de más?', tone: ContentTone.cattivo),
-    (text: '¿Quién revelaría con quién se acuesta un amigo tras jurar guardar el secreto?', tone: ContentTone.cattivo),
-    (text: '¿Quién fingiría entusiasmo en la cama con tal de acabar rápido una noche decepcionante?', tone: ContentTone.cattivo),
-    (text: '¿Quién pondría nota a sus ex delante de los amigos?', tone: ContentTone.cattivo),
-    (text: '¿Quién presumiría de una infidelidad en vez de avergonzarse?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mentido ya a su pareja para estar aquí esta noche?', tone: ContentTone.cattivo),
-    (text: '¿Quién se quitaría el anillo antes de entrar en una discoteca?', tone: ContentTone.cattivo),
-    (text: '¿Quién usaría su encanto para que le paguen todo sin conceder nada?', tone: ContentTone.cattivo),
-    (text: '¿Quién habrá tenido sexo en un sitio donde se jugaba el despido?', tone: ContentTone.cattivo),
-    (text: '¿Quién mantendría dos historias a la vez durante meses sin cargo de conciencia?', tone: ContentTone.cattivo),
-    (text: '¿Quién volvería con un ex solo por el sexo, sabiendo perfectamente que es un error?', tone: ContentTone.cattivo),
-    (text: '¿Quién declararía solo la mitad de las personas con las que ha estado en realidad?', tone: ContentTone.cattivo),
-    (text: '¿Quién leería los chats de su pareja y no lo confesaría jamás?', tone: ContentTone.cattivo),
-    (text: '¿Quién se escaparía un fin de semana con la persona equivocada con tal de no aburrirse?', tone: ContentTone.cattivo),
-    (text: '¿Quién está mirando a alguno de los presentes con segundas intenciones ahora mismo?', tone: ContentTone.cattivo),
-    (text: '¿Quién habrá tenido sexo en un lugar público, seguro?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha grabado al menos un vídeo subido de tono en su vida?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene una carpeta protegida con contraseña que no veremos jamás?', tone: ContentTone.cattivo),
-    (text: '¿Quién se ha acostado con alguien que todos conocemos y no lo ha dicho nunca?', tone: ContentTone.cattivo),
-    (text: '¿Quién acabaría en la cama con el ex de su mejor amigo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha sido infiel al menos una vez?', tone: ContentTone.cattivo),
-    (text: '¿Quién perdonaría una infidelidad con tal de no quedarse solo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha tenido ya un pensamiento nada inocente sobre uno de los presentes?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha soñado ya con uno de los presentes en versión no apta para menores?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene seguro un juguete en la mesilla de noche?', tone: ContentTone.cattivo),
+    (
+      text: '¿Quién criticaría a un amigo en cuanto sale de la habitación?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tendría un chat secreto sin alguno de los presentes?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién desaparecería del grupo en cuanto tenga pareja?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién vendería un secreto de un amigo por mil euros?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién soltaría un secreto en menos de veinticuatro horas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién se atribuiría el mérito de una idea ajena?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién fingiría alegrarse por un amigo mientras se muere de envidia?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién borraría a un amigo de su vida sin explicaciones?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién no devolvería jamás el dinero prestado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién culparía a otro con tal de salvarse?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién miraría el móvil de un amigo dejado desbloqueado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién flirtearía con el ex de un amigo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién abandonaría un plan con amigos por una invitación mejor?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién llevaría una lista mental de todas las ofensas recibidas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién diría "no te juzgo" mientras te está juzgando?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién no aguantaría una semana sin criticar a nadie?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién fingiría no ver un mensaje para librarse de una mudanza?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha juzgado ya en silencio a todos los de esta sala?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién haría un cumplido falso sin pestañear?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién acabaría en la cama con un ex esta misma noche si diera señales de vida?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tendría sexo en la primera cita sin ningún problema?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tendría un amigo con derecho secreto sin decírnoslo a ninguno?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha mirado ya a alguno de los presentes de un modo nada inocente?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién contaría por ahí cada detalle de sus noches locas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién se ha imaginado ya en la cama con alguno de los presentes?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién se acostaría con el ex de su mejor amigo si nadie lo supiera jamás?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién sería infiel y lograría que no lo pillaran en años?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién perdonaría una infidelidad aunque jure delante de todos lo contrario?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién escribiría "te echo de menos" a dos personas distintas la misma noche?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tendría una historia secreta con un compañero de trabajo y la negaría hasta el final?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién pasaría una noche con una persona comprometida sin remordimientos?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién se sabría el código de desbloqueo de su pareja sin que su pareja lo sepa?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién diría "llego tarde al trabajo" desde la cama de otra persona?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién flirtearía con la pareja de uno de los presentes en cuanto se queden solos?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha besado ya a escondidas a una persona que todos conocemos?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién aceptaría una propuesta indecente de un desconocido rico sin pensarlo mucho?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién mandaría un nude a un casi desconocido solo por sentirse deseado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién se acostaría con el jefe por un ascenso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién negaría una infidelidad incluso ante las pruebas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tendría todavía las fotos picantes de un ex guardadas en alguna parte?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién contaría a los amigos los detalles íntimos de su pareja sin decírselo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién negaría hasta la muerte una noche de la que ya todos sabemos todo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha pensado "contigo sí" mirando a alguien de esta sala?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién intentaría compensar una infidelidad con un regalo caro?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién escribiría a un ex comprometido sabiendo perfectamente que está comprometido?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién guardaría a un amante en la agenda con nombre falso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién sería infiel por despecho tras una pelea?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién se acostaría con un ex aun sabiendo que ahora tiene pareja?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién probaría un trío con dos personas de este grupo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién besaría a la pareja de un amigo tras un par de copas de más?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién revelaría con quién se acuesta un amigo tras jurar guardar el secreto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién fingiría entusiasmo en la cama con tal de acabar rápido una noche decepcionante?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién pondría nota a sus ex delante de los amigos?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién presumiría de una infidelidad en vez de avergonzarse?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha mentido ya a su pareja para estar aquí esta noche?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién se quitaría el anillo antes de entrar en una discoteca?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién usaría su encanto para que le paguen todo sin conceder nada?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién habrá tenido sexo en un sitio donde se jugaba el despido?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién mantendría dos historias a la vez durante meses sin cargo de conciencia?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién volvería con un ex solo por el sexo, sabiendo perfectamente que es un error?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién declararía solo la mitad de las personas con las que ha estado en realidad?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién leería los chats de su pareja y no lo confesaría jamás?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién se escaparía un fin de semana con la persona equivocada con tal de no aburrirse?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién está mirando a alguno de los presentes con segundas intenciones ahora mismo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién habrá tenido sexo en un lugar público, seguro?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha grabado al menos un vídeo subido de tono en su vida?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tiene una carpeta protegida con contraseña que no veremos jamás?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién se ha acostado con alguien que todos conocemos y no lo ha dicho nunca?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién acabaría en la cama con el ex de su mejor amigo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha sido infiel al menos una vez?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién perdonaría una infidelidad con tal de no quedarse solo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha tenido ya un pensamiento nada inocente sobre uno de los presentes?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha soñado ya con uno de los presentes en versión no apta para menores?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene seguro un juguete en la mesilla de noche?',
+      tone: ContentTone.cattivo,
+    ),
     (text: '¿Quién tiene más de uno?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha hecho un trío o se muere de ganas de probarlo?', tone: ContentTone.cattivo),
-    (text: '¿Quién aceptaría una propuesta de trío si llegara esta noche?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha tenido sexo en la primera cita más de una vez?', tone: ContentTone.cattivo),
-    (text: '¿Quién se ha escapado de casa de alguien antes del amanecer?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha colado a alguien en casa a escondidas?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha escondido a una persona en el armario, literalmente?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene un amigo con derecho justo en esta época?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha arruinado una amistad por acabar en la cama con la persona equivocada?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mentido a su pareja sobre dónde pasó la noche?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha borrado un chat entero por seguridad?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene un nombre en clave en la agenda para una persona concreta?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha tenido sexo mientras nosotros estábamos en la habitación de al lado?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha tenido una debilidad seria por un jefe o un profesor?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha usado la oficina para algo nada laboral?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha tenido sexo en un coche en un aparcamiento lleno?', tone: ContentTone.cattivo),
-    (text: '¿Quién fue pillado por sus padres en el peor momento?', tone: ContentTone.cattivo),
-    (text: '¿Quién pilló a sus padres y no se ha recuperado jamás?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha fingido un orgasmo hace poco?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha dicho el nombre equivocado en la cama alguna vez?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha dejado marcas en el cuello de alguien este año?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha tenido que inventarse una excusa por un moratón?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha tenido sexo en vacaciones con alguien del lugar?', tone: ContentTone.cattivo),
-    (text: '¿Quién volvería con un ex solo por una noche y lo llamaría casualidad?', tone: ContentTone.cattivo),
-    (text: '¿Quién ya ha vuelto con un ex y lo niega?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene dos chats abiertos con dos llamas a la vez, ahora mismo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mandado la misma foto atrevida a dos personas distintas?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha recibido una foto atrevida cenando con sus padres?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha hecho sexting esta misma noche, desde esta sala?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene un fetiche que no confesará jamás?', tone: ContentTone.cattivo),
-    (text: '¿Quién lo confesaría si se lo pidiéramos ahora todos a coro?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha probado a que lo aten por juego?', tone: ContentTone.cattivo),
-    (text: '¿Quién usaría una venda en los ojos sin pensarlo dos veces?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha comprado lencería para una sola noche concreta?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene una playlist hecha a propósito para las noches acompañado?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha puesto la música alta para que no lo oyeran?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha recibido quejas de los vecinos al menos una vez?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha roto una cama o un mueble y ha tenido que explicarlo?', tone: ContentTone.cattivo),
-    (text: '¿Quién se ha resbalado al menos una vez probando la ducha en pareja?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha ascendido la cocina a escenario y no se arrepiente?', tone: ContentTone.cattivo),
-    (text: '¿Quién lo ha hecho en la playa aunque todos desaconsejen la arena?', tone: ContentTone.cattivo),
-    (text: '¿Quién lo haría en un avión si surgiera la ocasión?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha pagado una habitación solo por unas horas?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha usado la pausa de la comida de un modo muy creativo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mentido sobre su body count hasta a sí mismo?', tone: ContentTone.cattivo),
-    (text: '¿Quién lleva la cuenta exacta, con fechas incluidas?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene una lista escrita en alguna parte?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha contado una noche censurando el noventa por ciento?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha exagerado los detalles de una noche para dar espectáculo?', tone: ContentTone.cattivo),
-    (text: '¿Quién es mejor en la cama de lo que deja intuir?', tone: ContentTone.cattivo),
+    (
+      text: '¿Quién ha hecho un trío o se muere de ganas de probarlo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién aceptaría una propuesta de trío si llegara esta noche?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha tenido sexo en la primera cita más de una vez?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién se ha escapado de casa de alguien antes del amanecer?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha colado a alguien en casa a escondidas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha escondido a una persona en el armario, literalmente?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene un amigo con derecho justo en esta época?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha arruinado una amistad por acabar en la cama con la persona equivocada?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha mentido a su pareja sobre dónde pasó la noche?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha borrado un chat entero por seguridad?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tiene un nombre en clave en la agenda para una persona concreta?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha tenido sexo mientras nosotros estábamos en la habitación de al lado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha tenido una debilidad seria por un jefe o un profesor?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha usado la oficina para algo nada laboral?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha tenido sexo en un coche en un aparcamiento lleno?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién fue pillado por sus padres en el peor momento?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién pilló a sus padres y no se ha recuperado jamás?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha fingido un orgasmo hace poco?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha dicho el nombre equivocado en la cama alguna vez?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha dejado marcas en el cuello de alguien este año?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha tenido que inventarse una excusa por un moratón?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha tenido sexo en vacaciones con alguien del lugar?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién volvería con un ex solo por una noche y lo llamaría casualidad?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ya ha vuelto con un ex y lo niega?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tiene dos chats abiertos con dos llamas a la vez, ahora mismo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha mandado la misma foto atrevida a dos personas distintas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha recibido una foto atrevida cenando con sus padres?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha hecho sexting esta misma noche, desde esta sala?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene un fetiche que no confesará jamás?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién lo confesaría si se lo pidiéramos ahora todos a coro?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha probado a que lo aten por juego?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién usaría una venda en los ojos sin pensarlo dos veces?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha comprado lencería para una sola noche concreta?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tiene una playlist hecha a propósito para las noches acompañado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha puesto la música alta para que no lo oyeran?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha recibido quejas de los vecinos al menos una vez?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha roto una cama o un mueble y ha tenido que explicarlo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién se ha resbalado al menos una vez probando la ducha en pareja?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha ascendido la cocina a escenario y no se arrepiente?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién lo ha hecho en la playa aunque todos desaconsejen la arena?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién lo haría en un avión si surgiera la ocasión?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha pagado una habitación solo por unas horas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha usado la pausa de la comida de un modo muy creativo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha mentido sobre su body count hasta a sí mismo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién lleva la cuenta exacta, con fechas incluidas?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene una lista escrita en alguna parte?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha contado una noche censurando el noventa por ciento?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha exagerado los detalles de una noche para dar espectáculo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién es mejor en la cama de lo que deja intuir?',
+      tone: ContentTone.cattivo,
+    ),
     (text: '¿Quién es peor de lo que cuenta?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mirado el móvil de su pareja mientras dormía?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha encontrado algo en un móvil ajeno y ha hecho como si nada?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha usado un perfil falso para controlar a alguien?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha reconocido a una persona comprometida en una app de citas y ha callado?', tone: ContentTone.cattivo),
-    (text: '¿Quién se apuntaría a una web para adultos con nombre artístico?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene ya el nombre artístico preparado?', tone: ContentTone.cattivo),
-    (text: '¿Quién aceptaría una noche con su celebrity crush aunque se enterara todo el mundo?', tone: ContentTone.cattivo),
-    (text: '¿Quién diría que no y encima mentiría sobre el motivo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha hecho las paces en la cama tras una pelea creada a propósito?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha usado el sexo para que le perdonaran algo gordo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha dicho "no volverá a pasar" sabiendo perfectamente que volvería a pasar?', tone: ContentTone.cattivo),
-    (text: '¿Quién saldría esta noche de aquí acompañado, si tuviera el valor?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene ya un plan preciso de cómo acabará su noche?', tone: ContentTone.cattivo),
-    (text: '¿Quién tiene el móvil lleno de conversaciones que no podemos ver jamás?', tone: ContentTone.cattivo),
-    (text: '¿Quién se ha despertado en una cama desconocida sin recordar cómo?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha hecho el paseo de la vergüenza cruzándose con un conocido?', tone: ContentTone.cattivo),
-    (text: '¿Quién ha mentido diciendo "estaba en casa durmiendo"?', tone: ContentTone.cattivo),
-    (text: '¿Quién lo está haciendo más que nadie últimamente, sin contárselo a nadie?', tone: ContentTone.cattivo),
-    (text: '¿Quién terminará esta partida con un secreto menos y un plan más?', tone: ContentTone.cattivo),
+    (
+      text: '¿Quién ha mirado el móvil de su pareja mientras dormía?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha encontrado algo en un móvil ajeno y ha hecho como si nada?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha usado un perfil falso para controlar a alguien?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha reconocido a una persona comprometida en una app de citas y ha callado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién se apuntaría a una web para adultos con nombre artístico?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene ya el nombre artístico preparado?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién aceptaría una noche con su celebrity crush aunque se enterara todo el mundo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién diría que no y encima mentiría sobre el motivo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha hecho las paces en la cama tras una pelea creada a propósito?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha usado el sexo para que le perdonaran algo gordo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha dicho "no volverá a pasar" sabiendo perfectamente que volvería a pasar?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién saldría esta noche de aquí acompañado, si tuviera el valor?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene ya un plan preciso de cómo acabará su noche?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién tiene el móvil lleno de conversaciones que no podemos ver jamás?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién se ha despertado en una cama desconocida sin recordar cómo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién ha hecho el paseo de la vergüenza cruzándose con un conocido?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha mentido diciendo "estaba en casa durmiendo"?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién lo está haciendo más que nadie últimamente, sin contárselo a nadie?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién terminará esta partida con un secreto menos y un plan más?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién aceptaría que le orinaran encima por un millón de euros?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ya ha tenido sexo anal esta noche antes de venir aquí?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién en este grupo tiene el esperma más rico, por el olfato?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién dejaría que un completo desconocido le lamiera el culo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién ha intentado ya seguramente tragarse su propia eyaculación?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién cambiaría a su pareja por una noche de sexo extremo con otro de los presentes?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene la ropa interior más mojada en este momento?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          '¿Quién le haría sexo oral a quien tiene a su izquierda para saltarse una ronda?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién de nosotros acabaría haciendo cine porno si le pagaran bien?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: '¿Quién tiene el juguete sexual más grande en su habitación?',
+      tone: ContentTone.cattivo,
+    ),
   ];
+
   /// Obblighi (retos) per tono: 150 ciascuno.
   static const Map<String, List<String>> obblighi = {
     ContentTone.soft: [
@@ -1378,6 +3793,7 @@ class ContentEs {
       'Confiesa qué prenda de tu armario existe solo para las noches que prometen.',
     ],
   };
+
   /// Verità per tono: 150 ciascuna.
   static const Map<String, List<String>> verita = {
     ContentTone.soft: [
@@ -1835,8 +4251,17 @@ class ContentEs {
       '¿Qué harías esta noche si estuvieras seguro de que ninguno de nosotros lo sabrá jamás?',
       '¿Quién del grupo ha entendido más cosas de ti esta noche, y cuánto te preocupa?',
       'Última: ¿esta noche duermes solo por elección o por falta de alternativas? Sé despiadado contigo mismo.',
+      '¿Te gusta el sexo anal? Responde con sinceridad o paga una prenda pesadísima.',
+      '¿Cuántas veces te has masturbado hoy?',
+      '¿A qué sabe el esperma de tu pareja habitual?',
+      '¿Has usado alguna vez un vibrador o dildo durante el sexo con otra persona?',
+      '¿Qué es lo más asqueroso que has hecho en la cama pero que te gustó?',
+      'Describe cómo te masturbas con todo lujo de detalles.',
+      '¿Quién en esta habitación crees que es el más dotado/a?',
+      '¿Has hecho alguna vez sexo oral a alguien y luego le has besado inmediatamente después?',
     ],
   };
+
   /// Bugie pre-scritte per Bluff Story: 150 frasi plausibili in prima persona.
   static const List<String> bluffFakes = [
     'Una vez dormí doce horas seguidas en un aeropuerto.',
@@ -1914,7 +4339,234 @@ class ContentEs {
     'Conocí a mi mejor amigo haciendo cola en alguna parte.',
     'Me reencontré con un amigo de la infancia por casualidad en el extranjero.',
     'Mantuve una amistad durante años solo por mensajes.',
-    // __C__
+    'Escribí una carta que nunca envié.',
+    'Recibí una carta que me cambió el día.',
+    'Llamé a un número equivocado y hablé diez minutos.',
+    'Contesté una llamada del trabajo estando en la playa.',
+    'Trabajé durante todas las vacaciones de Navidad.',
+    'Cambié de trabajo sin tener un plan B.',
+    'Rechacé una oferta de trabajo mejor que la que tenía.',
+    'Hice una entrevista en un idioma que apenas hablaba.',
+    'Tomé una decisión importante lanzando una moneda.',
+    'Me dormí en una reunión importante.',
+    'Mandé un correo a toda la empresa por error.',
+    'Llamé a mi jefe por el nombre equivocado.',
+    'Trabajé meses con alguien sin saber su apellido.',
+    'Fingí conocer a alguien que me saludaba por la calle.',
+    'Saludé a un desconocido pensando que era un amigo.',
+    'Reconocí a alguien solo por la voz después de diez años.',
+    'Olvidé el cumpleaños de una persona importante.',
+    'Organicé una fiesta sorpresa que se descubrió antes.',
+    'Guardé un secreto durante cinco años.',
+    'Conté una mentira que duró un año entero.',
+    'Confesé algo solo porque me sentía culpable.',
+    'Lloré viendo un anuncio.',
+    'Me reí en el momento más inoportuno.',
+    'Me dormí en el cine en una película que quería ver.',
+    'Aplaudí yo solo al final de una película.',
+    'Canté en el coche creyendo que nadie me veía.',
+    'Bailé en un ascensor con alguien a quien no conocía.',
+    'Me hice amigo de un vecino solo después de tres años.',
+    'Perdí las llaves de casa el día de la mudanza.',
+    'Me quedé fuera de casa en pijama.',
+    'Me quedé encerrado en un ascensor veinte minutos.',
+    'Subí por la escalera mecánica en sentido contrario.',
+    'Me equivoqué de baño en un restaurante.',
+    'Entré en la reunión equivocada y me quedé diez minutos.',
+    'Hablé por teléfono con el volumen alto sin darme cuenta.',
+    'Mandé un mensaje a la persona de la que estaba hablando.',
+    'Hice una captura y la mandé a la persona equivocada.',
+    'Le di like a una foto de hace diez años sin querer.',
+    'Escribí un comentario y lo borré un segundo después.',
+    'Me creé un perfil en redes que no he usado nunca.',
+    'Me vi una serie entera un fin de semana sin salir.',
+    'Me terminé un videojuego en una sola noche.',
+    'Jugué al mismo juego durante cinco años.',
+    'Gané un torneo de cartas en familia haciendo trampas.',
+    'Perdí una apuesta y tuve que teñirme el pelo.',
+    'Hice una apuesta que me costó una cena para ocho.',
+    'Comí algo picantísimo por una apuesta.',
+    'Me tomé tres cafés en una hora y no dormí.',
+    'Pasé una noche en blanco por una ansiedad absurda.',
+    'Tuve un sueño tan real que al despertar me lo creí.',
+    'Hablé en sueños y revelé algo importante.',
+    'Fui sonámbulo de pequeño.',
+    'Me desperté en un sitio distinto de donde me dormí.',
+    'Dormí en un banco de un parque por la tarde.',
+    'Pasé un día entero sin hablar con nadie.',
+    'Hablé dos horas con un desconocido en el tren.',
+    'Devolví una cartera llena que encontré en la calle.',
+    'Gané un premio en una tómbola del pueblo y nunca lo recogí.',
+    'Comí lo mismo cada día durante un mes entero.',
+    'Fingí hablar otro idioma para que no me reconocieran.',
+    'Me quedé fuera de casa en pijama durante tres horas.',
+    'Contesté una llamada importante fingiendo no estar en la cama.',
+    'Aplaudí yo solo en el cine al acabar la película.',
+    'Paseé al perro equivocado durante veinte minutos.',
+    'Saludé con mucho entusiasmo a alguien que no conocía en absoluto.',
+    'Hice un tour turístico de mi propia ciudad fingiendo ser extranjero.',
+    'Felicité el cumpleaños a la persona equivocada dos años seguidos.',
+    'Gané una discusión citando una estadística que me inventé.',
+    'Llevé el paraguas abierto diez minutos después de dejar de llover.',
+    'Hice el ridículo en una entrevista y me cogieron igual.',
+    'Tuve una planta falsa en casa durante años y la regaba a veces.',
+    'Perdí las llaves y las encontré en la nevera.',
+    'Le dije "buen provecho" al camarero que me lo acababa de desear.',
+    'Corrí doscientos metros detrás de un autobús y lo cogí.',
+    'Olvidé dónde había aparcado y di vueltas una hora.',
   ];
-  // __B__
+
+  /// Parole segrete per Impostore: 150 parole concrete e note a tutti.
+  static const List<String> impostoreWords = [
+    'Playa',
+    'Montaña',
+    'Aeropuerto',
+    'Estación',
+    'Metro',
+    'Hospital',
+    'Farmacia',
+    'Supermercado',
+    'Panadería',
+    'Pizzería',
+    'Restaurante',
+    'Bar',
+    'Discoteca',
+    'Gimnasio',
+    'Piscina',
+    'Biblioteca',
+    'Museo',
+    'Cine',
+    'Teatro',
+    'Estadio',
+    'Colegio',
+    'Universidad',
+    'Oficina',
+    'Fábrica',
+    'Obra',
+    'Peluquería',
+    'Dentista',
+    'Banco',
+    'Correos',
+    'Hotel',
+    'Camping',
+    'Zoo',
+    'Acuario',
+    'Parque',
+    'Jardín',
+    'Bosque',
+    'Desierto',
+    'Isla',
+    'Volcán',
+    'Cascada',
+    'Ascensor',
+    'Escalera mecánica',
+    'Semáforo',
+    'Autopista',
+    'Ferry',
+    'Avión',
+    'Tren',
+    'Bicicleta',
+    'Patinete',
+    'Moto',
+    'Paraguas',
+    'Gafas',
+    'Reloj',
+    'Mochila',
+    'Maleta',
+    'Cartera',
+    'Llaves',
+    'Teléfono',
+    'Cargador',
+    'Auriculares',
+    'Televisión',
+    'Nevera',
+    'Lavadora',
+    'Aspiradora',
+    'Horno',
+    'Colchón',
+    'Almohada',
+    'Manta',
+    'Sofá',
+    'Sillón',
+    'Espejo',
+    'Ducha',
+    'Toalla',
+    'Cepillo de dientes',
+    'Jabón',
+    'Café',
+    'Croissant',
+    'Helado',
+    'Pizza',
+    'Lasaña',
+    'Bocadillo',
+    'Ensalada',
+    'Pasta',
+    'Paella',
+    'Sopa',
+    'Chocolate',
+    'Palomitas',
+    'Patatas fritas',
+    'Sandía',
+    'Piña',
+    'Limón',
+    'Guindilla',
+    'Queso',
+    'Miel',
+    'Sal',
+    'Perro',
+    'Gato',
+    'Caballo',
+    'Pingüino',
+    'Delfín',
+    'Tiburón',
+    'Abeja',
+    'Hormiga',
+    'Araña',
+    'Serpiente',
+    'Balón',
+    'Raqueta',
+    'Canasta',
+    'Bici de carretera',
+    'Esquí',
+    'Guitarra',
+    'Piano',
+    'Batería',
+    'Micrófono',
+    'Karaoke',
+    'Boda',
+    'Cumpleaños',
+    'Nochevieja',
+    'Vacaciones',
+    'Mudanza',
+    'Faro',
+    'Crucero',
+    'Granja',
+    'Circo',
+    'Viñedo',
+    'Tiovivo',
+    'Planetario',
+    'Molino',
+    'Gasolinera',
+    'Túnel de lavado',
+    'Lavandería',
+    'Mercado',
+    'Heladería',
+    'Sushi',
+    'Barbacoa',
+    'Picnic',
+    'Mina',
+    'Bolera',
+    'Feria',
+    'Glaciar',
+    'Sauna',
+    'Balneario',
+    'Trineo',
+    'Surf',
+    'Tienda de campaña',
+    'Hoguera',
+    'Kárate',
+    'Maratón',
+    'Tatuaje',
+    'Castillo',
+  ];
 }
