@@ -18,9 +18,7 @@ class JoyoApp extends ConsumerWidget {
       title: 'Joyo',
       debugShowCheckedModeBanner: false,
       theme: JoyoTheme.dark,
-      // Joyo è un'app da telefono: su finestre larghe (browser, tablet) il
-      // contenuto resta in una colonna stretta invece di allargarsi e
-      // sfondare i layout pensati per uno schermo verticale.
+      // App da telefono: su finestre larghe il contenuto resta in colonna stretta.
       builder: (context, child) => ColoredBox(
         color: JoyoColors.background,
         child: Center(

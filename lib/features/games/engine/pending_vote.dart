@@ -1,9 +1,8 @@
-/// Il voto appena toccato su questo telefono, non ancora confermato dal
-/// server. Serve a evidenziare subito la scelta senza aspettare la rete.
+/// Il voto appena toccato su questo telefono, non ancora confermato dal server,
+/// per evidenziare subito la scelta senza aspettare la rete.
 ///
-/// È legato all'id del round di proposito: quando arriva il round successivo
-/// la scelta non vale più. Tenerla slegata è stato un bug reale — dal secondo
-/// round in poi l'opzione risultava già scelta e il voto non partiva.
+/// È legato all'id del round di proposito: slegarlo era un bug reale, dal
+/// secondo round in poi l'opzione risultava già scelta e il voto non partiva.
 class PendingVote {
   String? _roundId;
   Map<String, dynamic>? _value;

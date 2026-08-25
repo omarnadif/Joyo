@@ -3,8 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 const _key = 'joyo.onboarded';
 
-/// Se la presentazione iniziale è già stata vista.
-/// `null` mentre lo stiamo ancora leggendo dal disco.
+/// Se la presentazione iniziale è già stata vista; `null` finché non è letta dal disco.
 class OnboardingNotifier extends Notifier<bool?> {
   @override
   bool? build() {

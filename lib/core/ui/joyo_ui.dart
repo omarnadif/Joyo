@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 
-/// Superficie che emette luce invece di essere semplicemente stampata:
-/// gradiente interno, bordo nel colore d'accento e un alone diffuso sotto.
+/// Superficie che emette luce: gradiente interno, bordo nel colore d'accento e un alone diffuso sotto.
 class GlowCard extends StatelessWidget {
   const GlowCard({
     required this.child,
@@ -65,8 +64,7 @@ class GlowCard extends StatelessWidget {
   }
 }
 
-/// Pulsante principale: pieno del colore d'accento, con l'alone che lo fa
-/// sembrare acceso.
+/// Pulsante principale: pieno del colore d'accento, con l'alone che lo fa sembrare acceso.
 class JoyoButton extends StatelessWidget {
   const JoyoButton({
     required this.label,
@@ -187,8 +185,7 @@ class JoyoGhostButton extends StatelessWidget {
   }
 }
 
-/// Riflesso che attraversa lentamente un elemento, come una luce che passa.
-/// Usato solo sul codice stanza: serve a farlo notare, non a decorare.
+/// Riflesso che attraversa lentamente un elemento; usato solo sul codice stanza per farlo notare.
 class Shimmer extends StatefulWidget {
   const Shimmer({required this.child, this.color = Colors.white, super.key});
 
@@ -239,8 +236,7 @@ class _ShimmerState extends State<Shimmer> with SingleTickerProviderStateMixin {
   }
 }
 
-/// Etichetta piccola tutta maiuscola sopra i titoli: dà gerarchia senza
-/// aggiungere un altro peso tipografico.
+/// Etichetta piccola tutta maiuscola sopra i titoli, per dare gerarchia.
 class Eyebrow extends StatelessWidget {
   const Eyebrow(this.text, {this.color = JoyoColors.textSecondary, super.key});
 
@@ -254,8 +250,7 @@ class Eyebrow extends StatelessWidget {
   );
 }
 
-/// Reazione al tocco: la superficie si abbassa leggermente. Un solo gesto,
-/// uguale su tutta l'app.
+/// Reazione al tocco: la superficie si abbassa leggermente, uguale su tutta l'app.
 class _Pressable extends StatefulWidget {
   const _Pressable({required this.child, required this.onTap});
 
@@ -292,9 +287,7 @@ class _PressableState extends State<_Pressable> {
   }
 }
 
-/// Entrata scaglionata: gli elementi salgono uno dopo l'altro all'apertura
-/// della schermata. Un solo momento di regia per pagina, niente animazioni
-/// sparse ovunque.
+/// Entrata scaglionata: gli elementi salgono uno dopo l'altro all'apertura della schermata.
 class RiseIn extends StatelessWidget {
   const RiseIn({
     required this.child,

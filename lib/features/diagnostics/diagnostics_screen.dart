@@ -5,8 +5,7 @@ import '../../core/env/app_env.dart';
 import '../../core/supabase/supabase_providers.dart';
 import '../../core/theme/app_colors.dart';
 
-/// Diagnostica di connessione, aperta tenendo premuto il marchio in home:
-/// verifica chiavi, login anonimo, database + RLS e websocket realtime.
+/// Diagnostica di connessione (aperta tenendo premuto il marchio in home): verifica chiavi, login anonimo, database + RLS e realtime.
 class DiagnosticsScreen extends ConsumerWidget {
   const DiagnosticsScreen({super.key});
 

@@ -70,8 +70,8 @@ class _Voting extends StatelessWidget {
         const SizedBox(height: 18),
         Eyebrow(t('preferisci.prompt')),
         const SizedBox(height: 14),
-        // Le card si adattano al testo con un'altezza minima generosa: con
-        // due parole non devono diventare due muri vuoti alti mezzo schermo.
+        // Altezza minima generosa così con due parole le card non diventano
+        // muri vuoti alti mezzo schermo.
         Expanded(
           child: Center(
             child: SingleChildScrollView(

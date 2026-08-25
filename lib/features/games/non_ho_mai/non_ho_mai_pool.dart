@@ -1,8 +1,7 @@
 import '../content_tone.dart';
 
-/// Pool gratuito di "Non ho mai": 455 frasi, divise per tono
-/// (155 soft, 150 piccante, 150 cattivo).
-/// Ogni frase completa "Non ho mai…".
+/// Pool gratuito di "Non ho mai": 450 frasi, 150 per tono, in parità con le
+/// traduzioni. Ogni frase completa "Non ho mai…".
 class NonHoMaiPool {
   const NonHoMaiPool._();
 
@@ -258,10 +257,7 @@ class NonHoMaiPool {
       text: 'convinto qualcuno di una cosa inventata per scherzo',
       tone: ContentTone.soft,
     ),
-    (
-      text: 'finto di lavorare all\'arrivo del capo',
-      tone: ContentTone.soft,
-    ),
+    (text: 'finto di lavorare all\'arrivo del capo', tone: ContentTone.soft),
     (
       text: 'mandato "ok" solo per chiudere una discussione',
       tone: ContentTone.soft,
@@ -366,23 +362,6 @@ class NonHoMaiPool {
     ),
     (
       text: 'esultato per un parcheggio riuscito al primo colpo',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'dichiarato guerra a una zanzara alle tre di notte',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'acceso il condizionatore per dormire sotto il piumone',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'scritto una lista di cose da fare e ignorata del tutto',
-      tone: ContentTone.soft,
-    ),
-    (text: 'fatto finta di aver letto un libro famoso', tone: ContentTone.soft),
-    (
-      text: 'perso il filo del discorso mentre parlavo io',
       tone: ContentTone.soft,
     ),
     // ------------------------------------------------------ piccante
@@ -667,426 +646,680 @@ class NonHoMaiPool {
       text: 'ricevuto un due di picche davanti a tutti',
       tone: ContentTone.piccante,
     ),
-    // ------------------------------------------------------- cattivo
-    (
-      text: 'parlato male di una persona presente in questa stanza',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'rivelato il segreto di un amico', tone: ContentTone.cattivo),
-    (
-      text: 'condiviso lo screenshot di una chat privata',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'creato un profilo falso per spiare qualcuno',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'gioito in segreto per il fallimento di qualcuno che mi sta antipatico',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'finto di essere felice per un amico mentre rosicavo dentro',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'pensato che il partner di un amico non lo meritasse per niente',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'sperato che la relazione di una coppia di amici finisse',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'detto "non lo dico a nessuno" e spifferato tutto entro un\'ora',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'creato una chat di gruppo senza una persona solo per parlare di lei',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'flirtato con qualcuno solo per far ingelosire un\'altra persona',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'dato un consiglio sbagliato apposta', tone: ContentTone.cattivo),
-    (text: 'rovinato una sorpresa di proposito', tone: ContentTone.cattivo),
-    (
-      text: 'finto di aver dimenticato il portafoglio per non pagare',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'riferito un gossip aggiungendo dettagli inventati',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'usato le lacrime per ottenere quello che volevo',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'letto una chat sul telefono di un amico mentre era in bagno',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'finto di ascoltare i problemi di un amico pensando ai fatti miei',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'negato fino alla morte una cosa che avevo fatto davvero',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'sparlato di qualcuno e negato tutto quando me l\'hanno chiesto in faccia',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'usato un segreto di qualcuno per vincere una discussione',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'diviso il conto alla pari sapendo di aver ordinato il triplo degli altri',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'invitato una persona solo perché aveva la macchina',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'tenuto nascosto a un amico che il suo partner flirtava con altri',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'cancellato un messaggio dal telefono di qualcun altro',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'fatto sesso in un luogo pubblico', tone: ContentTone.cattivo),
-    (
-      text: 'avuto un amico di letto tenendolo nascosto a tutti',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'mandato un messaggio spinto alla persona sbagliata',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'rivisto un ex solo per una notte giurando che era l\'ultima',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'dimenticato il nome di qualcuno con cui avevo passato la notte',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'pensato a un\'altra persona mentre baciavo il mio partner',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'mentito sul numero delle mie conquiste', tone: ContentTone.cattivo),
-    (
-      text: 'fatto sesso a una festa mentre la casa era piena di gente',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'usato il fascino per farmi perdonare qualcosa di grave',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'passato la notte con qualcuno conosciuto quella sera su un\'app',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'fatto o desiderato una cosa a tre', tone: ContentTone.cattivo),
-    (text: 'tradito un partner', tone: ContentTone.cattivo),
-    (
-      text: 'baciato un\'altra persona mentre ero in coppia',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'mandato una mia foto senza vestiti', tone: ContentTone.cattivo),
-    (
-      text: 'mostrato a un amico una foto hot ricevuta in privato',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'passato la notte con l\'ex di un amico', tone: ContentTone.cattivo),
-    (text: 'fatto sesso in macchina', tone: ContentTone.cattivo),
-    (
-      text: 'fatto sesso a casa dei genitori del mio partner',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fatto sesso con due persone diverse nella stessa settimana',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'avuto una storia con una persona già impegnata',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'finto di provare piacere a letto', tone: ContentTone.cattivo),
-    (
-      text: 'dato un voto alle prestazioni dei miei ex parlando con gli amici',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'usato il sesso per farmi perdonare dopo un litigio',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'scritto a qualcuno alle tre di notte con un solo scopo in mente',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'avuto una notte di passione con qualcuno di questo gruppo',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'immaginato come sarebbe a letto una persona presente in questa stanza',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'paragonato a letto un partner a un ex', tone: ContentTone.cattivo),
-    (
-      text: 'tenuto una chat segreta con un ex mentre ero impegnato',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'accettato un invito a "vedere un film" sapendo come sarebbe finita',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'flirtato con il partner di un amico', tone: ContentTone.cattivo),
-    (
-      text: 'mandato un messaggio hot mentre ero a cena con altre persone',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fatto sexting mentre il mio partner era nella stanza accanto',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'tenuto pronto un piano B mentre ero in una relazione',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'baciato qualcuno solo per vendetta contro un ex',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fatto sesso con una persona che mi stava antipatica',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'illuso qualcuno solo per portarlo a letto',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'ghostato qualcuno dopo averci passato la notte',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'conservato le foto hot di un ex dopo la rottura',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'raccontato in giro i dettagli intimi di un ex',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'finto sentimenti solo per non restare da solo',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'provato to rimorchiare la persona che piaceva a un amico',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'sparito subito dopo aver ottenuto quello che volevo',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'detto "ti amo" a letto solo per il momento',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fatto sesso sapendo che dalla stanza accanto ci sentivano',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'risposto a un ex mentre ero a letto con un\'altra persona',
-      tone: ContentTone.cattivo,
-    ),
-    // ------------------------------------------------ piccante (extra)
     (text: 'fatto sesso al primo appuntamento', tone: ContentTone.piccante),
     (text: 'finto un orgasmo', tone: ContentTone.piccante),
-    (text: 'fatto sexting con qualcuno conosciuto da meno di ventiquattro ore', tone: ContentTone.piccante),
+    (
+      text: 'fatto sexting con qualcuno conosciuto da meno di ventiquattro ore',
+      tone: ContentTone.piccante,
+    ),
     (text: 'chiesto per primo una foto audace', tone: ContentTone.piccante),
-    (text: 'ricevuto una foto hot non richiesta e risposto con un complimento', tone: ContentTone.piccante),
+    (
+      text: 'ricevuto una foto hot non richiesta e risposto con un complimento',
+      tone: ContentTone.piccante,
+    ),
     (text: 'fatto sesso in un posto pubblico', tone: ContentTone.piccante),
-    (text: 'appannato i vetri di una macchina, e non per il freddo', tone: ContentTone.piccante),
-    (text: 'fatto sesso in casa di sconosciuti durante una festa', tone: ContentTone.piccante),
-    (text: 'passato la notte con qualcuno di cui non ricordavo il nome', tone: ContentTone.piccante),
-    (text: 'incrociato un conoscente durante la walk of shame e salutato come se niente fosse', tone: ContentTone.piccante),
-    (text: 'baciato qualcuno solo perché la serata era quella giusta', tone: ContentTone.piccante),
-    (text: 'baciato qualcuno nei primi dieci minuti del primo appuntamento', tone: ContentTone.piccante),
-    (text: 'baciato una persona dello stesso sesso', tone: ContentTone.piccante),
-    (text: 'desiderato qualcuno presente in questa stanza', tone: ContentTone.piccante),
+    (
+      text: 'appannato i vetri di una macchina, e non per il freddo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'fatto sesso in casa di sconosciuti durante una festa',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'passato la notte con qualcuno di cui non ricordavo il nome',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'incrociato un conoscente durante la walk of shame e salutato come se niente fosse',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'baciato qualcuno solo perché la serata era quella giusta',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'baciato qualcuno nei primi dieci minuti del primo appuntamento',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'baciato una persona dello stesso sesso',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'desiderato qualcuno presente in questa stanza',
+      tone: ContentTone.piccante,
+    ),
     (text: 'avuto un sogno erotico su un amico', tone: ContentTone.piccante),
-    (text: 'immaginato un futuro intero con qualcuno appena conosciuto', tone: ContentTone.piccante),
-    (text: 'avuto una storia solo fisica durata più di sei mesi', tone: ContentTone.piccante),
-    (text: 'detto "ti amo" solo per arrivare a fine serata', tone: ContentTone.piccante),
-    (text: 'fatto pace a letto dopo un litigio iniziato apposta', tone: ContentTone.piccante),
-    (text: 'flirtato con qualcuno per farmi offrire qualcosa', tone: ContentTone.piccante),
-    (text: 'dato un numero falso a qualcuno che ci provava', tone: ContentTone.piccante),
-    (text: 'usato una frase di rimorchio trovata su internet', tone: ContentTone.piccante),
+    (
+      text: 'immaginato un futuro intero con qualcuno appena conosciuto',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'avuto una storia solo fisica durata più di sei mesi',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'detto "ti amo" solo per arrivare a fine serata',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'fatto pace a letto dopo un litigio iniziato apposta',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'flirtato con qualcuno per farmi offrire qualcosa',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dato un numero falso a qualcuno che ci provava',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'usato una frase di rimorchio trovata su internet',
+      tone: ContentTone.piccante,
+    ),
     (text: 'rimorchiato in palestra', tone: ContentTone.piccante),
     (text: 'rimorchiato a un matrimonio', tone: ContentTone.piccante),
     (text: 'rimorchiato al supermercato', tone: ContentTone.piccante),
-    (text: 'baciato il mio migliore amico o la mia migliore amica', tone: ContentTone.piccante),
-    (text: 'provato attrazione per il partner di un amico', tone: ContentTone.piccante),
+    (
+      text: 'baciato il mio migliore amico o la mia migliore amica',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'provato attrazione per il partner di un amico',
+      tone: ContentTone.piccante,
+    ),
     (text: 'fatto sesso con un collega', tone: ContentTone.piccante),
-    (text: 'avuto una storia con qualcuno molto più grande di me', tone: ContentTone.piccante),
+    (
+      text: 'avuto una storia con qualcuno molto più grande di me',
+      tone: ContentTone.piccante,
+    ),
     (text: 'mentito sul mio body count', tone: ContentTone.piccante),
-    (text: 'dimenticato il nome di qualcuno mentre eravamo a letto', tone: ContentTone.piccante),
-    (text: 'finto di dormire per evitare un momento intimo', tone: ContentTone.piccante),
+    (
+      text: 'dimenticato il nome di qualcuno mentre eravamo a letto',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'finto di dormire per evitare un momento intimo',
+      tone: ContentTone.piccante,
+    ),
     (text: 'fatto sesso con i calzini addosso', tone: ContentTone.piccante),
-    (text: 'riso durante un momento intimo rovinando tutto', tone: ContentTone.piccante),
-    (text: 'mandato un messaggio hot alla persona sbagliata', tone: ContentTone.piccante),
-    (text: 'riletto il mio sexting e provato orgoglio', tone: ContentTone.piccante),
-    (text: 'creato una playlist apposta per le notti in compagnia', tone: ContentTone.piccante),
-    (text: 'controllato il telefono mentre l\'altra persona dormiva accanto a me', tone: ContentTone.piccante),
-    (text: 'cercato su internet come migliorare a letto', tone: ContentTone.piccante),
-    (text: 'chiesto a un amico un giudizio onesto sulle mie doti', tone: ContentTone.piccante),
-    (text: 'guardato un film per adulti in compagnia', tone: ContentTone.piccante),
-    (text: 'comprato biancheria apposta per una notte precisa', tone: ContentTone.piccante),
+    (
+      text: 'riso durante un momento intimo rovinando tutto',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'mandato un messaggio hot alla persona sbagliata',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'riletto il mio sexting e provato orgoglio',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'creato una playlist apposta per le notti in compagnia',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'controllato il telefono mentre l\'altra persona dormiva accanto a me',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'cercato su internet come migliorare a letto',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'chiesto a un amico un giudizio onesto sulle mie doti',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'guardato un film per adulti in compagnia',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'comprato biancheria apposta per una notte precisa',
+      tone: ContentTone.piccante,
+    ),
     (text: 'fatto sesso nella doccia', tone: ContentTone.piccante),
-    (text: 'fatto sesso sul divano di qualcun altro', tone: ContentTone.piccante),
-    (text: 'fatto rumore apposta perché sentissero', tone: ContentTone.piccante),
-    (text: 'dovuto nascondermi in fretta all\'arrivo di qualcuno', tone: ContentTone.piccante),
-    (text: 'rimesso i vestiti di corsa e sbagliato maglietta', tone: ContentTone.piccante),
-    (text: 'lasciato segni visibili sul collo di qualcuno', tone: ContentTone.piccante),
-    (text: 'coperto un segno sul collo con trucco o sciarpa', tone: ContentTone.piccante),
-    (text: 'detto a un partner che era il migliore, mentendo', tone: ContentTone.piccante),
-    (text: 'dato un voto a una notte parlandone con gli amici il giorno dopo', tone: ContentTone.piccante),
-    (text: 'fatto classifiche dei miei ex con gli amici', tone: ContentTone.piccante),
-    (text: 'rincontrato un one night stand sul posto di lavoro', tone: ContentTone.piccante),
-    (text: 'flirtato con due persone contemporaneamente nella stessa serata', tone: ContentTone.piccante),
-    (text: 'usato un\'app di incontri seduto accanto ai miei', tone: ContentTone.piccante),
-    (text: 'avuto un match e non scritto mai per paura', tone: ContentTone.piccante),
-    (text: 'fatto la prima mossa e incassato un no', tone: ContentTone.piccante),
-    (text: 'baciato qualcuno sotto la pioggia sentendomi in un film', tone: ContentTone.piccante),
-    (text: 'organizzato di incontrare "per caso" la mia crush', tone: ContentTone.piccante),
-    (text: 'offerto un massaggio con secondi fini evidenti', tone: ContentTone.piccante),
-    (text: 'accettato un massaggio sapendo benissimo dove sarebbe andato a finire', tone: ContentTone.piccante),
-    (text: 'fatto colazione a letto con qualcuno conosciuto la sera prima', tone: ContentTone.piccante),
-    (text: 'tenuto uno spazzolino di riserva per gli ospiti di una notte', tone: ContentTone.piccante),
-    // ------------------------------------------------- cattivo (extra)
-    (text: 'fatto sesso con qualcuno presente in questa stanza', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con più di una persona nelle stesse ventiquattro ore', tone: ContentTone.cattivo),
-    (text: 'fatto una cosa a tre', tone: ContentTone.cattivo),
-    (text: 'ricevuto una proposta per una cosa a tre e accettato', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con una persona impegnata sapendolo', tone: ContentTone.cattivo),
-    (text: 'tradito senza mai confessarlo', tone: ContentTone.cattivo),
-    (text: 'scoperto un tradimento e fatto finta di niente', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con l\'ex del mio migliore amico', tone: ContentTone.cattivo),
-    (text: 'usato giocattoli, da solo o in compagnia', tone: ContentTone.cattivo),
-    (text: 'comprato un giocattolo online controllando il pacco ogni ora', tone: ContentTone.cattivo),
-    (text: 'girato un video mentre facevo sesso', tone: ContentTone.cattivo),
-    (text: 'rivisto quel video', tone: ContentTone.cattivo),
-    (text: 'tenuto foto hot nel telefono senza password', tone: ContentTone.cattivo),
-    (text: 'mandato la stessa foto hot a più persone', tone: ContentTone.cattivo),
-    (text: 'finto un orgasmo più di una volta con la stessa persona', tone: ContentTone.cattivo),
-    (text: 'detto il nome sbagliato a letto', tone: ContentTone.cattivo),
-    (text: 'sentito il nome sbagliato e fatto finta di niente', tone: ContentTone.cattivo),
-    (text: 'fatto sesso in un bagno pubblico', tone: ContentTone.cattivo),
-    (text: 'fatto sesso all\'aperto rischiando di essere visto', tone: ContentTone.cattivo),
-    (text: 'preso in flagrante da qualcuno', tone: ContentTone.cattivo),
-    (text: 'beccato qualcuno in flagrante', tone: ContentTone.cattivo),
-    (text: 'fatto sesso mentre altri dormivano nella stessa stanza', tone: ContentTone.cattivo),
-    (text: 'fatto sesso a casa dei miei con i miei in casa', tone: ContentTone.cattivo),
-    (text: 'fatto sesso a casa dei suoi con i suoi in casa', tone: ContentTone.cattivo),
-    (text: 'saltato il lavoro per restare a letto in compagnia', tone: ContentTone.cattivo),
-    (text: 'fatto sesso durante l\'orario di lavoro', tone: ContentTone.cattivo),
-    (text: 'usato l\'ufficio in modo non professionale', tone: ContentTone.cattivo),
-    (text: 'avuto un debole serio per un superiore', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con un amico e mai più parlato dell\'argomento', tone: ContentTone.cattivo),
-    (text: 'rovinato un\'amicizia per una notte', tone: ContentTone.cattivo),
-    (text: 'avuto due storie parallele senza che si sapessero', tone: ContentTone.cattivo),
-    (text: 'sentito entrambi nella stessa sera senza farmi scoprire', tone: ContentTone.cattivo),
-    (text: 'usato la casa di un amico per un incontro segreto', tone: ContentTone.cattivo),
-    (text: 'fatto entrare qualcuno di nascosto e uscire all\'alba', tone: ContentTone.cattivo),
-    (text: 'nascosto una persona nell\'armadio o sul balcone, letteralmente', tone: ContentTone.cattivo),
-    (text: 'cancellato messaggi per non farli trovare', tone: ContentTone.cattivo),
-    (text: 'salvato una persona in rubrica con un nome falso', tone: ContentTone.cattivo),
-    (text: 'pensato a qualcuno di questa stanza mentre ero con un\'altra persona', tone: ContentTone.cattivo),
-    (text: 'iniziato qualcosa in un locale e finito nel parcheggio', tone: ContentTone.cattivo),
-    (text: 'fatto sesso senza sapere il cognome dell\'altra persona', tone: ContentTone.cattivo),
-    (text: 'superato il confine con un amico di letto e finto che nulla fosse cambiato', tone: ContentTone.cattivo),
-    (text: 'tenuto un amico di letto segreto per più di un anno', tone: ContentTone.cattivo),
-    (text: 'accettato un "vieni a vedere un film" sapendo che non avremmo visto nulla', tone: ContentTone.cattivo),
-    (text: 'mandato "sei sveglio?" alle tre di notte e ottenuto risposta', tone: ContentTone.cattivo),
-    (text: 'risposto a un "sei sveglio?" alle tre di notte ed essere uscito di casa', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con qualcuno che detestavo', tone: ContentTone.cattivo),
-    (text: 'usato il sesso per farmi perdonare', tone: ContentTone.cattivo),
-    (text: 'usato il sesso per ottenere qualcosa', tone: ContentTone.cattivo),
-    (text: 'detto no a inizio serata e cambiato idea a metà', tone: ContentTone.cattivo),
-    (text: 'detto "non succederà mai più" quando era già successo tre volte', tone: ContentTone.cattivo),
-    (text: 'contato il mio body count e dovuto ricominciare da capo', tone: ContentTone.cattivo),
-    (text: 'detto al partner un body count più basso del vero', tone: ContentTone.cattivo),
-    (text: 'tenuto un elenco scritto delle persone con cui sono stato', tone: ContentTone.cattivo),
-    (text: 'dato un nome in codice a un\'avventura per parlarne liberamente', tone: ContentTone.cattivo),
-    (text: 'raccontato i dettagli di una notte a un intero gruppo', tone: ContentTone.cattivo),
-    (text: 'riconosciuto su un\'app di incontri una persona impegnata che conosco', tone: ContentTone.cattivo),
-    (text: 'trovato un profilo che non doveva esserci e fatto uno screenshot', tone: ContentTone.cattivo),
-    (text: 'usato un profilo falso per controllare qualcuno', tone: ContentTone.cattivo),
-    (text: 'guardato il telefono del partner mentre dormiva', tone: ContentTone.cattivo),
-    (text: 'trovato qualcosa che avrei preferito non trovare', tone: ContentTone.cattivo),
-    (text: 'fatto finta di niente dopo aver trovato tutto', tone: ContentTone.cattivo),
-    (text: 'provato un fetish e scoperto che mi piaceva', tone: ContentTone.cattivo),
-    (text: 'confessato un fetish e visto la faccia dell\'altra persona cambiare', tone: ContentTone.cattivo),
-    (text: 'legato qualcuno o farmi legare per gioco', tone: ContentTone.cattivo),
-    (text: 'usato ghiaccio o cibo a letto', tone: ContentTone.cattivo),
-    (text: 'bendato qualcuno o essere stato bendato', tone: ContentTone.cattivo),
-    (text: 'messo la musica alta per coprire i rumori', tone: ContentTone.cattivo),
-    (text: 'ricevuto lamentele dai vicini', tone: ContentTone.cattivo),
-    (text: 'rotto qualcosa in casa durante il sesso', tone: ContentTone.cattivo),
-    (text: 'spiegato un livido o un graffio con una scusa inventata', tone: ContentTone.cattivo),
-    (text: 'usato il tavolo della cucina per qualcosa che non era una cena', tone: ContentTone.cattivo),
-    (text: 'fatto sesso in ascensore o su una rampa di scale', tone: ContentTone.cattivo),
-    (text: 'fatto sesso in spiaggia e trovato sabbia ovunque per giorni', tone: ContentTone.cattivo),
-    (text: 'fatto sesso in piscina o in mare', tone: ContentTone.cattivo),
-    (text: 'fatto sesso in tenda con altri nel campeggio', tone: ContentTone.cattivo),
-    (text: 'fatto sesso su un treno o in aereo', tone: ContentTone.cattivo),
-    (text: 'pagato una stanza solo per qualche ora', tone: ContentTone.cattivo),
-    (text: 'usato la pausa pranzo in modo molto creativo', tone: ContentTone.cattivo),
-    (text: 'avuto un risveglio di cui non parlerò mai nel dettaglio', tone: ContentTone.cattivo),
-    (text: 'fatto qualcosa a letto che questo gruppo non crederebbe mai di me', tone: ContentTone.cattivo),
-    (text: 'assaggiato il mio stesso piacere', tone: ContentTone.cattivo),
-    (text: 'fatto sesso anale', tone: ContentTone.cattivo),
-    (text: 'ricevuto uno schiaffo o una sculacciata e chiesto il bis', tone: ContentTone.cattivo),
-    (text: 'scambiato messaggi hot con qualcuno in questa stanza mentre eravamo a cena insieme', tone: ContentTone.cattivo),
-    (text: 'sperimentato con il dolore a letto', tone: ContentTone.cattivo),
-    (text: 'avuto fantasie su un membro della famiglia (non stretto)', tone: ContentTone.cattivo),
-    (text: 'fatto sesso nel letto dei miei genitori', tone: ContentTone.cattivo),
-    (text: 'ingoiato tutto dopo un rapporto', tone: ContentTone.cattivo),
-    (text: 'fatto sesso mentre qualcun altro guardava', tone: ContentTone.cattivo),
-    (text: 'partecipato a un\'orgia', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sesso sul divano di qualcun altro',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'fatto rumore apposta perché sentissero',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dovuto nascondermi in fretta all\'arrivo di qualcuno',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'rimesso i vestiti di corsa e sbagliato maglietta',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'lasciato segni visibili sul collo di qualcuno',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'coperto un segno sul collo con trucco o sciarpa',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'detto a un partner che era il migliore, mentendo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'dato un voto a una notte parlandone con gli amici il giorno dopo',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'fatto classifiche dei miei ex con gli amici',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'rincontrato un one night stand sul posto di lavoro',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'flirtato con due persone contemporaneamente nella stessa serata',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'usato un\'app di incontri seduto accanto ai miei',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'avuto un match e non scritto mai per paura',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'fatto la prima mossa e incassato un no',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'baciato qualcuno sotto la pioggia sentendomi in un film',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'organizzato di incontrare "per caso" la mia crush',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'offerto un massaggio con secondi fini evidenti',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'accettato un massaggio sapendo benissimo dove sarebbe andato a finire',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'fatto colazione a letto con qualcuno conosciuto la sera prima',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'tenuto uno spazzolino di riserva per gli ospiti di una notte',
+      tone: ContentTone.piccante,
+    ),
+    // ------------------------------------------------------- cattivo
+    (text: 'fatto sesso a tre', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sesso di gruppo con più di tre persone',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'raggiunto l\'orgasmo con uno sconosciuto la prima notte',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un orgasmo multiplo durante lo stesso rapporto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'simulato un orgasmo per far finire prima il partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'raggiunto l\'orgasmo solo con il sesso orale',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'eiaculato o schizzato più lontano di quanto pensassi',
+      tone: ContentTone.cattivo,
+    ),
     (text: 'ingoiato lo sperma del partner', tone: ContentTone.cattivo),
-    (text: 'leccato l\'ano a qualcuno', tone: ContentTone.cattivo),
-    (text: 'fatto sesso anale senza protezione', tone: ContentTone.cattivo),
-    (text: 'usato un vibratore o dildo durante un rapporto', tone: ContentTone.cattivo),
-    (text: 'fatto un video mentre facevo sesso e poi l\'ho tenuto', tone: ContentTone.cattivo),
-    (text: 'venuta/o in faccia a qualcuno', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con una persona di cui non sapevo il nome', tone: ContentTone.cattivo),
-    (text: 'avuto un rapporto in un luogo pubblico molto affollato', tone: ContentTone.cattivo),
-    (text: 'assaggiato il mio stesso sperma o eiaculazione', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con due persone diverse nella stessa notte', tone: ContentTone.cattivo),
-    (text: 'subito o fatto bondage pesante', tone: ContentTone.cattivo),
-    (text: 'fatto sesso orale in un luogo pubblico', tone: ContentTone.cattivo),
-    (text: 'usato oggetti domestici come sex toys', tone: ContentTone.cattivo),
-    (text: 'ricevuto sesso orale mentre guidavo', tone: ContentTone.cattivo),
-    (text: 'fatto sesso durante il ciclo', tone: ContentTone.cattivo),
-    (text: 'avuto un orgasmo multiplo nello stesso rapporto', tone: ContentTone.cattivo),
-    (text: 'fatto sesso con qualcuno conosciuto da meno di un\'ora', tone: ContentTone.cattivo),
-    (text: 'pagato o ricevuto soldi per sesso', tone: ContentTone.cattivo),
+    (
+      text: 'sputato lo sperma dopo un rapporto orale',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso orale a un partner appena conosciuto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'ricevuto sesso orale mentre ero al telefono',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto un rapporto orale in macchina', tone: ContentTone.cattivo),
+    (text: 'praticato il sesso anale', tone: ContentTone.cattivo),
+    (
+      text: 'ricevuto sesso anale per la prima volta ubriaco',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'provato il rimming con un partner', tone: ContentTone.cattivo),
+    (text: 'fatto sesso in posizione del pecora', tone: ContentTone.cattivo),
+    (text: 'provato la posizione del 69', tone: ContentTone.cattivo),
+    (text: 'fatto sesso sotto la doccia', tone: ContentTone.cattivo),
+    (text: 'fatto sesso nella vasca da bagno', tone: ContentTone.cattivo),
+    (text: 'fatto sesso in piscina', tone: ContentTone.cattivo),
+    (
+      text: 'fatto l\'amore su una spiaggia di notte',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto sesso in un bosco all\'aperto', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sesso su un balcone in vista dei vicini',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'avuto un rapporto in un ascensore', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sesso in un bagno pubblico di un locale',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso in un camerino di un negozio',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso su un aereo entrando nel mile high club',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto sesso su un treno in movimento', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sesso sul sedile posteriore di un\'auto',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'scopato sul tavolo della cucina', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sesso sul pavimento perché non arrivavamo al letto',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'usato un sex toy con un partner', tone: ContentTone.cattivo),
+    (text: 'usato un vibratore su me stesso', tone: ContentTone.cattivo),
+    (text: 'usato un dildo insieme al mio partner', tone: ContentTone.cattivo),
+    (text: 'provato un cockring durante il sesso', tone: ContentTone.cattivo),
+    (text: 'usato un plug anale', tone: ContentTone.cattivo),
+    (text: 'usato le manette durante il sesso', tone: ContentTone.cattivo),
+    (
+      text: 'legato o mi sono fatto legare durante il sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'provato il bondage con corde', tone: ContentTone.cattivo),
+    (
+      text: 'usato una benda sugli occhi durante il sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato lo spanking sculacciando o farmi sculacciare',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'tirato i capelli al partner durante il sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato il soft choking mettendo una mano sul collo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'detto parole sporche al partner durante il sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto dirty talk al telefono', tone: ContentTone.cattivo),
+    (
+      text: 'recitato un gioco di ruolo erotico a letto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'indossato un costume per un gioco di ruolo sessuale',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'provato il gioco padrone e sottomesso', tone: ContentTone.cattivo),
+    (
+      text: 'usato la cera calda di una candela sul corpo del partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato il gioco con il ghiaccio durante i preliminari',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'leccato la panna o il cioccolato dal corpo del partner',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'usato cibo durante il sesso', tone: ContentTone.cattivo),
+    (text: 'provato il sesso tantrico durato ore', tone: ContentTone.cattivo),
+    (
+      text: 'avuto una sveltina di meno di cinque minuti',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso tre volte nella stessa notte',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto una maratona di sesso durata tutta la notte',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'mandato una foto di nudo a qualcuno', tone: ContentTone.cattivo),
+    (text: 'ricevuto un nude inaspettato', tone: ContentTone.cattivo),
+    (text: 'girato un video mentre mi masturbavo', tone: ContentTone.cattivo),
+    (text: 'filmato un rapporto per riguardarlo', tone: ContentTone.cattivo),
+    (text: 'guardato un video hot fatto con un ex', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sexting durante l\'orario di lavoro',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'avuto una videochiamata hot a distanza', tone: ContentTone.cattivo),
+    (
+      text: 'fatto sesso virtuale con qualcuno mai incontrato dal vivo',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto masturbare il partner in videochiamata',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'masturbato qualcuno sotto un tavolo al ristorante',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'toccato il partner al cinema durante il film',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un rapporto mentre altri dormivano nella stessa stanza',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso sapendo che qualcuno poteva sentirci',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'guardato un\'altra coppia fare sesso dal vivo',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto sesso mentre qualcuno guardava', tone: ContentTone.cattivo),
+    (
+      text: 'scambiato il partner con un\'altra coppia',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'partecipato a un\'orgia', tone: ContentTone.cattivo),
+    (text: 'andato a un sex party', tone: ContentTone.cattivo),
+    (text: 'frequentato un locale scambista', tone: ContentTone.cattivo),
+    (
+      text: 'baciato due persone diverse nella stessa serata',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto due partner sessuali nella stessa giornata',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso con due persone diverse in ventiquattro ore',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto una storia di solo sesso senza sentimenti',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'avuto un amico o un\'amica di letto', tone: ContentTone.cattivo),
+    (
+      text: 'raggiunto l\'orgasmo solo con un sex toy',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un\'avventura di una notte con uno sconosciuto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'rimorchiato qualcuno solo per andarci a letto',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usato un\'app di incontri solo per trovare sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un rapporto senza ricordare bene il nome del partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso con qualcuno molto più grande di me',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso con qualcuno molto più giovane di me',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto una cotta segreta per un amico del partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fantasticato su una persona presente in questa stanza',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'avuto una fantasia sessuale con un mio ex durante il sesso attuale',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'immaginato una celebrità mentre facevo sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fantasticato di essere guardato mentre facevo sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'avuto la fantasia di un rapporto a tre', tone: ContentTone.cattivo),
+    (
+      text: 'provato eccitazione guardando due persone baciarsi',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'scoperto un feticcio che non pensavo di avere',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'avuto un feticcio per i piedi', tone: ContentTone.cattivo),
+    (text: 'leccato i piedi del partner', tone: ContentTone.cattivo),
+    (text: 'avuto un feticcio per la lingerie', tone: ContentTone.cattivo),
+    (
+      text: 'annusato la biancheria intima del partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'indossato la biancheria intima del mio partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato eccitazione indossando abiti dell\'altro sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato il gioco dell\'esibizionismo mostrandomi a una finestra',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso con la luce accesa allo specchio per guardarmi',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usato uno specchio per guardarci durante il sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'masturbato pensando a un collega di lavoro',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un rapporto in ufficio dopo l\'orario',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso nella casa dei genitori del partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso in casa di amici durante una festa',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto sesso in tenda in campeggio', tone: ContentTone.cattivo),
+    (
+      text: 'avuto un rapporto durante un festival musicale',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto sesso in un hotel a ore', tone: ContentTone.cattivo),
+    (
+      text: 'prenotato una stanza solo per fare sesso in pausa pranzo',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto sesso durante le mestruazioni', tone: ContentTone.cattivo),
+    (
+      text: 'fatto la doccia insieme dopo il sesso e ricominciato',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'usato il lubrificante per la prima volta',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato un lubrificante che scalda o formica',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'usato preservativi aromatizzati', tone: ContentTone.cattivo),
+    (
+      text: 'dimenticato di usare il preservativo nella foga',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso non protetto con uno sconosciuto',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'preso la pillola del giorno dopo', tone: ContentTone.cattivo),
+    (
+      text: 'avuto uno spavento da possibile gravidanza',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto un test per una malattia dopo un rapporto a rischio',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato il sesso bendato senza sapere chi mi toccava a una festa',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text:
+          'fatto un gangbang o sono stato al centro dell\'attenzione di più persone',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'spogliato completamente qualcuno con i denti',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'strappato i vestiti del partner nella foga',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fatto un lap dance a qualcuno', tone: ContentTone.cattivo),
+    (
+      text: 'ricevuto un lap dance in un locale a luci rosse',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'pagato per un lap dance privato', tone: ContentTone.cattivo),
+    (
+      text: 'assistito a uno spettacolo dal vivo a luci rosse',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'provato il pegging con la mia partner', tone: ContentTone.cattivo),
+    (
+      text: 'usato una frusta o un frustino durante il sesso',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'provato le pinze per capezzoli', tone: ContentTone.cattivo),
+    (
+      text: 'provato il wax play o il temperature play insieme',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un orgasmo solo con la stimolazione dei capezzoli',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato lo squirting o fatto squirtare la partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'leccato o succhiato le dita del partner in modo provocante',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'morso il partner lasciando un segno visibile',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'lasciato un succhiotto in un punto imbarazzante',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto una sega o una sega spagnola al partner',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto una masturbazione reciproca guardandoci',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato il sesso in piedi contro un muro',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso appoggiato al lavandino del bagno',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato la posizione dell\'amazzone stando sopra',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso su una lavatrice in centrifuga',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un rapporto interrotto da qualcuno che entrava',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'fatto sesso di nascosto durante una cena a casa di altri',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'mandato messaggi hot alla persona sbagliata per errore',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'avuto un rapporto in un luogo pubblico molto affollato',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'provato l\'edging fermandomi poco prima dell\'orgasmo più volte',
+      tone: ContentTone.cattivo,
+    ),
   ];
 }

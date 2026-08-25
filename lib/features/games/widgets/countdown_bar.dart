@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_colors.dart';
 
-/// Barra del tempo rimasto per votare. Il tempo è calcolato dall'orario di
-/// creazione del round sul server, così scorre uguale su tutti i telefoni.
+/// Barra del tempo per votare, calcolata dalla creazione del round sul server
+/// così scorre uguale su tutti i telefoni.
 class CountdownBar extends StatefulWidget {
   const CountdownBar({required this.deadline, required this.total, super.key});
 

@@ -13,8 +13,8 @@ enum RoomStatus {
   };
 }
 
-/// Una stanza di gioco. È la sorgente di verità che tiene sincronizzati tutti
-/// i telefoni: quando cambia `status` / `activeGame`, ogni client reagisce.
+/// Stanza di gioco: sorgente di verità che sincronizza i telefoni al cambio
+/// di `status`/`activeGame`.
 class Room {
   const Room({
     required this.id,
@@ -55,7 +55,6 @@ class Room {
   final GameMode mode;
   final int roundsTotal;
 
-  /// Se questa stanza può usare i contenuti generati dall'AI: premium
-  /// acquistato, crediti da annuncio, oppure l'interruttore di sviluppo.
+  /// Se la stanza può usare l'AI: premium, crediti da annuncio o flag di sviluppo.
   bool get canUseAi => isPremiumAi || aiCredits > 0 || AppEnv.devUnlockPremium;
 }

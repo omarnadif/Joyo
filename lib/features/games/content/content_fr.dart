@@ -354,27 +354,6 @@ class ContentFr {
       text: 'exulté pour un créneau réussi du premier coup',
       tone: ContentTone.soft,
     ),
-    (
-      text: 'déclaré la guerre à un moustique à trois heures du matin',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'allumé la clim pour dormir sous la couette',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'écrit une liste de choses à faire et complètement ignorée',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'fait semblant d\'avoir lu un livre célèbre',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'perdu le fil de la conversation alors que c\'était moi qui parlais',
-      tone: ContentTone.soft,
-    ),
     // piccante
     (text: 'embrassé quelqu\'un le premier soir', tone: ContentTone.piccante),
     (
@@ -653,262 +632,152 @@ class ContentFr {
     (text: 'fait un compliment osé à un inconnu', tone: ContentTone.piccante),
     (text: 'pris un râteau devant tout le monde', tone: ContentTone.piccante),
     // cattivo
+    (text: 'fait un plan à trois', tone: ContentTone.cattivo),
+    (text: 'avalé pendant une fellation', tone: ContentTone.cattivo),
+    (text: 'utilisé un sex-toy avec un partenaire', tone: ContentTone.cattivo),
+    (text: 'filmé un rapport sexuel', tone: ContentTone.cattivo),
     (
-      text: 'dit du mal d\'une personne présente dans cette pièce',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'révélé le secret d\'un ami', tone: ContentTone.cattivo),
-    (
-      text: 'partagé la capture d\'écran d\'une conversation privée',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'créé un faux profil pour espionner quelqu\'un',
+      text: 'eu un orgasme en même temps que mon partenaire',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'secrètement savouré l\'échec de quelqu\'un que je ne supporte pas',
+      text: 'fait l\'amour dans la position de l\'andromaque',
       tone: ContentTone.cattivo,
     ),
+    (text: 'pratiqué le sexe anal', tone: ContentTone.cattivo),
+    (text: 'reçu une fellation en conduisant', tone: ContentTone.cattivo),
+    (text: 'fait une levrette devant un miroir', tone: ContentTone.cattivo),
+    (text: 'attaché mon partenaire au lit', tone: ContentTone.cattivo),
+    (text: 'utilisé des menottes pendant l\'amour', tone: ContentTone.cattivo),
+    (text: 'mis un bandeau sur les yeux au lit', tone: ContentTone.cattivo),
+    (text: 'donné une fessée à un partenaire', tone: ContentTone.cattivo),
+    (text: 'reçu une fessée pendant l\'amour', tone: ContentTone.cattivo),
+    (text: 'participé à une partouze', tone: ContentTone.cattivo),
     (
-      text:
-          'fait semblant d\'être content pour un ami en rageant à l\'intérieur',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'pensé que le partenaire d\'un ami ne le méritait pas du tout',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'espéré qu\'un couple d\'amis finisse par se séparer',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'dit « je ne le dirai à personne » et tout balancé en moins d\'une heure',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'créé un groupe sans une personne juste pour parler d\'elle',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'flirté avec quelqu\'un juste pour rendre jalouse une autre personne',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'donné un mauvais conseil exprès', tone: ContentTone.cattivo),
-    (text: 'gâché une surprise volontairement', tone: ContentTone.cattivo),
-    (
-      text: 'fait semblant d\'avoir oublié mon portefeuille pour ne pas payer',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'répété un ragot en ajoutant des détails inventés',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé les larmes pour obtenir ce que je voulais',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'lu une conversation sur le téléphone d\'un ami pendant qu\'il était aux toilettes',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'fait semblant d\'écouter les problèmes d\'un ami en pensant à mes affaires',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'nié jusqu\'à la mort un truc que j\'avais vraiment fait',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'cassé du sucre sur le dos de quelqu\'un et tout nié quand on me l\'a demandé en face',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé le secret de quelqu\'un pour gagner une dispute',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'partagé l\'addition à parts égales en sachant que j\'avais commandé trois fois plus que les autres',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'invité une personne juste parce qu\'elle avait une voiture',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'caché à un ami que son partenaire flirtait avec d\'autres',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'supprimé un message du téléphone de quelqu\'un d\'autre',
+      text: 'échangé de partenaire avec un autre couple',
       tone: ContentTone.cattivo,
     ),
     (text: 'fait l\'amour dans un lieu public', tone: ContentTone.cattivo),
+    (text: 'baisé sur la plage', tone: ContentTone.cattivo),
     (
-      text: 'eu un sex friend en le cachant à tout le monde',
+      text: 'pris mon pied dans les toilettes d\'un bar',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fait l\'amour dans un ascenseur', tone: ContentTone.cattivo),
+    (
+      text: 'couché avec quelqu\'un dans une voiture',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'envoyé un message coquin à la mauvaise personne',
+      text: 'fait l\'amour dans une cabine d\'essayage',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'envoyé une photo nue à quelqu\'un', tone: ContentTone.cattivo),
+    (text: 'reçu un nude par message', tone: ContentTone.cattivo),
+    (text: 'fait du sexting toute une nuit', tone: ContentTone.cattivo),
+    (
+      text: 'eu une session de masturbation en visio',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'regardé un porno avec mon partenaire', tone: ContentTone.cattivo),
+    (text: 'rejoué une scène de film porno', tone: ContentTone.cattivo),
+    (text: 'utilisé un vibromasseur en public', tone: ContentTone.cattivo),
+    (text: 'porté un plug pendant une soirée', tone: ContentTone.cattivo),
+    (text: 'goûté au bondage avec des cordes', tone: ContentTone.cattivo),
+    (text: 'essayé le sexe tantrique', tone: ContentTone.cattivo),
+    (text: 'eu plusieurs orgasmes à la suite', tone: ContentTone.cattivo),
+    (
+      text: 'simulé un orgasme pour en finir plus vite',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'revu un ex juste pour une nuit en jurant que c\'était la dernière',
+      text: 'fait éjaculer mon partenaire avec les mains',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'oublié le prénom de quelqu\'un avec qui j\'avais passé la nuit',
+      text: 'fait un cunnilingus jusqu\'à l\'orgasme',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'reçu un massage érotique complet', tone: ContentTone.cattivo),
+    (
+      text: 'léché un partenaire des pieds à la tête',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'mordu un partenaire pendant l\'amour', tone: ContentTone.cattivo),
+    (text: 'griffé le dos de quelqu\'un au lit', tone: ContentTone.cattivo),
+    (
+      text: 'crié tellement fort que les voisins ont entendu',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'pensé à quelqu\'un d\'autre en embrassant mon partenaire',
+      text: 'dit des cochonneries à l\'oreille pendant l\'amour',
       tone: ContentTone.cattivo,
     ),
-    (text: 'menti sur le nombre de mes conquêtes', tone: ContentTone.cattivo),
+    (text: 'supplié mon partenaire de continuer', tone: ContentTone.cattivo),
+    (text: 'joué un jeu de rôle coquin au lit', tone: ContentTone.cattivo),
     (
-      text:
-          'fait l\'amour à une fête alors que la maison était pleine de monde',
+      text: 'porté un déguisement pour exciter mon partenaire',
       tone: ContentTone.cattivo,
     ),
+    (text: 'fait un strip-tease privé', tone: ContentTone.cattivo),
+    (text: 'dansé nu pour quelqu\'un', tone: ContentTone.cattivo),
     (
-      text: 'utilisé mon charme pour me faire pardonner un truc grave',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'passé la nuit avec quelqu\'un rencontré le soir même sur une appli',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'fait ou rêvé de faire un plan à trois', tone: ContentTone.cattivo),
-    (text: 'trompé un partenaire', tone: ContentTone.cattivo),
-    (
-      text: 'embrassé quelqu\'un d\'autre alors que j\'étais en couple',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'envoyé une photo de moi sans vêtements', tone: ContentTone.cattivo),
-    (
-      text: 'montré à un ami une photo hot reçue en privé',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'passé la nuit avec l\'ex d\'un ami', tone: ContentTone.cattivo),
-    (text: 'fait l\'amour dans une voiture', tone: ContentTone.cattivo),
-    (
-      text: 'fait l\'amour chez les parents de mon partenaire',
+      text: 'utilisé des glaçons pendant les préliminaires',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'couché avec deux personnes différentes dans la même semaine',
+      text: 'versé du chocolat sur le corps de quelqu\'un',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fait l\'amour sous la douche brûlante', tone: ContentTone.cattivo),
+    (
+      text: 'pris mon pied dans une baignoire à deux',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'essayé la position du 69', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour debout contre un mur', tone: ContentTone.cattivo),
+    (
+      text: 'eu un rapport sur la table de la cuisine',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'baisé sur le canapé du salon d\'un ami', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour dans un jacuzzi', tone: ContentTone.cattivo),
+    (
+      text: 'couché avec quelqu\'un le soir même de la rencontre',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'eu une histoire avec une personne déjà en couple',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'simulé le plaisir au lit', tone: ContentTone.cattivo),
-    (
-      text: 'noté les performances de mes ex en en parlant avec mes amis',
+      text: 'eu un coup d\'un soir sans donner mon prénom',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'utilisé le sexe pour me faire pardonner après une dispute',
+      text: 'fait l\'amour trois fois dans la même nuit',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'eu un rapport dès le réveil', tone: ContentTone.cattivo),
+    (text: 'surpris un couple en pleine action', tone: ContentTone.cattivo),
+    (text: 'été surpris en train de faire l\'amour', tone: ContentTone.cattivo),
+    (
+      text: 'fait l\'amour en sachant que quelqu\'un écoutait',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'écrit à quelqu\'un à trois heures du matin avec une seule idée en tête',
+      text: 'laissé la porte ouverte pendant l\'amour',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'eu un fantasme sur un ami proche', tone: ContentTone.cattivo),
+    (
+      text: 'fantasmé sur un ex pendant l\'amour avec un autre',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'eu envie de coucher avec un collègue', tone: ContentTone.cattivo),
+    (text: 'couché avec un collègue de travail', tone: ContentTone.cattivo),
+    (
+      text: 'fait l\'amour dans les toilettes du bureau',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'passé une nuit torride avec quelqu\'un de ce groupe',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'imaginé comment serait au lit une personne présente dans cette pièce',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'comparé un partenaire à un ex au lit', tone: ContentTone.cattivo),
-    (
-      text:
-          'gardé une conversation secrète avec un ex alors que j\'étais en couple',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'accepté une invitation à « regarder un film » en sachant comment ça finirait',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'flirté avec le partenaire d\'un ami', tone: ContentTone.cattivo),
-    (
-      text:
-          'envoyé un message hot alors que j\'étais à table avec d\'autres gens',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'échangé des sextos pendant que mon partenaire était dans la pièce d\'à côté',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'gardé un plan B sous le coude alors que j\'étais en couple',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'embrassé quelqu\'un juste pour me venger d\'un ex',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'couché avec une personne que je ne supportais pas',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait espérer quelqu\'un juste pour le mettre dans mon lit',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'ghosté quelqu\'un après avoir passé la nuit avec',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'gardé les photos hot d\'un ex après la rupture',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'raconté partout les détails intimes d\'un ex',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'simulé des sentiments juste pour ne pas rester seul',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'tenté de séduire la personne qui plaisait à un ami',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'disparu juste après avoir obtenu ce que je voulais',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'dit « je t\'aime » au lit juste pour le moment',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'fait l\'amour en sachant qu\'on nous entendait depuis la pièce d\'à côté',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'répondu à un ex alors que j\'étais au lit avec quelqu\'un d\'autre',
+      text: 'eu une aventure pendant un voyage d\'affaires',
       tone: ContentTone.cattivo,
     ),
     // piccante (extra)
@@ -1130,349 +999,198 @@ class ContentFr {
       tone: ContentTone.piccante,
     ),
     // cattivo (extra)
+    (text: 'rejoint un club échangiste', tone: ContentTone.cattivo),
     (
-      text: 'couché avec quelqu\'un présent dans cette pièce',
+      text: 'assisté à un spectacle érotique en direct',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'payé pour une danse privée dans un club',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'embrassé deux personnes la même nuit', tone: ContentTone.cattivo),
+    (
+      text: 'fait l\'amour avec deux personnes le même jour',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'eu une relation à trois régulière', tone: ContentTone.cattivo),
+    (text: 'essayé le sexe en groupe', tone: ContentTone.cattivo),
+    (
+      text: 'laissé quelqu\'un regarder pendant que je faisais l\'amour',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'regardé mon partenaire coucher avec quelqu\'un d\'autre',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'porté des sous-vêtements comestibles', tone: ContentTone.cattivo),
+    (
+      text: 'utilisé de la cire chaude sur un partenaire',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'essayé le jeu de la domination', tone: ContentTone.cattivo),
+    (text: 'obéi à un ordre au lit sans discuter', tone: ContentTone.cattivo),
+    (text: 'porté un collier et une laisse au lit', tone: ContentTone.cattivo),
+    (
+      text: 'appelé mon partenaire « maître » ou « maîtresse »',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'essayé le spanking avec un accessoire', tone: ContentTone.cattivo),
+    (text: 'utilisé une cravache pendant l\'amour', tone: ContentTone.cattivo),
+    (
+      text: 'bâillonné mon partenaire pendant l\'amour',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'attaché quelqu\'un avec une cravate', tone: ContentTone.cattivo),
+    (
+      text: 'fait l\'amour les yeux bandés du début à la fin',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'essayé le sexe en public sans me faire prendre',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fait une gorge profonde', tone: ContentTone.cattivo),
+    (text: 'avalé sans hésiter', tone: ContentTone.cattivo),
+    (text: 'reçu une éjaculation faciale', tone: ContentTone.cattivo),
+    (text: 'fait une branlette espagnole', tone: ContentTone.cattivo),
+    (
+      text: 'titillé mon partenaire jusqu\'à ce qu\'il me supplie',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'édgé mon partenaire pendant une heure', tone: ContentTone.cattivo),
+    (text: 'utilisé du lubrifiant chauffant', tone: ContentTone.cattivo),
+    (text: 'essayé un anneau pénien', tone: ContentTone.cattivo),
+    (text: 'testé des boules de geisha', tone: ContentTone.cattivo),
+    (text: 'commandé un sex-toy pour un couple', tone: ContentTone.cattivo),
+    (text: 'utilisé un gode-ceinture', tone: ContentTone.cattivo),
+    (text: 'essayé un vibromasseur télécommandé', tone: ContentTone.cattivo),
+    (
+      text: 'laissé mon partenaire contrôler un jouet à distance',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'porté un jouet vibrant au restaurant', tone: ContentTone.cattivo),
+    (
+      text: 'eu un orgasme uniquement avec un sex-toy',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'fait l\'amour au réveil sans un mot', tone: ContentTone.cattivo),
+    (text: 'eu un rapport dans un train', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour dans un avion', tone: ContentTone.cattivo),
+    (
+      text: 'rejoint le club des amoureux de l\'altitude',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'baisé dans une tente en camping', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour dans un parking', tone: ContentTone.cattivo),
+    (text: 'pris mon pied dans un parc la nuit', tone: ContentTone.cattivo),
+    (text: 'eu un rapport sur un balcon', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour sur un toit', tone: ContentTone.cattivo),
+    (text: 'baisé dans la piscine d\'un hôtel', tone: ContentTone.cattivo),
+    (text: 'eu un rapport dans un sauna', tone: ContentTone.cattivo),
+    (
+      text: 'essayé le sexe sur une machine à laver en marche',
       tone: ContentTone.cattivo,
     ),
     (
       text:
-          'couché avec plus d\'une personne dans les mêmes vingt-quatre heures',
+          'fait l\'amour pendant un appel en visioconférence coupé au bon moment',
       tone: ContentTone.cattivo,
     ),
-    (text: 'fait un plan à trois', tone: ContentTone.cattivo),
     (
-      text: 'reçu une proposition de plan à trois et accepté',
+      text: 'envoyé une vidéo intime à un partenaire',
       tone: ContentTone.cattivo,
     ),
+    (text: 'gardé une sextape sur mon téléphone', tone: ContentTone.cattivo),
+    (text: 'regardé ma propre sextape à deux', tone: ContentTone.cattivo),
     (
-      text: 'couché avec une personne en couple en le sachant',
+      text: 'dragué quelqu\'un rien que pour le sexe',
       tone: ContentTone.cattivo,
     ),
-    (text: 'trompé sans jamais l\'avouer', tone: ContentTone.cattivo),
+    (text: 'menti sur mon expérience au lit', tone: ContentTone.cattivo),
     (
-      text: 'découvert une tromperie et fait comme si de rien n\'était',
+      text: 'comparé les performances de deux amants',
       tone: ContentTone.cattivo,
     ),
-    (text: 'couché avec l\'ex de mon meilleur ami', tone: ContentTone.cattivo),
+    (text: 'noté un amant sur dix', tone: ContentTone.cattivo),
+    (text: 'eu un coup de foudre purement physique', tone: ContentTone.cattivo),
     (
-      text: 'utilisé des jouets, seul ou en compagnie',
+      text: 'couché avec quelqu\'un dont j\'avais oublié le nom',
       tone: ContentTone.cattivo,
     ),
+    (text: 'fait l\'amour pour me venger d\'un ex', tone: ContentTone.cattivo),
     (
-      text: 'acheté un jouet en ligne en vérifiant le colis toutes les heures',
+      text: 'recontacté un ex uniquement pour le sexe',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'filmé une vidéo pendant que je faisais l\'amour',
+      text: 'eu un plan cul régulier pendant des mois',
       tone: ContentTone.cattivo,
     ),
-    (text: 'revu cette vidéo', tone: ContentTone.cattivo),
     (
-      text: 'gardé des photos hot dans mon téléphone sans mot de passe',
+      text: 'installé une appli juste pour un plan d\'un soir',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'envoyé la même photo hot à plusieurs personnes',
+      text: 'couché avec un inconnu rencontré en soirée',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'simulé un orgasme plus d\'une fois avec la même personne',
+      text: 'fait l\'amour dans la chambre de mes parents',
       tone: ContentTone.cattivo,
     ),
-    (text: 'dit le mauvais prénom au lit', tone: ContentTone.cattivo),
     (
-      text: 'entendu le mauvais prénom et fait comme si de rien n\'était',
+      text: 'baisé dans la maison de quelqu\'un pendant sa fête',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'fait l\'amour dans des toilettes publiques',
+      text: 'utilisé un miroir au plafond pendant l\'amour',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'fait l\'amour en plein air en risquant d\'être vu',
+      text: 'filmé un strip-tease pour mon partenaire',
       tone: ContentTone.cattivo,
     ),
+    (text: 'posé nu pour quelqu\'un', tone: ContentTone.cattivo),
+    (text: 'envoyé un message vocal très explicite', tone: ContentTone.cattivo),
     (
-      text: 'été pris en flagrant délit par quelqu\'un',
+      text: 'décrit mes fantasmes les plus fous à voix haute',
       tone: ContentTone.cattivo,
     ),
-    (text: 'surpris quelqu\'un en flagrant délit', tone: ContentTone.cattivo),
     (
-      text: 'fait l\'amour pendant que d\'autres dormaient dans la même pièce',
+      text: 'réalisé le fantasme le plus fou de mon partenaire',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'fait l\'amour chez mes parents alors qu\'ils étaient à la maison',
+      text: 'essayé une position vue seulement dans un film',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'fait l\'amour chez ses parents alors qu\'ils étaient à la maison',
+      text: 'fait l\'amour toute une nuit sans dormir',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'séché le travail pour rester au lit en bonne compagnie',
+      text: 'compté combien de fois j\'ai joui en une nuit',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'fait l\'amour pendant les heures de travail',
+      text: 'eu un orgasme uniquement grâce à des mots',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'utilisé le bureau d\'une façon pas très professionnelle',
+      text: 'atteint l\'orgasme rien qu\'en frottant contre quelqu\'un',
       tone: ContentTone.cattivo,
     ),
-    (text: 'eu un sérieux faible pour un supérieur', tone: ContentTone.cattivo),
+    (text: 'essayé le sexe avec de la nourriture', tone: ContentTone.cattivo),
     (
-      text: 'couché avec un ami sans jamais en reparler',
+      text: 'léché de la crème sur le corps de quelqu\'un',
       tone: ContentTone.cattivo,
     ),
-    (text: 'ruiné une amitié pour une nuit', tone: ContentTone.cattivo),
     (
-      text: 'mené deux histoires en parallèle sans que personne ne le sache',
+      text: 'bu un verre posé sur le corps nu de quelqu\'un',
       tone: ContentTone.cattivo,
     ),
-    (
-      text: 'écrit aux deux le même soir sans me faire griller',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé l\'appart d\'un ami pour un rendez-vous secret',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait entrer quelqu\'un en douce et sortir à l\'aube',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'caché une personne dans l\'armoire ou sur le balcon, littéralement',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'supprimé des messages pour qu\'on ne les trouve pas',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'enregistré une personne dans mes contacts sous un faux nom',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'pensé à quelqu\'un de cette pièce pendant que j\'étais avec une autre personne',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'commencé un truc dans un bar et fini sur le parking',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'couché sans connaître le nom de famille de l\'autre',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'dépassé la limite avec un sex friend et fait comme si rien n\'avait changé',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'gardé un sex friend secret pendant plus d\'un an',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'accepté un « viens voir un film » en sachant qu\'on ne verrait rien du tout',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'envoyé un « t\'es réveillé ? » à trois heures du matin et obtenu une réponse',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'répondu à un « t\'es réveillé ? » à trois heures du matin et quitté la maison',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'couché avec quelqu\'un que je détestais',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé le sexe pour me faire pardonner',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé le sexe pour obtenir quelque chose',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'dit non en début de soirée et changé d\'avis à la moitié',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'dit « ça n\'arrivera plus jamais » alors que c\'était déjà arrivé trois fois',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'compté mon body count et dû recommencer depuis le début',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'annoncé à mon partenaire un body count plus bas que le vrai',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'tenu une liste écrite des personnes avec qui j\'ai couché',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'donné un nom de code à une aventure pour en parler librement',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'raconté les détails d\'une nuit à tout un groupe',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'reconnu sur une appli de rencontres une personne en couple que je connais',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'trouvé un profil qui n\'aurait pas dû exister et fait une capture d\'écran',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé un faux profil pour surveiller quelqu\'un',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fouillé le téléphone de mon partenaire pendant qu\'il dormait',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'trouvé quelque chose que j\'aurais préféré ne pas trouver',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait comme si de rien n\'était après avoir tout trouvé',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'essayé un fétiche et découvert que j\'aimais ça',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'avoué un fétiche et vu le visage de l\'autre changer',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'attaché quelqu\'un ou été attaché pour jouer',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé des glaçons ou de la nourriture au lit',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'bandé les yeux de quelqu\'un ou eu les yeux bandés',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'mis la musique à fond pour couvrir les bruits',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'reçu des plaintes des voisins', tone: ContentTone.cattivo),
-    (
-      text: 'cassé quelque chose à la maison pendant l\'amour',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'expliqué un bleu ou une griffure avec une excuse inventée',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé la table de la cuisine pour autre chose qu\'un dîner',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait l\'amour dans un ascenseur ou dans une cage d\'escalier',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'fait l\'amour sur la plage et retrouvé du sable partout pendant des jours',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait l\'amour dans une piscine ou dans la mer',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait l\'amour sous la tente avec d\'autres gens dans le camping',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait l\'amour dans un train ou en avion',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'payé une chambre juste pour quelques heures',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'utilisé la pause déjeuner de façon très créative',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'eu un réveil dont je ne parlerai jamais en détail',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait au lit un truc que ce groupe ne croirait jamais de moi',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'avalé le sperme de mon partenaire', tone: ContentTone.cattivo),
-    (text: 'léché l\'anus de quelqu\'un', tone: ContentTone.cattivo),
-    (text: 'fait du sexe anal sans protection', tone: ContentTone.cattivo),
-    (
-      text: 'utilisé un vibromasseur ou un godemichet pendant un rapport',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait une vidéo pendant que je faisais l\'amour et je l\'ai gardée',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'joui sur le visage de quelqu\'un', tone: ContentTone.cattivo),
-    (
-      text: 'fait l\'amour avec une personne dont je ne connaissais pas le nom',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'eu un rapport dans un lieu public très fréquenté',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'goûté mon propre sperme ou mon éjaculation', tone: ContentTone.cattivo),
-    (
-      text: 'fait l\'amour avec deux personnes différentes dans la même nuit',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'subi ou fait du bondage lourd', tone: ContentTone.cattivo),
-    (text: 'fait du sexe oral dans un lieu public', tone: ContentTone.cattivo),
-    (text: 'utilisé des objets domestiques comme sex toys', tone: ContentTone.cattivo),
-    (text: 'reçu du sexe oral en conduisant', tone: ContentTone.cattivo),
-    (text: 'fait l\'amour pendant les règles', tone: ContentTone.cattivo),
-    (
-      text: 'eu un orgasme multiple pendant le même rapport',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'fait l\'amour avec quelqu\'un rencontré depuis moins d\'une heure',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'payé ou reçu de l\'argent pour du sexe', tone: ContentTone.cattivo),
+    (text: 'fait un body shot sur un partenaire', tone: ContentTone.cattivo),
   ];
 
   // ---------------------------------------------------- chiLoPotrebbeFare
@@ -2060,51 +1778,6 @@ class ContentFr {
       text: 'Qui demanderait son chemin puis irait dans la direction opposée ?',
       tone: ContentTone.soft,
     ),
-    (
-      text: 'Qui s\'inscrirait à un jeu télévisé convaincu de gagner ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Qui gagnerait un prix pour l\'excuse la plus créative ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Qui laisserait son téléphone en silencieux et se plaindrait des appels manqués ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Qui regarderait des vidéos de cuisine en pleine nuit sans savoir rien cuisiner ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Qui emporterait de la crème solaire et prendrait un coup de soleil quand même ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Qui fêterait son anniversaire pendant une semaine entière ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Qui oublierait l\'anniversaire de son meilleur ami en accusant son téléphone ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Qui essaierait d\'utiliser un bon de réduction expiré comme si de rien n\'était ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Qui commanderait à manger avec le frigo plein ?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Qui vivrait de café en niant y être accro ?',
-      tone: ContentTone.soft,
-    ),
     // piccante
     (
       text: 'Qui enverrait un message à un ex à trois heures du matin ?',
@@ -2474,322 +2147,274 @@ class ContentFr {
     ),
     // cattivo
     (
-      text:
-          'Qui embrasserait quelqu\'un de ce groupe, si ce n\'était pas un jeu ?',
+      text: 'Qui accepterait un plan à trois sans hésiter ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui a déjà menti au moins une fois ce soir ?',
+      text: 'Qui avalerait sans broncher pendant une fellation ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui pense à quelqu\'un en cet instant précis ?',
+      text: 'Qui utiliserait un sex-toy dès le premier rendez-vous ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui partagerait la capture d\'une conversation privée ?',
+      text: 'Qui filmerait un rapport sexuel pour le revoir ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui créerait un faux profil pour fouiner ?',
+      text: 'Qui aurait un orgasme le plus bruyant du groupe ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui te mentirait en te regardant droit dans les yeux ?',
+      text: 'Qui oserait le sexe anal sans hésiter ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui dirait du mal d\'un ami dès qu\'il sort de la pièce ?',
+      text: 'Qui ferait une fellation dans une voiture en marche ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui aurait une conversation secrète sans une des personnes présentes ?',
+      text: 'Qui attacherait son partenaire au lit dès ce soir ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui disparaîtrait du groupe dès qu\'il est en couple ?',
+      text: 'Qui sortirait les menottes le plus vite ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui vendrait le secret d\'un ami pour mille euros ?',
+      text: 'Qui donnerait la fessée la plus mémorable ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui répéterait un secret en moins de vingt-quatre heures ?',
+      text: 'Qui réclamerait une fessée pendant l\'amour ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui s\'attribuerait le mérite d\'une idée qui n\'est pas la sienne ?',
+      text: 'Qui participerait à une partouze sans réfléchir ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui ferait semblant d\'être heureux pour un ami en rongeant son frein ?',
+      text: 'Qui proposerait un échange de partenaires à un autre couple ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui effacerait un ami de sa vie sans explication ?',
+      text: 'Qui ferait l\'amour dans un lieu public le plus risqué ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui ne rendrait jamais l\'argent qu\'on lui a prêté ?',
+      text: 'Qui prendrait son pied sur une plage bondée ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui accuserait un autre pour se sauver lui-même ?',
+      text: 'Qui baiserait dans les toilettes d\'un bar ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui regarderait le téléphone d\'un ami laissé déverrouillé ?',
+      text: 'Qui ferait l\'amour dans un ascenseur ?',
       tone: ContentTone.cattivo,
     ),
-    (text: 'Qui flirterait avec l\'ex d\'un ami ?', tone: ContentTone.cattivo),
     (
-      text:
-          'Qui laisserait tomber un plan avec les amis pour une meilleure invitation ?',
+      text: 'Qui coucherait dans une cabine d\'essayage ?',
       tone: ContentTone.cattivo,
     ),
+    (text: 'Qui enverrait un nude sans réfléchir ?', tone: ContentTone.cattivo),
     (
-      text: 'Qui tiendrait une liste mentale de tous les torts subis ?',
+      text: 'Qui a le plus de nudes cachés sur son téléphone ?',
       tone: ContentTone.cattivo,
     ),
+    (text: 'Qui ferait du sexting toute la nuit ?', tone: ContentTone.cattivo),
     (
-      text: 'Qui dirait « je ne te juge pas » en te jugeant ?',
+      text: 'Qui se masturberait en visio sans gêne ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui ne tiendrait pas une semaine sans dire du mal de quelqu\'un ?',
+      text: 'Qui rejouerait une scène de film porno à la lettre ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui ferait semblant de ne pas voir un message pour éviter un déménagement ?',
+      text: 'Qui porterait un plug pendant toute une soirée ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui a déjà jugé en silence tout le monde dans cette pièce ?',
+      text: 'Qui essaierait le bondage avec des cordes ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui ferait un faux compliment sans sourciller ?',
+      text: 'Qui aurait le plus d\'orgasmes en une seule nuit ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui finirait au lit avec un ex dès ce soir, s\'il se manifestait ?',
+      text: 'Qui simulerait un orgasme sans que personne ne le remarque ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui coucherait au premier rendez-vous sans se poser de questions ?',
+      text: 'Qui ferait un cunnilingus jusqu\'à l\'épuisement ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui aurait un plan cul secret sans le dire à personne d\'entre nous ?',
+      text: 'Qui donnerait le massage érotique le plus torride ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui a déjà regardé une des personnes présentes de façon tout sauf innocente ?',
+      text: 'Qui mordrait son partenaire pendant l\'amour ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui raconterait partout chaque détail de ses folles nuits ?',
+      text: 'Qui griffe le plus le dos de son partenaire au lit ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui s\'est déjà imaginé au lit avec une des personnes présentes ?',
+      text: 'Qui crierait au point de réveiller les voisins ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui coucherait avec l\'ex de son meilleur ami si personne ne le découvrait jamais ?',
+      text: 'Qui murmurerait les pires cochonneries à l\'oreille ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui tromperait et arriverait à ne pas se faire prendre pendant des années ?',
+      text: 'Qui supplierait son partenaire de continuer ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui pardonnerait une infidélité tout en jurant le contraire devant tous ?',
+      text: 'Qui se prêterait à un jeu de rôle coquin sans rougir ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui écrirait « tu me manques » à deux personnes différentes dans la même soirée ?',
+      text: 'Qui ferait le strip-tease le plus chaud ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui aurait une histoire secrète avec un collègue et la nierait jusqu\'au bout ?',
+      text: 'Qui danserait nu devant tout le monde ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui passerait une nuit avec une personne en couple sans trop de scrupules ?',
+      text: 'Qui utiliserait des glaçons pendant les préliminaires ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui connaîtrait le code de déverrouillage de son partenaire sans qu\'il le sache ?',
+      text: 'Qui verserait du chocolat sur le corps de son partenaire ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui dirait « je finis tard au travail » alors qu\'il est dans le lit de quelqu\'un d\'autre ?',
+      text: 'Qui ferait l\'amour sous la douche ce soir ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui flirterait avec le partenaire d\'une des personnes présentes dès qu\'ils sont seuls ?',
+      text: 'Qui tenterait la position du 69 en premier ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui a déjà embrassé en cachette une personne que nous connaissons tous ?',
+      text: 'Qui ferait l\'amour debout contre un mur ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui accepterait une proposition indécente d\'un inconnu riche sans trop réfléchir ?',
+      text: 'Qui baiserait sur la table de la cuisine ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui enverrait un nude à un quasi-inconnu juste pour se sentir désiré ?',
+      text: 'Qui ferait l\'amour dans un jacuzzi bondé ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui coucherait avec son chef pour une promotion ?',
+      text: 'Qui coucherait le soir même d\'une rencontre ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui nierait une infidélité même face aux preuves ?',
+      text: 'Qui aurait un coup d\'un soir sans donner son prénom ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui aurait encore des photos coquines d\'un ex enregistrées quelque part ?',
+      text: 'Qui ferait l\'amour trois fois dans la même nuit ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui raconterait à ses amis les détails intimes de son partenaire sans le lui dire ?',
+      text: 'Qui réclamerait un rapport dès le réveil ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui nierait jusqu\'à la mort une nuit dont tout le monde sait déjà tout ?',
+      text: 'Qui ferait l\'amour en sachant que quelqu\'un écoute ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui a pensé « avec toi, je le ferais » en regardant quelqu\'un dans cette pièce ?',
+      text: 'Qui laisserait la porte ouverte pendant l\'amour ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui essaierait de se faire pardonner une infidélité avec un cadeau hors de prix ?',
+      text: 'Qui avoue fantasmer sur un ami proche ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui écrirait à un ex en couple en sachant très bien qu\'il est en couple ?',
+      text: 'Qui aurait envie de coucher avec un collègue ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui enregistrerait un amant dans son répertoire sous un faux nom ?',
+      text: 'Qui ferait l\'amour dans les toilettes du bureau ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui tromperait par vengeance après une dispute ?',
+      text: 'Qui aurait une aventure pendant un voyage d\'affaires ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui coucherait avec un ex en sachant qu\'il est maintenant en couple ?',
+      text: 'Qui rejoindrait un club échangiste ce week-end ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui essaierait un plan à trois avec deux personnes de ce groupe ?',
+      text: 'Qui paierait pour une danse privée dans un club ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui embrasserait le partenaire d\'un ami après quelques verres de trop ?',
+      text: 'Qui embrasserait deux personnes la même nuit ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui révélerait avec qui couche un ami après avoir juré de garder le secret ?',
+      text: 'Qui coucherait avec deux personnes le même jour ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui simulerait l\'enthousiasme au lit pour vite conclure une soirée décevante ?',
+      text: 'Qui aurait une relation à trois régulière ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui donnerait des notes aux performances de ses ex devant ses amis ?',
+      text: 'Qui laisserait quelqu\'un le regarder faire l\'amour ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui se vanterait d\'une infidélité au lieu d\'en avoir honte ?',
+      text: 'Qui regarderait son partenaire coucher avec un autre ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui a déjà menti à son partenaire pour être ici ce soir ?',
+      text: 'Qui porterait des sous-vêtements comestibles à un dîner ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui enlèverait son alliance avant d\'entrer dans un bar ?',
+      text: 'Qui utiliserait de la cire chaude sur son partenaire ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui utiliserait son charme pour se faire tout payer sans rien accorder ?',
+      text: 'Qui prendrait le rôle du dominant sans hésiter ?',
       tone: ContentTone.cattivo,
     ),
+    (text: 'Qui obéirait au moindre ordre au lit ?', tone: ContentTone.cattivo),
     (
-      text:
-          'Qui aurait fait l\'amour dans un endroit où il risquait son emploi ?',
+      text: 'Qui porterait un collier et une laisse au lit ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui mènerait deux histoires en parallèle pendant des mois sans aucune culpabilité ?',
+      text: 'Qui appellerait son partenaire « maître » ou « maîtresse » ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui retournerait chez un ex juste pour le sexe, en sachant que c\'est une erreur ?',
+      text: 'Qui utiliserait une cravache pendant l\'amour ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui déclarerait la moitié des personnes avec qui il a vraiment couché ?',
+      text: 'Qui bâillonnerait son partenaire pendant l\'amour ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui lirait les messages de son partenaire et ne l\'avouerait jamais ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui partirait un week-end secret avec la mauvaise personne pour ne pas s\'ennuyer ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui regarde une des personnes présentes avec des arrière-pensées en cet instant même ?',
+      text: 'Qui ferait l\'amour les yeux bandés du début à la fin ?',
       tone: ContentTone.cattivo,
     ),
     (
@@ -3042,374 +2667,314 @@ class ContentFr {
           'Qui sortirait avec deux personnes le même week-end sans culpabilité ?',
       tone: ContentTone.piccante,
     ),
+    (text: 'Qui ferait la gorge la plus profonde ?', tone: ContentTone.cattivo),
     (
-      text: 'Qui a sûrement fait l\'amour dans un lieu public ?',
+      text: 'Qui avalerait sans la moindre hésitation ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui a tourné au moins une vidéo très chaude dans sa vie ?',
+      text: 'Qui réclamerait une éjaculation faciale ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui titillerait son partenaire jusqu\'à le faire supplier ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui édgerait son partenaire pendant une heure entière ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui commanderait un sex-toy pour pimenter le couple ?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Qui utiliserait un gode-ceinture ?', tone: ContentTone.cattivo),
+    (
+      text: 'Qui laisserait son partenaire contrôler un jouet à distance ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui porterait un jouet vibrant au restaurant ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui atteindrait l\'orgasme uniquement avec un sex-toy ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour au réveil sans dire un mot ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui prendrait son pied dans un train bondé ?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Qui ferait l\'amour dans un avion ?', tone: ContentTone.cattivo),
+    (
+      text: 'Qui baiserait dans une tente en camping ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour dans un parking souterrain ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui prendrait son pied dans un parc la nuit ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour sur un balcon en ville ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui baiserait dans la piscine d\'un hôtel ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui aurait un rapport dans un sauna public ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui enverrait une vidéo intime à son partenaire ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui garderait une sextape sur son téléphone ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui regarderait sa propre sextape avec son partenaire ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui draguerait quelqu\'un uniquement pour le sexe ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui mentirait sur son expérience au lit ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui noterait un amant sur dix sans pitié ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui recontacterait un ex uniquement pour le sexe ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui aurait un plan cul régulier pendant des mois ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui installerait une appli juste pour un plan d\'un soir ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui coucherait avec un inconnu rencontré en soirée ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui baiserait dans la maison de quelqu\'un pendant sa fête ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui filmerait un strip-tease pour son partenaire ?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Qui poserait nu pour quelqu\'un ?', tone: ContentTone.cattivo),
+    (
+      text: 'Qui enverrait le message vocal le plus explicite ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui décrirait ses fantasmes les plus fous à voix haute ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui réaliserait le fantasme le plus fou de son partenaire ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui essaierait une position vue seulement dans un film ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour toute une nuit sans dormir ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui aurait un orgasme uniquement grâce à des mots ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui jouirait rien qu\'en se frottant contre quelqu\'un ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui essaierait le sexe avec de la nourriture ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait un body shot sur le corps de son partenaire ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui se prêterait à un roleplay patron-employé ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui aurait le plus gros tiroir de sex-toys ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui testerait un vibromasseur télécommandé en soirée ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui essaierait un anneau pénien sans broncher ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui utiliserait du lubrifiant chauffant en premier ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour dans un lieu de culte du frisson interdit ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui tenterait le sexe sur une machine à laver en marche ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui prendrait son pied dans un jacuzzi d\'hôtel ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour sur le capot d\'une voiture ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui essaierait la position de l\'andromaque devant un miroir ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait une levrette face à un miroir ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui goûterait au sexe tantrique une nuit entière ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui donnerait une branlette espagnole ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui réclamerait des boules de geisha en cadeau ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui porterait un bandeau sur les yeux tout le rapport ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui attacherait son partenaire avec une cravate ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui utiliserait un miroir au plafond de sa chambre ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui laisserait un couple les regarder faire l\'amour ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui assisterait à un spectacle érotique en direct ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui rejoindrait le club des amoureux de l\'altitude ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour dans un vestiaire de salle de sport ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui baiserait dans une cabine de plage ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui essaierait le sexe en groupe sans gêne ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui donnerait le meilleur cunnilingus du groupe ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait la meilleure fellation du groupe ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui a la plus grosse collection de vidéos coquines ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui craquerait pour une dernière nuit torride avec un ex ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait l\'amour dès la première heure d\'un voyage ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui prendrait un plaisir fou à dominer au lit ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui aimerait le plus se soumettre au lit ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui réclamerait une nuit de bondage complète ?',
       tone: ContentTone.cattivo,
     ),
     (
       text:
-          'Qui a un dossier protégé par mot de passe qu\'on ne verra jamais ?',
+          'Qui ferait l\'amour dans l\'obscurité totale d\'une boîte de nuit ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui tenterait un rapport dans le noir d\'un cinéma ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui ferait le premier pas pour une nuit à plusieurs ?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Qui garderait le meilleur souvenir d\'un coup d\'un soir ?',
       tone: ContentTone.cattivo,
     ),
     (
       text:
-          'Qui a couché avec quelqu\'un que nous connaissons tous sans jamais le dire ?',
+          'Qui oserait décrire sa nuit la plus torride devant tout le monde ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Qui finirait au lit avec l\'ex de son meilleur ami ?',
+      text: 'Qui a le fantasme le plus inavouable de ce groupe ?',
       tone: ContentTone.cattivo,
     ),
-    (text: 'Qui a trompé au moins une fois ?', tone: ContentTone.cattivo),
     (
-      text: 'Qui pardonnerait une infidélité pour ne pas rester seul ?',
+      text: 'Qui ferait l\'amour sur la banquette arrière ce soir ?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Qui a déjà eu une pensée pas très innocente sur une des personnes présentes ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a déjà rêvé d\'une des personnes présentes en version interdite aux mineurs ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui possède sûrement un jouet dans sa table de nuit ?',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'Qui en possède plus d\'un ?', tone: ContentTone.cattivo),
-    (
-      text: 'Qui a fait un plan à trois, ou mourrait d\'envie d\'essayer ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui accepterait une proposition à trois si elle arrivait ce soir ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a couché au premier rendez-vous plus d\'une fois ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui s\'est enfui de chez quelqu\'un avant l\'aube ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a fait entrer quelqu\'un en cachette chez lui ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a caché une personne dans le placard, littéralement ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a un plan cul en ce moment précis ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a ruiné une amitié en finissant au lit avec la mauvaise personne ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a menti à son partenaire sur l\'endroit où il a passé la nuit ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a effacé une conversation entière par précaution ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a un nom de code dans son répertoire pour une personne précise ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a fait l\'amour alors que nous étions dans la pièce d\'à côté ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a eu un vrai faible pour un chef ou un prof ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a utilisé le bureau pour quelque chose de pas très professionnel ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a fait l\'amour en voiture sur un parking plein ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui s\'est fait surprendre par ses parents au pire moment ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a surpris ses propres parents et ne s\'en est jamais remis ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a simulé un orgasme même récemment ?',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'Qui a dit le mauvais prénom au lit ?', tone: ContentTone.cattivo),
-    (
-      text: 'Qui a laissé des marques sur le cou de quelqu\'un cette année ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a dû inventer une excuse pour un suçon ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a fait l\'amour en vacances avec quelqu\'un du coin ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui retournerait avec un ex juste pour le sexe ?',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'Qui y est déjà retourné et le nie ?', tone: ContentTone.cattivo),
-    (
-      text:
-          'Qui a deux conversations ouvertes avec deux flirts en même temps, maintenant ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a envoyé la même photo osée à deux personnes différentes ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a reçu une photo osée pendant un dîner avec ses parents ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a fait du sexting ce soir même, depuis cette pièce ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a un fetish qu\'il n\'avouera jamais ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui l\'avouerait si on le lui demandait maintenant en chœur ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a essayé de se faire attacher pour jouer ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui utiliserait un bandeau sur les yeux sans hésiter ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a acheté de la lingerie pour une seule nuit précise ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a une playlist faite exprès pour les nuits à deux ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a mis la musique à fond pour ne pas être entendu ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a reçu des plaintes des voisins au moins une fois ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a cassé un lit ou un meuble et a dû l\'expliquer ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a glissé au moins une fois en essayant la douche à deux ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a promu la cuisine au rang de lieu et ne le regrette pas ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui l\'a fait sur la plage malgré tous les avertissements sur le sable ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui le ferait en avion si l\'occasion se présentait ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a payé une chambre juste pour quelques heures ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a utilisé sa pause déjeuner de façon très créative ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a menti sur son body count même à lui-même ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui tient le compte exact, avec les dates ?',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'Qui a une liste écrite quelque part ?', tone: ContentTone.cattivo),
-    (
-      text: 'Qui a raconté une nuit en censurant quatre-vingt-dix pour cent ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a exagéré les détails d\'une nuit pour faire son intéressant ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui est meilleur au lit qu\'il ne le laisse entendre ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui est moins bon que ce qu\'il raconte ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a regardé le téléphone de son partenaire pendant qu\'il dormait ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a trouvé quelque chose et a fait comme si de rien n\'était ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a utilisé un faux profil pour surveiller quelqu\'un ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a reconnu une personne en couple sur une appli de rencontres et s\'est tu ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui s\'inscrirait sur un site pour adultes sous un nom d\'artiste ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a déjà un nom d\'artiste tout prêt ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui accepterait une nuit avec sa célébrité préférée même si tous le savaient ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui refuserait et mentirait même sur la raison ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui s\'est réconcilié au lit après une dispute provoquée exprès ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a utilisé le sexe pour se faire pardonner quelque chose de gros ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a dit « ça n\'arrivera plus » en sachant que ça arriverait encore ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui repartirait d\'ici ce soir accompagné, s\'il en avait le courage ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a déjà un plan précis sur la façon dont finira sa soirée ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a le téléphone rempli de conversations que nous ne pouvons pas voir ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui s\'est réveillé dans un lit inconnu sans se souvenir comment ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui a fait la walk of shame en croisant quelqu\'un qu\'il connaissait ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a menti en disant « j\'étais chez moi à dormir » ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui le fait le plus en ce moment, sans le dire à personne ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui finira cette partie avec un secret en moins et un plan en plus ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui accepterait de se faire uriner dessus pour un million d\'euros ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a déjà fait du sexe anal ce soir avant de venir ici ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui dans ce groupe a le meilleur sperme, à l\'odeur ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui se ferait lécher le cul par un parfait inconnu ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a sûrement déjà essayé d\'avaler sa propre éjaculation ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Qui échangerait son partenaire pour une nuit de sexe extrême avec un autre des présents ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a les sous-vêtements les plus mouillés en ce moment ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui ferait du sexe oral à celui à sa gauche pour sauter un tour ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui d\'entre nous finirait par faire un film porno si c\'était bien payé ?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Qui a le sex toy le plus gros dans sa chambre ?',
+      text: 'Qui réclamerait un massage érotique après cette partie ?',
       tone: ContentTone.cattivo,
     ),
   ];
@@ -3721,156 +3286,156 @@ class ContentFr {
       'Ferme les yeux et décris ton rendez-vous idéal pendant que le groupe ajoute des imprévus.',
     ],
     ContentTone.cattivo: [
-      'Dis un par un avec combien de présents tu coucherais si tu étais libre et sans conséquences.',
-      'Regarde chacun et dis juste « oui », « non » ou « ça dépend de la soirée », sans expliquer.',
-      'Fais le classement complet des présents du plus attirant au dernier et défends-le.',
-      'Dis lequel des présents se débrouille le mieux au lit selon toi, à l\'instinct.',
-      'Dis lequel des présents se débrouille le moins bien, et excuse-toi juste après.',
-      'Attribue à chaque présent sa « spécialité » de chambre, seulement d\'après son visage.',
-      'Dis à chaque présent si dans une autre vie tu aurais couché avec lui : juste oui ou non.',
-      'Choisis avec qui du groupe tu survivrais le mieux à une vie commune née d\'une seule nuit.',
-      'Révèle s\'il y a déjà eu un moment de tension, de ce genre, entre toi et un des présents.',
-      'Raconte le rêve le plus gênant fait sur une personne présente, ou jure n\'en avoir jamais fait.',
-      'Fais un bisou dans le cou, avec son accord, à la personne choisie par le groupe.',
-      'Fais une lap dance de vingt secondes à une personne consentante : le groupe choisit la chanson.',
-      'Fais-toi bander les yeux et devine trois personnes du groupe en touchant seulement le visage.',
-      'Enlève un vêtement de ton choix (dignité permettant) et garde-le enlevé deux tours.',
-      'La personne à ta droite doit t\'enlever un accessoire sans les mains, si elle est d\'accord.',
-      'Échangez un massage d\'épaules de trente secondes : le groupe dit qui est le meilleur.',
-      'Assieds-toi sur les genoux de la personne choisie par le groupe jusqu\'à ton prochain tour.',
-      'Chuchote à la personne en face la chose la plus osée de ta vie : elle dit juste « j\'approuve ».',
-      'Pose ta tête sur les genoux d\'une personne consentante et restes-y un tour entier.',
-      'Danse un slow joue contre joue avec la personne choisie par le groupe, un couplet entier.',
-      'Fais le tour de la pièce et embrasse la joue de chaque consentant, par ordre de préférence.',
-      'Garde un glaçon en bouche et fais un compliment osé à chaque présent avant qu\'il fonde.',
-      'Recrée avec une personne consentante la pose de couverture d\'un roman à l\'eau de rose.',
-      'Approche-toi à un centimètre du visage de la personne en face et chuchote « salut ».',
-      'Lis à voix haute le dernier message de la conversation la plus chaude de ton téléphone.',
-      'Montre la photo la plus sexy de toi que tu acceptes de montrer au groupe.',
-      'Envoie « Je repensais à cette nuit… » à une personne avec qui tu as été et montre la réponse.',
-      'Envoie « Ça te dit qu\'on se voie ? Juste nous deux. » à une ancienne flamme de ton choix.',
-      'Lis ta dernière conversation sur une appli de rencontres, ou explique pourquoi tu ne peux pas.',
-      'Montre ton historique d\'applis de rencontres ou jure n\'en avoir jamais utilisé.',
-      'Le groupe choisit un contact : envoie « J\'ai un faible pour toi depuis un moment. »',
-      'Envoie un vocal avec ta voix la plus sensuelle à un contact : le groupe écrit le texte.',
-      'Fais lire ton dernier sexting en changeant les prénoms, ou paie le gage décidé par le groupe.',
-      'Appelle une ancienne flamme et dis-lui que tu pensais à elle, trente secondes d\'appel.',
-      'Ouvre la galerie à l\'année choisie par le groupe et montre la première photo qui apparaît.',
-      'Dis le nom de la dernière personne cherchée sur les réseaux à deux heures du matin.',
-      'Montre la conversation avec ton dernier flirt et fais lire un message choisi par le groupe.',
-      'Envoie « cette nuit j\'ai rêvé de toi » à un contact choisi par le groupe et montre la réponse.',
-      'Raconte ta dernière nuit de sexe en trois mots, choisis avec beaucoup de soin.',
-      'Raconte comment a commencé ta dernière aventure d\'un soir, en sautant l\'indicible.',
-      'Raconte ton premier rendez-vous fini au lit, en t\'arrêtant à la porte de la chambre.',
-      'Décris sans nom la personne de ta meilleure nuit : le groupe pose trois questions.',
-      'Avoue ton fantasme le plus osé parmi ceux que tu arrives à dire à voix haute.',
-      'Révèle ton lieu public le plus risqué, et si vous avez failli être pris.',
-      'Dis la chose la plus osée que tu as faite pour ramener quelqu\'un chez toi.',
-      'Raconte ta pire honte dans un moment d\'intimité, sans donner de noms.',
-      'Avoue un mensonge dit à un partenaire et qui tient encore aujourd\'hui.',
-      'Révèle le nom de code utilisé avec tes amis pour parler de tes aventures.',
-      'Fais une annonce sérieuse : « Cherche compagnie pour cette nuit », avec les vrais critères.',
-      'Récite ton répertoire de sexting comme de la poésie, en inventant si besoin.',
-      'Dis quelle règle personnelle tu as brisée pour quelqu\'un qui t\'attirait à en mourir.',
-      'Avoue ce que tu as fait une seule fois au lit et jamais plus : juste le titre.',
-      'Dis l\'âge de ta première fois et la note que tu lui donnerais avec le recul.',
-      'Avoue ta plus longue période sans rien, et ta période la plus agitée.',
-      'Raconte la fois où tu as dit « je reste dix minutes » et tu es sorti le lendemain matin.',
-      'Raconte le plus gros ragot que tu connais sur quelqu\'un de présent.',
-      'Révèle une chose qu\'on t\'a dite en confidence (à toi de choisir la gravité).',
-      'Donne ton téléphone déverrouillé à la personne à ta gauche pendant trente secondes.',
-      'Fais ouvrir une conversation au hasard par une autre personne et lis-la à voix haute.',
-      'Lis à voix haute les dix derniers messages de la conversation choisie par le groupe.',
-      'S\'il existe une conversation parallèle sans un des présents, avoue-le et dis de quoi vous parlez.',
-      'Dis quel surnom tu utilises pour chaque présent quand tu parles de lui aux autres.',
-      'Envoie un message choisi par le groupe à la personne choisie par le groupe.',
-      'Dis qui a la vie secrète la plus intéressante du groupe, et ce que tu soupçonnes.',
-      'Raconte une chose que tu as dite sur quelqu\'un de présent dans son dos.',
-      'Dis à chaque présent ta première pensée sur lui à votre rencontre, version sans filtre.',
-      'Dis lequel des présents t\'a fait battre le cœur, même un soir, ou jure que personne.',
-      'Avoue si tu as stalké le profil d\'un présent jusqu\'aux photos très anciennes. Lequel ?',
-      'Révèle quel couple, vrai ou potentiel, de cette pièce t\'intrigue plus que tu ne l\'admets.',
-      'Dis qui tu emmènerais à un mariage comme cavalier pour rendre quelqu\'un jaloux.',
-      'Raconte la dernière fois où tu as parlé d\'un présent ailleurs, en citant textuellement.',
-      'Laisse le groupe te poser trois questions, sans droit de passer : même les interdites.',
-      'Réponds avec une sincérité absolue aux trois prochaines questions, quelles qu\'elles soient.',
-      'Dis une chose que personne dans cette pièce ne sait de toi, une vraie.',
-      'Termine ton tour en disant une vérité que personne n\'attend.',
-      'Imite comment tu tentes ta chance en fin de soirée, version sans dignité.',
-      'Danse de façon provocante devant la personne choisie, qui doit rester impassible.',
-      'Mime au ralenti ta tête pendant un baiser de cinéma, pendant dix secondes.',
-      'Interprète « le lendemain matin » : salue quelqu\'un avec qui il ne devait rien se passer.',
-      'Joue l\'appel imaginaire où tu racontes à ton meilleur ami la nuit qui vient de passer.',
-      'Montre comment tu te comportes quand ton plan de séduction marche : visage, voix, gestes.',
-      'Fais ta « marche du triomphe » du lendemain à travers la pièce, avec la bonne tête.',
-      'Enregistre un vocal de séduction pour un partenaire imaginaire et envoie-le à un ami.',
-      'Raconte comment tu séduirais la personne choisie si vous vous rencontriez ce soir.',
-      'Dis avec qui des présents tu tournerais une scène de baiser, si c\'était bien payé.',
-      'Cite trois choses de ta table de nuit, ou laisse le groupe deviner et confirme.',
-      'Avoue quel objet de ta chambre tu cacherais avant de faire entrer quelqu\'un.',
-      'Décris ton « kit de soirée qui promet » : ce que tu vérifies ou prépares avant de sortir.',
-      'Raconte la plus longue walk of shame de ta vie : trajet, heure et tenue.',
-      'Montre combien de personnes tu as bloquées et dis quel ex est en haut de la liste.',
-      'Avoue quel message tu effacerais tout de suite si on prenait ton téléphone maintenant.',
-      'Montre ta dernière recherche internet et avoue ce que tu cherches en navigation privée.',
-      'Publie une story choisie par le groupe (rien d\'irréversible) et laisse-la dix minutes.',
-      'Laisse le groupe te maquiller ou te coiffer « pour un rendez-vous » et reste ainsi.',
-      'Porte une chose choisie par le groupe jusqu\'à la fin de la partie et défile devant nous.',
-      'Dis qui s\'est le plus mal comporté ce soir et attribue-lui un gage.',
-      'Raconte ta pire trahison, de n\'importe quel type : le groupe décide si tu es pardonné.',
-      'Avoue la chose la plus malhonnête que tu as faite par jalousie.',
-      'Avoue si tu as embrassé quelqu\'un juste pour être vu par un autre. Ça a marché ?',
-      'Dis à chacun une chose que tu ne lui as jamais dite en face.',
-      'Dis quels deux présents finiraient ensemble dans l\'année, s\'ils s\'y mettaient ce soir.',
-      'Choisis deux présents pour un rendez-vous arrangé et organise-le vraiment par message.',
-      'Fais une prédiction amoureuse pour chaque présent : une phrase chacun, sans pitié.',
-      'Révèle qui recevrait le plus de messages osés en publiant une story à la salle de sport.',
-      'Dis qui du groupe survivrait le moins bien à une relation à distance et pourquoi.',
-      'Regarde une caméra imaginaire et avoue, comme en télé-réalité, ce que tu penses de nous.',
-      'Raconte la chose la plus absurde faite après minuit avec le téléphone en main.',
-      'Embrasse sur la bouche, trois secondes, une personne consentante de ton choix.',
-      'Enlève deux vêtements (sous-vêtements exclus) et restes-y pendant deux tours.',
-      'Mime tout habillé ta position préférée cinq secondes, avec un air de mode d\'emploi.',
-      'Reproduis le son exact que tu fais au meilleur moment, jusqu\'à ce qu\'on te croie.',
-      'Donne une fessée, avec son accord, à la personne choisie par le groupe.',
-      'Avoue si tu possèdes des jouets de chambre : combien, et où tu les caches.',
-      'Décris ton dernier rêve érotique avec un protagoniste réel sans le nommer : on devine.',
-      'Dis à voix haute la chose la plus crue écrite dans un message, en paraphrasant le minimum.',
-      'Fais glisser lentement un glaçon sur le cou d\'une personne consentante.',
-      'Avoue la dernière fois que tu t\'es donné du plaisir seul, ou choisis le gage.',
-      'Dis lequel des présents a le fantasme le plus hard, en le regardant dans les yeux.',
-      'Raconte ton fantasme en trois mots exactement.',
-      'Cite les endroits où tu l\'as fait par catégories : maison, extérieur, public, transports.',
-      'Avoue quelle pièce de ta maison a vu les meilleures choses.',
-      'Décris ton « avant » : la routine complète dès que tu sais qu\'on rentre ensemble.',
-      'Raconte la fois où on a failli vous surprendre : où vous étiez et qui arrivait.',
-      'Reproduis la tête que tu fais quand tu comprends que cette nuit on ne dort pas.',
-      'Raconte la scène de ton réveil le plus gênant, tenue comprise.',
-      'Montre sur ton bras comment tu aimes être caressé.',
-      'Dis lequel des présents survivrait à un week-end entier avec toi.',
-      'Avoue combien de fois tu as regardé ton téléphone ce soir pour une personne précise.',
-      'Appelle la personne de ta dernière nuit et demande une note de un à dix, ou paie le gage.',
-      'Lis à voix haute, en censurant les noms, le message le plus cru que tu as reçu.',
-      'Décris les sous-vêtements que tu portes ce soir et avoue si c\'était stratégique.',
-      'Révèle ton moment préféré : tôt le matin, en pleine nuit ou à la pause déjeuner.',
-      'Raconte ta fois la plus rapide et la plus longue, en minutes honnêtes.',
-      'Dis quel film t\'a fait découvrir des choses que tu as ensuite voulu essayer.',
-      'Avoue ce qu\'il y a vraiment dans ta table de nuit, objet par objet.',
-      'Cite trois choses que tu ne referais jamais au lit et une que tu referais cette nuit.',
-      'Attribue à chaque présent un titre de film interdit aux mineurs, d\'après son visage.',
-      'Raconte l\'excuse exacte utilisée la dernière fois pour partir le lendemain matin.',
-      'Dis avec combien de contacts de ton répertoire il s\'est passé quelque chose : le nombre.',
-      'Fais le classement de tes ex : note technique et note artistique. Sans noms. Ou avec.',
-      'Révèle le jour et l\'heure de ton dernier sexting, précisément.',
-      'Avoue le message que tu enverrais maintenant s\'il n\'y avait aucune conséquence, et à qui.',
-      'Raconte la fois où tu as dit « je passe juste pour un café » en sachant la suite.',
-      'Expose ta théorie sur ce qui rend quelqu\'un inoubliable au lit.',
-      'Dis lequel des présents te surprendrait le plus au lit, en bien ou en mal.',
-      'Mime la différence entre ton tout premier baiser et ta façon d\'embrasser aujourd\'hui.',
-      'Raconte la chose la plus hard faite en vacances, en nommant la ville.',
-      'Révèle si cette nuit finira normalement ou si tu as déjà un plan. Sois honnête.',
-      'Fais sonner le téléphone de ta dernière flamme et raccroche. Si elle rappelle, réponds.',
-      'Raconte la fois où tu as brisé ta règle la plus stricte pour une nuit, et le résultat.',
+      'Roule une pelle à la personne à ta droite, si elle consent.',
+      'Laisse une personne consentante t\'enlever un vêtement avec les dents.',
+      'Fais un strip-tease de trente secondes sur la musique choisie par le groupe.',
+      'Simule un orgasme aussi bruyant que possible pendant vingt secondes.',
+      'Mime ta position sexuelle préférée avec un coussin, sans commentaire.',
+      'Fais un lap dance de quinze secondes à une personne consentante.',
+      'Suce un doigt de la personne à ta gauche, si elle consent.',
+      'Lèche un glaçon puis fais-le fondre lentement sur le cou d\'une personne consentante.',
+      'Décris à voix haute et en détail comment tu ferais jouir quelqu\'un avec la bouche.',
+      'Prends un shot dans le nombril d\'une personne consentante, un body shot complet.',
+      'Embrasse dans le cou la personne la plus attirante de la pièce, si elle consent.',
+      'Mime une fellation avec une banane pendant que le groupe compte jusqu\'à dix.',
+      'Montre sur ton propre corps où tu aimes être touché pour monter en excitation.',
+      'Fais une démonstration de ta meilleure technique de préliminaires sur ta main.',
+      'Chuchote à l\'oreille d\'une personne consentante la chose la plus cochonne qui te passe par la tête.',
+      'Gémis le prénom de la personne en face de toi comme au lit.',
+      'Donne une fessée à une personne consentante et compte à voix haute.',
+      'Laisse une personne consentante te mettre une fessée, à toi de compter.',
+      'Enlève un vêtement de ton choix et garde-le enlevé jusqu\'à ton prochain tour.',
+      'Mime trois positions du Kama Sutra avec un coussin en dix secondes chacune.',
+      'Lèche de la chantilly ou du sel sur la main d\'une personne consentante.',
+      'Fais un suçon simulé dans le cou d\'une personne consentante, sans laisser de marque.',
+      'Décris ton fantasme le plus fou comme si tu le racontais à l\'oreille d\'un amant.',
+      'Danse collé-serré avec une personne consentante pendant une chanson entière.',
+      'Mets-toi à genoux et fais semblant d\'implorer une personne consentante de t\'embrasser.',
+      'Attache les poignets d\'une personne consentante avec ta ceinture pendant un tour.',
+      'Laisse une personne consentante t\'attacher les poignets pendant un tour.',
+      'Bande-toi les yeux et devine qui t\'embrasse la main parmi les personnes consentantes.',
+      'Fais couler un glaçon dans ton dos ou celui d\'une personne consentante, si elle consent.',
+      'Mime un rapport sexuel debout contre le mur, tout seul, pendant quinze secondes.',
+      'Susurre trois mots très sales au creux de l\'oreille de la personne à ta droite, si elle consent.',
+      'Fais une démonstration de comment tu embrasses, sur ton avant-bras, très lentement.',
+      'Masse les épaules d\'une personne consentante de façon volontairement sensuelle.',
+      'Mordille l\'oreille d\'une personne consentante pendant trois secondes.',
+      'Lèche tes lèvres et fais ton regard le plus aguicheur à chaque personne, une par une.',
+      'Fais semblant de te déshabiller devant une caméra imaginaire pendant vingt secondes.',
+      'Prends la pose la plus suggestive possible et laisse le groupe te photographier mentalement.',
+      'Simule un plan à deux avec deux coussins, en changeant de position deux fois.',
+      'Décris à voix haute le sextoy que tu recommanderais à la personne à ta gauche.',
+      'Mime l\'utilisation d\'un vibromasseur sur toi-même par-dessus tes vêtements pendant dix secondes.',
+      'Embrasse le poignet puis remonte jusqu\'au coude d\'une personne consentante.',
+      'Fais un twerk de quinze secondes face au groupe.',
+      'Enlève ton haut ou reste avec un seul vêtement du haut jusqu\'à ton prochain tour.',
+      'Laisse une personne consentante écrire un mot cochon sur ta peau avec son doigt.',
+      'Récite à voix haute ta réplique de dirty talk la plus efficace.',
+      'Fais semblant de chevaucher un coussin pendant que le groupe compte jusqu\'à quinze.',
+      'Lèche le sel sur ta main, embrasse le cou d\'une personne consentante, prends ton shot.',
+      'Donne un baiser dans le dos nu, ou sur la nuque, d\'une personne consentante.',
+      'Choisis une personne et mime avec elle un slow très sensuel, si elle consent.',
+      'Fais glisser un doigt le long de ton propre cou en gémissant doucement.',
+      'Décris ta zone érogène la plus secrète et montre-la sur toi, habillé.',
+      'Simule un orgasme féminin puis un orgasme masculin, à la suite, en dix secondes chacun.',
+      'Fais un câlin très collé à une personne consentante pendant trente secondes sans parler.',
+      'Mets-toi en position de la levrette avec un coussin pendant cinq secondes.',
+      'Chuchote à la personne en face ce que tu lui ferais en premier au lit, si elle consent.',
+      'Lèche une cuillère de dessert de la manière la plus obscène possible.',
+      'Laisse une personne consentante te faire un suçon simulé sur la main.',
+      'Fais un strip du bas : enlève chaussettes et un accessoire de façon théâtrale et lente.',
+      'Mime un baiser fougueux avec ta propre main pendant dix secondes.',
+      'Fais glisser un glaçon de ta bouche à celle d\'une personne consentante, si elle consent.',
+      'Décris le meilleur orgasme de ta vie en trois phrases très détaillées.',
+      'Attrape les hanches d\'une personne consentante et fais un mouvement de bassin de trois secondes.',
+      'Mets-toi à quatre pattes et fais le dos rond en gémissant pendant cinq secondes.',
+      'Enlève la ceinture ou un lacet d\'une personne consentante avec les dents.',
+      'Fais un massage sensuel du cuir chevelu à une personne consentante pendant vingt secondes.',
+      'Susurre un ordre coquin à la personne à ta droite, elle décide de l\'exécuter ou non.',
+      'Lèche le contour de tes lèvres très lentement en fixant une personne consentante.',
+      'Mime une séance de bondage : attache tes propres poignets et débats-toi cinq secondes.',
+      'Fais semblant de recevoir un massage érotique et réagis à voix haute.',
+      'Embrasse trois parties différentes du bras d\'une personne consentante.',
+      'Donne une petite claque sur les fesses d\'une personne consentante en passant, si elle consent.',
+      'Fais ton meilleur regard de braise à la webcam d\'un téléphone pendant dix secondes.',
+      'Décris à voix haute comment tu ferais un massage nu à quelqu\'un ici.',
+      'Simule un rapport en cuillère avec un coussin dans les bras pendant dix secondes.',
+      'Lèche du chocolat ou du miel sur ton propre doigt de manière obscène.',
+      'Laisse une personne consentante te souffler dans le cou pendant cinq secondes.',
+      'Fais une danse du ventre aussi sensuelle que possible pendant vingt secondes.',
+      'Chuchote le fantasme que tu n\'as jamais osé réaliser à l\'oreille d\'une personne consentante.',
+      'Mets-toi torse contre dos avec une personne consentante et ondule trois secondes, si elle consent.',
+      'Fais semblant d\'enlever un soutien-gorge ou un boxer imaginaire, très lentement.',
+      'Mordille ta propre lèvre inférieure en regardant chaque personne, une par une.',
+      'Fais un mouvement de va-et-vient du bassin sur une chaise pendant dix secondes.',
+      'Décris le sextoy que tu possèdes ou que tu aimerais posséder, sans tabou.',
+      'Lèche un doigt puis trace une ligne imaginaire sur ton propre torse.',
+      'Laisse une personne consentante choisir un vêtement que tu dois enlever.',
+      'Fais une déclaration cochonne à la personne en face comme dans un film pour adultes.',
+      'Simule l\'excitation grimpante avec des gémissements de plus en plus forts pendant quinze secondes.',
+      'Embrasse la paume de la main d\'une personne consentante puis mordille doucement un doigt.',
+      'Fais une pose de pin-up suggestive et tiens-la pendant dix secondes.',
+      'Mets-toi debout et fais rouler tes hanches en cercle pendant quinze secondes.',
+      'Chuchote à la personne à ta gauche l\'endroit le plus insolite où tu aimerais faire l\'amour.',
+      'Lèche la mousse d\'un verre ou le bord d\'une bouteille de façon suggestive.',
+      'Laisse une personne consentante te bander les yeux et te faire deviner un parfum sur sa peau.',
+      'Fais semblant de dominer un partenaire imaginaire avec une voix autoritaire pendant dix secondes.',
+      'Prends la position du missionnaire avec un coussin pendant cinq secondes en gémissant.',
+      'Décris ta plus grande performance au lit avec un maximum de détails.',
+      'Fais glisser tes mains sur tes propres cuisses de manière sensuelle pendant dix secondes.',
+      'Embrasse le front, la joue, puis les lèvres closes d\'une personne consentante, si elle consent.',
+      'Mime une danse de pole dance autour d\'une chaise pendant vingt secondes.',
+      'Chuchote un compliment très cru sur le corps d\'une personne consentante.',
+      'Laisse une personne consentante t\'écrire un chiffre sur le dos avec la langue, à toi de deviner.',
+      'Fais semblant de sucer un sucre glace de la façon la plus obscène qui soit.',
+      'Simule un rapport à la va-vite en dix secondes avec des bruits de plaisir.',
+      'Enlève un vêtement à chaque fois que le groupe crie ton prénom pendant ce tour.',
+      'Fais un baiser dans le cou d\'une personne consentante en remontant vers l\'oreille.',
+      'Décris comment tu utiliserais des menottes sur un partenaire consentant.',
+      'Mets-toi à genoux devant une personne consentante et regarde-la avec envie cinq secondes.',
+      'Fais une ola sensuelle de tout ton corps, de la tête aux pieds, deux fois.',
+      'Chuchote à la personne en face ce que tu porterais, ou pas, pour la séduire.',
+      'Lèche une trace de sel sur ton propre poignet avant de prendre un shot.',
+      'Laisse une personne consentante poser sa main sur ta cuisse pendant tout un tour.',
+      'Fais semblant de recevoir un massage des fesses et réagis avec des soupirs.',
+      'Simule un french kiss passionné avec le dos de ta main pendant dix secondes.',
+      'Prends la pose de l\'amazone sur une chaise pendant cinq secondes.',
+      'Décris à voix haute le scénario porno que tu réaliserais si tu étais réalisateur.',
+      'Fais glisser un glaçon sur ta clavicule jusqu\'à ce qu\'il fonde à moitié.',
+      'Embrasse le genou puis remonte jusqu\'à mi-cuisse d\'une personne consentante, si elle consent.',
+      'Mets un doigt dans ta bouche et fais mine d\'y prendre un plaisir intense.',
+      'Chuchote à ton voisin le mot le plus vulgaire de ton vocabulaire intime.',
+      'Fais un déhanché lascif en enlevant lentement ta chemise ou ton pull.',
+      'Laisse une personne consentante te chuchoter un ordre coquin à l\'oreille et exécute-le si tu veux.',
+      'Décris ce que tu ferais en premier dans un plan à trois avec des personnes ici présentes.',
+      'Simule une position acrobatique avec un coussin pendant que le groupe compte jusqu\'à dix.',
+      'Fais un baise-main très appuyé et prolongé à une personne consentante.',
+      'Mordille l\'air comme si tu croquais dans la nuque de la personne en face.',
+      'Fais rouler ton bassin sur les genoux d\'une personne consentante trois secondes, si elle consent.',
+      'Chuchote la partie du corps que tu embrasserais en premier chez la personne à ta droite.',
+      'Lèche le bord de ton verre en fixant intensément une personne consentante.',
+      'Laisse une personne consentante te déboutonner un bouton avec une seule main.',
+      'Fais semblant d\'être menotté à une chaise et débats-toi sensuellement cinq secondes.',
+      'Simule le bruit et le mouvement d\'une chevauchée passionnée pendant dix secondes.',
+      'Enlève tes chaussures et masse le pied d\'une personne consentante avec application.',
+      'Fais un clin d\'œil aguicheur suivi d\'un baiser soufflé à chaque personne présente.',
+      'Décris la tenue la plus sexy que tu aies déjà portée ou aimerais porter.',
+      'Mets-toi en position de la cuillère derrière un coussin et ondule cinq secondes.',
+      'Chuchote à une personne consentante ce que tu murmurerais juste avant de l\'embrasser.',
+      'Fais glisser un doigt le long de la mâchoire d\'une personne consentante, si elle consent.',
+      'Simule un orgasme en fixant la personne en face droit dans les yeux pendant dix secondes.',
+      'Laisse une personne consentante te faire un shot corporel sur le poignet ou le cou.',
+      'Fais un mouvement de langue suggestif sur une glace ou une cuillère pendant dix secondes.',
+      'Décris la position dans laquelle tu aimerais te réveiller demain matin, sans filtre.',
+      'Mets-toi debout et fais un effeuillage lent d\'un accessoire au choix pendant vingt secondes.',
+      'Embrasse l\'épaule nue, ou la manche, d\'une personne consentante trois fois de suite.',
+      'Chuchote à ton voisin le fantasme que tu réaliserais ce soir si tout était permis.',
+      'Fais mine de fouetter doucement l\'air avec une écharpe comme un accessoire de jeu coquin.',
+      'Simule une séance très intense en gémissant le prénom d\'une personne consentante.',
+      'Laisse une personne consentante décider quelle partie de ton corps tu dois faire onduler.',
+      'Fais un dernier strip théâtral : enlève un vêtement en le lançant vers le groupe.',
+      'Trace du bout des doigts une ligne brûlante dans le dos d\'une personne consentante.',
+      'Mime une scène de domination : donne un ordre coquin d\'une voix ferme et tiens la pose cinq secondes.',
     ],
   };
 
@@ -4181,164 +3746,156 @@ class ContentFr {
       'Quel est le meilleur moment : avant, pendant ou après le baiser ?',
     ],
     ContentTone.cattivo: [
-      'Avec combien de personnes as-tu vraiment été ? Pas de remise cette fois.',
-      'As-tu déjà passé la nuit avec quelqu\'un de cette pièce ? Le silence vaut un oui.',
-      'Avec qui de nous passerais-tu la nuit, si tu devais choisir un nom maintenant ?',
-      'As-tu déjà pensé à l\'un de nous en étant au lit avec une autre personne ? Oui ou non.',
-      'Qui de nous embrasserais-tu s\'il n\'y avait aucune conséquence ? Un nom.',
-      'As-tu déjà embrassé quelqu\'un de cette pièce ? Tu y penses encore ?',
-      'As-tu déjà désiré le partenaire de quelqu\'un ici présent ? Oui ou non.',
-      'As-tu déjà rêvé de l\'un de nous d\'une façon inavouable au petit-déjeuner ? Qui ?',
-      'Une semaine sur une île déserte avec l\'un de nous : qui la rendrait intéressante ?',
-      'Qui de nous a sûrement une vie au lit plus intéressante que ce qu\'il raconte ?',
-      'Et qui de nous la raconte bien mieux qu\'elle n\'est ?',
-      'Parmi les présents, qui ramènerais-tu ce soir si nous étions tous des inconnus ?',
-      'As-tu déjà été attiré par l\'un de nous alors qu\'il était en couple ? C\'est passé ?',
-      'Quelle est la pensée la plus interdite que tu as eue pendant cette partie ?',
-      'Quel fantasme n\'as-tu jamais avoué à personne ? Ce soir, c\'est notre tour.',
-      'Qu\'aimerais-tu plus souvent au lit sans jamais avoir le courage de le demander ?',
-      'Qu\'as-tu essayé une seule fois et ne referais jamais ?',
-      'Et que referais-tu tout de suite ?',
-      'La meilleure personne avec qui tu as couché : on la connaît ?',
-      'Et la pire : on la connaît ?',
-      'As-tu déjà couché avec deux personnes la même semaine ? Et le même jour ?',
-      'Avec combien de personnes as-tu couché sans te rappeler leur prénom le lendemain ?',
-      'Quel est l\'endroit le plus absurde où tu as fait l\'amour ? Sans détour.',
-      'Et le plus risqué ? Avez-vous failli être surpris ?',
-      'As-tu déjà fait du sexting entouré de personnes qui ne savaient rien ?',
-      'As-tu déjà envoyé une photo de toi sans rien ? Tu fais encore confiance à qui l\'a reçue ?',
-      'Existe-t-il des photos ou vidéos de toi qui ne doivent jamais sortir ? Qui les a ?',
-      'As-tu déjà reçu une proposition de plan à trois ? Qu\'as-tu répondu ?',
-      'Un plan à trois : le ferais-tu si personne ne l\'apprenait jamais ? Oui ou non.',
-      'As-tu déjà simulé au lit ? Combien de fois, à peu près ?',
-      'T\'a-t-on déjà fait comprendre que c\'était décevant avec toi ? Comment l\'as-tu pris ?',
-      'Quel est le compliment le plus osé qu\'on t\'a fait au lit ? Paraphrase, mais peu.',
-      'Quelle est ta plus grande insécurité au lit ?',
-      'Que choisirais-tu entre un an sans sexe et un an sans téléphone ?',
-      'Combien de temps depuis ta dernière fois ? Sois honnête au moins sur le mois.',
-      'Quel est ton record dans une même nuit ? Réponds juste avec un nombre.',
-      'Ton pire coup d\'un soir : qu\'est-ce qui a mal tourné ?',
-      'As-tu déjà croisé par hasard un de tes coups d\'un soir ? Comment ça s\'est passé ?',
-      'T\'es-tu déjà enfui de chez quelqu\'un avant son réveil ? Raconte la fuite.',
-      'Quel est le message le plus cru que tu as dans ton téléphone en ce moment ?',
-      'Quelle est la chose la plus osée faite avec quelqu\'un tout juste rencontré ?',
-      'As-tu déjà eu une histoire avec une personne en couple ? Tu le savais dès le début ?',
-      'As-tu déjà été l\'aventure secrète de quelqu\'un ? Quand l\'as-tu compris ?',
-      'As-tu déjà trompé ? As-tu déjà été trompé ? Réponds aux deux.',
-      'Une infidélité restée secrète pour toujours est-elle une infidélité ? As-tu testé ?',
-      'Quel est le plus gros mensonge dit pour couvrir une nuit ?',
-      'As-tu déjà utilisé la maison, ou le lit, de quelqu\'un sans qu\'il le sache ? De qui ?',
-      'As-tu déjà menti sur la personne avec qui tu avais passé la nuit ? À qui ?',
-      'Qu\'y a-t-il dans ta table de nuit que tu ne voudrais pas que ta mère trouve ?',
-      'Quelle recherche privée effacerais-tu pour toujours si on pouvait la voir ?',
-      'Quel est ton kink le plus avouable ? Et à quelle distance du moins avouable, sur 10 ?',
-      'Lumière allumée ou éteinte ? Dessus ou dessous ? Matin ou nuit ? Réponds vite.',
-      'Quel mot ou quel ton de voix te fait perdre la tête s\'il est bien utilisé ?',
-      'T\'es-tu déjà attaché à une personne qui devait être « juste une nuit » ? La fin ?',
-      'Quelqu\'un s\'est-il attaché à toi alors que c\'était juste une nuit ? Comment as-tu géré ?',
-      'As-tu revu quelqu\'un juste parce qu\'au lit c\'était mémorable, en sachant l\'erreur ?',
-      'As-tu déjà dit le mauvais prénom au pire moment ? Ou l\'a-t-on dit à toi ?',
-      'Quelle est la chose la plus absurde faite juste après : fuir, manger, appeler ?',
-      'Quelle règle as-tu brisée le plus : jamais avec des amis, des collègues ou des ex ?',
-      'Jamais avec des amis : combien de fois as-tu brisé celle-là ?',
-      'Qui de nous n\'inviterais-tu pas à ton mariage ?',
-      'Qui de nous t\'est le moins sympathique aujourd\'hui ?',
-      'De qui de nous as-tu dit du mal dans son dos ? Qu\'avais-tu dit ?',
-      'Qui de nous est vraiment un ami et qui juste une connaissance ?',
-      'Qui de nous contactes-tu seulement quand tu as besoin de quelque chose ?',
-      'Qui de nous exagère le plus ses histoires quand il les raconte ?',
-      'Qui de nous donne sur les réseaux l\'image la plus éloignée du réel ?',
-      'Si le groupe votait le plus faux d\'entre nous, qui gagnerait selon toi ?',
-      'As-tu déjà trahi la confiance de quelqu\'un de présent ?',
-      'As-tu déjà lu des messages qui n\'étaient pas les tiens ? Qu\'as-tu découvert ?',
-      'As-tu déjà menti dans ce groupe sur une chose importante ? Sur quoi ?',
-      'Quel est le mensonge que tu racontes encore aujourd\'hui ?',
-      'Quelle vérité évites-tu de dire à quelqu\'un dans cette pièce ?',
-      'As-tu inventé une obligation pour éviter le groupe ? Combien de fois cette année ?',
-      'As-tu écrit ailleurs sur l\'un de nous une chose que tu ne répéterais pas ici ?',
-      'Quelle est la chose la plus méchante écrite sur quelqu\'un et jamais effacée ?',
-      'Quelle est la pire chose que tu as faite à un ex ?',
-      'As-tu déjà fait semblant de pardonner sans pardonner ?',
-      'Es-tu encore en colère contre l\'un de nous ? Pourquoi ?',
-      'As-tu déjà pleuré à cause de l\'un de nous sans jamais le lui dire ?',
-      'T\'es-tu déjà réjoui du malheur de quelqu\'un ? De qui ?',
-      'Quelle est la chose la plus égoïste que tu as faite ?',
-      'As-tu déjà utilisé le secret de quelqu\'un à ton avantage ? Comment ça a fini ?',
-      'Quel message de ton téléphone te gênerait le plus si on le lisait maintenant ?',
-      'Y a-t-il quelque chose dans ton téléphone qui ruinerait une amitié ici ?',
-      'Qui de nous ne doit jamais voir ta galerie, et qu\'y trouverait-il exactement ?',
-      'Si tu pouvais lire un jour les messages de l\'un de nous, qui et que chercherais-tu ?',
-      'As-tu déjà fait une capture d\'une conversation pour la faire circuler ? À qui ?',
-      'Que crains-tu qu\'on dise de toi ce soir dès que tu passes la porte ?',
-      'Quelle est la chose que tout le groupe pense sans que personne ne l\'ait jamais dite ?',
-      'À quel présent caches-tu quelque chose en ce moment ?',
-      'Y a-t-il quelqu\'un dans cette pièce que tu as aimé ? Tu l\'aimes encore ?',
-      'Y a-t-il quelqu\'un que tu aimes et qui l\'ignore ? Pourquoi ne l\'as-tu pas dit ?',
-      'As-tu déjà désiré la personne d\'un ami ? As-tu fait quelque chose ?',
-      'Quelle version des faits nous as-tu racontée en mieux que la réalité ?',
-      'Que ne diras-tu jamais à aucun de nous ?',
-      'Que voudrais-tu qu\'on ne te demande jamais ? Le groupe peut le demander maintenant.',
-      'Qui de nous a le plus de chances d\'avoir une conversation secrète insoupçonnée ?',
-      'Sur quel couple de cette pièce, vrai ou potentiel, parierais-tu de l\'argent ?',
-      'Qui de nous s\'est fait prendre en flagrant délit de mensonge ce soir, selon toi ?',
-      'Quel est le secret du groupe qu\'on pense que tu ne connais pas ?',
-      'Préférerais-tu nous faire lire tes messages ou écouter tes vocaux de deux heures ?',
-      'Si les murs de ta chambre parlaient, quelle histoire raconteraient-ils en premier ?',
-      'Quelle nuit le groupe ne doit surtout pas connaître ? On veut le résumé, évidemment.',
-      'Qu\'as-tu fait qui, raconté maintenant, changerait l\'idée qu\'on a de toi ?',
-      'Donne un pourcentage honnête : quelle part de tes réponses ce soir était vraie ?',
-      'Qui de nous a le plus menti ce soir selon toi, et sur quelle réponse ?',
-      'Dernière question : qu\'aurais-tu voulu qu\'on te demande ce soir ? Réponds quand même.',
-      'As-tu déjà simulé un orgasme avec quelqu\'un que nous connaissons ?',
-      'Quelle est ta position préférée ? Nom et prénom de la position, cette fois.',
-      'Possèdes-tu des jouets ? Combien, et qui d\'autre le sait ?',
-      'T\'es-tu déjà touché en pensant à quelqu\'un de cette pièce ? Oui ou non, pas de noms.',
-      'Combien de fois par semaine, en moyenne ? Honnêtement.',
-      'Le meilleur sexe de ta vie : où étiez-vous et qu\'est-ce qui l\'a rendu le meilleur ?',
-      'As-tu déjà couché avec plus d\'une personne dans les mêmes vingt-quatre heures ?',
-      'As-tu déjà fait des photos ou vidéos pendant ? Existent-elles encore ?',
-      'Sexe au premier rendez-vous : combien de fois est-ce vraiment arrivé ?',
-      'Quel est le fetish que tu n\'avouerais que dans cette pièce ?',
-      'Nourriture, glaçons ou bandeau : qu\'as-tu essayé et que voudrais-tu essayer ?',
-      'Qu\'est-ce qui t\'excite le plus : le risque d\'être surpris ou le calme total ?',
-      'Quelle est la chose la plus crue qu\'on t\'a chuchotée ? Paraphrase au minimum.',
-      'As-tu fait l\'amour en sachant qu\'on pouvait vous entendre ? On vous a entendus ?',
-      'Ton record personnel : combien de temps entre la première rencontre et le lit ?',
-      'Quel endroit de ta maison tes invités regarderaient autrement s\'ils savaient ?',
-      'As-tu recommencé à voir un ex juste pour le sexe, en le niant à tout le monde ?',
-      'Strip-tease : en as-tu déjà fait un vrai ? Et reçu ?',
-      'Quel est ton chiffre exact ? Pas une fourchette : le chiffre.',
-      'Le temps le plus court entre « enchanté » et le lit : des heures ou des minutes ?',
-      'Qu\'as-tu fait une fois, juré « plus jamais », puis refait ?',
-      'Qui a été la personne la plus mauvaise pour toi ? Pourquoi l\'était-elle ?',
-      'Quelle pensée as-tu eue sur quelqu\'un ce soir et que tu ne dirais jamais ?',
-      'Plutôt le matin ou la nuit ? Et tes partenaires étaient-ils d\'accord ?',
-      'Quel est ton record de fois en une seule journée ?',
-      'As-tu déjà pleuré après ? Pourquoi ?',
-      'As-tu déjà ri pendant ? Comment ça a fini ?',
-      'Que t\'a-t-on demandé au lit et que tu as refusé ?',
-      'Et qu\'as-tu demandé toi et qu\'on t\'a refusé ?',
-      'Quel fetish trouves-tu absurde chez les autres mais t\'intrigue un peu ?',
-      'Que regardes-tu en premier quand tu penses « oui, je serais partant » ?',
-      'As-tu eu une histoire que personne ici ne soupçonne même maintenant ?',
-      'Quelle nuit referais-tu à l\'identique, du début à la fin ?',
-      'Et laquelle effacerais-tu en payant ?',
-      'Quel mensonge as-tu dit pour paraître plus expérimenté ?',
-      'T\'est-il arrivé de ne pas te rappeler le prénom le lendemain ? Comment as-tu géré ?',
-      'Quel est l\'endroit où tu ne le referais jamais ? Raison pratique ou émotionnelle ?',
-      'Qui t\'a fait changer d\'avis sur ce que signifie « bon au lit » ?',
-      'À quelle question sur ce thème as-tu déjà menti ce soir ?',
-      'Que ferais-tu cette nuit si tu étais sûr qu\'aucun de nous ne le saurait jamais ?',
-      'Qui du groupe a compris le plus de choses sur toi ce soir, et ça t\'inquiète ?',
-      'Dernière : cette nuit tu dors seul par choix ou par manque d\'alternatives ?',
-      'Est-ce que tu aimes le sexe anal ? Réponds honnêtement ou paie un gage très lourd.',
-      'Combien de fois t\'es-tu masturbé aujourd\'hui ?',
-      'Quel goût a le sperme de ton partenaire habituel ?',
-      'As-tu déjà utilisé un vibromasseur ou un godemichet pendant le sexe avec quelqu\'un d\'autre ?',
-      'Quelle est la chose la plus dégoûtante que tu as faite au lit mais que tu as aimée ?',
-      'Décris comment tu te masturbes dans les moindres détails.',
-      'Qui dans cette pièce est selon toi le ou la plus membré(e) ?',
-      'As-tu déjà fait du sexe oral à quelqu\'un et l\'as-tu embrassé juste après ?',
+      'As-tu déjà attaché ou été attaché pendant l\'amour ?',
+      'Ferais-tu un plan à trois ? Avec qui ici ?',
+      'Quel est l\'endroit le plus insolite où tu as fait l\'amour ?',
+      'As-tu déjà simulé un orgasme, et avec qui ?',
+      'Combien de fois par semaine te masturbes-tu, en moyenne ?',
+      'As-tu déjà utilisé un sextoy à deux ?',
+      'Quelle est ta position préférée et pourquoi ?',
+      'As-tu déjà fait l\'amour dans un lieu public ?',
+      'Préfères-tu dominer ou être dominé au lit ?',
+      'As-tu déjà eu un rapport anal, et as-tu aimé ?',
+      'Quel est ton plus grand fantasme jamais réalisé ?',
+      'Quel fantasme n\'as-tu jamais osé avouer à personne ?',
+      'As-tu déjà embrassé une personne du même sexe ?',
+      'As-tu déjà eu une aventure d\'un soir sans en parler à personne ?',
+      'Quelle personne dans cette pièce embrasserais-tu tout de suite ?',
+      'As-tu déjà envoyé un nude ? À qui ?',
+      'As-tu déjà reçu un nude que tu n\'as jamais oublié ?',
+      'Quel est le nombre de partenaires que tu as eus, honnêtement ?',
+      'As-tu déjà fait l\'amour avec deux personnes différentes le même jour ?',
+      'Où aimes-tu le plus être embrassé pour être excité instantanément ?',
+      'As-tu déjà pris ou donné une fessée pendant l\'amour ?',
+      'As-tu un fétichisme particulier que peu de gens connaissent ?',
+      'As-tu déjà participé à une partie à plusieurs ?',
+      'Quel est le rapport le plus torride de toute ta vie ?',
+      'As-tu déjà fait l\'amour dans une voiture ?',
+      'As-tu déjà fantasmé sur quelqu\'un présent dans cette pièce ?',
+      'Quelle est la chose la plus coquine que tu aies faite sous la douche ?',
+      'As-tu déjà utilisé des menottes ou un bandeau au lit ?',
+      'Préfères-tu le sexe le matin ou le soir ?',
+      'As-tu déjà eu un orgasme uniquement par des caresses, sans pénétration ?',
+      'Quel est ton mot le plus sale à dire pendant l\'amour ?',
+      'As-tu déjà fait un strip-tease à quelqu\'un ?',
+      'Quelle partie de ton corps préfères-tu qu\'on embrasse ?',
+      'As-tu déjà eu une expérience à trois que tu recommencerais ?',
+      'As-tu déjà pratiqué le sexe oral dans un endroit risqué ?',
+      'Quel est le surnom coquin que tu donnes à ton intimité ?',
+      'As-tu déjà eu un plan cul régulier sans sentiments ?',
+      'As-tu déjà filmé un moment intime avec un partenaire ?',
+      'As-tu déjà fait l\'amour en pensant à quelqu\'un d\'autre ?',
+      'Quelle est la position que tu aimerais essayer mais que tu n\'as jamais tentée ?',
+      'As-tu déjà eu un coup de foudre purement sexuel ?',
+      'As-tu déjà goûté à des jeux de rôle au lit ?',
+      'Quel accessoire coquin aimerais-tu introduire dans ta vie sexuelle ?',
+      'As-tu déjà été surpris en plein acte par quelqu\'un ?',
+      'As-tu déjà eu une relation avec une grande différence d\'âge ?',
+      'Combien de temps dure ton rapport idéal, du début à la fin ?',
+      'As-tu déjà eu un orgasme dans un lieu totalement inapproprié ?',
+      'Préfères-tu faire l\'amour dans le noir ou avec la lumière ?',
+      'As-tu déjà envoyé un message vocal très chaud à quelqu\'un ?',
+      'Quelle est la chose la plus audacieuse qu\'on t\'ait demandée au lit ?',
+      'As-tu déjà cédé à une tentation alors que tu étais en couple ?',
+      'As-tu déjà fait l\'amour avec un inconnu rencontré le soir même ?',
+      'Quel est ton scénario de jeu de rôle idéal ?',
+      'As-tu déjà pris du plaisir à te faire regarder ?',
+      'As-tu déjà aimé regarder ton partenaire se donner du plaisir ?',
+      'Quelle est la tenue qui te rend irrésistible selon toi ?',
+      'As-tu déjà eu une relation purement charnelle qui a duré ?',
+      'As-tu déjà pratiqué le sexe en groupe, même une seule fois ?',
+      'Quelle personne célèbre te ferait tout accepter au lit ?',
+      'As-tu déjà eu un orgasme rien qu\'en dormant ?',
+      'As-tu déjà utilisé de la nourriture pendant un moment intime ?',
+      'Quel est l\'endroit sur ton corps où personne ne t\'a jamais embrassé mais que tu rêves ?',
+      'As-tu déjà fait des avances à un collègue ou un patron ?',
+      'As-tu déjà eu une nuit dont tu ne te souviens presque pas, sexuellement ?',
+      'Préfères-tu les préliminaires longs ou aller droit au but ?',
+      'As-tu déjà eu un fantasme impliquant plus de deux personnes ?',
+      'As-tu déjà pris l\'initiative d\'un plan à trois ?',
+      'Quelle est la phrase qui t\'excite le plus quand on te la murmure ?',
+      'As-tu déjà eu une relation secrète que personne ne connaît encore ?',
+      'As-tu déjà essayé le bondage, ne serait-ce qu\'un peu ?',
+      'Quel est le lieu public où tu rêverais de faire l\'amour ?',
+      'As-tu déjà atteint l\'orgasme plusieurs fois de suite ?',
+      'As-tu déjà eu envie d\'embrasser quelqu\'un pendant cette soirée ?',
+      'Quelle est ta plus grande curiosité sexuelle inavouée ?',
+      'As-tu déjà mélangé glace ou chaleur à tes moments intimes ?',
+      'As-tu déjà pratiqué l\'échangisme ou y as-tu pensé sérieusement ?',
+      'Quel est le compliment le plus cru qu\'on t\'ait fait sur ton corps ?',
+      'As-tu déjà eu un coup d\'un soir avec l\'ex d\'un ami ?',
+      'Combien de personnes dans cette pièce trouves-tu sexuellement attirantes ?',
+      'As-tu déjà donné un faux prénom après un coup d\'un soir ?',
+      'Quelle est la partie du corps de ton partenaire qui t\'excite le plus ?',
+      'As-tu déjà fait durer un plaisir en te retenant volontairement ?',
+      'As-tu déjà eu une expérience saphique ou homosexuelle, même brève ?',
+      'Quel jouet érotique possèdes-tu que tu n\'avouerais à personne ?',
+      'As-tu déjà eu un orgasme si fort que tu en as crié ?',
+      'As-tu déjà séduit quelqu\'un uniquement pour une nuit ?',
+      'Quel est le fantasme que tu aimerais réaliser avant tes cinquante ans ?',
+      'As-tu déjà utilisé un miroir pour te regarder pendant l\'amour ?',
+      'As-tu déjà eu une relation à distance très chaude par écran ?',
+      'Quelle est la chose la plus osée présente sur ton téléphone en ce moment ?',
+      'As-tu déjà été attaché et laissé impuissant volontairement ?',
+      'As-tu déjà mordu ou griffé un partenaire au plus fort du plaisir ?',
+      'Quel est ton rituel secret pour te mettre dans l\'ambiance ?',
+      'As-tu déjà eu envie de tout arrêter pour aller faire l\'amour maintenant ?',
+      'As-tu déjà pratiqué le sexe oral en public sous une table ?',
+      'Quelle est la position dans laquelle tu prends le plus de plaisir ?',
+      'As-tu déjà couché le premier soir sans aucun regret ?',
+      'As-tu déjà eu un fantasme sur une personne bien plus âgée ?',
+      'Quel mot interdit oses-tu dire seulement au lit ?',
+      'As-tu déjà eu un plan à trois qui a mal tourné, ou très bien ?',
+      'As-tu déjà porté de la lingerie ou des sous-vêtements coquins pour surprendre ?',
+      'Quelle est ta zone érogène la plus inattendue ?',
+      'As-tu déjà eu un orgasme grâce à un simple massage ?',
+      'As-tu déjà pris des risques d\'être vu pour le frisson ?',
+      'Quel est le scénario le plus fou que tu aimerais jouer avec quelqu\'un ici ?',
+      'As-tu déjà eu une relation avec deux personnes en même temps ?',
+      'As-tu déjà éprouvé du plaisir à recevoir des ordres au lit ?',
+      'Quelle est la chose que tu refuses catégoriquement au lit ?',
+      'As-tu déjà fait l\'amour toute une nuit sans presque dormir ?',
+      'As-tu déjà été infidèle uniquement en pensée, à quel point ?',
+      'Quel sextoy conseillerais-tu à la personne à ta droite ?',
+      'As-tu déjà eu un coup de cœur pour la voix de quelqu\'un au point de fantasmer ?',
+      'As-tu déjà pratiqué une position que tu as regretté d\'avoir tentée ?',
+      'Quelle est ta plus grande performance dont tu es fier au lit ?',
+      'As-tu déjà embrassé deux personnes différentes le même soir ?',
+      'As-tu déjà osé demander quelque chose de très cru à un partenaire ?',
+      'Quel est le lieu le plus dangereux où tu as pris du plaisir ?',
+      'As-tu déjà utilisé des glaçons sur le corps de quelqu\'un ?',
+      'As-tu déjà eu une expérience BDSM, en tant que dominant ou soumis ?',
+      'Quelle personne ici serait, selon toi, la meilleure au lit ?',
+      'As-tu déjà fait l\'amour avec la musique à fond pour couvrir les bruits ?',
+      'As-tu déjà craqué pour quelqu\'un juste à cause de son odeur ?',
+      'Quel est le fantasme le plus tabou que tu gardes pour toi ?',
+      'As-tu déjà eu un rapport en pensant que quelqu\'un pouvait entrer ?',
+      'As-tu déjà pris ta revanche sur un ex en le rendant fou de désir ?',
+      'Quelle est la première chose que tu ferais dans un plan à trois ce soir ?',
+      'As-tu déjà eu un orgasme sans même être touché, juste par les mots ?',
+      'As-tu déjà couché avec quelqu\'un uniquement pour son physique ?',
+      'Quel est ton pire souvenir sexuel dont tu ris aujourd\'hui ?',
+      'As-tu déjà bandé les yeux d\'un partenaire pour jouer ?',
+      'As-tu déjà eu envie de séduire deux personnes de cette pièce à la fois ?',
+      'Quelle partie de ton corps aimerais-tu qu\'on couvre de baisers ?',
+      'As-tu déjà utilisé de la crème, du miel ou du chocolat au lit ?',
+      'As-tu déjà eu une relation où le sexe était le seul lien ?',
+      'Quel est l\'ordre le plus coquin que tu aimerais donner ce soir ?',
+      'As-tu déjà pris du plaisir à être totalement soumis un instant ?',
+      'As-tu déjà fait l\'amour dehors, en pleine nature ?',
+      'Quelle est la chose la plus sexy qu\'on t\'ait jamais chuchotée à l\'oreille ?',
+      'As-tu déjà eu un fantasme récurrent sur un uniforme précis ?',
+      'As-tu déjà atteint le point de non-retour rien qu\'avec un baiser ?',
+      'Quel est le sous-vêtement que tu portes qui te rend le plus sûr de toi ?',
+      'As-tu déjà proposé un jeu coquin qui a été refusé ?',
+      'As-tu déjà eu envie d\'embrasser la personne à ta gauche là, maintenant ?',
+      'Quelle est la position que tu maîtrises le mieux, selon tes partenaires ?',
+      'As-tu déjà fait l\'amour dans la maison de quelqu\'un d\'autre en cachette ?',
+      'As-tu déjà eu un orgasme qui t\'a fait perdre complètement le contrôle ?',
+      'Quel est le geste le plus audacieux que tu ferais à quelqu\'un ici, s\'il consentait ?',
+      'As-tu déjà pris du plaisir à faire durer les préliminaires plus d\'une heure ?',
+      'As-tu déjà glissé un sextoy dans tes bagages pour un voyage ?',
+      'Quelle est la chose la plus excitante que tu aies faite juste avant de sortir de chez toi ?',
     ],
   };
 

@@ -10,9 +10,8 @@ import '../../room/data/models/room.dart';
 import '../content/game_content.dart';
 import '../engine/round_game.dart';
 
-/// Non ho mai: una frase, ognuno dichiara in silenzio se l'ha fatto.
-/// Il risultato è solo il conteggio: chi ha risposto cosa non si vede, ed è
-/// quello che rende giocabile il tono Hot.
+/// Non ho mai: ognuno dichiara in silenzio se l'ha fatto e il risultato è solo
+/// il conteggio anonimo, ed è questo a rendere giocabile il tono Hot.
 class NonHoMaiScreen extends ConsumerWidget {
   const NonHoMaiScreen({required this.room, super.key});
 
@@ -35,7 +34,7 @@ class NonHoMaiScreen extends ConsumerWidget {
         final entries = GameContent.nonHoMai(locale);
         final allowed = ctx.room.mode.indexesFor(entries, (e) => e.tone);
         // Se la lingua non ha frasi nei toni ammessi si pesca da tutto il
-        // mazzo: mai lasciare il pool vuoto, farebbe fallire la pesca.
+        // mazzo, per non lasciare il pool vuoto e far fallire la pesca.
         final candidates = allowed.isEmpty
             ? [for (var i = 0; i < entries.length; i++) i]
             : allowed;
@@ -234,8 +233,7 @@ class _Result extends StatelessWidget {
   }
 }
 
-/// Il numero sale da zero: il conteggio diventa un piccolo momento invece di
-/// una cifra che compare e basta.
+/// Il numero sale da zero per dare un piccolo momento invece di comparire e basta.
 class _Counter extends StatelessWidget {
   const _Counter({required this.yes, required this.total, required this.t});
 

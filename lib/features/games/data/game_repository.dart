@@ -2,19 +2,15 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'game_models.dart';
 
-/// Le scritture sono tutte `async` con `await` dentro, non espressioni che
-/// restituiscono il builder di postgrest: quel builder parte solo quando
-/// qualcuno lo attende, e un `onPressed: () => repo.qualcosa()` lo butta via
-/// senza mandare nulla al server. Con `async` la richiesta parte comunque.
+/// Scritture `async`/`await`, non espressioni: il builder di postgrest parte
+/// solo se atteso, e un `onPressed: () => repo.x()` lo scarterebbe senza inviare.
 class GameRepository {
   const GameRepository(this._client);
 
   final SupabaseClient _client;
 
-  /// Round corrente della stanza: il più recente.
-  ///
-  /// Come per i giocatori, deduplico per id invece di fidarmi dell'ordine con
-  /// cui Realtime consegna gli eventi.
+  /// Round corrente (il più recente): deduplico per id senza fidarmi
+  /// dell'ordine con cui Realtime consegna gli eventi.
   Stream<Round?> watchCurrentRound(String roomId) => _client
       .from('rounds')
       .stream(primaryKey: ['id'])
@@ -44,14 +40,8 @@ class GameRepository {
         return byId.values.toList();
       });
 
-  /// Il numero del prossimo round, chiesto al database invece di dedurlo dalla
-  /// cache locale.
-  ///
-  /// Serve perché `start_game` cancella i round della partita precedente lato
-  /// server: il client se li ritrova ancora in memoria per qualche istante, e
-  /// un gioco scelto dalla lobby partiva numerato dopo quelli vecchi ("round 6
-  /// di 5"). In modalità Mix, dove i round restano, la numerazione prosegue
-  /// come prima.
+  /// Prossimo numero di round chiesto al database, non alla cache locale, che
+  /// dopo `start_game` può ancora contenere i round della partita precedente.
   Future<int> nextRoundNumber(String roomId) async {
     final rows = await _client
         .from('rounds')
@@ -93,9 +83,8 @@ class GameRepository {
     'value': value,
   });
 
-  /// Solo l'host: assegna i punti del round. Va chiamata *prima* del reveal,
-  /// perché la funzione lato server accetta solo round ancora aperti (è così
-  /// che resta idempotente se l'host ripete l'operazione).
+  /// Solo l'host: assegna i punti, *prima* del reveal, perché la RPC accetta
+  /// solo round aperti (così resta idempotente se l'host ripete).
   Future<void> awardPoints({
     required String roundId,
     required Map<String, int> awards,
@@ -116,8 +105,8 @@ class GameRepository {
       .update({'status': 'finished'})
       .eq('id', roomId);
 
-  /// Impostore: crea il round lato server (parola segreta e ruolo non passano
-  /// mai dal telefono dell'host, che potrebbe essere lui stesso l'impostore).
+  /// Impostore: round creato sul server, perché parola e ruolo non devono
+  /// passare dal telefono dell'host (che potrebbe essere l'impostore).
   Future<void> startImpostoreRound({
     required String roomId,
     required int roundNumber,
@@ -135,8 +124,7 @@ class GameRepository {
     },
   );
 
-  /// Solo l'host: riscrive il contenuto del round (usato quando l'AI
-  /// sostituisce il contenuto pescato dal pool, o per far avanzare una fase).
+  /// Solo l'host: riscrive il contenuto del round (sostituzione AI o avanzamento fase).
   Future<void> updateContent({
     required String roundId,
     required Map<String, dynamic> content,
@@ -183,8 +171,7 @@ class GameRepository {
         .select('content')
         .eq('room_id', roomId)
         .eq('game_type', gameType);
-    // 'i' è l'indice principale; 'i2' serve ai giochi che pescano da due pool
-    // diversi nello stesso round (Obbligo o Verità).
+    // 'i' è l'indice principale; 'i2' per i giochi a due pool (Obbligo o Verità).
     return {
       for (final row in rows)
         for (final key in const ['i', 'i2'])

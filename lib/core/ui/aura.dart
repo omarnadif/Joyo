@@ -5,12 +5,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 
 /// Lo sfondo di Joyo: due aloni di luce che si muovono lentamente dietro il
-/// contenuto, del colore del gioco attivo.
-///
-/// È l'idea portante dell'interfaccia — lo schermo come fonte di luce, come le
-/// facce illuminate dai telefoni attorno a un tavolo al buio. Cambiando gioco
-/// cambia il colore dell'ambiente, quindi si capisce a che gioco si sta
-/// giocando anche senza leggere il titolo.
+/// contenuto, del colore del gioco attivo, così l'ambiente segnala il gioco in corso.
 class Aura extends StatefulWidget {
   const Aura({
     required this.child,
@@ -120,8 +115,7 @@ class _AuraPainter extends CustomPainter {
       0.22,
     );
 
-    // Vignettatura: i bordi restano scuri, l'occhio va al centro dove sta il
-    // contenuto. È quello che dà profondità alla schermata.
+    // Vignettatura: i bordi restano scuri per dare profondità e portare l'occhio al centro.
     canvas.drawRect(
       Offset.zero & size,
       Paint()

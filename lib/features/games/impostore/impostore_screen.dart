@@ -15,13 +15,12 @@ import '../state/game_providers.dart';
 import '../widgets/countdown_bar.dart';
 import '../widgets/player_chip.dart';
 
-/// Impostore: tutti ricevono la stessa parola segreta tranne uno, che non la
-/// riceve affatto e deve fingere di saperla.
+/// Impostore: tutti ricevono la stessa parola segreta tranne uno, che deve
+/// fingere di saperla.
 ///
 /// La parola non passa mai dal telefono dell'host (potrebbe essere lui
-/// l'impostore): il round viene creato da una funzione sul server, ogni
-/// giocatore legge solo la propria riga di segreto, e anche i punti li conta
-/// il server.
+/// l'impostore): round e punteggio li gestisce il server e ogni giocatore
+/// legge solo la propria riga di segreto.
 class ImpostoreScreen extends ConsumerWidget {
   const ImpostoreScreen({required this.room, super.key});
 
@@ -455,9 +454,9 @@ class _Result extends StatelessWidget {
     final guessOk = state.content['guess_ok'] == true;
     final guess = state.content['guess'] as String?;
 
-    // Il voto dell'impostore non entra nel conteggio: il server lo esclude
-    // quando decide se è stato smascherato, e mostrarlo qui faceva sembrare
-    // sbagliato il risultato ("smascherato Ada" con Bruno più votato di lei).
+    // Il voto dell'impostore va escluso dal conteggio come fa il server,
+    // altrimenti il risultato mostrato sembra sbagliato (smascherato Ada ma
+    // Bruno risulta il più votato).
     final counts = <String, int>{};
     for (final vote in state.votes) {
       if (vote.playerId == impostorId) continue;

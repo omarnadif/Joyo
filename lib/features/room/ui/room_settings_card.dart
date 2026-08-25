@@ -8,11 +8,8 @@ import '../../games/game_mode.dart';
 import '../data/models/room.dart';
 import '../state/room_providers.dart';
 
-/// Modalità e durata della partita. Le vedono tutti, le cambia solo l'host.
-///
-/// Le tre modalità sono la prima decisione della serata, quindi occupano più
-/// spazio del resto e mostrano la descrizione di quella scelta: nessuno deve
-/// scoprire cos'è "Hot" dopo aver iniziato a giocare.
+/// Modalità e durata della partita: le vedono tutti, le cambia solo l'host, con
+/// la descrizione della modalità scelta bene in vista.
 class RoomSettingsCard extends ConsumerWidget {
   const RoomSettingsCard({required this.room, required this.isHost, super.key});
 
@@ -27,8 +24,8 @@ class RoomSettingsCard extends ConsumerWidget {
     final t = ref.watch(tProvider);
     final repo = ref.read(roomRepositoryProvider);
 
-    // Le scritture partono senza attendere (il feedback è la card che si
-    // aggiorna via Realtime), ma un errore non deve sparire in silenzio.
+    // Scritture non attese (il feedback è la card via Realtime), ma un errore
+    // non deve sparire in silenzio.
     void update(Future<void> Function() write) {
       final messenger = ScaffoldMessenger.of(context);
       write().catchError((Object _) {
@@ -52,9 +49,8 @@ class RoomSettingsCard extends ConsumerWidget {
                     mode: mode,
                     label: t('mode.${mode.id}'),
                     selected: room.mode == mode,
-                    // Il tono va scritto insieme alla modalità: è quello che
-                    // la Edge Function AI legge da `rooms.tone`. Senza questo
-                    // i contenuti AI resterebbero soft anche in Hot.
+                    // Il tono si scrive insieme alla modalità: è ciò che l'AI
+                    // legge da `rooms.tone`, o resterebbe soft anche in Hot.
                     onTap: isHost
                         ? () => update(
                             () => repo.updateSettings(

@@ -8,9 +8,8 @@ import '../data/models/room.dart';
 import '../state/room_providers.dart';
 import 'lobby_screen.dart';
 
-/// Contenitore della stanza: decide cosa mostrare in base allo stato che
-/// arriva da Supabase. È il punto in cui i telefoni restano allineati —
-/// nessuno naviga a mano, si segue `rooms.status`.
+/// Contenitore della stanza: sceglie la schermata da `rooms.status`, così i
+/// telefoni restano allineati senza navigazione manuale.
 class RoomShell extends ConsumerWidget {
   const RoomShell({super.key});
 
@@ -42,8 +41,7 @@ class RoomShell extends ConsumerWidget {
     // La riga della stanza non c'è più: l'host l'ha chiusa.
     if (room == null) return _closed(context, ref, t);
 
-    // Secondo segnale, indipendente dal primo: se la mia riga giocatore è
-    // sparita (cancellazione a cascata, o rimozione) la stanza è finita per me.
+    // Se la mia riga giocatore è sparita, la stanza è finita anche per me.
     final players = playersAsync.value;
     if (players != null &&
         !players.any((player) => player.id == session.playerId)) {
@@ -55,14 +53,12 @@ class RoomShell extends ConsumerWidget {
       RoomStatus.inGame || RoomStatus.finished => GameStageScreen(room: room),
     };
 
-    // Riconnessione in corso: mostro i dati che ho già, con un avviso
-    // discreto, invece di sostituire tutto con uno spinner a schermo intero.
+    // In riconnessione tengo i dati con un avviso, senza spinner a tutto schermo.
     final reconnecting = roomAsync.isLoading || roomAsync.hasError;
 
     final isHost = ref.watch(isHostProvider(session.roomId));
 
-    // Il back di sistema non deve sgusciare fuori dalla stanza senza passare
-    // da exitRoom: lascerebbe un giocatore fantasma nella lista degli altri.
+    // Il back di sistema deve passare da exitRoom, o resta un giocatore fantasma.
     return PopScope(
       canPop: false,
       onPopInvokedWithResult: (didPop, _) {
@@ -93,17 +89,15 @@ class RoomShell extends ConsumerWidget {
   );
 }
 
-/// Torna alla home senza toccare il database (la stanza potrebbe non esserci
-/// più: è il caso in cui ci arriviamo più spesso).
+/// Torna alla home senza toccare il database (la stanza potrebbe non esserci più).
 Future<void> goHome(BuildContext context, WidgetRef ref) async {
   final navigator = Navigator.of(context);
   ref.read(roomSessionProvider.notifier).exit();
   navigator.popUntil((route) => route.isFirst);
 }
 
-/// Esce dalla stanza. L'host la chiude per tutti, gli altri escono e basta.
-/// Se la scrittura fallisce l'utente lo deve sapere, altrimenti resterebbe
-/// nella lista degli altri giocatori come un fantasma.
+/// Esce dalla stanza (l'host la chiude per tutti); se la scrittura fallisce
+/// l'utente va avvisato, o resta fantasma nella lista degli altri.
 Future<void> exitRoom(
   BuildContext context,
   WidgetRef ref, {
@@ -131,8 +125,7 @@ Future<void> exitRoom(
   if (context.mounted) await goHome(context, ref);
 }
 
-/// Chiede conferma e poi esce. Usata sia dalla lobby sia dalle schermate di
-/// gioco, perché il significato di "esci" cambia se sei l'host.
+/// Chiede conferma e poi esce; il significato di "esci" cambia se sei l'host.
 Future<void> confirmExitRoom(
   BuildContext context,
   WidgetRef ref, {

@@ -6,10 +6,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_locale.dart';
 import 'translations.dart';
 
-/// Traduce una chiave nella lingua scelta.
-///
-/// Se manca una traduzione si ripiega sull'inglese e poi sulla chiave stessa:
-/// meglio vedere `lobby.players` in un angolo che una schermata vuota.
+/// Traduce una chiave nella lingua scelta, con fallback su inglese e poi sulla
+/// chiave stessa: meglio `lobby.players` a schermo che uno spazio vuoto.
 class Translator {
   const Translator(this.locale);
 
@@ -26,9 +24,7 @@ class Translator {
     return value;
   }
 
-  /// Singolare e plurale. Le cinque lingue hanno tutte due sole forme, quindi
-  /// basta una chiave in più con il suffisso `_one`: `t.n('podium.points', 1)`
-  /// dà "1 punto" invece di "1 punti".
+  /// Singolare/plurale via chiave `_one` (le cinque lingue hanno due sole forme).
   String n(String key, int count, [Map<String, String>? args]) {
     final singular = '${key}_one';
     final chosen = count == 1 && kTranslations.containsKey(singular)
@@ -54,8 +50,7 @@ class LocaleNotifier extends Notifier<AppLocale> {
 
   Future<void> _restore() async {
     final prefs = await SharedPreferences.getInstance();
-    // Se nel frattempo l'utente ha già scelto una lingua (il selettore è la
-    // prima schermata dell'onboarding), il valore salvato non deve vincere.
+    // Se l'utente ha già scelto in onboarding, il valore salvato non deve vincere.
     if (_chosen || !ref.mounted) return;
     final saved = prefs.getString(_prefsKey);
     if (saved != null) state = AppLocale.fromCode(saved);

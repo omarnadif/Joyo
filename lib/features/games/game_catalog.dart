@@ -4,10 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../../core/theme/app_colors.dart';
 
-/// Un gioco del catalogo. `id` è il valore scritto in `rooms.active_game`.
-///
-/// Nome e sottotitolo sono chiavi di traduzione, non testo: il catalogo deve
-/// funzionare in tutte e cinque le lingue.
+/// Un gioco del catalogo: `id` è il valore scritto in `rooms.active_game`,
+/// mentre nome e sottotitolo sono chiavi di traduzione per le cinque lingue.
 class GameDefinition {
   const GameDefinition({
     required this.id,

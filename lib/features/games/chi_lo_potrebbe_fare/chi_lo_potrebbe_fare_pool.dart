@@ -1,7 +1,7 @@
 import '../content_tone.dart';
 
-/// Pool gratuito di "Chi lo potrebbe fare": 460 domande sul gruppo
-/// (160 soft, 150 piccanti, 150 cattive).
+/// Pool gratuito di "Chi lo potrebbe fare": 450 domande sul gruppo
+/// (150 soft, 150 piccanti, 150 cattive).
 class ChiLoPotrebbeFarePool {
   const ChiLoPotrebbeFarePool._();
 
@@ -587,50 +587,6 @@ class ChiLoPotrebbeFarePool {
       text: 'Chi chiederebbe indicazioni e poi andrebbe dalla parte opposta?',
       tone: ContentTone.soft,
     ),
-    (
-      text: 'Chi si iscriverebbe a un quiz televisivo convinto di vincere?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Chi vincerebbe un premio per la scusa più creativa?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Chi terrebbe il telefono in silenzioso e si lamenterebbe delle chiamate perse?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Chi guarderebbe video di cucina a notte fonda senza saper cucinare nulla?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Chi porterebbe la crema solare e si scotterebbe comunque?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Chi festeggerebbe il compleanno per una settimana intera?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Chi dimenticherebbe il compleanno del migliore amico dando la colpa al telefono?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text:
-          'Chi proverebbe a usare un buono sconto scaduto facendo finta di niente?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Chi ordinerebbe cibo a domicilio con il frigo pieno?',
-      tone: ContentTone.soft,
-    ),
-    (
-      text: 'Chi vivrebbe di caffè negando di esserne dipendente?',
-      tone: ContentTone.soft,
-    ),
     // ------------------------------------------------------ piccante
     (
       text: 'Chi manderebbe un messaggio a un ex alle tre di notte?',
@@ -991,471 +947,802 @@ class ChiLoPotrebbeFarePool {
           'Chi accetterebbe un\'ultima notte con un ex "solo per chiudere il cerchio"?',
       tone: ContentTone.piccante,
     ),
+    (
+      text: 'Chi flirterebbe con lo sconosciuto più attraente del locale?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe per primo un messaggio piccante stasera?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si toglierebbe una cosa di dosso per vincere una scommessa?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi ballerebbe uno slow troppo vicino a un amico impegnato?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi darebbe il primo bacio senza pensarci due volte?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi ha un debole segreto per qualcuno seduto qui?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi ci proverebbe con il barista pur di avere un drink gratis?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si lascerebbe convincere a un bacio a stampo con un amico?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi indosserebbe qualcosa di provocante solo per farsi notare?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi risponderebbe di si a un aperitivo a lume di candela con un ex?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe un cuore all\'ultima persona con cui ha chattato?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si siederebbe sulle ginocchia di qualcuno per una foto?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi ruberebbe un bacio sotto il vischio senza avvisare?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi accetterebbe un massaggio alla schiena da uno del gruppo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi sussurrerebbe qualcosa di malizioso all\'orecchio del vicino?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si farebbe scrivere il numero sul palmo della mano?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi userebbe una battuta a doppio senso per rompere il ghiaccio?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi flirterebbe di nascosto anche stando con qualcuno?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi lascerebbe un bottone in più slacciato apposta?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si offrirebbe di spalmare la crema solare a uno sconosciuto?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi accetterebbe una sfida di sette minuti in paradiso?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe una foto in costume alla persona sbagliata?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si morderebbe il labbro guardando qualcuno qui?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi accetterebbe di scambiarsi la maglietta con il vicino?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi farebbe l\'occhiolino a un perfetto sconosciuto?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si truccherebbe apposta per far ingelosire un ex?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi resterebbe l\'ultimo a un after solo per un flirt?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi bacerebbe qualcuno sulla guancia lasciando il segno del rossetto?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi si lascerebbe portare a casa da qualcuno conosciuto in serata?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi risponderebbe a una chiamata di un ex a mezzanotte?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi userebbe il profumo del partner di un amico come scusa per avvicinarsi?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi giocherebbe a nascondino solo per finire in un angolo con qualcuno?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si sbottonerebbe la camicia dopo il secondo drink?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe un vocale con la voce più sensuale possibile?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi lascerebbe la porta socchiusa mentre si cambia?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi ballerebbe sul tavolo dopo un paio di shot?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si farebbe fotografare in una posa un po\' troppo audace?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi accetterebbe una sfida a spogliarsi di un accessorio a ogni penitenza?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi flirterebbe con il cameriere per saltare la fila?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si lascerebbe bendare per un gioco a due?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi darebbe un bacio a tempo di musica al primo che passa?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si siederebbe troppo vicino di proposito al cinema?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi accetterebbe un giro in moto abbracciato stretto a uno sconosciuto?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe emoji ambigue al capo per sbaglio?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si farebbe convincere a un tuffo in mutande di notte?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi userebbe la scusa del freddo per avvicinarsi a qualcuno?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi ruberebbe la felpa di un amico solo per il suo profumo?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi lascerebbe che qualcuno gli scriva un messaggio sulla pelle?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi si esibirebbe in un karaoke sensuale per conquistare qualcuno?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi accetterebbe di condividere il letto con un ex in vacanza?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe un bacio in videochiamata davanti a tutti?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi flirterebbe apertamente pur di non pagare l\'ingresso in discoteca?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si lascerebbe truccare da qualcuno che gli piace?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi accetterebbe un ballo lento con la persona alla sua sinistra?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi risponderebbe di si a una serata a due senza dirlo agli altri?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si farebbe leggere la mano solo per farsi tenere la mano?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe una foto allo specchio appena uscito dalla doccia?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si lascerebbe rubare l\'ultimo bacio della serata?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi accetterebbe di scambiarsi un segreto piccante con il vicino?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi si avvicinerebbe di più ballando quando cala la luce?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi userebbe una scusa qualsiasi per toccare il braccio di qualcuno?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text:
+          'Chi accetterebbe di finire la serata a casa di uno sconosciuto affascinante?',
+      tone: ContentTone.piccante,
+    ),
+    (
+      text: 'Chi manderebbe un messaggio audace e poi cancellerebbe tutto?',
+      tone: ContentTone.piccante,
+    ),
     // ------------------------------------------------------- cattivo
+    (text: 'Chi verrebbe più in fretta di tutti?', tone: ContentTone.cattivo),
+    (text: 'Chi ci mette più tempo a venire?', tone: ContentTone.cattivo),
     (
-      text: 'Chi bacerebbe qualcuno di questo gruppo, se non fosse un gioco?',
+      text: 'Chi ha simulato un orgasmo per farla finita?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi ha già mentito almeno una volta stasera?',
+      text: 'Chi non ha mai avuto un orgasmo con un partner?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi urla di più quando viene?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi riesce a venire più volte di seguito?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi sta pensando a qualcuno proprio adesso?',
+      text: 'Chi si è fatto scappare un orgasmo in un posto assurdo?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi condividerebbe lo screenshot di una chat privata?',
+      text: 'Chi viene solo con la stimolazione del clitoride?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi creerebbe un profilo falso per curiosare?',
+      text: 'Chi ha finto di venire proprio stasera nella sua vita sessuale?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi direbbe una bugia guardandoti negli occhi?',
+      text: 'Chi impiega meno di un minuto a raggiungere l\'orgasmo?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi sparlerebbe di un amico appena esce dalla stanza?',
+      text: 'Chi ha avuto un orgasmo mentre dormiva?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi avrebbe una chat segreta senza qualcuno dei presenti?',
+      text: 'Chi resterebbe zitto anche mentre viene?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ingoierebbe senza farsi problemi?', tone: ContentTone.cattivo),
+    (text: 'Chi e più bravo con la bocca?', tone: ContentTone.cattivo),
+    (text: 'Chi rifiuterebbe sempre di ingoiare?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi adora ricevere sesso orale più di ogni altra cosa?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha fatto un pompino in macchina?', tone: ContentTone.cattivo),
+    (
+      text:
+          'Chi ha leccato fino a far venire il partner in meno di cinque minuti?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi sparirebbe dal gruppo appena si fidanza?',
+      text: 'Chi farebbe sesso orale a un semaforo rosso?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi venderebbe un segreto di un amico per mille euro?',
+      text: 'Chi si è fatto un 69 all\'ultimo appuntamento?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi spiffererebbe un segreto entro ventiquattro ore?',
+      text: 'Chi detesta fare sesso orale ma non lo ammette?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi si prenderebbe il merito di un\'idea non sua?',
+      text: 'Chi userebbe il ghiaccio in bocca durante un pompino?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi fingerebbe di essere felice per un amico mentre rosica?',
+      text: 'Chi ha fatto sesso orale in un bagno pubblico?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi cancellerebbe un amico dalla propria vita senza spiegazioni?',
+      text: 'Chi si offrirebbe subito per un 69 stasera?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi non restituirebbe mai i soldi prestati?',
+      text: 'Chi userebbe un sex toy davanti a tutti?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha più sex toys nel cassetto?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi ha usato un vibratore in un luogo pubblico?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha provato un plug anale?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi porterebbe un ovetto telecomandato a cena fuori?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi darebbe la colpa a un altro pur di salvarsi?',
+      text: 'Chi ha comprato un sex toy di nascosto dal partner?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi guarderebbe il telefono di un amico lasciato sbloccato?',
-      tone: ContentTone.cattivo,
-    ),
-    (text: 'Chi flirterebbe con l\'ex di un amico?', tone: ContentTone.cattivo),
-    (
-      text: 'Chi abbandonerebbe un piano con gli amici per un invito migliore?',
+      text: 'Chi non ha mai usato un vibratore in vita sua?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi terrebbe una lista mentale di tutti i torti subiti?',
+      text: 'Chi userebbe le manette come regalo di compleanno?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi direbbe "non ti giudico" mentre ti sta giudicando?',
+      text: 'Chi ha rotto un sex toy usandolo troppo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si masturberebbe con un giocattolo davanti allo specchio?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi userebbe un vibratore su un\'altra persona di questo gruppo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si farebbe legare al letto senza pensarci due volte?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi vorrebbe dominare e non essere dominato?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha provato lo spanking e gli e piaciuto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi userebbe una benda sugli occhi durante il sesso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha un lato sottomesso che nessuno immagina?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi userebbe la cera calda sul corpo del partner?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha provato il soffocamento leggero a letto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi vorrebbe essere frustato con una cintura?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi darebbe ordini precisi durante il sesso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una parola di sicurezza già pronta?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si farebbe tirare i capelli senza lamentarsi?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha provato il collare durante un gioco erotico?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha già fatto una cosa a tre?', tone: ContentTone.cattivo),
+    (text: 'Chi accetterebbe un\'orgia stasera?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi vorrebbe guardare due persone di questo gruppo farlo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha partecipato a uno scambio di coppia?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi proporrebbe un threesome al proprio partner?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si è baciato con due persone la stessa notte?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi entrerebbe in un club per scambisti?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso mentre altri guardavano?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi organizzerebbe una serata a luci rosse tra amici?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha già condiviso un partner con un\'amica?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi si è filmato durante il sesso?', tone: ContentTone.cattivo),
+    (text: 'Chi ha fatto sesso in spiaggia?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi lo farebbe in bagno durante una festa?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha fatto sesso in ascensore?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi lo farebbe in un camerino di un negozio?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso all\'aperto in un parco?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi lo farebbe sul balcone a rischio di essere visto?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha fatto sesso in aereo?', tone: ContentTone.cattivo),
+    (text: 'Chi si è masturbato in ufficio?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi ha fatto sesso in auto in un parcheggio pieno?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi lo farebbe adesso nella stanza accanto?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha fatto sesso su un treno?', tone: ContentTone.cattivo),
+    (text: 'Chi ha il feticcio più strano?', tone: ContentTone.cattivo),
+    (text: 'Chi ha un feticcio per i piedi?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi si eccita annusando i vestiti del partner?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha un feticcio per la biancheria intima?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si eccita a farsi guardare mentre si spoglia?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una fissazione per il lattice o la pelle?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si eccita con lo sporco che parla a letto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha un feticcio che non ha mai confessato a nessuno?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si eccita con l\'idea di essere scoperto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi conserva un ricordo intimo di un ex?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha il seno più bello del gruppo?', tone: ContentTone.cattivo),
+    (text: 'Chi ha il lato B più invidiabile?', tone: ContentTone.cattivo),
+    (text: 'Chi e messo meglio sotto le mutande?', tone: ContentTone.cattivo),
+    (text: 'Chi ha più resistenza a letto?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi sarebbe il migliore amante di questo gruppo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha il corpo che tutti vorrebbero toccare?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi bacia meglio di chiunque altro qui?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha le labbra più fatte per certe cose?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha le mani più abili tra le lenzuola?',
+      tone: ContentTone.cattivo,
+    ),
+    (text: 'Chi ha la lingua più esperta?', tone: ContentTone.cattivo),
+    (
+      text: 'Chi ha una fantasia sessuale che si vergogna a dire?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi fantastica su qualcuno di questo gruppo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi vorrebbe provare il sesso in pubblico almeno una volta?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una fantasia con un collega o una collega?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi sogna di essere dominato da uno sconosciuto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una fantasia con una persona famosa ben precisa?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi vorrebbe provare il sesso bendato con un partner a sorpresa?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una fantasia che coinvolge un\'uniforme?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi sogna un\'avventura di una notte senza nomi?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi realizzerebbe una fantasia proprio stasera se potesse?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha mandato un nudo alla persona sbagliata?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sexting durante una riunione di lavoro?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si masturba più spesso di quanto ammetta?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso al primo appuntamento?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha tradito il partner almeno una volta?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha baciato l\'amico o l\'amica del proprio partner?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha avuto un\'avventura con qualcuno molto più grande?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso con due persone diverse nella stessa giornata?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha un video intimo ancora salvato sul telefono?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso il giorno che ha conosciuto qualcuno?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi rimorchierebbe qualcuno entro fine serata?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha lo storico del browser più imbarazzante?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso sapendo che qualcuno poteva sentire?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha provato il sesso anale e gli e piaciuto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi rifiuta categoricamente il sesso anale?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha graffiato la schiena del partner fino a lasciare il segno?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha morso troppo forte durante il sesso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi lascia sempre i succhiotti in vista?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto la doccia insieme finendo a fare altro?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso mentre era al telefono con qualcun altro?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una posizione preferita che imbarazza a dire?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha provato il sesso mattutino appena sveglio?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso in cucina sul tavolo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha usato il cibo durante un gioco erotico?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto un lap dance a un partner?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si spoglierebbe adesso su una scommessa?',
       tone: ContentTone.cattivo,
     ),
     (
       text:
-          'Chi non riuscirebbe a stare una settimana senza sparlare di nessuno?',
+          'Chi ha fatto sesso con la musica al massimo per non farsi sentire?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha provato a fare sesso in doccia scivolando?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha inviato una foto osare a un ex ubriaco?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso il giorno di un funerale o di un evento serio?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si è fatto beccare dai genitori mentre lo faceva?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso in casa di amici durante una festa?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha usato le manette e ha perso la chiave?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha più partner sessuali all\'attivo?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha avuto meno partner ma non lo direbbe mai?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso in tenda in campeggio con vicini a un metro?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una app di incontri ancora installata di nascosto?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha baciato due persone di questo gruppo in passato?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi si è masturbato pensando a qualcuno seduto qui adesso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso con un\'ex proprio la settimana scorsa?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha provato il sesso sotto effetto di qualcosa?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha detto il nome sbagliato durante il sesso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha finto mal di testa per evitare il sesso?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha una fantasia sul migliore amico o amica di chi è presente?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha fatto sesso in una piscina condivisa?',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      text: 'Chi ha lasciato che il partner lo filmasse solo per lui?',
       tone: ContentTone.cattivo,
     ),
     (
       text:
-          'Chi fingerebbe di non vedere un messaggio per evitare un trasloco?',
+          'Chi accetterebbe di spogliarsi completamente se glielo chiedessimo?',
       tone: ContentTone.cattivo,
     ),
     (
-      text: 'Chi ha già giudicato in silenzio tutti in questa stanza?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi farebbe un complimento falso senza battere ciglio?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi finirebbe a letto con un ex già stasera, se si facesse vivo?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi farebbe sesso al primo appuntamento senza farsi problemi?',
+      text: 'Chi ha fatto sesso con qualcuno conosciuto due ore prima?',
       tone: ContentTone.cattivo,
     ),
     (
       text:
-          'Chi avrebbe un amico di letto segreto senza dirlo a nessuno di noi?',
+          'Chi ha una fantasia che riguarda proprio la persona alla sua destra?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Chi ha già guardato qualcuno dei presenti in modo tutt\'altro che innocente?',
+      text: 'Chi si fingerebbe innocente pur avendo il passato più spinto qui?',
       tone: ContentTone.cattivo,
     ),
     (
-      text:
-          'Chi racconterebbe in giro ogni dettaglio delle proprie notti brave?',
+      text: 'Chi ha provato più posizioni in una sola notte?',
       tone: ContentTone.cattivo,
     ),
-    (
-      text: 'Chi si è già immaginato a letto con uno dei presenti?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi farebbe sesso con l\'ex del proprio migliore amico se nessuno lo scoprisse mai?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi tradirebbe e riuscirebbe a non farsi scoprire per anni?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi perdonerebbe un tradimento pur giurando davanti a tutti il contrario?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi scriverebbe "mi manchi" a due persone diverse nella stessa serata?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi avrebbe una storia segreta con un collega e la negherebbe fino alla fine?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi passerebbe una notte con una persona impegnata senza farsi troppi problemi?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi conoscerebbe il codice di sblocco del partner senza che il partner lo sappia?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi direbbe "sto facendo tardi al lavoro" mentre è nel letto di qualcun altro?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi flirterebbe con il partner di uno dei presenti appena restano soli?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi ha già baciato di nascosto una persona che tutti noi conosciamo?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi accetterebbe una proposta indecente da uno sconosciuto ricco senza pensarci troppo?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi manderebbe un nude a un quasi sconosciuto solo per sentirsi desiderato?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi andrebbe a letto con il capo per una promozione?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi negherebbe un tradimento anche davanti alle prove?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi avrebbe ancora le foto piccanti di un ex salvate da qualche parte?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi racconterebbe agli amici i dettagli intimi del partner senza dirglielo?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi negherebbe fino alla morte una notte di cui tutti sanno già tutto?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi ha pensato "con te ci starei" guardando qualcuno in questa stanza?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi proverebbe a farsi perdonare un tradimento con un regalo costoso?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi scriverebbe a un ex impegnato sapendo benissimo che è impegnato?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi salverebbe un\'amante in rubrica sotto falso nome?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi tradirebbe per ripicca dopo un litigio?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi andrebbe a letto con un ex pur sapendo che ora è fidanzato?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi proverebbe una cosa a tre con due persone di questo gruppo?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi bacerebbe il partner di un amico dopo qualche drink di troppo?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi rivelerebbe con chi va a letto un amico dopo aver giurato di tenere il segreto?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi fingerebbe entusiasmo a letto pur di chiudere in fretta una serata deludente?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi darebbe i voti alle prestazioni dei propri ex davanti agli amici?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi si vanterebbe di un tradimento invece di vergognarsene?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi ha già mentito al partner per essere qui stasera?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi si toglierebbe l\'anello prima di entrare in un locale?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi userebbe il proprio fascino per farsi pagare tutto senza concedere nulla?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi avrebbe fatto sesso in un posto dove rischiava il licenziamento?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi terrebbe il piede in due scarpe per mesi senza alcun senso di colpa?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi tornerebbe da un ex solo per il sesso, sapendo benissimo che è un errore?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi dichiarerebbe la metà delle persone con cui è davvero stato a letto?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text: 'Chi leggerebbe le chat del partner e non lo confesserebbe mai?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi partirebbe per un weekend segreto con la persona sbagliata pur di non annoiarsi?',
-      tone: ContentTone.cattivo,
-    ),
-    (
-      text:
-          'Chi sta guardando qualcuno dei presenti con secondi fini proprio in questo momento?',
-      tone: ContentTone.cattivo,
-    ),
-    // ------------------------------------------------ piccante (extra)
-    (text: 'Chi ha sicuramente finto un orgasmo almeno una volta?', tone: ContentTone.piccante),
-    (text: 'Chi finirebbe a letto con uno sconosciuto stasera stessa?', tone: ContentTone.piccante),
-    (text: 'Chi ha il body count più alto del gruppo?', tone: ContentTone.piccante),
-    (text: 'Chi mente di più sul proprio body count?', tone: ContentTone.piccante),
-    (text: 'Chi ha fatto sexting nell\'ultima settimana?', tone: ContentTone.piccante),
-    (text: 'Chi manderebbe una foto audace dopo due complimenti ben fatti?', tone: ContentTone.piccante),
-    (text: 'Chi ha una cartella nascosta nella galleria?', tone: ContentTone.piccante),
-    (text: 'Chi flirterebbe con il barista pur di avere il tavolo migliore?', tone: ContentTone.piccante),
-    (text: 'Chi si innamorerebbe dopo una sola notte?', tone: ContentTone.piccante),
-    (text: 'Chi sparirebbe dopo una sola notte?', tone: ContentTone.piccante),
-    (text: 'Chi farebbe la walk of shame con orgoglio?', tone: ContentTone.piccante),
-    (text: 'Chi tornerebbe da un ex per noia?', tone: ContentTone.piccante),
-    (text: 'Chi scrive ai suoi ex quando la serata si allunga?', tone: ContentTone.piccante),
-    (text: 'Chi controlla i social della propria crush ogni giorno?', tone: ContentTone.piccante),
-    (text: 'Chi avrebbe più match su un\'app di incontri?', tone: ContentTone.piccante),
-    (text: 'Chi risponderebbe a un "sei sveglio?" alle tre di notte?', tone: ContentTone.piccante),
-    (text: 'Chi manderebbe un "sei sveglio?" alle tre di notte?', tone: ContentTone.piccante),
-    (text: 'Chi bacerebbe qualcuno del gruppo per una scommessa da dieci euro?', tone: ContentTone.piccante),
-    (text: 'Chi si vergognerebbe di più a far vedere la propria cronologia?', tone: ContentTone.piccante),
-    (text: 'Chi ha già pensato a come sarebbe una notte con uno dei presenti?', tone: ContentTone.piccante),
-    (text: 'Chi si sposerebbe con uno sconosciuto a Las Vegas?', tone: ContentTone.piccante),
-    (text: 'Chi rimorchierebbe a un matrimonio?', tone: ContentTone.piccante),
-    (text: 'Chi flirterebbe con il medico durante una visita?', tone: ContentTone.piccante),
-    (text: 'Chi si è vestito apposta stasera per una persona precisa?', tone: ContentTone.piccante),
-    (text: 'Chi darebbe un bacio vero durante un gioco come questo?', tone: ContentTone.piccante),
-    (text: 'Chi tiene il telefono in silenzioso per motivi sospetti?', tone: ContentTone.piccante),
-    (text: 'Chi ha più chat archiviate che chat visibili?', tone: ContentTone.piccante),
-    (text: 'Chi saprebbe sedurre qualcuno in meno di dieci minuti?', tone: ContentTone.piccante),
-    (text: 'Chi ci prova sempre ma non conclude mai?', tone: ContentTone.piccante),
-    (text: 'Chi conclude sempre e non lo racconta mai?', tone: ContentTone.piccante),
-    (text: 'Chi racconta tutto ma conclude poco?', tone: ContentTone.piccante),
-    (text: 'Chi avrebbe una storia con un collega?', tone: ContentTone.piccante),
-    (text: 'Chi si innamorerebbe del proprio personal trainer?', tone: ContentTone.piccante),
-    (text: 'Chi farebbe più colpo sui genitori del partner che sul partner?', tone: ContentTone.piccante),
-    (text: 'Chi finirà a baciare qualcuno entro la fine della serata?', tone: ContentTone.piccante),
-    (text: 'Chi ha già baciato qualcuno di questa stanza?', tone: ContentTone.piccante),
-    (text: 'Chi flirterebbe anche in fila alla posta?', tone: ContentTone.piccante),
-    (text: 'Chi ha un tipo ideale così preciso da sembrare un identikit?', tone: ContentTone.piccante),
-    (text: 'Chi non ha assolutamente un tipo, e si vede?', tone: ContentTone.piccante),
-    (text: 'Chi si dichiarerebbe per messaggio vocale?', tone: ContentTone.piccante),
-    (text: 'Chi farebbe il primo passo con la persona più bella della festa?', tone: ContentTone.piccante),
-    (text: 'Chi si guarda in ogni vetrina prima di un appuntamento?', tone: ContentTone.piccante),
-    (text: 'Chi arriverebbe a un appuntamento con le rose e la playlist?', tone: ContentTone.piccante),
-    (text: 'Chi porterebbe un appuntamento al fast food chiamandolo romantico?', tone: ContentTone.piccante),
-    (text: 'Chi dorme abbracciato al cuscino da single?', tone: ContentTone.piccante),
-    (text: 'Chi ha pianto per amore questo mese?', tone: ContentTone.piccante),
-    (text: 'Chi riguarderebbe le foto dell\'ex la notte di Capodanno?', tone: ContentTone.piccante),
-    (text: 'Chi manderebbe un vocale di dieci minuti per spiegare un "mi piaci"?', tone: ContentTone.piccante),
-    (text: 'Chi ha già scritto e cancellato un messaggio stasera?', tone: ContentTone.piccante),
-    (text: 'Chi bacia meglio secondo la leggenda del gruppo?', tone: ContentTone.piccante),
-    (text: 'Chi userebbe una frase di rimorchio presa da un film?', tone: ContentTone.piccante),
-    (text: 'Chi si offenderebbe se nessuno ci provasse mai?', tone: ContentTone.piccante),
-    (text: 'Chi direbbe di no alla propria celebrity crush per timidezza?', tone: ContentTone.piccante),
-    (text: 'Chi partirebbe domani per un weekend con l\'ultima persona con cui ha flirtato?', tone: ContentTone.piccante),
-    (text: 'Chi ha salvato la propria crush in rubrica con un nome in codice?', tone: ContentTone.piccante),
-    (text: 'Chi si allena solo per i risultati da spiaggia?', tone: ContentTone.piccante),
-    (text: 'Chi manderebbe un messaggio audace e poi spegnerebbe il telefono per la paura?', tone: ContentTone.piccante),
-    (text: 'Chi si addormenterebbe durante un appuntamento noioso?', tone: ContentTone.piccante),
-    (text: 'Chi farebbe ingelosire apposta la propria crush?', tone: ContentTone.piccante),
-    (text: 'Chi ha già una data segnata sul calendario per qualcuno?', tone: ContentTone.piccante),
-    (text: 'Chi passerebbe la notte a parlare invece di dormire, con la persona giusta?', tone: ContentTone.piccante),
-    (text: 'Chi confesserebbe una cotta solo sotto interrogatorio, tipo adesso?', tone: ContentTone.piccante),
-    (text: 'Chi uscirebbe con due persone nello stesso weekend senza sensi di colpa?', tone: ContentTone.piccante),
-    // ------------------------------------------------- cattivo (extra)
-    (text: 'Chi ha sicuramente fatto sesso in un posto pubblico?', tone: ContentTone.cattivo),
-    (text: 'Chi ha girato almeno un video hot nella sua vita?', tone: ContentTone.cattivo),
-    (text: 'Chi ha una cartella protetta da password che non vedremo mai?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto sesso con qualcuno che conosciamo tutti e non l\'ha mai detto?', tone: ContentTone.cattivo),
-    (text: 'Chi finirebbe a letto con l\'ex del proprio migliore amico?', tone: ContentTone.cattivo),
-    (text: 'Chi ha tradito almeno una volta?', tone: ContentTone.cattivo),
-    (text: 'Chi perdonerebbe un tradimento pur di non restare solo?', tone: ContentTone.cattivo),
-    (text: 'Chi ha già fatto un pensiero non innocente su uno dei presenti?', tone: ContentTone.cattivo),
-    (text: 'Chi ha già sognato uno dei presenti in versione vietata ai minori?', tone: ContentTone.cattivo),
-    (text: 'Chi possiede sicuramente un giocattolo nel comodino?', tone: ContentTone.cattivo),
-    (text: 'Chi ne possiede più di uno?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto una cosa a tre, o morirebbe dalla voglia di provarla?', tone: ContentTone.cattivo),
-    (text: 'Chi accetterebbe una proposta a tre se arrivasse stasera?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto sesso al primo appuntamento più di una volta?', tone: ContentTone.cattivo),
-    (text: 'Chi è scappato da casa di qualcuno prima dell\'alba?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto entrare qualcuno di nascosto in casa?', tone: ContentTone.cattivo),
-    (text: 'Chi ha nascosto una persona nell\'armadio, letteralmente?', tone: ContentTone.cattivo),
-    (text: 'Chi ha un amico di letto proprio in questo periodo?', tone: ContentTone.cattivo),
-    (text: 'Chi ha rovinato un\'amicizia finendo a letto con la persona sbagliata?', tone: ContentTone.cattivo),
-    (text: 'Chi ha mentito al partner su dove ha passato la notte?', tone: ContentTone.cattivo),
-    (text: 'Chi ha cancellato una chat intera per sicurezza?', tone: ContentTone.cattivo),
-    (text: 'Chi ha un nome in codice in rubrica per una persona precisa?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto sesso mentre noi eravamo nella stanza accanto?', tone: ContentTone.cattivo),
-    (text: 'Chi ha avuto un debole serio per un capo o un prof?', tone: ContentTone.cattivo),
-    (text: 'Chi ha usato l\'ufficio per qualcosa di non lavorativo?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto sesso in macchina in un parcheggio pieno?', tone: ContentTone.cattivo),
-    (text: 'Chi è stato beccato dai genitori nel momento peggiore?', tone: ContentTone.cattivo),
-    (text: 'Chi ha beccato i propri genitori e non si è mai più ripreso?', tone: ContentTone.cattivo),
-    (text: 'Chi ha finto un orgasmo anche di recente?', tone: ContentTone.cattivo),
-    (text: 'Chi ha detto il nome sbagliato a letto?', tone: ContentTone.cattivo),
-    (text: 'Chi ha lasciato segni sul collo di qualcuno quest\'anno?', tone: ContentTone.cattivo),
-    (text: 'Chi ha dovuto inventare una scusa per un livido?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto sesso in vacanza con una persona del posto?', tone: ContentTone.cattivo),
-    (text: 'Chi tornerebbe da un ex solo per il sesso?', tone: ContentTone.cattivo),
-    (text: 'Chi ci è già tornato e lo nega?', tone: ContentTone.cattivo),
-    (text: 'Chi ha due chat aperte con due fiamme contemporaneamente, adesso?', tone: ContentTone.cattivo),
-    (text: 'Chi ha mandato la stessa foto audace a due persone diverse?', tone: ContentTone.cattivo),
-    (text: 'Chi ha ricevuto una foto audace mentre era a cena con i suoi?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto sexting anche stasera, da questa stanza?', tone: ContentTone.cattivo),
-    (text: 'Chi ha un fetish che non confesserà mai?', tone: ContentTone.cattivo),
-    (text: 'Chi lo confesserebbe se glielo chiedessimo adesso in coro?', tone: ContentTone.cattivo),
-    (text: 'Chi ha provato a farsi legare per gioco?', tone: ContentTone.cattivo),
-    (text: 'Chi userebbe una benda sugli occhi senza pensarci due volte?', tone: ContentTone.cattivo),
-    (text: 'Chi ha comprato biancheria per una sola notte specifica?', tone: ContentTone.cattivo),
-    (text: 'Chi ha una playlist fatta apposta per le notti in compagnia?', tone: ContentTone.cattivo),
-    (text: 'Chi ha messo la musica alta per non farsi sentire?', tone: ContentTone.cattivo),
-    (text: 'Chi ha ricevuto lamentele dai vicini almeno una volta?', tone: ContentTone.cattivo),
-    (text: 'Chi ha rotto un letto o un mobile e ha dovuto spiegarlo?', tone: ContentTone.cattivo),
-    (text: 'Chi è scivolato almeno una volta provando la doccia in due?', tone: ContentTone.cattivo),
-    (text: 'Chi ha promosso la cucina a location e non se ne pente?', tone: ContentTone.cattivo),
-    (text: 'Chi l\'ha fatto in spiaggia nonostante tutti sconsiglino la sabbia?', tone: ContentTone.cattivo),
-    (text: 'Chi lo farebbe in aereo se capitasse l\'occasione?', tone: ContentTone.cattivo),
-    (text: 'Chi ha pagato una stanza solo per qualche ora?', tone: ContentTone.cattivo),
-    (text: 'Chi ha usato la pausa pranzo in modo molto creativo?', tone: ContentTone.cattivo),
-    (text: 'Chi ha mentito sul proprio body count anche a se stesso?', tone: ContentTone.cattivo),
-    (text: 'Chi tiene il conto esatto, con tanto di date?', tone: ContentTone.cattivo),
-    (text: 'Chi ha una lista scritta da qualche parte?', tone: ContentTone.cattivo),
-    (text: 'Chi ha raccontato una notte censurando il novanta per cento?', tone: ContentTone.cattivo),
-    (text: 'Chi ha esagerato i dettagli di una notte per fare scena?', tone: ContentTone.cattivo),
-    (text: 'Chi è più bravo a letto di quanto lasci intendere?', tone: ContentTone.cattivo),
-    (text: 'Chi è meno bravo di quanto racconta?', tone: ContentTone.cattivo),
-    (text: 'Chi ha guardato il telefono del partner mentre dormiva?', tone: ContentTone.cattivo),
-    (text: 'Chi ha trovato qualcosa e ha fatto finta di niente?', tone: ContentTone.cattivo),
-    (text: 'Chi ha usato un profilo falso per controllare qualcuno?', tone: ContentTone.cattivo),
-    (text: 'Chi ha riconosciuto una persona impegnata su un\'app di incontri e ha taciuto?', tone: ContentTone.cattivo),
-    (text: 'Chi si iscriverebbe a un sito per adulti con un nome d\'arte?', tone: ContentTone.cattivo),
-    (text: 'Chi ha già un nome d\'arte pronto?', tone: ContentTone.cattivo),
-    (text: 'Chi accetterebbe una notte con la propria celebrity crush anche se tutti lo sapessero?', tone: ContentTone.cattivo),
-    (text: 'Chi rifiuterebbe e mentirebbe pure sul motivo?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto pace a letto dopo un litigio creato apposta?', tone: ContentTone.cattivo),
-    (text: 'Chi ha usato il sesso per farsi perdonare qualcosa di grosso?', tone: ContentTone.cattivo),
-    (text: 'Chi ha detto "non succederà più" sapendo benissimo che sarebbe risuccesso?', tone: ContentTone.cattivo),
-    (text: 'Chi uscirebbe stasera da qui in compagnia, se solo avesse coraggio?', tone: ContentTone.cattivo),
-    (text: 'Chi ha già un piano preciso su come finirà la sua serata?', tone: ContentTone.cattivo),
-    (text: 'Chi ha il telefono pieno di conversazioni che non possiamo assolutamente vedere?', tone: ContentTone.cattivo),
-    (text: 'Chi si è svegliato in un letto sconosciuto senza ricordare come?', tone: ContentTone.cattivo),
-    (text: 'Chi ha fatto la walk of shame incrociando qualcuno che conosceva?', tone: ContentTone.cattivo),
-    (text: 'Chi ha mentito dicendo "ero a casa a dormire"?', tone: ContentTone.cattivo),
-    (text: 'Chi lo sta facendo di più in questo periodo, senza dirlo a nessuno?', tone: ContentTone.cattivo),
-    (text: 'Chi finirà questa partita con un segreto in meno e un piano in più?', tone: ContentTone.cattivo),
-    (text: 'Chi accetterebbe di farsi urinare addosso per un milione di euro?', tone: ContentTone.cattivo),
-    (text: 'Chi ha già fatto sesso anale stasera prima di venire qui?', tone: ContentTone.cattivo),
-    (text: 'Chi in questo gruppo ha lo sperma più buono, a naso?', tone: ContentTone.cattivo),
-    (text: 'Chi si farebbe leccare il culo da un perfetto sconosciuto?', tone: ContentTone.cattivo),
-    (text: 'Chi ha sicuramente già provato a ingoiare la propria eiaculazione?', tone: ContentTone.cattivo),
-    (text: 'Chi scambierebbe il proprio partner per una notte di sesso estremo con un altro dei presenti?', tone: ContentTone.cattivo),
-    (text: 'Chi ha le mutande più bagnate in questo momento?', tone: ContentTone.cattivo),
-    (text: 'Chi farebbe sesso orale a chi ha alla sua sinistra per saltare un round?', tone: ContentTone.cattivo),
-    (text: 'Chi di noi finirebbe a fare un film porno se pagato bene?', tone: ContentTone.cattivo),
-    (text: 'Chi ha il sex toy più grosso in camera sua?', tone: ContentTone.cattivo),
   ];
 }

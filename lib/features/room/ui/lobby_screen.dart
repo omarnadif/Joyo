@@ -30,8 +30,7 @@ class LobbyScreen extends ConsumerWidget {
     final isHost = ref.watch(isHostProvider(room.id));
 
     return Aura(
-      // viola di base con un accenno del colore della modalità: tingere tutto
-      // di verde o di rosso rendeva la lobby una schermata diversa ogni volta
+      // Viola di base con un accenno della modalità, per non cambiare lobby ogni volta.
       color: JoyoColors.violet,
       secondary: room.mode.color,
       intensity: 0.8,
@@ -217,8 +216,7 @@ class LobbyScreen extends ConsumerWidget {
   }
 }
 
-/// Il codice della stanza: l'elemento più letto ad alta voce dell'app, quindi
-/// il più grande e l'unico con l'alone pieno.
+/// Il codice stanza: l'elemento più letto ad alta voce, quindi il più grande.
 class _RoomCodeCard extends StatelessWidget {
   const _RoomCodeCard({required this.code, required this.t});
 

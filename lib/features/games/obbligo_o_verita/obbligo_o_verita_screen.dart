@@ -13,13 +13,9 @@ import '../engine/round_game.dart';
 import '../widgets/player_chip.dart';
 import 'bottle_wheel.dart';
 
-/// Obbligo o Verità.
-///
-/// Il giocatore estratto viene deciso una volta sola, dall'host, e finisce
-/// dentro il round: ogni telefono anima la propria bottiglia fino a fermarsi
-/// sullo stesso nome. Anche le due sfide (un obbligo e una verità) sono
-/// pescate in anticipo: così quando il giocatore sceglie, tutti vedono lo
-/// stesso testo senza altri giri sul server.
+/// Obbligo o Verità: host, giocatore estratto e le due sfide sono decisi una
+/// volta sola dentro il round, così ogni telefono mostra lo stesso esito senza
+/// altri giri sul server.
 class ObbligoOVeritaScreen extends ConsumerWidget {
   const ObbligoOVeritaScreen({required this.room, super.key});
 
@@ -30,8 +26,8 @@ class ObbligoOVeritaScreen extends ConsumerWidget {
   /// partita se il suo telefono sparisce.
   static const Duration turnWindow = Duration(seconds: 120);
 
-  /// Offset con cui si distinguono gli indici delle verità da quelli degli
-  /// obblighi nel registro "già usciti".
+  /// Offset che separa gli indici delle verità da quelli degli obblighi nel
+  /// registro "già usciti".
   static const int veritaOffset = 1000;
 
   final Room room;
@@ -104,9 +100,8 @@ class _Turn extends StatefulWidget {
 }
 
 class _TurnState extends State<_Turn> {
-  // Al cambio round lo stato riparte da solo: RoundGame monta la schermata
-  // sotto una chiave legata all'id del round, quindi qui arriva sempre un
-  // elemento nuovo con _spinDone = false.
+  // RoundGame monta la schermata sotto una chiave legata all'id del round,
+  // quindi al cambio round riparte un elemento nuovo con _spinDone = false.
   bool _spinDone = false;
 
   @override

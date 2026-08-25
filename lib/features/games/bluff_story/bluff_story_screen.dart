@@ -15,8 +15,7 @@ import '../engine/round_game.dart';
 import '../widgets/player_chip.dart';
 
 /// Bluff Story: a turno un giocatore scrive un fatto vero su di sé, il gioco
-/// ci mette in mezzo due bugie plausibili e gli altri devono indovinare qual è
-/// quello vero.
+/// aggiunge due bugie plausibili e gli altri indovinano quale sia il vero.
 ///
 /// Punti: 2 a chi indovina, 1 al narratore per ogni persona che ha ingannato.
 class BluffStoryScreen extends ConsumerWidget {
@@ -62,8 +61,8 @@ class BluffStoryScreen extends ConsumerWidget {
           'fake2': fakes[second],
           'i': first,
           'i2': second,
-          // Con l'AI le bugie vengono riscritte sul testo vero appena
-          // arriva: finché la chiave manca, il round è "in preparazione".
+          // Con l'AI le bugie vengono riscritte sul testo vero: finché la
+          // chiave manca, il round è "in preparazione".
           if (!ctx.room.canUseAi) 'ai': false,
         };
       },
@@ -72,8 +71,6 @@ class BluffStoryScreen extends ConsumerWidget {
     );
   }
 }
-
-// --------------------------------------------------------------------- logica
 
 /// Il testo vero, scritto dal narratore (arriva come suo "voto").
 String? _truthOf(RoundGameState state) {
@@ -84,7 +81,7 @@ String? _truthOf(RoundGameState state) {
   return (truth != null && truth.trim().isNotEmpty) ? truth.trim() : null;
 }
 
-/// Hash stabile su tutte le piattaforme: String.hashCode non lo è, e qui
+/// Hash stabile su tutte le piattaforme: String.hashCode non lo è e qui
 /// l'ordine delle tre frasi deve venire identico su ogni telefono.
 int _stableHash(String value) {
   var hash = 7;
@@ -144,8 +141,6 @@ Map<String, int> _awards(RoundGameState state) {
   return result;
 }
 
-// ----------------------------------------------------------------------- gioco
-
 class _Playing extends ConsumerStatefulWidget {
   const _Playing({required this.state, required this.t});
 
@@ -159,9 +154,9 @@ class _Playing extends ConsumerStatefulWidget {
 class _PlayingState extends ConsumerState<_Playing> {
   String? _upgradingRoundId;
 
-  /// L'host sostituisce le bugie del pool con due scritte dall'AI sul testo
-  /// vero. Se l'AI non risponde, marca comunque il round come "deciso" così
-  /// il gioco riparte con le bugie generiche.
+  /// L'host sostituisce le bugie del pool con due scritte dall'AI; se l'AI non
+  /// risponde marca comunque il round come "deciso" per ripartire con le bugie
+  /// generiche.
   Future<void> _upgradeWithAi(RoundGameState state, String truth) async {
     if (_upgradingRoundId == state.round.id) return;
     _upgradingRoundId = state.round.id;
@@ -185,9 +180,8 @@ class _PlayingState extends ConsumerState<_Playing> {
         },
       );
     } catch (_) {
-      // Se la scrittura fallisce il round deve comunque partire con le bugie
-      // del pool: senza, tutti resterebbero sullo spinner "AI al lavoro"
-      // fino allo scadere del tempo. Il guard si riarma per poter riprovare.
+      // Riarma il guard per riprovare: senza, tutti resterebbero sullo spinner
+      // "AI al lavoro" fino allo scadere del tempo.
       _upgradingRoundId = null;
     }
   }
@@ -453,8 +447,6 @@ class _StatementCard extends StatelessWidget {
     );
   }
 }
-
-// ------------------------------------------------------------------- risultato
 
 class _Result extends StatelessWidget {
   const _Result({required this.state, required this.t});

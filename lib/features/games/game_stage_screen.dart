@@ -38,8 +38,8 @@ class GameStageScreen extends ConsumerWidget {
   }
 }
 
-/// Rete di sicurezza: se un giorno arriva un gioco nuovo e un telefono ha una
-/// versione vecchia dell'app, meglio una schermata chiara di un crash.
+/// Rete di sicurezza: se un telefono con una versione vecchia dell'app riceve
+/// un gioco che non conosce, mostra una schermata chiara invece di crashare.
 class _ComingSoon extends ConsumerWidget {
   const _ComingSoon({required this.room});
 

@@ -4,11 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 
-/// Coriandoli: si sparano una volta sola, all'apertura del podio.
-///
-/// È l'unico momento in cui l'app si permette di festeggiare, quindi vale la
-/// pena farlo bene: pezzi che ruotano, cadono con gravità e svaniscono, nei
-/// colori degli avatar.
+/// Coriandoli sparati una volta sola all'apertura del podio: pezzi che ruotano,
+/// cadono con gravità e svaniscono, nei colori degli avatar.
 class Confetti extends StatefulWidget {
   const Confetti({super.key});
 

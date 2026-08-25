@@ -16,10 +16,8 @@ class RoomSession {
   final String playerId;
 }
 
-/// Errore mostrabile all'utente.
-///
-/// Porta una chiave di traduzione, non una frase: il messaggio viene scritto
-/// nella lingua scelta dal gruppo al momento di mostrarlo.
+/// Errore mostrabile all'utente: porta una chiave di traduzione, non una
+/// frase, così il messaggio esce nella lingua scelta dal gruppo.
 class RoomException implements Exception {
   const RoomException(this.messageKey, [this.detail]);
 
@@ -47,8 +45,8 @@ class RoomException implements Exception {
   String toString() => detail ?? messageKey;
 }
 
-/// Come in GameRepository: le scritture sono `async` con `await`, così partono
-/// anche quando chi le chiama non attende il risultato (i bottoni della lobby).
+/// Scritture `async`/`await` così partono anche quando il chiamante non
+/// attende il risultato (i bottoni della lobby).
 class RoomRepository {
   const RoomRepository(this._client);
 
@@ -87,12 +85,8 @@ class RoomRepository {
     }
   }
 
-  /// Lista giocatori in tempo reale, in ordine di ingresso.
-  ///
-  /// Realtime può riconsegnare l'INSERT di una riga già presente nello
-  /// snapshot iniziale (l'ho visto accadere: lo stesso giocatore elencato due
-  /// volte), quindi deduplico per id e riordino qui invece di fidarmi
-  /// dell'ordine di arrivo degli eventi.
+  /// Lista giocatori in tempo reale, in ordine di ingresso: deduplico per id
+  /// perché Realtime può rimandare l'INSERT di una riga già nello snapshot.
   Stream<List<Player>> watchPlayers(String roomId) => _client
       .from('players')
       .stream(primaryKey: ['id'])
@@ -107,19 +101,15 @@ class RoomRepository {
           ..sort((a, b) => a.joinedAt.compareTo(b.joinedAt));
       });
 
-  /// Stato della stanza in tempo reale: è questo che fa cambiare schermata
-  /// a tutti i telefoni insieme.
+  /// Stato della stanza in tempo reale: fa cambiare schermata a tutti insieme.
   Stream<Room?> watchRoom(String roomId) => _client
       .from('rooms')
       .stream(primaryKey: ['id'])
       .eq('id', roomId)
       .map((rows) => rows.isEmpty ? null : Room.fromMap(rows.first));
 
-  /// Solo l'host: lancia un gioco per tutta la stanza.
-  ///
-  /// Passa da una RPC perché avviare una partita significa tre scritture che
-  /// devono andare insieme: cancellare i round della partita precedente,
-  /// azzerare i punteggi (che il client non può toccare) e cambiare lo stato.
+  /// Solo l'host: lancia un gioco per la stanza. Via RPC perché avviare una
+  /// partita sono tre scritture atomiche (pulisci round, azzera punti, stato).
   Future<void> startGame({
     required String roomId,
     required String gameType,
@@ -139,8 +129,7 @@ class RoomRepository {
       .update({'mode': ?mode, 'tone': ?tone, 'rounds_total': ?roundsTotal})
       .eq('id', roomId);
 
-  /// Solo l'host: cambia gioco senza toccare i round già giocati.
-  /// È il meccanismo della modalità Mix.
+  /// Solo l'host: cambia gioco senza toccare i round giocati (modalità Mix).
   Future<void> setActiveGame({
     required String roomId,
     required String gameType,
@@ -158,9 +147,8 @@ class RoomRepository {
   Future<void> leaveRoom(String playerId) async =>
       await _client.from('players').delete().eq('id', playerId);
 
-  /// Solo l'host: chiude la stanza per tutti. La cancellazione della riga
-  /// `rooms` porta via in cascata anche i giocatori, così ogni client capisce
-  /// che la partita è finita invece di restare in attesa.
+  /// Solo l'host: chiude la stanza per tutti; il delete della riga `rooms`
+  /// cancella in cascata i giocatori, così ogni client capisce che è finita.
   Future<void> closeRoom(String roomId) async =>
       await _client.from('rooms').delete().eq('id', roomId);
 }

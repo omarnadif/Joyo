@@ -21,8 +21,7 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final text = Theme.of(context).textTheme;
     final t = ref.watch(tProvider);
-    // Il login anonimo parte all'apertura: quando si preme "Crea stanza" la
-    // sessione è già pronta e non si aspetta.
+    // Il login anonimo parte all'apertura così la sessione è già pronta quando si preme "Crea stanza".
     final session = ref.watch(anonSessionProvider);
 
     return Aura(
@@ -42,10 +41,7 @@ class HomeScreen extends ConsumerWidget {
               RiseIn(child: _Wordmark(t: t)),
               const SizedBox(height: 34),
 
-              // I bottoni restano premibili anche mentre il login anonimo è in
-              // corso: la schermata successiva aspetta la sessione e mostra un
-              // errore chiaro se non arriva. Disabilitarli qui significava, su
-              // rete lenta, una home che sembrava rotta.
+              // I bottoni restano premibili durante il login anonimo, altrimenti su rete lenta la home sembrerebbe rotta.
               RiseIn(
                 delayMs: 80,
                 child: JoyoButton(
@@ -107,8 +103,7 @@ class HomeScreen extends ConsumerWidget {
   }
 }
 
-/// Il marchio della home: la scritta al neon del logo, la stessa dell'icona.
-/// Tenendola premuta si apre la diagnostica di connessione.
+/// Il marchio della home; tenendolo premuto si apre la diagnostica di connessione.
 class _Wordmark extends StatelessWidget {
   const _Wordmark({required this.t});
 
@@ -143,14 +138,10 @@ class _Wordmark extends StatelessWidget {
 /// proporzioni del file assets/brand/wordmark.png
 const double _markAspect = 780 / 361;
 
-/// Il file lascia attorno alle lettere un margine trasparente per l'alone e
-/// per la sfumatura del bordo: senza compenso la J partirebbe rientrata
-/// rispetto al testo sotto.
+/// Compensa il margine trasparente attorno alle lettere, che altrimenti farebbe partire la J rientrata rispetto al testo.
 const double _markInset = 0.054;
 
-/// La scritta Joyo al neon. Il respiro è sull'insegna stessa, non su un alone
-/// dietro: il file si somma allo sfondo, mentre un alone in un riquadro lascia
-/// una macchia di colore diversa dal fondo dell'app.
+/// La scritta Joyo al neon, che respira sull'insegna stessa perché il file si somma allo sfondo senza lasciare una macchia di colore.
 class _BrandMark extends StatefulWidget {
   const _BrandMark();
 
@@ -177,8 +168,7 @@ class _BrandMarkState extends State<_BrandMark>
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        // il margine trasparente è cresciuto per la sfumatura, quindi il
-        // riquadro va allargato per lasciare le lettere della stessa misura
+        // Il riquadro va allargato per compensare il margine trasparente e lasciare le lettere della stessa misura.
         final width = math.min(268.0, constraints.maxWidth * 0.84);
 
         return Transform.translate(

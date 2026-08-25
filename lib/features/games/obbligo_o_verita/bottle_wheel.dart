@@ -6,11 +6,8 @@ import '../../../core/theme/app_colors.dart';
 import '../../room/data/models/player.dart';
 import '../widgets/player_chip.dart';
 
-/// La bottiglia che gira, con i giocatori disposti in cerchio.
-///
-/// Il risultato non viene deciso qui: arriva già scelto dentro il round, e
-/// l'animazione si limita a fermarsi su quel nome. Stesso giocatore, stesso
-/// numero di giri, stessa durata su ogni telefono.
+/// La bottiglia che gira: il risultato arriva già scelto dentro il round e
+/// l'animazione si limita a fermarsi su quel nome, identica su ogni telefono.
 class BottleWheel extends StatefulWidget {
   const BottleWheel({
     required this.players,
@@ -86,7 +83,7 @@ class _BottleWheelState extends State<BottleWheel>
             alignment: Alignment.center,
             children: [
               // il tavolo: disco con luce dall'alto, così la bottiglia ci
-              // appoggia sopra invece di galleggiare su una tinta piatta
+              // appoggia sopra invece di galleggiare su una tinta piatta.
               Container(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -120,7 +117,6 @@ class _BottleWheelState extends State<BottleWheel>
                   ),
                 ),
               ),
-              // giocatori attorno
               for (var i = 0; i < count; i++)
                 Transform.translate(
                   offset: Offset(
@@ -133,7 +129,6 @@ class _BottleWheelState extends State<BottleWheel>
                     controller: _controller,
                   ),
                 ),
-              // bottiglia
               AnimatedBuilder(
                 animation: _spin,
                 builder: (context, child) => Transform.rotate(
@@ -198,13 +193,7 @@ class _Seat extends StatelessWidget {
   }
 }
 
-/// Bottiglia di vetro che punta verso l'alto quando l'angolo è zero.
-///
-/// È disegnata in 2D ma illuminata come un cilindro: il gradiente orizzontale
-/// scurisce i bordi e schiarisce il centro, il riflesso verticale dà la
-/// curvatura del vetro e il liquido con la superficie ellittica dà il volume.
-/// La luce arriva da sinistra e ruota con la bottiglia, come un riflesso su
-/// vetro lucido.
+/// Bottiglia 2D illuminata come un cilindro; punta verso l'alto ad angolo zero.
 class _BottlePainter extends CustomPainter {
   static final Color _glassDark = Color.lerp(
     JoyoColors.lime,
@@ -233,7 +222,6 @@ class _BottlePainter extends CustomPainter {
     final h = size.height;
     final body = _silhouette(size);
 
-    // ombra portata, sfalsata rispetto alla luce
     canvas.drawPath(
       body.shift(Offset(w * 0.16, h * 0.02)),
       Paint()
@@ -241,7 +229,6 @@ class _BottlePainter extends CustomPainter {
         ..maskFilter = MaskFilter.blur(BlurStyle.normal, w * 0.16),
     );
 
-    // vetro: bordi scuri, centro acceso -> lettura cilindrica
     canvas.drawPath(
       body,
       Paint()
@@ -259,7 +246,7 @@ class _BottlePainter extends CustomPainter {
     _paintHighlights(canvas, size);
     canvas.restore();
 
-    // profilo, per staccare la bottiglia dal tavolo
+    // profilo, per staccare la bottiglia dal tavolo.
     canvas.drawPath(
       body,
       Paint()
@@ -271,7 +258,6 @@ class _BottlePainter extends CustomPainter {
     _paintCap(canvas, size);
   }
 
-  /// Sagoma della bottiglia: collo, spalla, corpo e fondo arrotondato.
   Path _silhouette(Size size) {
     final w = size.width;
     final h = size.height;
@@ -310,9 +296,8 @@ class _BottlePainter extends CustomPainter {
       ..close();
   }
 
-  /// Liquido nel corpo: la superficie è un'ellisse, così si vede "dentro".
-  /// Resta basso, altrimenti il vetro verde sparisce e la bottiglia sembra
-  /// un oggetto pieno di colore.
+  /// Liquido nel corpo: resta basso, altrimenti il vetro verde sparisce e la
+  /// bottiglia sembra un oggetto pieno di colore.
   void _paintLiquid(Canvas canvas, Size size) {
     final w = size.width;
     final h = size.height;
@@ -331,7 +316,6 @@ class _BottlePainter extends CustomPainter {
           stops: const [0, 0.4, 1],
         ).createShader(rect),
     );
-    // superficie del liquido vista di scorcio
     canvas.drawOval(
       Rect.fromCenter(
         center: Offset(w / 2, top),
@@ -347,7 +331,6 @@ class _BottlePainter extends CustomPainter {
     );
   }
 
-  /// Fondo: vetro spesso, quindi scuro, con il filo di luce sul bordo.
   void _paintBase(Canvas canvas, Size size) {
     final w = size.width;
     final h = size.height;
@@ -396,7 +379,6 @@ class _BottlePainter extends CustomPainter {
           stops: const [0, 0.42, 1],
         ).createShader(rect),
     );
-    // due righe di stampa, appena accennate
     for (final t in const [0.35, 0.62]) {
       canvas.drawRect(
         Rect.fromLTWH(w * 0.2, rect.top + rect.height * t, w * 0.6, h * 0.018),
@@ -405,7 +387,6 @@ class _BottlePainter extends CustomPainter {
     }
   }
 
-  /// Riflessi: la striscia speculare a sinistra e il rimbalzo sul bordo destro.
   void _paintHighlights(Canvas canvas, Size size) {
     final w = size.width;
     final h = size.height;
@@ -440,7 +421,6 @@ class _BottlePainter extends CustomPainter {
     );
   }
 
-  /// Tappo e anello del collo, con la stessa luce del corpo.
   void _paintCap(Canvas canvas, Size size) {
     final w = size.width;
     final h = size.height;
@@ -462,7 +442,6 @@ class _BottlePainter extends CustomPainter {
           stops: const [0, 0.4, 1],
         ).createShader(capRect),
     );
-    // anello sotto il tappo
     canvas.drawRRect(
       RRect.fromRectAndRadius(
         Rect.fromCenter(

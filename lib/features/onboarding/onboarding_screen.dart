@@ -14,13 +14,8 @@ import '../games/game_mode.dart';
 import '../home/home_screen.dart' show showLanguagePicker;
 import 'onboarding_state.dart';
 
-/// Presentazione iniziale: quattro schermate che spiegano Joyo in dieci
-/// secondi, più la scelta della lingua del tavolo.
-///
-/// Ogni slide ha una scena costruita con lo stesso linguaggio visivo del
-/// gioco (superfici che emettono luce) e si muove più lentamente del testo
-/// mentre si scorre: è il movimento a dare l'idea di profondità, senza
-/// bisogno di illustrazioni.
+/// Presentazione iniziale: quattro schermate che spiegano Joyo in dieci secondi,
+/// più la scelta della lingua; ogni scena si muove più lentamente del testo per dare profondità.
 class OnboardingScreen extends ConsumerStatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -126,8 +121,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   controller: _controller,
                   itemCount: 4,
                   itemBuilder: (context, index) {
-                    // Distanza dalla pagina corrente: la scena si muove meno
-                    // del testo, il testo meno del dito.
+                    // Distanza dalla pagina corrente: la scena si muove meno del testo, il testo meno del dito.
                     final delta = _page - index;
                     return _Slide(
                       index: index,
@@ -249,13 +243,10 @@ class _Slide extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // La scena occupa lo spazio che avanza, il testo resta ancorato in
-          // basso: così le quattro slide hanno tutte lo stesso ritmo, anche se
-          // i titoli sono di lunghezza diversa.
+          // Il testo resta ancorato in basso così le quattro slide hanno lo stesso ritmo anche con titoli di lunghezza diversa.
           Expanded(
             child: Align(
-              // la scena si appoggia sopra al titolo invece di galleggiare a
-              // metà: l'aria resta tutta in alto, come su un manifesto
+              // La scena si appoggia sopra al titolo invece di galleggiare a metà, lasciando l'aria in alto.
               alignment: Alignment.bottomCenter,
               child: Transform.translate(
                 offset: Offset(delta * -60, 0),
@@ -299,8 +290,7 @@ class _Slide extends StatelessWidget {
   }
 }
 
-/// Le quattro scene, costruite con gli stessi elementi dell'app invece che
-/// con illustrazioni: quello che si vede qui è quello che si troverà dentro.
+/// Le quattro scene, costruite con gli stessi elementi dell'app invece che con illustrazioni.
 class _Scene extends StatelessWidget {
   const _Scene({required this.index, required this.accent, required this.t});
 

@@ -23,13 +23,8 @@ final roomSessionProvider = NotifierProvider<RoomSessionNotifier, RoomSession?>(
   RoomSessionNotifier.new,
 );
 
-/// Giocatori della stanza, aggiornati in tempo reale.
-///
-/// `autoDispose` su tutta la famiglia: uscendo dalla stanza il canale
-/// Realtime si chiude e la cache si svuota. Senza, rientrare nella stessa
-/// stanza riproporrebbe la lista giocatori della sessione precedente (con il
-/// vecchio playerId → "stanza chiusa" a torto) e ogni stanza visitata
-/// lascerebbe un websocket aperto per tutta la vita dell'app.
+/// Giocatori della stanza in tempo reale; `autoDispose` chiude il canale
+/// Realtime all'uscita, evitando lista stantia al rientro e websocket appesi.
 final playersProvider = StreamProvider.autoDispose.family<List<Player>, String>(
   (ref, roomId) => ref.watch(roomRepositoryProvider).watchPlayers(roomId),
 );

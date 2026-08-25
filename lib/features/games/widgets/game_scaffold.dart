@@ -7,10 +7,8 @@ import '../../../core/ui/aura.dart';
 import '../../room/state/room_providers.dart';
 import '../../room/ui/room_shell.dart';
 
-/// Cornice comune a tutte le schermate di gioco.
-///
-/// L'aurora di sfondo prende il colore del gioco: si capisce a cosa si sta
-/// giocando dal colore della stanza, prima ancora di leggere il titolo.
+/// Cornice comune a tutte le schermate di gioco: l'aurora di sfondo prende il
+/// colore del gioco, così lo si riconosce prima ancora di leggere il titolo.
 class GameScaffold extends ConsumerWidget {
   const GameScaffold({
     required this.title,

@@ -52,7 +52,7 @@ class ChiLoPotrebbeFareScreen extends ConsumerWidget {
         final entries = GameContent.chiLoPotrebbeFare(locale);
         final allowed = ctx.room.mode.indexesFor(entries, (e) => e.tone);
         // Se la lingua non ha domande nei toni ammessi si pesca da tutto il
-        // mazzo: mai lasciare il pool vuoto, farebbe fallire la pesca.
+        // mazzo, per non lasciare il pool vuoto e far fallire la pesca.
         final candidates = allowed.isEmpty
             ? [for (var i = 0; i < entries.length; i++) i]
             : allowed;

@@ -5,52 +5,104 @@ import 'package:joyo/features/games/content_tone.dart';
 import 'package:joyo/features/games/preferisci/preferisci_pool.dart';
 
 /// L'italiano è la lingua di riferimento: le altre quattro devono avere le
-/// stesse quantità, gioco per gioco e tono per tono. Senza questo test una
-/// lingua può restare indietro per mesi senza che nessuno se ne accorga,
-/// perché l'app compila e gira benissimo anche con un pool dimezzato.
+/// stesse quantità, gioco per gioco e tono per tono. Il confronto è dinamico
+/// (contro l'italiano, non contro numeri fissi) così una lingua non può
+/// restare indietro senza che il test se ne accorga, e i numeri non diventano
+/// mai "stale" quando i pool crescono.
 void main() {
   int perTone(List<({String text, String tone})> pool, String tone) =>
       pool.where((e) => e.tone == tone).length;
 
+  const ref = AppLocale.it;
+
   for (final locale in AppLocale.values) {
+    if (locale == ref) continue;
+
     test('${locale.label}: stesse quantità dell\'italiano', () {
       final nonHoMai = GameContent.nonHoMai(locale);
-      expect(nonHoMai.length, 455, reason: 'Non ho mai');
-      expect(perTone(nonHoMai, ContentTone.soft), 155);
-      expect(perTone(nonHoMai, ContentTone.piccante), 150);
-      expect(perTone(nonHoMai, ContentTone.cattivo), 150);
+      expect(
+        nonHoMai.length,
+        GameContent.nonHoMai(ref).length,
+        reason: 'Non ho mai',
+      );
+      for (final tone in ContentTone.all) {
+        expect(
+          perTone(nonHoMai, tone),
+          perTone(GameContent.nonHoMai(ref), tone),
+          reason: 'Non ho mai $tone',
+        );
+      }
 
       final chiLo = GameContent.chiLoPotrebbeFare(locale);
-      expect(chiLo.length, 460, reason: 'Chi lo potrebbe fare');
-      expect(perTone(chiLo, ContentTone.soft), 160);
-      expect(perTone(chiLo, ContentTone.piccante), 150);
-      expect(perTone(chiLo, ContentTone.cattivo), 150);
+      expect(
+        chiLo.length,
+        GameContent.chiLoPotrebbeFare(ref).length,
+        reason: 'Chi lo potrebbe fare',
+      );
+      for (final tone in ContentTone.all) {
+        expect(
+          perTone(chiLo, tone),
+          perTone(GameContent.chiLoPotrebbeFare(ref), tone),
+          reason: 'Chi lo potrebbe fare $tone',
+        );
+      }
 
-      final preferisci = PreferisciPool.entries(locale);
-      expect(preferisci.length, 473, reason: 'Preferisci');
-      expect(PreferisciPool.pairs(locale).length, 173, reason: 'Preferisci');
+      expect(
+        PreferisciPool.entries(locale).length,
+        PreferisciPool.entries(ref).length,
+        reason: 'Preferisci',
+      );
+      expect(
+        PreferisciPool.pairs(locale).length,
+        PreferisciPool.pairs(ref).length,
+        reason: 'Preferisci coppie',
+      );
 
       for (final tone in ContentTone.all) {
         expect(
           GameContent.obblighi(locale, tone).length,
-          150,
+          GameContent.obblighi(ref, tone).length,
           reason: 'obblighi $tone',
         );
         expect(
           GameContent.verita(locale, tone).length,
-          150,
+          GameContent.verita(ref, tone).length,
           reason: 'verità $tone',
         );
       }
 
-      expect(GameContent.bluffFakes(locale).length, 150, reason: 'Bluff Story');
+      expect(
+        GameContent.bluffFakes(locale).length,
+        GameContent.bluffFakes(ref).length,
+        reason: 'Bluff Story',
+      );
       expect(
         GameContent.impostoreWords(locale).length,
-        150,
+        GameContent.impostoreWords(ref).length,
         reason: 'Impostore',
       );
     });
+  }
 
+  // Soglia minima: nessun tono deve restare mezzo vuoto, in nessuna lingua.
+  test('ogni tono ha un pool pieno', () {
+    for (final locale in AppLocale.values) {
+      for (final tone in ContentTone.all) {
+        expect(
+          GameContent.obblighi(locale, tone).length,
+          greaterThanOrEqualTo(150),
+          reason: 'obblighi $tone ${locale.code}',
+        );
+        expect(
+          GameContent.verita(locale, tone).length,
+          greaterThanOrEqualTo(150),
+          reason: 'verità $tone ${locale.code}',
+        );
+      }
+    }
+  });
+
+  for (final locale in AppLocale.values) {
     test('${locale.label}: nessun contenuto duplicato', () {
       void noDuplicates(String name, List<String> items) {
         final duplicates = <String>{};

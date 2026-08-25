@@ -10,10 +10,8 @@ import 'ads/ads_service.dart';
 import 'ai_content_repository.dart';
 import 'purchase_service.dart';
 
-/// Riquadro del premium AI nella lobby.
-///
-/// L'acquisto vale per la stanza, non per l'account: è la sessione di gioco
-/// che si sblocca, così chi ospita paga una volta per la serata.
+/// Riquadro del premium AI nella lobby: l'acquisto sblocca la stanza, non
+/// l'account, così chi ospita paga una volta per la serata.
 class PremiumCard extends ConsumerStatefulWidget {
   const PremiumCard({required this.room, required this.isHost, super.key});
 
@@ -95,8 +93,7 @@ class _PremiumCardState extends ConsumerState<PremiumCard> {
     final t = ref.watch(tProvider);
     final room = widget.room;
 
-    // Con l'interruttore di sviluppo la card mostra lo stato "attivo" ma con
-    // un'etichetta esplicita: non deve sembrare un acquisto riuscito.
+    // Col flag di sviluppo mostra "attivo" con etichetta DEV, non un acquisto vero.
     if (room.isPremiumAi || AppEnv.devUnlockPremium) {
       return GlowCard(
         accent: JoyoColors.aqua,

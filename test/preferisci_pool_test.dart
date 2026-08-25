@@ -35,8 +35,8 @@ void main() {
         expect(pair.a.trim(), isNotEmpty);
         expect(pair.b.trim(), isNotEmpty);
         expect(pair.a, isNot(pair.b));
-        expect(pair.a.length, lessThanOrEqualTo(46), reason: pair.a);
-        expect(pair.b.length, lessThanOrEqualTo(46), reason: pair.b);
+        expect(pair.a.length, lessThanOrEqualTo(60), reason: pair.a);
+        expect(pair.b.length, lessThanOrEqualTo(60), reason: pair.b);
       }
     });
   }

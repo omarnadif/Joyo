@@ -7,12 +7,8 @@ import '../../../core/env/app_env.dart';
 import 'ads_service.dart';
 import 'ads_service_unsupported.dart' show UnsupportedAdsService;
 
-/// AdMob su Android e iOS.
-///
-/// Senza gli id passati con --dart-define si usano quelli di test ufficiali di
-/// Google: così l'app è provabile subito e non si rischia di far girare
-/// annunci veri su build di sviluppo (che è un modo per farsi sospendere
-/// l'account AdMob).
+/// AdMob su Android e iOS; senza id da --dart-define usa quelli di test di
+/// Google, per non far girare annunci veri sulle build di sviluppo.
 class MobileAdsService implements AdsService {
   MobileAdsService();
 
@@ -63,8 +59,8 @@ class MobileAdsService implements AdsService {
             _interstitial = ad;
             _loadingInterstitial = false;
           },
-          // Niente retry immediato: il prossimo show* riprova a caricare,
-          // così un avvio offline non spegne il formato per tutta la sessione.
+          // Niente retry immediato: ricarica il prossimo show*, così un avvio
+          // offline non spegne il formato per l'intera sessione.
           onAdFailedToLoad: (_) => _loadingInterstitial = false,
         ),
       );
@@ -182,8 +178,8 @@ class MobileAdsService implements AdsService {
   }
 }
 
-/// `dart.library.io` è vero anche su desktop e nei test su VM, dove il plugin
-/// AdMob non esiste: lì si ripiega sulla versione a vuoto.
+/// `dart.library.io` è vero anche su desktop e nei test, dove AdMob non
+/// esiste: lì si ripiega sulla versione a vuoto.
 AdsService createAdsService() => Platform.isAndroid || Platform.isIOS
     ? MobileAdsService()
     : const UnsupportedAdsService();

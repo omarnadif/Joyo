@@ -57,7 +57,6 @@ class JoyoTheme {
             fontWeight: FontWeight.w700,
             letterSpacing: 0.6,
           ),
-          // faccia di servizio: etichette, occhielli, contatori
           labelSmall: GoogleFonts.spaceGrotesk(
             fontSize: 11,
             fontWeight: FontWeight.w700,

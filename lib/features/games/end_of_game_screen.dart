@@ -13,11 +13,8 @@ import 'game_catalog.dart';
 import 'widgets/game_scaffold.dart';
 import 'widgets/player_chip.dart';
 
-/// Podio di fine partita.
-///
-/// I giochi senza punteggio (Preferisci, Non ho mai, Chi lo potrebbe fare,
-/// Obbligo o Verità) non producono una classifica: in quel caso non invento
-/// vincitori e mostro semplicemente chi ha giocato.
+/// Podio di fine partita: i giochi senza punteggio non producono una classifica,
+/// quindi in quel caso mostro solo chi ha giocato senza inventare vincitori.
 class EndOfGameScreen extends ConsumerWidget {
   const EndOfGameScreen({required this.room, super.key});
 
@@ -97,12 +94,10 @@ class EndOfGameScreen extends ConsumerWidget {
           if (isHost)
             JoyoButton(
               label: t('game.back_to_lobby'),
-              // L'interstiziale sta qui e solo qui: a partita finita, mentre
-              // il gruppo commenta il podio. Durante il gioco non compare
-              // nessuna pubblicità.
-              // Il repository va letto prima dell'attesa: durante
-              // l'interstiziale questo widget può uscire dall'albero e `ref`
-              // non sarebbe più utilizzabile.
+              // L'interstiziale compare solo a partita finita, mai durante il
+              // gioco. Il repository va letto prima dell'attesa perché durante
+              // l'interstiziale il widget può uscire dall'albero e `ref` non
+              // sarebbe più utilizzabile.
               onPressed: () async {
                 final ads = ref.read(adsServiceProvider);
                 final repo = ref.read(roomRepositoryProvider);
@@ -213,7 +208,6 @@ class _Step extends StatelessWidget {
           style: text.bodySmall?.copyWith(color: JoyoColors.textSecondary),
         ),
         const SizedBox(height: 8),
-        // Il gradino cresce dal basso quando si apre il podio.
         TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: 1),
           duration: Duration(milliseconds: 500 + position * 120),

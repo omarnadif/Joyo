@@ -1,7 +1,5 @@
-/// Le lingue in cui Joyo è giocabile.
-///
-/// Non uso il locale di sistema come unica fonte: in un gruppo si sceglie la
-/// lingua del tavolo, che spesso non è quella del telefono di chi ospita.
+/// Le lingue giocabili: si sceglie quella del tavolo, non solo quella del
+/// telefono di chi ospita.
 enum AppLocale {
   it('it', 'Italiano', '🇮🇹'),
   en('en', 'English', '🇬🇧'),

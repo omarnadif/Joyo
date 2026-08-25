@@ -8,11 +8,8 @@ final supabaseProvider = Provider<SupabaseClient>(
   (ref) => Supabase.instance.client,
 );
 
-/// Sessione anonima: se non esiste ancora, ne crea una.
-///
-/// La sessione viene persistita da supabase_flutter, quindi riaprendo l'app
-/// lo stesso dispositivo resta lo stesso utente (serve per rientrare in una
-/// stanza dopo un crash o un riavvio).
+/// Sessione anonima (creata se manca) e persistita da supabase_flutter, così
+/// lo stesso dispositivo resta lo stesso utente e può rientrare dopo un riavvio.
 final anonSessionProvider = FutureProvider<Session>((ref) async {
   final client = ref.watch(supabaseProvider);
 
@@ -47,8 +44,8 @@ final databasePingProvider = FutureProvider<int>((ref) async {
 final realtimePingProvider = FutureProvider.autoDispose<String>((ref) async {
   final client = ref.watch(supabaseProvider);
 
-  // Registrato prima dell'await: se il provider viene eliminato durante
-  // l'attesa della sessione, il canale non deve né aprirsi né restare appeso.
+  // Registrato prima dell'await: se il provider muore durante il login, il
+  // canale non deve restare appeso.
   RealtimeChannel? channel;
   ref.onDispose(() {
     final open = channel;

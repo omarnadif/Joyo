@@ -3,15 +3,9 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../core/supabase/supabase_providers.dart';
 
-/// Contenuti generati dall'AI, via Edge Function.
-///
-/// La chiave OpenAI sta solo sul server: da qui parte una chiamata
-/// autenticata, e il server decide se la stanza ha diritto alla generazione
-/// (premium attivo o un credito da annuncio).
-///
-/// Ogni metodo torna `null` quando l'AI non è disponibile: i giochi in quel
-/// caso pescano dal pool fisso. Una partita non si ferma mai per colpa
-/// dell'AI.
+/// Contenuti AI via Edge Function: la chiave OpenAI resta sul server, che
+/// verifica il diritto della stanza (premium o credito da annuncio). Ogni
+/// metodo torna `null` se l'AI non è disponibile e il gioco pesca dal pool.
 class AiContentRepository {
   const AiContentRepository(this._client);
 
@@ -33,8 +27,7 @@ class AiContentRepository {
       }
       return null;
     } catch (_) {
-      // funzione non ancora pubblicata, credito finito, rete assente:
-      // in tutti i casi si continua con il pool fisso
+      // Funzione non pubblicata, credito finito o rete assente: si usa il pool.
       return null;
     }
   }

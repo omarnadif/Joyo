@@ -15,8 +15,7 @@ import 'room_shell.dart';
 
 enum JoinFlowMode { create, join }
 
-/// Schermata unica per "crea stanza" e "unisciti": cambia solo il campo
-/// codice e l'etichetta del bottone.
+/// Schermata unica per "crea" e "unisciti": cambia solo il campo codice e la CTA.
 class JoinFlowScreen extends ConsumerStatefulWidget {
   const JoinFlowScreen({required this.mode, super.key});
 
@@ -62,8 +61,7 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
     });
 
     try {
-      // Il login anonimo può non essere ancora finito: si aspetta qui, dove
-      // l'utente ha già premuto e lo spinner ha senso.
+      // Attende qui il login anonimo, dove lo spinner ha senso.
       await ref.read(anonSessionProvider.future);
 
       final repo = ref.read(roomRepositoryProvider);
@@ -73,9 +71,8 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
 
       if (!mounted) return;
       ref.read(roomSessionProvider.notifier).enter(session);
-      // Senza await: il Future di pushReplacement si completa solo quando la
-      // stanza viene chiusa, e attenderlo terrebbe vivo questo State (e il
-      // suo `finally`) per tutta la sessione di gioco.
+      // Senza await: il Future di pushReplacement dura tutta la partita e
+      // terrebbe vivo questo State (e il suo `finally`).
       unawaited(
         Navigator.of(context).pushReplacement(
           MaterialPageRoute<void>(builder: (_) => const RoomShell()),
@@ -97,8 +94,7 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
     final accent = JoyoColors.avatar(_color);
 
     return Aura(
-      // L'ambiente resta viola: se prendesse il colore dell'avatar, scegliendo
-      // il lime tutta la schermata diventava verde oliva.
+      // Ambiente sempre viola: col colore dell'avatar il lime tingeva tutto di oliva.
       color: JoyoColors.violet,
       secondary: accent,
       intensity: 0.7,
@@ -196,8 +192,7 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
                 ),
               ),
 
-              // Il pulsante resta in fondo allo schermo, dove sta il pollice,
-              // invece di seguire il contenuto lasciando mezza pagina vuota.
+              // Pulsante ancorato in fondo, dove sta il pollice.
               Padding(
                 padding: const EdgeInsets.fromLTRB(24, 12, 24, 24),
                 child: JoyoButton(

@@ -209,1581 +209,1410 @@ class PreferisciPoolDe {
     (a: 'Nutella ohne Brot', b: 'Brot ohne Nutella'),
     (a: 'Endloses Wochenende mit Regen', b: 'Nur Montage aber immer Sonne'),
     (a: 'Nur ein Gericht, aber perfekt', b: 'Alles nur mittelmäßig kochen'),
-    (a: 'Einfache Reise zum Mars', b: 'Nie mehr aus Deutschland raus'),
-    (a: 'Jede Nacht im Zelt schlafen', b: 'Jede Nacht auf dem Sofa schlafen'),
-    (a: 'Ein Roboter-Butler', b: 'Ein Roboter-Koch'),
-    (a: 'Nie mehr Aufzüge', b: 'Nie mehr Rolltreppen'),
-    (a: 'Jeden Hollywood-Klatsch kennen', b: 'Jedes Serienfinale kennen'),
-    (a: 'Ein Jahr nur scharfes Essen', b: 'Nie mehr Salz'),
-    (a: 'Ohne Musik leben', b: 'Ohne Filme leben'),
-    (a: 'Immer fünf Minuten zu spät', b: 'Immer eine Stunde zu früh'),
-    (a: 'Ein Lied perfekt tanzen', b: 'Jedes Lied nur so-so tanzen'),
-    (a: 'Ewiger Sommer', b: 'Ewiger Winter'),
-    (a: 'Nie mehr Frittiertes', b: 'Nie mehr Süßes'),
-    (a: 'Gedanken von Hunden lesen', b: 'Mit Katzen sprechen'),
-    (
-      a: 'Immer die schnellste Schlange wählen',
-      b: 'Immer den richtigen Aufzug wählen',
-    ),
-    (a: 'Ein Haus in den Bergen', b: 'Ein Haus am Meer'),
-    (
-      a: 'Denselben perfekten Tag erleben',
-      b: 'Ein neuer, unvorhersehbarer Tag',
-    ),
-    (a: 'Für immer langsames WLAN', b: 'Akku immer bei zehn Prozent'),
-    (a: 'Eine Stunde am Tag unsichtbar', b: 'Zehn Minuten am Tag fliegen'),
-    (a: 'Nur kalte Duschen', b: 'Nur Regionalzüge'),
-    (a: 'Jeden Abend für zehn kochen', b: 'Jeden Abend für zehn abwaschen'),
-    (
-      a: 'Schwerer Rucksack, alles dabei',
-      b: 'Leichter Rucksack, nie das Richtige',
-    ),
-    (
-      a: 'Schlechte Fotos, klare Erinnerung',
-      b: 'Perfekte Fotos, wirre Erinnerung',
-    ),
-    (a: 'Ein Pflicht-Karaoke pro Woche', b: 'Eine Rede vor Publikum pro Monat'),
-    (
-      a: 'Ein peinlicher menschlicher Butler',
-      b: 'Ein Roboter, der still urteilt',
-    ),
   ];
 
   /// Dilemmi da modalità Hot: parità completa col mazzo italiano.
-  static const List<({String a, String b, String tone})> hot =
-      <({String a, String b, String tone})>[
-        (
-          a: 'Eine Minute nackt rumlaufen',
-          b: 'Jemanden aus dieser Gruppe küssen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Die Nacht mit einem hier verbringen',
-          b: 'Eine Nacht mit einem alten Lehrer',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deine Galerie der Gruppe zeigen',
-          b: 'Deine Chats laut vorlesen lassen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Jahr ohne Sex',
-          b: 'Ein Jahr ohne Abende draußen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deinen Body Count verraten',
-          b: 'Deine letzte Suche zeigen',
-          tone: ContentTone.piccante,
-        ),
-        (a: 'Liebe ohne Sex', b: 'Sex ohne Liebe', tone: ContentTone.piccante),
-        (
-          a: 'Schöner Partner, schlecht im Bett',
-          b: 'Normaler Partner, phänomenal',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Eine Nacht mit deinem Ex',
-          b: 'Eine Nacht mit einem Fremden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deine Eltern erwischen',
-          b: 'Von deinen Eltern erwischt werden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Allen sagen, wen du magst',
-          b: 'Nie mehr mit ihm sprechen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Einen hier mit geschlossenen Augen küssen',
-          b: 'Deinen Ex vor allen küssen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nie mehr küssen können',
-          b: 'Nie mehr umarmen können',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Wissen, mit wem er dich betrügt',
-          b: 'Es nie erfahren',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Jahr nur Blind Dates',
-          b: 'Nur Dates, die deine Mutter wählt',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deinen ersten Kuss im Video sehen',
-          b: 'Die ganze Gruppe sieht ihn',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Bei jedem Sitzen stöhnen',
-          b: 'Beim Anstoßen den Ex-Namen rufen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Nude versehentlich an den Ex',
-          b: 'Es in die Familiengruppe schicken',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sexting mit dem Chef aus Versehen',
-          b: 'Den Partner mit Ex-Namen rufen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Eine Nacht mit einem Star',
-          b: 'Ein Monat Sex mit deinem Ex',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sex nur in völliger Dunkelheit',
-          b: 'Nur mit immer angeschaltetem Licht',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deine seltsamste Fantasie sagen',
-          b: 'Die von rechts hören',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Bettfreunde mit dem besten Freund',
-          b: 'Ein Jahr keinen Sex mehr',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Ex, der göttlich küsst',
-          b: 'Ein Neuer, dem du alles beibringst',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'An der Bar mit Blicken ausgezogen',
-          b: 'Nie mehr bemerkt werden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Von deinem schlimmsten Date erzählen',
-          b: 'Deine heißeste Blamage neu erleben',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Immer den ersten Schritt machen',
-          b: 'Immer auf den anderen warten',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Dreier mit Fremden',
-          b: 'Ein Dreier mit Freunden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den Mitbewohner erwischen',
-          b: 'Vom Mitbewohner erwischt werden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sagen, wie oft du am Tag dran denkst',
-          b: 'Sagen, wann es das letzte Mal war',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Extrem eifersüchtig aber heiß',
-          b: 'Ruhig aber faul im Bett',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den Ersten küssen, der reinkommt',
-          b: 'Den Letzten küssen, der schrieb',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Leidenschaft ohne einen Kuss',
-          b: 'Endlose Küsse und nichts weiter',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dein erstes Mal vergessen',
-          b: 'Dich jeden Tag daran erinnern',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den absurdesten Ort verraten',
-          b: 'Sagen, wo du es tun willst',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Flirt mit deinem Trainer',
-          b: 'Ein Flirt mit deinem Arzt',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Jahr nur One-Night-Stands',
-          b: 'Lebenslang nur feste Beziehungen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ab und zu wieder mit dem Ex',
-          b: 'Für immer Schluss, aber mit Reue',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Knutschen mit dem links von dir',
-          b: 'Sinnlicher Tanz mit dem rechts',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nackt neben einem Freund schlafen',
-          b: 'Mit dem Ex in Badehose duschen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Nude vom Chef bekommen',
-          b: 'Ihm eins versehentlich schicken',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sagenhafter Sex einmal im Monat',
-          b: 'Mittelmäßiger Sex jeden Tag',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Wissen, was er im Bett denkt',
-          b: 'Er hört jeden deiner Gedanken',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Wochenende mit dem Schwarm',
-          b: 'Ein Monat mit der ersten Liebe',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Frühstück im Bett danach',
-          b: 'Vor dem Morgengrauen verschwinden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deine Schwachstelle im Bett sagen',
-          b: 'Sie vor der Gruppe vormachen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den Ex-Namen tätowieren',
-          b: 'Ihn im falschen Moment rufen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Match mit dem Ex in der App',
-          b: 'Ein Match mit dem Chef in der App',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Er kennt alle deine Fantasien',
-          b: 'Du kennst alle seine',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Jetzt ein Striptease improvisiert',
-          b: 'Eine heiße Story deines Sommers',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Einen hier küssen, den du wählst',
-          b: 'Einen küssen, den die Gruppe wählt',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Heimliche, sehr heiße Beziehung',
-          b: 'Offizielle aber lauwarme',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sex nur im Sommer',
-          b: 'Sex nur im Winter',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Alle wilden Nächte vergessen',
-          b: 'Auch die schlimmsten erinnern',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Heißes Audio an die falsche Person',
-          b: 'Eins vom Chef bekommen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Chats mit dem Ex vorlesen lassen',
-          b: 'Fotos mit dem Ex zeigen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Heute Liebe auf den ersten Blick',
-          b: 'Heute Abend ein Abenteuer',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den Namen deines Schwarms sagen',
-          b: 'Die Gruppe rätseln lassen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Heute ein Tanz mit dem Ex',
-          b: 'Romantisches Karaoke mit einem hier',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Jetzt einen Fremden anbaggern',
-          b: 'Die Nummer dem Ersten geben',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Eine Massage von einem hier',
-          b: 'Einem hier eine Massage geben',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Jahr Flirtverbot',
-          b: 'Pflicht, mit allen zu flirten',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Eine Nacht mit deinem Musikidol',
-          b: 'Ein Wochenende mit deinem Star',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Einen heißen Traum gestehen',
-          b: 'Einer hier gesteht einen über dich',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Totale Stille im Bett',
-          b: 'Volle Reportage im Bett',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Traumhintern',
-          b: 'Ein Dekolleté zum Applaudieren',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dein Ex wird superberühmt',
-          b: 'Dein Ex wird dein Chef',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sagen, was dich am meisten anmacht',
-          b: 'Sagen, was dich sofort abtörnt',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Sommerflirt, nie gestanden',
-          b: 'Eine endlose Fernbeziehung',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Zwei hier baggern dich an',
-          b: 'Du baggerst zwei gleichzeitig an',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den Ex mit einem Schöneren sehen',
-          b: 'Er sieht dich mit einem Schlechteren',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Küsse mit Biss',
-          b: 'Für immer nur brave Küsse',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Umarmt schlafen ohne Sex',
-          b: 'Sex ohne je zusammen zu schlafen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sex mit Musik in voller Lautstärke',
-          b: 'Mit den Nachrichten im Hintergrund',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deine Anzahl an Ex verraten',
-          b: 'Verraten, wer der Beste war',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Heute den Kellner anbaggern',
-          b: 'Ihm die Nummer auf den Bon schreiben',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Erstes Mal peinlich aber süß',
-          b: 'Perfekt aber mit dem Falschen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Tattoo, wo die Gruppe entscheidet',
-          b: 'Ein Piercing, wo die Gruppe will',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein 30-Sekunden-Kuss mit einem hier',
-          b: 'Zehn kurze Küsse mit zehn Fremden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Wissen, wer hier von dir träumt',
-          b: 'Wissen, wer dich nie küssen würde',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Sex im Zelt auf vollem Campingplatz',
-          b: 'Im Hotel mit Papierwänden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Urlaub nur für Singles',
-          b: 'Urlaub nur für Paare',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Betrügen und nie erwischt werden',
-          b: 'Betrogen werden und es nie wissen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Etwas mit dem Partner eines Freundes',
-          b: 'Dein Partner mit dem besten Freund',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Deine schlimmsten Fotos kommen raus',
-          b: 'Deine schlimmsten Chats kommen raus',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Hören, was die Gruppe über dich sagt',
-          b: 'Die Gruppe hört, was du sagst',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jetzt dein schlimmstes Geheimnis',
-          b: 'Dein bester Freund verrät es',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sex mit dem Ex des besten Freundes',
-          b: 'Ihm sagen, dass du dran dachtest',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Alles über alle hier wissen',
-          b: 'Alle wissen alles über dich',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Ex, der immer zurückkommt',
-          b: 'Nie mehr von einem Ex hören',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Festes Paar mit einem aus der Gruppe',
-          b: 'Die Gruppe nie mehr sehen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Einen alten Betrug entdecken',
-          b: 'Jetzt einen eigenen gestehen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Das geheime Tagebuch lesen',
-          b: 'Er liest alle deine Chats',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Wissen, wer hier über dich lästert',
-          b: 'Wissen, wer am meisten log',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Der Ex platzt ins erste Date',
-          b: 'Ein Partner, der ständig den Ex nennt',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Im Traum betrügen und es gestehen',
-          b: 'Vom Ex träumen und schweigen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den echten Body Count erfahren',
-          b: 'Er erfährt deinen echten',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den Ex des besten Freundes küssen',
-          b: 'Er küsst deinen Ex',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine Nacht mit dem Partner eines Kollegen',
-          b: 'Alle denken, du hast es getan',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Erfahren, dass der Ex immer betrog',
-          b: 'Erfahren, dass er dich immer liebte',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dich am Ex rächen und es bereuen',
-          b: 'Ihm verzeihen und es mehr bereuen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Gruppe liest deinen heißen Chat',
-          b: 'Die Gruppe sieht private Fotos',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Gestehen, wen du geghostet hast',
-          b: 'Den anrufen, der dich ghostete',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Per Sprachnachricht verlassen werden',
-          b: 'Jemanden am Geburtstag verlassen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jemandem den Partner klauen',
-          b: 'Ihn geklaut bekommen und zurückholen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jede Lüge deines Partners kennen',
-          b: 'Er kennt jede deiner Lügen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Deinen schlimmsten Betrug erzählen',
-          b: 'Das größte Geheimnis eines Freundes',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Mit dem Partner des Chefs flirten',
-          b: 'Der Chef flirtet mit deinem',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Freund baggert deinen Partner an',
-          b: 'Dein Partner baggert deinen Freund an',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Ex-Geschenk bei ihm finden',
-          b: 'Chats mit dem Ex im Handy finden',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Geheimnis für immer löschen',
-          b: 'Erfahren, was man dir verheimlicht',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sagen, mit wem hier du nie ausgehst',
-          b: 'Hören, wer nie mit dir ausgehen würde',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Ex, dem du noch Geld schuldest',
-          b: 'Ein Ex, der dir eine Entschuldigung schuldet',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Zugeben, dass du den Ex stalkst',
-          b: 'Den Verlauf seiner Profile zeigen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Heimlich Sex bei den Schwiegereltern',
-          b: 'Von ihnen im schlimmsten Moment erwischt',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dein bester Freund hasst dich',
-          b: 'Dein Freund liebt deinen Partner',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine Nacht Betrug, gestanden',
-          b: 'Ein Doppelleben, nie entdeckt',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nackt drei Fragen beantworten',
-          b: 'Angezogen dreißig beantworten',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Das Enddatum der Beziehung kennen',
-          b: 'Den Grund kennen, nicht das Datum',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein schönerer Rivale',
-          b: 'Ein sympathischerer Rivale',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sofort sagen, dass er schlecht küsst',
-          b: 'Ihn heiraten und nie etwas sagen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Der Ex schreibt nachts um drei',
-          b: 'Ihm schreiben und es leugnen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Partner ist mit allen Ex befreundet',
-          b: 'Partner verbietet dir deine Ex',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein geheimes Profil von ihm finden',
-          b: 'Er findet deines',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Zwei Menschen gleichzeitig lieben',
-          b: 'Der Geliebte sein, ohne es zu wissen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sagen, wer hier am schlechtesten küsst',
-          b: 'Von jedem hier bewertet werden',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Hochzeit des Ex sabotieren',
-          b: 'Trauzeuge auf seiner Hochzeit sein',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine öffentliche Liste deiner Flirts',
-          b: 'Eine Liste aller Abfuhren',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den Freund durch die Wahrheit verlieren',
-          b: 'Ihn behalten und lebenslang lügen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dein Feind kennt dein Geheimnis',
-          b: 'Deine Schwiegermutter weiß alles',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine Woche Partnertausch',
-          b: 'Ein Jahr als Single leben',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Gruppe wählt deinen Makel',
-          b: 'Sie zählen alle deine Flirts auf',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Betrügen und nach zehn Jahren gestehen',
-          b: 'Es nach zehn Jahren erfahren',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Wochenende mit den Schwiegereltern',
-          b: 'Ein Wochenende mit dem Ex des Partners',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Wissen, wie viele Nein sagten',
-          b: 'Wissen, wer das Ja bereute',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Alles über eine heimliche Liebe sagen',
-          b: 'Die Gruppe ermittelt eine Stunde',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die letzte Nachricht laut vorlesen',
-          b: 'Die letzte Nummer jetzt anrufen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Paar mit der Wahrheit zerstören',
-          b: 'Es mit einer großen Lüge retten',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dein Ex spricht im Podcast über dich',
-          b: 'Die Gruppe erzählt deine Nächte',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jemandes Plan B sein',
-          b: 'Einen Plan B haben und erwischt werden',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Der Partner prüft dein Handy',
-          b: 'Du darfst sein Handy nie sehen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Deine letzte Lüge an einen hier sagen',
-          b: 'Jeder hier sagt eine über dich',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Mit dem Zwilling des Ex ausgehen',
-          b: 'Mit einem Chef-Doppelgänger',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Wissen, was die Ex über dich sagen',
-          b: 'Sie alle zu einem Essen einladen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Aus Rache betrügen und es sagen',
-          b: 'Es einstecken und still planen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Für eine Wette jemanden küssen',
-          b: 'Erfahren, dass du eine Wette warst',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'In einem Monat Zwangshochzeit',
-          b: 'Zehn Jahre verlobt ohne Hochzeit',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den Abend des Ex online verfolgen',
-          b: 'Ihn blocken und vor Neugier sterben',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den billigsten Flirt gestehen',
-          b: 'Der Zeuge erzählt ihn',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Gruppe weiß, wen du hier magst',
-          b: 'Nur die falsche Person weiß es',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Das Doppelleben des Partners finden',
-          b: 'Deins verstecken können',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Freundespaar durch Reden trennen',
-          b: 'Sie unglücklich sehen und schweigen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Gruppe wählt deinen Partner',
-          b: 'Die Gruppe wählt, wen du verlässt',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den echten Grund der Trennung sagen',
-          b: 'Die Version deines Ex hören',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine Nacht mit zwei Ex zugleich',
-          b: 'Eine Nacht mit Ex und dessen Neuer',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eifersüchtig sein und recht haben',
-          b: 'Vertrauen und betrogen werden',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein perfekter Kuss pro Monat',
-          b: 'Mittelmäßige Küsse jeden Tag',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Wissen, was dein Schwarm denkt',
-          b: 'Er weiß alles, was du denkst',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Eine unvergessliche Nacht ohne mehr',
-          b: 'Zehn süße Dates ohne Funken',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nur umarmt schlafen',
-          b: 'Alles andere, aber kein Kuscheln',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dem Schwarm den Body Count sagen',
-          b: 'Den letzten heißen Chat zeigen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Partner, der sehr gut küsst',
-          b: 'Partner, der sehr gut schreibt',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Vor deinen Eltern flirten',
-          b: 'Vor deinem Ex flirten',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein freches Foto falsch erhalten',
-          b: 'Selbst eins falsch verschicken',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Mit Worten verführt werden',
-          b: 'Mit Blicken verführt werden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Wochenende Leidenschaft ohne Handy',
-          b: 'Eine Woche Flirt nur per Chat',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Erster Kuss beim ersten Date',
-          b: 'Erster Kuss nach einem Monat',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Immer wissen, wer dich ansieht',
-          b: 'Es nie wissen, aber oft angesehen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Ex, der jede Nacht schreibt',
-          b: 'Ein Schwarm, der nie schreibt',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Tanz mit dem Schwarm vor allen',
-          b: 'Candle-Light-Dinner in Stille',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den Chat mit dem Schwarm vorlesen',
-          b: 'Ihn jetzt auf Lautsprecher anrufen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Jeden Abend eine perfekte Massage',
-          b: 'Jeden Morgen Frühstück im Bett',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Jemandes bester Kuss sein',
-          b: 'Den besten Kuss deines Lebens',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nie mehr erste Dates',
-          b: 'Für immer nur erste Dates',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Immer zuerst "ich mag dich" sagen',
-          b: 'Immer warten, bis es gesagt wird',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Eine Playlist startet beim Flirten',
-          b: 'Eine Stimme kommentiert deine Dates',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dein Ex auf deiner Hochzeit',
-          b: 'Die Schwiegermutter im Honeymoon',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den ersten Kuss erneut sehen',
-          b: 'Dein Dating-Profil der Gruppe zeigen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Frost bei jedem "wir müssen reden"',
-          b: 'Es nie zu hören bekommen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Jeden Sommer ein Flirt',
-          b: 'Alle zehn Jahre echte Liebe',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Wissen, wie oft man über dich sprach',
-          b: 'Wissen, was gesagt wurde, nicht wer',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Küsse nur im Regen',
-          b: 'Küsse nur im Aufzug',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Jeden Morgen ein "guten Morgen"',
-          b: 'Jeden Abend eine "gute Nacht"',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Beim Flirten die Stimme verlieren',
-          b: 'Immer ein Wort zu viel sagen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nur tagsüber unwiderstehlich',
-          b: 'Nur nachts unwiderstehlich',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Blind Date von der Gruppe gewählt',
-          b: 'Ein Date von deinem Ex organisiert',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Mit dem Partner deines Schwarms essen',
-          b: 'Den ganzen Abend ihr Fahrer sein',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Lügen in der Liebe erkennen',
-          b: 'Nie als Erster lügen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Jahr ohne Küsse',
-          b: 'Ein Jahr ohne Umarmungen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dem Schwarm alles gestehen',
-          b: 'Es jetzt dem ganzen Raum gestehen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Berühmt für eine Liebesgeschichte',
-          b: 'Berühmt für einen Korb',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Mit deinem Ebenbild ausgehen',
-          b: 'Mit deinem Gegenteil ausgehen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dein Tagebuch beim Schwarm',
-          b: 'Dein Verlauf bei deinen Eltern',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein unvergesslicher geklauter Kuss',
-          b: 'Hundert höflich erbetene Küsse',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Immer desinteressiert wirken',
-          b: 'Immer zu interessiert wirken',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nur einmal Liebe auf ersten Blick',
-          b: 'Ständige Funken, nie erwidert',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Jede Woche Blumen im Büro',
-          b: 'Jeden Abend eine Liebesnachricht',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nur schriftlich super flirten',
-          b: 'Nur live super flirten',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Verknallt in einen aus der Gruppe',
-          b: 'Verknallt in einen Kollegen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Wissen, ob das erste Date gut wird',
-          b: 'Jedes erste Date wiederholen können',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Romantisches Date minutiös geplant',
-          b: 'Jedes Mal völlig improvisiert',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Partner, der super tanzt',
-          b: 'Ein Partner, der super kocht',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Für immer keine Eifersucht',
-          b: 'Doppelte Leidenschaft mit Eifersucht',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Von zwei Personen umworben werden',
-          b: 'Immer wählen, aber nie umworben',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dein Name in einem Liebeslied',
-          b: 'Dein Gesicht in einem viralen Video',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nur Dates beim Frühstück',
-          b: 'Nur Dates um Mitternacht',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Immer Händchen halten in der Stadt',
-          b: 'Nur privat, aber intensiv',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Alle deine Ex vergessen',
-          b: 'Alle deine Ex vergessen dich',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Filmkuss einmal im Jahr',
-          b: 'Normale Küsse, aber täglich',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Mit einem handgeschriebenen Brief',
-          b: 'Mit einer Rede vor allen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Den Tag deiner Verliebtheit kennen',
-          b: 'Nur den Namen kennen, nicht wann',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Empfindlich aber leidenschaftlich',
-          b: 'Entspannt aber lauwarm',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Deine erste Liebe neu erleben',
-          b: 'Die letzte vorher kennen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Beim Flirten schüchtern wirken',
-          b: 'Frech wirken, obwohl schüchtern',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Die Wahrheit über jedes Ende',
-          b: 'Es nie wissen, aber in Ruhe enden',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Perfektes Date vom Ex organisiert',
-          b: 'Ein Desaster mit dem Richtigen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Allen gefallen außer dem Schwarm',
-          b: 'Nur dem Schwarm gefallen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Nachrichten immer sofort gelesen',
-          b: 'Antwort garantiert in einer Minute',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Eine Nachricht pro Tag löschen',
-          b: 'Gelöschte Nachrichten lesen können',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Frecher Flirt nur am Dienstag',
-          b: 'Leichter Flirt jeden Tag',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Die Gruppe wählt dein nächstes Date',
-          b: 'Die Gruppe liest den letzten Chat',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ohne Warnung geküsst werden',
-          b: 'Jeden Kuss zehn Sekunden vorher ansagen',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein legendärer Single-Sommer',
-          b: 'Ein perfekter Winter als Paar',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Dein Schwarm sieht alle Storys',
-          b: 'Du siehst alles, was er ansieht',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Ein Tanz mit dem Falschen',
-          b: 'Nie mehr ein langsamer Tanz',
-          tone: ContentTone.piccante,
-        ),
-        (
-          a: 'Für immer Sex nur im Dunkeln',
-          b: 'Für immer nur mit Licht',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Lebenslang eine Stellung',
-          b: 'Alle außer deiner Lieblingsstellung',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die härteste Fantasie verraten',
-          b: 'Den Inkognito-Verlauf zeigen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Jahr Keuschheit',
-          b: 'Ein Jahr ohne Handy',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Nachbarn hören dich',
-          b: 'Die Nachbarn jede Nacht hören',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nur Sex am Morgen',
-          b: 'Nur Sex mitten in der Nacht',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Top im Bett, schlecht mit Worten',
-          b: 'Toller Poet, Desaster im Bett',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Alle Zahlen nennen, Body Count dabei',
-          b: 'Das Handy eine Stunde entsperrt geben',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dein erstes Mal im Video sehen',
-          b: 'Es jetzt anständig erzählen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer du zuerst, per Vertrag',
-          b: 'Immer warten, auch Monate',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sex ohne jeden Kuss',
-          b: 'Küsse und nie mehr',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine Nacht mit dem schlimmsten Ex',
-          b: 'Sechs Monate mit niemandem',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Gruppe hört deine Nacht-Audios',
-          b: 'Die Gruppe liest dein Sexting',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Von den Eltern erwischt werden',
-          b: 'Sie im schlimmsten Moment erwischen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Deine besten Nächte vergessen',
-          b: 'Sie erinnern und nie erzählen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Fetisch von der Gruppe gewählt',
-          b: 'Jetzt deinen gestehen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Für immer nur Abenteuer',
-          b: 'Nur Ernst vom ersten Tag an',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine für immer geheime Beziehung',
-          b: 'Alles öffentlich ab Tag eins',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Bettfreund verliebt sich immer',
-          b: 'Du verliebst dich immer in sie',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Laut sagen, wer dich hier anzieht',
-          b: 'Die Gruppe wählt, wen du anziehst',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Deine Mutter findet die Schublade',
-          b: 'Dein Chef findet sie',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Für immer Sex nur bei dir',
-          b: 'Nie mehr bei dir',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer zusammen duschen, Pflicht',
-          b: 'Nie mehr zusammen duschen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Überall nackt schlafen',
-          b: 'Angezogen, auch im Honeymoon',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Tattoo mit jedem Ex-Namen',
-          b: 'Eine Ex-Liste öffentlich online',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer zu viel Lärm machen',
-          b: 'Für immer absolute Stille',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dein Ex gibt Referenzen über dich',
-          b: 'Keine Referenz, aber Verdacht',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Wissen, wie oft geschauspielert wurde',
-          b: 'Ruhig im Zweifel leben',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sex mit Zehn einmal im Monat',
-          b: 'Sex mit Sechs jeden Tag',
-          tone: ContentTone.cattivo,
-        ),
-        (a: 'Immer zu schnell', b: 'Immer zu lang', tone: ContentTone.cattivo),
-        (
-          a: 'Deine heiße Playlist läuft im Büro',
-          b: 'Deine heiße Nachricht beim Familienessen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine Nacht mit dem Star, alle wissen es',
-          b: 'Total geheim, keiner glaubt dir',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nur riskante öffentliche Orte',
-          b: 'Für immer nur dein Bett',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den absurdesten Ort gestehen',
-          b: 'Die Gruppe rät ihn mit Fragen',
-          tone: ContentTone.cattivo,
-        ),
-        (a: 'Nie mehr Vorspiel', b: 'Nur Vorspiel', tone: ContentTone.cattivo),
-        (
-          a: 'Jedes Date endet im Bett',
-          b: 'Keines endet beim ersten so',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Note deiner Ex kennen',
-          b: 'Selbst öffentlich Noten geben',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Wochenende ohne Grenzen, geheim',
-          b: 'Ein normaler Abend, jahrelang erzählbar',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dein peinlichster Moment von anderen',
-          b: 'Selbst erzählen, aber komplett',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Lieblingsstellung für immer weg',
-          b: 'Sie jetzt der Gruppe erklären',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nur Sex mit Kalendereintrag',
-          b: 'Nur spontan im schlechtesten Moment',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jedes Mal "das war der Beste" sagen',
-          b: 'Nie etwas kommentieren dürfen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Monat ohne Berührung',
-          b: 'Ein Monat ohne ein Wort',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Alle wissen immer, wann du es tatst',
-          b: 'Niemand glaubt dir je',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jedes Mal zerrissene Kleidung',
-          b: 'Vorher alles ruhig zusammenlegen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Der Ex im Zimmer nebenan',
-          b: 'Der Ex für immer im Freundeskreis',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Deinen absurdesten Traum erzählen',
-          b: 'Die Gruppe wählt den Hauptdarsteller',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nie mehr Sex im Urlaub',
-          b: 'Nur Sex im Urlaub',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den Überblick verlieren',
-          b: 'Ein öffentlicher Zähler, aktuell',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer mit demselben Satz verführen',
-          b: 'Beim Verführen nie mehr sprechen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Nachbarn wissen von Besuch',
-          b: 'Deine Gruppe bekommt eine Meldung',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer Frühstück mit seiner Familie',
-          b: 'Immer durchs Fenster raus',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sex nur mit Trap-Musik',
-          b: 'Nur mit Klassik in voller Lautstärke',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer dort schlafen, Pflicht',
-          b: 'Nie über Nacht bleiben dürfen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den ersten Gedanken laut sagen',
-          b: 'Den letzten Gedanken posten',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nie mehr Küsse am Hals',
-          b: 'Nur Küsse am Hals',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Top, aber du vergisst alles',
-          b: 'Du erinnerst alles, bist aber fad',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer die ganze Wahrheit danach',
-          b: 'Sichere aber unechte Komplimente',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Für immer die beste Nacht wiederholen',
-          b: 'Eine neue Nacht, totale Überraschung',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Sex erst nach genau drei Dates',
-          b: 'Beim ersten Date oder nie',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Alle kennen deinen Fetisch',
-          b: 'Ihn nie mehr ausleben dürfen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Jahr Single mit klaren Bildern',
-          b: 'In Beziehung, aber Nächte vergessen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Striptease-Pflicht auf jeder Party',
-          b: 'Nie mehr bei Licht ausziehen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Immer sagen, wenn dich wer anzieht',
-          b: 'Es nie zeigen können',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Gruppe wählt, mit wem du flirtest',
-          b: 'Die Gruppe sieht dir beim Flirten zu',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nie mehr am Morgen',
-          b: 'Nie mehr in der Nacht',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Nur Stundenhotels',
-          b: 'Nur bei deinen Eltern',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Fantastischer Sex nur im Sommer',
-          b: 'Mittelmäßig, aber das ganze Jahr',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Wissen, was er dabei wirklich denkt',
-          b: 'Er weiß jeden deiner Gedanken',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Die Gruppe wählt ein Jahr deinen Typ',
-          b: 'Dein Ex wählt ihn',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jedes Date im Ohr kommentiert',
-          b: 'Immer allein, ohne Ratschläge',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Eine Nacht für zehn Jahre Erzählen',
-          b: 'Zehn Nächte, sofort vergessen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dein nächster Partner ist hier',
-          b: 'Es wird nie jemand von hier',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jetzt das Härteste gestehen',
-          b: 'Dein bester Freund erzählt es',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Wochenende Leidenschaft ohne Reden',
-          b: 'Ein Wochenende perfekte Gespräche',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jeder Ex erzählt seine Version',
-          b: 'Du darfst deine nie erzählen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jedes Mal Sperma schlucken',
-          b: 'Nie wieder Oralsex bekommen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Jeden Tag Analsex haben',
-          b: 'Nie wieder Sex in deinem Leben haben',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Gefilmt werden beim Sex',
-          b: 'Es vor der ganzen Gruppe tun',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dass alle wissen, wie schlecht du im Bett bist',
-          b: 'Dass sie wissen, was dein extremster Fetisch ist',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Den Anus deines schlimmsten Feindes lecken',
-          b: 'Dir den Anus von einem völlig Fremden lecken lassen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Der Person rechts von dir ins Gesicht kommen',
-          b: 'Dir von der Person links von dir ins Gesicht kommen lassen',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Dreier mit zwei engen Freunden',
-          b: 'Ein Dreier mit zwei völlig Fremden',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Ein Jahr lang nur Analsex',
-          b: 'Ein Jahr lang nur Oralsex',
-          tone: ContentTone.cattivo,
-        ),
-        (
-          a: 'Dass deine Eltern deine heißen Nachrichten sehen',
-          b: 'Dass sie ein Video sehen, wie du es tust',
-          tone: ContentTone.cattivo,
-        ),
-      ];
+  static const List<({String a, String b, String tone})>
+  hot = <({String a, String b, String tone})>[
+    (
+      a: 'Eine Minute nackt rumlaufen',
+      b: 'Jemanden aus dieser Gruppe küssen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Die Nacht mit einem hier verbringen',
+      b: 'Eine Nacht mit einem alten Lehrer',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deine Galerie der Gruppe zeigen',
+      b: 'Deine Chats laut vorlesen lassen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Jahr ohne Sex',
+      b: 'Ein Jahr ohne Abende draußen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deinen Body Count verraten',
+      b: 'Deine letzte Suche zeigen',
+      tone: ContentTone.piccante,
+    ),
+    (a: 'Liebe ohne Sex', b: 'Sex ohne Liebe', tone: ContentTone.piccante),
+    (
+      a: 'Schöner Partner, schlecht im Bett',
+      b: 'Normaler Partner, phänomenal',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Eine Nacht mit deinem Ex',
+      b: 'Eine Nacht mit einem Fremden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deine Eltern erwischen',
+      b: 'Von deinen Eltern erwischt werden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Allen sagen, wen du magst',
+      b: 'Nie mehr mit ihm sprechen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Einen hier mit geschlossenen Augen küssen',
+      b: 'Deinen Ex vor allen küssen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nie mehr küssen können',
+      b: 'Nie mehr umarmen können',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Wissen, mit wem er dich betrügt',
+      b: 'Es nie erfahren',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Jahr nur Blind Dates',
+      b: 'Nur Dates, die deine Mutter wählt',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deinen ersten Kuss im Video sehen',
+      b: 'Die ganze Gruppe sieht ihn',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Bei jedem Sitzen stöhnen',
+      b: 'Beim Anstoßen den Ex-Namen rufen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Nude versehentlich an den Ex',
+      b: 'Es in die Familiengruppe schicken',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sexting mit dem Chef aus Versehen',
+      b: 'Den Partner mit Ex-Namen rufen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Eine Nacht mit einem Star',
+      b: 'Ein Monat Sex mit deinem Ex',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sex nur in völliger Dunkelheit',
+      b: 'Nur mit immer angeschaltetem Licht',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deine seltsamste Fantasie sagen',
+      b: 'Die von rechts hören',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Bettfreunde mit dem besten Freund',
+      b: 'Ein Jahr keinen Sex mehr',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Ex, der göttlich küsst',
+      b: 'Ein Neuer, dem du alles beibringst',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'An der Bar mit Blicken ausgezogen',
+      b: 'Nie mehr bemerkt werden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Von deinem schlimmsten Date erzählen',
+      b: 'Deine heißeste Blamage neu erleben',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Immer den ersten Schritt machen',
+      b: 'Immer auf den anderen warten',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Dreier mit Fremden',
+      b: 'Ein Dreier mit Freunden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den Mitbewohner erwischen',
+      b: 'Vom Mitbewohner erwischt werden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sagen, wie oft du am Tag dran denkst',
+      b: 'Sagen, wann es das letzte Mal war',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Extrem eifersüchtig aber heiß',
+      b: 'Ruhig aber faul im Bett',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den Ersten küssen, der reinkommt',
+      b: 'Den Letzten küssen, der schrieb',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Leidenschaft ohne einen Kuss',
+      b: 'Endlose Küsse und nichts weiter',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dein erstes Mal vergessen',
+      b: 'Dich jeden Tag daran erinnern',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den absurdesten Ort verraten',
+      b: 'Sagen, wo du es tun willst',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Flirt mit deinem Trainer',
+      b: 'Ein Flirt mit deinem Arzt',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Jahr nur One-Night-Stands',
+      b: 'Lebenslang nur feste Beziehungen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ab und zu wieder mit dem Ex',
+      b: 'Für immer Schluss, aber mit Reue',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Knutschen mit dem links von dir',
+      b: 'Sinnlicher Tanz mit dem rechts',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nackt neben einem Freund schlafen',
+      b: 'Mit dem Ex in Badehose duschen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Nude vom Chef bekommen',
+      b: 'Ihm eins versehentlich schicken',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sagenhafter Sex einmal im Monat',
+      b: 'Mittelmäßiger Sex jeden Tag',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Wissen, was er im Bett denkt',
+      b: 'Er hört jeden deiner Gedanken',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Wochenende mit dem Schwarm',
+      b: 'Ein Monat mit der ersten Liebe',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Frühstück im Bett danach',
+      b: 'Vor dem Morgengrauen verschwinden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deine Schwachstelle im Bett sagen',
+      b: 'Sie vor der Gruppe vormachen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den Ex-Namen tätowieren',
+      b: 'Ihn im falschen Moment rufen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Match mit dem Ex in der App',
+      b: 'Ein Match mit dem Chef in der App',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Er kennt alle deine Fantasien',
+      b: 'Du kennst alle seine',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Jetzt ein Striptease improvisiert',
+      b: 'Eine heiße Story deines Sommers',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Einen hier küssen, den du wählst',
+      b: 'Einen küssen, den die Gruppe wählt',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Heimliche, sehr heiße Beziehung',
+      b: 'Offizielle aber lauwarme',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sex nur im Sommer',
+      b: 'Sex nur im Winter',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Alle wilden Nächte vergessen',
+      b: 'Auch die schlimmsten erinnern',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Heißes Audio an die falsche Person',
+      b: 'Eins vom Chef bekommen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Chats mit dem Ex vorlesen lassen',
+      b: 'Fotos mit dem Ex zeigen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Heute Liebe auf den ersten Blick',
+      b: 'Heute Abend ein Abenteuer',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den Namen deines Schwarms sagen',
+      b: 'Die Gruppe rätseln lassen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Heute ein Tanz mit dem Ex',
+      b: 'Romantisches Karaoke mit einem hier',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Jetzt einen Fremden anbaggern',
+      b: 'Die Nummer dem Ersten geben',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Eine Massage von einem hier',
+      b: 'Einem hier eine Massage geben',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Jahr Flirtverbot',
+      b: 'Pflicht, mit allen zu flirten',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Eine Nacht mit deinem Musikidol',
+      b: 'Ein Wochenende mit deinem Star',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Einen heißen Traum gestehen',
+      b: 'Einer hier gesteht einen über dich',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Totale Stille im Bett',
+      b: 'Volle Reportage im Bett',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Traumhintern',
+      b: 'Ein Dekolleté zum Applaudieren',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dein Ex wird superberühmt',
+      b: 'Dein Ex wird dein Chef',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sagen, was dich am meisten anmacht',
+      b: 'Sagen, was dich sofort abtörnt',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Sommerflirt, nie gestanden',
+      b: 'Eine endlose Fernbeziehung',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Zwei hier baggern dich an',
+      b: 'Du baggerst zwei gleichzeitig an',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den Ex mit einem Schöneren sehen',
+      b: 'Er sieht dich mit einem Schlechteren',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Küsse mit Biss',
+      b: 'Für immer nur brave Küsse',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Umarmt schlafen ohne Sex',
+      b: 'Sex ohne je zusammen zu schlafen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sex mit Musik in voller Lautstärke',
+      b: 'Mit den Nachrichten im Hintergrund',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deine Anzahl an Ex verraten',
+      b: 'Verraten, wer der Beste war',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Heute den Kellner anbaggern',
+      b: 'Ihm die Nummer auf den Bon schreiben',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Erstes Mal peinlich aber süß',
+      b: 'Perfekt aber mit dem Falschen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Tattoo, wo die Gruppe entscheidet',
+      b: 'Ein Piercing, wo die Gruppe will',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein 30-Sekunden-Kuss mit einem hier',
+      b: 'Zehn kurze Küsse mit zehn Fremden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Wissen, wer hier von dir träumt',
+      b: 'Wissen, wer dich nie küssen würde',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Sex im Zelt auf vollem Campingplatz',
+      b: 'Im Hotel mit Papierwänden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Urlaub nur für Singles',
+      b: 'Urlaub nur für Paare',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein perfekter Kuss pro Monat',
+      b: 'Mittelmäßige Küsse jeden Tag',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Wissen, was dein Schwarm denkt',
+      b: 'Er weiß alles, was du denkst',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Eine unvergessliche Nacht ohne mehr',
+      b: 'Zehn süße Dates ohne Funken',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nur umarmt schlafen',
+      b: 'Alles andere, aber kein Kuscheln',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dem Schwarm den Body Count sagen',
+      b: 'Den letzten heißen Chat zeigen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Partner, der sehr gut küsst',
+      b: 'Partner, der sehr gut schreibt',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Vor deinen Eltern flirten',
+      b: 'Vor deinem Ex flirten',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein freches Foto falsch erhalten',
+      b: 'Selbst eins falsch verschicken',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Mit Worten verführt werden',
+      b: 'Mit Blicken verführt werden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Wochenende Leidenschaft ohne Handy',
+      b: 'Eine Woche Flirt nur per Chat',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Erster Kuss beim ersten Date',
+      b: 'Erster Kuss nach einem Monat',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Immer wissen, wer dich ansieht',
+      b: 'Es nie wissen, aber oft angesehen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Ex, der jede Nacht schreibt',
+      b: 'Ein Schwarm, der nie schreibt',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Tanz mit dem Schwarm vor allen',
+      b: 'Candle-Light-Dinner in Stille',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den Chat mit dem Schwarm vorlesen',
+      b: 'Ihn jetzt auf Lautsprecher anrufen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Jeden Abend eine perfekte Massage',
+      b: 'Jeden Morgen Frühstück im Bett',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Jemandes bester Kuss sein',
+      b: 'Den besten Kuss deines Lebens',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nie mehr erste Dates',
+      b: 'Für immer nur erste Dates',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Immer zuerst "ich mag dich" sagen',
+      b: 'Immer warten, bis es gesagt wird',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Eine Playlist startet beim Flirten',
+      b: 'Eine Stimme kommentiert deine Dates',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dein Ex auf deiner Hochzeit',
+      b: 'Die Schwiegermutter im Honeymoon',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den ersten Kuss erneut sehen',
+      b: 'Dein Dating-Profil der Gruppe zeigen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Frost bei jedem "wir müssen reden"',
+      b: 'Es nie zu hören bekommen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Jeden Sommer ein Flirt',
+      b: 'Alle zehn Jahre echte Liebe',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Wissen, wie oft man über dich sprach',
+      b: 'Wissen, was gesagt wurde, nicht wer',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Küsse nur im Regen',
+      b: 'Küsse nur im Aufzug',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Jeden Morgen ein "guten Morgen"',
+      b: 'Jeden Abend eine "gute Nacht"',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Beim Flirten die Stimme verlieren',
+      b: 'Immer ein Wort zu viel sagen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nur tagsüber unwiderstehlich',
+      b: 'Nur nachts unwiderstehlich',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Blind Date von der Gruppe gewählt',
+      b: 'Ein Date von deinem Ex organisiert',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Mit dem Partner deines Schwarms essen',
+      b: 'Den ganzen Abend ihr Fahrer sein',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Lügen in der Liebe erkennen',
+      b: 'Nie als Erster lügen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Jahr ohne Küsse',
+      b: 'Ein Jahr ohne Umarmungen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dem Schwarm alles gestehen',
+      b: 'Es jetzt dem ganzen Raum gestehen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Berühmt für eine Liebesgeschichte',
+      b: 'Berühmt für einen Korb',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Mit deinem Ebenbild ausgehen',
+      b: 'Mit deinem Gegenteil ausgehen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dein Tagebuch beim Schwarm',
+      b: 'Dein Verlauf bei deinen Eltern',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein unvergesslicher geklauter Kuss',
+      b: 'Hundert höflich erbetene Küsse',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Immer desinteressiert wirken',
+      b: 'Immer zu interessiert wirken',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nur einmal Liebe auf ersten Blick',
+      b: 'Ständige Funken, nie erwidert',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Jede Woche Blumen im Büro',
+      b: 'Jeden Abend eine Liebesnachricht',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nur schriftlich super flirten',
+      b: 'Nur live super flirten',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Verknallt in einen aus der Gruppe',
+      b: 'Verknallt in einen Kollegen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Wissen, ob das erste Date gut wird',
+      b: 'Jedes erste Date wiederholen können',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Romantisches Date minutiös geplant',
+      b: 'Jedes Mal völlig improvisiert',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Partner, der super tanzt',
+      b: 'Ein Partner, der super kocht',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Für immer keine Eifersucht',
+      b: 'Doppelte Leidenschaft mit Eifersucht',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Von zwei Personen umworben werden',
+      b: 'Immer wählen, aber nie umworben',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dein Name in einem Liebeslied',
+      b: 'Dein Gesicht in einem viralen Video',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nur Dates beim Frühstück',
+      b: 'Nur Dates um Mitternacht',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Immer Händchen halten in der Stadt',
+      b: 'Nur privat, aber intensiv',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Alle deine Ex vergessen',
+      b: 'Alle deine Ex vergessen dich',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Filmkuss einmal im Jahr',
+      b: 'Normale Küsse, aber täglich',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Mit einem handgeschriebenen Brief',
+      b: 'Mit einer Rede vor allen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Den Tag deiner Verliebtheit kennen',
+      b: 'Nur den Namen kennen, nicht wann',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Empfindlich aber leidenschaftlich',
+      b: 'Entspannt aber lauwarm',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Deine erste Liebe neu erleben',
+      b: 'Die letzte vorher kennen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Beim Flirten schüchtern wirken',
+      b: 'Frech wirken, obwohl schüchtern',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Die Wahrheit über jedes Ende',
+      b: 'Es nie wissen, aber in Ruhe enden',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Perfektes Date vom Ex organisiert',
+      b: 'Ein Desaster mit dem Richtigen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Allen gefallen außer dem Schwarm',
+      b: 'Nur dem Schwarm gefallen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Nachrichten immer sofort gelesen',
+      b: 'Antwort garantiert in einer Minute',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Eine Nachricht pro Tag löschen',
+      b: 'Gelöschte Nachrichten lesen können',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Frecher Flirt nur am Dienstag',
+      b: 'Leichter Flirt jeden Tag',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Die Gruppe wählt dein nächstes Date',
+      b: 'Die Gruppe liest den letzten Chat',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ohne Warnung geküsst werden',
+      b: 'Jeden Kuss zehn Sekunden vorher ansagen',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein legendärer Single-Sommer',
+      b: 'Ein perfekter Winter als Paar',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Dein Schwarm sieht alle Storys',
+      b: 'Du siehst alles, was er ansieht',
+      tone: ContentTone.piccante,
+    ),
+    (
+      a: 'Ein Tanz mit dem Falschen',
+      b: 'Nie mehr ein langsamer Tanz',
+      tone: ContentTone.piccante,
+    ),
+    (a: 'Schlucken', b: 'Ausspucken', tone: ContentTone.cattivo),
+    (
+      a: 'Ein Jahr lang nur Oralsex',
+      b: 'Nie wieder Oralsex',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Oralsex geben', b: 'Oralsex bekommen', tone: ContentTone.cattivo),
+    (
+      a: '69 die ganze Nacht',
+      b: 'Nur klassischer Verkehr',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ihm beim Abspritzen zusehen',
+      b: 'Selbst schlucken',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Deepthroat', b: 'Nur sanft lecken', tone: ContentTone.cattivo),
+    (
+      a: 'Auf dem Gesicht abspritzen lassen',
+      b: 'Auf die Brust abspritzen lassen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Oralsex geführt werden',
+      b: 'Selbst das Tempo bestimmen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Oralsex im Auto',
+      b: 'Oralsex unter dem Tisch',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ihn zum Höhepunkt lecken',
+      b: 'Selbst geleckt werden',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Analsex geben', b: 'Analsex bekommen', tone: ContentTone.cattivo),
+    (
+      a: 'Ein Jahr nur Analsex',
+      b: 'Nie wieder Analsex',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Analsex zum ersten Mal',
+      b: 'Beim Klassiker bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Buttplug den ganzen Abend tragen',
+      b: 'Ganz darauf verzichten',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Rimming geben', b: 'Rimming bekommen', tone: ContentTone.cattivo),
+    (
+      a: 'Doppelte Penetration',
+      b: 'Nur eine Stelle gleichzeitig',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Analtraining mit Plugs',
+      b: 'Direkt ohne Vorbereitung',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Orgasmus hinauszögern',
+      b: 'Sofort kommen dürfen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Eine Woche Orgasmusverbot',
+      b: 'Jeden Tag zum Höhepunkt',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Edging bis zum Betteln',
+      b: 'Schneller Höhepunkt',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Ruined Orgasm', b: 'Voller Orgasmus', tone: ContentTone.cattivo),
+    (
+      a: 'Auf Kommando kommen müssen',
+      b: 'Kommen wann du willst',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Mehrere Orgasmen hintereinander',
+      b: 'Ein einziger intensiver',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Keuschheitskäfig für eine Woche',
+      b: 'Freier Zugang',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Orgasmus verweigert bekommen',
+      b: 'Immer erlaubt kommen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Vibrator beim Sex benutzen',
+      b: 'Nur Hände und Mund',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Fernbedienter Vibrator in der Öffentlichkeit',
+      b: 'Nur zu Hause',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Jahr nur mit Sexspielzeug',
+      b: 'Nie wieder Spielzeug',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Dildo benutzen lassen',
+      b: 'Nur echter Verkehr',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Penisring tragen', b: 'Ganz ohne', tone: ContentTone.cattivo),
+    (
+      a: 'Klitorissauger ausprobieren',
+      b: 'Beim klassischen Vibrator bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Analkette benutzen', b: 'Verzichten', tone: ContentTone.cattivo),
+    (
+      a: 'Melkmaschine ausprobieren',
+      b: 'Nur von Hand',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Gefesselt werden',
+      b: 'Den anderen fesseln',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Augen verbunden Sex haben',
+      b: 'Alles sehen',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Dominant sein', b: 'Unterwürfig sein', tone: ContentTone.cattivo),
+    (
+      a: 'Beim Sex versohlt werden',
+      b: 'Ganz sanft behandelt',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Mit Handschellen ans Bett',
+      b: 'Frei bewegen',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Ein Halsband tragen', b: 'Ohne Halsband', tone: ContentTone.cattivo),
+    (
+      a: 'Wachsspiel auf der Haut',
+      b: 'Nur Federn und Streicheln',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ausgepeitscht werden',
+      b: 'Nur leichtes Klapsen',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Geknebelt werden', b: 'Laut sein dürfen', tone: ContentTone.cattivo),
+    (a: 'Nippelklemmen tragen', b: 'Ganz ohne', tone: ContentTone.cattivo),
+    (
+      a: 'Komplette Kontrolle abgeben',
+      b: 'Immer die Kontrolle behalten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Als Sub einen Tag gehorchen',
+      b: 'Als Dom einen Tag befehlen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Impact Play mit Paddle',
+      b: 'Nur mit bloßer Hand',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Shibari-Fesselung tragen',
+      b: 'Frei bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Sex an den Haaren gezogen',
+      b: 'Ganz zärtlich',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Dreier mit zwei Fremden',
+      b: 'Beim Partner mit anderem zusehen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Dreier mit zwei Frauen',
+      b: 'Dreier mit zwei Männern',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'An einem Gruppensex teilnehmen',
+      b: 'Nur zusehen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Partnertausch für eine Nacht',
+      b: 'Treu bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex in einem Swingerclub',
+      b: 'Nur zu Hause allein',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Gangbang erleben', b: 'Nur zu zweit', tone: ContentTone.cattivo),
+    (
+      a: 'Zusehen wie dein Partner geleckt wird',
+      b: 'Selbst im Mittelpunkt stehen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Eine Orgie mit acht Leuten',
+      b: 'Ein intimes Date zu zweit',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Von zwei Menschen gleichzeitig verwöhnt',
+      b: 'Nur von einem',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Cuckold-Fantasie ausleben',
+      b: 'Streng monogam bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex am FKK-Strand',
+      b: 'Sex im dunklen Kino',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Quickie auf der Bürotoilette',
+      b: 'Nur zu Hause im Bett',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex auf dem Balkon bei Tageslicht',
+      b: 'Nur nachts drinnen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Erwischt werden riskieren',
+      b: 'Immer auf Nummer sicher',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex im fahrenden Zug',
+      b: 'Sex im geparkten Auto',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Im Umkleideraum ran', b: 'Erst zu Hause', tone: ContentTone.cattivo),
+    (a: 'Sex im Fahrstuhl', b: 'Sex im Treppenhaus', tone: ContentTone.cattivo),
+    (
+      a: 'Nackt vor dem Fenster zeigen',
+      b: 'Vorhänge zu',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex im Schwimmbad nach Schließung',
+      b: 'Nur in der Wanne daheim',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Handjob unter der Restaurantdecke',
+      b: 'Warten bis zu Hause',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Füße küssen und lecken',
+      b: 'Nur Hände halten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Dessous des Partners tragen',
+      b: 'Ganz nackt bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'High Heels beim Sex anbehalten',
+      b: 'Barfuß',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Latexanzug tragen', b: 'Nackte Haut', tone: ContentTone.cattivo),
+    (
+      a: 'Beim Sex angespuckt werden',
+      b: 'Nur geküsst werden',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Dirty Talk die ganze Zeit',
+      b: 'Komplett still',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Sex fotografiert werden',
+      b: 'Keine Aufnahmen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Sexvideo drehen',
+      b: 'Nichts festhalten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Am Nacken geknabbert werden',
+      b: 'Ganz zärtlich geküsst',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Strapse und Nylons tragen',
+      b: 'Ohne alles',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Mit verbundenen Händen essen lassen',
+      b: 'Selbst füttern',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Sex beobachtet werden',
+      b: 'Ganz privat bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Uniform-Fetisch ausleben',
+      b: 'Alltagskleidung',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sich gegenseitig rasieren',
+      b: 'Behaart bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Chef und Sekretärin spielen',
+      b: 'Fremde in einer Bar spielen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Arzt und Patientin spielen',
+      b: 'Lehrerin und Nachhilfe spielen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein unschuldiges Rollenspiel',
+      b: 'Ein dominantes Rollenspiel',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Als Fremde neu kennenlernen',
+      b: 'Als altes Paar spielen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Verführungsspiel mit Kostümen',
+      b: 'Ganz ohne Verkleidung',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Einen Massage-Salon nachspielen',
+      b: 'Direkt zur Sache',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Herr und Zofe spielen',
+      b: 'Auf Augenhöhe bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Fotoshooting-Rollenspiel',
+      b: 'Kein Skript',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Eine Fantasie beichten',
+      b: 'Dein Geheimnis behalten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Die wildeste Fantasie ausleben',
+      b: 'Nur davon träumen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Partner sucht dein Sexspielzeug aus',
+      b: 'Du entscheidest selbst',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein ganzes Wochenende nur Sex',
+      b: 'Ein Monat Enthaltsamkeit',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex mit Musik laut aufgedreht',
+      b: 'In völliger Stille',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim ersten Date direkt Sex',
+      b: 'Monate warten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Sexdate mit Unbekanntem übers Netz',
+      b: 'Nur mit Vertrauten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Deine Suchhistorie zeigen',
+      b: 'Für immer geheim halten',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Oben liegen', b: 'Unten liegen', tone: ContentTone.cattivo),
+    (a: 'Doggy Style', b: 'Reiten', tone: ContentTone.cattivo),
+    (
+      a: 'Sex im Stehen an der Wand',
+      b: 'Gemütlich im Bett',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Schneller harter Sex',
+      b: 'Langsam und zärtlich',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Morgens beim Aufwachen',
+      b: 'Mitten in der Nacht',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Sex im Dunkeln', b: 'Bei hellem Licht', tone: ContentTone.cattivo),
+    (
+      a: 'Rauer Quickie',
+      b: 'Stundenlanges Vorspiel',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Löffelchen-Stellung',
+      b: 'Missionarsstellung',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Auf dem Küchentisch', b: 'Auf dem Sofa', tone: ContentTone.cattivo),
+    (
+      a: 'Sex unter der heißen Dusche',
+      b: 'Im warmen Bett',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Eiswürfel auf der Haut',
+      b: 'Heißes Massageöl',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Am ganzen Körper geleckt',
+      b: 'Nur an einer Stelle',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sinnliche Ganzkörpermassage zuerst',
+      b: 'Sofort zur Sache',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Federkitzeln bis zum Betteln',
+      b: 'Direkt fester Griff',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ohren angehaucht bekommen',
+      b: 'Nur berührt werden',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Sex am Hals gebissen',
+      b: 'Sanft geküsst',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Laut stöhnen', b: 'Ganz leise bleiben', tone: ContentTone.cattivo),
+    (
+      a: 'Beim Höhepunkt den Namen rufen',
+      b: 'Still genießen',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Dominant führen', b: 'Sich fallen lassen', tone: ContentTone.cattivo),
+    (
+      a: 'Betteln müssen',
+      b: 'Alles verlangen dürfen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Eine Woche kein Höhepunkt erlaubt',
+      b: 'Jederzeit erlaubt',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Selbstbefriedigen zuschauen lassen',
+      b: 'Ganz privat für dich',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Gegenseitig masturbieren',
+      b: 'Nur der eine macht es',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sexting den ganzen Tag',
+      b: 'Erst am Abend real',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Nacktfotos schicken',
+      b: 'Nur persönlich zeigen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Duschen gemeinsam verwöhnen',
+      b: 'Getrennt duschen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Spanking mit der flachen Hand',
+      b: 'Nur streicheln',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Rollentausch der Machtpositionen',
+      b: 'Feste Rollen behalten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Sex Befehle geben',
+      b: 'Befehle empfangen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Safeword vereinbaren',
+      b: 'Ganz ohne Grenzen spielen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sensory Deprivation mit Maske',
+      b: 'Alle Sinne offen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Mit Kerzenwachs bemalt werden',
+      b: 'Nur mit Ölen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Am Bettpfosten festgebunden',
+      b: 'Frei bewegen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Rollenspiel als Sklave',
+      b: 'Als Herrscher befehlen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Mit einem Ex noch einmal',
+      b: 'Mit einem Fremden zum ersten Mal',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex mit dem besten Freund des Partners',
+      b: 'Streng nur zu zweit',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Voyeurismus ausleben',
+      b: 'Exhibitionismus ausleben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Paar zu euch einladen',
+      b: 'Für euch bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Gemeinsam Pornos schauen',
+      b: 'Lieber allein',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Eine Nacht offene Beziehung',
+      b: 'Für immer treu',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sperma über den ganzen Körper',
+      b: 'Alles schlucken',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Cremepie erleben', b: 'Immer mit Kondom', tone: ContentTone.cattivo),
+    (
+      a: 'Squirting erleben',
+      b: 'Klassischer Orgasmus',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Facesitting geben',
+      b: 'Facesitting empfangen',
+      tone: ContentTone.cattivo,
+    ),
+    (a: 'Ganz ohne Kondom', b: 'Immer mit Schutz', tone: ContentTone.cattivo),
+    (
+      a: 'Nach dem Sex sofort noch eine Runde',
+      b: 'Kuscheln und schlafen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Sex komplett angezogen bleiben',
+      b: 'Sofort alles ausziehen',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Deinen geheimsten Wunsch flüstern',
+      b: 'Für dich behalten',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Sex nur mit Blickkontakt',
+      b: 'Von hinten ohne Blick',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Beim Höhepunkt in die Augen sehen',
+      b: 'Den Blick abwenden',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Aphrodisiaka ausprobieren',
+      b: 'Ganz natürlich bleiben',
+      tone: ContentTone.cattivo,
+    ),
+    (
+      a: 'Ein Tantra-Ritual üben',
+      b: 'Schnell und direkt',
+      tone: ContentTone.cattivo,
+    ),
+  ];
 }

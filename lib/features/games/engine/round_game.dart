@@ -81,14 +81,9 @@ class RoundGameState {
 /// Punti da assegnare al reveal: id giocatore -> punti.
 typedef ScoreAwards = Map<String, int>;
 
-/// Motore comune ai giochi a round.
-///
-/// Fa tre cose che prima erano sparse nelle singole schermate:
-/// tiene il round corrente allineato fra tutti i telefoni, gestisce il voto
-/// locale (azzerandolo al cambio di round — era il bug per cui dal secondo
-/// round in poi l'opzione risultava già scelta) e, sul telefono dell'host,
-/// porta avanti la partita: crea i round, chiude le votazioni quando hanno
-/// votato tutti o allo scadere del tempo, assegna i punti, finisce la partita.
+/// Motore comune ai giochi a round: allinea il round fra i telefoni, gestisce
+/// il voto locale (azzerandolo al cambio round) e, sull'host, porta avanti la
+/// partita — crea i round, chiude le votazioni, assegna i punti, termina.
 class RoundGame extends ConsumerStatefulWidget {
   const RoundGame({
     required this.room,
@@ -156,14 +151,12 @@ class _RoundGameState extends ConsumerState<RoundGame> {
   bool _creatingRound = false;
   int? _lastRequestedNumber;
 
-  /// Ultimo stato visto da `_drive`: il timer di scadenza legge questo invece
-  /// dello stato catturato alla sua creazione, altrimenti chiuderebbe il round
-  /// con i voti fotografati al primo build (quasi sempre zero) e i giochi che
-  /// assegnano punti al reveal non li darebbero mai sui round scaduti.
+  /// Ultimo stato visto da `_drive`: il timer di scadenza legge questo, non lo
+  /// stato catturato alla creazione, altrimenti chiuderebbe il round con i voti
+  /// del primo build (quasi sempre zero) e i punti da reveal andrebbero persi.
   RoundGameState? _latestState;
 
-  /// Voto toccato su questo telefono e non ancora tornato dal server.
-  /// È legato al round: cambiando round si azzera da solo.
+  /// Voto toccato qui e non ancora confermato dal server; legato al round.
   final _pending = PendingVote();
 
   @override
@@ -191,11 +184,9 @@ class _RoundGameState extends ConsumerState<RoundGame> {
         : ref.watch(votesProvider(round.id)).value ?? const <Vote>[];
 
     if (round == null) {
-      // In modalità Mix il gioco cambia a ogni round: la numerazione prosegue
-      // da dove l'ha lasciata il gioco precedente, non riparte da 1.
+      // In Mix il gioco cambia a ogni round ma la numerazione prosegue.
       final nextNumber = (latest?.roundNumber ?? 0) + 1;
-      // Senza giocatori (lista ancora in caricamento) il round non si crea:
-      // nascerebbe senza narratore/bersaglio e resterebbe morto.
+      // Senza giocatori (lista in caricamento) il round nascerebbe morto.
       if (isHost && players.isNotEmpty) _createRound(room, players, nextNumber);
       return GameScaffold(
         title: widget.title,
@@ -245,8 +236,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
       child: Column(
         children: [
           Expanded(
-            // Il passaggio voto → risultato è il momento della schermata:
-            // una sola transizione, curata, invece di tante animazioni sparse.
+            // Un'unica transizione voto → risultato per tutte le schermate.
             child: AnimatedSwitcher(
               duration: const Duration(milliseconds: 320),
               switchInCurve: Curves.easeOutCubic,
@@ -304,7 +294,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
     );
   }
 
-  // ------------------------------------------------------------- motore host
+  // Motore host: eseguito solo sul telefono dell'host.
 
   void _drive(RoundGameState state) {
     _latestState = state;
@@ -328,6 +318,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
     if (_timerRoundId != round.id) {
       _revealTimer?.cancel();
       _timerRoundId = round.id;
+      // NB: usa l'orologio del dispositivo; un clock sfasato chiude in anticipo.
       final remaining = state.deadline.difference(DateTime.now().toUtc());
       _revealTimer = Timer(
         remaining.isNegative ? Duration.zero : remaining,
@@ -341,8 +332,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
     }
   }
 
-  /// Avanti di un round. In Mix cambia anche gioco: basta cambiare
-  /// `active_game`, il nuovo schermo crea il round proseguendo la numerazione.
+  /// Avanti di un round; in Mix cambia anche gioco cambiando `active_game`.
   Future<void> _advance(Room room, List<Player> players, Round round) async {
     if (room.mode.rotatesGames) {
       final next = GameCatalog.randomPlayable(exclude: widget.gameId);
@@ -356,17 +346,15 @@ class _RoundGameState extends ConsumerState<RoundGame> {
 
   Future<void> _createRound(Room room, List<Player> players, int number) async {
     if (_creatingRound) return;
-    // Fra la creazione del round e il suo arrivo via Realtime passa qualche
-    // decina di millisecondi: senza questo controllo una ricostruzione in
-    // mezzo creerebbe lo stesso round due volte.
+    // Evita di ricreare lo stesso round durante i ~ms tra la creazione e
+    // l'arrivo via Realtime.
     if (_lastRequestedNumber != null && number <= _lastRequestedNumber!) return;
     _lastRequestedNumber = number;
     _creatingRound = true;
     try {
       final repo = ref.read(gameRepositoryProvider);
-      // Il numero vero lo dice il database: `latest` può essere un round della
-      // partita precedente, già cancellato da start_game ma non ancora
-      // scomparso dalla cache locale.
+      // Il numero vero lo dà il database: `latest` può essere un round della
+      // partita precedente ancora in cache.
       final actualNumber = await repo.nextRoundNumber(room.id);
       final used = await repo.usedPoolIndexes(
         roomId: room.id,
@@ -393,8 +381,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
       }
     } catch (e) {
       _snack(_t('game.create_failed', {'detail': '$e'}));
-      // Piccola pausa prima di riarmare il tentativo: senza, un errore
-      // persistente farebbe girare a vuoto crea → fallisci → ricrea.
+      // Backoff: senza, un errore persistente farebbe girare crea → fallisci → ricrea.
       await Future<void>.delayed(const Duration(seconds: 2));
       _lastRequestedNumber = null;
     } finally {
@@ -402,8 +389,8 @@ class _RoundGameState extends ConsumerState<RoundGame> {
     }
   }
 
-  /// Assegna i punti (se il gioco ne ha) e poi svela: in quest'ordine, perché
-  /// la RPC dei punti accetta solo round ancora aperti.
+  /// Assegna i punti e poi svela, in quest'ordine: la RPC dei punti accetta
+  /// solo round ancora aperti.
   Future<void> _closeRound(RoundGameState state) async {
     if (_closingRoundId == state.round.id) return;
     _closingRoundId = state.round.id;
@@ -413,7 +400,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
       if (awards != null && awards.isNotEmpty) {
         await repo.awardPoints(roundId: state.round.id, awards: awards);
       }
-      // I giochi che calcolano i punti sul server svelano da soli il round.
+      // I giochi con punteggio sul server svelano da sé il round.
       if (widget.onClose case final onClose?) {
         await onClose(state);
       } else {
@@ -437,8 +424,7 @@ class _RoundGameState extends ConsumerState<RoundGame> {
           .read(gameRepositoryProvider)
           .castVote(roundId: round.id, playerId: me.id, value: value);
     } catch (e) {
-      // Si azzera solo il voto di questo round: se nel frattempo il round è
-      // cambiato, il voto in sospeso appartiene già a quello nuovo.
+      // Azzera solo il voto di questo round, non quello di un round già cambiato.
       if (mounted) setState(() => _pending.clearRound(round.id));
       _snack(_t('game.vote_failed', {'detail': '$e'}));
     }
