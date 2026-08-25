@@ -86,7 +86,7 @@ class _Voting extends StatelessWidget {
         const SizedBox(height: 18),
         RiseIn(
           child: Text(
-            state.content['text'] as String? ?? '—',
+            GameContent.chiLoPotrebbeFareText(t.locale, state.content),
             textAlign: TextAlign.center,
             style: text.headlineMedium?.copyWith(height: 1.25),
           ),
@@ -204,7 +204,7 @@ class _Result extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            state.content['text'] as String? ?? '—',
+            GameContent.chiLoPotrebbeFareText(t.locale, state.content),
             textAlign: TextAlign.center,
             style: text.titleLarge?.copyWith(height: 1.3),
           ),

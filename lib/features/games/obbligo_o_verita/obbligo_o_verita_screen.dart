@@ -247,10 +247,17 @@ class _Result extends StatelessWidget {
 
     final isObbligo = choice == 'obbligo';
     final color = isObbligo ? JoyoColors.coral : JoyoColors.aqua;
-    final task =
-        (isObbligo ? state.content['obbligo'] : state.content['verita'])
-            as String? ??
-        '—';
+    // La frase esce nella lingua di questo telefono: l'host ha trasmesso solo
+    // l'indice del pool e il tono è quello della stanza, uguale per tutti.
+    final tone = state.room.mode.primaryTone;
+    final task = isObbligo
+        ? GameContent.obbligoText(t.locale, tone, state.content)
+        : GameContent.veritaText(
+            t.locale,
+            tone,
+            state.content,
+            ObbligoOVeritaScreen.veritaOffset,
+          );
 
     return SingleChildScrollView(
       child: Column(

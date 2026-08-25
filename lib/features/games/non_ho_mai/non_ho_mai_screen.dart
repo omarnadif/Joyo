@@ -75,7 +75,7 @@ class _Voting extends StatelessWidget {
                     Eyebrow(t('non_ho_mai.prompt'), color: JoyoColors.coral),
                     const SizedBox(height: 14),
                     Text(
-                      state.content['text'] as String? ?? '—',
+                      GameContent.nonHoMaiText(t.locale, state.content),
                       textAlign: TextAlign.center,
                       style: text.headlineLarge?.copyWith(height: 1.25),
                     ),
@@ -189,7 +189,7 @@ class _Result extends StatelessWidget {
           Eyebrow(t('non_ho_mai.prompt'), color: JoyoColors.coral),
           const SizedBox(height: 10),
           Text(
-            state.content['text'] as String? ?? '—',
+            GameContent.nonHoMaiText(t.locale, state.content),
             textAlign: TextAlign.center,
             style: text.titleLarge?.copyWith(height: 1.3),
           ),

@@ -8,6 +8,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
 import '../../room/data/models/player.dart';
 import '../../room/data/models/room.dart';
+import '../content/game_content.dart';
 import '../engine/round_game.dart';
 import '../widgets/player_chip.dart';
 import 'preferisci_pool.dart';
@@ -63,6 +64,9 @@ class _Voting extends StatelessWidget {
   Widget build(BuildContext context) {
     final text = Theme.of(context).textTheme;
     final choice = state.myValue?['choice'] as String?;
+    // La coppia esce nella lingua di questo telefono: l'host trasmette solo
+    // l'indice del pool, allineato 1:1 in tutte le lingue.
+    final pair = GameContent.preferisciPair(t.locale, state.content);
 
     return Column(
       children: [
@@ -79,7 +83,7 @@ class _Voting extends StatelessWidget {
                 children: [
                   RiseIn(
                     child: _OptionCard(
-                      label: state.content['a'] as String? ?? '—',
+                      label: pair.a,
                       color: JoyoColors.lime,
                       selected: choice == 'a',
                       dimmed: choice == 'b',
@@ -99,7 +103,7 @@ class _Voting extends StatelessWidget {
                   RiseIn(
                     delayMs: 90,
                     child: _OptionCard(
-                      label: state.content['b'] as String? ?? '—',
+                      label: pair.b,
                       color: JoyoColors.coral,
                       selected: choice == 'b',
                       dimmed: choice == 'a',
@@ -176,6 +180,7 @@ class _Result extends StatelessWidget {
     final votersB = state.votersWhere((v) => v.value['choice'] == 'b');
     final total = votersA.length + votersB.length;
     final fractionA = total == 0 ? 0.5 : votersA.length / total;
+    final pair = GameContent.preferisciPair(t.locale, state.content);
 
     return SingleChildScrollView(
       child: Column(
@@ -188,7 +193,7 @@ class _Result extends StatelessWidget {
           ),
           const SizedBox(height: 18),
           _Side(
-            label: state.content['a'] as String? ?? '—',
+            label: pair.a,
             color: JoyoColors.lime,
             voters: votersA,
             total: total,
@@ -197,7 +202,7 @@ class _Result extends StatelessWidget {
           _SplitBar(fractionA: fractionA),
           const SizedBox(height: 12),
           _Side(
-            label: state.content['b'] as String? ?? '—',
+            label: pair.b,
             color: JoyoColors.coral,
             voters: votersB,
             total: total,

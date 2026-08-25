@@ -112,6 +112,7 @@ class GameRepository {
     required int roundNumber,
     required String word,
     required int wordIndex,
+    required List<String> answers,
     required int discussionSeconds,
   }) async => await _client.rpc(
     'start_impostore_round',
@@ -120,6 +121,8 @@ class GameRepository {
       'p_round_number': roundNumber,
       'p_word': word,
       'p_word_index': wordIndex,
+      // La parola in tutte le lingue: l'impostore può indovinarla nella sua.
+      'p_answers': answers,
       'p_discussion': discussionSeconds,
     },
   );

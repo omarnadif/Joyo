@@ -1,9 +1,11 @@
 import '../../../core/i18n/app_locale.dart';
+import '../content_tone.dart';
 import '../bluff_story/bluff_story_pool.dart';
 import '../chi_lo_potrebbe_fare/chi_lo_potrebbe_fare_pool.dart';
 import '../impostore/impostore_words.dart';
 import '../non_ho_mai/non_ho_mai_pool.dart';
 import '../obbligo_o_verita/obbligo_o_verita_pool.dart';
+import '../preferisci/preferisci_pool.dart';
 import 'content_de.dart';
 import 'content_en.dart';
 import 'content_es.dart';
@@ -75,4 +77,103 @@ class GameContent {
     AppLocale.fr => ContentFr.impostoreWords,
     AppLocale.de => ContentDe.impostoreWords,
   };
+
+  // ---------------------------------------------------------------------------
+  // Localizzazione del round nella lingua di CHI guarda, non di chi l'ha creato.
+  //
+  // L'host, creando il round, ci mette dentro l'indice del pool (`i`, e `i2`
+  // per la verità di Obbligo o verità). Dove i pool sono tradotti 1:1 in pari
+  // ordine, la stessa frase sta alla stessa posizione in tutte le lingue: ogni
+  // telefono pesca la propria traduzione dallo stesso indice e un gruppo con
+  // lingue diverse gioca sulla stessa frase, ognuno leggendola nella sua.
+  //
+  // ATTENZIONE: oggi solo il blocco `soft` (modalità Normale) è allineato 1:1
+  // fra tutte le lingue. Le sezioni piccante/cattivo sono ancora banche di
+  // domande scritte per lingua, con contenuti diversi allo stesso indice: lì
+  // NON si può localizzare per indice, altrimenti il gruppo voterebbe frasi
+  // diverse. Finché non sono riallineate, localizziamo solo le voci `soft` e
+  // per il resto restiamo sul testo trasmesso dall'host (che tutti vedono
+  // uguale). Impostore e Bluff Story hanno pool allineati e si localizzano
+  // sempre. Il test `content_parity_test` presidia l'allineamento del soft.
+  //
+  // Fallback sul testo dell'host anche quando l'indice manca, è fuori pool o il
+  // contenuto è generato dall'AI (`i == -1`).
+  // ---------------------------------------------------------------------------
+
+  static int? _poolIndex(Map<String, dynamic> content, [String key = 'i']) {
+    final raw = (content[key] as num?)?.toInt();
+    return (raw == null || raw < 0) ? null : raw;
+  }
+
+  // Gli indici `soft` coincidono in tutte le lingue (lo garantisce il test di
+  // parità): se la voce locale a quell'indice è soft, è la traduzione 1:1
+  // dell'italiano e si può mostrare; altrimenti siamo nella zona non allineata.
+  static bool _softAligned(String tone) => tone == ContentTone.soft;
+
+  static String nonHoMaiText(AppLocale locale, Map<String, dynamic> content) {
+    final pool = nonHoMai(locale);
+    final i = _poolIndex(content);
+    return (i != null && i < pool.length && _softAligned(pool[i].tone))
+        ? pool[i].text
+        : content['text'] as String? ?? '—';
+  }
+
+  static String chiLoPotrebbeFareText(
+    AppLocale locale,
+    Map<String, dynamic> content,
+  ) {
+    final pool = chiLoPotrebbeFare(locale);
+    final i = _poolIndex(content);
+    return (i != null && i < pool.length && _softAligned(pool[i].tone))
+        ? pool[i].text
+        : content['text'] as String? ?? '—';
+  }
+
+  static String obbligoText(
+    AppLocale locale,
+    String tone,
+    Map<String, dynamic> content,
+  ) {
+    final pool = obblighi(locale, tone);
+    final i = _poolIndex(content);
+    return (i != null && i < pool.length && _softAligned(tone))
+        ? pool[i]
+        : content['obbligo'] as String? ?? '—';
+  }
+
+  /// La verità usa `i2`, che è già sfalsato di [veritaOffset] rispetto
+  /// all'indice reale del pool (serve all'host per non ripescare la stessa).
+  static String veritaText(
+    AppLocale locale,
+    String tone,
+    Map<String, dynamic> content,
+    int veritaOffset,
+  ) {
+    final pool = verita(locale, tone);
+    final raw = (content['i2'] as num?)?.toInt();
+    final i = raw == null ? null : raw - veritaOffset;
+    return (i != null && i >= 0 && i < pool.length && _softAligned(tone))
+        ? pool[i]
+        : content['verita'] as String? ?? '—';
+  }
+
+  static String impostoreWord(AppLocale locale, Map<String, dynamic> content) {
+    final pool = impostoreWords(locale);
+    final i = _poolIndex(content);
+    return (i != null && i < pool.length)
+        ? pool[i]
+        : content['word'] as String? ?? '—';
+  }
+
+  static ({String a, String b}) preferisciPair(
+    AppLocale locale,
+    Map<String, dynamic> content,
+  ) {
+    final pool = PreferisciPool.entries(locale);
+    final i = _poolIndex(content);
+    if (i != null && i < pool.length && _softAligned(pool[i].tone)) {
+      return (a: pool[i].a, b: pool[i].b);
+    }
+    return (a: content['a'] as String? ?? '—', b: content['b'] as String? ?? '—');
+  }
 }

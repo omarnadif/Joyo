@@ -84,6 +84,45 @@ void main() {
     });
   }
 
+  // Allineamento posizionale: il cross-lingua nelle stanze si regge su questo.
+  // L'host trasmette solo l'indice della frase; ogni telefono pesca la propria
+  // traduzione allo stesso indice. Perché l'indice punti alla stessa frase in
+  // ogni lingua, i pool tradotti devono avere lo stesso ORDINE, non solo le
+  // stesse quantità.
+  //
+  // Stato attuale: il blocco `soft` è allineato ovunque; le sezioni piccante e
+  // cattivo di alcune lingue sono ancora contenuti autonomi (non traduzioni 1:1
+  // in pari ordine). Finché non sono riallineate, la localizzazione per indice è
+  // sicura solo sul soft: qui verifichiamo quella garanzia, così un futuro
+  // disallineamento del soft non passa inosservato.
+  List<int> softIndexes(List<({String text, String tone})> pool) =>
+      [for (var i = 0; i < pool.length; i++) if (pool[i].tone == ContentTone.soft) i];
+  List<int> preferisciSoftIndexes(AppLocale locale) => [
+    for (var i = 0; i < PreferisciPool.entries(locale).length; i++)
+      if (PreferisciPool.entries(locale)[i].tone == ContentTone.soft) i,
+  ];
+
+  for (final locale in AppLocale.values) {
+    if (locale == ref) continue;
+    test('${locale.label}: blocco soft allineato all\'italiano', () {
+      expect(
+        softIndexes(GameContent.nonHoMai(locale)),
+        softIndexes(GameContent.nonHoMai(ref)),
+        reason: 'Non ho mai: soft disallineato',
+      );
+      expect(
+        softIndexes(GameContent.chiLoPotrebbeFare(locale)),
+        softIndexes(GameContent.chiLoPotrebbeFare(ref)),
+        reason: 'Chi lo potrebbe fare: soft disallineato',
+      );
+      expect(
+        preferisciSoftIndexes(locale),
+        preferisciSoftIndexes(ref),
+        reason: 'Preferisci: soft disallineato',
+      );
+    });
+  }
+
   // Soglia minima: nessun tono deve restare mezzo vuoto, in nessuna lingua.
   test('ogni tono ha un pool pieno', () {
     for (final locale in AppLocale.values) {

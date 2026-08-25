@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/i18n/app_locale.dart';
 import '../../../core/i18n/i18n.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
@@ -46,11 +47,17 @@ class ImpostoreScreen extends ConsumerWidget {
       roundCreator: (ctx) async {
         final words = GameContent.impostoreWords(locale);
         final index = pickPoolIndex(ctx.usedIndexes, words.length, Random());
+        // La parola in tutte le lingue (i pool sono allineati 1:1): serve al
+        // server per accettare l'ipotesi dell'impostore in qualsiasi lingua.
+        final answers = [
+          for (final l in AppLocale.values) GameContent.impostoreWords(l)[index],
+        ];
         await ctx.repository.startImpostoreRound(
           roomId: ctx.room.id,
           roundNumber: ctx.roundNumber,
           word: words[index],
           wordIndex: index,
+          answers: answers,
           discussionSeconds: discussionSeconds,
         );
       },
@@ -122,9 +129,21 @@ class _PlayingState extends ConsumerState<_Playing> {
         .value;
     final phase = _phase(state);
 
+    // La parola esce nella lingua di questo telefono: l'host trasmette solo
+    // l'indice del pool (`content['i']`), i pool sono allineati 1:1. Resta
+    // nascosta all'impostore, che nel suo segreto non ha la parola.
+    final word = (secret != null && secret['impostor'] != true)
+        ? GameContent.impostoreWord(t.locale, state.content)
+        : null;
+
     return switch (phase) {
-      _Phase.secret => _SecretCard(secret: secret, t: t),
-      _Phase.discussion => _Discussion(state: state, secret: secret, t: t),
+      _Phase.secret => _SecretCard(secret: secret, word: word, t: t),
+      _Phase.discussion => _Discussion(
+        state: state,
+        secret: secret,
+        word: word,
+        t: t,
+      ),
       _Phase.vote => _Vote(
         state: state,
         secret: secret,
@@ -136,9 +155,12 @@ class _PlayingState extends ConsumerState<_Playing> {
 }
 
 class _SecretCard extends StatelessWidget {
-  const _SecretCard({required this.secret, required this.t});
+  const _SecretCard({required this.secret, required this.word, required this.t});
 
   final Map<String, dynamic>? secret;
+
+  /// Parola già tradotta nella lingua di chi guarda; null per l'impostore.
+  final String? word;
   final Translator t;
 
   @override
@@ -152,7 +174,6 @@ class _SecretCard extends StatelessWidget {
     }
 
     final isImpostor = secret!['impostor'] == true;
-    final word = secret!['word'] as String?;
 
     final accent = isImpostor ? JoyoColors.coral : JoyoColors.lime;
 
@@ -221,11 +242,15 @@ class _Discussion extends ConsumerWidget {
   const _Discussion({
     required this.state,
     required this.secret,
+    required this.word,
     required this.t,
   });
 
   final RoundGameState state;
   final Map<String, dynamic>? secret;
+
+  /// Parola già tradotta nella lingua di chi guarda; null per l'impostore.
+  final String? word;
   final Translator t;
 
   @override
@@ -276,9 +301,7 @@ class _Discussion extends ConsumerWidget {
                   child: Text(
                     isImpostor
                         ? t('impostore.you_are')
-                        : t('impostore.your_word', {
-                            'word': '${secret?['word'] ?? '—'}',
-                          }),
+                        : t('impostore.your_word', {'word': word ?? '—'}),
                     style: text.titleMedium?.copyWith(
                       color: isImpostor ? JoyoColors.coral : JoyoColors.lime,
                     ),
@@ -449,7 +472,9 @@ class _Result extends StatelessWidget {
     final text = Theme.of(context).textTheme;
     final impostorId = state.content['impostor'] as String?;
     final impostor = impostorId == null ? null : state.playerById(impostorId);
-    final word = state.content['word'] as String?;
+    // La parola svelata esce nella lingua di questo telefono (dall'indice),
+    // non in quella dell'host che ha lanciato il round.
+    final word = GameContent.impostoreWord(t.locale, state.content);
     final caught = state.content['caught'] == true;
     final guessOk = state.content['guess_ok'] == true;
     final guess = state.content['guess'] as String?;
@@ -489,7 +514,7 @@ class _Result extends StatelessWidget {
                 Eyebrow(t('impostore.word_was')),
                 const SizedBox(height: 8),
                 Text(
-                  word ?? '—',
+                  word,
                   style: text.headlineMedium?.copyWith(color: JoyoColors.lime),
                 ),
                 if (guess != null && guess.trim().isNotEmpty) ...[
