@@ -2569,7 +2569,7 @@ class ContentIt {
       tone: ContentTone.hot,
     ),
     (text: 'Chi ingoierebbe senza farsi problemi?', tone: ContentTone.hot),
-    (text: 'Chi e più bravo con la bocca?', tone: ContentTone.hot),
+    (text: 'Chi è più bravo con la bocca?', tone: ContentTone.hot),
     (text: 'Chi rifiuterebbe sempre di ingoiare?', tone: ContentTone.hot),
     (
       text: 'Chi adora ricevere sesso orale più di ogni altra cosa?',
@@ -6002,7 +6002,7 @@ class ContentIt {
           tone: ContentTone.hot,
         ),
         (
-          a: 'Farti mordere il labbro fino a farlo',
+          a: 'Farti mordere il labbro fino a farlo sanguinare',
           b: 'Mordergli il collo con foga',
           tone: ContentTone.hot,
         ),
