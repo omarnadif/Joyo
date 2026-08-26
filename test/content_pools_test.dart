@@ -1,6 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:joyo/core/i18n/app_locale.dart';
-import 'package:joyo/content/content_it.dart';
+import 'package:joyo/content/ita/content_it_bluff.dart';
+import 'package:joyo/content/ita/content_it_chi_lo_potrebbe_fare.dart';
+import 'package:joyo/content/ita/content_it_impostore.dart';
+import 'package:joyo/content/ita/content_it_non_ho_mai.dart';
+import 'package:joyo/content/ita/content_it_preferisci.dart';
 import 'package:joyo/features/games/content/game_content.dart';
 import 'package:joyo/features/games/game_mode.dart';
 import 'package:joyo/content/content_tone.dart';
@@ -29,34 +33,34 @@ void main() {
 
   group('Preferisci', () {
     checkList('coppie italiane (a)', [
-      for (final p in ContentIt.preferisciPairs) p.a,
+      for (final p in ContentItPreferisci.preferisciPairs) p.a,
     ], 100);
   });
 
   group('Non ho mai', () {
-    checkList('frasi', [for (final e in ContentIt.nonHoMai) e.text], 150);
+    checkList('frasi', [for (final e in ContentItNonHoMai.nonHoMai) e.text], 150);
 
     test('sono presenti entrambi i toni previsti', () {
-      final tones = ContentIt.nonHoMai.map((e) => e.tone).toSet();
+      final tones = ContentItNonHoMai.nonHoMai.map((e) => e.tone).toSet();
       expect(tones, contains(ContentTone.normal));
       expect(tones, contains(ContentTone.mix));
     });
 
     test('una stanza normal non vede mai contenuti mix', () {
       final allowed = ContentTone.indexesFor(
-        ContentIt.nonHoMai,
+        ContentItNonHoMai.nonHoMai,
         ContentTone.normal,
         (e) => e.tone,
       );
       expect(allowed, isNotEmpty);
       for (final index in allowed) {
-        expect(ContentIt.nonHoMai[index].tone, ContentTone.normal);
+        expect(ContentItNonHoMai.nonHoMai[index].tone, ContentTone.normal);
       }
     });
 
     test('una stanza mix vede anche i contenuti normal', () {
       final allowed = ContentTone.indexesFor(
-        ContentIt.nonHoMai,
+        ContentItNonHoMai.nonHoMai,
         ContentTone.mix,
         (e) => e.tone,
       );
@@ -65,7 +69,7 @@ void main() {
         allowed.length,
         greaterThan(
           ContentTone.indexesFor(
-            ContentIt.nonHoMai,
+            ContentItNonHoMai.nonHoMai,
             ContentTone.normal,
             (e) => e.tone,
           ).length,
@@ -76,11 +80,11 @@ void main() {
 
   group('Chi lo potrebbe fare', () {
     checkList('domande', [
-      for (final e in ContentIt.chiLoPotrebbeFare) e.text,
+      for (final e in ContentItChiLoPotrebbeFare.chiLoPotrebbeFare) e.text,
     ], 150);
 
     test('sono tutte domande', () {
-      for (final entry in ContentIt.chiLoPotrebbeFare) {
+      for (final entry in ContentItChiLoPotrebbeFare.chiLoPotrebbeFare) {
         expect(entry.text.endsWith('?'), isTrue, reason: entry.text);
       }
     });
@@ -100,7 +104,7 @@ void main() {
   });
 
   group('Bluff Story', () {
-    checkList('bugie generiche', ContentIt.bluffFakes, 100);
+    checkList('bugie generiche', ContentItBluff.bluffFakes, 100);
   });
 
   group('tutte le lingue', () {
@@ -211,10 +215,10 @@ void main() {
   });
 
   group('Impostore', () {
-    checkList('parole segrete', ContentIt.impostoreWords, 50);
+    checkList('parole segrete', ContentItImpostore.impostoreWords, 50);
 
     test('sono parole brevi, dicibili in un giro di tavolo', () {
-      for (final word in ContentIt.impostoreWords) {
+      for (final word in ContentItImpostore.impostoreWords) {
         expect(word.length, lessThanOrEqualTo(20), reason: word);
       }
     });

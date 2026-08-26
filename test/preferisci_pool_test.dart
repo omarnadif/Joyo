@@ -4,12 +4,12 @@ import 'package:joyo/content/content_de.dart';
 import 'package:joyo/content/content_en.dart';
 import 'package:joyo/content/content_es.dart';
 import 'package:joyo/content/content_fr.dart';
-import 'package:joyo/content/content_it.dart';
+import 'package:joyo/content/ita/content_it_preferisci.dart';
 import 'package:joyo/features/games/content/game_content.dart';
 import 'package:joyo/content/content_tone.dart';
 
 List<({String a, String b})> _pairs(AppLocale locale) => switch (locale) {
-  AppLocale.it => ContentIt.preferisciPairs,
+  AppLocale.it => ContentItPreferisci.preferisciPairs,
   AppLocale.en => ContentEn.preferisciPairs,
   AppLocale.es => ContentEs.preferisciPairs,
   AppLocale.fr => ContentFr.preferisciPairs,
@@ -55,8 +55,8 @@ void main() {
   }
 
   test('il mazzo Hot italiano esiste e ha solo toni mix/hot', () {
-    expect(ContentIt.preferisciHot.length, greaterThanOrEqualTo(20));
-    for (final pair in ContentIt.preferisciHot) {
+    expect(ContentItPreferisci.preferisciHot.length, greaterThanOrEqualTo(20));
+    for (final pair in ContentItPreferisci.preferisciHot) {
       expect(
         pair.tone == ContentTone.mix || pair.tone == ContentTone.hot,
         isTrue,

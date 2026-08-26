@@ -4,21 +4,29 @@ import 'package:joyo/content/content_de.dart';
 import 'package:joyo/content/content_en.dart';
 import 'package:joyo/content/content_es.dart';
 import 'package:joyo/content/content_fr.dart';
-import 'package:joyo/content/content_it.dart';
+import 'package:joyo/content/ita/content_it_bluff.dart';
+import 'package:joyo/content/ita/content_it_chi_lo_potrebbe_fare.dart';
+import 'package:joyo/content/ita/content_it_impostore.dart';
+import 'package:joyo/content/ita/content_it_non_ho_mai.dart';
+import 'package:joyo/content/ita/content_it_obbligo_o_verita.dart';
+import 'package:joyo/content/ita/content_it_preferisci.dart';
 
 /// Punto unico da cui i giochi prendono i contenuti nella lingua del gruppo.
 ///
-/// Ogni lingua ha un solo file (`content_xx.dart`) con tutti i giochi.
-/// L'italiano è la lingua di partenza; le altre quattro hanno la parità
-/// completa (stesse quantità per ogni gioco e tono, tradotte 1:1 dai pool
-/// italiani). Ampliarle significa aggiungere righe a `content_xx.dart`,
-/// senza toccare il resto dell'app.
+/// Le altre quattro lingue hanno un solo file (`content_xx.dart`) con tutti
+/// i giochi; l'italiano, essendo la lingua di partenza e la più ricca, è
+/// diviso per gioco dentro `content/ita/` (`content_it_non_ho_mai.dart`,
+/// `content_it_chi_lo_potrebbe_fare.dart`, ecc.). Le altre quattro hanno la
+/// parità completa (stesse quantità per ogni gioco e tono, tradotte 1:1 dai
+/// pool italiani). Ampliarle significa aggiungere righe a `content_xx.dart`
+/// (o al file italiano del gioco corrispondente), senza toccare il resto
+/// dell'app.
 class GameContent {
   const GameContent._();
 
   static List<({String text, String tone})> nonHoMai(AppLocale locale) =>
       switch (locale) {
-        AppLocale.it => ContentIt.nonHoMai,
+        AppLocale.it => ContentItNonHoMai.nonHoMai,
         AppLocale.en => ContentEn.nonHoMai,
         AppLocale.es => ContentEs.nonHoMai,
         AppLocale.fr => ContentFr.nonHoMai,
@@ -28,7 +36,7 @@ class GameContent {
   static List<({String text, String tone})> chiLoPotrebbeFare(
     AppLocale locale,
   ) => switch (locale) {
-    AppLocale.it => ContentIt.chiLoPotrebbeFare,
+    AppLocale.it => ContentItChiLoPotrebbeFare.chiLoPotrebbeFare,
     AppLocale.en => ContentEn.chiLoPotrebbeFare,
     AppLocale.es => ContentEs.chiLoPotrebbeFare,
     AppLocale.fr => ContentFr.chiLoPotrebbeFare,
@@ -40,28 +48,28 @@ class GameContent {
   // manderebbe in errore la pesca dell'indice.
   static List<String> obblighi(AppLocale locale, String tone) =>
       switch (locale) {
-        AppLocale.it => ContentIt.obblighi[tone],
+        AppLocale.it => ContentItObbligoOVerita.obblighi[tone],
         AppLocale.en => ContentEn.obblighi[tone],
         AppLocale.es => ContentEs.obblighi[tone],
         AppLocale.fr => ContentFr.obblighi[tone],
         AppLocale.de => ContentDe.obblighi[tone],
       } ??
-      ContentIt.obblighi[tone] ??
+      ContentItObbligoOVerita.obblighi[tone] ??
       const <String>[];
 
   static List<String> verita(AppLocale locale, String tone) =>
       switch (locale) {
-        AppLocale.it => ContentIt.verita[tone],
+        AppLocale.it => ContentItObbligoOVerita.verita[tone],
         AppLocale.en => ContentEn.verita[tone],
         AppLocale.es => ContentEs.verita[tone],
         AppLocale.fr => ContentFr.verita[tone],
         AppLocale.de => ContentDe.verita[tone],
       } ??
-      ContentIt.verita[tone] ??
+      ContentItObbligoOVerita.verita[tone] ??
       const <String>[];
 
   static List<String> bluffFakes(AppLocale locale) => switch (locale) {
-    AppLocale.it => ContentIt.bluffFakes,
+    AppLocale.it => ContentItBluff.bluffFakes,
     AppLocale.en => ContentEn.bluffFakes,
     AppLocale.es => ContentEs.bluffFakes,
     AppLocale.fr => ContentFr.bluffFakes,
@@ -69,7 +77,7 @@ class GameContent {
   };
 
   static List<String> impostoreWords(AppLocale locale) => switch (locale) {
-    AppLocale.it => ContentIt.impostoreWords,
+    AppLocale.it => ContentItImpostore.impostoreWords,
     AppLocale.en => ContentEn.impostoreWords,
     AppLocale.es => ContentEs.impostoreWords,
     AppLocale.fr => ContentFr.impostoreWords,
@@ -81,7 +89,10 @@ class GameContent {
     List<({String a, String b, String tone})> hot,
   })
   _preferisci(AppLocale locale) => switch (locale) {
-    AppLocale.it => (pairs: ContentIt.preferisciPairs, hot: ContentIt.preferisciHot),
+    AppLocale.it => (
+      pairs: ContentItPreferisci.preferisciPairs,
+      hot: ContentItPreferisci.preferisciHot,
+    ),
     AppLocale.en => (pairs: ContentEn.preferisciPairs, hot: ContentEn.preferisciHot),
     AppLocale.es => (pairs: ContentEs.preferisciPairs, hot: ContentEs.preferisciHot),
     AppLocale.fr => (pairs: ContentFr.preferisciPairs, hot: ContentFr.preferisciHot),
