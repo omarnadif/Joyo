@@ -50,7 +50,7 @@ class RoomSettingsCard extends ConsumerWidget {
                     label: t('mode.${mode.id}'),
                     selected: room.mode == mode,
                     // Il tono si scrive insieme alla modalità: è ciò che l'AI
-                    // legge da `rooms.tone`, o resterebbe soft anche in Hot.
+                    // legge da `rooms.tone`, o resterebbe normal anche in Hot.
                     onTap: isHost
                         ? () => update(
                             () => repo.updateSettings(

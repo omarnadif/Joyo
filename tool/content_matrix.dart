@@ -6,8 +6,7 @@ import 'dart:io';
 
 import 'package:joyo/core/i18n/app_locale.dart';
 import 'package:joyo/features/games/content/game_content.dart';
-import 'package:joyo/features/games/content_tone.dart';
-import 'package:joyo/features/games/preferisci/preferisci_pool.dart';
+import 'package:joyo/content/content_tone.dart';
 
 int _perTone(List<({String text, String tone})> pool, String tone) =>
     pool.where((e) => e.tone == tone).length;
@@ -93,18 +92,19 @@ void main() {
     stdout.writeln(
       _row('  $tone', [
         for (final l in locales)
-          '${_perTonePref(PreferisciPool.entries(l), tone)}',
+          '${_perTonePref(GameContent.preferisciEntries(l), tone)}',
       ]),
     );
   }
   stdout.writeln(
     _row('  TOTALE entries', [
-      for (final l in locales) '${PreferisciPool.entries(l).length}',
+      for (final l in locales) '${GameContent.preferisciEntries(l).length}',
     ]),
   );
   stdout.writeln(
     _row('  coppie (pairs)', [
-      for (final l in locales) '${PreferisciPool.pairs(l).length}',
+      for (final l in locales)
+        '${_perTonePref(GameContent.preferisciEntries(l), ContentTone.normal)}',
     ]),
   );
 

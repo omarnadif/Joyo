@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/theme/app_colors.dart';
-import 'content_tone.dart';
+import 'package:joyo/content/content_tone.dart';
 
 /// Come si gioca la serata: la modalità decide quanto sono spinti i contenuti
 /// e se il gioco resta lo stesso o cambia a ogni round.
@@ -25,12 +25,12 @@ enum GameMode {
   /// I giochi cambiano a ogni round solo in Mix.
   bool get rotatesGames => this == GameMode.mix;
 
-  /// Toni ammessi: Hot pesca solo dal mazzo cattivo (chi la sceglie vuole solo
+  /// Toni ammessi: Hot pesca solo dal mazzo hot (chi la sceglie vuole solo
   /// i più spinti), le altre modalità sono cumulative così il tono sale senza vuoti.
   Set<String> get tones => switch (this) {
-    GameMode.normale => const {ContentTone.soft},
-    GameMode.mix => const {ContentTone.soft, ContentTone.piccante},
-    GameMode.hot => const {ContentTone.cattivo},
+    GameMode.normale => const {ContentTone.normal},
+    GameMode.mix => const {ContentTone.normal, ContentTone.mix},
+    GameMode.hot => const {ContentTone.hot},
   };
 
   bool allows(String tone) => tones.contains(tone);
@@ -38,9 +38,9 @@ enum GameMode {
   /// Il tono da usare quando un gioco ha un mazzo per tono, come Obbligo o
   /// Verità: si prende il più alto fra quelli ammessi.
   String get primaryTone => switch (this) {
-    GameMode.normale => ContentTone.soft,
-    GameMode.mix => ContentTone.piccante,
-    GameMode.hot => ContentTone.cattivo,
+    GameMode.normale => ContentTone.normal,
+    GameMode.mix => ContentTone.mix,
+    GameMode.hot => ContentTone.hot,
   };
 
   /// Indici utilizzabili di una lista catalogata per tono.

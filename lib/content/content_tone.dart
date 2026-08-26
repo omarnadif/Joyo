@@ -1,17 +1,19 @@
 /// Tono dei contenuti, scelto dall'host per la stanza.
+///
+/// I tre valori coincidono con le modalità di gioco: `normal`, `mix`, `hot`.
 class ContentTone {
   const ContentTone._();
 
-  static const String soft = 'soft';
-  static const String piccante = 'piccante';
-  static const String cattivo = 'cattivo';
+  static const String normal = 'normal';
+  static const String mix = 'mix';
+  static const String hot = 'hot';
 
-  static const List<String> all = <String>[soft, piccante, cattivo];
+  static const List<String> all = <String>[normal, mix, hot];
 
   /// Un tono più alto include anche i contenuti dei toni più bassi.
   static bool allows(String roomTone, String itemTone) => switch (roomTone) {
-    soft => itemTone == soft,
-    piccante => itemTone == soft || itemTone == piccante,
+    normal => itemTone == normal,
+    mix => itemTone == normal || itemTone == mix,
     _ => true,
   };
 

@@ -14,8 +14,8 @@ class Translator {
   final AppLocale locale;
 
   String call(String key, [Map<String, String>? args]) {
-    final entry = kTranslations[key];
-    var value = entry?[locale.code] ?? entry?['en'] ?? key;
+    final map = AppTexts.of(locale);
+    var value = map[key] ?? AppTexts.fallback[key] ?? key;
     if (args != null) {
       for (final arg in args.entries) {
         value = value.replaceAll('{${arg.key}}', arg.value);
@@ -27,7 +27,7 @@ class Translator {
   /// Singolare/plurale via chiave `_one` (le cinque lingue hanno due sole forme).
   String n(String key, int count, [Map<String, String>? args]) {
     final singular = '${key}_one';
-    final chosen = count == 1 && kTranslations.containsKey(singular)
+    final chosen = count == 1 && AppTexts.of(locale).containsKey(singular)
         ? singular
         : key;
     return call(chosen, {'n': '$count', ...?args});

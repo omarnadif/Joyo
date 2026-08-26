@@ -1,18 +1,14 @@
 import '../../../core/i18n/app_locale.dart';
-import '../content_tone.dart';
-import '../bluff_story/bluff_story_pool.dart';
-import '../chi_lo_potrebbe_fare/chi_lo_potrebbe_fare_pool.dart';
-import '../impostore/impostore_words.dart';
-import '../non_ho_mai/non_ho_mai_pool.dart';
-import '../obbligo_o_verita/obbligo_o_verita_pool.dart';
-import '../preferisci/preferisci_pool.dart';
-import 'content_de.dart';
-import 'content_en.dart';
-import 'content_es.dart';
-import 'content_fr.dart';
+import 'package:joyo/content/content_tone.dart';
+import 'package:joyo/content/content_de.dart';
+import 'package:joyo/content/content_en.dart';
+import 'package:joyo/content/content_es.dart';
+import 'package:joyo/content/content_fr.dart';
+import 'package:joyo/content/content_it.dart';
 
 /// Punto unico da cui i giochi prendono i contenuti nella lingua del gruppo.
 ///
+/// Ogni lingua ha un solo file (`content_xx.dart`) con tutti i giochi.
 /// L'italiano è la lingua di partenza; le altre quattro hanno la parità
 /// completa (stesse quantità per ogni gioco e tono, tradotte 1:1 dai pool
 /// italiani). Ampliarle significa aggiungere righe a `content_xx.dart`,
@@ -22,7 +18,7 @@ class GameContent {
 
   static List<({String text, String tone})> nonHoMai(AppLocale locale) =>
       switch (locale) {
-        AppLocale.it => NonHoMaiPool.entries,
+        AppLocale.it => ContentIt.nonHoMai,
         AppLocale.en => ContentEn.nonHoMai,
         AppLocale.es => ContentEs.nonHoMai,
         AppLocale.fr => ContentFr.nonHoMai,
@@ -32,7 +28,7 @@ class GameContent {
   static List<({String text, String tone})> chiLoPotrebbeFare(
     AppLocale locale,
   ) => switch (locale) {
-    AppLocale.it => ChiLoPotrebbeFarePool.entries,
+    AppLocale.it => ContentIt.chiLoPotrebbeFare,
     AppLocale.en => ContentEn.chiLoPotrebbeFare,
     AppLocale.es => ContentEs.chiLoPotrebbeFare,
     AppLocale.fr => ContentFr.chiLoPotrebbeFare,
@@ -44,26 +40,28 @@ class GameContent {
   // manderebbe in errore la pesca dell'indice.
   static List<String> obblighi(AppLocale locale, String tone) =>
       switch (locale) {
-        AppLocale.it => ObbligoOVeritaPool.obblighi(tone),
+        AppLocale.it => ContentIt.obblighi[tone],
         AppLocale.en => ContentEn.obblighi[tone],
         AppLocale.es => ContentEs.obblighi[tone],
         AppLocale.fr => ContentFr.obblighi[tone],
         AppLocale.de => ContentDe.obblighi[tone],
       } ??
-      ObbligoOVeritaPool.obblighi(tone);
+      ContentIt.obblighi[tone] ??
+      const <String>[];
 
   static List<String> verita(AppLocale locale, String tone) =>
       switch (locale) {
-        AppLocale.it => ObbligoOVeritaPool.verita(tone),
+        AppLocale.it => ContentIt.verita[tone],
         AppLocale.en => ContentEn.verita[tone],
         AppLocale.es => ContentEs.verita[tone],
         AppLocale.fr => ContentFr.verita[tone],
         AppLocale.de => ContentDe.verita[tone],
       } ??
-      ObbligoOVeritaPool.verita(tone);
+      ContentIt.verita[tone] ??
+      const <String>[];
 
   static List<String> bluffFakes(AppLocale locale) => switch (locale) {
-    AppLocale.it => BluffStoryPool.fakes,
+    AppLocale.it => ContentIt.bluffFakes,
     AppLocale.en => ContentEn.bluffFakes,
     AppLocale.es => ContentEs.bluffFakes,
     AppLocale.fr => ContentFr.bluffFakes,
@@ -71,12 +69,36 @@ class GameContent {
   };
 
   static List<String> impostoreWords(AppLocale locale) => switch (locale) {
-    AppLocale.it => ImpostoreWords.words,
+    AppLocale.it => ContentIt.impostoreWords,
     AppLocale.en => ContentEn.impostoreWords,
     AppLocale.es => ContentEs.impostoreWords,
     AppLocale.fr => ContentFr.impostoreWords,
     AppLocale.de => ContentDe.impostoreWords,
   };
+
+  static ({
+    List<({String a, String b})> pairs,
+    List<({String a, String b, String tone})> hot,
+  })
+  _preferisci(AppLocale locale) => switch (locale) {
+    AppLocale.it => (pairs: ContentIt.preferisciPairs, hot: ContentIt.preferisciHot),
+    AppLocale.en => (pairs: ContentEn.preferisciPairs, hot: ContentEn.preferisciHot),
+    AppLocale.es => (pairs: ContentEs.preferisciPairs, hot: ContentEs.preferisciHot),
+    AppLocale.fr => (pairs: ContentFr.preferisciPairs, hot: ContentFr.preferisciHot),
+    AppLocale.de => (pairs: ContentDe.preferisciPairs, hot: ContentDe.preferisciHot),
+  };
+
+  /// Coppie di "Preferisci" nella lingua del gruppo, col tono per il filtro
+  /// della modalità: il mazzo base è tutto normal, in Mix/Hot entrano le audaci.
+  static List<({String a, String b, String tone})> preferisciEntries(
+    AppLocale locale,
+  ) {
+    final p = _preferisci(locale);
+    return [
+      for (final c in p.pairs) (a: c.a, b: c.b, tone: ContentTone.normal),
+      ...p.hot,
+    ];
+  }
 
   // ---------------------------------------------------------------------------
   // Localizzazione del round nella lingua di CHI guarda, non di chi l'ha creato.
@@ -87,14 +109,14 @@ class GameContent {
   // telefono pesca la propria traduzione dallo stesso indice e un gruppo con
   // lingue diverse gioca sulla stessa frase, ognuno leggendola nella sua.
   //
-  // ATTENZIONE: oggi solo il blocco `soft` (modalità Normale) è allineato 1:1
-  // fra tutte le lingue. Le sezioni piccante/cattivo sono ancora banche di
+  // ATTENZIONE: oggi solo il blocco `normal` (modalità Normale) è allineato 1:1
+  // fra tutte le lingue. Le sezioni mix/hot sono ancora banche di
   // domande scritte per lingua, con contenuti diversi allo stesso indice: lì
   // NON si può localizzare per indice, altrimenti il gruppo voterebbe frasi
-  // diverse. Finché non sono riallineate, localizziamo solo le voci `soft` e
+  // diverse. Finché non sono riallineate, localizziamo solo le voci `normal` e
   // per il resto restiamo sul testo trasmesso dall'host (che tutti vedono
   // uguale). Impostore e Bluff Story hanno pool allineati e si localizzano
-  // sempre. Il test `content_parity_test` presidia l'allineamento del soft.
+  // sempre. Il test `content_parity_test` presidia l'allineamento del normal.
   //
   // Fallback sul testo dell'host anche quando l'indice manca, è fuori pool o il
   // contenuto è generato dall'AI (`i == -1`).
@@ -105,15 +127,15 @@ class GameContent {
     return (raw == null || raw < 0) ? null : raw;
   }
 
-  // Gli indici `soft` coincidono in tutte le lingue (lo garantisce il test di
-  // parità): se la voce locale a quell'indice è soft, è la traduzione 1:1
+  // Gli indici `normal` coincidono in tutte le lingue (lo garantisce il test di
+  // parità): se la voce locale a quell'indice è normal, è la traduzione 1:1
   // dell'italiano e si può mostrare; altrimenti siamo nella zona non allineata.
-  static bool _softAligned(String tone) => tone == ContentTone.soft;
+  static bool _normalAligned(String tone) => tone == ContentTone.normal;
 
   static String nonHoMaiText(AppLocale locale, Map<String, dynamic> content) {
     final pool = nonHoMai(locale);
     final i = _poolIndex(content);
-    return (i != null && i < pool.length && _softAligned(pool[i].tone))
+    return (i != null && i < pool.length && _normalAligned(pool[i].tone))
         ? pool[i].text
         : content['text'] as String? ?? '—';
   }
@@ -124,7 +146,7 @@ class GameContent {
   ) {
     final pool = chiLoPotrebbeFare(locale);
     final i = _poolIndex(content);
-    return (i != null && i < pool.length && _softAligned(pool[i].tone))
+    return (i != null && i < pool.length && _normalAligned(pool[i].tone))
         ? pool[i].text
         : content['text'] as String? ?? '—';
   }
@@ -136,7 +158,7 @@ class GameContent {
   ) {
     final pool = obblighi(locale, tone);
     final i = _poolIndex(content);
-    return (i != null && i < pool.length && _softAligned(tone))
+    return (i != null && i < pool.length && _normalAligned(tone))
         ? pool[i]
         : content['obbligo'] as String? ?? '—';
   }
@@ -152,7 +174,7 @@ class GameContent {
     final pool = verita(locale, tone);
     final raw = (content['i2'] as num?)?.toInt();
     final i = raw == null ? null : raw - veritaOffset;
-    return (i != null && i >= 0 && i < pool.length && _softAligned(tone))
+    return (i != null && i >= 0 && i < pool.length && _normalAligned(tone))
         ? pool[i]
         : content['verita'] as String? ?? '—';
   }
@@ -169,9 +191,9 @@ class GameContent {
     AppLocale locale,
     Map<String, dynamic> content,
   ) {
-    final pool = PreferisciPool.entries(locale);
+    final pool = preferisciEntries(locale);
     final i = _poolIndex(content);
-    if (i != null && i < pool.length && _softAligned(pool[i].tone)) {
+    if (i != null && i < pool.length && _normalAligned(pool[i].tone)) {
       return (a: pool[i].a, b: pool[i].b);
     }
     return (a: content['a'] as String? ?? '—', b: content['b'] as String? ?? '—');

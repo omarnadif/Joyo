@@ -1,8 +1,21 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:joyo/core/i18n/app_locale.dart';
+import 'package:joyo/content/content_de.dart';
+import 'package:joyo/content/content_en.dart';
+import 'package:joyo/content/content_es.dart';
+import 'package:joyo/content/content_fr.dart';
+import 'package:joyo/content/content_it.dart';
 import 'package:joyo/features/games/content/game_content.dart';
-import 'package:joyo/features/games/content_tone.dart';
-import 'package:joyo/features/games/preferisci/preferisci_pool.dart';
+import 'package:joyo/content/content_tone.dart';
+
+List<({String a, String b})> _preferisciPairs(AppLocale locale) =>
+    switch (locale) {
+      AppLocale.it => ContentIt.preferisciPairs,
+      AppLocale.en => ContentEn.preferisciPairs,
+      AppLocale.es => ContentEs.preferisciPairs,
+      AppLocale.fr => ContentFr.preferisciPairs,
+      AppLocale.de => ContentDe.preferisciPairs,
+    };
 
 /// L'italiano è la lingua di riferimento: le altre quattro devono avere le
 /// stesse quantità, gioco per gioco e tono per tono. Il confronto è dinamico
@@ -48,13 +61,13 @@ void main() {
       }
 
       expect(
-        PreferisciPool.entries(locale).length,
-        PreferisciPool.entries(ref).length,
+        GameContent.preferisciEntries(locale).length,
+        GameContent.preferisciEntries(ref).length,
         reason: 'Preferisci',
       );
       expect(
-        PreferisciPool.pairs(locale).length,
-        PreferisciPool.pairs(ref).length,
+        _preferisciPairs(locale).length,
+        _preferisciPairs(ref).length,
         reason: 'Preferisci coppie',
       );
 
@@ -90,35 +103,38 @@ void main() {
   // ogni lingua, i pool tradotti devono avere lo stesso ORDINE, non solo le
   // stesse quantità.
   //
-  // Stato attuale: il blocco `soft` è allineato ovunque; le sezioni piccante e
-  // cattivo di alcune lingue sono ancora contenuti autonomi (non traduzioni 1:1
-  // in pari ordine). Finché non sono riallineate, la localizzazione per indice è
-  // sicura solo sul soft: qui verifichiamo quella garanzia, così un futuro
-  // disallineamento del soft non passa inosservato.
-  List<int> softIndexes(List<({String text, String tone})> pool) =>
-      [for (var i = 0; i < pool.length; i++) if (pool[i].tone == ContentTone.soft) i];
-  List<int> preferisciSoftIndexes(AppLocale locale) => [
-    for (var i = 0; i < PreferisciPool.entries(locale).length; i++)
-      if (PreferisciPool.entries(locale)[i].tone == ContentTone.soft) i,
-  ];
+  // Stato attuale: il blocco `normal` è allineato ovunque; le sezioni mix e hot
+  // di alcune lingue sono ancora contenuti autonomi (non traduzioni 1:1 in pari
+  // ordine). Finché non sono riallineate, la localizzazione per indice è sicura
+  // solo sul normal: qui verifichiamo quella garanzia, così un futuro
+  // disallineamento del normal non passa inosservato.
+  List<int> normalIndexes(List<({String text, String tone})> pool) =>
+      [for (var i = 0; i < pool.length; i++) if (pool[i].tone == ContentTone.normal) i];
+  List<int> preferisciNormalIndexes(AppLocale locale) {
+    final entries = GameContent.preferisciEntries(locale);
+    return [
+      for (var i = 0; i < entries.length; i++)
+        if (entries[i].tone == ContentTone.normal) i,
+    ];
+  }
 
   for (final locale in AppLocale.values) {
     if (locale == ref) continue;
-    test('${locale.label}: blocco soft allineato all\'italiano', () {
+    test('${locale.label}: blocco normal allineato all\'italiano', () {
       expect(
-        softIndexes(GameContent.nonHoMai(locale)),
-        softIndexes(GameContent.nonHoMai(ref)),
-        reason: 'Non ho mai: soft disallineato',
+        normalIndexes(GameContent.nonHoMai(locale)),
+        normalIndexes(GameContent.nonHoMai(ref)),
+        reason: 'Non ho mai: normal disallineato',
       );
       expect(
-        softIndexes(GameContent.chiLoPotrebbeFare(locale)),
-        softIndexes(GameContent.chiLoPotrebbeFare(ref)),
-        reason: 'Chi lo potrebbe fare: soft disallineato',
+        normalIndexes(GameContent.chiLoPotrebbeFare(locale)),
+        normalIndexes(GameContent.chiLoPotrebbeFare(ref)),
+        reason: 'Chi lo potrebbe fare: normal disallineato',
       );
       expect(
-        preferisciSoftIndexes(locale),
-        preferisciSoftIndexes(ref),
-        reason: 'Preferisci: soft disallineato',
+        preferisciNormalIndexes(locale),
+        preferisciNormalIndexes(ref),
+        reason: 'Preferisci: normal disallineato',
       );
     });
   }

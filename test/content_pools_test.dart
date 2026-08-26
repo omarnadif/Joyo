@@ -1,14 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:joyo/core/i18n/app_locale.dart';
-import 'package:joyo/features/games/bluff_story/bluff_story_pool.dart';
+import 'package:joyo/content/content_it.dart';
 import 'package:joyo/features/games/content/game_content.dart';
 import 'package:joyo/features/games/game_mode.dart';
-import 'package:joyo/features/games/chi_lo_potrebbe_fare/chi_lo_potrebbe_fare_pool.dart';
-import 'package:joyo/features/games/content_tone.dart';
-import 'package:joyo/features/games/impostore/impostore_words.dart';
-import 'package:joyo/features/games/non_ho_mai/non_ho_mai_pool.dart';
-import 'package:joyo/features/games/obbligo_o_verita/obbligo_o_verita_pool.dart';
-import 'package:joyo/features/games/preferisci/preferisci_pool.dart';
+import 'package:joyo/content/content_tone.dart';
 
 /// I pool sono il contenuto gratuito dell'app: se si svuotano o si ripetono,
 /// il gioco smette di funzionare pur compilando benissimo.
@@ -34,35 +29,35 @@ void main() {
 
   group('Preferisci', () {
     checkList('coppie italiane (a)', [
-      for (final p in PreferisciPool.it) p.a,
+      for (final p in ContentIt.preferisciPairs) p.a,
     ], 100);
   });
 
   group('Non ho mai', () {
-    checkList('frasi', [for (final e in NonHoMaiPool.entries) e.text], 150);
+    checkList('frasi', [for (final e in ContentIt.nonHoMai) e.text], 150);
 
     test('sono presenti entrambi i toni previsti', () {
-      final tones = NonHoMaiPool.entries.map((e) => e.tone).toSet();
-      expect(tones, contains(ContentTone.soft));
-      expect(tones, contains(ContentTone.piccante));
+      final tones = ContentIt.nonHoMai.map((e) => e.tone).toSet();
+      expect(tones, contains(ContentTone.normal));
+      expect(tones, contains(ContentTone.mix));
     });
 
-    test('una stanza soft non vede mai contenuti piccanti', () {
+    test('una stanza normal non vede mai contenuti mix', () {
       final allowed = ContentTone.indexesFor(
-        NonHoMaiPool.entries,
-        ContentTone.soft,
+        ContentIt.nonHoMai,
+        ContentTone.normal,
         (e) => e.tone,
       );
       expect(allowed, isNotEmpty);
       for (final index in allowed) {
-        expect(NonHoMaiPool.entries[index].tone, ContentTone.soft);
+        expect(ContentIt.nonHoMai[index].tone, ContentTone.normal);
       }
     });
 
-    test('una stanza piccante vede anche i contenuti soft', () {
+    test('una stanza mix vede anche i contenuti normal', () {
       final allowed = ContentTone.indexesFor(
-        NonHoMaiPool.entries,
-        ContentTone.piccante,
+        ContentIt.nonHoMai,
+        ContentTone.mix,
         (e) => e.tone,
       );
       expect(allowed.length, greaterThan(0));
@@ -70,8 +65,8 @@ void main() {
         allowed.length,
         greaterThan(
           ContentTone.indexesFor(
-            NonHoMaiPool.entries,
-            ContentTone.soft,
+            ContentIt.nonHoMai,
+            ContentTone.normal,
             (e) => e.tone,
           ).length,
         ),
@@ -81,11 +76,11 @@ void main() {
 
   group('Chi lo potrebbe fare', () {
     checkList('domande', [
-      for (final e in ChiLoPotrebbeFarePool.entries) e.text,
+      for (final e in ContentIt.chiLoPotrebbeFare) e.text,
     ], 150);
 
     test('sono tutte domande', () {
-      for (final entry in ChiLoPotrebbeFarePool.entries) {
+      for (final entry in ContentIt.chiLoPotrebbeFare) {
         expect(entry.text.endsWith('?'), isTrue, reason: entry.text);
       }
     });
@@ -93,19 +88,19 @@ void main() {
 
   group('Obbligo o Verità', () {
     for (final tone in ContentTone.all) {
-      checkList('obblighi $tone', ObbligoOVeritaPool.obblighi(tone), 100);
-      checkList('verità $tone', ObbligoOVeritaPool.verita(tone), 100);
+      checkList('obblighi $tone', GameContent.obblighi(AppLocale.it, tone), 100);
+      checkList('verità $tone', GameContent.verita(AppLocale.it, tone), 100);
     }
 
     test('i tre toni hanno mazzi diversi', () {
-      final soft = ObbligoOVeritaPool.obblighi(ContentTone.soft).toSet();
-      final cattivo = ObbligoOVeritaPool.obblighi(ContentTone.cattivo).toSet();
-      expect(soft.intersection(cattivo), isEmpty);
+      final normal = GameContent.obblighi(AppLocale.it, ContentTone.normal).toSet();
+      final hot = GameContent.obblighi(AppLocale.it, ContentTone.hot).toSet();
+      expect(normal.intersection(hot), isEmpty);
     });
   });
 
   group('Bluff Story', () {
-    checkList('bugie generiche', BluffStoryPool.fakes, 100);
+    checkList('bugie generiche', ContentIt.bluffFakes, 100);
   });
 
   group('tutte le lingue', () {
@@ -197,7 +192,10 @@ void main() {
         );
         expect(
           mode
-              .indexesFor(PreferisciPool.entries(AppLocale.it), (e) => e.tone)
+              .indexesFor(
+                GameContent.preferisciEntries(AppLocale.it),
+                (e) => e.tone,
+              )
               .length,
           greaterThanOrEqualTo(150),
           reason: 'Preferisci in ${mode.id}',
@@ -213,10 +211,10 @@ void main() {
   });
 
   group('Impostore', () {
-    checkList('parole segrete', ImpostoreWords.words, 50);
+    checkList('parole segrete', ContentIt.impostoreWords, 50);
 
     test('sono parole brevi, dicibili in un giro di tavolo', () {
-      for (final word in ImpostoreWords.words) {
+      for (final word in ContentIt.impostoreWords) {
         expect(word.length, lessThanOrEqualTo(20), reason: word);
       }
     });

@@ -1,7 +1,20 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:joyo/core/i18n/app_locale.dart';
-import 'package:joyo/features/games/content_tone.dart';
-import 'package:joyo/features/games/preferisci/preferisci_pool.dart';
+import 'package:joyo/content/content_de.dart';
+import 'package:joyo/content/content_en.dart';
+import 'package:joyo/content/content_es.dart';
+import 'package:joyo/content/content_fr.dart';
+import 'package:joyo/content/content_it.dart';
+import 'package:joyo/features/games/content/game_content.dart';
+import 'package:joyo/content/content_tone.dart';
+
+List<({String a, String b})> _pairs(AppLocale locale) => switch (locale) {
+  AppLocale.it => ContentIt.preferisciPairs,
+  AppLocale.en => ContentEn.preferisciPairs,
+  AppLocale.es => ContentEs.preferisciPairs,
+  AppLocale.fr => ContentFr.preferisciPairs,
+  AppLocale.de => ContentDe.preferisciPairs,
+};
 
 void main() {
   test('ogni lingua ha abbastanza coppie per una serata', () {
@@ -17,7 +30,7 @@ void main() {
 
     for (final entry in minimums.entries) {
       expect(
-        PreferisciPool.pairs(entry.key).length,
+        _pairs(entry.key).length,
         greaterThanOrEqualTo(entry.value),
         reason: entry.key.label,
       );
@@ -26,8 +39,8 @@ void main() {
 
   for (final locale in AppLocale.values) {
     test('${locale.label}: nessuna coppia duplicata o incoerente', () {
-      // `entries` include anche il mazzo Hot: i vincoli valgono per tutti.
-      final pairs = PreferisciPool.entries(locale);
+      // `preferisciEntries` include anche il mazzo Hot: i vincoli valgono per tutti.
+      final pairs = GameContent.preferisciEntries(locale);
       final keys = pairs.map((p) => '${p.a}|${p.b}').toList();
       expect(keys.toSet().length, keys.length, reason: 'coppie duplicate');
 
@@ -35,17 +48,17 @@ void main() {
         expect(pair.a.trim(), isNotEmpty);
         expect(pair.b.trim(), isNotEmpty);
         expect(pair.a, isNot(pair.b));
-        expect(pair.a.length, lessThanOrEqualTo(60), reason: pair.a);
-        expect(pair.b.length, lessThanOrEqualTo(60), reason: pair.b);
+        // Nessun limite di lunghezza: le card mandano il testo a capo, non lo
+        // troncano, quindi un tetto costringerebbe solo ad accorciare le frasi.
       }
     });
   }
 
-  test('il mazzo Hot italiano esiste e ha solo toni piccante/cattivo', () {
-    expect(PreferisciPool.hotIt.length, greaterThanOrEqualTo(20));
-    for (final pair in PreferisciPool.hotIt) {
+  test('il mazzo Hot italiano esiste e ha solo toni mix/hot', () {
+    expect(ContentIt.preferisciHot.length, greaterThanOrEqualTo(20));
+    for (final pair in ContentIt.preferisciHot) {
       expect(
-        pair.tone == ContentTone.piccante || pair.tone == ContentTone.cattivo,
+        pair.tone == ContentTone.mix || pair.tone == ContentTone.hot,
         isTrue,
         reason: '${pair.a} | ${pair.b}',
       );

@@ -35,7 +35,7 @@ class Room {
     activeGame: map['active_game'] as String?,
     isPremiumAi: map['is_premium_ai'] as bool? ?? false,
     aiCredits: (map['ai_credits'] as num?)?.toInt() ?? 0,
-    tone: map['tone'] as String? ?? 'soft',
+    tone: map['tone'] as String? ?? 'normal',
     mode: GameMode.fromId(map['mode'] as String?),
     roundsTotal: (map['rounds_total'] as num?)?.toInt() ?? 10,
   );

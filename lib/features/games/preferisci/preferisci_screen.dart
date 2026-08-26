@@ -11,7 +11,6 @@ import '../../room/data/models/room.dart';
 import '../content/game_content.dart';
 import '../engine/round_game.dart';
 import '../widgets/player_chip.dart';
-import 'preferisci_pool.dart';
 
 /// Preferisci: due opzioni, ognuno sceglie, alla fine si vede come si è
 /// diviso il gruppo. Nessun punteggio: è puramente conversazionale.
@@ -34,7 +33,7 @@ class PreferisciScreen extends ConsumerWidget {
       accent: accent,
       title: t('preferisci.name'),
       buildContent: (ctx) async {
-        final entries = PreferisciPool.entries(locale);
+        final entries = GameContent.preferisciEntries(locale);
         final allowed = ctx.room.mode.indexesFor(entries, (e) => e.tone);
         // Lingue senza coppie nei toni ammessi (Hot fuori dall'italiano):
         // si ripiega su tutto il mazzo invece di lasciare il pool vuoto.

@@ -1,3112 +1,3113 @@
-import '../content_tone.dart';
+import 'content_tone.dart';
 
-/// Contenuti di gioco in francese: parità completa con i pool italiani.
+/// Tutti i testi francesi dell'app: i contenuti dei sei giochi (a parità 1:1
+/// con l'italiano) e le stringhe di interfaccia (mappa `ui`).
 class ContentFr {
   const ContentFr._();
 
   // ------------------------------------------------------------- nonHoMai
   static const List<({String text, String tone})>
   nonHoMai = <({String text, String tone})>[
-    // soft
+    // normal
     (
       text: 'séché le travail ou les cours en me faisant passer pour malade',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'dormi jusqu\'à midi passé', tone: ContentTone.soft),
-    (text: 'mangé un truc tombé par terre', tone: ContentTone.soft),
-    (text: 'chanté sous la douche à tue-tête', tone: ContentTone.soft),
+    (text: 'dormi jusqu\'à midi passé', tone: ContentTone.normal),
+    (text: 'mangé un truc tombé par terre', tone: ContentTone.normal),
+    (text: 'chanté sous la douche à tue-tête', tone: ContentTone.normal),
     (
       text:
           'fait semblant de connaître une chanson pour ne pas passer pour un nul',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'oublié l\'anniversaire d\'un ami proche', tone: ContentTone.soft),
-    (text: 'raté un train ou un avion', tone: ContentTone.soft),
-    (text: 'voyagé tout seul', tone: ContentTone.soft),
-    (text: 'cassé un os', tone: ContentTone.soft),
-    (text: 'fait un tatouage', tone: ContentTone.soft),
-    (text: 'teint mes cheveux d\'une couleur absurde', tone: ContentTone.soft),
-    (text: 'envoyé un message à la mauvaise personne', tone: ContentTone.soft),
+    (text: 'oublié l\'anniversaire d\'un ami proche', tone: ContentTone.normal),
+    (text: 'raté un train ou un avion', tone: ContentTone.normal),
+    (text: 'voyagé tout seul', tone: ContentTone.normal),
+    (text: 'cassé un os', tone: ContentTone.normal),
+    (text: 'fait un tatouage', tone: ContentTone.normal),
+    (text: 'teint mes cheveux d\'une couleur absurde', tone: ContentTone.normal),
+    (text: 'envoyé un message à la mauvaise personne', tone: ContentTone.normal),
     (
       text: 'ri à une blague que je n\'avais pas comprise',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'parlé tout seul à voix haute', tone: ContentTone.soft),
-    (text: 'pleuré devant un film', tone: ContentTone.soft),
-    (text: 'regardé une saison entière en un jour', tone: ContentTone.soft),
-    (text: 'mangé la pizza avec des couverts', tone: ContentTone.soft),
-    (text: 'mis de l\'ananas sur la pizza', tone: ContentTone.soft),
-    (text: 'cuisiné un plat immangeable', tone: ContentTone.soft),
-    (text: 'cramé le dîner', tone: ContentTone.soft),
-    (text: 'oublié la plaque de cuisson allumée', tone: ContentTone.soft),
-    (text: 'laissé mes clés enfermées à l\'intérieur', tone: ContentTone.soft),
-    (text: 'oublié où j\'avais garé la voiture', tone: ContentTone.soft),
-    (text: 'pris une amende', tone: ContentTone.soft),
+    (text: 'parlé tout seul à voix haute', tone: ContentTone.normal),
+    (text: 'pleuré devant un film', tone: ContentTone.normal),
+    (text: 'regardé une saison entière en un jour', tone: ContentTone.normal),
+    (text: 'mangé la pizza avec des couverts', tone: ContentTone.normal),
+    (text: 'mis de l\'ananas sur la pizza', tone: ContentTone.normal),
+    (text: 'cuisiné un plat immangeable', tone: ContentTone.normal),
+    (text: 'cramé le dîner', tone: ContentTone.normal),
+    (text: 'oublié la plaque de cuisson allumée', tone: ContentTone.normal),
+    (text: 'laissé mes clés enfermées à l\'intérieur', tone: ContentTone.normal),
+    (text: 'oublié où j\'avais garé la voiture', tone: ContentTone.normal),
+    (text: 'pris une amende', tone: ContentTone.normal),
     (
       text: 'fait semblant de ne pas voir une connaissance dans la rue',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'inventé une excuse pour ne pas sortir', tone: ContentTone.soft),
-    (text: 'annulé un plan à la dernière minute', tone: ContentTone.soft),
+    (text: 'inventé une excuse pour ne pas sortir', tone: ContentTone.normal),
+    (text: 'annulé un plan à la dernière minute', tone: ContentTone.normal),
     (
       text:
           'dit « j\'arrive dans cinq minutes » alors que j\'étais encore chez moi',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'fait les courses en ayant faim', tone: ContentTone.soft),
+    (text: 'fait les courses en ayant faim', tone: ContentTone.normal),
     (
       text: 'acheté un truc que je n\'ai jamais utilisé',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'dépensé trop pour un objet inutile', tone: ContentTone.soft),
-    (text: 'gagné un prix', tone: ContentTone.soft),
-    (text: 'chanté au karaoké', tone: ContentTone.soft),
-    (text: 'dansé sans musique', tone: ContentTone.soft),
-    (text: 'joué d\'un instrument devant quelqu\'un', tone: ContentTone.soft),
-    (text: 'dormi dans un aéroport', tone: ContentTone.soft),
-    (text: 'dormi dans une voiture', tone: ContentTone.soft),
-    (text: 'dormi sous une tente', tone: ContentTone.soft),
-    (text: 'nagé dans la mer en pleine nuit', tone: ContentTone.soft),
-    (text: 'eu peur du noir en étant adulte', tone: ContentTone.soft),
-    (text: 'dormi avec la lumière allumée', tone: ContentTone.soft),
-    (text: 'crié à cause d\'un cauchemar', tone: ContentTone.soft),
-    (text: 'marché en dormant', tone: ContentTone.soft),
-    (text: 'ronflé au point de réveiller quelqu\'un', tone: ContentTone.soft),
-    (text: 'mangé au lit', tone: ContentTone.soft),
+    (text: 'dépensé trop pour un objet inutile', tone: ContentTone.normal),
+    (text: 'gagné un prix', tone: ContentTone.normal),
+    (text: 'chanté au karaoké', tone: ContentTone.normal),
+    (text: 'dansé sans musique', tone: ContentTone.normal),
+    (text: 'joué d\'un instrument devant quelqu\'un', tone: ContentTone.normal),
+    (text: 'dormi dans un aéroport', tone: ContentTone.normal),
+    (text: 'dormi dans une voiture', tone: ContentTone.normal),
+    (text: 'dormi sous une tente', tone: ContentTone.normal),
+    (text: 'nagé dans la mer en pleine nuit', tone: ContentTone.normal),
+    (text: 'eu peur du noir en étant adulte', tone: ContentTone.normal),
+    (text: 'dormi avec la lumière allumée', tone: ContentTone.normal),
+    (text: 'crié à cause d\'un cauchemar', tone: ContentTone.normal),
+    (text: 'marché en dormant', tone: ContentTone.normal),
+    (text: 'ronflé au point de réveiller quelqu\'un', tone: ContentTone.normal),
+    (text: 'mangé au lit', tone: ContentTone.normal),
     (
       text: 'sauté le petit-déjeuner une semaine entière',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'bu un café oublié et complètement froid', tone: ContentTone.soft),
-    (text: 'renversé un truc sur quelqu\'un', tone: ContentTone.soft),
-    (text: 'cassé un objet précieux sans rien dire', tone: ContentTone.soft),
-    (text: 'accusé quelqu\'un d\'autre à ma place', tone: ContentTone.soft),
-    (text: 'triché à un contrôle', tone: ContentTone.soft),
-    (text: 'fini un devoir la dernière nuit possible', tone: ContentTone.soft),
-    (text: 'envoyé un mail sans la pièce jointe', tone: ContentTone.soft),
+    (text: 'bu un café oublié et complètement froid', tone: ContentTone.normal),
+    (text: 'renversé un truc sur quelqu\'un', tone: ContentTone.normal),
+    (text: 'cassé un objet précieux sans rien dire', tone: ContentTone.normal),
+    (text: 'accusé quelqu\'un d\'autre à ma place', tone: ContentTone.normal),
+    (text: 'triché à un contrôle', tone: ContentTone.normal),
+    (text: 'fini un devoir la dernière nuit possible', tone: ContentTone.normal),
+    (text: 'envoyé un mail sans la pièce jointe', tone: ContentTone.normal),
     (
       text: 'appelé quelqu\'un par le mauvais prénom en face',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'oublié un mot de passe important', tone: ContentTone.soft),
-    (text: 'cherché mon nom sur internet', tone: ContentTone.soft),
-    (text: 'bloqué quelqu\'un sur les réseaux', tone: ContentTone.soft),
+    (text: 'oublié un mot de passe important', tone: ContentTone.normal),
+    (text: 'cherché mon nom sur internet', tone: ContentTone.normal),
+    (text: 'bloqué quelqu\'un sur les réseaux', tone: ContentTone.normal),
     (
       text: 'publié un truc et supprimé cinq minutes après',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'prétendu que mon téléphone était déchargé pour ne pas répondre',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'répondu après des jours en jurant ne rien avoir vu',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'utilisé le wifi de quelqu\'un d\'autre sans demander',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'chanté en voiture en fixant les autres conducteurs',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'dansé tout seul dans un ascenseur', tone: ContentTone.soft),
+    (text: 'dansé tout seul dans un ascenseur', tone: ContentTone.normal),
     (
       text: 'parlé à un animal comme s\'il comprenait tout',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'donné un prénom à ma voiture', tone: ContentTone.soft),
+    (text: 'donné un prénom à ma voiture', tone: ContentTone.normal),
     (
       text: 'fait une promesse en sachant que je ne la tiendrais pas',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'menti sur mon âge', tone: ContentTone.soft),
-    (text: 'exagéré ma joie en ouvrant un cadeau', tone: ContentTone.soft),
+    (text: 'menti sur mon âge', tone: ContentTone.normal),
+    (text: 'exagéré ma joie en ouvrant un cadeau', tone: ContentTone.normal),
     (
       text: 'offert à quelqu\'un un cadeau qu\'on m\'avait offert',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'gardé pendant des années un truc qu\'on m\'avait prêté',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'prêté de l\'argent sans jamais le revoir', tone: ContentTone.soft),
-    (text: 'demandé une augmentation', tone: ContentTone.soft),
-    (text: 'changé de travail sur un coup de tête', tone: ContentTone.soft),
+    (text: 'prêté de l\'argent sans jamais le revoir', tone: ContentTone.normal),
+    (text: 'demandé une augmentation', tone: ContentTone.normal),
+    (text: 'changé de travail sur un coup de tête', tone: ContentTone.normal),
     (
       text: 'passé un entretien pour un poste que je ne voulais pas',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'mangé au fast-food deux fois le même jour', tone: ContentTone.soft),
-    (text: 'mangé une glace au petit-déjeuner', tone: ContentTone.soft),
-    (text: 'fait des heures de queue pour un truc', tone: ContentTone.soft),
-    (text: 'oublié un rendez-vous important', tone: ContentTone.soft),
-    (text: 'fait une scène pour la télécommande', tone: ContentTone.soft),
-    (text: 'regardé le même film plus de cinq fois', tone: ContentTone.soft),
-    (text: 'appris par cœur une scène de film', tone: ContentTone.soft),
-    (text: 'perdu un pari stupide', tone: ContentTone.soft),
-    (text: 'gagné aux cartes en trichant', tone: ContentTone.soft),
-    (text: 'cassé un écran de téléphone', tone: ContentTone.soft),
-    (text: 'oublié mon téléphone dans un bar', tone: ContentTone.soft),
-    (text: 'foncé dans une porte vitrée impeccable', tone: ContentTone.soft),
+    (text: 'mangé au fast-food deux fois le même jour', tone: ContentTone.normal),
+    (text: 'mangé une glace au petit-déjeuner', tone: ContentTone.normal),
+    (text: 'fait des heures de queue pour un truc', tone: ContentTone.normal),
+    (text: 'oublié un rendez-vous important', tone: ContentTone.normal),
+    (text: 'fait une scène pour la télécommande', tone: ContentTone.normal),
+    (text: 'regardé le même film plus de cinq fois', tone: ContentTone.normal),
+    (text: 'appris par cœur une scène de film', tone: ContentTone.normal),
+    (text: 'perdu un pari stupide', tone: ContentTone.normal),
+    (text: 'gagné aux cartes en trichant', tone: ContentTone.normal),
+    (text: 'cassé un écran de téléphone', tone: ContentTone.normal),
+    (text: 'oublié mon téléphone dans un bar', tone: ContentTone.normal),
+    (text: 'foncé dans une porte vitrée impeccable', tone: ContentTone.normal),
     (
       text: 'salué quelqu\'un qui saluait en fait la personne derrière moi',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'tiré une porte marquée « pousser »', tone: ContentTone.soft),
+    (text: 'tiré une porte marquée « pousser »', tone: ContentTone.normal),
     (
       text:
           'cherché mon téléphone en panique alors que je l\'avais dans la main',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'appelé un prof « maman » devant tout le monde',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'envoyé un vocal de cinq minutes pour un truc de dix secondes',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'réécouté ma voix dans un vocal et eu honte',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'fait semblant d\'être au téléphone pour éviter quelqu\'un',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'applaudi à l\'atterrissage de l\'avion', tone: ContentTone.soft),
-    (text: 'ri au pire moment possible', tone: ContentTone.soft),
+    (text: 'applaudi à l\'atterrissage de l\'avion', tone: ContentTone.normal),
+    (text: 'ri au pire moment possible', tone: ContentTone.normal),
     (
       text: 'trébuché en public et continué comme si de rien n\'était',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'mis dix réveils et ignoré chacun d\'eux', tone: ContentTone.soft),
+    (text: 'mis dix réveils et ignoré chacun d\'eux', tone: ContentTone.normal),
     (
       text: 'cherché mes symptômes en ligne et cru à une maladie rare',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'pleuré devant une publicité', tone: ContentTone.soft),
+    (text: 'pleuré devant une publicité', tone: ContentTone.normal),
     (
       text: 'répondu « vous aussi » au serveur qui me souhaitait bon appétit',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'dormi pendant une visio avec la caméra allumée',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'porté le même haut une semaine d\'affilée', tone: ContentTone.soft),
+    (text: 'porté le même haut une semaine d\'affilée', tone: ContentTone.normal),
     (
       text: 'reniflé un tee-shirt pour décider s\'il était encore mettable',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'mangé directement dans la casserole debout dans la cuisine',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'dit « dernier épisode et je dors » puis vu le lever du soleil',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'oublié pourquoi j\'étais entré dans une pièce',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'ri tout seul en repensant à une honte d\'il y a des années',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'mangé la pâte à tartiner à la cuillère directement dans le pot',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'pleuré parce que j\'avais faim', tone: ContentTone.soft),
+    (text: 'pleuré parce que j\'avais faim', tone: ContentTone.normal),
     (
       text: 'commandé une pizza entière rien que pour moi et tout fini',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'engueulé le GPS à voix haute', tone: ContentTone.soft),
+    (text: 'engueulé le GPS à voix haute', tone: ContentTone.normal),
     (
       text: 'relu vingt fois un message avant de l\'envoyer',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'demandé « juste les pointes » et quitté le coiffeur méconnaissable',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'perdu des heures à regarder des vidéos d\'animaux',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'convaincu quelqu\'un d\'un truc inventé pour rire',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'fait semblant de travailler à l\'arrivée du chef',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'envoyé « ok » juste pour clore une discussion',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'mis mon pyjama à six heures du soir', tone: ContentTone.soft),
-    (text: 'séché la salle de sport pour aller manger', tone: ContentTone.soft),
+    (text: 'mis mon pyjama à six heures du soir', tone: ContentTone.normal),
+    (text: 'séché la salle de sport pour aller manger', tone: ContentTone.normal),
     (
       text: 'reporté le régime « à lundi » pendant des mois',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'utilisé le vélo d\'appartement comme portemanteau',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'dit « à bientôt » en espérant ne jamais revoir la personne',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'parlé aux plantes de la maison', tone: ContentTone.soft),
+    (text: 'parlé aux plantes de la maison', tone: ContentTone.normal),
     (
       text: 'accusé le chien pour un truc que j\'avais fait',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'fini le popcorn avant le début du film', tone: ContentTone.soft),
+    (text: 'fini le popcorn avant le début du film', tone: ContentTone.normal),
     (
       text: 'caché des gâteaux pour ne pas les partager',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'ouvert le frigo dix fois en espérant y trouver du nouveau',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'utilisé l\'excuse « je me lève tôt demain » pour quitter une fête',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'emballé un cadeau cinq minutes avant de l\'offrir',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'commandé à emporter après avoir oublié de décongeler le dîner',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'lu seulement le titre d\'un article et commenté en expert',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'supporté une équipe juste parce qu\'elle gagnait',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'pris la pluie pour ne pas avoir écouté la météo',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'commencé dix livres sans en finir un', tone: ContentTone.soft),
-    (text: 'liké un post sans l\'avoir lu', tone: ContentTone.soft),
+    (text: 'commencé dix livres sans en finir un', tone: ContentTone.normal),
+    (text: 'liké un post sans l\'avoir lu', tone: ContentTone.normal),
     (
       text: 'pris cent photos identiques pour en choisir une',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'demandé un avis sur une photo puis ignoré la réponse',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'mis un filtre sur chaque photo publiée', tone: ContentTone.soft),
+    (text: 'mis un filtre sur chaque photo publiée', tone: ContentTone.normal),
     (
       text: 'regardé mes propres stories plus que quiconque',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'dansé dans ma chambre comme en concert', tone: ContentTone.soft),
+    (text: 'dansé dans ma chambre comme en concert', tone: ContentTone.normal),
     (
       text: 'répété un discours important devant le miroir',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'gagné une dispute imaginaire sous la douche',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'donné dix surnoms différents à mon animal', tone: ContentTone.soft),
+    (text: 'donné dix surnoms différents à mon animal', tone: ContentTone.normal),
     (
       text: 'mangé la dernière part sans demander à personne',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'bu directement à la bouteille devant le frigo',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'porté des chaussettes dépareillées en espérant que ça passe',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'dormi avec une peluche en étant adulte', tone: ContentTone.soft),
+    (text: 'dormi avec une peluche en étant adulte', tone: ContentTone.normal),
     (
       text: 'vérifié derrière les rideaux après un film d\'horreur',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'monté l\'escalier en courant après avoir éteint la lumière',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'exulté pour un créneau réussi du premier coup',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    // piccante
-    (text: 'embrassé quelqu\'un le premier soir', tone: ContentTone.piccante),
+    // mix
+    (text: 'embrassé quelqu\'un le premier soir', tone: ContentTone.mix),
     (
       text: 'eu le béguin pour quelqu\'un dans ce groupe',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'eu le béguin pour le/la partenaire d\'un ami',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'écrit à un ex en pleine nuit', tone: ContentTone.piccante),
+    (text: 'écrit à un ex en pleine nuit', tone: ContentTone.mix),
     (
       text: 'répondu à un ex après des mois de silence',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait semblant de dormir pour éviter un moment d\'intimité',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'menti à quelqu\'un que je fréquentais', tone: ContentTone.piccante),
-    (text: 'fouillé le téléphone d\'un partenaire', tone: ContentTone.piccante),
-    (text: 'eu deux rendez-vous le même jour', tone: ContentTone.piccante),
+    (text: 'menti à quelqu\'un que je fréquentais', tone: ContentTone.mix),
+    (text: 'fouillé le téléphone d\'un partenaire', tone: ContentTone.mix),
+    (text: 'eu deux rendez-vous le même jour', tone: ContentTone.mix),
     (
       text: 'embrassé deux personnes dans la même soirée',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'dit « je t\'aime » sans vraiment le penser',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'rompu avec quelqu\'un par message', tone: ContentTone.piccante),
-    (text: 'renoué avec un ex', tone: ContentTone.piccante),
-    (text: 'caché une relation', tone: ContentTone.piccante),
-    (text: 'flirté pour obtenir quelque chose', tone: ContentTone.piccante),
-    (text: 'utilisé une appli de rencontres', tone: ContentTone.piccante),
+    (text: 'rompu avec quelqu\'un par message', tone: ContentTone.mix),
+    (text: 'renoué avec un ex', tone: ContentTone.mix),
+    (text: 'caché une relation', tone: ContentTone.mix),
+    (text: 'flirté pour obtenir quelque chose', tone: ContentTone.mix),
+    (text: 'utilisé une appli de rencontres', tone: ContentTone.mix),
     (
       text: 'utilisé une photo de profil vieille de dix ans',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'rencontré en vrai quelqu\'un connu en ligne',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'dédié une chanson à quelqu\'un présent dans cette pièce',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'dormi chez quelqu\'un que je venais de rencontrer',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'perdu le compte de ce que j\'avais bu', tone: ContentTone.piccante),
+    (text: 'perdu le compte de ce que j\'avais bu', tone: ContentTone.mix),
     (
       text: 'fait quelque chose d\'embarrassant en étant ivre',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'regretté le lendemain matin les messages envoyés la veille',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'oublié des bouts entiers d\'une soirée',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'chanté dans la rue à quatre heures du matin',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'nagé sans maillot de bain', tone: ContentTone.piccante),
+    (text: 'nagé sans maillot de bain', tone: ContentTone.mix),
     (
       text: 'déambulé nu chez moi avec quelqu\'un en visite',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'oublié de fermer la porte de la salle de bain',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'dit un énorme mensonge lors d\'un premier rendez-vous',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'fait semblant d\'être célibataire', tone: ContentTone.piccante),
+    (text: 'fait semblant d\'être célibataire', tone: ContentTone.mix),
     (
       text:
           'espionné le profil du nouveau ou de la nouvelle partenaire de mon ex',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'eu une dispute en public avec un partenaire',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait la paix avec un bisou sans rien clarifier',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'embrassé quelqu\'un pour un pari', tone: ContentTone.piccante),
+    (text: 'embrassé quelqu\'un pour un pari', tone: ContentTone.mix),
     (
       text: 'regretté une réponse donnée à Action ou Vérité',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'entendu les voisins coucher ensemble à travers le mur',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'eu un flirt sur mon lieu de travail', tone: ContentTone.piccante),
+    (text: 'eu un flirt sur mon lieu de travail', tone: ContentTone.mix),
     (
       text: 'écrit à mon patron des choses que je n\'aurais pas dû',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'posé un lapin à un rendez-vous sans prévenir',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'dit « tu montes boire un verre ? » en sachant très bien ce que je voulais dire',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'embrassé quelqu\'un dans les toilettes d\'une boîte',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'passé un film entier au cinéma sans en regarder une seule scène',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'gardé une photo embarrassante d\'un ami',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'scrollé le profil de quelqu\'un jusqu\'à trois ans en arrière',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'répondu à une story juste pour me faire remarquer',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'menti sur l\'endroit où je passais la soirée',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'dit que j\'étais à la maison alors que j\'étais dehors',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'caché une relation à ma famille', tone: ContentTone.piccante),
+    (text: 'caché une relation à ma famille', tone: ContentTone.mix),
     (
       text: 'embrassé quelqu\'un dont j\'avais oublié le prénom',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'demandé à un ami de m\'appeler pour m\'échapper d\'un rendez-vous',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'quitté une boîte en douce pour ne dire au revoir à personne',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fini la soirée dans un endroit dont je ne me souviens plus',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'donné mon numéro à quelqu\'un que je venais de rencontrer en boîte',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'dit un mensonge pendant cette partie', tone: ContentTone.piccante),
-    (text: 'ghosté quelqu\'un sans explication', tone: ContentTone.piccante),
+    (text: 'dit un mensonge pendant cette partie', tone: ContentTone.mix),
+    (text: 'ghosté quelqu\'un sans explication', tone: ContentTone.mix),
     (
       text: 'relu une vieille conversation par nostalgie',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'mis un like sur une photo vieille de trois ans pendant une séance de stalking nocturne',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'inventé un partenaire imaginaire pour me débarrasser de quelqu\'un',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'répété des phrases de drague devant le miroir',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'embrassé l\'ex d\'un ami', tone: ContentTone.piccante),
+    (text: 'embrassé l\'ex d\'un ami', tone: ContentTone.mix),
     (
       text:
           'demandé à un ami d\'enquêter pour savoir si je plaisais à quelqu\'un',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'vomi dans un endroit improbable pendant une soirée',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'eu une histoire d\'un soir', tone: ContentTone.piccante),
+    (text: 'eu une histoire d\'un soir', tone: ContentTone.mix),
     (
       text: 'fait le walk of shame avec les vêtements de la veille',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'envoyé une photo que je n\'enverrais jamais à mes parents',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait un rêve torride sur quelqu\'un présent dans cette pièce',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'flirté avec quelqu\'un du personnel pour avoir un verre gratuit',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'passé la nuit dehors en mentant sur l\'endroit où j\'étais',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'enregistré un contact sous un faux nom pour ne pas me faire choper',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'embrassé quelqu\'un juste parce que c\'était minuit le soir du Nouvel An',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait du sexting jusqu\'à une heure avancée de la nuit',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'lancé une conversation qui a fini en sexting',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'embrassé quelqu\'un beaucoup plus âgé ou plus jeune que moi',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'eu un fantasme sur un collègue', tone: ContentTone.piccante),
+    (text: 'eu un fantasme sur un collègue', tone: ContentTone.mix),
     (
       text: 'commencé un massage qui a fini tout autrement',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'embrassé quelqu\'un moins d\'une heure après l\'avoir rencontré',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'acheté de la lingerie en pensant à qui la verrait',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'flirté à la salle de sport au lieu de m\'entraîner',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'eu un flirt de vacances qui a pris fin avec les vacances',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'embrassé quelqu\'un dans un ascenseur', tone: ContentTone.piccante),
+    (text: 'embrassé quelqu\'un dans un ascenseur', tone: ContentTone.mix),
     (
       text: 'pris une douche avec quelqu\'un d\'autre',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'partagé un lit avec un ami en me demandant s\'il allait se passer quelque chose',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'embrassé quelqu\'un pendant un jeu comme celui-ci',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'envoyé ma position à un ami avant un rendez-vous à l\'aveugle',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'tenté de draguer avec une phrase trouvée en ligne',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'fait un compliment osé à un inconnu', tone: ContentTone.piccante),
-    (text: 'pris un râteau devant tout le monde', tone: ContentTone.piccante),
+    (text: 'fait un compliment osé à un inconnu', tone: ContentTone.mix),
+    (text: 'pris un râteau devant tout le monde', tone: ContentTone.mix),
     (
       text: 'couché avec quelqu\'un dès le premier rendez-vous',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'simulé un orgasme', tone: ContentTone.piccante),
+    (text: 'simulé un orgasme', tone: ContentTone.mix),
     (
       text:
           'fait du sexting avec quelqu\'un connu depuis moins de vingt-quatre heures',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'été le premier à demander une photo osée',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'reçu une photo hot non sollicitée et répondu par un compliment',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'couché dans un lieu public', tone: ContentTone.piccante),
+    (text: 'couché dans un lieu public', tone: ContentTone.mix),
     (
       text: 'embué les vitres d\'une voiture, et pas à cause du froid',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'couché chez des inconnus pendant une fête',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'passé la nuit avec quelqu\'un dont j\'avais oublié le prénom',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'croisé une connaissance pendant le walk of shame et salué comme si de rien n\'était',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'embrassé quelqu\'un juste parce que c\'était le bon soir',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'embrassé quelqu\'un dans les dix premières minutes d\'un premier rendez-vous',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'embrassé une personne du même sexe', tone: ContentTone.piccante),
+    (text: 'embrassé une personne du même sexe', tone: ContentTone.mix),
     (
       text: 'désiré quelqu\'un présent dans cette pièce',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'fait un rêve érotique sur un ami', tone: ContentTone.piccante),
+    (text: 'fait un rêve érotique sur un ami', tone: ContentTone.mix),
     (
       text:
           'imaginé tout un avenir avec quelqu\'un que je venais de rencontrer',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'eu une histoire purement physique qui a duré plus de six mois',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'dit « je t\'aime » juste pour arriver à la fin de la soirée',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait la paix au lit après une dispute déclenchée exprès',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'flirté avec quelqu\'un pour me faire offrir quelque chose',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'donné un faux numéro à quelqu\'un qui draguait',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'utilisé une phrase de drague trouvée sur internet',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'dragué à la salle de sport', tone: ContentTone.piccante),
-    (text: 'dragué à un mariage', tone: ContentTone.piccante),
-    (text: 'dragué au supermarché', tone: ContentTone.piccante),
+    (text: 'dragué à la salle de sport', tone: ContentTone.mix),
+    (text: 'dragué à un mariage', tone: ContentTone.mix),
+    (text: 'dragué au supermarché', tone: ContentTone.mix),
     (
       text: 'embrassé mon meilleur ami ou ma meilleure amie',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'ressenti de l\'attirance pour le partenaire d\'un ami',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'couché avec un collègue', tone: ContentTone.piccante),
+    (text: 'couché avec un collègue', tone: ContentTone.mix),
     (
       text: 'eu une histoire avec quelqu\'un beaucoup plus âgé que moi',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'menti sur mon nombre de partenaires', tone: ContentTone.piccante),
+    (text: 'menti sur mon nombre de partenaires', tone: ContentTone.mix),
     (
       text: 'oublié le prénom de quelqu\'un alors qu\'on était au lit',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait semblant de dormir pour éviter un moment intime',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'couché en gardant mes chaussettes aux pieds',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'ri pendant un moment intime en gâchant tout',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'envoyé un message hot à la mauvaise personne',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'relu mes messages de sexting et ressenti de la fierté',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'créé une playlist exprès pour les nuits accompagnées',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'fouillé le téléphone de quelqu\'un pendant qu\'il dormait à côté de moi',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'cherché sur internet comment m\'améliorer au lit',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'demandé à un ami un avis honnête sur mes performances au lit',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'regardé un film pour adultes à deux', tone: ContentTone.piccante),
+    (text: 'regardé un film pour adultes à deux', tone: ContentTone.mix),
     (
       text: 'acheté de la lingerie exprès pour une nuit précise',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'couché sous la douche', tone: ContentTone.piccante),
+    (text: 'couché sous la douche', tone: ContentTone.mix),
     (
       text: 'couché sur le canapé de quelqu\'un d\'autre',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait du bruit exprès pour qu\'on m\'entende',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'dû me cacher en vitesse à l\'arrivée de quelqu\'un',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'remis mes vêtements en vitesse et enfilé le mauvais t-shirt',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'laissé des marques visibles dans le cou de quelqu\'un',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'caché un suçon avec du maquillage ou une écharpe',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'menti à un partenaire en lui disant qu\'il était le meilleur',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'noté une nuit en en parlant avec des amis le lendemain',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait des classements de mes ex avec des amis',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'recroisé un coup d\'un soir sur mon lieu de travail',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'flirté avec deux personnes en même temps dans la même soirée',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'utilisé une appli de rencontres assis à côté de mes parents',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'eu un match sans jamais écrire par peur',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'fait le premier pas et essuyé un refus',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'embrassé quelqu\'un sous la pluie en me sentant dans un film',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'organisé une rencontre « par hasard » avec mon crush',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'proposé un massage avec des arrière-pensées évidentes',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'accepté un massage en sachant très bien où ça allait finir',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'pris le petit-déjeuner au lit avec quelqu\'un rencontré la veille',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'gardé une brosse à dents de rechange pour les invités d\'un soir',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    // cattivo
-    (text: 'fait un plan à trois', tone: ContentTone.cattivo),
-    (text: 'fait une partouze à plus de trois', tone: ContentTone.cattivo),
+    // hot
+    (text: 'fait un plan à trois', tone: ContentTone.hot),
+    (text: 'fait une partouze à plus de trois', tone: ContentTone.hot),
     (
       text: 'joui avec un inconnu dès la première nuit',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un orgasme multiple pendant le même rapport',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'simulé un orgasme pour faire jouir mon partenaire plus vite',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'joui uniquement grâce au sexe oral', tone: ContentTone.cattivo),
+    (text: 'joui uniquement grâce au sexe oral', tone: ContentTone.hot),
     (
       text: 'éjaculé ou giclé plus loin que je ne le pensais',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'avalé le sperme de mon partenaire', tone: ContentTone.cattivo),
-    (text: 'craché le sperme après une fellation', tone: ContentTone.cattivo),
+    (text: 'avalé le sperme de mon partenaire', tone: ContentTone.hot),
+    (text: 'craché le sperme après une fellation', tone: ContentTone.hot),
     (
       text: 'pratiqué le sexe oral sur un partenaire tout juste rencontré',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'reçu du sexe oral en étant au téléphone',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'pratiqué le sexe oral en voiture', tone: ContentTone.cattivo),
-    (text: 'pratiqué la sodomie', tone: ContentTone.cattivo),
+    (text: 'pratiqué le sexe oral en voiture', tone: ContentTone.hot),
+    (text: 'pratiqué la sodomie', tone: ContentTone.hot),
     (
       text: 'reçu une sodomie pour la première fois en étant ivre',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'essayé le rimming avec un partenaire', tone: ContentTone.cattivo),
-    (text: 'fait l\'amour en levrette', tone: ContentTone.cattivo),
-    (text: 'essayé la position du 69', tone: ContentTone.cattivo),
-    (text: 'fait l\'amour sous la douche', tone: ContentTone.cattivo),
-    (text: 'fait l\'amour dans la baignoire', tone: ContentTone.cattivo),
-    (text: 'fait l\'amour dans une piscine', tone: ContentTone.cattivo),
-    (text: 'fait l\'amour sur une plage la nuit', tone: ContentTone.cattivo),
+    (text: 'essayé le rimming avec un partenaire', tone: ContentTone.hot),
+    (text: 'fait l\'amour en levrette', tone: ContentTone.hot),
+    (text: 'essayé la position du 69', tone: ContentTone.hot),
+    (text: 'fait l\'amour sous la douche', tone: ContentTone.hot),
+    (text: 'fait l\'amour dans la baignoire', tone: ContentTone.hot),
+    (text: 'fait l\'amour dans une piscine', tone: ContentTone.hot),
+    (text: 'fait l\'amour sur une plage la nuit', tone: ContentTone.hot),
     (
       text: 'fait l\'amour dans une forêt en plein air',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour sur un balcon à la vue des voisins',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'eu un rapport dans un ascenseur', tone: ContentTone.cattivo),
+    (text: 'eu un rapport dans un ascenseur', tone: ContentTone.hot),
     (
       text: 'fait l\'amour dans les toilettes publiques d\'une boîte de nuit',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour dans une cabine d\'essayage',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour dans un avion en rejoignant le mile high club',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'fait l\'amour dans un train en marche', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour dans un train en marche', tone: ContentTone.hot),
     (
       text: 'fait l\'amour sur la banquette arrière d\'une voiture',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'baisé sur la table de la cuisine', tone: ContentTone.cattivo),
+    (text: 'baisé sur la table de la cuisine', tone: ContentTone.hot),
     (
       text:
           'fait l\'amour par terre parce qu\'on n\'arrivait pas jusqu\'au lit',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'utilisé un sex toy avec un partenaire', tone: ContentTone.cattivo),
-    (text: 'utilisé un vibromasseur sur moi-même', tone: ContentTone.cattivo),
-    (text: 'utilisé un gode avec mon partenaire', tone: ContentTone.cattivo),
-    (text: 'essayé un cockring pendant le sexe', tone: ContentTone.cattivo),
-    (text: 'utilisé un plug anal', tone: ContentTone.cattivo),
-    (text: 'utilisé des menottes pendant le sexe', tone: ContentTone.cattivo),
+    (text: 'utilisé un sex toy avec un partenaire', tone: ContentTone.hot),
+    (text: 'utilisé un vibromasseur sur moi-même', tone: ContentTone.hot),
+    (text: 'utilisé un gode avec mon partenaire', tone: ContentTone.hot),
+    (text: 'essayé un cockring pendant le sexe', tone: ContentTone.hot),
+    (text: 'utilisé un plug anal', tone: ContentTone.hot),
+    (text: 'utilisé des menottes pendant le sexe', tone: ContentTone.hot),
     (
       text: 'attaché ou me suis fait attacher pendant le sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'essayé le bondage avec des cordes', tone: ContentTone.cattivo),
+    (text: 'essayé le bondage avec des cordes', tone: ContentTone.hot),
     (
       text: 'utilisé un bandeau sur les yeux pendant le sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé le spanking en donnant ou en recevant une fessée',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'tiré les cheveux de mon partenaire pendant le sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé le soft choking en mettant une main sur la gorge',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'dit des mots crus à mon partenaire pendant le sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'fait du dirty talk au téléphone', tone: ContentTone.cattivo),
-    (text: 'joué un jeu de rôle érotique au lit', tone: ContentTone.cattivo),
+    (text: 'fait du dirty talk au téléphone', tone: ContentTone.hot),
+    (text: 'joué un jeu de rôle érotique au lit', tone: ContentTone.hot),
     (
       text: 'porté un costume pour un jeu de rôle sexuel',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'essayé le jeu du dominant et du soumis', tone: ContentTone.cattivo),
+    (text: 'essayé le jeu du dominant et du soumis', tone: ContentTone.hot),
     (
       text:
           'utilisé la cire chaude d\'une bougie sur le corps de mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé le jeu des glaçons pendant les préliminaires',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'léché de la chantilly ou du chocolat sur le corps de mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'utilisé de la nourriture pendant le sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé le sexe tantrique qui a duré des heures',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un coup vite fait de moins de cinq minutes',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour trois fois dans la même nuit',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait un marathon de sexe qui a duré toute la nuit',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'envoyé une photo de moi nu à quelqu\'un',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'reçu un nude inattendu', tone: ContentTone.cattivo),
+    (text: 'reçu un nude inattendu', tone: ContentTone.hot),
     (
       text: 'filmé une vidéo de moi en train de me masturber',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'filmé un rapport pour le revoir', tone: ContentTone.cattivo),
-    (text: 'regardé une vidéo hot faite avec un ex', tone: ContentTone.cattivo),
+    (text: 'filmé un rapport pour le revoir', tone: ContentTone.hot),
+    (text: 'regardé une vidéo hot faite avec un ex', tone: ContentTone.hot),
     (
       text: 'fait du sexting pendant les heures de travail',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'eu un appel vidéo hot à distance', tone: ContentTone.cattivo),
+    (text: 'eu un appel vidéo hot à distance', tone: ContentTone.hot),
     (
       text: 'fait du cybersexe avec quelqu\'un jamais rencontré en vrai',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait masturber mon partenaire en appel vidéo',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'masturbé quelqu\'un sous la table au restaurant',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'touché mon partenaire au cinéma pendant le film',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un rapport pendant que d\'autres dormaient dans la même pièce',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour en sachant que quelqu\'un pouvait nous entendre',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'regardé un autre couple faire l\'amour en direct',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour pendant que quelqu\'un regardait',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'échangé mon partenaire avec un autre couple',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'participé à une orgie', tone: ContentTone.cattivo),
-    (text: 'été à une sex party', tone: ContentTone.cattivo),
-    (text: 'fréquenté un club échangiste', tone: ContentTone.cattivo),
+    (text: 'participé à une orgie', tone: ContentTone.hot),
+    (text: 'été à une sex party', tone: ContentTone.hot),
+    (text: 'fréquenté un club échangiste', tone: ContentTone.hot),
     (
       text: 'embrassé deux personnes différentes le même soir',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu deux partenaires sexuels dans la même journée',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'fait l\'amour avec deux personnes différentes en vingt-quatre heures',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu une histoire uniquement sexuelle sans sentiments',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'eu un plan cul régulier', tone: ContentTone.cattivo),
-    (text: 'joui uniquement avec un sex toy', tone: ContentTone.cattivo),
-    (text: 'eu un coup d\'un soir avec un inconnu', tone: ContentTone.cattivo),
+    (text: 'eu un plan cul régulier', tone: ContentTone.hot),
+    (text: 'joui uniquement avec un sex toy', tone: ContentTone.hot),
+    (text: 'eu un coup d\'un soir avec un inconnu', tone: ContentTone.hot),
     (
       text: 'dragué quelqu\'un dans le seul but de coucher ensemble',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'utilisé une appli de rencontres juste pour trouver du sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'eu un rapport sans vraiment me souvenir du prénom de mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour avec quelqu\'un beaucoup plus âgé que moi',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour avec quelqu\'un beaucoup plus jeune que moi',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu le béguin en secret pour un ami de mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fantasmé sur une personne présente dans cette pièce',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un fantasme sexuel sur un ex pendant le sexe actuel',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'imaginé une célébrité en faisant l\'amour',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fantasmé d\'être regardé pendant que je faisais l\'amour',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'eu le fantasme d\'un plan à trois', tone: ContentTone.cattivo),
+    (text: 'eu le fantasme d\'un plan à trois', tone: ContentTone.hot),
     (
       text:
           'ressenti de l\'excitation en regardant deux personnes s\'embrasser',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'découvert un fétiche que je ne pensais pas avoir',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'eu un fétiche des pieds', tone: ContentTone.cattivo),
-    (text: 'léché les pieds de mon partenaire', tone: ContentTone.cattivo),
-    (text: 'eu un fétiche pour la lingerie', tone: ContentTone.cattivo),
+    (text: 'eu un fétiche des pieds', tone: ContentTone.hot),
+    (text: 'léché les pieds de mon partenaire', tone: ContentTone.hot),
+    (text: 'eu un fétiche pour la lingerie', tone: ContentTone.hot),
     (
       text: 'senti les sous-vêtements de mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'porté les sous-vêtements de mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'ressenti de l\'excitation en portant des vêtements de l\'autre sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé le jeu de l\'exhibitionnisme en me montrant à une fenêtre',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'fait l\'amour avec la lumière allumée devant un miroir pour me regarder',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'utilisé un miroir pour nous regarder pendant le sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'masturbé en pensant à un collègue de travail',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un rapport au bureau après les heures de travail',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour chez les parents de mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour chez des amis pendant une fête',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'fait l\'amour sous la tente en camping', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour sous la tente en camping', tone: ContentTone.hot),
     (
       text: 'eu un rapport pendant un festival de musique',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'fait l\'amour dans un hôtel de passe', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour dans un hôtel de passe', tone: ContentTone.hot),
     (
       text:
           'réservé une chambre juste pour faire l\'amour pendant la pause déjeuner',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'fait l\'amour pendant les règles', tone: ContentTone.cattivo),
+    (text: 'fait l\'amour pendant les règles', tone: ContentTone.hot),
     (
       text: 'pris une douche ensemble après le sexe et recommencé',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'utilisé du lubrifiant pour la première fois',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé un lubrifiant chauffant ou à effet fourmillement',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'utilisé des préservatifs aromatisés', tone: ContentTone.cattivo),
+    (text: 'utilisé des préservatifs aromatisés', tone: ContentTone.hot),
     (
       text: 'oublié de mettre un préservatif dans le feu de l\'action',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour sans protection avec un inconnu',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'pris la pilule du lendemain', tone: ContentTone.cattivo),
+    (text: 'pris la pilule du lendemain', tone: ContentTone.hot),
     (
       text: 'eu une frayeur pour une possible grossesse',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait un test de dépistage après un rapport à risque',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'essayé le sexe les yeux bandés sans savoir qui me touchait pendant une fête',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'fait un gangbang ou été au centre de l\'attention de plusieurs personnes',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'déshabillé complètement quelqu\'un avec les dents',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'déchiré les vêtements de mon partenaire dans le feu de l\'action',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'fait un lap dance à quelqu\'un', tone: ContentTone.cattivo),
+    (text: 'fait un lap dance à quelqu\'un', tone: ContentTone.hot),
     (
       text: 'reçu un lap dance dans un club de striptease',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'payé pour un lap dance privé', tone: ContentTone.cattivo),
+    (text: 'payé pour un lap dance privé', tone: ContentTone.hot),
     (
       text: 'assisté à un spectacle érotique en direct',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'essayé le pegging avec ma partenaire', tone: ContentTone.cattivo),
+    (text: 'essayé le pegging avec ma partenaire', tone: ContentTone.hot),
     (
       text: 'utilisé un fouet ou une cravache pendant le sexe',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'essayé des pinces à tétons', tone: ContentTone.cattivo),
+    (text: 'essayé des pinces à tétons', tone: ContentTone.hot),
     (
       text: 'essayé le wax play ou le jeu des températures ensemble',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un orgasme uniquement grâce à la stimulation des tétons',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé le squirting ou fait squirter ma partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'léché ou sucé les doigts de mon partenaire de façon provocante',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'mordu mon partenaire en laissant une marque visible',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'laissé un suçon à un endroit gênant', tone: ContentTone.cattivo),
+    (text: 'laissé un suçon à un endroit gênant', tone: ContentTone.hot),
     (
       text: 'fait une branlette ou une branlette espagnole à mon partenaire',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait une masturbation mutuelle en nous regardant',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'essayé le sexe debout contre un mur', tone: ContentTone.cattivo),
+    (text: 'essayé le sexe debout contre un mur', tone: ContentTone.hot),
     (
       text: 'fait l\'amour appuyé sur le lavabo de la salle de bain',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'essayé la position de l\'amazone en étant au-dessus',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'fait l\'amour sur un lave-linge en essorage',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un rapport interrompu par quelqu\'un qui entrait',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'fait l\'amour en cachette pendant un dîner chez d\'autres personnes',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'envoyé des messages hot à la mauvaise personne par erreur',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'eu un rapport dans un lieu public très fréquenté',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'essayé l\'edging en m\'arrêtant juste avant l\'orgasme plusieurs fois',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
   ];
 
   // ---------------------------------------------------- chiLoPotrebbeFare
   static const List<({String text, String tone})>
   chiLoPotrebbeFare = <({String text, String tone})>[
-    // soft
+    // normal
     (
       text: 'Qui se perdrait dans une ville qu\'il connaît depuis des années ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui arriverait en retard à son propre mariage ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui deviendrait célèbre par accident ?', tone: ContentTone.soft),
+    (text: 'Qui deviendrait célèbre par accident ?', tone: ContentTone.normal),
     (
       text: 'Qui survivrait le plus longtemps sur une île déserte ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui passerait un week-end entier sans sortir de chez lui ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui engagerait la conversation avec un inconnu dans un ascenseur ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui oublierait son propre anniversaire de couple ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui se disputerait avec le GPS ?', tone: ContentTone.soft),
+    (text: 'Qui se disputerait avec le GPS ?', tone: ContentTone.normal),
     (
       text: 'Qui achèterait un truc en ligne à trois heures du matin ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui mangerait de la pizza sept jours de suite ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui s\'endormirait au cinéma ?', tone: ContentTone.soft),
-    (text: 'Qui chanterait au karaoké sans hésiter ?', tone: ContentTone.soft),
-    (text: 'Qui danserait le premier à une fête ?', tone: ContentTone.soft),
+    (text: 'Qui s\'endormirait au cinéma ?', tone: ContentTone.normal),
+    (text: 'Qui chanterait au karaoké sans hésiter ?', tone: ContentTone.normal),
+    (text: 'Qui danserait le premier à une fête ?', tone: ContentTone.normal),
     (
       text: 'Qui organiserait les vacances de tout le groupe ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui perdrait son passeport à l\'aéroport ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui emporterait trois valises pour deux jours ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui partirait demain avec juste un sac à dos ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui s\'installerait à l\'étranger sans réfléchir ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui retournerait vivre chez ses parents sans problème ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui adopterait dix chats ?', tone: ContentTone.soft),
+    (text: 'Qui adopterait dix chats ?', tone: ContentTone.normal),
     (
       text: 'Qui parlerait à son chien comme à une personne ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui oublierait d\'arroser les plantes jusqu\'à les tuer ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui cuisinerait pour vingt personnes sans raison ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui ferait brûler l\'eau des pâtes ?', tone: ContentTone.soft),
+    (text: 'Qui ferait brûler l\'eau des pâtes ?', tone: ContentTone.normal),
     (
       text: 'Qui goûterait n\'importe quoi, même le plus étrange ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui oublierait son portefeuille pile quand c\'est son tour de payer ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui dépenserait tout son salaire en une semaine ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui deviendrait millionnaire grâce à une idée absurde ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui gagnerait au loto et ne le dirait à personne ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui négocierait les prix même au supermarché ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui achèterait un appareil de sport et ne l\'utiliserait jamais ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui s\'inscrirait à la salle en janvier et abandonnerait en février ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui courrait un marathon sans s\'entraîner ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se blesserait en faisant un truc tout banal ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui irait aux urgences pour un ongle cassé ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui n\'irait pas chez le médecin même avec 39 de fièvre ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui chercherait ses symptômes sur internet et se croirait mourant ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui dormirait jusqu\'à deux heures de l\'après-midi ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui mettrait dix réveils et les éteindrait tous ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui enverrait des messages vocaux de sept minutes ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui répondrait uniquement avec des emojis ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui laisserait les messages en attente pendant des jours ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui aurait toujours son téléphone à 1% de batterie ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui prendrait cent photos pour n\'en publier qu\'une ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui dirait oui à tout et le regretterait ensuite ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui annulerait un plan à la dernière minute ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui serait le dernier à partir d\'une fête ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui quitterait une fête sans dire au revoir à personne ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui rapporterait chez lui les restes du buffet ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se battrait pour la dernière part de gâteau ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui conduirait en chantant à tue-tête ?', tone: ContentTone.soft),
-    (text: 'Qui se perdrait avec le GPS allumé ?', tone: ContentTone.soft),
+    (text: 'Qui conduirait en chantant à tue-tête ?', tone: ContentTone.normal),
+    (text: 'Qui se perdrait avec le GPS allumé ?', tone: ContentTone.normal),
     (
       text: 'Qui prendrait deux amendes de stationnement le même jour ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui donnerait un prénom à sa voiture ?', tone: ContentTone.soft),
+    (text: 'Qui donnerait un prénom à sa voiture ?', tone: ContentTone.normal),
     (
       text: 'Qui aurait une chambre en désordre permanent ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui ferait le ménage à deux heures du matin ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui achèterait un meuble sans réussir à le monter ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui réparerait n\'importe quoi avec du scotch ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui appellerait un technicien pour changer une ampoule ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui regarderait un tutoriel et se sentirait expert ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui finirait une série en une seule nuit ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui spoilerait la fin sans s\'en rendre compte ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui pleurerait devant une publicité ?', tone: ContentTone.soft),
-    (text: 'Qui rirait au moment le moins opportun ?', tone: ContentTone.soft),
+    (text: 'Qui pleurerait devant une publicité ?', tone: ContentTone.normal),
+    (text: 'Qui rirait au moment le moins opportun ?', tone: ContentTone.normal),
     (
       text: 'Qui raconterait la même histoire pour la dixième fois ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui couperait toujours la parole aux autres ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui donnerait des conseils que personne ne demande ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui gâcherait une surprise en parlant trop ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui offrirait le cadeau acheté à la dernière minute ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui emballerait un cadeau de façon désastreuse ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui garderait les décorations de Noël jusqu\'en mars ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui serait ému au mariage d\'un ami ?', tone: ContentTone.soft),
+    (text: 'Qui serait ému au mariage d\'un ami ?', tone: ContentTone.normal),
     (
       text: 'Qui ferait le discours le plus long à un dîner ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui s\'inscrirait à un cours et n\'y irait jamais ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui gagnerait un concours de mangeurs de hot-dogs ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui écrirait un livre sur sa propre vie ?', tone: ContentTone.soft),
+    (text: 'Qui écrirait un livre sur sa propre vie ?', tone: ContentTone.normal),
     (
       text: 'Qui ouvrirait une chaîne et l\'abandonnerait après trois vidéos ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se présenterait à une émission de télé-réalité ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui deviendrait viral pour une vidéo faite par erreur ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui répondrait « j\'arrive dans cinq minutes » en étant encore au lit ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui enverrait un message dans la mauvaise conversation en parlant de cette conversation ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui mettrait de l\'ananas sur la pizza sans aucune honte ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui commanderait un cappuccino après le dîner au restaurant ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui tricherait à un jeu de société pour gagner ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui serait éliminé le premier dans un film d\'horreur ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui croirait une fake news et la partagerait à tout le monde ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui oublierait où il a garé sa voiture ?', tone: ContentTone.soft),
+    (text: 'Qui oublierait où il a garé sa voiture ?', tone: ContentTone.normal),
     (
       text: 'Qui finirait les chips des autres « juste pour goûter » ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui deviendrait ami avec le chauffeur de taxi en dix minutes ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui consulterait son horoscope pour des décisions importantes ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui utiliserait un téléphone à l\'écran complètement cassé ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui serait ponctuel pile le jour où les autres sont en retard ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui ferait la queue la nuit pour la sortie d\'un nouveau téléphone ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui saluerait quelqu\'un avec enthousiasme en le confondant avec un autre ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui répondrait « tout va bien » alors que tout va très mal ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se vexerait pour une blague en jurant ne pas être vexé ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui achèterait dix livres sans en avoir fini un seul ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui porterait un parapluie un mois et l\'oublierait le jour de la pluie ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui aurait une playlist pour chaque humeur possible ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    (text: 'Qui parlerait tout seul en cuisinant ?', tone: ContentTone.soft),
+    (text: 'Qui parlerait tout seul en cuisinant ?', tone: ContentTone.normal),
     (
       text:
           'Qui demanderait conseil au serveur et commanderait son plat habituel ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se vanterait d\'une recette copiée sur internet ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui mettrait le réveil à six heures pour courir et n\'irait jamais ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui organiserait un dîner élaboré et finirait par commander des pizzas ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui perdrait ses clés au moins une fois par mois ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui garderait des tickets de caisse de trois ans dans son portefeuille ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui applaudirait à l\'atterrissage de l\'avion ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui emporterait son chargeur partout comme une pièce d\'identité ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui écrirait un avis interminable pour une pizza arrivée froide ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui appellerait sa mère pour savoir comment cuire le riz ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui vivrait très bien une année entière sans réseaux sociaux ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui reviendrait trois fois vérifier qu\'il a fermé la porte ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui se laisserait convaincre d\'acheter n\'importe quoi par un vendeur sympa ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui changerait d\'équipe favorite selon qui gagne ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui regarderait les stories de tout le monde sans jamais en publier ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui, en voyage, s\'enthousiasmerait plus pour la nourriture que pour les monuments ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui commanderait toujours le même plat dans n\'importe quel restaurant ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui choisirait sa destination de vacances en regardant juste les photos des restaurants ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se disputerait avec l\'imprimante jusqu\'à la menacer ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui passerait plus de temps à choisir le film qu\'à le regarder ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui utiliserait encore l\'excuse « je n\'avais pas reçu le message » ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui répondrait aux mails de travail même à minuit ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui démissionnerait pour ouvrir une paillote sur la plage ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se présenterait à un entretien avec le t-shirt à l\'envers ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui ferait une sieste « de dix minutes » de trois heures ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui garderait deux cents onglets ouverts dans son navigateur ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui photographierait le plat avant de laisser tout le monde manger ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui connaîtrait les chansons par cœur mais jamais le nom du chanteur ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se perdrait dans un centre commercial ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui se déguiserait de façon ridicule pour une soirée à thème en la prenant trop au sérieux ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui gagnerait une discussion juste par épuisement de l\'autre ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui changerait de coupe de cheveux après chaque déception ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui se couperait la frange tout seul à deux heures du matin ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui achèterait des vêtements et les laisserait étiquetés dans l\'armoire des mois ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui jurerait « régime dès lundi » tous les dimanches soir ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui commanderait le dessert juste après avoir dit « je suis plein » ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui goûterait dans l\'assiette des autres sans demander la permission ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui mettrait du ketchup même sur un plat gastronomique ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui achèterait ses cadeaux de Noël dès octobre ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui achèterait ses cadeaux de Noël l\'après-midi du réveillon ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui commencerait un nouveau hobby tous les deux mois en abandonnant le précédent ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui passerait une heure à choisir sa tenue pour sortir en jogging ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text:
           'Qui parlerait à ses plantes en étant sûr qu\'elles poussent mieux ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui enverrait un vocal même pour répondre « ok » ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui écrirait « ahahah » en restant complètement sérieux ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui arriverait le premier à un buffet gratuit ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui compterait les jours avant les vacances dès janvier ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui s\'endormirait devant le film qu\'il a choisi ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui deviendrait ami avec un inconnu dans la file de la poste ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
     (
       text: 'Qui demanderait son chemin puis irait dans la direction opposée ?',
-      tone: ContentTone.soft,
+      tone: ContentTone.normal,
     ),
-    // piccante
+    // mix
     (
       text: 'Qui enverrait un message à un ex à trois heures du matin ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui reviendrait avec un ex pour la troisième fois ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui tomberait amoureux en vacances en l\'espace de deux jours ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui dirait « je t\'aime » en premier ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui quitterait quelqu\'un par message ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui flirterait avec le serveur devant tout le monde ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui utiliserait la même phrase de drague depuis dix ans ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui aurait le plus de conversations ouvertes en même temps ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui vérifierait le téléphone de son partenaire ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui cacherait une relation à tout le groupe ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui embrasserait quelqu\'un pour un pari ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui ferait sa déclaration devant tout le monde ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui ghosterait quelqu\'un sans explication ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui répondrait à une story juste pour se faire remarquer ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui regarderait le profil d\'un ex chaque semaine ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui mettrait un like à une photo vieille de trois ans par erreur ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui raconterait un secret après deux verres ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui finirait par chanter sur la table d\'un bar ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui s\'endormirait à sa propre fête d\'anniversaire ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'Qui oublierait une soirée entière ?', tone: ContentTone.piccante),
+    (text: 'Qui oublierait une soirée entière ?', tone: ContentTone.mix),
     (
       text:
           'Qui enverrait des messages qu\'il regretterait le lendemain matin ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui appellerait un ami pour se faire sauver d\'un rendez-vous ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui mentirait sur son âge lors d\'un rendez-vous ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui utiliserait une photo de profil vieille de dix ans ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui arriverait à un premier rendez-vous avec une heure de retard ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui parlerait de son ex pendant un premier rendez-vous ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se ferait un tatouage sur un coup de tête en vacances ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui danserait sur le bar après le troisième verre ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui plongerait dans la piscine tout habillé ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'Qui se baignerait sans maillot ?', tone: ContentTone.piccante),
+    (text: 'Qui se baignerait sans maillot ?', tone: ContentTone.mix),
     (
       text:
           'Qui convaincrait tout le monde de faire quelque chose qu\'ils ne voulaient pas faire ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui volerait un verre dans un bar comme souvenir ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui finirait par se disputer avec un videur ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui s\'enfermerait dans les toilettes à une fête avec quelqu\'un, et certainement pas pour parler ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui se réveillerait dans le lit de quelqu\'un sans se souvenir comment il y est arrivé ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui passerait la nuit avec quelqu\'un et filerait en douce avant l\'aube ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui lirait les messages sur l\'écran de quelqu\'un d\'autre ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui dirait être à la maison alors qu\'il est dehors ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    (text: 'Qui poserait un lapin sans prévenir ?', tone: ContentTone.piccante),
+    (text: 'Qui poserait un lapin sans prévenir ?', tone: ContentTone.mix),
     (
       text: 'Qui ferait semblant d\'être malade pour éviter un engagement ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui finirait par pleurer dans les toilettes d\'une fête ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui s\'inscrirait sur une appli de rencontres le lendemain d\'une rupture ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se ferait passer pour célibataire à une fête ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui flirterait juste pour se faire offrir un verre ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui donnerait son numéro à quelqu\'un connu depuis cinq minutes ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui embrasserait un inconnu le soir du Nouvel An ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui raconterait les détails du premier rendez-vous dans le chat de groupe ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui relirait les vieilles conversations avec son ex avant de dormir ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui posterait une story juste pour se faire voir par une personne précise ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui dirait « dernier shot » au moins cinq fois dans la même soirée ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui aurait une aventure d\'un soir en vacances sans réfléchir ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui a une liste de conquêtes plus longue qu\'il ne l\'admet ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui s\'est habillé comme ça ce soir pour se faire remarquer par une personne précise ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui enverrait un message osé et rejetterait la faute sur le téléphone ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui sortirait avec deux personnes différentes le même week-end ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui coucherait avec quelqu\'un dès le premier rendez-vous et resterait même pour le petit-déjeuner ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui a eu le plus de coups d\'un soir de tout le groupe ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui enverrait un nude puis fixerait son téléphone paniqué en attendant la réponse ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui dirait « je ne suis pas ce genre de personne » en mentant effrontément ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui essaierait un plan à trois au moins une fois dans sa vie ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui passerait la nuit avec quelqu\'un rencontré deux heures plus tôt au bar ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui rentrerait chez lui à six heures du matin avec les vêtements de la veille ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui aurait fait l\'amour dans l\'endroit le plus insolite ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui ferait l\'amour sur la plage en risquant de se faire surprendre ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait un message coquin à la mauvaise personne ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui aurait un tiroir qu\'il vaut mieux ne pas ouvrir devant les invités ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui se vanterait de ses talents au lit sans que personne ne lui ait rien demandé ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui déciderait de revoir quelqu\'un selon sa façon d\'embrasser ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui aurait embrassé le plus de monde en une seule soirée ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui accepterait une invitation à « regarder un film » en sachant que le film ne commencera jamais ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui proposerait de prendre la douche à deux « pour économiser l\'eau » ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui aurait déjà fait l\'amour en voiture ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui utiliserait les applis de rencontres uniquement pour des coups d\'un soir ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui répondrait à un « tu fais quoi cette nuit ? » reçu à deux heures du matin ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui aurait un ex qui le recontacte encore pour une nuit de temps en temps ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui appellerait « amitié » quelque chose qui n\'a pas grand-chose d\'amical ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui saurait faire craquer quelqu\'un avec un seul message ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui publierait une photo en maillot juste pour provoquer une personne précise ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui proposerait du sexe de réconciliation après chaque dispute ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui aurait un fantasme qu\'il n\'a jamais eu le courage d\'avouer ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui achèterait de la lingerie neuve juste pour un rendez-vous prometteur ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui laisserait une marque visible dans le cou de quelqu\'un sans s\'excuser ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui se souviendrait du nom de toutes les personnes avec qui il a couché ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui sortirait de chez lui sans sous-vêtements et ne le révélerait qu\'à la fin de la soirée ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui transformerait un massage innocent en quelque chose de beaucoup moins innocent ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui enverrait un vocal chuchoté juste pour faire perdre la tête à quelqu\'un ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui accepterait une dernière nuit avec un ex « juste pour boucler la boucle » ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui flirterait avec l\'inconnu le plus séduisant du bar ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait le premier un message coquin ce soir ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enlèverait un vêtement pour gagner un pari ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui danserait un slow bien trop près d\'un ami en couple ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui donnerait le premier baiser sans hésiter une seconde ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui a un faible secret pour quelqu\'un assis ici ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui draguerait le barman rien que pour avoir un verre gratuit ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui se laisserait convaincre de donner un bisou sur la bouche à un ami ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui porterait quelque chose de provocant juste pour se faire remarquer ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui répondrait oui à un apéritif aux chandelles avec un ex ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui enverrait un cœur à la dernière personne avec qui il a discuté ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui s\'assiérait sur les genoux de quelqu\'un pour une photo ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui volerait un baiser sous le gui sans prévenir ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui accepterait un massage du dos de la part de quelqu\'un du groupe ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui chuchoterait quelque chose de malicieux à l\'oreille de son voisin ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se ferait écrire un numéro sur la paume de la main ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui utiliserait une blague à double sens pour briser la glace ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui flirterait en cachette même en étant en couple ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui laisserait exprès un bouton de plus déboutonné ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui proposerait d\'étaler de la crème solaire sur un inconnu ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui accepterait un défi de sept minutes au paradis ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait une photo en maillot à la mauvaise personne ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se mordrait la lèvre en regardant quelqu\'un ici ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui accepterait d\'échanger son tee-shirt avec son voisin ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui ferait un clin d\'œil à un parfait inconnu ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se maquillerait exprès pour rendre un ex jaloux ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui resterait le dernier à un after juste pour un flirt ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui embrasserait quelqu\'un sur la joue en laissant la trace du rouge à lèvres ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui se laisserait ramener chez quelqu\'un rencontré dans la soirée ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui répondrait à l\'appel d\'un ex à minuit ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui utiliserait le parfum du partenaire d\'un ami comme prétexte pour s\'approcher ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui jouerait à cache-cache juste pour se retrouver dans un coin avec quelqu\'un ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui déboutonnerait sa chemise après le deuxième verre ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait un vocal avec la voix la plus sensuelle possible ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui laisserait la porte entrouverte en se changeant ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui danserait sur la table après deux ou trois shots ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se ferait photographier dans une pose un peu trop osée ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui accepterait un défi où l\'on retire un accessoire à chaque gage ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui flirterait avec le serveur pour sauter la file d\'attente ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se laisserait bander les yeux pour un jeu à deux ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui donnerait un baiser en rythme au premier venu ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui s\'assiérait exprès trop près au cinéma ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui accepterait un tour en moto serré contre un inconnu ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait par erreur des emojis ambigus à son patron ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui se laisserait convaincre de plonger en sous-vêtements la nuit ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui utiliserait le prétexte du froid pour se rapprocher de quelqu\'un ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui volerait le sweat d\'un ami juste pour son parfum ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui laisserait quelqu\'un lui écrire un message sur la peau ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui ferait un karaoké sensuel pour séduire quelqu\'un ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui accepterait de partager le lit avec un ex en vacances ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait un baiser en visio devant tout le monde ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui flirterait ouvertement pour ne pas payer l\'entrée en boîte ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se laisserait maquiller par quelqu\'un qui lui plaît ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui accepterait une danse lente avec la personne à sa gauche ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui répondrait oui à une soirée en tête-à-tête sans le dire aux autres ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui se ferait lire les lignes de la main juste pour qu\'on lui tienne la main ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait une photo dans le miroir juste après la douche ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se laisserait voler le dernier baiser de la soirée ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui accepterait d\'échanger un secret coquin avec son voisin ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui se rapprocherait le plus en dansant quand la lumière baisse ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text:
           'Qui utiliserait n\'importe quel prétexte pour toucher le bras de quelqu\'un ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui accepterait de finir la soirée chez un inconnu charmant ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
     (
       text: 'Qui enverrait un message osé puis effacerait tout ?',
-      tone: ContentTone.piccante,
+      tone: ContentTone.mix,
     ),
-    // cattivo
-    (text: 'Qui jouirait le plus vite de tous ?', tone: ContentTone.cattivo),
-    (text: 'Qui met le plus de temps à jouir ?', tone: ContentTone.cattivo),
+    // hot
+    (text: 'Qui jouirait le plus vite de tous ?', tone: ContentTone.hot),
+    (text: 'Qui met le plus de temps à jouir ?', tone: ContentTone.hot),
     (
       text: 'Qui a simulé un orgasme pour en finir ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui n\'a jamais eu d\'orgasme avec un partenaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui crie le plus fort en jouissant ?', tone: ContentTone.cattivo),
+    (text: 'Qui crie le plus fort en jouissant ?', tone: ContentTone.hot),
     (
       text: 'Qui arrive à jouir plusieurs fois de suite ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a laissé échapper un orgasme dans un endroit insensé ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui ne jouit qu\'avec la stimulation du clitoris ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a simulé un orgasme, pas plus tard que ce soir, dans sa vie sexuelle ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui met moins d\'une minute à atteindre l\'orgasme ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a eu un orgasme en dormant ?', tone: ContentTone.cattivo),
+    (text: 'Qui a eu un orgasme en dormant ?', tone: ContentTone.hot),
     (
       text: 'Qui resterait silencieux même en jouissant ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui avalerait sans se poser de questions ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui est le meilleur avec la bouche ?', tone: ContentTone.cattivo),
-    (text: 'Qui refuserait toujours d\'avaler ?', tone: ContentTone.cattivo),
+    (text: 'Qui est le meilleur avec la bouche ?', tone: ContentTone.hot),
+    (text: 'Qui refuserait toujours d\'avaler ?', tone: ContentTone.hot),
     (
       text: 'Qui adore recevoir du sexe oral plus que tout ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a fait une pipe en voiture ?', tone: ContentTone.cattivo),
+    (text: 'Qui a fait une pipe en voiture ?', tone: ContentTone.hot),
     (
       text:
           'Qui a léché jusqu\'à faire jouir son partenaire en moins de cinq minutes ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui ferait du sexe oral à un feu rouge ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui s\'est fait un 69 lors de son dernier rendez-vous ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui déteste faire du sexe oral mais ne l\'admet pas ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui utiliserait de la glace dans la bouche pendant une pipe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait du sexe oral dans des toilettes publiques ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui se proposerait tout de suite pour un 69 ce soir ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui utiliserait un sex toy devant tout le monde ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a le plus de sex toys dans son tiroir ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a utilisé un vibromasseur dans un lieu public ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a essayé un plug anal ?', tone: ContentTone.cattivo),
+    (text: 'Qui a essayé un plug anal ?', tone: ContentTone.hot),
     (
       text:
           'Qui apporterait un œuf vibrant télécommandé à un dîner en extérieur ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a acheté un sex toy en cachette de son partenaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui n\'a jamais utilisé de vibromasseur de sa vie ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui utiliserait des menottes comme cadeau d\'anniversaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a cassé un sex toy à force de trop l\'utiliser ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui se masturberait avec un jouet devant le miroir ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui utiliserait un vibromasseur sur une autre personne de ce groupe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui se laisserait attacher au lit sans hésiter une seconde ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui voudrait dominer et ne pas être dominé ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a essayé la fessée et a aimé ça ?', tone: ContentTone.cattivo),
+    (text: 'Qui a essayé la fessée et a aimé ça ?', tone: ContentTone.hot),
     (
       text: 'Qui utiliserait un bandeau sur les yeux pendant le sexe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a un côté soumis que personne n\'imagine ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui utiliserait de la cire chaude sur le corps de son partenaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a essayé l\'étranglement léger au lit ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui aimerait être fouetté avec une ceinture ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui donnerait des ordres précis pendant le sexe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a déjà un mot de sécurité tout prêt ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui se laisserait tirer les cheveux sans se plaindre ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a essayé le collier pendant un jeu érotique ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a déjà fait un plan à trois ?', tone: ContentTone.cattivo),
-    (text: 'Qui accepterait une orgie ce soir ?', tone: ContentTone.cattivo),
+    (text: 'Qui a déjà fait un plan à trois ?', tone: ContentTone.hot),
+    (text: 'Qui accepterait une orgie ce soir ?', tone: ContentTone.hot),
     (
       text: 'Qui aimerait regarder deux personnes de ce groupe le faire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a participé à un échangisme ?', tone: ContentTone.cattivo),
+    (text: 'Qui a participé à un échangisme ?', tone: ContentTone.hot),
     (
       text: 'Qui proposerait un plan à trois à son partenaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a embrassé deux personnes la même nuit ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui entrerait dans un club échangiste ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour pendant que d\'autres regardaient ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui organiserait une soirée coquine entre amis ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a déjà partagé un partenaire avec une amie ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui s\'est filmé pendant le sexe ?', tone: ContentTone.cattivo),
-    (text: 'Qui a fait l\'amour sur la plage ?', tone: ContentTone.cattivo),
+    (text: 'Qui s\'est filmé pendant le sexe ?', tone: ContentTone.hot),
+    (text: 'Qui a fait l\'amour sur la plage ?', tone: ContentTone.hot),
     (
       text: 'Qui le ferait dans les toilettes pendant une fête ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour dans un ascenseur ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui le ferait dans une cabine d\'essayage de magasin ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour en plein air dans un parc ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui le ferait sur le balcon au risque d\'être vu ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a fait l\'amour en avion ?', tone: ContentTone.cattivo),
-    (text: 'Qui s\'est masturbé au bureau ?', tone: ContentTone.cattivo),
+    (text: 'Qui a fait l\'amour en avion ?', tone: ContentTone.hot),
+    (text: 'Qui s\'est masturbé au bureau ?', tone: ContentTone.hot),
     (
       text: 'Qui a fait l\'amour en voiture dans un parking bondé ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui le ferait maintenant dans la pièce d\'à côté ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a fait l\'amour dans un train ?', tone: ContentTone.cattivo),
-    (text: 'Qui a le fétiche le plus étrange ?', tone: ContentTone.cattivo),
-    (text: 'Qui a un fétiche pour les pieds ?', tone: ContentTone.cattivo),
+    (text: 'Qui a fait l\'amour dans un train ?', tone: ContentTone.hot),
+    (text: 'Qui a le fétiche le plus étrange ?', tone: ContentTone.hot),
+    (text: 'Qui a un fétiche pour les pieds ?', tone: ContentTone.hot),
     (
       text: 'Qui s\'excite en reniflant les vêtements de son partenaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a un fétiche pour la lingerie ?', tone: ContentTone.cattivo),
+    (text: 'Qui a un fétiche pour la lingerie ?', tone: ContentTone.hot),
     (
       text: 'Qui s\'excite à se faire regarder en se déshabillant ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a une fixation pour le latex ou le cuir ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui s\'excite avec les paroles crues au lit ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a un fétiche qu\'il n\'a jamais avoué à personne ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui s\'excite à l\'idée d\'être surpris ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui garde un souvenir intime d\'un ex ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a la plus belle poitrine du groupe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a le derrière le plus enviable du groupe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui est le mieux monté sous ses sous-vêtements ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a le plus d\'endurance au lit ?', tone: ContentTone.cattivo),
+    (text: 'Qui a le plus d\'endurance au lit ?', tone: ContentTone.hot),
     (
       text: 'Qui serait le meilleur amant de ce groupe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a le corps que tout le monde voudrait toucher ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui embrasse mieux que quiconque ici ?', tone: ContentTone.cattivo),
+    (text: 'Qui embrasse mieux que quiconque ici ?', tone: ContentTone.hot),
     (
       text: 'Qui a les lèvres les plus faites pour certaines choses ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a les mains les plus habiles entre les draps ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a la langue la plus experte ?', tone: ContentTone.cattivo),
+    (text: 'Qui a la langue la plus experte ?', tone: ContentTone.hot),
     (
       text: 'Qui a un fantasme sexuel qu\'il a honte d\'avouer ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui fantasme sur quelqu\'un de ce groupe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui aimerait essayer le sexe en public au moins une fois ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a un fantasme avec un ou une collègue ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui rêve d\'être dominé par un inconnu ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a un fantasme avec une célébrité bien précise ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui aimerait essayer le sexe les yeux bandés avec un partenaire surprise ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a un fantasme impliquant un uniforme ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui rêve d\'une aventure d\'un soir sans prénoms ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui réaliserait un fantasme dès ce soir si c\'était possible ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a envoyé un nude à la mauvaise personne ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait du sexting pendant une réunion de travail ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui se masturbe plus souvent qu\'il ne l\'avoue ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour au premier rendez-vous ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a trompé son partenaire au moins une fois ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a embrassé un ami ou une amie de son partenaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a eu une aventure avec quelqu\'un de beaucoup plus âgé ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a fait l\'amour avec deux personnes différentes dans la même journée ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a une vidéo intime encore enregistrée sur son téléphone ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour le jour même où il a rencontré quelqu\'un ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui draguerait quelqu\'un avant la fin de la soirée ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a l\'historique de navigation le plus embarrassant ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour en sachant que quelqu\'un pouvait entendre ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
-    (text: 'Qui a essayé la sodomie et a aimé ça ?', tone: ContentTone.cattivo),
+    (text: 'Qui a essayé la sodomie et a aimé ça ?', tone: ContentTone.hot),
     (
       text: 'Qui refuse catégoriquement la sodomie ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a griffé le dos de son partenaire jusqu\'à laisser des marques ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a mordu trop fort pendant le sexe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui laisse toujours des suçons bien visibles ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a pris une douche à deux et a fini par faire autre chose ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a fait l\'amour en étant au téléphone avec quelqu\'un d\'autre ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a une position préférée qu\'il a honte d\'avouer ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a essayé le sexe matinal dès le réveil ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour dans la cuisine sur la table ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a utilisé de la nourriture pendant un jeu érotique ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait une lap dance à un partenaire ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui se déshabillerait maintenant pour un pari ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a fait l\'amour avec la musique à fond pour ne pas se faire entendre ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a essayé de faire l\'amour sous la douche et a glissé ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a envoyé une photo osée à un ex ivre ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a fait l\'amour le jour d\'un enterrement ou d\'un événement sérieux ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui s\'est fait surprendre par ses parents pendant qu\'il le faisait ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour chez des amis pendant une fête ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a utilisé des menottes et a perdu la clé ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a le plus de partenaires sexuels à son actif ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a eu moins de partenaires mais ne l\'avouerait jamais ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a fait l\'amour sous la tente en camping avec des voisins à un mètre ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a encore une appli de rencontres installée en cachette ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a embrassé deux personnes de ce groupe par le passé ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui s\'est masturbé en pensant à quelqu\'un assis ici en ce moment ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a fait l\'amour avec un ex pas plus tard que la semaine dernière ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a essayé le sexe sous l\'effet de quelque chose ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a dit le mauvais prénom pendant le sexe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a simulé un mal de tête pour éviter le sexe ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a un fantasme sur le meilleur ami ou la meilleure amie de quelqu\'un ici présent ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a fait l\'amour dans une piscine partagée ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a laissé son partenaire le filmer rien que pour lui ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui accepterait de se déshabiller complètement si on le lui demandait ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a fait l\'amour avec quelqu\'un rencontré deux heures plus tôt ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui a un fantasme concernant précisément la personne à sa droite ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text:
           'Qui ferait semblant d\'être innocent tout en ayant le passé le plus osé ici ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
     (
       text: 'Qui a essayé le plus de positions en une seule nuit ?',
-      tone: ContentTone.cattivo,
+      tone: ContentTone.hot,
     ),
   ];
 
   // -------------------------------------------------------------- obblighi
   static const Map<String, List<String>> obblighi = {
-    ContentTone.soft: [
+    ContentTone.normal: [
       'Imite la façon de marcher de la personne à ta droite.',
       'Chante le refrain de la dernière chanson que tu as écoutée.',
       'Parle en rimes jusqu\'à ton prochain tour.',
@@ -3258,7 +3259,7 @@ class ContentFr {
       'Commande une pizza imaginaire de façon épique et dramatique.',
       'Applaudis chaque phrase dite par les autres jusqu\'à ton tour.',
     ],
-    ContentTone.piccante: [
+    ContentTone.mix: [
       'Fais un massage sensuel à l\'intérieur de la cuisse d\'une personne consentante pendant trente secondes.',
       'Chuchote à l\'oreille de la personne à ta droite ton fantasme le plus sale.',
       'Embrasse le cou d\'une personne consentante et souffle délicatement sur sa peau.',
@@ -3410,7 +3411,7 @@ class ContentFr {
       'Décris ton parfum corporel préféré sur un partenaire et sens (avec consentement) le cou de quelqu\'un pour vérifier.',
       'Fais-toi chuchoter à l\'oreille par une personne consentante son fantasme et réagis uniquement avec le regard.',
     ],
-    ContentTone.cattivo: [
+    ContentTone.hot: [
       'Donne un baiser avec la langue à la personne à ta droite, si elle est consentante.',
       'Fais-toi enlever un vêtement avec les dents par une personne consentante.',
       'Mime ta position préférée sur une personne consentante pendant trente secondes.',
@@ -3566,7 +3567,7 @@ class ContentFr {
 
   // ---------------------------------------------------------------- verita
   static const Map<String, List<String>> verita = {
-    ContentTone.soft: [
+    ContentTone.normal: [
       'Quelle est la chose la plus gênante que tu as faite en public ?',
       'Quel a été ton plus gros mensonge d\'enfant ?',
       'Quel est ton plaisir coupable musical ?',
@@ -3718,7 +3719,7 @@ class ContentFr {
       'Si tu pouvais échanger ta vie avec un présent un jour, qui ?',
       'Quel compliment te fait le plus plaisir ?',
     ],
-    ContentTone.piccante: [
+    ContentTone.mix: [
       'Quelle a été ta première fois : âge, lieu, position et note de 1 à 10.',
       'Avec combien de personnes as-tu couché ? Donne le chiffre exact, pas d\'arrondi.',
       'Quel est l\'endroit le plus absurde ou risqué où tu l\'as fait ?',
@@ -3870,7 +3871,7 @@ class ContentFr {
       'Quelle est la question la plus intime que tu voudrais poser à une personne présente ce soir ?',
       'Quelle est la chose qui t\'exciterait de faire là, maintenant, si le jeu le permettait ?',
     ],
-    ContentTone.cattivo: [
+    ContentTone.hot: [
       'As-tu déjà attaché ou t\'es-tu fait attacher pendant le sexe ?',
       'As-tu déjà goûté le sperme ou l\'éjaculation de ton/ta partenaire ?',
       'Aimerais-tu faire un plan à trois ? Avec qui parmi les personnes présentes ?',
@@ -4331,4 +4332,1921 @@ class ContentFr {
     'Tatouage',
     'Château',
   ];
+
+  static const List<({String a, String b})> preferisciPairs = [
+    (a: 'Savoir comment tu vas mourir', b: 'Savoir quand'),
+    (a: 'Une vérité qui dérange', b: 'Un mensonge confortable'),
+    (a: 'Plus d\'argent', b: 'Plus de temps libre'),
+    (a: 'Être célèbre', b: 'Être invisible aux yeux des gens'),
+    (a: 'Voyager dans le passé', b: 'Voyager dans le futur'),
+    (a: 'Savoir voler', b: 'Être invisible'),
+    (a: 'Lire les pensées', b: 'Prédire l\'avenir'),
+    (a: 'Plus jamais de réseaux', b: 'Plus jamais de films'),
+    (a: 'Perdre ton téléphone', b: 'Perdre tes clés de maison'),
+    (a: 'Toujours 5 minutes en avance', b: 'Toujours 10 minutes en retard'),
+    (a: 'Chef sympa mais incompétent', b: 'Chef odieux mais brillant'),
+    (a: 'Gros salaire, boulot ennuyeux', b: 'Petit salaire, boulot passion'),
+    (a: 'Mariage à 200 invités', b: 'Mariage à deux'),
+    (a: 'Une semaine sans sortir', b: 'Sortir tous les soirs'),
+    (a: 'Dormir 10 heures', b: 'Dormir 5 heures et être en forme'),
+    (a: 'Refaire les vacances parfaites', b: 'Tester un endroit nouveau'),
+    (a: 'Regarder ton compte chaque jour', b: 'Ne jamais le regarder'),
+    (a: 'Superpouvoir inutile mais drôle', b: 'Superpouvoir utile mais chiant'),
+    (a: 'Relire toujours le même livre', b: 'N\'en finir jamais aucun'),
+    (a: 'Une vie sans musique', b: 'Une vie sans cinéma'),
+    (a: 'Toujours savoir la vérité', b: 'Vivre heureux dans l\'illusion'),
+    (a: 'Une année sabbatique', b: 'Partir à la retraite un an plus tôt'),
+    (a: 'Parler toutes les langues', b: 'Jouer de tous les instruments'),
+    (a: 'Ne jamais être gêné', b: 'Ne jamais avoir peur'),
+    (a: 'Revivre ton plus beau jour', b: 'Effacer le pire'),
+    (a: 'Vivre ensemble après un mois', b: 'Vivre ensemble après des années'),
+    (a: 'Des enfants tôt', b: 'Des enfants tard'),
+    (a: 'Vacances planifiées au détail', b: 'Partir à l\'aventure'),
+    (a: 'Une saison en une nuit', b: 'Un épisode par semaine'),
+    (a: 'Batterie toujours à 1%', b: 'Internet ultra lent'),
+    (
+      a: 'Vêtements toujours un peu mouillés',
+      b: 'Un caillou dans la chaussure à vie',
+    ),
+    (a: 'Toujours dire ce que tu penses', b: 'Ne plus pouvoir parler'),
+    (a: 'Pas de chauffage en hiver', b: 'Pas de clim en été'),
+    (a: 'Le hoquet à vie', b: 'Éternuer toutes les deux minutes'),
+    (a: 'Ton plat préféré à chaque repas', b: 'Plus jamais ton plat préféré'),
+    (a: 'Ne plus avoir besoin de dormir', b: 'Ne plus avoir besoin de manger'),
+    (a: 'Riche mais sans amis', b: 'Fauché mais adoré'),
+    (a: 'Plus jamais de loyer', b: 'Salaire doublé'),
+    (a: 'Le plus drôle de la salle', b: 'Le plus intelligent de la salle'),
+    (a: 'Mémoire photographique', b: 'Oublier chaque humiliation'),
+    (a: 'Plus jamais de files d\'attente', b: 'Plus jamais d\'embouteillages'),
+    (a: 'Sourcils rasés pendant un an', b: 'Cheveux vert fluo pendant un an'),
+    (a: 'Perdre l\'odorat', b: 'Perdre le goût'),
+    (a: 'Une voix de dessin animé', b: 'Un rire qui gêne tout le monde'),
+    (a: 'Historique visible par tes parents', b: 'Messages lus par ton patron'),
+    (a: 'Roter à la fin de chaque phrase', b: 'Rire comme une chèvre'),
+    (
+      a: 'Utiliser la brosse à dents d\'un inconnu',
+      b: 'Boire dans son verre déjà utilisé',
+    ),
+    (a: 'Mains toujours moites', b: 'Lèvres toujours gercées'),
+    (a: 'Sortir avec ton ex', b: 'Avec l\'ex de ton meilleur ami'),
+    (a: 'Des pets bruyants mais sans odeur', b: 'Silencieux mais mortels'),
+    (a: 'Oublier qui tu es', b: 'Être oublié de tous'),
+    (a: 'Perdre tout ton argent', b: 'Perdre tous tes souvenirs'),
+    (a: 'Partenaire riche mais ennuyeux', b: 'Partenaire fauché mais hilarant'),
+    (
+      a: 'Une heure en ascenseur avec ton ex',
+      b: 'Une heure en ascenseur avec ton chef',
+    ),
+    (a: 'Anniversaire oublié par tous', b: 'Fête surprise embarrassante'),
+    (a: 'Ton secret révélé à tous', b: 'Connaître les secrets de tous'),
+    (a: 'Célèbre mais détesté', b: 'Inconnu mais aimé'),
+    (a: 'Ne plus jamais rire', b: 'Ne plus jamais pleurer'),
+    (a: 'Retourner au lycée un an', b: 'Repasser le bac chaque année'),
+    (a: 'Vivre dans un film d\'horreur', b: 'Vivre dans une comédie musicale'),
+    (a: 'Des pieds à la place des mains', b: 'Des mains à la place des pieds'),
+    (
+      a: 'Un canard grand comme un cheval',
+      b: 'Cent chevaux grands comme des canards',
+    ),
+    (a: 'Vivre sous l\'eau', b: 'Vivre dans l\'espace'),
+    (
+      a: 'Poursuivi à vie par un escargot tueur',
+      b: 'Un clown qui te fixe chaque nuit',
+    ),
+    (a: 'Parler aux animaux', b: 'Contrôler la météo'),
+    (a: 'Danser dès que la musique démarre', b: 'Pleurer quand quelqu\'un rit'),
+    (
+      a: 'Chaque matin dans un autre pays',
+      b: 'Ne plus jamais quitter ta ville',
+    ),
+    (a: 'Vivre dans un jeu vidéo', b: 'Vivre dans un dessin animé'),
+    (a: 'Une touche "pause" pour la vie', b: 'Une touche "retour" pour la vie'),
+    (a: 'Téléportation mais sans chaussures', b: 'Voler au pas d\'un piéton'),
+    (a: 'Vivre 1000 ans', b: 'Dix vies de 100 ans'),
+    (a: 'Une pluie de tacos', b: 'Une neige de glace'),
+    (a: 'Roi du monde pour un jour', b: 'Personne normale pour toujours'),
+    (
+      a: 'Tout savoir sans rien ressentir',
+      b: 'Tout ressentir sans rien comprendre',
+    ),
+    (a: 'Effacer un regret', b: 'T\'assurer un succès futur'),
+    (a: 'Toujours affamé', b: 'Toujours endormi'),
+    (
+      a: 'Une queue qui remue quand tu es content',
+      b: 'Des oreilles qui tombent si tu es triste',
+    ),
+    (a: 'Renoncer au café pour toujours', b: 'Renoncer au chocolat'),
+    (
+      a: 'Un nez qui pousse quand tu mens',
+      b: 'Des cheveux qui changent avec l\'humeur',
+    ),
+    (a: 'Trouver l\'amour de ta vie', b: 'Trouver le job de tes rêves'),
+    (a: 'Très riche mais toujours triste', b: 'Fauché mais toujours heureux'),
+    (a: 'Un million tout de suite', b: '3 000 euros par mois à vie'),
+    (a: 'Sauver ton chien', b: 'Sauver un inconnu'),
+    (a: 'Ne jamais pouvoir mentir', b: 'Croire à chaque mensonge'),
+    (a: 'Toujours raison mais tout seul', b: 'Avoir tort mais bien accompagné'),
+    (a: 'Génie incompris', b: 'Simplet heureux'),
+    (a: 'La même tenue chaque jour', b: 'Ne jamais répéter une tenue'),
+    (a: 'Chanter tout ce que tu dis', b: 'Marcher seulement à reculons'),
+    (a: 'Wifi gratuit partout à vie', b: 'Vols gratuits à vie'),
+    (a: 'Manger seulement brûlant', b: 'Manger seulement glacé'),
+    (a: 'Plus jamais de pizza', b: 'Plus jamais de pâtes'),
+    (a: 'Plus jamais d\'apéros', b: 'Plus jamais de livraison'),
+    (a: 'Vie longue pleine de regrets', b: 'Vie courte sans aucun regret'),
+    (
+      a: 'Aimer sans être aimé en retour',
+      b: 'Être aimé de qui tu n\'aimes pas',
+    ),
+    (a: 'Ton partenaire lit tes pensées', b: 'Tu lis les siennes'),
+    (a: 'Partenaire choisi par tes amis', b: 'Partenaire choisi par un algo'),
+    (
+      a: 'Toujours démasquer les menteurs',
+      b: 'Ne jamais être démasqué en mentant',
+    ),
+    (a: 'Revivre tes 18 ans pour toujours', b: 'Sauter directement à 40 ans'),
+    (
+      a: 'Dormir toujours chez les autres',
+      b: 'Avoir toujours des invités chez toi',
+    ),
+    (
+      a: 'Le concert de ton groupe mais seul',
+      b: 'Un festival entre amis, musique nulle',
+    ),
+    (
+      a: 'Un karaoké faux devant tout le monde',
+      b: 'Danser seul une heure en piste',
+    ),
+    (a: 'Perdre toutes tes photos', b: 'Perdre toutes tes conversations'),
+    (a: 'Éternuer des confettis', b: 'Roter des bulles de savon'),
+    (a: 'Avoir quatre bras', b: 'Avoir quatre jambes'),
+    (a: 'Mesurer 2 m 20', b: 'Mesurer 1 m 20'),
+    (a: 'Vivre sans été', b: 'Vivre sans hiver'),
+    (a: 'Sauver cinq inconnus', b: 'Sauver ton meilleur ami'),
+    (
+      a: 'Un million mais plus de smartphone',
+      b: 'Zéro argent mais ton téléphone',
+    ),
+    (
+      a: 'Le job de tes rêves à l\'étranger',
+      b: 'Un job ennuyeux près de tes amis',
+    ),
+    (a: 'Avoir 25 ans pour toujours', b: 'Vieillir avec tes amis'),
+    (a: 'La maison de rêve au milieu de rien', b: 'Un studio en plein centre'),
+    (
+      a: 'Savoir ce qu\'on dit derrière ton dos',
+      b: 'Vivre tranquille sans le savoir',
+    ),
+    (a: 'Chaque repas cuisiné par un chef', b: 'Un chauffeur perso à vie'),
+    (
+      a: 'Commenter à voix haute tout ce que tu fais',
+      b: 'Entendre la voix qui narre ta vie',
+    ),
+    (a: 'Marcher sur des Lego chaque matin', b: 'Douche glacée chaque matin'),
+    (a: 'Un moustique chaque nuit', b: 'Une mouche à chaque repas'),
+    (a: 'Correcteur auto fou à vie', b: 'Plus jamais d\'emojis'),
+    (
+      a: 'Appels toujours en haut-parleur',
+      b: 'Écran toujours visible par tous',
+    ),
+    (
+      a: 'Ton chien parle mais te critique',
+      b: 'Ton miroir te flatte faussement',
+    ),
+    (a: 'Un million pour toi seul', b: 'Cent mille chacun pour le groupe'),
+    (a: 'Toujours sous-estimé', b: 'Toujours surestimé'),
+    (
+      a: 'Redécouvrir ta série préférée',
+      b: 'Voir chaque fin en avant-première',
+    ),
+    (a: 'Parler seulement en criant', b: 'Parler seulement en chuchotant'),
+    (a: 'Rire dans les moments sérieux', b: 'Pleurer à chaque comédie'),
+    (
+      a: 'Manger toujours avec les mains',
+      b: 'Tout manger à la petite cuillère',
+    ),
+    (a: 'Tes rêves projetés à tes amis', b: 'Tes amis lisent ton journal'),
+    (a: 'Le seul célibataire du groupe', b: 'Le premier du groupe à te marier'),
+    (a: 'Renaître dans les années 80', b: 'Naître en 2050'),
+    (
+      a: 'Restos gratuits mais toujours seul',
+      b: 'Payer toujours mais bien accompagné',
+    ),
+    (a: 'Viral pour une honte épique', b: 'Jamais plus de 10 likes'),
+    (
+      a: 'Boire seulement de l\'eau à vie',
+      b: 'Plus jamais d\'eau, que du soda',
+    ),
+    (a: 'Un seul genre musical à vie', b: 'Une seule appli sur ton téléphone'),
+    (a: 'En smoking à la plage', b: 'En maillot à un mariage'),
+    (a: 'Cuisiner comme un chef étoilé', b: 'Une maison qui se nettoie seule'),
+    (a: 'Long vol à côté d\'un bavard', b: 'Long vol à côté d\'un bébé'),
+    (a: 'Petit-déj salé pour toujours', b: 'Dîner sucré pour toujours'),
+    (a: 'Vivre sans miroirs', b: 'Vivre sans horloges'),
+    (a: 'Revivre le même lundi', b: 'Sauter tous les vendredis'),
+    (a: 'Parler avec les plantes', b: 'Comprendre les bébés'),
+    (a: 'Toujours gagner aux cartes', b: 'Toujours trouver une place'),
+    (a: 'Été à 40 degrés sans mer', b: 'Hiver glacial sans neige'),
+    (a: 'Que des films mal doublés', b: 'Que des sous-titres décalés'),
+    (a: 'Café gratuit à vie', b: 'Glaces gratuites à vie'),
+    (a: 'Déménager chaque année', b: 'La même maison pour toujours'),
+    (
+      a: 'Sonnerie gênante pour toujours',
+      b: 'Fond d\'écran gênant pour toujours',
+    ),
+    (a: 'Être un mème célèbre', b: 'Avoir un sosie célèbre'),
+    (
+      a: 'Danser la macarena pour dire bonjour',
+      b: 'Saluer tout le monde en s\'inclinant',
+    ),
+    (a: 'Du Nutella sans pain', b: 'Du pain sans Nutella'),
+    (
+      a: 'Week-end infini mais toujours pluie',
+      b: 'Que des lundis mais toujours soleil',
+    ),
+    (a: 'Un seul plat mais parfait', b: 'Tout cuisiner de façon moyenne'),
+  ];
+
+  static const List<({String a, String b, String tone})> preferisciHot = [
+        (
+          a: 'Sortir tout nu pendant une minute',
+          b: 'Embrasser quelqu\'un de ce groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Passer la nuit avec quelqu\'un du groupe',
+          b: 'Une nuit avec un de tes anciens profs',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Montrer ta galerie photo au groupe',
+          b: 'Faire lire tes messages à voix haute',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un an sans sexe',
+          b: 'Un an sans sortir le soir',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire ton body count au groupe',
+          b: 'Montrer ta dernière recherche',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'L\'amour sans le sexe',
+          b: 'Le sexe sans l\'amour',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Partenaire beau mais nul au lit',
+          b: 'Partenaire ordinaire mais phénoménal',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une nuit avec ton ex',
+          b: 'Une nuit avec un inconnu',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Surprendre tes parents en pleine action',
+          b: 'Te faire surprendre par tes parents',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire à tout le monde qui te plaît maintenant',
+          b: 'Ne plus jamais parler à celui qui te plaît',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser les yeux fermés quelqu\'un du groupe',
+          b: 'Embrasser ton ex devant tout le monde',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Ne plus jamais pouvoir embrasser',
+          b: 'Ne plus jamais pouvoir faire de câlins',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Savoir avec qui ton partenaire te tromperait',
+          b: 'Ne jamais le savoir',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Que des rendez-vous à l\'aveugle pendant un an',
+          b: 'Que des sorties choisies par ta mère',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Revoir en vidéo ton premier baiser',
+          b: 'Que tout le groupe le revoie',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Gémir chaque fois que tu t\'assois',
+          b: 'Crier le nom de ton ex à chaque toast',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Envoyer un nude à ton ex par erreur',
+          b: 'L\'envoyer dans le groupe familial',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Sexto avec ton patron par erreur',
+          b: 'Appeler ton partenaire par le nom de ton ex',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une nuit avec une célébrité',
+          b: 'Un mois de sexe avec ton ex',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour seulement dans le noir total',
+          b: 'Seulement avec la lumière toujours allumée',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire ton fantasme le plus bizarre',
+          b: 'Entendre celui de la personne à ta droite',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Sex friends avec ton meilleur ami',
+          b: 'Plus jamais de sexe pendant un an',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un ex qui embrasse comme un dieu',
+          b: 'Un nouveau à tout apprendre',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te faire déshabiller du regard au bar',
+          b: 'Ne plus jamais être remarqué',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Raconter ton pire rendez-vous',
+          b: 'Revivre ta gaffe la plus hot',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire toujours le premier pas',
+          b: 'Attendre toujours que l\'autre le fasse',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un plan à trois avec des inconnus',
+          b: 'Un plan à trois avec des amis',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Surprendre ton coloc en pleine action',
+          b: 'Te faire surprendre par ton coloc',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire combien de fois par jour tu y penses',
+          b: 'Dire quand tu l\'as fait la dernière fois',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Partenaire super jaloux mais bouillant',
+          b: 'Partenaire tranquille mais fainéant au lit',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser le premier qui passe la porte',
+          b: 'Embrasser le dernier qui t\'a écrit',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Nuit de passion sans baisers',
+          b: 'Des baisers à l\'infini mais rien d\'autre',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Oublier ta première fois',
+          b: 'T\'en souvenir chaque jour',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire l\'endroit le plus fou où tu l\'as fait',
+          b: 'Dire l\'endroit où tu voudrais le faire',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un flirt avec ton coach sportif',
+          b: 'Un flirt avec ton médecin',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Que des coups d\'un soir pendant un an',
+          b: 'Que des relations sérieuses à vie',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Recoucher avec ton ex de temps en temps',
+          b: 'Rompre pour toujours mais avec des regrets',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une galoche avec la personne à ta gauche',
+          b: 'Un slow sensuel avec la personne à ta droite',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dormir nu avec un ami',
+          b: 'Prendre une douche en maillot avec ton ex',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Recevoir un nude non désiré de ton patron',
+          b: 'En envoyer un à ton patron par erreur',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Du sexe à couper le souffle une fois par mois',
+          b: 'Du sexe médiocre tous les jours',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Savoir ce que l\'autre pense au lit',
+          b: 'Qu\'il entende chacune de tes pensées au lit',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un week-end avec ton crush secret',
+          b: 'Un mois avec ton premier amour',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Petit-déjeuner au lit après la première nuit',
+          b: 'Disparaître avant l\'aube',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire ton point faible au lit',
+          b: 'Le mimer devant le groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te tatouer le nom de ton ex',
+          b: 'Crier son nom au mauvais moment',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un match avec ton ex sur une appli',
+          b: 'Un match avec ton patron sur une appli',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Ton partenaire connaît chacun de tes fantasmes',
+          b: 'Tu connais chacun des siens',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un strip-tease improvisé maintenant',
+          b: 'Un récit coquin de ton été',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser quelqu\'un du groupe de ton choix',
+          b: 'En embrasser un choisi par le groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une histoire secrète ultra passionnée',
+          b: 'Une histoire officielle mais tiède',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour seulement en été',
+          b: 'Faire l\'amour seulement en hiver',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Oublier toutes tes folles nuits',
+          b: 'Te souvenir même de celles à oublier',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un audio hot envoyé à la mauvaise personne',
+          b: 'En recevoir un de ton patron',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire lire tes messages avec ton ex',
+          b: 'Faire voir tes photos avec ton ex',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Coup de foudre ce soir',
+          b: 'Aventure d\'un soir ce soir',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire le nom de ton crush au groupe',
+          b: 'Le faire deviner au groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Danser un slow avec ton ex ce soir',
+          b: 'Karaoké romantique avec quelqu\'un du groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Draguer un inconnu maintenant',
+          b: 'Donner ton numéro au premier qui le demande',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un massage par quelqu\'un du groupe',
+          b: 'En faire un à quelqu\'un du groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Interdit de flirter pendant un an',
+          b: 'Obligé de flirter avec n\'importe qui',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une nuit avec ton idole de la musique',
+          b: 'Un week-end avec ton acteur préféré',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Avouer un rêve hot sur une personne présente',
+          b: 'Qu\'une personne présente en avoue un sur toi',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Silence total au lit',
+          b: 'Commentaire en direct complet au lit',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un derrière de rêve',
+          b: 'Un décolleté à applaudir',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Ton ex devient super célèbre',
+          b: 'Ton ex devient ton patron',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire ce qui t\'excite le plus',
+          b: 'Dire ce qui te coupe l\'envie tout de suite',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une aventure d\'été jamais avouée',
+          b: 'Un amour à distance sans fin',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Deux personnes présentes te font du gringue',
+          b: 'Faire du gringue à deux personnes présentes à la fois',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Voir ton ex avec quelqu\'un de plus beau que toi',
+          b: 'Qu\'il te voie avec quelqu\'un de moins bien que lui',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Des baisers avec morsure',
+          b: 'Des baisers chastes pour toujours',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dormir enlacés sans sexe',
+          b: 'Du sexe sans jamais dormir ensemble',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour avec la musique à fond',
+          b: 'Avec le journal télévisé en fond sonore',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Révéler ton nombre d\'ex',
+          b: 'Révéler qui était le meilleur',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Draguer le serveur ce soir',
+          b: 'Lui laisser ton numéro sur l\'addition',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une première fois gênante mais tendre',
+          b: 'Parfaite mais avec la mauvaise personne',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un tatouage choisi par le groupe',
+          b: 'Un piercing choisi par le groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un baiser de 30 secondes avec une personne présente',
+          b: 'Dix baisers rapides avec dix inconnus',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Savoir qui du groupe rêve de toi la nuit',
+          b: 'Savoir qui ne t\'embrasserait jamais',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Du sexe sous la tente dans un camping bondé',
+          b: 'À l\'hôtel avec des murs en papier',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Des vacances réservées aux célibataires',
+          b: 'Des vacances réservées aux couples',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Du sexe anal à chaque fois',
+          b: 'Plus jamais de sexe pendant un an',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Être dominé',
+          b: 'Être dominant',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour avec deux personnes en même temps',
+          b: 'T\'en passer pendant six mois',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te faire filmer pendant que tu le fais',
+          b: 'Ne plus jamais le faire',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Lécher partout',
+          b: 'Être léché partout',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Avaler',
+          b: 'Cracher',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire bander les yeux et ligoter',
+          b: 'Être celui qui bande les yeux et ligote',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Du sexe sauvage avec un inconnu',
+          b: 'Du sexe médiocre avec le partenaire idéal',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Le lui faire avaler',
+          b: 'Le lui faire cracher sur toi',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un plan à trois avec des inconnus',
+          b: 'Avec deux amis proches d\'ici',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Que du sexe oral pendant un an',
+          b: 'Plus jamais de sexe oral',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Recevoir toujours le sexe oral',
+          b: 'Le faire toujours toi',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un oral qui finit dans la bouche',
+          b: 'Un oral qui finit sur le visage',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Lécher jusqu\'à l\'orgasme',
+          b: 'Être léchée jusqu\'à l\'orgasme',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une pipe de 30 minutes',
+          b: 'Jouir en 30 secondes',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un plan à trois avec deux inconnus',
+          b: 'Regarder ton partenaire avec un autre',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un plan à trois avec deux hommes',
+          b: 'Un plan à trois avec deux femmes',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une orgie à huit',
+          b: 'Du sexe en solo pendant un an',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Regarder ton partenaire en baiser un autre',
+          b: 'Te faire regarder pendant que tu baises',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un inconnu te regarde jouir',
+          b: 'Tu regardes un inconnu jouir',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire ligoter et bander les yeux',
+          b: 'Ligoter et bander les yeux toi-même',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Être fouettée doucement',
+          b: 'Fouetter toi-même ton partenaire',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Soumise pour une nuit',
+          b: 'Dominatrice pour une nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un collier et une laisse sur toi',
+          b: 'Les mettre toi-même à ton partenaire',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une fessée jusqu\'à laisser la marque',
+          b: 'Donner la fessée toi-même jusqu\'à la marque',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Attachée au lit toute la nuit',
+          b: 'Attacher toi-même ton partenaire au lit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Les yeux bandés et à la merci du partenaire',
+          b: 'Bander les yeux toi-même et commander',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un vibromasseur pendant une heure sans s\'arrêter',
+          b: 'Aucun orgasme pendant un mois',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Orgasme refusé pendant des jours',
+          b: 'Orgasmes forcés à répétition',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un plug porté toute la journée',
+          b: 'Un vibromasseur en public',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Essayer tous les sextoys du magasin',
+          b: 'Seulement les mains pour toujours',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un gode énorme',
+          b: 'Un vibromasseur petit mais constant',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'De vraies menottes aux poignets',
+          b: 'Des cordes de soie sur le corps',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe dans les toilettes d\'un bar',
+          b: 'Du sexe dans une ruelle sombre',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Le faire sur la plage la nuit',
+          b: 'Le faire dans l\'ascenseur',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe en voiture sur un parking',
+          b: 'Du sexe sur un toit la nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Risquer de se faire surprendre au bureau',
+          b: 'Le faire dans une cabine d\'essayage',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe dans un train en marche',
+          b: 'Du sexe sous une table bondée',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une vidéo hot qui circule',
+          b: 'Tes chats hot qui circulent',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Tes photos nues sur son téléphone',
+          b: 'Une de tes vidéos intimes sauvegardée',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Enregistrer pendant que vous le faites',
+          b: 'Te photographier nue pour lui',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un nude envoyé par erreur au patron',
+          b: 'Un nude vu par tes amis',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Faire l\'amour devant une webcam',
+          b: 'Faire l\'amour avec la lumière toujours allumée',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe brutal et sans pitié',
+          b: 'Du sexe lent toute la nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Jouir cinq fois de suite',
+          b: 'Un seul orgasme très long',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Simuler toujours l\'orgasme',
+          b: 'Ne plus jamais jouir',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un orgasme toutes les heures pendant un jour',
+          b: 'Aucun orgasme pendant un an',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Squirter devant lui',
+          b: 'Le voir jouir sur ton corps',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Sexe anal',
+          b: 'Double pénétration',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Essayer l\'anal pour la première fois',
+          b: 'Ne jamais l\'essayer',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Draguer un inconnu ce soir',
+          b: 'Un ex pour une dernière nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une nuit avec ta star de cinéma',
+          b: 'Une nuit avec ton meilleur ex',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec le meilleur ami de lui',
+          b: 'Du sexe avec la meilleure amie d\'elle',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Échangisme avec des amis',
+          b: 'Échangisme avec de parfaits inconnus',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Embrasser tout le monde à une orgie',
+          b: 'Ne choisir qu\'une seule personne',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un massage qui finit au lit',
+          b: 'Une lap dance privée',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un strip-tease devant le groupe',
+          b: 'Danser nue autour d\'une barre',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Lécher la crème sur son corps',
+          b: 'Lui faire lécher le chocolat sur toi',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe couverts d\'huile',
+          b: 'Du sexe sous la douche brûlante',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un fétichisme des pieds assouvi',
+          b: 'Un fétichisme des fesses assouvi',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire sucer les orteils',
+          b: 'Sucer les siens toi-même',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Ne porter que de la lingerie au restaurant',
+          b: 'Aucun sous-vêtement au restaurant',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un corset serré toute la soirée',
+          b: 'Des talons aiguilles et rien d\'autre',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec un masque sur le visage',
+          b: 'Du sexe dans le noir total',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Dire tes fantasmes à voix haute',
+          b: 'En réaliser un au hasard',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un jeu de rôle prof et élève',
+          b: 'Un jeu de rôle patron et secrétaire',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Faire semblant d\'être deux inconnus dans un bar',
+          b: 'Faire semblant d\'être des ex qui se retrouvent',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe pendant que les autres dorment à côté',
+          b: 'Du sexe en criant sans retenue',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire dire des cochonneries à l\'oreille',
+          b: 'Les lui dire toi-même',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Sexto toute la journée de travail',
+          b: 'Des photos hot toutes les heures',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une pipe pendant qu\'il conduit',
+          b: 'Un doigté au cinéma',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Le séduire du regard pendant une heure',
+          b: 'Lui sauter dessus tout de suite',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Le chevaucher jusqu\'à l\'épuiser',
+          b: 'Te laisser prendre par derrière',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe en trois positions d\'affilée',
+          b: 'Une heure dans la même position',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Le faire jouir seulement avec les mains',
+          b: 'Seulement avec la bouche',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une pipe les yeux bandés',
+          b: 'Un rapport les yeux bandés',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'De la glace sur la peau nue',
+          b: 'De la cire chaude sur le corps',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Mordre jusqu\'à laisser des marques',
+          b: 'Griffer le dos à fond',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Des suçons visibles dans le cou',
+          b: 'Des marques de morsures à l\'intérieur des cuisses',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec un seul partenaire pour toujours',
+          b: 'Un partenaire différent chaque mois',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Voir ton partenaire nu avec un autre',
+          b: 'Ne jamais savoir ce qu\'il fait',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un trio programmé dans les moindres détails',
+          b: 'Un trio totalement improvisé',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire déshabiller lentement par lui',
+          b: 'Le déshabiller toi-même avec les dents',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec lui en uniforme',
+          b: 'Du sexe avec toi en uniforme',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'De longs préliminaires sans pénétration',
+          b: 'Pénétration tout de suite sans préliminaires',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Edging pendant une heure',
+          b: 'Orgasme immédiat et terminé',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire toucher dans un bar bondé',
+          b: 'Le toucher toi-même sous la table',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un doigt en plus pendant le rapport',
+          b: 'Une langue en plus pendant le rapport',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe devant le miroir',
+          b: 'Du sexe filmé au téléphone',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Porter un plug au dîner chez les beaux-parents',
+          b: 'Un vibromasseur commandé par lui',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Vibromasseur télécommandé dans le métro',
+          b: 'Vibromasseur télécommandé au restaurant',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Une longue séance de spanking',
+          b: 'Une longue séance de bondage',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Suspendue avec des cordes japonaises',
+          b: 'Immobilisée avec du ruban adhésif',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un massage intégral par quelqu\'un du groupe',
+          b: 'Une douche avec quelqu\'un du groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser le collègue qui te plaît depuis des mois',
+          b: 'T\'entendre dire qu\'il partage mais qu\'il est en couple',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Du sexe lent toute la nuit',
+          b: 'Du sexe rapide et fougueux en une minute',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire ton mot de passe à voix haute',
+          b: 'Mimer ta position préférée',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un flirt brûlant avec le meilleur ami de ton ex',
+          b: 'Un flirt brûlant avec ton voisin',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour seulement dans des lieux publics',
+          b: 'Faire l\'amour seulement porte ouverte',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un week-end de sexe pur sans parler',
+          b: 'Un week-end de câlins seulement sans sexe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Recevoir une lap dance de la personne à ta droite',
+          b: 'En faire une à la personne à ta gauche',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Avouer à quelle personne présente tu ferais la cour',
+          b: 'Te faire choisir un prétendant par le groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Tout essayer en une nuit avec l\'inconnu',
+          b: 'Rester chaste un an avec le grand amour',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un baiser à la française avec ton premier amour',
+          b: 'Une étreinte sans fin avec ton dernier crush',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser toutes les personnes présentes à tour de rôle',
+          b: 'N\'en embrasser qu\'une seule pendant dix minutes',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire combien de temps tu tiens en moyenne au lit',
+          b: 'Dire ton record personnel',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une rencontre interdite avec ton prof de danse',
+          b: 'Une rencontre interdite avec le barman d\'en bas',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Séduire un inconnu en dix minutes',
+          b: 'Te faire séduire sans dire un mot',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Que de la lingerie provocante pendant un mois',
+          b: 'Que des pyjamas informes pendant un an',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour avec le même partenaire pour toujours',
+          b: 'Un partenaire différent chaque semaine sans amour',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te faire déshabiller lentement par la personne en face',
+          b: 'Déshabiller toi-même la personne à côté',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire le fantasme que tu n\'as jamais réalisé',
+          b: 'Le réaliser ce soir avec une personne présente',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un baiser passionné sous la pluie',
+          b: 'Une nuit de feu devant la cheminée',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Du sexe avec la plus belle personne jamais vue',
+          b: 'Du sexe inoubliable avec celui que tu aimes vraiment',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te faire mordre le cou par la personne à ta droite',
+          b: 'Mordre toi-même le cou de la personne à ta gauche',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Combien de fois tu as pensé à une personne présente',
+          b: 'Qu\'une personne présente avoue combien de fois elle pense à toi',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un an d\'aventures sans lendemain',
+          b: 'Un an d\'attente pour la bonne personne',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser quelqu\'un les yeux bandés et deviner qui c\'est',
+          b: 'Te faire embrasser et faire deviner à tous',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Du sexe débridé mais sans jamais se revoir',
+          b: 'Une attente infinie mais ensuite pour toujours',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une danse provocante devant tout le groupe',
+          b: 'Un baiser surprise choisi par le groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Prendre une douche avec ton ex',
+          b: 'Prendre un bain avec ton crush',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire qui du groupe tu embrasserais dans le noir',
+          b: 'Dire qui du groupe tu n\'embrasserais jamais',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un massage des pieds par un inconnu sexy',
+          b: 'Un massage du dos par ton ex',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour seulement dans le noir avec des bougies',
+          b: 'Faire l\'amour seulement devant le miroir',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un flirt secret avec ton maître-nageur',
+          b: 'Un flirt secret avec ton tatoueur',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Révéler l\'objet le plus osé que tu possèdes',
+          b: 'Le montrer au groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Passer la nuit avec ton crush du lycée',
+          b: 'Passer la nuit avec ton crush du moment',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Que des baisers lents pendant un mois',
+          b: 'Que des nuits de passion mais aucun baiser',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te faire murmurer des choses brûlantes à l\'oreille',
+          b: 'Les murmurer toi-même à la personne à côté',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire le surnom hot que tu donnes à ton partenaire',
+          b: 'Dire celui que ton partenaire te donne',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une nuit avec celui qui t\'a rejeté il y a des années',
+          b: 'Une nuit avec celui qui te désire depuis toujours',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour au premier rendez-vous à chaque fois',
+          b: 'Attendre trois mois à chaque fois',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser la personne en face pendant vingt secondes',
+          b: 'Enlacer la personne derrière toi pendant deux minutes',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'L\'endroit le plus risqué où tu as tenté ta chance',
+          b: 'L\'heure la plus folle où tu l\'as fait',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un week-end au spa seul avec quelqu\'un du groupe',
+          b: 'Une croisière romantique avec un inconnu',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te faire lire dans les pensées pendant un baiser',
+          b: 'Lire toi-même les pensées de celui que tu embrasses',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Que des rendez-vous brûlants mais jamais un deuxième',
+          b: 'Que des rendez-vous doux mais sans étincelle',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Révéler combien de personnes présentes tu trouverais attirantes',
+          b: 'Te faire dire par chacun s\'il te trouve attirant',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour en écoutant ta chanson préférée',
+          b: 'Le faire dans le silence le plus total',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une nuit avec un mannequin mais sans un mot',
+          b: 'Une nuit avec un boute-en-train mais sans sexe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une galoche passionnée avec la personne à ta droite',
+          b: 'Un massage sensuel par la personne à ta gauche',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Quelle partie du corps te fait perdre la tête',
+          b: 'La faire deviner au groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Séduire celui qui te plaît en n\'écrivant que des emojis',
+          b: 'Le séduire avec un seul vocal gênant',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire l\'amour seulement tôt le matin',
+          b: 'Faire l\'amour seulement tard dans la nuit',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un baiser volé à ton patron pour un pari',
+          b: 'Un baiser volé au meilleur ami de ton partenaire',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Avouer ton fantasme avec une célébrité',
+          b: 'Entendre celui de la personne en face',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Que des relations à distance mais passionnées',
+          b: 'Que des relations proches mais tièdes',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Te faire faire un suçon bien visible',
+          b: 'En faire un toi-même à la personne à côté',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Dire combien de fois tu as fait le premier pas',
+          b: 'Dire combien de fois tu t\'es dégonflé',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une nuit de passion mais tu l\'oublies',
+          b: 'Aucune nuit mais le souvenir d\'un baiser',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Embrasser la personne la plus timide du groupe',
+          b: 'Embrasser la plus effrontée du groupe',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Faire un strip-poker avec les personnes présentes',
+          b: 'Faire un action ou vérité version coquine seulement',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Séduire quelqu\'un seulement avec le regard',
+          b: 'Le séduire seulement avec une phrase',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Un rendez-vous hot décidé par ton ex',
+          b: 'Un rendez-vous hot décidé par ta mère',
+          tone: ContentTone.mix,
+        ),
+        (
+          a: 'Une morsure sur le téton',
+          b: 'Des pinces sur les tétons',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un bandeau sur les yeux et des surprises à l\'improviste',
+          b: 'Tout savoir à l\'avance',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire humilier avec des mots au lit',
+          b: 'L\'humilier toi-même avec des mots',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un maître pour une nuit',
+          b: 'Une esclave pour une nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Obéir à chaque ordre pendant une heure',
+          b: 'Donner toi-même les ordres pendant une heure',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec un mot de sécurité',
+          b: 'Du sexe sans limites convenues',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un plan à trois avec une escort',
+          b: 'Un plan à trois avec un ami',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Se faire filmer par une troisième personne présente',
+          b: 'Se faire seulement regarder par un tiers',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe sur un balcon à la vue de tous',
+          b: 'Du sexe dans le jardin la nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un quickie dans la cuisine',
+          b: 'Un marathon dans la chambre',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Le faire sur la table du salon',
+          b: 'Le faire contre le mur de l\'entrée',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe au réveil chaque matin',
+          b: 'Du sexe seulement à minuit chaque nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Essayer le wax play',
+          b: 'Essayer le temperature play',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un vibromasseur pendant qu\'il te regarde',
+          b: 'Ses mains pendant que tu te regardes',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te masturber devant lui',
+          b: 'Le regarder se masturber pour toi',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un orgasme seulement avec les mots',
+          b: 'Un orgasme seulement avec un jouet',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec le sperme sur le visage',
+          b: 'Du sexe avec le sperme sur le corps',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Qu\'il finisse à l\'intérieur',
+          b: 'Qu\'il finisse à l\'extérieur',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un creampie',
+          b: 'Un facial',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Le lécher après qu\'il a joui',
+          b: 'Te faire lécher après que tu as joui',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un rapport en pleine lumière du jour',
+          b: 'Un rapport seulement à la lueur d\'une bougie',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec la musique à plein volume',
+          b: 'Du sexe dans le silence total',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Se faire attacher les poignets avec la cravate',
+          b: 'Attacher les chevilles avec les collants',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un bandeau et un casque antibruit',
+          b: 'Seulement le bandeau sur les yeux',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Dominer complètement pendant un jour',
+          b: 'Te soumettre complètement pendant un jour',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe sous la tente au camping',
+          b: 'Du sexe dans la piscine la nuit',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un rapport sur la banquette arrière',
+          b: 'Un rapport sur le capot',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Essayer le pegging',
+          b: 'Essayer le rimming',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un gode-ceinture pour elle',
+          b: 'Un anneau vibrant pour lui',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire prendre en bouche jusqu\'au fond',
+          b: 'Le prendre toi-même jusqu\'au fond',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Deep throat',
+          b: 'Face sitting',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'T\'asseoir sur son visage',
+          b: 'Le faire asseoir sur le tien',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un soixante-neuf sans fin',
+          b: 'Alterner à tour de rôle',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec un lubrifiant chauffant',
+          b: 'Du sexe avec un gel effet froid',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire bander les yeux et deviner les jouets',
+          b: 'Deviner ses mains les yeux bandés',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un jeu de rôle infirmière et patient',
+          b: 'Un jeu de rôle policière et arrêté',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Faire semblant d\'être des inconnus à l\'hôtel',
+          b: 'Faire semblant d\'être des voisins curieux',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec la lingerie arrachée sur toi',
+          b: 'Du sexe en restant presque habillés',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire arracher la culotte',
+          b: 'Lui arracher le caleçon avec les dents',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un orgasme en moins d\'une minute',
+          b: 'Résister pendant vingt minutes',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Compter les orgasmes à voix haute',
+          b: 'Rester dans le silence absolu',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un threesome avec ton crush',
+          b: 'Un threesome avec son crush',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Regarder un porno ensemble et l\'imiter',
+          b: 'Tout inventer sans références',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Recréer une scène porno célèbre',
+          b: 'Tourner votre propre vidéo amateur',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec les talons encore aux pieds',
+          b: 'Du sexe entièrement nus',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire garder un œuf vibrant toute la journée',
+          b: 'Un plug tout l\'après-midi',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un massage érotique complet',
+          b: 'Un bain érotique à deux',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec de l\'huile parfumée partout',
+          b: 'Du sexe couverts de mousse',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Le faire séduire par une autre devant toi',
+          b: 'Séduire toi-même un autre devant lui',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un strip-poker qui finit au lit',
+          b: 'Un action ou vérité hot jusqu\'au bout',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Embrasser une femme devant lui',
+          b: 'Le regarder embrasser un homme',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un premier baiser saphique',
+          b: 'Un premier baiser gay',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec deux mains sur toi',
+          b: 'Du sexe avec deux bouches sur toi',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire serrer le cou doucement',
+          b: 'Serrer toi-même ses poignets',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un léger choking convenu',
+          b: 'Un hair pulling ferme',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe avec les cheveux tirés',
+          b: 'Du sexe avec les ongles dans le dos',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire prendre par derrière devant le miroir',
+          b: 'Le chevaucher toi-même devant le miroir',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un orgasme refusé pendant trois jours',
+          b: 'Trois orgasmes en une heure',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire regarder pendant que tu te déshabilles en webcam',
+          b: 'Le regarder se déshabiller en webcam',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un vibromasseur partagé à tour de rôle',
+          b: 'Deux jouets en même temps',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Du sexe sur une chaise, attachée',
+          b: 'Du sexe debout contre la fenêtre',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire mordre la lèvre jusqu\'au sang',
+          b: 'Lui mordre le cou avec fougue',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Un rapport interrompu et repris plusieurs fois',
+          b: 'Un rapport unique sans pauses',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Essayer la privation sensorielle',
+          b: 'Essayer la surcharge sensorielle',
+          tone: ContentTone.hot,
+        ),
+        (
+          a: 'Te faire chatouiller les yeux bandés',
+          b: 'Le chatouiller toi-même immobilisé',
+          tone: ContentTone.hot,
+        ),
+      ];
+
+  /// Tutte le stringhe di interfaccia di questa lingua (onboarding,
+  /// lobby, giochi, errori…). L'app le legge tramite `AppTexts`.
+  static const Map<String, String> ui = {
+    'app.tagline': 'Le jeu de soirée pour ceux\nqui ont chacun un téléphone.',
+    'common.retry': 'Réessayer',
+    'common.cancel': 'Annuler',
+    'common.continue': 'CONTINUER',
+    'common.back_home': 'RETOUR À L\'ACCUEIL',
+    'common.loading': 'Un instant…',
+    'common.you': 'toi',
+    'onboarding.slide1.title': 'La soirée prend\nun tour inattendu',
+    'onboarding.slide1.body': 'Un téléphone chacun, tous dans la même pièce. Joyo relie les écrans, vous créez le chaos.',
+    'onboarding.slide2.title': 'Code en main,\nplace à l\'action',
+    'onboarding.slide2.body': 'Ouvre le salon, hurle le code et regarde tes amis débouler en quelques secondes.',
+    'onboarding.slide3.title': 'Six jeux pour\nne jamais s\'ennuyer',
+    'onboarding.slide3.body': 'Vote pour tes amis, invente des mensonges énormes ou défie le sort avec la bouteille. Vitesse maximale.',
+    'onboarding.slide4.title': 'C\'est toi qui décides\njusqu\'où oser',
+    'onboarding.slide4.body': 'Mode Soft pour s\'échauffer, Mix pour bouger la soirée, Hot pour quand les masques tombent.',
+    'onboarding.language': 'Dans quelle langue jouez-vous ?',
+    'onboarding.start': 'COMMENCER',
+    'onboarding.skip': 'Passer',
+    'home.create': 'CRÉER UN SALON',
+    'home.join': 'REJOINDRE AVEC UN CODE',
+    'home.games': 'Les jeux',
+    'home.connection_failed': 'Connexion à Joyo impossible.',
+    'home.language': 'Langue',
+    'join.title_create': 'Créer un salon',
+    'join.title_join': 'Rejoindre',
+    'join.name_question': 'Comment tu t\'appelles ?',
+    'join.name_hint': 'Ton prénom',
+    'join.color': 'Ta couleur',
+    'join.code': 'Code du salon',
+    'join.cta_create': 'CRÉER LE SALON',
+    'join.cta_join': 'ENTRER',
+    'join.error_name': 'Écris ton prénom.',
+    'join.error_code': 'Le code fait 6 caractères.',
+    'error.room_not_found': 'Aucun salon avec ce code.',
+    'error.room_full': 'Le salon est plein : 10 joueurs maximum.',
+    'error.room_finished': 'Cette partie est déjà terminée.',
+    'error.connection': 'Connexion perdue. Rouvre l\'app et réessaie.',
+    'lobby.title': 'Salon',
+    'lobby.code_label': 'CODE DU SALON',
+    'lobby.code_hint': 'Dis-le à voix haute · touche pour copier',
+    'lobby.code_copied': 'Code copié',
+    'lobby.players': 'Joueurs',
+    'lobby.you': 'toi',
+    'lobby.host_badge': 'HÔTE',
+    'lobby.pick_game': 'CHOISIR LE JEU',
+    'lobby.waiting_host': 'L\'hôte choisit le jeu…',
+    'lobby.which_game': 'On joue à quoi ?',
+    'lobby.remove_player': 'Retirer {name} ?',
+    'lobby.remove_player_body': 'À utilizzare si quelqu\'un a fermé l\'app sans quitter. Il pourra revenir avec le code.',
+    'lobby.remove': 'Retirer',
+    'lobby.exit_host_title': 'Fermer le salon ?',
+    'lobby.exit_host_body': 'Le salon se ferme pour tout le monde : les autres reviennent à l\'accueil.',
+    'lobby.exit_title': 'Quitter le salon ?',
+    'lobby.exit_body': 'Les autres joueurs te verront partir.',
+    'lobby.stay': 'Rester',
+    'lobby.close': 'Fermer',
+    'lobby.leave': 'Quitter',
+    'lobby.exit_failed': 'Impossible de quitter : {detail}',
+    'lobby.room_closed': 'L\'hôte a fermé le salon.',
+    'lobby.reconnecting': 'Reconnexion…',
+    'lobby.entering': 'Entrée dans le salon…',
+    'mode.title': 'Mode',
+    'mode.normale': 'Normal',
+    'mode.mix': 'Mix',
+    'mode.hot': 'Hot',
+    'mode.normale.desc': 'Parfait pour briser la glace sans trop de traumatismes.',
+    'mode.mix.desc': 'Les jeux s\'enchaînent et le rythme s\'accélère. Accrochez-vous.',
+    'mode.hot.desc': 'Sans filtre. À jouer seulement si vous êtes prêts à tout.',
+    'settings.rounds': 'Manches par partie',
+    'game.round_of': 'Manche {n} sur {total}',
+    'game.preparing': 'Préparation de la manche…',
+    'game.create_failed': 'Impossible de créer la manche : {detail}',
+    'game.close_failed': 'Impossible de clore la manche : {detail}',
+    'game.vote_failed': 'Réponse non enregistrée : {detail}',
+    'game.next_round': 'MANCHE SUIVANTE',
+    'game.see_podium': 'VOIR LE PODIUM',
+    'game.waiting_next': 'L\'hôte va lancer la manche suivante…',
+    'game.finished': 'La partie est terminée',
+    'game.answered': '{n} sur {total} ont répondu',
+    'game.back_to_lobby': 'RETOUR AU SALON',
+    'game.lobby_short': 'SALON',
+    'game.host_only': 'L\'hôte peut relancer une partie depuis le salon.',
+    'game.coming_soon': 'Bientôt',
+    'podium.title': 'Fin de partie',
+    'podium.winner': '{name} gagne',
+    'podium.no_scores': 'Ce jeu ne donne pas de points : pas de classement, juste la partie.',
+    'podium.points': '{n} points',
+    'podium.points_one': '{n} point',
+    'preferisci.name': 'Tu préfères',
+    'preferisci.tagline': 'Choix atroces : qui pense come toi ?',
+    'preferisci.prompt': 'Tu préfères…',
+    'preferisci.or': 'ou',
+    'preferisci.split': 'Voici comment le groupe se répartit',
+    'preferisci.no_votes': 'Personne n\'a répondu',
+    'non_ho_mai.name': 'Je n\'ai jamais',
+    'non_ho_mai.tagline': 'Le confessionnal est ouvert. Avoue et survis.',
+    'non_ho_mai.prompt': 'Je n\'ai jamais…',
+    'non_ho_mai.done': 'JE L\'AI FAIT',
+    'non_ho_mai.never': 'JAMAIS',
+    'non_ho_mai.anonymous': 'Personne ne voit ta réponse : seul le total est partagé.',
+    'non_ho_mai.nobody': 'Personne ne l\'a fait',
+    'non_ho_mai.count': '{n} sur {total}',
+    'non_ho_mai.guess_who': 'À vous de deviner qui',
+    'chi.name': 'Qui sarebbe capace',
+    'chi.tagline': 'Le jeu où l\'on pointe du doigt (littéralement).',
+    'chi.decided': 'Le groupe a décidé',
+    'chi.tie': 'Égalité',
+    'chi.no_votes': 'Aucun vote',
+    'obbligo.name': 'Action ou Vérité',
+    'obbligo.tagline': 'La bouteille décide, tu transpires. Aucune excuse.',
+    'obbligo.spinning': 'La bouteille tourne…',
+    'obbligo.your_turn': 'À toi',
+    'obbligo.turn_of': 'Au tour de {name}',
+    'obbligo.choosing': 'En train de choisir…',
+    'obbligo.dare': 'ACTION',
+    'obbligo.truth': 'VÉRITÉ',
+    'obbligo.no_choice': '{name} n\'a pas choisi à temps',
+    'obbligo.when_done': 'Quand c\'est fait, l\'hôte relance la bouteille',
+    'bluff.name': 'Bluff Story',
+    'bluff.tagline': 'Mentir est un art. Pourras-tu éviter de te faire prendre ?',
+    'bluff.writing': '{name} écrit\nquelque chose de vrai',
+    'bluff.your_turn_body': 'Écris quelque chose de vrai sur toi. Le jeu ajoute deux mensonges : aux autres de trouver le vrai.',
+    'bluff.hint': 'Écris ici…',
+    'bluff.send': 'ENVOYER TA VÉRITÉ',
+    'bluff.too_short': 'Écris quelque chose d\'un peu plus long.',
+    'bluff.which_true': 'Quelle est la vérité de {name} ?',
+    'bluff.in_play': 'Ton histoire est en jeu',
+    'bluff.dont_tell': 'Ne laisse pas deviner laquelle est vraie.',
+    'bluff.your_truth': 'ta vérité',
+    'bluff.true_label': 'vraie',
+    'bluff.truth_of': 'La vérité de {name}',
+    'bluff.nobody_guessed': 'Personne n\'a trouvé : {name} vous a tous eus',
+    'bluff.guessed': '{n} ont trouvé',
+    'bluff.guessed_one': '{n} a trouvé',
+    'bluff.scoring': '+2 par bonne réponse · +1 à {name} par joueur trompé',
+    'bluff.ai_working': 'Invention de deux mensonges…',
+    'bluff.ai_working_sub': 'sur mesure pour l\'histoire de {name}',
+    'impostore.name': 'Imposteur',
+    'impostore.tagline': 'Un intrus parmi nous. Trouve-le avant qu\'il ne soit trop tard.',
+    'impostore.only_you': 'Toi seul vois ceci',
+    'impostore.you_are': 'Tu es l\'imposteur',
+    'impostore.you_are_body': 'Tu ne connais pas le mot. Écoute, improvise, reste discret : deviner le mot à la fin rapporte des points.',
+    'impostore.the_word': 'Le mot est',
+    'impostore.one_doesnt': 'L\'un de vous ne le connaît pas.',
+    'impostore.round_of_words': 'Tour de mots',
+    'impostore.round_of_words_body': 'Chacun son tour, dites un seul mot lié au secret.\nTrop précis, l\'imposteur comprend ; trop vague, c\'est vous le suspect.',
+    'impostore.your_word': 'Ton mot : {word}',
+    'impostore.to_vote': 'PASSER AU VOTE',
+    'impostore.who': 'Qui est l\'imposteur ?',
+    'impostore.guess_hint': 'Le mot secret était…',
+    'impostore.guess_body': 'Tu es l\'imposteur : devine le mot. Même démasqué, une bonne réponse rapporte des points.',
+    'impostore.confirm': 'CONFIRMER',
+    'impostore.vote_registered': 'Vote enregistré',
+    'impostore.caught': 'Imposteur démasqué',
+    'impostore.escaped': 'L\'imposteur s\'en sort',
+    'impostore.word_was': 'Le mot était',
+    'impostore.guessed_it': 'Trouvé : "{guess}" · +3 points',
+    'impostore.said': 'Il avait dit : "{guess}"',
+    'impostore.points_caught': '+2 pour ceux qui ont voté l\'imposteur',
+    'impostore.points_escaped': '+5 pour l\'imposteur',
+    'impostore.votes': '{n} votes',
+    'impostore.votes_one': '{n} vote',
+    'premium.title': 'Contenu sur mesure',
+    'premium.body': 'Dans « Qui serait capable » et « Bluff Story », les phrases sont écrites pour votre groupe.',
+    'premium.active': 'IA active dans ce salon',
+    'premium.active_body': 'Questions et mensonges générés pour votre groupe',
+    'premium.unlock': 'DÉBLOQUER',
+    'premium.watch_ad': 'PUB',
+    'premium.host_only': 'Seul l\'hôte peut le débloquer.',
+    'premium.credits': '{n} crédits',
+    'premium.unlocked': 'IA débloquée pour ce salon',
+    'premium.ad_reward': 'Tu as gagné un contenu IA',
+    'premium.ad_incomplete': 'Publicité non terminée.',
+    'premium.no_store': 'Achats indisponibles ici : Google Play ou l\'App Store sont nécessaires.',
+    'premium.ads_mobile_only': 'Les publicités ne marchent que sur téléphone.',
+  };
 }

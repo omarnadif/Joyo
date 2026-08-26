@@ -4,15 +4,19 @@ import 'package:joyo/core/i18n/i18n.dart';
 import 'package:joyo/core/i18n/translations.dart';
 
 /// Una traduzione mancante non rompe la compilazione: si vede solo a schermo,
-/// nella lingua sbagliata. Questi test la trasformano in un errore.
+/// nella lingua sbagliata. Questi test la trasformano in un errore. I testi
+/// vivono ora in `content_xx.dart` (mappa `ui`); si leggono via `AppTexts`.
 void main() {
+  final byLocale = {for (final l in AppLocale.values) l: AppTexts.of(l)};
+  final allKeys = {for (final map in byLocale.values) ...map.keys};
+
   test('ogni stringa esiste in tutte e cinque le lingue', () {
     final missing = <String>[];
-    for (final entry in kTranslations.entries) {
+    for (final key in allKeys) {
       for (final locale in AppLocale.values) {
-        final value = entry.value[locale.code];
+        final value = byLocale[locale]![key];
         if (value == null || value.trim().isEmpty) {
-          missing.add('${entry.key} → ${locale.code}');
+          missing.add('$key → ${locale.code}');
         }
       }
     }
@@ -23,18 +27,18 @@ void main() {
     final pattern = RegExp(r'\{(\w+)\}');
     final problems = <String>[];
 
-    for (final entry in kTranslations.entries) {
+    for (final key in allKeys) {
       final reference = pattern
-          .allMatches(entry.value['it'] ?? '')
+          .allMatches(byLocale[AppLocale.it]![key] ?? '')
           .map((m) => m.group(1))
           .toSet();
       for (final locale in AppLocale.values) {
         final found = pattern
-            .allMatches(entry.value[locale.code] ?? '')
+            .allMatches(byLocale[locale]![key] ?? '')
             .map((m) => m.group(1))
             .toSet();
         if (found.length != reference.length || !found.containsAll(reference)) {
-          problems.add('${entry.key} → ${locale.code}: $found != $reference');
+          problems.add('$key → ${locale.code}: $found != $reference');
         }
       }
     }

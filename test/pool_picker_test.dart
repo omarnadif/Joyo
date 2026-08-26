@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:joyo/features/games/content_tone.dart';
+import 'package:joyo/content/content_tone.dart';
 import 'package:joyo/features/games/engine/pool_picker.dart';
 import 'package:joyo/features/games/game_mode.dart';
 
@@ -23,53 +23,53 @@ void main() {
   });
 
   group('toni', () {
-    test('soft esclude piccante e cattivo', () {
-      expect(ContentTone.allows(ContentTone.soft, ContentTone.soft), isTrue);
+    test('normal esclude mix e hot', () {
+      expect(ContentTone.allows(ContentTone.normal, ContentTone.normal), isTrue);
       expect(
-        ContentTone.allows(ContentTone.soft, ContentTone.piccante),
+        ContentTone.allows(ContentTone.normal, ContentTone.mix),
         isFalse,
       );
       expect(
-        ContentTone.allows(ContentTone.soft, ContentTone.cattivo),
-        isFalse,
-      );
-    });
-
-    test('piccante include soft ma non cattivo', () {
-      expect(
-        ContentTone.allows(ContentTone.piccante, ContentTone.soft),
-        isTrue,
-      );
-      expect(
-        ContentTone.allows(ContentTone.piccante, ContentTone.piccante),
-        isTrue,
-      );
-      expect(
-        ContentTone.allows(ContentTone.piccante, ContentTone.cattivo),
+        ContentTone.allows(ContentTone.normal, ContentTone.hot),
         isFalse,
       );
     });
 
-    test('cattivo include tutto', () {
+    test('mix include normal ma non hot', () {
+      expect(
+        ContentTone.allows(ContentTone.mix, ContentTone.normal),
+        isTrue,
+      );
+      expect(
+        ContentTone.allows(ContentTone.mix, ContentTone.mix),
+        isTrue,
+      );
+      expect(
+        ContentTone.allows(ContentTone.mix, ContentTone.hot),
+        isFalse,
+      );
+    });
+
+    test('hot include tutto', () {
       for (final tone in ContentTone.all) {
-        expect(ContentTone.allows(ContentTone.cattivo, tone), isTrue);
+        expect(ContentTone.allows(ContentTone.hot, tone), isTrue);
       }
     });
   });
 
   group('modalità', () {
     // Le modalità non seguono la regola cumulativa dei toni: Hot è una scelta
-    // netta, non "tutto quello che c'è sopra il soft".
-    test('Normale solo soft, Mix soft e piccante, Hot solo cattivo', () {
-      expect(GameMode.normale.tones, {ContentTone.soft});
-      expect(GameMode.mix.tones, {ContentTone.soft, ContentTone.piccante});
-      expect(GameMode.hot.tones, {ContentTone.cattivo});
+    // netta, non "tutto quello che c'è sopra il normal".
+    test('Normale solo normal, Mix normal e mix, Hot solo hot', () {
+      expect(GameMode.normale.tones, {ContentTone.normal});
+      expect(GameMode.mix.tones, {ContentTone.normal, ContentTone.mix});
+      expect(GameMode.hot.tones, {ContentTone.hot});
     });
 
-    test('Hot non fa passare né soft né piccante', () {
-      expect(GameMode.hot.allows(ContentTone.soft), isFalse);
-      expect(GameMode.hot.allows(ContentTone.piccante), isFalse);
-      expect(GameMode.hot.allows(ContentTone.cattivo), isTrue);
+    test('Hot non fa passare né normal né mix', () {
+      expect(GameMode.hot.allows(ContentTone.normal), isFalse);
+      expect(GameMode.hot.allows(ContentTone.mix), isFalse);
+      expect(GameMode.hot.allows(ContentTone.hot), isTrue);
     });
   });
 }
