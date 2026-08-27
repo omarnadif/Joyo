@@ -29,7 +29,7 @@ type Body = {
   players?: string[];
   /** Bluff Story: il fatto vero scritto dal giocatore. */
   truth?: string;
-  tone?: 'soft' | 'piccante' | 'cattivo';
+  tone?: 'normal' | 'mix' | 'hot';
 };
 
 function json(payload: unknown, status = 200) {
@@ -93,7 +93,15 @@ Deno.serve(async (req) => {
     return json({ error: 'NO_AI_ACCESS' }, 402);
   }
 
-  const tone = body.tone ?? room.tone ?? 'soft';
+  const tone = body.tone ?? room.tone ?? 'normal';
+  // Il valore in DB è un id ('normal' | 'mix' | 'hot'): al modello serve una
+  // descrizione in italiano, non l'id.
+  const toneLabel =
+    tone === 'hot'
+      ? 'piccante e audace'
+      : tone === 'mix'
+        ? 'un po\' malizioso'
+        : 'leggero e adatto a tutti';
   const names = (body.players ?? []).slice(0, 10).join(', ');
 
   const prompt =
@@ -108,7 +116,7 @@ Deno.serve(async (req) => {
         ].join(' ')
       : [
           'Sei l\'autore di un party game italiano.',
-          `Scrivi UNA domanda del tipo "Chi del gruppo...?" con tono ${tone}.`,
+          `Scrivi UNA domanda del tipo "Chi del gruppo...?" con tono ${toneLabel}.`,
           names ? `I giocatori presenti sono: ${names}.` : '',
           'La domanda deve funzionare per qualsiasi gruppo di amici, essere',
           'divertente, breve (massimo 90 caratteri) e non offensiva.',
