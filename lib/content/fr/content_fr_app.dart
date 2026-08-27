@@ -30,7 +30,7 @@ class ContentFrApp {
     'onboarding.start': 'COMMENCER',
     'onboarding.skip': 'Passer',
     'home.create': 'CRÉER UNE PIÈCE',
-    'home.join': 'INSCRIVEZ-VOUS AVEC UN CODE',
+    'home.join': 'REJOINDRE AVEC UN CODE',
     'home.games': 'Les jeux',
     'home.connection_failed': 'Échec de la connexion à Joyo.',
     'home.language': 'Langue',
@@ -39,7 +39,7 @@ class ContentFrApp {
     'join.name_question': 'Comment tu t\'appelles ?',
     'join.name_hint': 'Ton nom',
     'join.color': 'Ta couleur',
-    'join.code': 'Code de la chambre',
+    'join.code': 'Code de la salle',
     'join.cta_create': 'CRÉEZ LA PIÈCE',
     'join.cta_join': 'ENTRER',
     'join.error_name': 'Écris ton nom.',
@@ -78,7 +78,7 @@ class ContentFrApp {
     'mode.title': 'Modalités',
     'mode.normale': 'Normal',
     'mode.mix': 'Mix',
-    'mode.hot': 'Tendance',
+    'mode.hot': 'Hot',
     'mode.normale.desc':
         'Idéale pour briser la glace sans trop de difficultés.',
     'mode.mix.desc':
@@ -96,7 +96,7 @@ class ContentFrApp {
         'Le présentateur s\'apprête à lancer la prochaine manche…',
     'game.finished': 'Le match est terminé',
     'game.answered': '{n} personnes sur {total} ont répondu',
-    'game.back_to_lobby': 'RETOUR À LA PAGE D\'ACCUEIL',
+    'game.back_to_lobby': 'RETOUR AU HALL',
     'game.lobby_short': 'LOBBY',
     'game.host_only': 'L\'hôte peut relancer la partie depuis le hall.',
     'game.coming_soon': 'À venir',
@@ -127,7 +127,7 @@ class ContentFrApp {
     'chi.tagline': 'Le jeu où l\'on pointe du doigt (littéralement).',
     'chi.decided': 'Le groupe a décidé',
     'chi.tie': 'Égalité de mérite',
-    'chi.no_votes': 'Aucune note',
+    'chi.no_votes': 'Aucun vote',
     'obbligo.name': 'Action ou vérité',
     'obbligo.tagline':
         'C\'est la bouteille qui décide, toi tu transpires. Pas d\'excuses.',
@@ -135,7 +135,7 @@ class ContentFrApp {
     'obbligo.your_turn': 'À toi de jouer',
     'obbligo.turn_of': 'C\'est au tour de {name}',
     'obbligo.choosing': 'Il est en train de choisir…',
-    'obbligo.dare': 'OBLIGATION',
+    'obbligo.dare': 'ACTION',
     'obbligo.truth': 'VÉRITÉ',
     'obbligo.no_choice': '{name} n\'a pas fait son choix à temps',
     'obbligo.when_done':
@@ -171,7 +171,7 @@ class ContentFrApp {
     'impostore.you_are_body':
         'Tu ne connais pas ce mot. Écoute, improvise et ne te fais pas démasquer : si tu devines le mot à la fin, tu récupères des points.',
     'impostore.the_word': 'Le mot est',
-    'impostore.one_doesnt': 'L\'un d\'entre vous ne la connaît pas.',
+    'impostore.one_doesnt': 'L\'un d\'entre vous ne le connaît pas.',
     'impostore.round_of_words': 'Jeu de mots',
     'impostore.round_of_words_body':
         'À tour de rôle, chacun dit un seul mot en rapport avec le secret.\nSi c\'est trop précis, l\'imposteur comprendra ; si c\'est trop vague, c\'est vous qui passerez pour l\'imposteur.',

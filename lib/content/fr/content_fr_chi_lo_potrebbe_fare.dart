@@ -1421,7 +1421,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Qui ne voudrait pas dominer plutôt que d\'être dominé ?',
+      text: 'Qui voudrait dominer plutôt qu\'être dominé ?',
       tone: ContentTone.hot,
     ),
     (text: 'Qui a déjà essayé la fessée et a aimé ça ?', tone: ContentTone.hot),
@@ -1440,7 +1440,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Qui a déjà ressenti une légère sensation d\'étouffement au lit ?',
+      text: 'Qui a déjà essayé l\'étouffement érotique léger au lit ?',
       tone: ContentTone.hot,
     ),
     (
@@ -1451,7 +1451,7 @@ class ContentFrChiLoPotrebbeFare {
       text: 'Qui donnerait des ordres précis pendant les rapports sexuels ?',
       tone: ContentTone.hot,
     ),
-    (text: 'Qui a déjà préparé un mot de passe ?', tone: ContentTone.hot),
+    (text: 'Qui a déjà un mot de sécurité tout prêt ?', tone: ContentTone.hot),
     (
       text: 'Qui se laisserait tirer les cheveux sans se plaindre ?',
       tone: ContentTone.hot,
@@ -1690,7 +1690,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Qui laisse toujours ses tétines en évidence ?',
+      text: 'Qui laisse toujours ses suçons bien en vue ?',
       tone: ContentTone.hot,
     ),
     (

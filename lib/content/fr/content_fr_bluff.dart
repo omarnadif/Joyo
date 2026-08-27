@@ -106,7 +106,7 @@ class ContentFrBluff {
     'J\'ai applaudi tout seul et avec enthousiasme à la fin d\'un film au cinéma.',
     'J\'ai chanté à tue-tête dans la voiture, pensant être complètement seul.',
     'J\'ai dansé dans l\'ascenseur avec un inconnu qui me regardait.',
-    'Ce n\'est qu\'au bout de trois ans que nous habitions là-bas que je me suis lié d\'amitié avec mon voisin.',
+    'Ce n\'est qu\'après trois ans de voisinage que je me suis lié d\'amitié avec mon voisin.',
     'J\'ai perdu toutes les clés de chez moi le jour même de mon déménagement.',
     'Je me suis retrouvé enfermé dehors, sur le palier, alors que j\'étais en pyjama.',
     'Je suis resté coincé dans un vieil ascenseur pendant plus de vingt minutes.',

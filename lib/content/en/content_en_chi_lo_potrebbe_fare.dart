@@ -81,7 +81,7 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who would cook for twenty people for no reason?',
       tone: ContentTone.normal,
     ),
-    (text: 'Who would boil the pasta water?', tone: ContentTone.normal),
+    (text: 'Who would burn the pasta water?', tone: ContentTone.normal),
     (
       text: 'Who would be willing to try anything, even the strangest things?',
       tone: ContentTone.normal,
@@ -543,7 +543,10 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who would talk to plants, convinced that they\'d grow better?',
       tone: ContentTone.normal,
     ),
-    (text: 'Who would use vowels just to say "ok"?', tone: ContentTone.normal),
+    (
+      text: 'Who would send a voice message just to say "ok"?',
+      tone: ContentTone.normal,
+    ),
     (
       text: 'Who would write "hahaha" while remaining completely serious?',
       tone: ContentTone.normal,
@@ -753,7 +756,7 @@ class ContentEnChiLoPotrebbeFare {
     ),
     (
       text:
-          'Who wouldn\'t have a one-night stand on vacation without thinking twice about it?',
+          'Who would have a one-night stand on vacation without thinking twice?',
       tone: ContentTone.mix,
     ),
     (
@@ -878,8 +881,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (
-      text:
-          'Who hasn\'t had a fantasy they\'ve never had the courage to admit?',
+      text: 'Who has a fantasy they\'ve never had the courage to confess?',
       tone: ContentTone.mix,
     ),
     (
@@ -1181,8 +1183,8 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who would send a bold message and then delete it all?',
       tone: ContentTone.mix,
     ),
-    (text: 'Who would get there the fastest?', tone: ContentTone.hot),
-    (text: 'Who takes the longest to get here?', tone: ContentTone.hot),
+    (text: 'Who would come the fastest?', tone: ContentTone.hot),
+    (text: 'Who takes the longest to come?', tone: ContentTone.hot),
     (
       text: 'Who faked an orgasm just to get it over with?',
       tone: ContentTone.hot,
@@ -1231,7 +1233,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (text: 'Who would have oral sex at a red light?', tone: ContentTone.hot),
-    (text: 'Who scored a 69 at the last event?', tone: ContentTone.hot),
+    (text: 'Who did a 69 on their last date?', tone: ContentTone.hot),
     (text: 'Who hates oral sex but won\'t admit it?', tone: ContentTone.hot),
     (
       text: 'Who would put ice in their mouth during a blowjob?',
@@ -1280,7 +1282,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Who wouldn\'t want to dominate rather than be dominated?',
+      text: 'Who would rather dominate than be dominated?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has tried spanking and enjoyed it?', tone: ContentTone.hot),
@@ -1293,16 +1295,13 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who would use hot wax on their partner\'s body?',
       tone: ContentTone.hot,
     ),
-    (
-      text: 'Who has experienced mild shortness of breath while in bed?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'Who has tried light choking in bed?', tone: ContentTone.hot),
     (text: 'Who would want to be whipped with a belt?', tone: ContentTone.hot),
     (
       text: 'Who would give specific instructions during sex?',
       tone: ContentTone.hot,
     ),
-    (text: 'Who already has a passphrase ready?', tone: ContentTone.hot),
+    (text: 'Who already has a safeword ready?', tone: ContentTone.hot),
     (
       text: 'Who would let someone pull their hair without complaining?',
       tone: ContentTone.hot,
@@ -1393,7 +1392,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (text: 'Who has the most enviable behind?', tone: ContentTone.hot),
-    (text: 'Who\'s better off under their underwear?', tone: ContentTone.hot),
+    (text: 'Who\'s best endowed under their underwear?', tone: ContentTone.hot),
     (text: 'Who has more stamina in bed?', tone: ContentTone.hot),
     (text: 'Who would be the best lover in this group?', tone: ContentTone.hot),
     (text: 'Who has the body everyone wants to touch?', tone: ContentTone.hot),
@@ -1406,7 +1405,7 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who has the most dexterous hands between the sheets?',
       tone: ContentTone.hot,
     ),
-    (text: 'Who is the most knowledgeable?', tone: ContentTone.hot),
+    (text: 'Who has the most skilled tongue?', tone: ContentTone.hot),
     (
       text: 'Who has a sexual fantasy they\'re too embarrassed to talk about?',
       tone: ContentTone.hot,
@@ -1494,10 +1493,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (text: 'Who bit too hard during sex?', tone: ContentTone.hot),
-    (
-      text: 'Who always leaves their pacifiers lying around?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'Who always leaves hickeys on display?', tone: ContentTone.hot),
     (
       text:
           'Who has ever taken a shower with someone and ended up doing something else?',

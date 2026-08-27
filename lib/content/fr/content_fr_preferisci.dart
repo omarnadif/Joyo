@@ -190,7 +190,7 @@ class ContentFrPreferisci {
       a: 'Aimer sans être aimé en retour',
       b: 'Être aimé par quelqu’un que l’on n’aime pas',
     ),
-    (a: 'Ton partenaire lit dans tes pensées', b: 'Tu lis ses'),
+    (a: 'Ton partenaire lit dans tes pensées', b: 'Tu lis dans les siennes'),
     (
       a: 'Un partenaire choisi par tes amis',
       b: 'Partenaire sélectionné par un algorithme',
@@ -199,10 +199,7 @@ class ContentFrPreferisci {
       a: 'Savoir toujours qui te ment',
       b: 'Ne te fais jamais prendre quand tu mens',
     ),
-    (
-      a: 'Revivre tes 18 ans pour toujours',
-      b: 'Aller directement à la page 40',
-    ),
+    (a: 'Revivre tes 18 ans pour toujours', b: 'Aller directement à 40 ans'),
     (
       a: 'Toujours dormir chez les autres',
       b: 'Avoir toujours des invités chez toi',
@@ -566,7 +563,7 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Un citron avec celui qui est à ta gauche',
+      a: 'Rouler une pelle à la personne à ta gauche',
       b: 'Une danse lente et sensuelle avec la personne à ta droite',
       tone: ContentTone.mix,
     ),
@@ -829,8 +826,8 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Toujours passer l\'épreuve orale',
-      b: 'C\'est toujours toi qui t\'en charges',
+      a: 'Toujours recevoir le sexe oral',
+      b: 'Toujours le faire toi',
       tone: ContentTone.hot,
     ),
     (
@@ -869,8 +866,8 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un inconnu te regarde arriver',
-      b: 'Vous voyez un inconnu arriver',
+      a: 'Un inconnu te regarde jouir',
+      b: 'Tu regardes un inconnu jouir',
       tone: ContentTone.hot,
     ),
     (
@@ -1000,7 +997,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Toujours simuler l\'orgasme',
-      b: 'Ne reviens plus jamais',
+      b: 'Ne plus jamais jouir',
       tone: ContentTone.hot,
     ),
     (
@@ -1629,7 +1626,7 @@ class ContentFrPreferisci {
       b: 'Des préliminaires interminables sans rapport sexuel',
       tone: ContentTone.hot,
     ),
-    (a: 'Un creampie', b: 'Un soin du visage', tone: ContentTone.hot),
+    (a: 'Un creampie', b: 'Une éjaculation faciale', tone: ContentTone.hot),
     (
       a: 'Le lécher après qu\'il ait joui',
       b: 'Te faire lécher après avoir joui',

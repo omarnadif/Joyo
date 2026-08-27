@@ -202,7 +202,7 @@ class ContentEnPreferisci {
     (a: 'Always eat with your hands', b: 'Eating Everything with a Teaspoon'),
     (a: 'Your Dreams Shared with Friends', b: 'Your friends read your diary'),
     (
-      a: 'The band\'s one and only single, forever',
+      a: 'The only single person in the group forever',
       b: 'The first in the group to get married',
     ),
     (a: 'A Rebirth in the 1980s', b: 'Being Born in 2050'),
@@ -467,7 +467,7 @@ class ContentEnPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'A lemon with whoever\'s on your left',
+      a: 'A make-out session with the person on your left',
       b: 'A slow, sensual dance with the person on your right',
       tone: ContentTone.mix,
     ),
@@ -602,7 +602,7 @@ class ContentEnPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'A B-side to die for',
+      a: 'An amazing backside',
       b: 'A neckline worthy of applause',
       tone: ContentTone.mix,
     ),
@@ -716,7 +716,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Make him swallow it',
-      b: 'Make him spit on him',
+      b: 'Make him spit it on you',
       tone: ContentTone.hot,
     ),
     (
@@ -770,7 +770,7 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'A stranger watches you approach',
+      a: 'A stranger watches you come',
       b: 'Watch a stranger come',
       tone: ContentTone.hot,
     ),
@@ -901,7 +901,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Always Faking an Orgasm',
-      b: 'Don\'t ever come back',
+      b: 'Never come again',
       tone: ContentTone.hot,
     ),
     (
@@ -1045,11 +1045,7 @@ class ContentEnPreferisci {
       b: 'Only with the mouth',
       tone: ContentTone.hot,
     ),
-    (
-      a: 'A Blindfolded Blowjob',
-      b: 'A Blindfolded Relationship',
-      tone: ContentTone.hot,
-    ),
+    (a: 'A Blindfolded Blowjob', b: 'Blindfolded sex', tone: ContentTone.hot),
     (a: 'Ice on bare skin', b: 'Hot wax on the body', tone: ContentTone.hot),
     (
       a: 'Bite until you leave marks',
@@ -1378,7 +1374,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'How to Seduce Someone You Like Using Only Emojis',
-      b: 'Seduce him with a single embarrassing vowel',
+      b: 'Seduce him with a single embarrassing voice message',
       tone: ContentTone.mix,
     ),
     (
@@ -1448,7 +1444,7 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Reign for One Night',
+      a: 'Dominate for one night',
       b: 'Surrender for One Night',
       tone: ContentTone.hot,
     ),
@@ -1526,7 +1522,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Sex in broad daylight',
-      b: 'A relationship by candlelight only',
+      b: 'Sex by candlelight only',
       tone: ContentTone.hot,
     ),
     (
@@ -1555,8 +1551,8 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'A relationship in the back seat of a car',
-      b: 'A report on the hood of the car',
+      a: 'Sex in the back seat of a car',
+      b: 'Sex on the hood of the car',
       tone: ContentTone.hot,
     ),
     (a: 'Try pegging', b: 'Try rimming', tone: ContentTone.hot),
@@ -1690,7 +1686,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Getting taken from behind in front of the mirror',
-      b: 'You can catch it by riding it in front of the mirror',
+      b: 'Take him by riding him in front of the mirror',
       tone: ContentTone.hot,
     ),
     (
@@ -1719,8 +1715,8 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'A relationship that ended and resumed several times',
-      b: 'A unique, uninterrupted relationship',
+      a: 'Sex stopped and restarted several times',
+      b: 'One continuous session with no breaks',
       tone: ContentTone.hot,
     ),
     (

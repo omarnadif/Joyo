@@ -5,7 +5,7 @@ class ContentEsApp {
 
   static const Map<String, String> ui = {
     'app.tagline':
-        'El juego de mesa para quienes tienen\ncada uno su propio móvil.',
+        'El juego de fiesta para quienes tienen\ncada uno su propio móvil.',
     'common.retry': 'Inténtalo de nuevo',
     'common.cancel': 'Cancelar',
     'common.continue': 'CONTINÚA',
@@ -45,7 +45,7 @@ class ContentEsApp {
     'join.error_code': 'El código tiene 6 caracteres.',
     'error.room_not_found': 'No hay ninguna habitación con este código.',
     'error.room_full': 'La sala está llena: máximo 10 jugadores.',
-    'error.room_finished': 'Este partido ya ha terminado.',
+    'error.room_finished': 'Esta partida ya ha terminado.',
     'error.connection':
         'Se ha perdido la conexión. Vuelve a abrir la aplicación e inténtalo de nuevo.',
     'lobby.title': 'Vestíbulo',
@@ -67,7 +67,7 @@ class ContentEsApp {
         'La sala se cierra para todos: los demás jugadores vuelven a la página de inicio.',
     'lobby.exit_title': '¿Salir de la habitación?',
     'lobby.exit_body': 'Los demás jugadores te verán salir.',
-    'lobby.stay': 'Queda',
+    'lobby.stay': 'Quédate',
     'lobby.close': 'Cerrar',
     'lobby.leave': 'Salir',
     'lobby.exit_failed': 'Error al salir: {detail}',
@@ -77,34 +77,34 @@ class ContentEsApp {
     'mode.title': 'Modalidades',
     'mode.normale': 'Normal',
     'mode.mix': 'Mix',
-    'mode.hot': 'De moda',
+    'mode.hot': 'Hot',
     'mode.normale.desc':
         'Perfecta para romper el hielo sin demasiados problemas.',
     'mode.mix.desc':
-        'La situación cambia constantemente y el ritmo se acelera. Agárrense fuerte.',
+        'La situación cambia constantemente y el ritmo se acelera. Agarraos fuerte.',
     'mode.hot.desc':
         'Sin límites. Solo para jugar si estáis preparados para todo.',
-    'settings.rounds': 'Rondas por partido',
+    'settings.rounds': 'Rondas por partida',
     'game.round_of': 'Ronda {n} de {total}',
-    'game.preparing': 'Voy a preparar el asalto…',
+    'game.preparing': 'Voy a preparar la ronda…',
     'game.create_failed': 'No consigo crear la ronda: {detail}',
     'game.close_failed': 'No consigo cerrar la ronda: {detail}',
     'game.vote_failed': 'Respuesta no registrada: {detail}',
     'game.next_round': 'PRÓXIMA RONDA',
     'game.see_podium': 'VER EL PODIO',
     'game.waiting_next':
-        'El presentador está a punto de dar inicio a la siguiente ronda…',
-    'game.finished': 'El partido ha terminado',
+        'El anfitrión está a punto de lanzar la siguiente ronda…',
+    'game.finished': 'La partida ha terminado',
     'game.answered': 'Han respondido {n} de un total de {total}',
     'game.back_to_lobby': 'VOLVER AL VESTÍBULO',
     'game.lobby_short': 'LOBBY',
     'game.host_only':
         'El anfitrión puede reiniciar la partida desde la sala de espera.',
     'game.coming_soon': 'Próximamente',
-    'podium.title': 'Fin del partido',
+    'podium.title': 'Fin de la partida',
     'podium.winner': 'Gana {name}',
     'podium.no_scores':
-        'En este juego no se otorgan puntos: no hay clasificación, solo el partido.',
+        'En este juego no se otorgan puntos: no hay clasificación, solo la partida.',
     'podium.points': '{n} puntos',
     'podium.points_one': '{n} punto',
     'preferisci.name': '¿Qué prefieres?',
@@ -135,7 +135,7 @@ class ContentEsApp {
     'obbligo.your_turn': 'Ahora te toca a ti',
     'obbligo.turn_of': 'Le toca a {name}',
     'obbligo.choosing': 'Está eligiendo…',
-    'obbligo.dare': 'OBLIGACIÓN',
+    'obbligo.dare': 'RETO',
     'obbligo.truth': 'VERDAD',
     'obbligo.no_choice': '{name} no ha elegido a tiempo',
     'obbligo.when_done':
@@ -171,7 +171,7 @@ class ContentEsApp {
         'No sabes cuál es la palabra. Escucha, improvisa y no dejes que te descubran: si adivinas la palabra al final, recuperarás puntos.',
     'impostore.the_word': 'La palabra es',
     'impostore.one_doesnt': 'Uno de vosotros no la conoce.',
-    'impostore.round_of_words': 'Juego de palabras',
+    'impostore.round_of_words': 'Ronda de palabras',
     'impostore.round_of_words_body':
         'Por turnos, cada uno dice una sola palabra relacionada con el secreto.\nSi es demasiado concreta, el impostor lo adivina; si es demasiado vaga, parecerá que vosotros sois el impostor.',
     'impostore.your_word': 'Tu palabra: {word}',

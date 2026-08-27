@@ -80,7 +80,7 @@ class ContentEsPreferisci {
       b: 'Beber de su vaso, que ya ha sido utilizado',
     ),
     (a: 'Salir con tu ex', b: 'Con la ex de tu mejor amigo'),
-    (a: 'Tiros de pedos ruidosos pero inodoros', b: 'Silenciosas pero letales'),
+    (a: 'Pedos ruidosos pero inodoros', b: 'Silenciosos pero letales'),
     (a: 'Olvidar quién eres', b: 'Que todo el mundo se olvide de mí'),
     (a: 'Perder todo el dinero', b: 'Perder todos los recuerdos'),
     (
@@ -190,7 +190,7 @@ class ContentEsPreferisci {
       a: 'Saber siempre quién te miente',
       b: 'Nunca dejes que te pillen cuando mientes',
     ),
-    (a: 'Revive tus 18 años para siempre', b: 'Ir directamente a la página 40'),
+    (a: 'Revive tus 18 años para siempre', b: 'Ir directamente a los 40'),
     (
       a: 'Dormir siempre en casa de otros',
       b: 'Tener siempre invitados en tu casa',
@@ -262,7 +262,7 @@ class ContentEsPreferisci {
       b: 'Tus amigos leen tu diario',
     ),
     (
-      a: 'El único sencillo del grupo de todos los tiempos',
+      a: 'El único soltero del grupo para siempre',
       b: 'El primero del grupo en casarse',
     ),
     (a: 'Un renacimiento en los años 80', b: 'Nacer en 2050'),
@@ -279,7 +279,7 @@ class ContentEsPreferisci {
       a: 'Un solo género musical para toda la vida',
       b: 'Una sola aplicación en el móvil',
     ),
-    (a: 'De esmoquin en la playa', b: 'De gala en una boda'),
+    (a: 'De esmoquin en la playa', b: 'En bañador en una boda'),
     (
       a: 'Cocinar como un chef con estrellas Michelin',
       b: 'Una casa que se limpia sola',
@@ -309,7 +309,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Un fin de semana interminable, pero siempre lloviendo',
-      b: 'Solo los lunes, pero siempre solos',
+      b: 'Solo los lunes, pero siempre con sol',
     ),
     (
       a: 'Un solo plato, pero cocinado a la perfección',
@@ -384,7 +384,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Decirle al grupo cuántas víctimas has matado',
+      a: 'Decirle al grupo con cuántas personas te has acostado',
       b: 'Mostrar la última búsqueda realizada',
       tone: ContentTone.mix,
     ),
@@ -812,7 +812,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Que siempre te examinen oralmente',
+      a: 'Recibir siempre sexo oral',
       b: 'Que siempre lo hagas tú',
       tone: ContentTone.hot,
     ),
@@ -852,8 +852,8 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un desconocido te ve llegar',
-      b: 'Mira cómo se acerca un desconocido',
+      a: 'Un desconocido te ve correrte',
+      b: 'Ver correrse a un desconocido',
       tone: ContentTone.hot,
     ),
     (
@@ -992,7 +992,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Correte delante de él',
+      a: 'Squirtear delante de él',
       b: 'Ver cómo se corre sobre tu cuerpo',
       tone: ContentTone.hot,
     ),
@@ -1612,7 +1612,11 @@ class ContentEsPreferisci {
       b: 'Preliminares muy largos sin sexo',
       tone: ContentTone.hot,
     ),
-    (a: 'Un creampie', b: 'Un tratamiento facial', tone: ContentTone.hot),
+    (
+      a: 'Un creampie',
+      b: 'Un facial (acabar en la cara)',
+      tone: ContentTone.hot,
+    ),
     (
       a: 'Lamerlo después de que se haya corrido',
       b: 'Que te laman después de haberte corrido',
@@ -1649,8 +1653,8 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un informe sobre el asiento trasero del coche',
-      b: 'Un informe sobre el capó del coche',
+      a: 'Sexo en el asiento trasero del coche',
+      b: 'Sexo sobre el capó del coche',
       tone: ContentTone.hot,
     ),
     (a: 'Probar el pegging', b: 'Probar el rimming', tone: ContentTone.hot),

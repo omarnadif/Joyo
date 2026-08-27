@@ -387,7 +387,7 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Der Gruppe deine Opferzahl mitteilen',
+      a: 'Der Gruppe deinen Bodycount (Anzahl deiner Sexpartner) verraten',
       b: 'Die zuletzt durchgeführte Suche anzeigen',
       tone: ContentTone.mix,
     ),
@@ -548,7 +548,7 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Eine Zitrone mit dem, der links von dir sitzt',
+      a: 'Eine Knutscherei mit der Person zu deiner Linken',
       b: 'Ein langsamer, sinnlicher Tanz mit der Person zu deiner Rechten',
       tone: ContentTone.mix,
     ),
@@ -683,7 +683,7 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Eine B-Seite, die es in sich hat',
+      a: 'Ein Hintern zum Niederknien',
       b: 'Ein Dekolleté, das Beifall verdient',
       tone: ContentTone.mix,
     ),
@@ -714,7 +714,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Küsse mit einem Biss',
-      b: 'Küsse aus der Form – für immer',
+      b: 'Nur noch Küsschen für immer',
       tone: ContentTone.mix,
     ),
     (
@@ -800,7 +800,7 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Ihm das unterjubeln',
+      a: 'Ihn/Sie es schlucken lassen',
       b: 'Ihn dazu bringen, es ihm ins Gesicht zu spucken',
       tone: ContentTone.hot,
     ),
@@ -815,7 +815,7 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Immer eine mündliche Prüfung ablegen',
+      a: 'Immer Oralsex bekommen',
       b: 'Das machst du immer',
       tone: ContentTone.hot,
     ),
@@ -831,7 +831,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Ein 30-minütiger Blowjob',
-      b: 'In 30 Sekunden hinkommen',
+      b: 'In 30 Sekunden kommen',
       tone: ContentTone.hot,
     ),
     (
@@ -986,7 +986,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Immer den Orgasmus vortäuschen',
-      b: 'Komm nie wieder',
+      b: 'Nie wieder zum Orgasmus kommen',
       tone: ContentTone.hot,
     ),
     (
@@ -1615,7 +1615,11 @@ class ContentDePreferisci {
       b: 'Sehr langes Vorspiel ohne Sex',
       tone: ContentTone.hot,
     ),
-    (a: 'Ein Creampie', b: 'Eine Gesichtsbehandlung', tone: ContentTone.hot),
+    (
+      a: 'Ein Creampie',
+      b: 'Ein Facial (Abspritzen ins Gesicht)',
+      tone: ContentTone.hot,
+    ),
     (
       a: 'Es ablecken, nachdem er gekommen ist',
       b: 'Sich nach dem Orgasmus lecken zu lassen',
@@ -1671,10 +1675,10 @@ class ContentDePreferisci {
       b: 'Du musst es bis zum Ende durchziehen',
       tone: ContentTone.hot,
     ),
-    (a: 'Deep Throat', b: 'Gesichtsbesitzung', tone: ContentTone.hot),
+    (a: 'Deep Throat', b: 'Facesitting', tone: ContentTone.hot),
     (
       a: 'Dich auf sein Gesicht setzen',
-      b: 'Lass ihn auf deinem Platz sitzen',
+      b: 'Ihn auf deinem Gesicht sitzen lassen',
       tone: ContentTone.hot,
     ),
     (a: 'Eine unendliche 69', b: 'sich abwechseln', tone: ContentTone.hot),

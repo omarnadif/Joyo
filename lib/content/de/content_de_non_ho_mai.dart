@@ -176,7 +176,7 @@ class ContentDeNonHoMai {
     ),
     (text: 'über mein Alter gelogen', tone: ContentTone.normal),
     (
-      text: 'Es ist kaum zu glauben, wie sehr mir ein Geschenk gefallen hat',
+      text: 'übertrieben, wie sehr mir ein Geschenk gefallen hat',
       tone: ContentTone.normal,
     ),
     (
@@ -684,7 +684,7 @@ class ContentDeNonHoMai {
       text: 'sich an einem absurden Ort während einer Party übergeben',
       tone: ContentTone.mix,
     ),
-    (text: 'eine One-Night-Stand gehabt', tone: ContentTone.mix),
+    (text: 'einen One-Night-Stand gehabt', tone: ContentTone.mix),
     (
       text:
           'den „Walk of Shame“ hinter mich gebracht, noch immer in den Klamotten vom Vorabend',
@@ -872,7 +872,7 @@ class ContentDeNonHoMai {
       text: 'eine Beziehung mit jemandem gehabt, der viel älter war als ich',
       tone: ContentTone.mix,
     ),
-    (text: 'über meine Opferzahl gelogen', tone: ContentTone.mix),
+    (text: 'über meinen Bodycount gelogen', tone: ContentTone.mix),
     (
       text: 'Ich habe den Namen von jemandem vergessen, als wir im Bett lagen',
       tone: ContentTone.mix,
@@ -1151,7 +1151,7 @@ class ContentDeNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'einen Bericht aufgezeichnet, um ihn sich noch einmal anzusehen',
+      text: 'einen Sexakt gefilmt, um ihn mir noch einmal anzusehen',
       tone: ContentTone.hot,
     ),
     (
@@ -1213,7 +1213,7 @@ class ContentDeNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'einen Freund oder eine Freundin zum Schlafen gehabt',
+      text: 'einen Freund oder eine Freundin mit gewissen Vorzügen gehabt',
       tone: ContentTone.hot,
     ),
     (
@@ -1412,7 +1412,8 @@ class ContentDeNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'dem Partner einen geblasen oder einen spanischen geblasen',
+      text:
+          'dem Partner einen runtergeholt oder einen spanischen (zwischen den Brüsten) gemacht',
       tone: ContentTone.hot,
     ),
     (

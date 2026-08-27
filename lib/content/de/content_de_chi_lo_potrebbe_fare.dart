@@ -92,7 +92,10 @@ class ContentDeChiLoPotrebbeFare {
       text: 'Wer würde schon ohne Grund für zwanzig Personen kochen?',
       tone: ContentTone.normal,
     ),
-    (text: 'Wer würde das Nudelwasser wegschütten?', tone: ContentTone.normal),
+    (
+      text: 'Wer würde das Nudelwasser anbrennen lassen?',
+      tone: ContentTone.normal,
+    ),
     (
       text: 'Wer würde alles probieren, selbst das Seltsamste?',
       tone: ContentTone.normal,
@@ -1337,8 +1340,8 @@ class ContentDeChiLoPotrebbeFare {
           'Wer würde schon eine gewagte Nachricht verschicken und sie dann wieder löschen?',
       tone: ContentTone.mix,
     ),
-    (text: 'Wer wäre am schnellsten?', tone: ContentTone.hot),
-    (text: 'Wer braucht länger, um hierher zu kommen?', tone: ContentTone.hot),
+    (text: 'Wer würde am schnellsten kommen?', tone: ContentTone.hot),
+    (text: 'Wer braucht am längsten, um zu kommen?', tone: ContentTone.hot),
     (
       text:
           'Wer hat einen Orgasmus vorgetäuscht, um der Sache ein Ende zu bereiten?',
@@ -1400,7 +1403,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Wer hat beim letzten Treffen eine 69er-Bewertung erhalten?',
+      text: 'Wer hat beim letzten Date einen 69er gemacht?',
       tone: ContentTone.hot,
     ),
     (text: 'Wer hasst Oralsex, gibt es aber nicht zu?', tone: ContentTone.hot),
@@ -1629,7 +1632,7 @@ class ContentDeChiLoPotrebbeFare {
       text: 'Wer hat die geschicktesten Hände zwischen den Laken?',
       tone: ContentTone.hot,
     ),
-    (text: 'Wer hat die größte Sprachkompetenz?', tone: ContentTone.hot),
+    (text: 'Wer hat die geschickteste Zunge?', tone: ContentTone.hot),
     (
       text:
           'Wer hat eine sexuelle Fantasie, für die er sich schämt, sie auszusprechen?',
@@ -1730,10 +1733,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (text: 'Wer hat beim Sex zu fest zugebeißt?', tone: ContentTone.hot),
-    (
-      text: 'Wer lässt seine Schnuller immer offen herumliegen?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'Wer hat immer sichtbare Knutschflecke?', tone: ContentTone.hot),
     (
       text:
           'Wer hat schon mal zusammen geduscht und dann etwas anderes gemacht?',

@@ -409,7 +409,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se le perderían las llaves de casa al menos una vez al mes?',
+          '¿A quién se le perderían las llaves de casa al menos una vez al mes?',
       tone: ContentTone.normal,
     ),
     (
@@ -1394,10 +1394,7 @@ class ContentEsChiLoPotrebbeFare {
       text: '¿Quién se dejaría atar a la cama sin pensárselo dos veces?',
       tone: ContentTone.hot,
     ),
-    (
-      text: '¿Quién no querría dominar y no ser dominado?',
-      tone: ContentTone.hot,
-    ),
+    (text: '¿Quién querría dominar y no ser dominado?', tone: ContentTone.hot),
     (
       text: '¿Quién ha probado los azotes y le ha gustado?',
       tone: ContentTone.hot,
@@ -1416,8 +1413,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text:
-          '¿Quién ha sentido alguna vez una ligera sensación de ahogo mientras estaba en la cama?',
+      text: '¿Quién ha probado la asfixia erótica leve en la cama?',
       tone: ContentTone.hot,
     ),
     (
@@ -1428,7 +1424,10 @@ class ContentEsChiLoPotrebbeFare {
       text: '¿Quién daría órdenes concretas durante el sexo?',
       tone: ContentTone.hot,
     ),
-    (text: '¿Quién tiene ya preparada una contraseña?', tone: ContentTone.hot),
+    (
+      text: '¿Quién tiene ya preparada una palabra de seguridad?',
+      tone: ContentTone.hot,
+    ),
     (
       text: '¿Quién se dejaría tirar del pelo sin quejarse?',
       tone: ContentTone.hot,
@@ -1521,7 +1520,10 @@ class ContentEsChiLoPotrebbeFare {
       text: '¿A quién le excita oler la ropa de su pareja?',
       tone: ContentTone.hot,
     ),
-    (text: '¿A quién le gusta la ropa interior?', tone: ContentTone.hot),
+    (
+      text: '¿Quién tiene un fetiche por la ropa interior?',
+      tone: ContentTone.hot,
+    ),
     (
       text: '¿A quién le excita que le miren mientras se desnuda?',
       tone: ContentTone.hot,
@@ -1549,7 +1551,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (text: '¿Quién tiene el trasero más envidiable?', tone: ContentTone.hot),
     (
-      text: '¿Quién va mejor vestido por debajo de la ropa interior?',
+      text: '¿Quién está mejor dotado bajo la ropa interior?',
       tone: ContentTone.hot,
     ),
     (text: '¿Quién tiene más resistencia en la cama?', tone: ContentTone.hot),
@@ -1570,10 +1572,7 @@ class ContentEsChiLoPotrebbeFare {
       text: '¿Quién tiene las manos más hábiles entre las sábanas?',
       tone: ContentTone.hot,
     ),
-    (
-      text: '¿Quién tiene más experiencia con los idiomas?',
-      tone: ContentTone.hot,
-    ),
+    (text: '¿Quién tiene la lengua más experta?', tone: ContentTone.hot),
     (
       text:
           '¿Quién tiene una fantasía sexual de la que le da vergüenza hablar?',

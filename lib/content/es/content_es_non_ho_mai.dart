@@ -87,10 +87,7 @@ class ContentEsNonHoMai {
       text: 'me he dado un baño por la noche en el mar',
       tone: ContentTone.normal,
     ),
-    (
-      text: 'tenía miedo a la oscuridad cuando era mayor',
-      tone: ContentTone.normal,
-    ),
+    (text: 'tenido miedo a la oscuridad de mayor', tone: ContentTone.normal),
     (text: 'he dormido con la luz encendida', tone: ContentTone.normal),
     (text: 'gritó por una pesadilla', tone: ContentTone.normal),
     (text: 'he caminado mientras dormía', tone: ContentTone.normal),
@@ -131,7 +128,7 @@ class ContentEsNonHoMai {
     ),
     (text: 'he buscado mi nombre en Internet', tone: ContentTone.normal),
     (
-      text: '¿Has bloqueado a alguien en las redes sociales?',
+      text: 'bloqueado a alguien en las redes sociales',
       tone: ContentTone.normal,
     ),
     (
@@ -168,7 +165,7 @@ class ContentEsNonHoMai {
     ),
     (text: 'mentí sobre mi edad', tone: ContentTone.normal),
     (
-      text: 'No me había gustado tanto un regalo como eso',
+      text: 'exagerado lo mucho que me había gustado un regalo',
       tone: ContentTone.normal,
     ),
     (
@@ -300,7 +297,7 @@ class ContentEsNonHoMai {
       text: 'me he comido la Nutella con una cuchara directamente del tarro',
       tone: ContentTone.normal,
     ),
-    (text: 'llanto por el hambre', tone: ContentTone.normal),
+    (text: 'llorado de hambre', tone: ContentTone.normal),
     (
       text: 'pedir una pizza entera solo para mí y comérmela toda',
       tone: ContentTone.normal,
@@ -608,7 +605,7 @@ class ContentEsNonHoMai {
       text: 'le di mi número a alguien que acababa de conocer en un local',
       tone: ContentTone.mix,
     ),
-    (text: 'ha dicho una mentira durante este partido', tone: ContentTone.mix),
+    (text: 'ha dicho una mentira durante esta partida', tone: ContentTone.mix),
     (
       text: 'He dejado de hablar con alguien sin dar explicaciones',
       tone: ContentTone.mix,
@@ -814,7 +811,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.mix,
     ),
     (text: 'ligado en el gimnasio', tone: ContentTone.mix),
-    (text: 'me llevaron a una boda', tone: ContentTone.mix),
+    (text: 'ligado en una boda', tone: ContentTone.mix),
     (text: 'ligado en el supermercado', tone: ContentTone.mix),
     (text: 'besado a mi mejor amigo o a mi mejor amiga', tone: ContentTone.mix),
     (
@@ -826,7 +823,7 @@ class ContentEsNonHoMai {
       text: 'tuve una relación con alguien mucho mayor que yo',
       tone: ContentTone.mix,
     ),
-    (text: 'mentí sobre mi número de víctimas', tone: ContentTone.mix),
+    (text: 'mentí sobre mi número de parejas sexuales', tone: ContentTone.mix),
     (
       text: 'se me olvidó el nombre de alguien mientras estábamos en la cama',
       tone: ContentTone.mix,
@@ -928,7 +925,7 @@ class ContentEsNonHoMai {
     ),
     (
       text:
-          'Tuve un partido en el que no escribí nada por miedo a dar el primer paso',
+          'Tuve una partida en la que no escribí nada por miedo a dar el primer paso',
       tone: ContentTone.mix,
     ),
     (
@@ -981,7 +978,10 @@ class ContentEsNonHoMai {
       text: 'alcanzó el orgasmo solo mediante el sexo oral',
       tone: ContentTone.hot,
     ),
-    (text: 'eyaculé o salí más lejos de lo que pensaba', tone: ContentTone.hot),
+    (
+      text: 'eyaculé o salpiqué más lejos de lo que pensaba',
+      tone: ContentTone.hot,
+    ),
     (text: 'se ha tragado el semen de su pareja', tone: ContentTone.hot),
     (text: 'escupió el semen tras una felación', tone: ContentTone.hot),
     (
@@ -1086,7 +1086,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.hot,
     ),
     (text: 'he dicho cosas picantes por teléfono', tone: ContentTone.hot),
-    (text: 'heimos un juego de rol erótico en la cama', tone: ContentTone.hot),
+    (text: 'hecho un juego de rol erótico en la cama', tone: ContentTone.hot),
     (
       text: 'se puso un disfraz para un juego de rol sexual',
       tone: ContentTone.hot,
@@ -1097,7 +1097,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'probó el juego sobre hielo durante la fase de clasificación',
+      text: 'probado el juego del hielo durante los preliminares',
       tone: ContentTone.hot,
     ),
     (

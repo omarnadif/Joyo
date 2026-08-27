@@ -96,10 +96,7 @@ class ContentFrNonHoMai {
       text: 'j\'ai pris un bain de mer pendant la nuit',
       tone: ContentTone.normal,
     ),
-    (
-      text: 'j\'avais peur du noir quand j\'étais grand',
-      tone: ContentTone.normal,
-    ),
+    (text: 'eu peur du noir à l\'âge adulte', tone: ContentTone.normal),
     (text: 'j\'ai dormi avec la lumière allumée', tone: ContentTone.normal),
     (text: 'crié à cause d\'un cauchemar', tone: ContentTone.normal),
     (text: 'marché dans son sommeil', tone: ContentTone.normal),
@@ -177,7 +174,10 @@ class ContentFrNonHoMai {
       tone: ContentTone.normal,
     ),
     (text: 'j\'ai menti sur mon âge', tone: ContentTone.normal),
-    (text: 'à quel point j\'avais adoré un cadeau', tone: ContentTone.normal),
+    (
+      text: 'exagéré à quel point un cadeau m\'avait plu',
+      tone: ContentTone.normal,
+    ),
     (
       text: 'j\'ai offert à quelqu\'un d\'autre un cadeau que j\'avais reçu',
       tone: ContentTone.normal,
@@ -304,7 +304,7 @@ class ContentFrNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'j\'avais oublié parce que j\'étais entré dans une pièce',
+      text: 'oublié pourquoi j\'étais entré dans une pièce',
       tone: ContentTone.normal,
     ),
     (
@@ -405,8 +405,7 @@ class ContentFrNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text:
-          'Je n\'ai lu que le titre d\'un article, qui a été commenté par un expert',
+      text: 'lu seulement le titre d\'un article et commenté en expert',
       tone: ContentTone.normal,
     ),
     (
@@ -821,8 +820,7 @@ class ContentFrNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text:
-          'les vitres d\'une voiture sont embuées, et ce n\'est pas à cause du froid',
+      text: 'embué les vitres d\'une voiture, et pas à cause du froid',
       tone: ContentTone.mix,
     ),
     (
@@ -851,7 +849,7 @@ class ContentFrNonHoMai {
     ),
     (text: 'embrassé une personne du même sexe', tone: ContentTone.mix),
     (
-      text: 'j\'aurais aimé que quelqu\'un soit présent dans cette pièce',
+      text: 'désiré une personne présente dans cette pièce',
       tone: ContentTone.mix,
     ),
     (
@@ -890,7 +888,7 @@ class ContentFrNonHoMai {
       tone: ContentTone.mix,
     ),
     (text: 'dragué à la salle de sport', tone: ContentTone.mix),
-    (text: 'traîné à un mariage', tone: ContentTone.mix),
+    (text: 'dragué à un mariage', tone: ContentTone.mix),
     (text: 'dragué au supermarché', tone: ContentTone.mix),
     (
       text: 'embrassé mon meilleur ami ou ma meilleure amie',
@@ -905,7 +903,7 @@ class ContentFrNonHoMai {
       text: 'j\'ai eu une histoire avec quelqu\'un de bien plus âgé que moi',
       tone: ContentTone.mix,
     ),
-    (text: 'j\'ai menti sur le nombre de mes victimes', tone: ContentTone.mix),
+    (text: 'menti sur le nombre de mes partenaires', tone: ContentTone.mix),
     (
       text: 'j\'ai oublié le nom de quelqu\'un alors que nous étions au lit',
       tone: ContentTone.mix,
@@ -1070,10 +1068,7 @@ class ContentFrNonHoMai {
       text: 'j\'ai éjaculé ou giclé plus loin que je ne le pensais',
       tone: ContentTone.hot,
     ),
-    (
-      text: 'après avoir avalé le sperme de son partenaire',
-      tone: ContentTone.hot,
-    ),
+    (text: 'avalé le sperme de mon partenaire', tone: ContentTone.hot),
     (
       text: 'j\'ai recraché le sperme après une fellation',
       tone: ContentTone.hot,
@@ -1200,7 +1195,7 @@ class ContentFrNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'j\'ai testé le jeu sur glace pendant les éliminatoires',
+      text: 'essayé le jeu des glaçons pendant les préliminaires',
       tone: ContentTone.hot,
     ),
     (

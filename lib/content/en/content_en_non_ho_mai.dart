@@ -23,7 +23,7 @@ class ContentEnNonHoMai {
       text: 'I pretended to know a song so I wouldn\'t make a fool of myself',
       tone: ContentTone.normal,
     ),
-    (text: 'I forgot a close friend\'s birthday', tone: ContentTone.normal),
+    (text: 'forgotten a close friend\'s birthday', tone: ContentTone.normal),
     (text: 'missed a train or a plane', tone: ContentTone.normal),
     (text: 'traveled alone', tone: ContentTone.normal),
     (text: 'broke a bone', tone: ContentTone.normal),
@@ -137,10 +137,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (text: 'lied about my age', tone: ContentTone.normal),
-    (
-      text: 'It was hard to believe just how much I liked that gift',
-      tone: ContentTone.normal,
-    ),
+    (text: 'exaggerated how much I liked a gift', tone: ContentTone.normal),
     (
       text: 'gave a gift I had received to someone else',
       tone: ContentTone.normal,
@@ -158,7 +155,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (text: 'ate ice cream for breakfast', tone: ContentTone.normal),
-    (text: 'spent hours on end doing something', tone: ContentTone.normal),
+    (text: 'queued for hours for something', tone: ContentTone.normal),
     (text: 'forgot an important appointment', tone: ContentTone.normal),
     (text: 'argued over the remote control', tone: ContentTone.normal),
     (
@@ -321,7 +318,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Read only the title of an article and commented on by an expert',
+      text: 'read only the headline of an article and commented like an expert',
       tone: ContentTone.normal,
     ),
     (
@@ -710,7 +707,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'created a playlist specifically for nights out with friends',
+      text: 'created a playlist specifically for nights spent with someone',
       tone: ContentTone.mix,
     ),
     (
@@ -808,7 +805,7 @@ class ContentEnNonHoMai {
       text: 'I ejaculated or shot farther than I thought I would',
       tone: ContentTone.hot,
     ),
-    (text: 'swallowed her partner\'s semen', tone: ContentTone.hot),
+    (text: 'swallowed my partner\'s semen', tone: ContentTone.hot),
     (text: 'spit out the semen after oral sex', tone: ContentTone.hot),
     (text: 'had oral sex with a partner I had just met', tone: ContentTone.hot),
     (
@@ -894,7 +891,7 @@ class ContentEnNonHoMai {
       text: 'licked cream or chocolate off their partner\'s body',
       tone: ContentTone.hot,
     ),
-    (text: 'Eating food during sex', tone: ContentTone.hot),
+    (text: 'used food during sex', tone: ContentTone.hot),
     (text: 'tried tantric sex for hours', tone: ContentTone.hot),
     (
       text: 'had a quickie that lasted less than five minutes',
@@ -905,7 +902,7 @@ class ContentEnNonHoMai {
     (text: 'sent a nude photo to someone', tone: ContentTone.hot),
     (text: 'received an unexpected nude photo', tone: ContentTone.hot),
     (text: 'I filmed a video of myself masturbating', tone: ContentTone.hot),
-    (text: 'recorded a report to review it', tone: ContentTone.hot),
+    (text: 'filmed a sexual encounter to rewatch it', tone: ContentTone.hot),
     (text: 'watched a steamy video made with an ex', tone: ContentTone.hot),
     (text: 'engaged in sexting during work hours', tone: ContentTone.hot),
     (text: 'had a steamy long-distance video call', tone: ContentTone.hot),

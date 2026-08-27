@@ -4,7 +4,7 @@ class ContentDeApp {
   const ContentDeApp._();
 
   static const Map<String, String> ui = {
-    'app.tagline': 'Das Partyspiel für alle, die\njeder ein Handy haben.',
+    'app.tagline': 'Das Partyspiel, bei dem\njeder ein eigenes Handy hat.',
     'common.retry': 'Versuche es noch einmal',
     'common.cancel': 'Abbrechen',
     'common.continue': 'WEITER',
@@ -38,8 +38,8 @@ class ContentDeApp {
     'join.name_hint': 'Dein Name',
     'join.color': 'Deine Farbe',
     'join.code': 'Raumcode',
-    'join.cta_create': 'GESTALTE DAS ZIMMER',
-    'join.cta_join': 'HEREIN',
+    'join.cta_create': 'RAUM ERSTELLEN',
+    'join.cta_join': 'BEITRETEN',
     'join.error_name': 'Schreib deinen Namen auf.',
     'join.error_code': 'Der Code besteht aus 6 Zeichen.',
     'error.room_not_found': 'Es gibt kein Zimmer mit dieser Nummer.',
@@ -48,7 +48,7 @@ class ContentDeApp {
     'error.connection':
         'Die Verbindung wurde unterbrochen. Öffne die App erneut und versuche es noch einmal.',
     'lobby.title': 'Lobby',
-    'lobby.code_label': 'RAUMNUMMER',
+    'lobby.code_label': 'RAUMCODE',
     'lobby.code_hint': 'Sag es laut · Zum Kopieren antippen',
     'lobby.code_copied': 'Code kopiert',
     'lobby.players': 'Spieler',
@@ -61,7 +61,7 @@ class ContentDeApp {
     'lobby.remove_player_body':
         'Verwende diese Funktion, wenn jemand die App geschlossen hat, ohne sich abzumelden. Mit dem Code kann er sich jederzeit wieder anmelden.',
     'lobby.remove': 'Entfernen',
-    'lobby.exit_host_title': 'Den Raum abschließen?',
+    'lobby.exit_host_title': 'Den Raum schließen?',
     'lobby.exit_host_body':
         'Der Raum wird für alle geschlossen: Die anderen Spieler kehren zur Startseite zurück.',
     'lobby.exit_title': 'Den Raum verlassen?',
@@ -70,7 +70,7 @@ class ContentDeApp {
     'lobby.stay': 'Bleib',
     'lobby.close': 'Schließen',
     'lobby.leave': 'Beenden',
-    'lobby.exit_failed': 'Ausgabe fehlgeschlagen: {detail}',
+    'lobby.exit_failed': 'Verlassen fehlgeschlagen: {detail}',
     'lobby.room_closed': 'Der Raum wurde vom Gastgeber geschlossen.',
     'lobby.reconnecting': 'Wiederverbindung…',
     'lobby.entering': 'Ich betrete den Raum…',
@@ -91,7 +91,7 @@ class ContentDeApp {
     'game.close_failed': 'Ich kann die Runde nicht abschließen: {detail}',
     'game.vote_failed': 'Nicht gespeicherte Antwort: {detail}',
     'game.next_round': 'NÄCHSTE RUNDE',
-    'game.see_podium': 'SIEHE DAS PODIUM',
+    'game.see_podium': 'PODIUM ANSEHEN',
     'game.waiting_next':
         'Der Moderator wird gleich die nächste Runde einläuten…',
     'game.finished': 'Das Spiel ist vorbei',
@@ -127,15 +127,15 @@ class ContentDeApp {
     'chi.tagline':
         'Das Spiel, bei dem man (im wahrsten Sinne des Wortes) mit dem Finger zeigt.',
     'chi.decided': 'Die Gruppe hat beschlossen',
-    'chi.tie': 'Gleicher Verdienst',
-    'chi.no_votes': 'Keine Bewertung',
+    'chi.tie': 'Gleichstand',
+    'chi.no_votes': 'Keine Stimmen',
     'obbligo.name': 'Wahrheit oder Pflicht',
     'obbligo.tagline': 'Die Flasche entscheidet, du schwitzt. Keine Ausreden.',
     'obbligo.spinning': 'Die Flasche dreht sich…',
     'obbligo.your_turn': 'Jetzt bist du dran',
     'obbligo.turn_of': 'Jetzt ist {name} an der Reihe',
-    'obbligo.choosing': 'Er wählt gerade aus…',
-    'obbligo.dare': 'VERPFLICHTUNG',
+    'obbligo.choosing': 'Wählt gerade aus…',
+    'obbligo.dare': 'PFLICHT',
     'obbligo.truth': 'WAHRHEIT',
     'obbligo.no_choice': '{name} hat sich nicht rechtzeitig entschieden',
     'obbligo.when_done':
@@ -147,7 +147,7 @@ class ContentDeApp {
     'bluff.your_turn_body':
         'Schreibe eine wahre Tatsache über dich auf. Das Spiel mischt zwei Lügen dazwischen: Die anderen müssen erraten, welche davon deine ist.',
     'bluff.hint': 'Schreib hier…',
-    'bluff.send': 'SENDET EURE WAHRHEIT',
+    'bluff.send': 'SENDE DEINE WAHRHEIT',
     'bluff.too_short': 'Schreib doch mal etwas Längeres.',
     'bluff.which_true': 'Was ist die Wahrheit über {name}?',
     'bluff.in_play': 'Deine Geschichte steht auf dem Spiel',
@@ -172,7 +172,7 @@ class ContentDeApp {
         'Du kennst das Wort nicht. Hör zu, improvisiere und lass dich nicht erwischen: Wenn du das Wort am Ende errätst, bekommst du Punkte.',
     'impostore.the_word': 'Das Wort lautet',
     'impostore.one_doesnt': 'Einer von euch kennt sie nicht.',
-    'impostore.round_of_words': 'Wortspielerei',
+    'impostore.round_of_words': 'Wortrunde',
     'impostore.round_of_words_body':
         'Nacheinander sagt jeder ein einziges Wort, das mit dem Geheimnis zu tun hat.\nIst es zu präzise, versteht der Betrüger es; ist es zu vage, seht ihr selbst wie der Betrüger aus.',
     'impostore.your_word': 'Dein Wort: {word}',
@@ -192,7 +192,7 @@ class ContentDeApp {
         '+2 für diejenigen, die für den Betrüger gestimmt haben',
     'impostore.points_escaped': '+5 für den Betrüger',
     'impostore.votes': '{n} Stimmen',
-    'impostore.votes_one': '{n} Bewertung',
+    'impostore.votes_one': '{n} Stimme',
     'premium.title': 'Maßgeschneiderte Inhalte',
     'premium.body':
         'In „Wer könnte das tun?“ und „Bluff Story“ werden die Sätze für eure Gruppe geschrieben, anstatt aus einer Liste gezogen zu werden.',
