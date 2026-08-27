@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentEnObbligoOVerita {
   const ContentEnObbligoOVerita._();
 
@@ -105,7 +103,7 @@ class ContentEnObbligoOVerita {
       'Call your mother or a relative and tell them you love them.',
       'Send "Good morning!" with three random emojis in the family chat.',
       'Let the group choose your next task for the following shift.',
-      'He struts like a model from one side of the room to the other, complete with a twirl.',
+      'Strut like a model from one side of the room to the other, complete with a twirl.',
       'Act like a T-Rex with short arms until your next turn.',
       'Use a remote control or a brush as a microphone every time you speak, for one lap.',
       'Play the waiter: take everyone\'s imaginary orders with a very serious expression.',
@@ -131,7 +129,7 @@ class ContentEnObbligoOVerita {
       'Make up a language and "translate" what the person to your right is saying.',
       'Pretend you\'re trapped inside an invisible box until someone "frees" you.',
       'Tell us how this group came together, in the style of a historical documentary.',
-      'Address everyone formally using "Lei" until it\'s your turn again.',
+      'Address everyone formally using "Sir" or "Ma\'am" until it\'s your turn again.',
       'Create an imaginary cooking tutorial using the items in front of you.',
       'Move in slow motion until the end of the shift, including replays.',
       'Say hello in five different languages, making up the ones you don\'t know.',

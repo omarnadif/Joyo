@@ -1,4 +1,3 @@
-/// Parole segrete del gioco "Impostore" in italiano.
 class ContentItImpostore {
   const ContentItImpostore._();
 

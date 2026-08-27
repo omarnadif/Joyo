@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Contenuti del gioco "Obbligo o Verità" in italiano: obblighi e verità,
-/// entrambi raggruppati per tono (normal/mix/hot).
 class ContentItObbligoOVerita {
   const ContentItObbligoOVerita._();
 

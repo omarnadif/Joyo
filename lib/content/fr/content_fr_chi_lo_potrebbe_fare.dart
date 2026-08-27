@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentFrChiLoPotrebbeFare {
   const ContentFrChiLoPotrebbeFare._();
 
@@ -30,7 +28,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (text: 'Qui pourrait oublier son anniversaire ?', tone: ContentTone.normal),
-    (text: 'Qui oserait se disputer avec le GPS ?', tone: ContentTone.normal),
+    (text: 'Qui oserait se disputer avec son GPS ?', tone: ContentTone.normal),
     (
       text: 'Qui achèterait quelque chose en ligne à trois heures du matin ?',
       tone: ContentTone.normal,
@@ -83,7 +81,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Qui cuisinerait pour vingt personnes sans raison ?',
+      text: 'Qui cuisinerait pour vingt personnes sans aucune raison ?',
       tone: ContentTone.normal,
     ),
     (text: 'Qui ferait bouillir l\'eau des pâtes ?', tone: ContentTone.normal),
@@ -159,7 +157,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Qui laisserait des messages en attente pendant des jours ?',
+      text: 'Qui laisserait des messages sans réponse pendant des jours ?',
       tone: ContentTone.normal,
     ),
     (
@@ -171,7 +169,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Qui dirait « oui » à tout pour ensuite le regretter ?',
+      text: 'Qui dirait « oui » à tout pour ensuite tout regretter ?',
       tone: ContentTone.normal,
     ),
     (
@@ -266,7 +264,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Qui emballerait un cadeau de manière aussi catastrophique ?',
+      text: 'Qui emballerait un cadeau de manière catastrophique ?',
       tone: ContentTone.normal,
     ),
     (
@@ -312,7 +310,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui enverrait un message dans le mauvais chat en parlant justement de ce chat ?',
+          'Qui enverrait un message dans le mauvais chat en parlant justement de cette conversation ?',
       tone: ContentTone.normal,
     ),
     (
@@ -489,7 +487,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Qui passerait plus de temps à choisir un film qu’à le regarder ?',
+      text: 'Qui passerait plus de temps à choisir un film qu\'à le regarder ?',
       tone: ContentTone.normal,
     ),
     (
@@ -526,7 +524,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui connaîtrait les chansons par cœur sans jamais connaître le nom du chanteur ?',
+          'Qui connaîtrait les chansons par cœur sans jamais connaître le nom de leur interprète ?',
       tone: ContentTone.normal,
     ),
     (
@@ -535,7 +533,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui se déguiserait de manière ridicule pour une soirée à thème en prenant ça trop au sérieux ?',
+          'Qui se déguiserait de manière ridicule pour une soirée à thème en prenant cela trop au sérieux ?',
       tone: ContentTone.normal,
     ),
     (
@@ -612,7 +610,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui compterait les jours qui séparent encore de ses vacances dès le mois de janvier ?',
+          'Qui compterait dès janvier les jours qui le séparent encore de ses vacances ?',
       tone: ContentTone.normal,
     ),
     (
@@ -657,7 +655,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui aurait le plus grand nombre de discussions ouvertes en même temps ?',
+          'Qui aurait le plus grand nombre de conversations ouvertes en même temps ?',
       tone: ContentTone.mix,
     ),
     (
@@ -1088,7 +1086,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (
-      text: 'Qui se ferait écrire ce numéro sur la paume de la main ?',
+      text: 'Qui se ferait écrire son numéro sur la paume de la main ?',
       tone: ContentTone.mix,
     ),
     (
@@ -1215,7 +1213,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui se laisserait convaincre de piquer une tête en sous-vêtements en pleine nuit ?',
+          'Qui se laisserait convaincre de se baigner en sous-vêtements en pleine nuit ?',
       tone: ContentTone.mix,
     ),
     (
@@ -1267,7 +1265,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui se ferait lire les lignes de la main juste pour qu’on lui tienne la main ?',
+          'Qui se ferait lire les lignes de la main juste pour qu\'on lui tienne la main ?',
       tone: ContentTone.mix,
     ),
     (
@@ -1301,7 +1299,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (text: 'Qui arriverait le plus vite ?', tone: ContentTone.hot),
-    (text: 'Qui met le plus de temps à arriver ?', tone: ContentTone.hot),
+    (text: 'Qui mettrait le plus de temps à arriver ?', tone: ContentTone.hot),
     (text: 'Qui a simulé un orgasme pour en finir ?', tone: ContentTone.hot),
     (
       text: 'Qui n\'a jamais eu d\'orgasme avec un partenaire ?',
@@ -1313,7 +1311,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Qui a déjà eu un orgasme dans un endroit complètement farfelu ?',
+      text: 'Qui a déjà eu un orgasme dans un endroit complètement insolite ?',
       tone: ContentTone.hot,
     ),
     (
@@ -1342,7 +1340,7 @@ class ContentFrChiLoPotrebbeFare {
     (text: 'Qui est le plus doué avec sa bouche ?', tone: ContentTone.hot),
     (text: 'Qui refuserait toujours d\'avaler ?', tone: ContentTone.hot),
     (
-      text: 'Qui adore se faire faire une fellation plus que tout au monde ?',
+      text: 'Qui adore recevoir une fellation plus que tout au monde ?',
       tone: ContentTone.hot,
     ),
     (
@@ -1351,12 +1349,12 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui a fait jouir son partenaire en moins de cinq minutes en le léchant ?',
+          'Qui a fait jouir son partenaire en moins de cinq minutes en lui faisant du sexe oral ?',
       tone: ContentTone.hot,
     ),
     (text: 'Qui ferait une fellation à un feu rouge ?', tone: ContentTone.hot),
     (
-      text: 'Qui a réussi un 69 lors de la dernière rencontre ?',
+      text: 'Qui a déjà fait un 69 lors de la dernière rencontre ?',
       tone: ContentTone.hot,
     ),
     (
@@ -1547,7 +1545,10 @@ class ContentFrChiLoPotrebbeFare {
           'Qui prend son pied en se faisant regarder pendant qu\'il se déshabille ?',
       tone: ContentTone.hot,
     ),
-    (text: 'Qui est obsédé par le latex ou le cuir ?', tone: ContentTone.hot),
+    (
+      text: 'Qui serait obsédé par le latex ou le cuir ?',
+      tone: ContentTone.hot,
+    ),
     (
       text: 'Qui trouve ça excitant d\'échanger des propos coquins au lit ?',
       tone: ContentTone.hot,
@@ -1770,7 +1771,8 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Qui a encore une appli de rencontres installée en cachette ?',
+      text:
+          'Qui a encore une application de rencontres installée en cachette ?',
       tone: ContentTone.hot,
     ),
     (

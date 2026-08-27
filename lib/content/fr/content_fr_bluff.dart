@@ -1,5 +1,3 @@
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentFrBluff {
   const ContentFrBluff._();
 
@@ -19,7 +17,7 @@ class ContentFrBluff {
     'J\'ai pris le mauvais train et je me suis retrouvé à l\'autre bout de l\'Italie.',
     'J\'ai passé tout le réveillon du Nouvel An à l\'hôpital pour accompagner un ami.',
     'Quand j\'étais enfant, je suis tombé d\'un très grand arbre sans m\'écorcher.',
-    'Je me suis cassé un bras en jouant à cache-cache à la maison.',
+    'Je me suis cassé le bras en jouant à cache-cache à la maison.',
     'Je me suis fait faire un tatouage sur un coup de tête et je l\'ai regretté dès le lendemain.',
     'Je me suis coupé les cheveux tout seul et j\'ai dû me raser la tête à zéro.',
     'Je me suis teint les cheveux en vert fluo pour honorer un pari perdu.',

@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentEsPreferisci {
   const ContentEsPreferisci._();
 
@@ -14,7 +12,7 @@ class ContentEsPreferisci {
     (a: 'Leer la mente', b: 'Predecir el futuro'),
     (a: 'Nunca más redes sociales', b: 'Nunca más películas'),
     (a: 'Perder el móvil', b: 'Perder las llaves de casa'),
-    (a: 'Siempre 5 minutos antes', b: 'Siempre llega 10 minutos tarde'),
+    (a: 'Siempre 5 minutos antes', b: 'Llegar siempre 10 minutos tarde'),
     (
       a: 'Un jefe simpático pero incompetente',
       b: 'Un jefe antipático, pero competente',
@@ -27,32 +25,35 @@ class ContentEsPreferisci {
     (a: 'Una semana sin salir', b: 'Salir todas las noches'),
     (a: 'Dormir 10 horas', b: 'Dormir 5 horas y sentirse de maravilla'),
     (a: 'Volver a vivir las vacaciones perfectas', b: 'Probar un sitio nuevo'),
-    (a: 'Revisa tu cuenta todos los días', b: 'No lo mires nunca'),
+    (a: 'Revisar tu cuenta todos los días', b: 'No lo mires nunca'),
     (
       a: 'Un superpoder inútil, pero divertido',
       b: 'Un superpoder útil pero aburrido',
     ),
     (
       a: 'Volver a leer siempre el mismo libro',
-      b: 'Que nunca se acabe ninguno',
+      b: 'Que no se acabe nunca ninguno',
     ),
-    (a: 'Saber siempre la verdad', b: 'Vivir feliz en la ilusión'),
+    (a: 'Saber siempre la verdad', b: 'Vivir feliz en una ilusión'),
     (a: 'Un año sabático', b: 'Jubilarse un año antes'),
     (a: 'Hablar todos los idiomas', b: 'Tocar todos los instrumentos'),
-    (a: 'Nunca te sientas avergonzado', b: 'Nunca sientas miedo'),
-    (a: 'Revive tu mejor día', b: 'Eliminar el peor'),
-    (a: 'Convivir al cabo de un mes', b: 'Convivir después de tantos años'),
+    (a: 'No sentirte nunca avergonzado', b: 'Nunca sientas miedo'),
+    (a: 'Revivir tu mejor día', b: 'Eliminar el peor'),
+    (
+      a: 'Empezar a convivir al cabo de un mes',
+      b: 'Convivir después de tantos años',
+    ),
     (
       a: 'Unas vacaciones organizadas hasta el más mínimo detalle',
       b: 'Embarcarse en una aventura',
     ),
-    (a: 'Una temporada en una sola noche', b: 'Un episodio a la semana'),
+    (a: 'Una temporada entera en una sola noche', b: 'Un episodio a la semana'),
     (a: 'La batería siempre está al 1 %', b: 'Internet muy lento'),
     (
       a: 'Ropa siempre un poco mojada',
       b: 'Una piedrecita en el zapato para siempre',
     ),
-    (a: 'Di siempre lo que pienses', b: 'No poder hablar nunca más'),
+    (a: 'Decir siempre lo que piensas', b: 'No poder hablar nunca más'),
     (a: 'Sin calefacción en invierno', b: 'Sin aire acondicionado en verano'),
     (a: 'Mi plato favorito en cada comida', b: 'Nunca más tu plato favorito'),
     (
@@ -60,7 +61,7 @@ class ContentEsPreferisci {
       b: 'Ya no habrá necesidad de comer nunca más',
     ),
     (a: 'Rico, pero sin amigos', b: 'Sin un céntimo, pero muy querido'),
-    (a: 'Nunca más tendré que pagar alquiler', b: 'El sueldo se ha duplicado'),
+    (a: 'Nunca más tendré que pagar alquiler', b: 'Tener el sueldo duplicado'),
     (a: 'El más simpático de la sala', b: 'El más listo de la sala'),
     (a: 'Memoria fotográfica', b: 'Olvidarse de cualquier metedura de pata'),
     (a: 'No más colas', b: 'Nunca más atascos'),
@@ -115,7 +116,7 @@ class ContentEsPreferisci {
       a: 'Perseguido de por vida por un caracol asesino',
       b: 'Un payaso que te mira fijamente cada noche',
     ),
-    (a: 'Hablar con los animales', b: 'Consultar el tiempo'),
+    (a: 'Hablar con los animales', b: 'Poder consultar el tiempo'),
     (
       a: 'Bailar en cuanto empieza la música',
       b: 'Llorar cuando alguien se ríe',
@@ -142,7 +143,7 @@ class ContentEsPreferisci {
     (a: 'Borrar un remordimiento', b: 'Asegurarte el éxito en el futuro'),
     (
       a: 'La cola que mueve cuando estás contento',
-      b: 'Las orejas se te caen cuando estás triste',
+      b: 'Que se te caigan las orejas cuando estás triste',
     ),
     (a: 'Dejar el café para siempre', b: 'Dejar el chocolate'),
     (
@@ -206,7 +207,7 @@ class ContentEsPreferisci {
     (a: 'Perder todas las fotos del móvil', b: 'Borrar todos los chats'),
     (a: 'Medir 2 metros y 20', b: 'Medir un metro y 20'),
     (a: 'Vivir sin verano', b: 'Vivir sin invierno'),
-    (a: 'Salvar a cinco desconocidos', b: 'Salva a tu mejor amigo'),
+    (a: 'Salvar a cinco desconocidos', b: 'Salvar a tu mejor amigo'),
     (
       a: 'Un millón, pero nunca más smartphones',
       b: 'Sin dinero, pero con el móvil',
@@ -229,7 +230,7 @@ class ContentEsPreferisci {
       b: 'Conductor personal de por vida',
     ),
     (
-      a: 'Comenta en voz alta todo lo que haces',
+      a: 'Comentar en voz alta todo lo que haces',
       b: 'Escuchar la voz narradora de tu vida',
     ),
     (
@@ -270,10 +271,7 @@ class ContentEsPreferisci {
       a: 'Restaurantes gratis, pero siempre solo',
       b: 'Pagar siempre, pero en compañía',
     ),
-    (
-      a: 'Se ha hecho viral por un batacazo épico',
-      b: 'Nunca más de 10 «Me gusta»',
-    ),
+    (a: 'Hacerse viral por un batacazo épico', b: 'Nunca más de 10 «Me gusta»'),
     (a: 'Beber solo agua para siempre', b: 'Nunca más agua, solo refrescos'),
     (
       a: 'Un solo género musical para toda la vida',
@@ -338,7 +336,10 @@ class ContentEsPreferisci {
       a: 'Acertar siempre con la cola más rápida',
       b: 'Acertar siempre con el ascensor correcto',
     ),
-    (a: 'Revivir el mismo día perfecto', b: 'Un nuevo día, pero impredecible'),
+    (
+      a: 'Revivir el mismo día perfecto',
+      b: 'Tener un nuevo día, pero impredecible',
+    ),
     (a: 'Ser invisible una hora al día', b: 'Volar diez minutos al día'),
     (
       a: 'Cocinar para diez personas todas las noches',
@@ -346,7 +347,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Una mochila pesada, pero con todo lo necesario',
-      b: 'Una mochila ligera, pero nunca es la adecuada',
+      b: 'Una mochila ligera, pero que nunca sea la adecuada',
     ),
     (
       a: 'Las fotos siempre salen mal, pero los recuerdos son perfectos',
@@ -358,7 +359,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Un mayordomo humano que da vergüenza ajena',
-      b: 'Un robot que te juzga en silencio',
+      b: 'Un robot que te juzgue en silencio',
     ),
   ];
 
@@ -411,7 +412,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Besar con los ojos cerrados a alguien del grupo',
-      b: 'Besarte a tu ex delante de todo el mundo',
+      b: 'Besar a tu ex delante de todo el mundo',
       tone: ContentTone.mix,
     ),
     (
@@ -430,7 +431,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Vuelve a ver en vídeo tu primer beso',
+      a: 'Volver a ver en vídeo tu primer beso',
       b: 'Que todo el grupo lo revise',
       tone: ContentTone.mix,
     ),
@@ -471,12 +472,12 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Un ex que besa de maravilla',
-      b: 'Uno nuevo al que hay que enseñar todo',
+      b: 'Uno nuevo al que haya que enseñarle todo',
       tone: ContentTone.mix,
     ),
     (
       a: 'Que te desnuden con la mirada en el bar',
-      b: 'Que nunca más te vean',
+      b: 'Que nunca vuelvan a verte',
       tone: ContentTone.mix,
     ),
     (
@@ -545,7 +546,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Un limón con el que tienes a la izquierda',
+      a: 'Un limón con la persona que tienes a la izquierda',
       b: 'Un baile lento y sensual con la persona que tienes a tu derecha',
       tone: ContentTone.mix,
     ),
@@ -556,7 +557,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Recibir una foto desnuda no solicitada de tu jefe',
-      b: 'Enviárselo al jefe por error',
+      b: 'Enviárselo por error al jefe',
       tone: ContentTone.mix,
     ),
     (
@@ -591,7 +592,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Te ha salido un «match» con tu ex en una app',
-      b: 'Encuentra a tu jefe en una aplicación',
+      b: 'Encontrar a tu jefe en una aplicación',
       tone: ContentTone.mix,
     ),
     (
@@ -631,7 +632,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Hacer que lea los mensajes con su ex',
-      b: 'Mostrar las fotos con mi ex',
+      b: 'Mostrar las fotos con tu ex',
       tone: ContentTone.mix,
     ),
     (
@@ -711,7 +712,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Besos con mordisco',
-      b: 'Besos de molde para siempre',
+      b: 'Besos convencionales para siempre',
       tone: ContentTone.mix,
     ),
     (
@@ -756,7 +757,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Sexo en una tienda de campaña en un camping abarrotado',
-      b: 'En un hotel con paredes de papel',
+      b: 'Sexo en un hotel con paredes de papel',
       tone: ContentTone.mix,
     ),
     (
@@ -765,7 +766,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Sexo anal cada vez',
+      a: 'Tener sexo anal cada vez',
       b: 'No más sexo durante un año',
       tone: ContentTone.mix,
     ),
@@ -776,7 +777,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Que te graben mientras lo haces',
+      a: 'Que te graben mientras tienes sexo',
       b: 'No lo vuelvas a hacer nunca más',
       tone: ContentTone.mix,
     ),
@@ -787,8 +788,8 @@ class ContentEsPreferisci {
     ),
     (a: 'Tragar', b: 'Escupir', tone: ContentTone.hot),
     (
-      a: 'Déjate sorprender con un masaje',
-      b: 'Dale tú la sorpresa a él o a ella',
+      a: 'Recibir un masaje sorpresa',
+      b: 'Dar tú la sorpresa a él o a ella',
       tone: ContentTone.mix,
     ),
     (
@@ -817,13 +818,13 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un sexo oral que termina en la boca',
+      a: 'Sexo oral que termina en la boca',
       b: 'Una felación que termina en la cara',
       tone: ContentTone.hot,
     ),
     (
       a: 'Lamer hasta el orgasmo',
-      b: 'Que me laman hasta el orgasmo',
+      b: 'Que te laman hasta el orgasmo',
       tone: ContentTone.hot,
     ),
     (
@@ -848,7 +849,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Ver cómo tu pareja se acuesta con otra persona',
-      b: 'Que te vean mientras follas',
+      b: 'Que te vean mientras tienes sexo',
       tone: ContentTone.hot,
     ),
     (
@@ -862,17 +863,17 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Que me azoten suavemente',
+      a: 'Que te azoten suavemente',
       b: 'Azota tú a tu pareja',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sumisa por una noche',
-      b: 'Dominadora por una noche',
+      a: 'Ser sumisa por una noche',
+      b: 'Ser dominante por una noche',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Llevas puesto el collar y la correa',
+      a: 'Llevar puesto el collar y la correa',
       b: 'Dárselos a la pareja',
       tone: ContentTone.hot,
     ),
@@ -882,12 +883,12 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Atada a la cama toda la noche',
+      a: 'Estar atada a la cama toda la noche',
       b: 'Atar a tu pareja a la cama',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Con los ojos vendados y a merced de su pareja',
+      a: 'Estar con los ojos vendados y a merced de tu pareja',
       b: 'Vendarle los ojos a tu pareja y dar órdenes',
       tone: ContentTone.hot,
     ),
@@ -902,8 +903,8 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un plug que se lleva puesto todo el día',
-      b: 'Un vibrador en público',
+      a: 'Llevar un plug puesto todo el día',
+      b: 'Usar un vibrador en público',
       tone: ContentTone.hot,
     ),
     (
@@ -917,7 +918,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Esposas de verdad en las muñecas',
+      a: 'Llevar esposas de verdad en las muñecas',
       b: 'Cuerdas de seda sobre el cuerpo',
       tone: ContentTone.hot,
     ),
@@ -947,23 +948,23 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un vídeo picante que está dando la vuelta a la red',
+      a: 'Un vídeo picante que da la vuelta a la red',
       b: 'Tus chats picantes que circulan por ahí',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Tus fotos desnuda en el móvil de él',
-      b: 'Un vídeo íntimo tuyo guardado',
+      a: 'Tus fotos desnuda en su móvil',
+      b: 'Un vídeo íntimo tuyo guardado en su móvil',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Grabad mientras lo hacéis',
+      a: 'Grabar mientras lo hacéis',
       b: 'Hacerte fotos desnuda para él',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Una foto desnuda enviada por error al jefe',
-      b: 'Un desnudo visto por tus amigos',
+      a: 'Enviar por error una foto desnuda al jefe',
+      b: 'Que tus amigos vean un desnudo tuyo',
       tone: ContentTone.hot,
     ),
     (
@@ -972,18 +973,18 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sexo duro y sin piedad',
+      a: 'Sexo duro y sin contemplaciones',
       b: 'Sexo lento toda la noche',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Venir cinco veces seguidas',
+      a: 'Tener cinco orgasmos seguidos',
       b: 'Un único orgasmo muy largo',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Fingir siempre el orgasmo',
-      b: 'No vuelvas nunca más',
+      a: 'Fingir siempre los orgasmos',
+      b: 'No volver a hacerlo nunca más',
       tone: ContentTone.hot,
     ),
     (
@@ -992,14 +993,14 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Squirtear delante de él',
+      a: 'Squirtear delante de tu pareja',
       b: 'Ver cómo se corre sobre tu cuerpo',
       tone: ContentTone.hot,
     ),
-    (a: 'Sexo anal', b: 'Doble penetración', tone: ContentTone.hot),
+    (a: 'Tener sexo anal', b: 'Tener doble penetración', tone: ContentTone.hot),
     (
       a: 'Probar el sexo anal por primera vez',
-      b: 'No lo pruebes nunca',
+      b: 'No probarlo nunca',
       tone: ContentTone.hot,
     ),
     (
@@ -1098,7 +1099,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Enviando mensajes sexuales durante toda la jornada laboral',
+      a: 'Enviar mensajes sexuales durante toda la jornada laboral',
       b: 'Fotos sensuales cada hora',
       tone: ContentTone.hot,
     ),
@@ -1199,12 +1200,12 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Llevar un plug a cenar a casa de los suegros',
-      b: 'Un vibrador que controla a distancia la pareja',
+      b: 'Un vibrador que tu pareja controle a distancia',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Vibrador con mando a distancia en el metro',
-      b: 'Vibrador con mando a distancia en el restaurante',
+      a: 'Usar un vibrador con mando a distancia en el metro',
+      b: 'Usar un vibrador con mando a distancia en el restaurante',
       tone: ContentTone.hot,
     ),
     (
@@ -1333,7 +1334,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Un año de puras aventuras sin un mañana',
+      a: 'Un año de aventuras sin pensar en el mañana',
       b: 'Un año entero de espera para encontrar a la persona adecuada',
       tone: ContentTone.mix,
     ),
@@ -1499,7 +1500,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Una noche de pasión, pero ya la has olvidado',
-      b: 'No es una noche, sino el recuerdo de un beso',
+      b: 'No una noche, sino el recuerdo de un beso',
       tone: ContentTone.mix,
     ),
     (
@@ -1548,8 +1549,8 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sexo con una palabra de seguridad',
-      b: 'Sexo sin límites acordados',
+      a: 'Sexo con una palabra de seguridad acordada',
+      b: 'Sexo sin límites previamente acordados',
       tone: ContentTone.hot,
     ),
     (
@@ -1563,7 +1564,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sexo en un balcón a la vista de todos',
+      a: 'Sexo en un balcón a la vista de todo el mundo',
       b: 'Sexo en el jardín por la noche',
       tone: ContentTone.hot,
     ),

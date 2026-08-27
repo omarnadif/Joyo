@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentFrPreferisci {
   const ContentFrPreferisci._();
 
@@ -13,31 +11,37 @@ class ContentFrPreferisci {
     (a: 'Voyager dans le passé', b: 'Voyager dans le futur'),
     (a: 'Lire dans les pensées', b: 'Prédire l\'avenir'),
     (a: 'Fini les réseaux sociaux', b: 'Plus jamais de films'),
-    (a: 'Perdre son téléphone', b: 'Perdre ses clés de chez soi'),
+    (a: 'Perdre ton téléphone', b: 'Perdre tes clés de chez toi'),
     (a: 'Toujours 5 minutes en avance', b: 'Toujours 10 minutes de retard'),
     (
       a: 'Un chef sympathique mais incompétent',
       b: 'Un chef antipathique mais compétent',
     ),
     (
-      a: 'Un salaire élevé et un travail ennuyeux',
-      b: 'Un salaire modeste et un travail que tu aimes',
+      a: 'Avoir un salaire élevé et un travail ennuyeux',
+      b: 'Avoir un salaire modeste et un travail que tu aimes',
     ),
-    (a: 'Mariage avec 200 invités', b: 'Un mariage à deux'),
-    (a: 'Une semaine sans sortir', b: 'Sortir tous les soirs'),
+    (a: 'Se marier avec 200 invités', b: 'Se marier à deux'),
+    (a: 'Passer une semaine sans sortir', b: 'Sortir tous les soirs'),
     (a: 'Dormir 10 heures', b: 'Dormir 5 heures et se sentir en pleine forme'),
     (a: 'Revivre des vacances parfaites', b: 'Essayer un nouvel endroit'),
-    (a: 'Vérifier son compte tous les jours', b: 'Ne le regarde jamais'),
+    (
+      a: 'Vérifier ton compte tous les jours',
+      b: 'Ne jamais regarder ton compte',
+    ),
     (
       a: 'Un super-pouvoir inutile mais amusant',
       b: 'Un super-pouvoir utile mais ennuyeux',
     ),
     (a: 'Relire sans cesse le même livre', b: 'On n\'en finit jamais un'),
     (a: 'Toujours connaître la vérité', b: 'Vivre heureux dans l\'illusion'),
-    (a: 'Une année sabbatique', b: 'Prendre sa retraite un an plus tôt'),
+    (
+      a: 'Prendre une année sabbatique',
+      b: 'Prendre ta retraite un an plus tôt',
+    ),
     (a: 'Parler toutes les langues', b: 'Jouer de tous les instruments'),
-    (a: 'Ne te sens jamais gêné(e)', b: 'Ne ressens jamais la peur'),
-    (a: 'Revivez votre plus beau jour', b: 'Supprimer le pire'),
+    (a: 'Ne jamais te sentir gêné(e)', b: 'Ne ressens jamais la peur'),
+    (a: 'Revivre ton plus beau jour', b: 'Supprimer le pire'),
     (
       a: 'Vivre ensemble après un mois',
       b: 'Vivre ensemble après toutes ces années',
@@ -46,7 +50,10 @@ class ContentFrPreferisci {
       a: 'Des vacances organisées dans les moindres détails',
       b: 'Partir à l\'aventure',
     ),
-    (a: 'Une saison en une seule nuit', b: 'Un épisode par semaine'),
+    (
+      a: 'Regarder une saison entière en une seule nuit',
+      b: 'Regarder un épisode par semaine',
+    ),
     (a: 'La batterie est toujours à 1 %', b: 'Internet extrêmement lent'),
     (
       a: 'Des vêtements toujours un peu mouillés',
@@ -59,9 +66,12 @@ class ContentFrPreferisci {
       b: 'Tu ne mangeras plus jamais ton plat préféré',
     ),
     (a: 'Plus besoin de dormir', b: 'Plus jamais besoin de manger'),
-    (a: 'Riche mais sans amis', b: 'Sans le sou, mais très aimé'),
+    (a: 'Être riche mais sans amis', b: 'Être sans le sou, mais très aimé'),
     (a: 'Plus jamais de loyer à payer', b: 'Un salaire doublé'),
-    (a: 'Le plus sympa de la salle', b: 'Le plus intelligent de la pièce'),
+    (
+      a: 'Être le plus sympa de la salle',
+      b: 'Être le plus intelligent de la pièce',
+    ),
     (
       a: 'Mémoire photographique',
       b: 'Oublier toutes les situations embarrassantes',
@@ -153,8 +163,8 @@ class ContentFrPreferisci {
     ),
     (a: 'Effacer un regret', b: 'Te garantir un succès futur'),
     (
-      a: 'Une queue qui remue quand tu es heureux',
-      b: 'Les oreilles qui tombent quand on est triste',
+      a: 'Avoir une queue qui remue quand tu es heureux',
+      b: 'Avoir les oreilles qui tombent quand tu es triste',
     ),
     (a: 'Renoncer au café pour toujours', b: 'Renoncer au chocolat'),
     (
@@ -166,25 +176,34 @@ class ContentFrPreferisci {
       a: 'Très riche, mais toujours triste',
       b: 'À court d\'argent, mais toujours heureux',
     ),
-    (a: 'Un million tout de suite', b: '3 000 euros par mois à vie'),
-    (a: 'Sauver votre chien', b: 'Sauver un inconnu'),
+    (
+      a: 'Recevoir un million tout de suite',
+      b: 'Recevoir 3 000 euros par mois à vie',
+    ),
+    (a: 'Sauver ton chien', b: 'Sauver un inconnu'),
     (a: 'Ne jamais pouvoir mentir', b: 'Croire à tous les mensonges'),
     (
       a: 'Avoir toujours raison, mais tout seul',
       b: 'Se tromper, mais entre amis',
     ),
-    (a: 'Un génie incompris', b: 'Un naïf heureux'),
+    (a: 'Être un génie incompris', b: 'Être un naïf heureux'),
     (
       a: 'La même tenue tous les jours',
       b: 'Ne jamais porter deux fois la même tenue',
     ),
     (a: 'Chanter tout ce que tu dis', b: 'Marcher uniquement à reculons'),
-    (a: 'Wi-Fi gratuit partout, à vie', b: 'Des vols gratuits à vie'),
+    (
+      a: 'Avoir le Wi-Fi gratuit partout, à vie',
+      b: 'Avoir des vols gratuits à vie',
+    ),
     (
       a: 'Ne manger que des plats très chauds',
       b: 'Uniquement des aliments surgelés',
     ),
-    (a: 'Fini les apéros', b: 'Fini les livraisons de repas à domicile'),
+    (
+      a: 'Ne plus jamais prendre l\'apéro',
+      b: 'Ne plus jamais te faire livrer de repas à domicile',
+    ),
     (a: 'Une longue vie pleine de regrets', b: 'Une vie courte sans regrets'),
     (
       a: 'Aimer sans être aimé en retour',
@@ -236,7 +255,10 @@ class ContentFrPreferisci {
       a: 'Savoir ce qu\'on dit de toi dans ton dos',
       b: 'Vivre sereinement sans s\'en rendre compte',
     ),
-    (a: 'Chaque repas préparé par un chef', b: 'Chauffeur personnel à vie'),
+    (
+      a: 'Avoir chaque repas préparé par un chef',
+      b: 'Avoir un chauffeur personnel à vie',
+    ),
     (
       a: 'Commenter à voix haute tout ce que tu fais',
       b: 'Écouter la voix qui raconte ta vie',
@@ -274,7 +296,7 @@ class ContentFrPreferisci {
       a: 'Le seul et unique single du groupe, pour toujours',
       b: 'Le premier du groupe à se marier',
     ),
-    (a: 'Une renaissance dans les années 80', b: 'Naître en 2050'),
+    (a: 'Renaître dans les années 80', b: 'Naître en 2050'),
     (
       a: 'Des restaurants gratuits, mais toujours tout seul',
       b: 'Toujours payer, mais entre amis',
@@ -288,10 +310,10 @@ class ContentFrPreferisci {
       b: 'Plus jamais d\'eau, que des boissons gazeuses',
     ),
     (
-      a: 'Un seul genre musical pour toute une vie',
-      b: 'Une seule application sur le téléphone',
+      a: 'N\'écouter qu\'un seul genre musical toute ta vie',
+      b: 'N\'avoir qu\'une seule application sur ton téléphone',
     ),
-    (a: 'En smoking à la plage', b: 'En costume à un mariage'),
+    (a: 'Porter un smoking à la plage', b: 'Porter un costume à un mariage'),
     (
       a: 'Cuisiner comme un chef étoilé',
       b: 'Une maison qui se nettoie toute seule',
@@ -305,17 +327,20 @@ class ContentFrPreferisci {
       b: 'Un dîner sucré pour toujours',
     ),
     (a: 'Vivre sans miroirs', b: 'Vivre sans montres'),
-    (a: 'Parler aux plantes', b: 'Comprendre les nouveau-nés'),
+    (a: 'Parler aux plantes', b: 'Comprendre ce que disent les nouveau-nés'),
     (
       a: 'Toujours gagner aux cartes',
       b: 'Trouver toujours une place de parking',
     ),
-    (a: 'Un été à 40 degrés sans mer', b: 'Un hiver glacial sans neige'),
+    (
+      a: 'Passer un été à 40 degrés sans accès à la mer',
+      b: 'Passer un hiver glacial sans neige',
+    ),
     (
       a: 'Uniquement des films très mal doublés',
       b: 'Uniquement des films dont les sous-titres sont décalés',
     ),
-    (a: 'Déménagement chaque année', b: 'La même maison pour toujours'),
+    (a: 'Déménager chaque année', b: 'Vivre dans la même maison pour toujours'),
     (
       a: 'Une sonnerie gênante pour toujours',
       b: 'Un fond d\'écran gênant pour toujours',
@@ -330,25 +355,34 @@ class ContentFrPreferisci {
       b: 'Ce n\'est que lundi, mais toujours ensoleillé',
     ),
     (
-      a: 'Un seul plat, mais cuisiné à la perfection',
-      b: 'Tout cuisiner de manière médiocre',
+      a: 'Manger un seul plat, mais cuisiné à la perfection',
+      b: 'Tout cuisiner de façon médiocre',
     ),
-    (a: 'Voyage sans retour vers Mars', b: 'Ne plus jamais quitter l\'Italie'),
+    (
+      a: 'Faire un voyage sans retour vers Mars',
+      b: 'Ne plus jamais quitter l\'Italie',
+    ),
     (
       a: 'Dormir chaque nuit sous la tente',
       b: 'Dormir tous les soirs sur le canapé',
     ),
-    (a: 'Un majordome robot', b: 'Un robot cuisinier'),
+    (a: 'Avoir un majordome robot', b: 'Avoir un robot cuisinier'),
     (
       a: 'Être au courant de tous les potins d\'Hollywood',
       b: 'Tout savoir sur les fins des séries télévisées',
     ),
-    (a: 'Que des plats épicés pendant un an', b: 'Plus jamais de sel'),
     (
-      a: 'Très bien danser sur une seule chanson',
+      a: 'Ne manger que des plats épicés pendant un an',
+      b: 'Ne plus jamais manger de sel',
+    ),
+    (
+      a: 'Savoir très bien danser sur une seule chanson',
       b: 'Danser comme ça sur n\'importe quelle chanson',
     ),
-    (a: 'Lire dans les pensées des chiens', b: 'Parler aux chats'),
+    (
+      a: 'Pouvoir lire dans les pensées des chiens',
+      b: 'Pouvoir parler aux chats',
+    ),
     (
       a: 'Toujours choisir la file d\'attente la plus rapide',
       b: 'Toujours choisir le bon ascenseur',
@@ -392,13 +426,13 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Afficher la galerie au groupe',
-      b: 'Faire lire tes discussions à voix haute',
+      a: 'Montrer ta galerie au groupe',
+      b: 'Faire lire tes discussions à voix haute au groupe',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Une année sans sexe',
-      b: 'Une année sans sortir le soir',
+      a: 'Passer une année sans sexe',
+      b: 'Passer une année sans sortir le soir',
       tone: ContentTone.mix,
     ),
     (
@@ -408,8 +442,8 @@ class ContentFrPreferisci {
     ),
     (a: 'L\'amour sans sexe', b: 'Le sexe sans amour', tone: ContentTone.mix),
     (
-      a: 'Un partenaire séduisant, mais nul au lit',
-      b: 'Un partenaire tout à fait normal, mais phénoménal au lit',
+      a: 'Avoir un partenaire séduisant, mais nul au lit',
+      b: 'Avoir un partenaire tout à fait normal, mais phénoménal au lit',
       tone: ContentTone.mix,
     ),
     (
@@ -419,12 +453,12 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Surprendre tes parents en pleine action',
-      b: 'Te faire prendre par tes parents',
+      b: 'Te faire surprendre par tes parents',
       tone: ContentTone.mix,
     ),
     (
       a: 'Dire à tout le monde qui tu aimes en ce moment',
-      b: 'Ne parle plus jamais à celui ou celle qui te plaît',
+      b: 'Ne plus jamais parler à celui ou celle qui te plaît',
       tone: ContentTone.mix,
     ),
     (
@@ -464,7 +498,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Un sexting par erreur avec son patron',
-      b: 'Appeler son partenaire par le prénom de son ex',
+      b: 'Appeler ton partenaire par le prénom de ton ex',
       tone: ContentTone.mix,
     ),
     (
@@ -478,12 +512,12 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Raconte ton fantasme le plus bizarre',
-      b: 'Écoute celle de la personne à ta droite',
+      a: 'Raconter ton fantasme le plus bizarre',
+      b: 'Écouter le fantasme de la personne à ta droite',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Amis de lit avec ton meilleur ami',
+      a: 'Être sex friends avec ton meilleur ami',
       b: 'Plus de sexe pendant un an',
       tone: ContentTone.mix,
     ),
@@ -494,7 +528,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Te déshabiller du regard au bar',
-      b: 'Ne plus jamais se faire remarquer',
+      b: 'Ne plus jamais te faire remarquer',
       tone: ContentTone.mix,
     ),
     (
@@ -513,12 +547,12 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Surprendre son colocataire en pleine action',
-      b: 'Se faire surprendre par son colocataire',
+      a: 'Surprendre ton colocataire en pleine action',
+      b: 'Te faire surprendre par ton colocataire',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Dis-moi combien de fois tu y penses par jour',
+      a: 'Dire combien de fois tu y penses par jour',
       b: 'Dis-nous quand tu l\'as fait pour la dernière fois',
       tone: ContentTone.mix,
     ),
@@ -558,8 +592,8 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Se remettre avec son ex de temps en temps',
-      b: 'Fermer définitivement, mais avec regret',
+      a: 'Te remettre avec ton ex de temps en temps',
+      b: 'Tourner définitivement la page, mais avec regret',
       tone: ContentTone.mix,
     ),
     (
@@ -569,12 +603,12 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Dormir nu avec un ami',
-      b: 'Prendre une douche en maillot de bain avec son ex',
+      b: 'Prendre une douche en maillot de bain avec ton ex',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Recevoir une photo de nu non sollicitée de la part de son patron',
-      b: 'En envoyer un au patron par erreur',
+      a: 'Recevoir une photo de nu non sollicitée de la part de ton patron',
+      b: 'En envoyer une à ton patron par erreur',
       tone: ContentTone.mix,
     ),
     (
@@ -603,23 +637,23 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Se faire tatouer le nom de son ex',
+      a: 'Te faire tatouer le nom de ton ex',
       b: 'Crier son nom au mauvais moment',
       tone: ContentTone.mix,
     ),
     (
       a: 'Un « match » avec ton ex sur une application',
-      b: 'Trouve ton patron sur une appli',
+      b: 'Trouver ton patron sur une appli',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Ton partenaire connaît tous tes fantasmes',
-      b: 'Tu connais tous ses fantasmes',
+      a: 'Que ton partenaire connaisse tous tes fantasmes',
+      b: 'Connaître tous ses fantasmes',
       tone: ContentTone.mix,
     ),
     (
       a: 'Un strip-tease improvisé, tout de suite',
-      b: 'Récit piquant de ton été',
+      b: 'Raconter un récit piquant de ton été',
       tone: ContentTone.mix,
     ),
     (
@@ -648,12 +682,12 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Faire lire les messages à son ex',
-      b: 'Montrer les photos avec son ex',
+      a: 'Faire lire tes messages à ton ex',
+      b: 'Montrer tes photos avec ton ex',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Le coup de foudre ce soir',
+      a: 'Avoir un coup de foudre ce soir',
       b: 'Une aventure d\'un soir ce soir',
       tone: ContentTone.mix,
     ),
@@ -719,7 +753,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Te faire faire la cour par deux personnes présentes',
-      b: 'Faire le flirt avec deux personnes présentes en même temps',
+      b: 'Flirter avec deux personnes présentes en même temps',
       tone: ContentTone.mix,
     ),
     (
@@ -729,7 +763,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Des baisers avec une petite morsure',
-      b: 'Des baisers moulés pour toujours',
+      b: 'Des baisers langoureux pour toujours',
       tone: ContentTone.mix,
     ),
     (
@@ -748,13 +782,13 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Tenter ma chance avec le serveur ce soir',
-      b: 'Lui laisser son numéro sur le ticket de caisse',
+      a: 'Tenter ta chance avec le serveur ce soir',
+      b: 'Laisser ton numéro sur le ticket de caisse',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Une première fois gênante mais tendre',
-      b: 'Parfaite, mais avec la mauvaise personne',
+      a: 'Avoir une première fois gênante mais tendre',
+      b: 'Avoir une première fois parfaite, mais avec la mauvaise personne',
       tone: ContentTone.mix,
     ),
     (
@@ -866,13 +900,13 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un inconnu te regarde jouir',
-      b: 'Tu regardes un inconnu jouir',
+      a: 'Qu\'un inconnu te regarde jouir',
+      b: 'Regarder un inconnu jouir',
       tone: ContentTone.hot,
     ),
     (
       a: 'Te faire attacher et bander les yeux',
-      b: 'Attacher et bander son partenaire',
+      b: 'Attacher et bander les yeux de ton partenaire',
       tone: ContentTone.hot,
     ),
     (
@@ -886,8 +920,8 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Tu portes un collier et une laisse',
-      b: 'Les donner à son partenaire',
+      a: 'Porter un collier et une laisse',
+      b: 'Les donner à ton partenaire',
       tone: ContentTone.hot,
     ),
     (
@@ -896,13 +930,13 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Attachée à son lit toute la nuit',
-      b: 'Attacher soi-même son partenaire au lit',
+      a: 'Être attachée à son lit toute la nuit',
+      b: 'Attacher toi-même ton partenaire au lit',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Les yeux bandés et à la merci de son partenaire',
-      b: 'Bander les yeux de son partenaire et donner des ordres',
+      a: 'Avoir les yeux bandés et être à la merci de ton partenaire',
+      b: 'Bander les yeux de ton partenaire et lui donner des ordres',
       tone: ContentTone.hot,
     ),
     (
@@ -912,32 +946,32 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Privation d\'orgasme pendant plusieurs jours',
-      b: 'Orgasmes répétés à volonté',
+      b: 'Avoir des orgasmes répétés à volonté',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un plug porté toute la journée',
-      b: 'Un vibromasseur en public',
+      a: 'Porter un plug toute la journée',
+      b: 'Utiliser un vibromasseur en public',
       tone: ContentTone.hot,
     ),
     (
       a: 'Essayer tous les sex toys de la boutique',
-      b: 'Juste des mains, pour toujours',
+      b: 'N\'utiliser que tes mains, pour toujours',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un gode énorme',
-      b: 'Un petit vibromasseur qui fonctionne en permanence',
+      a: 'Utiliser un gode énorme',
+      b: 'Utiliser un petit vibromasseur qui fonctionne en permanence',
       tone: ContentTone.hot,
     ),
     (
-      a: 'De vraies menottes aux poignets',
-      b: 'Des cordes de soie sur le corps',
+      a: 'Porter de vraies menottes aux poignets',
+      b: 'Avoir des cordes de soie sur le corps',
       tone: ContentTone.hot,
     ),
     (
       a: 'Relations sexuelles dans les toilettes d\'un établissement',
-      b: 'Sexe dans une ruelle sombre',
+      b: 'Avoir des relations sexuelles dans une ruelle sombre',
       tone: ContentTone.hot,
     ),
     (
@@ -946,33 +980,33 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Relations sexuelles dans une voiture sur un parking',
-      b: 'Sexe sur un toit, la nuit',
+      a: 'Avoir des relations sexuelles dans une voiture sur un parking',
+      b: 'Avoir des relations sexuelles sur un toit, la nuit',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Prendre le risque de se faire prendre au bureau',
+      a: 'Prendre le risque de te faire prendre au bureau',
       b: 'Le faire dans une cabine d\'essayage',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Relations sexuelles dans un train en marche',
-      b: 'Du sexe sous une table bondée',
+      a: 'Avoir des relations sexuelles dans un train en marche',
+      b: 'Avoir des relations sexuelles sous une table bondée',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Une vidéo osée qui fait le tour du web',
-      b: 'Tes discussions coquettes qui circulent',
+      a: 'Une vidéo osée de toi qui fait le tour du web',
+      b: 'Voir tes discussions coquettes circuler',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Tes photos de nu sur son téléphone',
-      b: 'Une de tes vidéos intimes enregistrées',
+      a: 'Avoir tes photos de nu sur son téléphone',
+      b: 'Avoir une de tes vidéos intimes enregistrée',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Enregistrez pendant que vous le faites',
-      b: 'Te prendre en photo nue pour lui',
+      a: 'Enregistrer pendant que tu le fais',
+      b: 'Te faire prendre en photo nue pour lui',
       tone: ContentTone.hot,
     ),
     (
@@ -1717,17 +1751,17 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Un orgasme en moins d\'une minute',
-      b: 'Tenir le coup pendant vingt minutes',
+      b: 'Tenir vingt minutes avant l\'orgasme',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Compter ses orgasmes à voix haute',
+      a: 'Compter tes orgasmes à voix haute',
       b: 'Rester dans un silence absolu',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un plan à trois avec celui qui te plaît',
-      b: 'Un plan à trois avec celle qui lui plaît',
+      a: 'Faire un plan à trois avec celui qui te plaît',
+      b: 'Faire un plan à trois avec celle qui te plaît',
       tone: ContentTone.hot,
     ),
     (
@@ -1737,37 +1771,37 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Recréer une scène porno célèbre',
-      b: 'Réaliser votre propre vidéo intime amateur',
+      b: 'Réaliser ta propre vidéo intime amateur',
       tone: ContentTone.hot,
     ),
     (
       a: 'Faire l\'amour sans enlever ses talons',
-      b: 'Sexe complètement nus',
+      b: 'Avoir des relations sexuelles complètement nus',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Te faire garder un petit œuf toute la journée',
+      a: 'Porter un petit œuf toute la journée',
       b: 'Un plug tout l\'après-midi',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un massage érotique complet',
-      b: 'Un bain érotique à deux',
+      a: 'Recevoir un massage érotique complet',
+      b: 'Prendre un bain érotique à deux',
       tone: ContentTone.hot,
     ),
     (
       a: 'Des rapports sexuels avec de l\'huile parfumée partout',
-      b: 'Des sexes recouverts de mousse',
+      b: 'Avoir le corps recouvert de mousse pendant les rapports',
       tone: ContentTone.hot,
     ),
     (
       a: 'Le laisser se faire séduire par une autre devant toi',
-      b: 'Le séduire avec un autre devant lui',
+      b: 'Le séduire avec une autre personne devant lui',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un strip-poker qui se termine au lit',
-      b: 'Un « obligation ou vérité » vraiment sexy',
+      a: 'Jouer au strip-poker jusqu\'à finir au lit',
+      b: 'Un « action ou vérité » vraiment sexy',
       tone: ContentTone.hot,
     ),
     (
@@ -1781,8 +1815,8 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Du sexe avec deux mains sur toi',
-      b: 'Du sexe avec deux bouches sur toi',
+      a: 'Avoir des relations sexuelles avec deux mains sur toi',
+      b: 'Avoir des relations sexuelles avec deux bouches sur toi',
       tone: ContentTone.hot,
     ),
     (
@@ -1796,13 +1830,13 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sexe avec les cheveux attachés',
-      b: 'Sexe avec les ongles dans le dos',
+      a: 'Avoir des relations sexuelles avec les cheveux attachés',
+      b: 'Avoir des relations sexuelles avec les ongles dans le dos',
       tone: ContentTone.hot,
     ),
     (
       a: 'Te faire prendre par derrière devant le miroir',
-      b: 'Prends-le en le chevauchant devant le miroir',
+      b: 'Le chevaucher devant le miroir',
       tone: ContentTone.hot,
     ),
     (
@@ -1816,13 +1850,13 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un vibromasseur utilisé à tour de rôle',
-      b: 'Deux jouets en même temps',
+      a: 'Utiliser un vibromasseur à tour de rôle',
+      b: 'Utiliser deux jouets en même temps',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sexe sur une chaise attachée',
-      b: 'Sexe debout près de la fenêtre',
+      a: 'Avoir des relations sexuelles sur une chaise attachée',
+      b: 'Avoir des relations sexuelles debout près de la fenêtre',
       tone: ContentTone.hot,
     ),
     (
@@ -1841,7 +1875,7 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Se faire chatouiller les yeux bandés',
+      a: 'Te faire chatouiller les yeux bandés',
       b: 'Le chatouiller alors qu\'il est immobilisé',
       tone: ContentTone.hot,
     ),

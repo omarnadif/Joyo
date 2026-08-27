@@ -1,5 +1,3 @@
-/// Pool "Bluff Story" in italiano: affermazioni in prima persona,
-/// plausibili, usate come bugie/verità nel gioco del bluff.
 class ContentItBluff {
   const ContentItBluff._();
 

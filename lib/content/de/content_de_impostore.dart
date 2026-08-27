@@ -1,5 +1,3 @@
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentDeImpostore {
   const ContentDeImpostore._();
 

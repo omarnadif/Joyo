@@ -36,14 +36,7 @@ import 'package:joyo/content/de/content_de_non_ho_mai.dart';
 import 'package:joyo/content/de/content_de_obbligo_o_verita.dart';
 import 'package:joyo/content/de/content_de_preferisci.dart';
 
-/// Punto unico da cui i giochi prendono i contenuti nella lingua del gruppo.
-///
-/// Ogni lingua vive, come l'italiano, in file divisi per gioco dentro
-/// `content/<lingua>/` (`content_en_non_ho_mai.dart`, `content_fr_preferisci.dart`,
-/// ecc.), con una classe per gioco. I pool sono tradotti 1:1 dai pool italiani,
-/// nello stesso ordine e con lo stesso tono a ogni indice: ampliarli significa
-/// aggiungere righe al file del gioco corrispondente, senza toccare il resto
-/// dell'app.
+/// Contenuti dei giochi nella lingua del gruppo.
 class GameContent {
   const GameContent._();
 
@@ -66,9 +59,7 @@ class GameContent {
     AppLocale.de => ContentDeChiLoPotrebbeFare.chiLoPotrebbeFare,
   };
 
-  // Se a una lingua manca il mazzo di un tono si ripiega su quello italiano:
-  // una domanda nella lingua sbagliata è meglio di un pool vuoto, che
-  // manderebbe in errore la pesca dell'indice.
+  // Se il tono manca nella lingua, ripiega sull'italiano invece di un pool vuoto.
   static List<String> obblighi(AppLocale locale, String tone) =>
       switch (locale) {
         AppLocale.it => ContentItObbligoOVerita.obblighi[tone],
@@ -134,8 +125,6 @@ class GameContent {
     ),
   };
 
-  /// Coppie di "Preferisci" nella lingua del gruppo, col tono per il filtro
-  /// della modalità: il mazzo base è tutto normal, in Mix/Hot entrano le audaci.
   static List<({String a, String b, String tone})> preferisciEntries(
     AppLocale locale,
   ) {
@@ -146,36 +135,14 @@ class GameContent {
     ];
   }
 
-  // ---------------------------------------------------------------------------
-  // Localizzazione del round nella lingua di CHI guarda, non di chi l'ha creato.
-  //
-  // L'host, creando il round, ci mette dentro l'indice del pool (`i`, e `i2`
-  // per la verità di Obbligo o verità). Dove i pool sono tradotti 1:1 in pari
-  // ordine, la stessa frase sta alla stessa posizione in tutte le lingue: ogni
-  // telefono pesca la propria traduzione dallo stesso indice e un gruppo con
-  // lingue diverse gioca sulla stessa frase, ognuno leggendola nella sua.
-  //
-  // ATTENZIONE: oggi solo il blocco `normal` (modalità Normale) è allineato 1:1
-  // fra tutte le lingue. Le sezioni mix/hot sono ancora banche di
-  // domande scritte per lingua, con contenuti diversi allo stesso indice: lì
-  // NON si può localizzare per indice, altrimenti il gruppo voterebbe frasi
-  // diverse. Finché non sono riallineate, localizziamo solo le voci `normal` e
-  // per il resto restiamo sul testo trasmesso dall'host (che tutti vedono
-  // uguale). Impostore e Bluff Story hanno pool allineati e si localizzano
-  // sempre. Il test `content_parity_test` presidia l'allineamento del normal.
-  //
-  // Fallback sul testo dell'host anche quando l'indice manca, è fuori pool o il
-  // contenuto è generato dall'AI (`i == -1`).
-  // ---------------------------------------------------------------------------
-
+  // Indice del pool salvato dall'host; null se assente o generato dall'AI (< 0).
   static int? _poolIndex(Map<String, dynamic> content, [String key = 'i']) {
     final raw = (content[key] as num?)?.toInt();
     return (raw == null || raw < 0) ? null : raw;
   }
 
-  // Gli indici `normal` coincidono in tutte le lingue (lo garantisce il test di
-  // parità): se la voce locale a quell'indice è normal, è la traduzione 1:1
-  // dell'italiano e si può mostrare; altrimenti siamo nella zona non allineata.
+  // Solo il pool `normal` è allineato 1:1 tra le lingue: mix/hot NON si
+  // localizzano per indice, o il gruppo voterebbe frasi diverse.
   static bool _normalAligned(String tone) => tone == ContentTone.normal;
 
   static String nonHoMaiText(AppLocale locale, Map<String, dynamic> content) {
@@ -209,8 +176,7 @@ class GameContent {
         : content['obbligo'] as String? ?? '—';
   }
 
-  /// La verità usa `i2`, che è già sfalsato di [veritaOffset] rispetto
-  /// all'indice reale del pool (serve all'host per non ripescare la stessa).
+  // La verità usa `i2`, sfalsato di [veritaOffset] rispetto all'indice del pool.
   static String veritaText(
     AppLocale locale,
     String tone,

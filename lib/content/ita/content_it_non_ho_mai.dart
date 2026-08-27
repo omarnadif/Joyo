@@ -1,12 +1,9 @@
 import '../content_tone.dart';
 
-/// Pool "Non ho mai" in italiano: frasi che completano "Non ho mai...",
-/// raggruppate per tono (normal/mix/hot).
 class ContentItNonHoMai {
   const ContentItNonHoMai._();
 
   static const List<({String text, String tone})> nonHoMai = [
-    // ---------------------------------------------------------- normal
     (
       text: 'saltato il lavoro o la scuola fingendomi malato',
       tone: ContentTone.normal,
@@ -385,7 +382,6 @@ class ContentItNonHoMai {
       text: 'esultato per un parcheggio riuscito al primo colpo',
       tone: ContentTone.normal,
     ),
-    // ------------------------------------------------------ mix
     (text: 'baciato qualcuno la prima sera', tone: ContentTone.mix),
     (
       text: 'avuto una cotta per qualcuno di questo gruppo',
@@ -813,7 +809,6 @@ class ContentItNonHoMai {
           'tenuto uno spazzolino di riserva per un ospite che si fermava a dormire',
       tone: ContentTone.mix,
     ),
-    // ------------------------------------------------------- hot
     (text: 'fatto sesso a tre', tone: ContentTone.hot),
     (
       text: 'fatto sesso di gruppo con più di tre persone',

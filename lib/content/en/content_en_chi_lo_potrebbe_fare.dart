@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentEnChiLoPotrebbeFare {
   const ContentEnChiLoPotrebbeFare._();
 
@@ -57,7 +55,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Who would set out tomorrow with nothing but a backpack?',
+      text: 'Who would set off tomorrow with nothing but a backpack?',
       tone: ContentTone.normal,
     ),
     (
@@ -74,7 +72,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Who would forget to water their plants so much that they die?',
+      text: 'Who would forget to water their plants for so long that they die?',
       tone: ContentTone.normal,
     ),
     (
@@ -127,7 +125,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Who wouldn\'t go to the doctor even with a fever of 39?',
+      text: 'Who wouldn\'t go to the doctor even with a 39-degree fever?',
       tone: ContentTone.normal,
     ),
     (
@@ -322,7 +320,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Who would be on time only on the day when everyone else is late?',
+      text: 'Who would be on time only on the day everyone else is late?',
       tone: ContentTone.normal,
     ),
     (
@@ -350,7 +348,7 @@ class ContentEnChiLoPotrebbeFare {
     ),
     (
       text:
-          'Who would carry an umbrella for a month and then forget it on the day it rains?',
+          'Who would carry an umbrella around for a month and then forget it on the day it rains?',
       tone: ContentTone.normal,
     ),
     (
@@ -504,8 +502,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text:
-          'Who swears every Sunday night, “I’m going on a diet starting Monday”?',
+      text: 'Who swears every Sunday night, “I’m starting a diet on Monday”?',
       tone: ContentTone.normal,
     ),
     (
@@ -570,8 +567,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text:
-          'Who would ask for directions and then go in the opposite direction?',
+      text: 'Who would ask for directions and then go the opposite way?',
       tone: ContentTone.normal,
     ),
     (text: 'Who would send a text to an ex at 3 a.m.?', tone: ContentTone.mix),
@@ -760,12 +756,12 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (
-      text: 'Who has a longer list of conquests than they\'d care to admit?',
+      text: 'Who has a longer list of conquests than they\'d like to admit?',
       tone: ContentTone.mix,
     ),
     (
       text:
-          'Who would have dressed like that tonight just to get noticed by a specific person?',
+          'Who would dress like that tonight just to get noticed by a specific person?',
       tone: ContentTone.mix,
     ),
     (
@@ -940,7 +936,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (
-      text: 'Does anyone here have a secret crush on someone?',
+      text: 'Who has a secret crush on someone?',
       tone: ContentTone.mix,
     ),
     (
@@ -1183,8 +1179,8 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who would send a bold message and then delete it all?',
       tone: ContentTone.mix,
     ),
-    (text: 'Who would come the fastest?', tone: ContentTone.hot),
-    (text: 'Who takes the longest to come?', tone: ContentTone.hot),
+    (text: 'Who would climax the fastest?', tone: ContentTone.hot),
+    (text: 'Who takes the longest to climax?', tone: ContentTone.hot),
     (
       text: 'Who faked an orgasm just to get it over with?',
       tone: ContentTone.hot,
@@ -1194,19 +1190,16 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (text: 'Who screams the loudest when they come?', tone: ContentTone.hot),
-    (text: 'Who can come the most times in a row?', tone: ContentTone.hot),
+    (text: 'Who can climax the most times in a row?', tone: ContentTone.hot),
     (
-      text: 'Who\'s ever had an orgasm in a ridiculous place?',
+      text: 'Who has ever had an orgasm in a ridiculous place?',
       tone: ContentTone.hot,
     ),
     (
       text: 'Who can climax just from clitoral stimulation?',
       tone: ContentTone.hot,
     ),
-    (
-      text: 'Who has faked an orgasm in their sex life tonight?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'Who has faked an orgasm during sex?', tone: ContentTone.hot),
     (
       text: 'Who takes less than a minute to reach orgasm?',
       tone: ContentTone.hot,
@@ -1240,7 +1233,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (text: 'Who has had oral sex in a public restroom?', tone: ContentTone.hot),
-    (text: 'Who\'s up for a 69 right now tonight?', tone: ContentTone.hot),
+    (text: 'Who would be up for a 69 tonight?', tone: ContentTone.hot),
     (
       text: 'Who would use a sex toy in front of everyone?',
       tone: ContentTone.hot,
@@ -1249,7 +1242,7 @@ class ContentEnChiLoPotrebbeFare {
     (text: 'Who has used a vibrator in a public place?', tone: ContentTone.hot),
     (text: 'Who has tried an anal plug?', tone: ContentTone.hot),
     (
-      text: 'Who would bring a remote-controlled egg to a dinner out?',
+      text: 'Who would bring a remote-controlled vibrator to dinner?',
       tone: ContentTone.hot,
     ),
     (
@@ -1295,7 +1288,7 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who would use hot wax on their partner\'s body?',
       tone: ContentTone.hot,
     ),
-    (text: 'Who has tried light choking in bed?', tone: ContentTone.hot),
+    (text: 'Who has tried light choking during sex?', tone: ContentTone.hot),
     (text: 'Who would want to be whipped with a belt?', tone: ContentTone.hot),
     (
       text: 'Who would give specific instructions during sex?',
@@ -1307,13 +1300,13 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Who has tried the collar during a sexy game?',
+      text: 'Who has tried wearing a collar during a sexy game?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has already been in a threesome?', tone: ContentTone.hot),
     (text: 'Who\'s up for an orgy tonight?', tone: ContentTone.hot),
     (
-      text: 'Who would want to watch two people from this group do that?',
+      text: 'Who would want to watch two people from this group have sex?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has participated in a partner swap?', tone: ContentTone.hot),
@@ -1338,7 +1331,7 @@ class ContentEnChiLoPotrebbeFare {
     (text: 'Who filmed themselves having sex?', tone: ContentTone.hot),
     (text: 'Who\'s had sex on the beach?', tone: ContentTone.hot),
     (
-      text: 'Who would do that in the bathroom during a party?',
+      text: 'Who would have sex in the bathroom during a party?',
       tone: ContentTone.hot,
     ),
     (text: 'Who\'s had sex in an elevator?', tone: ContentTone.hot),
@@ -1348,7 +1341,7 @@ class ContentEnChiLoPotrebbeFare {
     ),
     (text: 'Who has had sex outdoors in a park?', tone: ContentTone.hot),
     (
-      text: 'Who would do that on the balcony, risking being seen?',
+      text: 'Who would have sex on the balcony, risking being seen?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has had sex on a plane?', tone: ContentTone.hot),
@@ -1358,11 +1351,11 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Who would be doing that right now in the next room?',
+      text: 'Who would have sex right now in the next room?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has had sex on a train?', tone: ContentTone.hot),
-    (text: 'Who has the weirdest fetish?', tone: ContentTone.hot),
+    (text: 'Who has the strangest fetish?', tone: ContentTone.hot),
     (text: 'Who has a foot fetish?', tone: ContentTone.hot),
     (
       text: 'Who gets turned on by smelling their partner\'s clothes?',
@@ -1392,7 +1385,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (text: 'Who has the most enviable behind?', tone: ContentTone.hot),
-    (text: 'Who\'s best endowed under their underwear?', tone: ContentTone.hot),
+    (text: 'Who\'s best endowed?', tone: ContentTone.hot),
     (text: 'Who has more stamina in bed?', tone: ContentTone.hot),
     (text: 'Who would be the best lover in this group?', tone: ContentTone.hot),
     (text: 'Who has the body everyone wants to touch?', tone: ContentTone.hot),
@@ -1402,7 +1395,7 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Who has the most dexterous hands between the sheets?',
+      text: 'Who has the most skillful hands between the sheets?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has the most skilled tongue?', tone: ContentTone.hot),
@@ -1431,16 +1424,18 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Who would like to try blindfolded sex with a surprise partner?',
+      text:
+          'Who would like to try having sex blindfolded with a surprise partner?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has a fantasy involving a uniform?', tone: ContentTone.hot),
     (
-      text: 'Who dreams of a one-night stand with no names involved?',
+      text: 'Who dreams of a one-night stand without exchanging names?',
       tone: ContentTone.hot,
     ),
     (
-      text: 'Who would make a fantasy come true tonight if they could?',
+      text:
+          'Who would make one of their fantasies come true tonight if they could?',
       tone: ContentTone.hot,
     ),
     (text: 'Who\'s sent a nude to the wrong person?', tone: ContentTone.hot),
@@ -1578,12 +1573,12 @@ class ContentEnChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Who has a fantasy about someone here\'s best friend?',
+      text: 'Who has a fantasy about someone\'s best friend?',
       tone: ContentTone.hot,
     ),
     (text: 'Who has had sex in a public pool?', tone: ContentTone.hot),
     (
-      text: 'Who let their partner film them just for them?',
+      text: 'Who let their partner film them just for their own private use?',
       tone: ContentTone.hot,
     ),
     (

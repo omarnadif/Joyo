@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentDeChiLoPotrebbeFare {
   const ContentDeChiLoPotrebbeFare._();
 
@@ -42,7 +40,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde schon sieben Tage hintereinander Pizza essen?',
+      text: 'Wer würde schon sieben Tage hintereinander nur Pizza essen?',
       tone: ContentTone.normal,
     ),
     (text: 'Wer würde im Kino einschlafen?', tone: ContentTone.normal),
@@ -71,7 +69,8 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde schon ohne es sich gut zu überlegen ins Ausland ziehen?',
+      text:
+          'Wer würde schon, ohne es sich gut zu überlegen, ins Ausland ziehen?',
       tone: ContentTone.normal,
     ),
     (
@@ -85,7 +84,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon vergessen, die Pflanzen zu gießen, bis sie eingehen?',
+          'Wer würde schon vergessen, die Pflanzen zu gießen, bis sie vertrocknen?',
       tone: ContentTone.normal,
     ),
     (
@@ -102,7 +101,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon seine Brieftasche vergessen, gerade wenn er an der Reihe ist, zu bezahlen?',
+          'Wer würde schon seine Brieftasche vergessen, wenn er gerade an der Reihe ist zu bezahlen?',
       tone: ContentTone.normal,
     ),
     (
@@ -122,8 +121,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text:
-          'Wer würde schon ein Fitnessgerät kaufen, um es dann nie zu benutzen?',
+      text: 'Wer würde schon ein Fitnessgerät kaufen und es dann nie benutzen?',
       tone: ContentTone.normal,
     ),
     (
@@ -132,7 +130,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde schon einen Marathon laufen, ohne zu trainieren?',
+      text: 'Wer würde schon einen Marathon laufen, ohne vorher zu trainieren?',
       tone: ContentTone.normal,
     ),
     (
@@ -145,7 +143,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde nicht einmal bei 39 Fieber zum Arzt gehen?',
+      text: 'Wer würde nicht einmal mit 39 Grad Fieber zum Arzt gehen?',
       tone: ContentTone.normal,
     ),
     (
@@ -232,7 +230,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon ein Möbelstück kaufen, das er dann nicht zusammenbauen könnte?',
+          'Wer würde schon ein Möbelstück kaufen, das er anschließend nicht zusammenbauen könnte?',
       tone: ContentTone.normal,
     ),
     (
@@ -241,12 +239,12 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon einen Techniker rufen, um eine Glühbirne zu wechseln?',
+          'Wer würde schon einen Techniker rufen, um eine Glühbirne auszuwechseln?',
       tone: ContentTone.normal,
     ),
     (
       text:
-          'Wer würde sich ein Tutorial ansehen und sich dabei wie ein Experte fühlen?',
+          'Wer würde sich ein Tutorial ansehen und sich danach wie ein Experte fühlen?',
       tone: ContentTone.normal,
     ),
     (
@@ -283,7 +281,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon ein Geschenk verschenken, das in letzter Minute gekauft wurde?',
+          'Wer würde schon ein Geschenk verschenken, das er in letzter Minute gekauft hat?',
       tone: ContentTone.normal,
     ),
     (
@@ -291,7 +289,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde die Weihnachtsdekoration schon bis März aufhängen?',
+      text: 'Wer würde die Weihnachtsdekoration schon bis März hängen lassen?',
       tone: ContentTone.normal,
     ),
     (
@@ -330,7 +328,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon im Bett liegend antworten: „Ich bin in fünf Minuten da“?',
+          'Wer würde schon aus dem Bett heraus antworten: „Ich bin in fünf Minuten da“?',
       tone: ContentTone.normal,
     ),
     (
@@ -399,7 +397,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon mit „Alles in Ordnung“ antworten, wenn eigentlich alles schief läuft?',
+          'Wer würde schon mit „Alles in Ordnung“ antworten, obwohl eigentlich alles schiefläuft?',
       tone: ContentTone.normal,
     ),
     (
@@ -409,12 +407,12 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon zehn Bücher kaufen, ohne auch nur eines davon zu Ende gelesen zu haben?',
+          'Wer würde schon zehn Bücher kaufen, ohne auch nur eines davon zu Ende zu lesen?',
       tone: ContentTone.normal,
     ),
     (
       text:
-          'Wer würde einen Monat lang einen Regenschirm mit sich herumtragen und ihn dann ausgerechnet an dem Tag vergessen, an dem es regnet?',
+          'Wer würde einen Monat lang einen Regenschirm mit sich herumtragen und ihn ausgerechnet an dem Tag vergessen, an dem es regnet?',
       tone: ContentTone.normal,
     ),
     (
@@ -495,7 +493,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde sich die Stories aller anderen ansehen, ohne selbst jemals eine zu veröffentlichen?',
+          'Wer würde sich die Stories aller anderen ansehen, ohne selbst jemals eine zu posten?',
       tone: ContentTone.normal,
     ),
     (
@@ -504,8 +502,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text:
-          'Wer würde in irgendeinem Restaurant immer dasselbe Gericht bestellen?',
+      text: 'Wer würde in jedem Restaurant immer dasselbe Gericht bestellen?',
       tone: ContentTone.normal,
     ),
     (
@@ -520,12 +517,12 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde mehr Zeit damit verbringen, einen Film auszuwählen, als ihn anzuschauen?',
+          'Wer würde mehr Zeit damit verbringen, einen Film auszuwählen, als ihn anzusehen?',
       tone: ContentTone.normal,
     ),
     (
       text:
-          'Wer würde noch die Ausrede „Ich habe die Nachricht nicht erhalten“ vorbringen?',
+          'Wer würde immer noch die Ausrede „Ich habe die Nachricht nicht erhalten“ vorbringen?',
       tone: ContentTone.normal,
     ),
     (
@@ -543,11 +540,11 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon ein „zehnminütiges“ Nickerchen von drei Stunden machen?',
+          'Wer würde schon aus einem „zehnminütigen“ Nickerchen ein dreistündiges machen?',
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde schon zweihundert Tabs im Browser geöffnet lassen?',
+      text: 'Wer würde schon zweihundert Tabs im Browser offen lassen?',
       tone: ContentTone.normal,
     ),
     (
@@ -820,7 +817,10 @@ class ContentDeChiLoPotrebbeFare {
           'Wer würde schon behaupten, zu Hause zu sein, obwohl er eigentlich unterwegs ist?',
       tone: ContentTone.mix,
     ),
-    (text: 'Wer würde schon ohne Vorwarnung versetzen?', tone: ContentTone.mix),
+    (
+      text: 'Wer würde schon jemanden ohne Vorwarnung versetzen?',
+      tone: ContentTone.mix,
+    ),
     (
       text:
           'Wer würde schon vorgeben, krank zu sein, um einer Verpflichtung fernzubleiben?',
@@ -847,7 +847,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon jemandem, den man erst seit fünf Minuten kennt, seine Nummer geben?',
+          'Wer würde schon jemandem, den er erst seit fünf Minuten kennt, seine Nummer geben?',
       tone: ContentTone.mix,
     ),
     (
@@ -876,7 +876,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde im Urlaub schon ohne zu zögern eine One-Night-Stand-Affäre eingehen?',
+          'Wer würde im Urlaub schon ohne zu zögern einen One-Night-Stand eingehen?',
       tone: ContentTone.mix,
     ),
     (
@@ -886,7 +886,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer hätte sich heute Abend so angezogen, um von einer bestimmten Person bemerkt zu werden?',
+          'Wer hätte sich heute Abend so angezogen, nur um von einer bestimmten Person bemerkt zu werden?',
       tone: ContentTone.mix,
     ),
     (
@@ -1058,7 +1058,8 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (
-      text: 'Wer würde schon etwas ablegen, um eine Wette zu gewinnen?',
+      text:
+          'Wer würde schon ein Kleidungsstück ablegen, um eine Wette zu gewinnen?',
       tone: ContentTone.mix,
     ),
     (
@@ -1122,7 +1123,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon einen Zweideutigkeitswitz verwenden, um das Eis zu brechen?',
+          'Wer würde schon einen zweideutigen Witz verwenden, um das Eis zu brechen?',
       tone: ContentTone.mix,
     ),
     (
@@ -1303,7 +1304,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde sich schon die Hand lesen lassen, nur um, dass ihm jemand die Hand hält?',
+          'Wer würde sich schon die Hand lesen lassen, nur damit ihm jemand die Hand hält?',
       tone: ContentTone.mix,
     ),
     (
@@ -1357,8 +1358,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text:
-          'Wer hat schon einmal an einem absurden Ort einen Orgasmus verpasst?',
+      text: 'Wer hat schon einmal an einem absurden Ort einen Orgasmus erlebt?',
       tone: ContentTone.hot,
     ),
     (
@@ -1366,8 +1366,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text:
-          'Wer hat in seinem Sexualleben gerade heute Abend einen Orgasmus vorgetäuscht?',
+      text: 'Wer hat schon einmal einen Orgasmus vorgetäuscht?',
       tone: ContentTone.hot,
     ),
     (
@@ -1384,15 +1383,15 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (text: 'Wer würde das ohne Bedenken schlucken?', tone: ContentTone.hot),
     (text: 'Wer kann das am besten mit dem Mund?', tone: ContentTone.hot),
-    (
-      text: 'Wer würde sich schon immer weigern, zu schlucken?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'Wer würde sich immer weigern zu schlucken?', tone: ContentTone.hot),
     (
       text: 'Wer liebt es mehr als alles andere, Oralsex zu bekommen?',
       tone: ContentTone.hot,
     ),
-    (text: 'Wer hat schon mal im Auto einen geblasen?', tone: ContentTone.hot),
+    (
+      text: 'Wer hat schon mal jemandem im Auto einen geblasen?',
+      tone: ContentTone.hot,
+    ),
     (
       text:
           'Wer hat seinen Partner in weniger als fünf Minuten zum Höhepunkt gebracht?',
@@ -1540,7 +1539,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Wer hat schon einmal einen Partner mit einer Freundin geteilt?',
+      text: 'Wer hat schon einmal seinen Partner mit einer Freundin geteilt?',
       tone: ContentTone.hot,
     ),
     (text: 'Wer hat sich beim Sex gefilmt?', tone: ContentTone.hot),
@@ -1551,7 +1550,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (text: 'Wer hatte schon einmal Sex im Aufzug?', tone: ContentTone.hot),
     (
-      text: 'Wer würde das schon in einer Umkleidekabine eines Geschäfts tun?',
+      text: 'Wer würde das schon in der Umkleidekabine eines Geschäfts tun?',
       tone: ContentTone.hot,
     ),
     (
@@ -1713,7 +1712,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Wer wird bis zum Ende des Abends jemanden aufreißen?',
+      text: 'Wer wird bis zum Ende des Abends jemanden abschleppen?',
       tone: ContentTone.hot,
     ),
     (text: 'Wer hat den peinlichsten Browser-Verlauf?', tone: ContentTone.hot),
@@ -1732,11 +1731,14 @@ class ContentDeChiLoPotrebbeFare {
           'Wer hat seinem Partner den Rücken so stark gekratzt, dass Spuren zurückgeblieben sind?',
       tone: ContentTone.hot,
     ),
-    (text: 'Wer hat beim Sex zu fest zugebeißt?', tone: ContentTone.hot),
+    (
+      text: 'Wer hat beim Sex schon einmal zu fest zugebissen?',
+      tone: ContentTone.hot,
+    ),
     (text: 'Wer hat immer sichtbare Knutschflecke?', tone: ContentTone.hot),
     (
       text:
-          'Wer hat schon mal zusammen geduscht und dann etwas anderes gemacht?',
+          'Wer hat schon mal zusammen geduscht und danach etwas anderes gemacht?',
       tone: ContentTone.hot,
     ),
     (
@@ -1751,7 +1753,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer hat schon einmal Sex am Morgen direkt nach dem Aufwachen ausprobiert?',
+          'Wer hat schon einmal direkt nach dem Aufwachen am Morgen Sex gehabt?',
       tone: ContentTone.hot,
     ),
     (text: 'Wer hatte Sex in der Küche auf dem Tisch?', tone: ContentTone.hot),
@@ -1760,7 +1762,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: 'Wer hat schon einmal einen Lapdance für einen Partner getanzt?',
+      text: 'Wer hat schon einmal für einen Partner einen Lapdance getanzt?',
       tone: ContentTone.hot,
     ),
     (

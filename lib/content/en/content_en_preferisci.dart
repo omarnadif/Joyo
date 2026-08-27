@@ -1,15 +1,13 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentEnPreferisci {
   const ContentEnPreferisci._();
 
   static const List<({String a, String b})> preferisciPairs = [
-    (a: 'Knowing How You\'ll Die', b: 'Knowing when'),
+    (a: 'Knowing How You\'ll Die', b: 'Knowing When You\'ll Die'),
     (a: 'An Uncomfortable Truth', b: 'A Convenient Lie'),
     (a: 'More money', b: 'More free time'),
-    (a: 'Being Famous', b: 'To be invisible to others'),
+    (a: 'Being Famous', b: 'Being Invisible to Others'),
     (a: 'Traveling Back in Time', b: 'Traveling into the Future'),
     (a: 'Mind Reading', b: 'Predicting the Future'),
     (a: 'No More Social Media', b: 'No More Movies'),
@@ -20,13 +18,16 @@ class ContentEnPreferisci {
     (a: 'Wedding with 200 guests', b: 'A Wedding for Two'),
     (a: 'A week without going out', b: 'Going out every night'),
     (a: 'Sleep 10 hours', b: 'Sleep 5 hours and feel great'),
-    (a: 'Reliving the Perfect Vacation', b: 'Try a new place'),
+    (a: 'Reliving the Perfect Vacation', b: 'Trying a New Place'),
     (a: 'Check your account every day', b: 'Never look at it'),
     (a: 'A useless but fun superpower', b: 'A Useful but Boring Superpower'),
-    (a: 'Rereading the Same Book Over and Over Again', b: 'Never finish one'),
+    (
+      a: 'Rereading the Same Book Over and Over Again',
+      b: 'Never Finishing One',
+    ),
     (a: 'Always Knowing the Truth', b: 'Living Happily in an Illusion'),
     (a: 'A sabbatical year', b: 'Retiring a year early'),
-    (a: 'Speaking All Languages', b: 'Play all the instruments'),
+    (a: 'Speaking All Languages', b: 'Playing All the Instruments'),
     (a: 'Never feel embarrassed', b: 'Never be afraid'),
     (a: 'Relive Your Best Day', b: 'Delete the worst one'),
     (
@@ -43,29 +44,29 @@ class ContentEnPreferisci {
       a: 'Clothes that are always a little damp',
       b: 'A pebble in my shoe forever',
     ),
-    (a: 'Always Say What You Think', b: 'No longer being able to speak'),
+    (a: 'Always saying what you think', b: 'No longer being able to speak'),
     (a: 'No heating in the winter', b: 'No air conditioning in the summer'),
     (a: 'Favorite dish at every meal', b: 'Never again your favorite dish'),
     (a: 'No more need to sleep', b: 'No more need to eat'),
     (a: 'Rich but without friends', b: 'Penniless but Beloved'),
     (a: 'No More Rent to Pay', b: 'Salary Doubled'),
     (a: 'The nicest person in the room', b: 'The smartest person in the room'),
-    (a: 'Photographic Memory', b: 'Forget all the embarrassing moments'),
+    (a: 'Photographic Memory', b: 'Forgetting All the Embarrassing Moments'),
     (a: 'No More Lines', b: 'No More Traffic'),
     (a: 'Shaved Eyebrows for a Year', b: 'Neon-green hair for a year'),
     (a: 'Losing one\'s sense of smell', b: 'Losing Your Sense of Taste'),
     (a: 'Cartoon voice', b: 'A laugh that makes everyone feel awkward'),
     (a: 'Timeline visible to parents', b: 'Chats Read by Your Boss'),
-    (a: 'Burp at the end of every sentence', b: 'To laugh like a goat'),
+    (a: 'Burping at the end of every sentence', b: 'Laughing like a goat'),
     (
       a: 'Using a stranger\'s toothbrush',
       b: 'Drinking from his glass that\'s already been used',
     ),
     (a: 'Going out with your ex', b: 'With your best friend\'s ex'),
     (a: 'Loud but odorless farts', b: 'Silent but deadly'),
-    (a: 'Forget Who You Are', b: 'To be forgotten by everyone'),
-    (a: 'To lose all your money', b: 'Losing All Your Memories'),
-    (a: 'A Rich but Boring Partner', b: 'A broke but incredibly funny partner'),
+    (a: 'Forgetting who you are', b: 'Being forgotten by everyone'),
+    (a: 'Losing all your money', b: 'Losing all your memories'),
+    (a: 'A Rich but Boring Partner', b: 'A Broke but Incredibly Funny Partner'),
     (
       a: 'An hour in an elevator with your ex',
       b: 'An hour in the elevator with the boss',
@@ -76,7 +77,7 @@ class ContentEnPreferisci {
     (a: 'Never Laugh Again', b: 'Never Cry Again'),
     (
       a: 'Going Back to High School for a Year',
-      b: 'Taking the high school graduation exam every year',
+      b: 'Taking the High School Graduation Exam Every Year',
     ),
     (a: 'Living in a Horror Movie', b: 'Living in a Musical'),
     (
@@ -88,8 +89,8 @@ class ContentEnPreferisci {
       a: 'Chased for the rest of his life by a killer snail',
       b: 'A clown who stares at you every night',
     ),
-    (a: 'Talking to Animals', b: 'Check the weather'),
-    (a: 'Dance as soon as the music starts', b: 'Crying When Someone Laughs'),
+    (a: 'Talking to Animals', b: 'Checking the Weather'),
+    (a: 'Dance as soon as the music starts', b: 'Cry When Someone Laughs'),
     (a: 'Every morning in a different town', b: 'Never Leave Your City Again'),
     (a: 'Living in a Video Game', b: 'Living in a Cartoon'),
     (a: 'A "Pause" Button for Life', b: 'A "rewind" button for life'),
@@ -101,9 +102,9 @@ class ContentEnPreferisci {
     (a: 'King of the World for a Day', b: 'A Normal Person Forever'),
     (
       a: 'Knowing everything but feeling nothing',
-      b: 'Try everything but understand nothing',
+      b: 'Trying Everything but Understanding Nothing',
     ),
-    (a: 'Erase a Regret', b: 'Ensuring Your Future Success'),
+    (a: 'Erase a Regret', b: 'Ensure Your Future Success'),
     (
       a: 'A tail that wags when you\'re happy',
       b: 'Ears that droop when you\'re sad',
@@ -116,15 +117,15 @@ class ContentEnPreferisci {
     (a: 'Finding the Love of Your Life', b: 'Finding Your Dream Job'),
     (a: 'Extremely wealthy but always sad', b: 'Broke but Still Happy'),
     (a: 'One million right away', b: '3,000 euros a month for life'),
-    (a: 'Save Your Dog', b: 'Saving a Stranger'),
-    (a: 'Never Being Able to Lie', b: 'Believing Every Lie'),
+    (a: 'Saving your dog', b: 'Saving a stranger'),
+    (a: 'Never being able to lie', b: 'Believing every lie'),
     (
       a: 'Always being right, but all by yourself',
-      b: 'Making Mistakes, but in Good Company',
+      b: 'Make Mistakes, but in Good Company',
     ),
     (a: 'A Misunderstood Genius', b: 'Happy Simpleton'),
-    (a: 'The Same Outfit Every Day', b: 'Never wear the same outfit twice'),
-    (a: 'Sing Everything You Say', b: 'Walking Only Backward'),
+    (a: 'The Same Outfit Every Day', b: 'Never Wearing the Same Outfit Twice'),
+    (a: 'Singing everything you say', b: 'Only walking backward'),
     (a: 'Free Wi-Fi Everywhere for Life', b: 'Free Flights for Life'),
     (a: 'Eating only piping hot food', b: 'Only frozen food'),
     (a: 'No More Aperitifs', b: 'No More Food Delivery'),
@@ -156,18 +157,18 @@ class ContentEnPreferisci {
       b: 'Dancing alone on the dance floor for an hour',
     ),
     (a: 'Losing all the photos on your phone', b: 'Delete All Chats'),
-    (a: 'To be 2 meters 20 tall', b: 'To be 1.20 meters tall'),
+    (a: 'To be 2.20 meters tall', b: 'To be 1.20 meters tall'),
     (a: 'Living Without Summer', b: 'Living Without Winter'),
     (a: 'Save Five Strangers', b: 'Save Your Best Friend'),
     (
       a: 'One million, but no more smartphones',
-      b: 'No money, but with a phone',
+      b: 'No Money, but Keeping Your Phone',
     ),
     (a: 'Dream Job Abroad', b: 'A boring job near my friends'),
     (a: 'To Be 25 Forever', b: 'Growing Old with Your Friends'),
     (
       a: 'A dream home in the middle of nowhere',
-      b: 'Studio Apartment in the Heart of Downtown',
+      b: 'A Studio Apartment in the Heart of Downtown',
     ),
     (
       a: 'Knowing what people say about you behind your back',
@@ -183,7 +184,7 @@ class ContentEnPreferisci {
       b: 'A fly on the plate at every meal',
     ),
     (a: 'Autocorrect Gone Wild Forever', b: 'No More Emojis'),
-    (a: 'Calls on speakerphone only', b: 'Screen Always Visible to Everyone'),
+    (a: 'Calls on speakerphone only', b: 'A Screen Always Visible to Everyone'),
     (
       a: 'Your dog talks, but he criticizes you',
       b: 'Your mirror gives you false compliments',
@@ -192,15 +193,15 @@ class ContentEnPreferisci {
     (a: 'Always Being Underestimated', b: 'Always Being Overrated'),
     (
       a: 'Rediscover Your Favorite Show from Scratch',
-      b: 'Get a sneak peek at every finale',
+      b: 'Getting a Sneak Peek at Every Finale',
     ),
-    (a: 'Speaking Only by Yelling', b: 'Speak only in a whisper'),
+    (a: 'Speaking Only by Yelling', b: 'Speaking Only in a Whisper'),
+    (a: 'Always laugh during serious moments', b: 'Cry at Every Comedy Movie'),
+    (a: 'Always eat with your hands', b: 'Eat Everything with a Teaspoon'),
     (
-      a: 'Always laugh during serious moments',
-      b: 'Crying at Every Comedy Movie',
+      a: 'Your Dreams Shared with Friends',
+      b: 'Your Friends Reading Your Diary',
     ),
-    (a: 'Always eat with your hands', b: 'Eating Everything with a Teaspoon'),
-    (a: 'Your Dreams Shared with Friends', b: 'Your friends read your diary'),
     (
       a: 'The only single person in the group forever',
       b: 'The first in the group to get married',
@@ -208,12 +209,12 @@ class ContentEnPreferisci {
     (a: 'A Rebirth in the 1980s', b: 'Being Born in 2050'),
     (
       a: 'Free meals, but always alone',
-      b: 'Always Pay, But Do It with Friends',
+      b: 'Always Paying, But Doing It with Friends',
     ),
-    (a: 'Went viral for an epic blunder', b: 'No more than 10 likes'),
-    (a: 'Drinking Only Water Forever', b: 'No more water—just soft drinks'),
+    (a: 'Going Viral for an Epic Blunder', b: 'No more than 10 likes'),
+    (a: 'Drinking Only Water Forever', b: 'No More Water—Just Soft Drinks'),
     (a: 'Just one musical genre for life', b: 'Just one app on your phone'),
-    (a: 'In a tuxedo on the beach', b: 'Wearing a swimsuit to a wedding'),
+    (a: 'In a tuxedo on the beach', b: 'Wearing a Swimsuit to a Wedding'),
     (
       a: 'Cooking Like a Michelin-Starred Chef',
       b: 'A House That Cleans Itself',
@@ -224,8 +225,8 @@ class ContentEnPreferisci {
     ),
     (a: 'Savory Breakfast Forever', b: 'A Sweet Dinner Forever'),
     (a: 'Living Without Mirrors', b: 'Living Without Watches'),
-    (a: 'Talking to Plants', b: 'Understanding Newborns'),
-    (a: 'Always Win at Cards', b: 'Always Finding Parking'),
+    (a: 'Talking to Plants', b: 'Understand Newborns'),
+    (a: 'Always Win at Cards', b: 'Always Find Parking'),
     (
       a: 'A 40-degree summer without the ocean',
       b: 'A Freezing Winter Without Snow',
@@ -234,15 +235,15 @@ class ContentEnPreferisci {
       a: 'Only movies that are terribly dubbed',
       b: 'Only movies with out-of-sync subtitles',
     ),
-    (a: 'Moving Every Year', b: 'The Same Home Forever'),
+    (a: 'Moving Every Year', b: 'Living in the Same Home Forever'),
     (
       a: 'An Embarrassing Ringtone Forever',
-      b: 'An Embarrassing Background Forever',
+      b: 'An Embarrassing Background Image Forever',
     ),
     (a: 'Being a Famous Meme', b: 'Having a Famous Look-Alike'),
     (
       a: 'Dancing the Macarena Every Time Someone Says Goodbye',
-      b: 'Greet everyone with a bow',
+      b: 'Greeting Everyone with a Bow',
     ),
     (
       a: 'An endless weekend, but it\'s still raining',
@@ -250,9 +251,9 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Just one dish, but cooked to perfection',
-      b: 'Cooking everything mediocrely',
+      b: 'Cooking Everything Mediocrely',
     ),
-    (a: 'A One-Way Trip to Mars', b: 'Never Leave Italy Again'),
+    (a: 'A One-Way Trip to Mars', b: 'Never Leaving Italy Again'),
     (
       a: 'Sleeping in a tent every night',
       b: 'Sleeping on the couch every night',
@@ -262,13 +263,19 @@ class ContentEnPreferisci {
     (a: 'Nothing but spicy food for a year', b: 'No More Salt'),
     (
       a: 'To dance exceptionally well to just one song',
-      b: 'Dancing to just about any song',
+      b: 'Being Able to Dance to Just About Any Song',
     ),
     (a: 'Reading Dogs\' Minds', b: 'Talking to Cats'),
-    (a: 'Always pick the fastest line', b: 'Always Get in the Right Elevator'),
-    (a: 'Relive the Same Perfect Day', b: 'A new but unpredictable day'),
-    (a: 'Being Invisible for One Hour a Day', b: 'Fly for ten minutes a day'),
-    (a: 'Cooking for Ten Every Night', b: 'Wash ten dishes every night'),
+    (
+      a: 'Always pick the fastest line',
+      b: 'Always Getting in the Right Elevator',
+    ),
+    (a: 'Relive the Same Perfect Day', b: 'A New but Unpredictable Day'),
+    (
+      a: 'Being Invisible for One Hour a Day',
+      b: 'Flying for Ten Minutes a Day',
+    ),
+    (a: 'Cooking for Ten Every Night', b: 'Washing Ten Dishes Every Night'),
     (
       a: 'A heavy backpack, but with everything I need',
       b: 'A lightweight backpack, but never quite the right one',
@@ -292,28 +299,28 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Spend the night with someone from the group',
-      b: 'Spending a night with one of your old teachers',
+      b: 'Spending a Night with One of Your Old Teachers',
       tone: ContentTone.mix,
     ),
     (
       a: 'Show the gallery to the group',
-      b: 'Have Your Chats Read Aloud',
+      b: 'Having Your Chats Read Aloud',
       tone: ContentTone.mix,
     ),
     (
       a: 'A Year Without Sex',
-      b: 'A year without going out at night',
+      b: 'A Year Without Going Out at Night',
       tone: ContentTone.mix,
     ),
     (
       a: 'Tell the group your body count',
-      b: 'Show the most recent search',
+      b: 'Showing Your Most Recent Search',
       tone: ContentTone.mix,
     ),
     (a: 'Love Without Sex', b: 'Sex Without Love', tone: ContentTone.mix),
     (
       a: 'A handsome partner, but terrible in bed',
-      b: 'An ordinary partner, but phenomenal in bed',
+      b: 'An Ordinary Partner, but Phenomenal in Bed',
       tone: ContentTone.mix,
     ),
     (
@@ -323,12 +330,12 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Catching Your Parents in the Act',
-      b: 'Getting caught by your parents',
+      b: 'Being Caught by Your Parents',
       tone: ContentTone.mix,
     ),
     (
       a: 'Tell everyone who you like right now',
-      b: 'Never talk to the person you like again',
+      b: 'Never Talking to the Person You Like Again',
       tone: ContentTone.mix,
     ),
     (
@@ -343,7 +350,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Finding Out Who Your Partner Might Cheat With',
-      b: 'Never to know',
+      b: 'Never Knowing',
       tone: ContentTone.mix,
     ),
     (
@@ -353,7 +360,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Watch a video of your first kiss',
-      b: 'Let the whole group review it',
+      b: 'Letting the Whole Group Review It',
       tone: ContentTone.mix,
     ),
     (
@@ -363,7 +370,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Accidentally sending a nude to an ex',
-      b: 'Send him to the family group',
+      b: 'Sending It to the Family Group',
       tone: ContentTone.mix,
     ),
     (
@@ -378,12 +385,12 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Have sex only in total darkness',
-      b: 'Only with the light always on',
+      b: 'Only with the Lights Always On',
       tone: ContentTone.mix,
     ),
     (
       a: 'Share your wildest fantasy',
-      b: 'Listen to the person on your right',
+      b: 'Listening to the Person on Your Right',
       tone: ContentTone.mix,
     ),
     (
@@ -393,22 +400,22 @@ class ContentEnPreferisci {
     ),
     (
       a: 'An ex who kisses like a dream',
-      b: 'A new one who needs to be trained from scratch',
+      b: 'A New One Who Needs to Be Taught from Scratch',
       tone: ContentTone.mix,
     ),
     (
       a: 'Watching you undress with my eyes at the bar',
-      b: 'Never Be Noticed Again',
+      b: 'Never Being Noticed Again',
       tone: ContentTone.mix,
     ),
     (
       a: 'Tell the Story of Your Worst Date',
-      b: 'Relive Your Hottest Embarrassing Moment',
+      b: 'Relive Your Most Embarrassing Hot Moment',
       tone: ContentTone.mix,
     ),
     (
       a: 'Always Make the First Move',
-      b: 'Always waiting for the other person to make the first move',
+      b: 'Always Waiting for the Other Person to Make the First Move',
       tone: ContentTone.mix,
     ),
     (
@@ -463,7 +470,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Get back together with your ex every once in a while',
-      b: 'To close for good, but with regret',
+      b: 'Closing It for Good, but with Regret',
       tone: ContentTone.mix,
     ),
     (
@@ -473,7 +480,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Sleeping Naked with a Friend',
-      b: 'Taking a shower in a swimsuit with my ex',
+      b: 'Taking a Shower in a Swimsuit with My Ex',
       tone: ContentTone.mix,
     ),
     (
@@ -488,7 +495,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Knowing what the other person is thinking in bed',
-      b: 'May he hear your every thought in bed',
+      b: 'Having Them Hear Your Every Thought in Bed',
       tone: ContentTone.mix,
     ),
     (
@@ -498,42 +505,42 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Breakfast in bed after the first night',
-      b: 'Disappear Before Dawn',
+      b: 'Disappearing Before Dawn',
       tone: ContentTone.mix,
     ),
     (
       a: 'Talking About Your Weakness in Bed',
-      b: 'Act it out in front of the group',
+      b: 'Acting It Out in Front of the Group',
       tone: ContentTone.mix,
     ),
     (
       a: 'Getting a tattoo of your ex\'s name',
-      b: 'Shouting his name at the wrong moment',
+      b: 'Shouting Their Name at the Wrong Moment',
       tone: ContentTone.mix,
     ),
     (
       a: 'Matching with your ex on an app',
-      b: 'Match with your boss on an app',
+      b: 'Matching with Your Boss on an App',
       tone: ContentTone.mix,
     ),
     (
       a: 'Your partner knows all your fantasies',
-      b: 'You know all of his fantasies',
+      b: 'Knowing All of Their Fantasies',
       tone: ContentTone.mix,
     ),
     (
       a: 'An impromptu striptease right now',
-      b: 'A Spicy Tale of Your Summer',
+      b: 'A Spicy Story About Your Summer',
       tone: ContentTone.mix,
     ),
     (
       a: 'Kiss someone from the group of your choice',
-      b: 'Kiss one chosen by the group',
+      b: 'Kissing One Chosen by the Group',
       tone: ContentTone.mix,
     ),
     (
       a: 'A Super-Passionate Secret Story',
-      b: 'An official but lukewarm account',
+      b: 'An Official but Lukewarm Relationship',
       tone: ContentTone.mix,
     ),
     (
@@ -548,12 +555,12 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Sensitive audio message sent to the wrong person',
-      b: 'Getting one from your boss',
+      b: 'Getting One from Your Boss',
       tone: ContentTone.mix,
     ),
     (
       a: 'Have them read the messages with their ex',
-      b: 'Showing photos with my ex',
+      b: 'Showing Photos with My Ex',
       tone: ContentTone.mix,
     ),
     (
@@ -563,27 +570,27 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Tell the group the name of your crush',
-      b: 'Let the group guess',
+      b: 'Letting the Group Guess',
       tone: ContentTone.mix,
     ),
     (
       a: 'Dancing a slow dance with your ex tonight',
-      b: 'Romantic karaoke with one of the group',
+      b: 'Romantic Karaoke with Someone from the Group',
       tone: ContentTone.mix,
     ),
     (
       a: 'Trying to pick up a stranger right now',
-      b: 'Give your number to the first person who asks for it',
+      b: 'Giving Your Number to the First Person Who Asks for It',
       tone: ContentTone.mix,
     ),
     (
       a: 'A massage from one of the group',
-      b: 'You do it to someone in the group',
+      b: 'Doing It to Someone in the Group',
       tone: ContentTone.mix,
     ),
     (
       a: 'No flirting for a year',
-      b: 'The Obligation to Flirt with Anyone',
+      b: 'Being Obliged to Flirt with Anyone',
       tone: ContentTone.mix,
     ),
     (
@@ -593,17 +600,17 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Confessing a steamy dream about someone who\'s present',
-      b: 'Let someone here testify about you',
+      b: 'Letting Someone Here Tell Their Side of the Story',
       tone: ContentTone.mix,
     ),
     (
       a: 'Complete silence in bed',
-      b: 'Full play-by-play commentary from bed',
+      b: 'Full Play-by-Play Commentary in Bed',
       tone: ContentTone.mix,
     ),
     (
       a: 'An amazing backside',
-      b: 'A neckline worthy of applause',
+      b: 'A Neckline Worthy of Applause',
       tone: ContentTone.mix,
     ),
     (
@@ -628,12 +635,12 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Seeing your ex with someone who\'s better-looking than you',
-      b: 'May he see you with someone worse than him',
+      b: 'Having Them See You with Someone Worse Than Them',
       tone: ContentTone.mix,
     ),
     (
       a: 'Kisses with a Bite',
-      b: 'Kisses from the mold, forever',
+      b: 'Kisses That Feel the Same Forever',
       tone: ContentTone.mix,
     ),
     (
@@ -643,12 +650,12 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Having sex with the music blaring',
-      b: 'With the news playing in the background',
+      b: 'With the News Playing in the Background',
       tone: ContentTone.mix,
     ),
     (
       a: 'Reveal how many exes you\'ve had',
-      b: 'To Reveal Who Was the Best',
+      b: 'Revealing Who Was the Best',
       tone: ContentTone.mix,
     ),
     (
@@ -658,7 +665,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'An Awkward but Sweet First Time',
-      b: 'Perfect, but with the wrong person',
+      b: 'Perfect, but with the Wrong Person',
       tone: ContentTone.mix,
     ),
     (
@@ -668,7 +675,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'A 30-second kiss with someone who is present',
-      b: 'Ten quick kisses with ten strangers',
+      b: 'Ten Quick Kisses with Ten Strangers',
       tone: ContentTone.mix,
     ),
     (
@@ -678,7 +685,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Sex in a Tent at a Crowded Campground',
-      b: 'At a hotel with paper walls',
+      b: 'At a Hotel with Thin Walls',
       tone: ContentTone.mix,
     ),
     (
@@ -694,7 +701,7 @@ class ContentEnPreferisci {
     (a: 'To be dominated', b: 'Being Dominant', tone: ContentTone.mix),
     (
       a: 'Having sex with two people at the same time',
-      b: 'Going without it for six months',
+      b: 'Going Without Sex for Six Months',
       tone: ContentTone.mix,
     ),
     (
@@ -715,8 +722,8 @@ class ContentEnPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Make him swallow it',
-      b: 'Make him spit it on you',
+      a: 'Make Them Swallow It',
+      b: 'Make Them Spit It on You',
       tone: ContentTone.hot,
     ),
     (
@@ -730,8 +737,8 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Always Take the Oral Exam',
-      b: 'You\'re always the one who has to do it',
+      a: 'Always receive oral',
+      b: 'Always give oral',
       tone: ContentTone.hot,
     ),
     (
@@ -746,7 +753,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'A 30-minute blowjob',
-      b: 'How to Get There in 30 Seconds',
+      b: 'Getting There in 30 Seconds',
       tone: ContentTone.hot,
     ),
     (
@@ -771,17 +778,17 @@ class ContentEnPreferisci {
     ),
     (
       a: 'A stranger watches you come',
-      b: 'Watch a stranger come',
+      b: 'Watching a Stranger Come',
       tone: ContentTone.hot,
     ),
     (
       a: 'Have yourself tied up and blindfolded',
-      b: 'Tie up and blindfold your partner',
+      b: 'Tying Up and Blindfolding Your Partner',
       tone: ContentTone.hot,
     ),
     (
       a: 'To be gently whipped',
-      b: 'You spank your partner',
+      b: 'Spanking Your Partner',
       tone: ContentTone.hot,
     ),
     (
@@ -791,27 +798,27 @@ class ContentEnPreferisci {
     ),
     (
       a: 'You\'re wearing a collar and a leash',
-      b: 'Pass them to your partner',
+      b: 'Passing Them to Your Partner',
       tone: ContentTone.hot,
     ),
     (
       a: 'Spanked until it left a mark',
-      b: 'Spank until it leaves a mark',
+      b: 'Spanking Until It Leaves a Mark',
       tone: ContentTone.hot,
     ),
     (
       a: 'Tied to the bed all night',
-      b: 'Tie Your Partner to the Bed',
+      b: 'Tying Your Partner to the Bed',
       tone: ContentTone.hot,
     ),
     (
       a: 'Blindfolded and at her partner\'s mercy',
-      b: 'Blindfold Your Partner and Take Charge',
+      b: 'Blindfolding Your Partner and Taking Charge',
       tone: ContentTone.hot,
     ),
     (
       a: 'A vibrator that runs for an hour without stopping',
-      b: 'No orgasms for a month',
+      b: 'No Orgasms for a Month',
       tone: ContentTone.hot,
     ),
     (
@@ -826,7 +833,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Try all the sex toys in the store',
-      b: 'Just Hands Forever',
+      b: 'Only Hands Forever',
       tone: ContentTone.hot,
     ),
     (
@@ -836,7 +843,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Real handcuffs on the wrists',
-      b: 'Silk ropes on the body',
+      b: 'Silk Ropes Around the Body',
       tone: ContentTone.hot,
     ),
     (
@@ -1369,7 +1376,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Which part of the body drives you wild?',
-      b: 'Let the group guess',
+      b: 'Letting the Group Guess',
       tone: ContentTone.mix,
     ),
     (
@@ -1465,7 +1472,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Being filmed by a third person who is present',
-      b: 'To be watched only by a third person',
+      b: 'Being Watched Only by a Third Person',
       tone: ContentTone.hot,
     ),
     (
@@ -1479,8 +1486,8 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Do it on the table in the living room',
-      b: 'Do it against the wall by the entrance',
+      a: 'Doing It on the Table in the Living Room',
+      b: 'Doing It Against the Wall by the Entrance',
       tone: ContentTone.hot,
     ),
     (
@@ -1491,12 +1498,12 @@ class ContentEnPreferisci {
     (a: 'Try wax play', b: 'Try temperature play', tone: ContentTone.hot),
     (
       a: 'A vibrator while he watches you',
-      b: 'His hands as you watch',
+      b: 'His Hands While You Watch',
       tone: ContentTone.hot,
     ),
     (
       a: 'Masturbate in front of him',
-      b: 'Watching him masturbate for you',
+      b: 'Watching Him Masturbate for You',
       tone: ContentTone.hot,
     ),
     (
@@ -1532,7 +1539,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Having Your Wrists Tied with a Tie',
-      b: 'Tie the ankles with the socks',
+      b: 'Tying the Ankles with Socks',
       tone: ContentTone.hot,
     ),
     (
@@ -1542,7 +1549,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'To be completely in control for a day',
-      b: 'Surrender yourself completely for one day',
+      b: 'Surrendering Yourself Completely for One Day',
       tone: ContentTone.hot,
     ),
     (
@@ -1601,12 +1608,12 @@ class ContentEnPreferisci {
     ),
     (
       a: 'An orgasm in less than a minute',
-      b: 'Hold on for twenty minutes',
+      b: 'Holding On for Twenty Minutes',
       tone: ContentTone.hot,
     ),
     (
       a: 'Counting Orgasms Out Loud',
-      b: 'To remain in complete silence',
+      b: 'Remaining in Complete Silence',
       tone: ContentTone.hot,
     ),
     (

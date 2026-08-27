@@ -1,8 +1,5 @@
 import '../content_tone.dart';
 
-/// Contenuti del gioco "Preferisci" in italiano: le coppie base
-/// (`preferisciPairs`, sempre tono normal) e le coppie audaci
-/// (`preferisciHot`, tono mix/hot).
 class ContentItPreferisci {
   const ContentItPreferisci._();
 

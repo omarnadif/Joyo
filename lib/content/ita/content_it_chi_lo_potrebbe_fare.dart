@@ -1,12 +1,9 @@
 import '../content_tone.dart';
 
-/// Pool "Chi lo potrebbe fare" in italiano: frasi che completano "Chi tra
-/// voi...", raggruppate per tono (normal/mix/hot).
 class ContentItChiLoPotrebbeFare {
   const ContentItChiLoPotrebbeFare._();
 
   static const List<({String text, String tone})> chiLoPotrebbeFare = [
-    // ---------------------------------------------------------- normal
     (
       text: 'Chi si perderebbe in una città che conosce da anni?',
       tone: ContentTone.normal,
@@ -592,7 +589,6 @@ class ContentItChiLoPotrebbeFare {
       text: 'Chi chiederebbe indicazioni e poi andrebbe dalla parte opposta?',
       tone: ContentTone.normal,
     ),
-    // ------------------------------------------------------ mix
     (
       text: 'Chi manderebbe un messaggio a un ex alle tre di notte?',
       tone: ContentTone.mix,
@@ -1208,7 +1204,6 @@ class ContentItChiLoPotrebbeFare {
       text: 'Chi manderebbe un messaggio audace e poi cancellerebbe tutto?',
       tone: ContentTone.mix,
     ),
-    // ------------------------------------------------------- hot
     (text: 'Chi verrebbe più in fretta di tutti?', tone: ContentTone.hot),
     (text: 'Chi ci mette più tempo a venire?', tone: ContentTone.hot),
     (

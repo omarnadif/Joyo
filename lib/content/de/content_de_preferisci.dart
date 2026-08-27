@@ -1,14 +1,15 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentDePreferisci {
   const ContentDePreferisci._();
 
   static const List<({String a, String b})> preferisciPairs = [
-    (a: 'Zu wissen, wie du sterben wirst', b: 'Wissen, wann'),
-    (a: 'Eine unbequeme Wahrheit', b: 'Eine bequeme Lüge'),
-    (a: 'Mehr Geld', b: 'Mehr Freizeit'),
+    (
+      a: 'Zu wissen, wie du sterben wirst',
+      b: 'Zu wissen, wann du sterben wirst',
+    ),
+    (a: 'Eine unbequeme Wahrheit kennen', b: 'Eine bequeme Lüge glauben'),
+    (a: 'Mehr Geld haben', b: 'Mehr Freizeit haben'),
     (a: 'Berühmt sein', b: 'Für andere unsichtbar sein'),
     (a: 'Eine Reise in die Vergangenheit', b: 'Eine Reise in die Zukunft'),
     (a: 'Gedanken lesen', b: 'Die Zukunft vorhersagen'),
@@ -24,7 +25,7 @@ class ContentDePreferisci {
       b: 'Ein geringes Gehalt und ein Job, den du liebst',
     ),
     (a: 'Hochzeit mit 200 Gästen', b: 'Hochzeit zu zweit'),
-    (a: 'Eine Woche, ohne das Haus zu verlassen', b: 'Jeden Abend ausgehen'),
+    (a: 'Eine Woche lang das Haus nicht verlassen', b: 'Jeden Abend ausgehen'),
     (
       a: '10 Stunden schlafen',
       b: '5 Stunden schlafen und sich großartig fühlen',
@@ -33,30 +34,27 @@ class ContentDePreferisci {
       a: 'Den perfekten Urlaub noch einmal erleben',
       b: 'Einen neuen Ort ausprobieren',
     ),
-    (a: 'Das Konto täglich überprüfen', b: 'Schau ihn dir niemals an'),
+    (a: 'Das Konto täglich überprüfen', b: 'Das Konto niemals ansehen'),
     (
-      a: 'Eine nutzlose, aber lustige Superkraft',
-      b: 'Eine nützliche, aber langweilige Superkraft',
+      a: 'Eine nutzlose, aber lustige Superkraft haben',
+      b: 'Eine nützliche, aber langweilige Superkraft haben',
     ),
-    (a: 'Immer wieder dasselbe Buch lesen', b: 'Man kommt nie zum Ende'),
+    (a: 'Immer wieder dasselbe Buch lesen', b: 'Nie zum Ende kommen'),
     (a: 'Immer die Wahrheit wissen', b: 'Glücklich in der Illusion leben'),
-    (a: 'Ein Sabbatjahr', b: 'Ein Jahr früher in Rente gehen'),
+    (a: 'Ein Sabbatjahr nehmen', b: 'Ein Jahr früher in Rente gehen'),
     (a: 'Alle Sprachen sprechen', b: 'Alle Instrumente spielen'),
-    (a: 'Fühle dich niemals verlegen', b: 'Hab niemals Angst'),
+    (a: 'Sich niemals verlegen fühlen', b: 'Niemals Angst haben'),
     (
       a: 'Deinen schönsten Tag noch einmal erleben',
-      b: 'Den schlechtesten löschen',
+      b: 'Den schlechtesten Tag löschen',
     ),
-    (
-      a: 'Das Zusammenleben nach einem Monat',
-      b: 'Nach Jahren noch zusammenleben',
-    ),
+    (a: 'Nach einem Monat zusammenleben', b: 'Nach Jahren noch zusammenleben'),
     (
       a: 'Ein bis ins kleinste Detail organisierter Urlaub',
-      b: 'Auf ins Abenteuer',
+      b: 'Ins Abenteuer aufbrechen',
     ),
     (a: 'Eine ganze Saison in einer Nacht', b: 'Eine Folge pro Woche'),
-    (a: 'Der Akku liegt immer bei 1 %', b: 'Das Internet ist extrem langsam'),
+    (a: 'Der Akku immer bei 1 %', b: 'Extrem langsames Internet'),
     (
       a: 'Die Kleidung ist immer ein bisschen feucht',
       b: 'Ein Steinchen im Schuh – für immer',
@@ -64,31 +62,37 @@ class ContentDePreferisci {
     (a: 'Immer sagen, was du denkst', b: 'Nicht mehr sprechen können'),
     (a: 'Im Winter keine Heizung', b: 'Im Sommer keine Klimaanlage'),
     (
-      a: 'Lieblingsgericht zu jeder Mahlzeit',
+      a: 'Das Lieblingsgericht zu jeder Mahlzeit',
       b: 'Nie wieder dein Lieblingsgericht',
     ),
-    (a: 'Nie wieder Schlaf brauchen', b: 'Nie wieder muss man essen'),
+    (a: 'Nie wieder Schlaf brauchen', b: 'Nie wieder essen müssen'),
     (a: 'Reich, aber ohne Freunde', b: 'Mittellos, aber überaus geliebt'),
     (a: 'Nie wieder Miete zahlen', b: 'Verdoppeltes Gehalt'),
     (a: 'Der Sympathischste im Raum', b: 'Der Klügste im Raum'),
-    (a: 'Fotografisches Gedächtnis', b: 'Jede Blamage vergessen'),
+    (a: 'Ein fotografisches Gedächtnis haben', b: 'Jede Blamage vergessen'),
     (a: 'Nie wieder Warteschlangen', b: 'Nie wieder Stau'),
     (
-      a: 'Ein Jahr lang rasierte Augenbrauen',
+      a: 'Ein Jahr lang rasierte Augenbrauen haben',
       b: 'Neongrüne Haare für ein Jahr',
     ),
     (a: 'Den Geruchssinn verlieren', b: 'Den Geschmack verlieren'),
-    (a: 'Zeichentrickstimme', b: 'Ein Lachen, das alle in Verlegenheit bringt'),
     (
-      a: 'Für Eltern sichtbare Chronologie',
+      a: 'Eine Zeichentrickstimme haben',
+      b: 'Ein Lachen, das alle in Verlegenheit bringt',
+    ),
+    (
+      a: 'Eine für deine Eltern sichtbare Chronologie',
       b: 'Chatnachrichten, die dein Chef gelesen hat',
     ),
     (a: 'Am Ende jedes Satzes rülpsen', b: 'Wie eine Ziege lachen'),
     (
       a: 'Die Zahnbürste eines Fremden benutzen',
-      b: 'Aus seinem bereits benutzten Glas trinken',
+      b: 'Aus dem bereits benutzten Glas eines Fremden trinken',
     ),
-    (a: 'Mit deinem Ex ausgehen', b: 'Mit der Ex deines besten Freundes'),
+    (
+      a: 'Mit deinem Ex ausgehen',
+      b: 'Mit der Ex deines besten Freundes ausgehen',
+    ),
     (a: 'Laute, aber geruchlose Fürze', b: 'Leise, aber tödlich'),
     (a: 'Vergessen, wer du bist', b: 'Von allen vergessen zu werden'),
     (a: 'Das ganze Geld verlieren', b: 'Alle Erinnerungen verlieren'),
@@ -101,8 +105,8 @@ class ContentDePreferisci {
       b: 'Eine Stunde im Aufzug mit dem Chef',
     ),
     (
-      a: 'Ein Geburtstag, den alle vergessen haben',
-      b: 'Peinliche Überraschungsparty',
+      a: 'Ein Geburtstag, den alle vergessen',
+      b: 'Eine peinliche Überraschungsparty',
     ),
     (
       a: 'Dein Geheimnis ist nun allen bekannt',
@@ -111,10 +115,13 @@ class ContentDePreferisci {
     (a: 'Berühmt, aber verhasst', b: 'Unbekannt, aber beliebt'),
     (a: 'Lache nie wieder', b: 'Weine nie wieder'),
     (
-      a: 'Für ein Jahr zurück in die Oberstufe',
+      a: 'Für ein Jahr zurück in die Oberstufe gehen',
       b: 'Jedes Jahr das Abitur wiederholen',
     ),
-    (a: 'Das Leben wie in einem Horrorfilm', b: 'Leben in einem Musical'),
+    (
+      a: 'Das Leben wie in einem Horrorfilm führen',
+      b: 'In einem Musical leben',
+    ),
     (
       a: 'Sich mit einer Ente messen, die so groß ist wie ein Pferd',
       b: 'Hundert Pferde, so groß wie Enten',
@@ -122,12 +129,12 @@ class ContentDePreferisci {
     (a: 'Unter Wasser leben', b: 'Im Weltraum leben'),
     (
       a: 'Sein ganzes Leben lang von einer Killer-Schnecke verfolgt',
-      b: 'Ein Clown, der dich jede Nacht anstarrt',
+      b: 'Einen Clown haben, der dich jede Nacht anstarrt',
     ),
-    (a: 'Mit Tieren sprechen', b: 'Das Wetter checken'),
+    (a: 'Mit Tieren sprechen', b: 'Das Wetter vorhersagen'),
     (a: 'Sobald die Musik einsetzt, tanzen', b: 'Weinen, wenn jemand lacht'),
     (
-      a: 'Jeden Morgen in einem anderen Ort',
+      a: 'Jeden Morgen an einem anderen Ort',
       b: 'Nie wieder deine Stadt verlassen',
     ),
     (a: 'In einem Videospiel leben', b: 'In einem Zeichentrickfilm leben'),
@@ -217,12 +224,12 @@ class ContentDePreferisci {
     (a: 'Ein Leben ohne Sommer', b: 'Ein Leben ohne Winter'),
     (a: 'Fünf Fremde retten', b: 'Rette deinen besten Freund'),
     (
-      a: 'Eine Million, aber nie wieder Smartphones',
-      b: 'Kein Geld, aber ein Handy',
+      a: 'Eine Million bekommen, aber nie wieder Smartphones',
+      b: 'Kein Geld haben, aber ein Handy besitzen',
     ),
     (
-      a: 'Traumjob im Ausland',
-      b: 'Langweilige Arbeit in der Nähe meiner Freunde',
+      a: 'Einen Traumjob im Ausland haben',
+      b: 'Langweilige Arbeit in der Nähe deiner Freunde',
     ),
     (a: 'Für immer 25 Jahre alt sein', b: 'Mit deinen Freunden alt werden'),
     (a: 'Traumhaus mitten im Nirgendwo', b: 'Studio-Wohnung mitten im Zentrum'),
@@ -231,8 +238,8 @@ class ContentDePreferisci {
       b: 'Unbeschwert leben, ohne es zu wissen',
     ),
     (
-      a: 'Jede Mahlzeit, die von einem Koch zubereitet wird',
-      b: 'Persönlicher Chauffeur auf Lebenszeit',
+      a: 'Jede Mahlzeit von einem Koch zubereitet bekommen',
+      b: 'Einen persönlichen Chauffeur auf Lebenszeit haben',
     ),
     (
       a: 'Alles, was du tust, laut kommentieren',
@@ -279,16 +286,16 @@ class ContentDePreferisci {
       b: 'Nie wieder Wasser, nur noch Erfrischungsgetränke',
     ),
     (a: 'Ein einziges Musikgenre fürs Leben', b: 'Nur eine App auf dem Handy'),
-    (a: 'Im Smoking am Strand', b: 'In Kostümen auf einer Hochzeit'),
+    (a: 'Im Smoking am Strand', b: 'In Kostümen zu einer Hochzeit'),
     (
       a: 'Kochen wie ein Sternekoch',
-      b: 'Ein Haus, das sich von selbst reinigt',
+      b: 'Ein Haus haben, das sich von selbst reinigt',
     ),
     (
       a: 'Ein langer Flug neben einem Schwätzer',
-      b: 'Langer Flug neben einem Säugling',
+      b: 'Ein langer Flug neben einem Säugling',
     ),
-    (a: 'Herzhaftes Frühstück für immer', b: 'Ein süsses Abendessen für immer'),
+    (a: 'Herzhaftes Frühstück für immer', b: 'Ein süßes Abendessen für immer'),
     (a: 'Ein Leben ohne Spiegel', b: 'Ein Leben ohne Uhren'),
     (a: 'Mit Pflanzen sprechen', b: 'Säuglinge verstehen'),
     (a: 'Immer beim Kartenspiel gewinnen', b: 'Immer einen Parkplatz finden'),
@@ -300,10 +307,10 @@ class ContentDePreferisci {
       a: 'Nur Filme mit furchtbarer Synchronisation',
       b: 'Nur Filme mit versetzten Untertiteln',
     ),
-    (a: 'Jedes Jahr ein Umzug', b: 'Für immer dasselbe Zuhause'),
+    (a: 'Jedes Jahr umziehen', b: 'Für immer dasselbe Zuhause'),
     (
       a: 'Ein Klingelton, der einem für immer peinlich ist',
-      b: 'Ein für alle Mal peinlicher Hintergrund',
+      b: 'Ein für immer peinlicher Hintergrund',
     ),
     (a: 'Ein berühmtes Meme sein', b: 'Einen berühmten Doppelgänger zu haben'),
     (
@@ -311,8 +318,8 @@ class ContentDePreferisci {
       b: 'Alle mit einer Verbeugung begrüßen',
     ),
     (
-      a: 'Ein endloses Wochenende, aber es regnet immer noch',
-      b: 'Erst Montag, aber immer noch Sonne',
+      a: 'Ein endloses Wochenende, aber es regnet ständig',
+      b: 'Erst am Montag anfangen, aber dafür immer Sonne',
     ),
     (
       a: 'Nur ein Gericht, aber perfekt zubereitet',
@@ -337,7 +344,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Denselben perfekten Tag noch einmal erleben',
-      b: 'Ein neuer, aber unvorhersehbarer Tag',
+      b: 'Einen neuen, aber unvorhersehbaren Tag erleben',
     ),
     (
       a: 'Eine Stunde am Tag unsichtbar sein',
@@ -348,11 +355,11 @@ class ContentDePreferisci {
       b: 'Jeden Abend zehn Teller abwaschen',
     ),
     (
-      a: 'Ein schwerer Rucksack, aber mit allem, was man braucht',
-      b: 'Ein leichter Rucksack, aber nie ganz das Richtige',
+      a: 'Einen schweren Rucksack, aber mit allem, was man braucht',
+      b: 'Einen leichten Rucksack, aber nie ganz das Richtige',
     ),
     (
-      a: 'Die Fotos sind zwar immer misslungen, aber die Erinnerungen sind perfekt',
+      a: 'Immer misslungene Fotos, aber perfekte Erinnerungen',
       b: 'Perfekte Fotos, aber verschwommene Erinnerungen',
     ),
     (
@@ -409,7 +416,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Allen erzählen, wen du gerade magst',
-      b: 'Sprich nie wieder mit dem, den du magst',
+      b: 'Nie wieder mit der Person sprechen, die du magst',
       tone: ContentTone.mix,
     ),
     (
@@ -424,7 +431,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Erfahren, mit wem dein Partner dich betrügen würde',
-      b: 'Es nie zu wissen',
+      b: 'Es nie erfahren',
       tone: ContentTone.mix,
     ),
     (
@@ -439,12 +446,12 @@ class ContentDePreferisci {
     ),
     (
       a: 'Jedes Mal stöhnen, wenn du dich hinsetzt',
-      b: 'Bei jedem Toast den Namen deines Ex-Partners zu schreien',
+      b: 'Bei jedem Toast den Namen deines Ex-Partners schreien',
       tone: ContentTone.mix,
     ),
     (
       a: 'Dem Ex versehentlich ein Nacktfoto schicken',
-      b: 'Ihn in die Familiengruppe schicken',
+      b: 'Es in die Familiengruppe schicken',
       tone: ContentTone.mix,
     ),
     (
@@ -454,12 +461,12 @@ class ContentDePreferisci {
     ),
     (
       a: 'Eine Nacht mit einem Prominenten',
-      b: 'Ein Monat Sex mit deinem Ex',
+      b: 'Einen Monat lang Sex mit deinem Ex',
       tone: ContentTone.mix,
     ),
     (
       a: 'Sex nur bei völliger Dunkelheit haben',
-      b: 'Nur wenn das Licht immer an ist',
+      b: 'Nur Sex haben, wenn das Licht immer an ist',
       tone: ContentTone.mix,
     ),
     (
@@ -544,7 +551,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Sich ab und zu mit dem Ex versöhnen',
-      b: 'Für immer schließen, aber mit Bedauern',
+      b: 'Für immer abschließen, aber mit Bedauern',
       tone: ContentTone.mix,
     ),
     (
@@ -593,8 +600,8 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Ein Match mit deinem Ex in einer App',
-      b: 'Finde über eine App einen Match mit deinem Chef',
+      a: 'Ein Match mit deinem Ex in einer Dating-App',
+      b: 'Über eine App ein Match mit deinem Chef finden',
       tone: ContentTone.mix,
     ),
     (
@@ -614,7 +621,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Eine super-leidenschaftliche Geheimgeschichte',
-      b: 'Offizielle, aber wenig begeisterte Darstellung',
+      b: 'Eine offizielle, aber wenig begeisterte Beziehung',
       tone: ContentTone.mix,
     ),
     (
@@ -623,18 +630,18 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Vergiss all deine wilden Nächte',
+      a: 'Alle deine wilden Nächte vergessen',
       b: 'Sich auch an das erinnern, was man vergessen sollte',
       tone: ContentTone.mix,
     ),
     (
       a: 'Heiße Audioaufnahme an die falsche Person gesendet',
-      b: 'Eines von deinem Chef zu bekommen',
+      b: 'Eines von deinem Chef bekommen',
       tone: ContentTone.mix,
     ),
     (
       a: 'Die Nachrichten mit dem Ex lesen lassen',
-      b: 'Die Fotos mit der Ex zeigen',
+      b: 'Die Fotos mit deiner Ex zeigen',
       tone: ContentTone.mix,
     ),
     (
@@ -659,11 +666,11 @@ class ContentDePreferisci {
     ),
     (
       a: 'Eine Massage von einem aus der Gruppe',
-      b: 'Das machst du mit jemandem aus der Gruppe',
+      b: 'Das mit jemandem aus der Gruppe machen',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Ein Jahr lang darf nicht geflirtet werden',
+      a: 'Ein Jahr lang nicht flirten dürfen',
       b: 'Die Pflicht, mit jedem zu flirten',
       tone: ContentTone.mix,
     ),
@@ -674,12 +681,12 @@ class ContentDePreferisci {
     ),
     (
       a: 'Einen erotischen Traum über eine anwesende Person gestehen',
-      b: 'Möge jemand, der hier anwesend ist, dies über dich bezeugen',
+      b: 'Jemanden, der hier anwesend ist, dazu bringen, dies über dich zu bezeugen',
       tone: ContentTone.mix,
     ),
     (
       a: 'Absolute Stille im Bett',
-      b: 'Kompletter Spielbericht im Bett',
+      b: 'Kompletter Kommentar im Bett',
       tone: ContentTone.mix,
     ),
     (
@@ -709,7 +716,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Den Ex mit jemandem zu sehen, der besser aussieht als du',
-      b: 'Dass er dich mit jemandem sieht, der noch schlimmer ist als er',
+      b: 'Dass er dich mit jemandem sieht, der noch schlechter aussieht als er',
       tone: ContentTone.mix,
     ),
     (
@@ -724,16 +731,16 @@ class ContentDePreferisci {
     ),
     (
       a: 'Sex bei lauter Musik',
-      b: 'Mit den Nachrichten im Hintergrund',
+      b: 'Sex mit den Nachrichten im Hintergrund',
       tone: ContentTone.mix,
     ),
     (
       a: 'Verrate, wie viele Ex-Partner du hattest',
-      b: 'Enthüllen, wer der Beste war',
+      b: 'Verraten, wer der Beste war',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Heute Abend mal beim Kellner mein Glück versuchen',
+      a: 'Heute Abend beim Kellner mein Glück versuchen',
       b: 'Ihm die Nummer auf dem Kassenbon hinterlassen',
       tone: ContentTone.mix,
     ),
@@ -1336,8 +1343,8 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Ein Jahr voller Abenteuer ohne Morgen',
-      b: 'Ein Jahr lang nur auf den richtigen Partner gewartet',
+      a: 'Ein Jahr voller Abenteuer ohne an morgen zu denken',
+      b: 'Ein Jahr lang nur auf den richtigen Partner warten',
       tone: ContentTone.mix,
     ),
     (
@@ -1431,12 +1438,12 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Wie man beim Küssen deine Gedanken lesen kann',
+      a: 'Dass man beim Küssen deine Gedanken lesen kann',
       b: 'Du kannst die Gedanken derer lesen, die du küsst',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Nur heiße Dates, aber nie auch nur eine Sekunde',
+      a: 'Nur heiße Dates, aber nie mehr als eine Sekunde',
       b: 'Nur romantische Verabredungen, aber ohne Funken',
       tone: ContentTone.mix,
     ),
@@ -1492,22 +1499,22 @@ class ContentDePreferisci {
     ),
     (
       a: 'Dir einen gut sichtbaren Knutschfleck verpassen lassen',
-      b: 'Mach doch mal eins für jemanden, der dir nahesteht',
+      b: 'Mach doch mal einen für jemanden, der dir nahesteht',
       tone: ContentTone.mix,
     ),
     (
       a: 'Sag, wie oft du den ersten Schritt gemacht hast',
-      b: 'Sag mal, wie oft du dich schon aus der Affäre gezogen hast',
+      b: 'Sag mal, wie oft du dich schon aus einer Affäre gezogen hast',
       tone: ContentTone.mix,
     ),
     (
       a: 'Eine Nacht voller Leidenschaft – aber du vergisst sie',
-      b: 'Keine Nacht, sondern die Erinnerung an einen Kuss',
+      b: 'Keine Nacht, sondern nur die Erinnerung an einen Kuss',
       tone: ContentTone.mix,
     ),
     (
       a: 'Die schüchternste Person in der Gruppe küssen',
-      b: 'Die Frechste der Gruppe küssen',
+      b: 'Die frechste Person der Gruppe küssen',
       tone: ContentTone.mix,
     ),
     (
@@ -1517,17 +1524,17 @@ class ContentDePreferisci {
     ),
     (
       a: 'Jemanden allein mit einem Blick verführen',
-      b: 'Ihn mit nur einem Satz verführen',
+      b: 'Die Person mit nur einem Satz verführen',
       tone: ContentTone.mix,
     ),
     (
-      a: 'Ein heißes Date, das dein Ex vereinbart hat',
+      a: 'Ein heißes Date, das dein Ex arrangiert hat',
       b: 'Ein heißes Date, das deine Mutter arrangiert hat',
       tone: ContentTone.mix,
     ),
     (
       a: 'Ein Biss in die Brustwarze',
-      b: 'Klammern an den Brustwarzen',
+      b: 'Brustwarzenklammern',
       tone: ContentTone.hot,
     ),
     (
@@ -1547,12 +1554,12 @@ class ContentDePreferisci {
     ),
     (
       a: 'Eine Stunde lang jeden Befehl befolgen',
-      b: 'Eine Stunde lang gibst du die Befehle',
+      b: 'Eine Stunde lang die Befehle geben',
       tone: ContentTone.hot,
     ),
     (
       a: 'Sex mit einem Sicherheitswort',
-      b: 'Sex ohne vereinbarte Grenzen',
+      b: 'Sex ohne vorher vereinbarte Grenzen',
       tone: ContentTone.hot,
     ),
     (
@@ -1571,7 +1578,7 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Ein kurzer Bericht aus der Küche',
+      a: 'Ein kurzer Quickie in der Küche',
       b: 'Ein Marathon im Schlafzimmer',
       tone: ContentTone.hot,
     ),
@@ -1591,12 +1598,12 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Ein Vibrator, während er dir dabei zusieht',
-      b: 'Seine Hände, während du zusiehst',
+      a: 'Einen Vibrator benutzen, während er dir dabei zusieht',
+      b: 'Seine Hände benutzen, während du zusiehst',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Dich vor ihm zu befriedigen',
+      a: 'Dich vor ihm selbst befriedigen',
       b: 'Ihm dabei zuzusehen, wie er für dich masturbiert',
       tone: ContentTone.hot,
     ),
@@ -1626,8 +1633,8 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Ein Geschlechtsverkehr am helllichten Tag',
-      b: 'Eine Beziehung nur bei Kerzenschein',
+      a: 'Geschlechtsverkehr am helllichten Tag',
+      b: 'Sex nur bei Kerzenschein',
       tone: ContentTone.hot,
     ),
     (
@@ -1656,8 +1663,8 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Ein Bericht über den Rücksitz des Autos',
-      b: 'Ein Bericht auf der Motorhaube des Autos',
+      a: 'Ein Quickie auf dem Rücksitz des Autos',
+      b: 'Ein Quickie auf der Motorhaube des Autos',
       tone: ContentTone.hot,
     ),
     (
@@ -1671,8 +1678,8 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Dich ganz tief in den Mund nehmen',
-      b: 'Du musst es bis zum Ende durchziehen',
+      a: 'Dich ganz tief in den Mund nehmen lassen',
+      b: 'Es bis zum Ende durchziehen müssen',
       tone: ContentTone.hot,
     ),
     (a: 'Deep Throat', b: 'Facesitting', tone: ContentTone.hot),
@@ -1681,7 +1688,7 @@ class ContentDePreferisci {
       b: 'Ihn auf deinem Gesicht sitzen lassen',
       tone: ContentTone.hot,
     ),
-    (a: 'Eine unendliche 69', b: 'sich abwechseln', tone: ContentTone.hot),
+    (a: 'Eine endlose 69', b: 'Sich abwechseln', tone: ContentTone.hot),
     (
       a: 'Sex mit einem wärmenden Gleitmittel',
       b: 'Sex mit einem Gel mit Kühleffekt',
@@ -1689,7 +1696,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Lass dir die Augen verbinden und rate, um welche Spielzeuge es sich handelt',
-      b: 'Seine Hände mit verbundenen Augen erraten',
+      b: 'Seine Hände mit verbundenen Augen erkennen',
       tone: ContentTone.hot,
     ),
     (
@@ -1703,7 +1710,7 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sex mit zerrissener Dessous-Kleidung am Körper',
+      a: 'Sex in zerrissener Dessous-Kleidung',
       b: 'Sex, bei dem man fast angezogen bleibt',
       tone: ContentTone.hot,
     ),
@@ -1744,7 +1751,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Dich dazu bringen, den ganzen Tag ein kleines Ei bei dir zu behalten',
-      b: 'Den ganzen Nachmittag lang ein Plug',
+      b: 'Den ganzen Nachmittag lang einen Plug tragen',
       tone: ContentTone.hot,
     ),
     (
@@ -1753,13 +1760,13 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sex mit duftendem Öl überall',
-      b: 'Mit Schaum bedeckte Geschlechtsteile',
+      a: 'Sex mit duftendem Öl am ganzen Körper',
+      b: 'Geschlechtsteile, die mit Schaum bedeckt sind',
       tone: ContentTone.hot,
     ),
     (
       a: 'Lass ihn vor deinen Augen von einer anderen verführen',
-      b: 'Wenn du vor seinen Augen einen anderen verführst',
+      b: 'Vor seinen Augen einen anderen verführen',
       tone: ContentTone.hot,
     ),
     (
@@ -1769,7 +1776,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Eine Frau vor seinen Augen küssen',
-      b: 'Zuzusehen, wie er einen Mann küsst',
+      b: 'Zusehen, wie er einen Mann küsst',
       tone: ContentTone.hot,
     ),
     (
@@ -1783,23 +1790,23 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Dass man dich sanft am Hals umarmt',
-      b: 'Du sollst seine Handgelenke festhalten',
+      a: 'Sanft am Hals umarmt werden',
+      b: 'Seine Handgelenke festhalten',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Ein leichtes, abgesprochenes Abwürgen',
-      b: 'Ein kräftiges Haarziehen',
+      a: 'Ein leichtes, abgesprochenes Würgen',
+      b: 'Kräftiges Ziehen an den Haaren',
       tone: ContentTone.hot,
     ),
     (
       a: 'Sex mit zusammengebundenen Haaren',
-      b: 'Sex mit den Fingernägeln auf dem Rücken',
+      b: 'Sex mit Fingernägeln auf dem Rücken',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sich vor dem Spiegel von hinten nehmen zu lassen',
-      b: 'Nimm ihn, indem du ihn vor dem Spiegel reitest',
+      a: 'Sich vor dem Spiegel von hinten nehmen lassen',
+      b: 'Ihn nehmen, indem du ihn vor dem Spiegel reitest',
       tone: ContentTone.hot,
     ),
     (
@@ -1808,13 +1815,13 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Dich dabei beobachten zu lassen, wie du dich vor der Webcam ausziehst',
+      a: 'Dich dabei beobachten lassen, wie du dich vor der Webcam ausziehst',
       b: 'Ihm dabei zusehen, wie er sich vor der Webcam auszieht',
       tone: ContentTone.hot,
     ),
     (
-      a: 'Ein Vibrator, den man abwechselnd benutzt',
-      b: 'Zwei Spielzeuge gleichzeitig',
+      a: 'Einen Vibrator, den man abwechselnd benutzt',
+      b: 'Zwei Sexspielzeuge gleichzeitig',
       tone: ContentTone.hot,
     ),
     (
@@ -1823,13 +1830,13 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Dir die Lippe so lange zubeißen lassen, bis sie blutet',
+      a: 'Dir so lange in die Lippe beißen lassen, bis sie blutet',
       b: 'Ihm heftig in den Hals beißen',
       tone: ContentTone.hot,
     ),
     (
       a: 'Eine Beziehung, die mehrmals unterbrochen und wieder aufgenommen wurde',
-      b: 'Eine einzigartige Beziehung ohne Unterbrechungen',
+      b: 'Eine einzige Beziehung ohne Unterbrechungen',
       tone: ContentTone.hot,
     ),
     (

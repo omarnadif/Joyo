@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentEsChiLoPotrebbeFare {
   const ContentEsChiLoPotrebbeFare._();
 
@@ -198,7 +196,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se ganaría dos multas por aparcar en zona prohibida el mismo día?',
+          '¿Quién recibiría dos multas por aparcar en zona prohibida el mismo día?',
       tone: ContentTone.normal,
     ),
     (text: '¿Quién le pondría un nombre a su coche?', tone: ContentTone.normal),
@@ -268,7 +266,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: '¿A quién se le emocionaría la boda de un amigo?',
+      text: '¿Quién se emocionaría con la boda de un amigo?',
       tone: ContentTone.normal,
     ),
     (
@@ -395,7 +393,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: '¿Quién se jactaría de una receta copiada de Internet?',
+      text: '¿Quién presumiría de una receta copiada de Internet?',
       tone: ContentTone.normal,
     ),
     (
@@ -408,8 +406,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text:
-          '¿A quién se le perderían las llaves de casa al menos una vez al mes?',
+      text: '¿Quién perdería las llaves de casa al menos una vez al mes?',
       tone: ContentTone.normal,
     ),
     (
@@ -417,7 +414,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: '¿Quién aplaudiría al aterrizar el avión?',
+      text: '¿Quién aplaudiría cuando aterrizara el avión?',
       tone: ContentTone.normal,
     ),
     (
@@ -432,7 +429,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién llamaría a su madre para preguntarle cómo se cuece el arroz?',
+          '¿Quién llamaría a su madre para preguntarle cómo se cocina el arroz?',
       tone: ContentTone.normal,
     ),
     (
@@ -447,7 +444,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se dejaría convencer para comprar cualquier cosa a un vendedor simpático?',
+          '¿Quién se dejaría convencer por un vendedor simpático para comprar cualquier cosa?',
       tone: ContentTone.normal,
     ),
     (
@@ -460,7 +457,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿A quién le emociona más la comida que los monumentos cuando viaja?',
+          '¿Quién disfrutaría más de la comida que de los monumentos cuando viaja?',
       tone: ContentTone.normal,
     ),
     (
@@ -737,7 +734,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se despertaría en la cama de otra persona sin recordar cómo ha llegado hasta allí?',
+          '¿Quién se despertaría en la cama de otra persona sin recordar cómo había llegado hasta allí?',
       tone: ContentTone.mix,
     ),
     (
@@ -858,7 +855,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se pasaría la noche con alguien a quien acaba de conocer hace dos horas en un bar?',
+          '¿Quién se pasaría la noche con alguien a quien acabara de conocer dos horas antes en un bar?',
       tone: ContentTone.mix,
     ),
     (
@@ -900,7 +897,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién aceptaría una invitación para «ver una película» sabiendo que la película nunca va a empezar?',
+          '¿Quién aceptaría una invitación para «ver una película» sabiendo que la película nunca empezaría?',
       tone: ContentTone.mix,
     ),
     (
@@ -918,12 +915,12 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién respondería a un «¿qué vas a hacer esta noche?» que llegara a las dos de la madrugada?',
+          '¿Quién respondería a un «¿qué vas a hacer esta noche?» que le llegara a las dos de la madrugada?',
       tone: ContentTone.mix,
     ),
     (
       text:
-          '¿Quién tendría una ex que todavía le busca para pasar una noche de vez en cuando?',
+          '¿Quién tendría una ex que todavía le busca para pasar una noche juntos de vez en cuando?',
       tone: ContentTone.mix,
     ),
     (
@@ -952,7 +949,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se compraría ropa interior nueva solo por una cita prometedora?',
+          '¿Quién se compraría ropa interior nueva solo por una cita que promete?',
       tone: ContentTone.mix,
     ),
     (
@@ -1110,7 +1107,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se dejaría llevar a casa por alguien que haya conocido esa noche?',
+          '¿Quién se dejaría llevar a casa por alguien a quien hubiera conocido esa noche?',
       tone: ContentTone.mix,
     ),
     (
@@ -1119,7 +1116,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién utilizaría el perfume de la pareja de un amigo como excusa para acercarse a él o ella?',
+          '¿Quién utilizaría el perfume de la pareja de un amigo como excusa para acercarse a esa persona?',
       tone: ContentTone.mix,
     ),
     (
@@ -1246,7 +1243,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién estaría dispuesto a intercambiar un secreto picante con el vecino?',
+          '¿Quién estaría dispuesto a compartir un secreto picante con el vecino?',
       tone: ContentTone.mix,
     ),
     (
@@ -1267,8 +1264,11 @@ class ContentEsChiLoPotrebbeFare {
       text: '¿Quién enviaría un mensaje atrevido y luego lo borraría todo?',
       tone: ContentTone.mix,
     ),
-    (text: '¿Quién llegaría más rápido que nadie?', tone: ContentTone.hot),
-    (text: '¿Quién tarda más en llegar?', tone: ContentTone.hot),
+    (
+      text: '¿Quién llegaría al orgasmo más rápido que nadie?',
+      tone: ContentTone.hot,
+    ),
+    (text: '¿Quién tarda más en llegar al orgasmo?', tone: ContentTone.hot),
     (
       text: '¿Quién ha fingido un orgasmo para acabar con todo?',
       tone: ContentTone.hot,
@@ -1283,8 +1283,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text:
-          '¿A quién se le ha escapado un orgasmo en un sitio de lo más insólito?',
+      text: '¿Quién ha tenido un orgasmo en un sitio de lo más insólito?',
       tone: ContentTone.hot,
     ),
     (
@@ -1292,8 +1291,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text:
-          '¿Quién ha fingido un orgasmo precisamente esta noche en su vida sexual?',
+      text: '¿Quién ha fingido un orgasmo precisamente esta noche?',
       tone: ContentTone.hot,
     ),
     (
@@ -1315,24 +1313,21 @@ class ContentEsChiLoPotrebbeFare {
     (text: '¿Quién es mejor con la boca?', tone: ContentTone.hot),
     (text: '¿Quién se negaría siempre a tragar?', tone: ContentTone.hot),
     (
-      text:
-          '¿A quién le encanta que le practiquen sexo oral más que nada en el mundo?',
+      text: '¿Quién disfruta más que le practiquen sexo oral?',
       tone: ContentTone.hot,
     ),
-    (text: '¿Quién se ha hecho una mamada en el coche?', tone: ContentTone.hot),
+    (text: '¿Quién ha recibido sexo oral en el coche?', tone: ContentTone.hot),
     (
       text:
           '¿Quién ha hecho que su pareja se corra con el sexo oral en menos de cinco minutos?',
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién haría sexo oral en un semáforo en rojo?',
+      text:
+          '¿Quién practicaría sexo oral mientras espera en un semáforo en rojo?',
       tone: ContentTone.hot,
     ),
-    (
-      text: '¿Quién se ha hecho un 69 en la última cita?',
-      tone: ContentTone.hot,
-    ),
+    (text: '¿Quién ha hecho un 69 en su última cita?', tone: ContentTone.hot),
     (
       text: '¿Quién detesta el sexo oral pero no lo admite?',
       tone: ContentTone.hot,
@@ -1346,7 +1341,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién se animaría ahora mismo a hacer un 69 esta noche?',
+      text: '¿Quién se animaría ahora mismo a hacer un 69?',
       tone: ContentTone.hot,
     ),
     (
@@ -1401,7 +1396,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién se pondría una venda en los ojos mientras tiene relaciones sexuales?',
+          '¿Quién se pondría una venda en los ojos mientras mantiene relaciones sexuales?',
       tone: ContentTone.hot,
     ),
     (
@@ -1409,11 +1404,11 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién se pondría cera caliente en el cuerpo de su pareja?',
+      text: '¿Quién pondría cera caliente sobre el cuerpo de su pareja?',
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién ha probado la asfixia erótica leve en la cama?',
+      text: '¿Quién ha probado la asfixia erótica leve durante el sexo?',
       tone: ContentTone.hot,
     ),
     (
@@ -1433,7 +1428,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién ha probado el collar durante un juego erótico?',
+      text: '¿Quién ha probado un collar durante un juego erótico?',
       tone: ContentTone.hot,
     ),
     (text: '¿Quién ha tenido ya un trío?', tone: ContentTone.hot),
@@ -1442,7 +1437,8 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿A quién le gustaría ver a dos personas de este grupo hacerlo?',
+      text:
+          '¿A quién le gustaría ver a dos personas de este grupo teniendo relaciones sexuales?',
       tone: ContentTone.hot,
     ),
     (
@@ -1593,7 +1589,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién tiene una fantasía con una persona famosa concreta?',
+      text: '¿Quién tiene una fantasía con una persona famosa en concreto?',
       tone: ContentTone.hot,
     ),
     (
@@ -1610,7 +1606,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién haría realidad un sueño esta misma noche si pudiera?',
+      text: '¿Quién haría realidad una fantasía esta misma noche si pudiera?',
       tone: ContentTone.hot,
     ),
     (
@@ -1653,7 +1649,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién ha tenido relaciones sexuales el mismo día que conoció a alguien?',
+          '¿Quién ha tenido relaciones sexuales el mismo día que conoció a esa persona?',
       tone: ContentTone.hot,
     ),
     (
@@ -1666,7 +1662,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién ha tenido relaciones sexuales sabiendo que alguien podía oírlo?',
+          '¿Quién ha tenido relaciones sexuales sabiendo que alguien podía oírle?',
       tone: ContentTone.hot,
     ),
     (
@@ -1684,7 +1680,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién deja siempre los chupetes a la vista?',
+      text: '¿Quién deja siempre los juguetes sexuales a la vista?',
       tone: ContentTone.hot,
     ),
     (
@@ -1702,7 +1698,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (
       text:
-          '¿Quién ha probado a tener sexo por la mañana nada más despertarse?',
+          '¿Quién ha probado a tener relaciones sexuales por la mañana nada más despertarse?',
       tone: ContentTone.hot,
     ),
     (
@@ -1715,7 +1711,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién le ha hecho un lap dance a su pareja?',
+      text: '¿Quién le ha hecho un baile erótico a su pareja?',
       tone: ContentTone.hot,
     ),
     (
@@ -1751,7 +1747,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién ha utilizado las esposas y ha perdido la llave?',
+      text: '¿Quién ha utilizado unas esposas y ha perdido la llave?',
       tone: ContentTone.hot,
     ),
     (text: '¿Quién tiene más parejas sexuales?', tone: ContentTone.hot),
@@ -1779,7 +1775,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién se acostó con una ex justo la semana pasada?',
+      text: '¿Quién se acostó con su ex justo la semana pasada?',
       tone: ContentTone.hot,
     ),
     (
@@ -1807,7 +1803,8 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién ha dejado que su pareja le grabara solo para él?',
+      text:
+          '¿Quién ha dejado que su pareja le grabara solo para tener un vídeo íntimo?',
       tone: ContentTone.hot,
     ),
     (

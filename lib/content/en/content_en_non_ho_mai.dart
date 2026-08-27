@@ -1,7 +1,5 @@
 import '../content_tone.dart';
 
-/// Generato da tool/generate_content.dart (traduzione DeepL dai
-/// pool italiani). Stesse posizioni e stesso tono degli originali IT.
 class ContentEnNonHoMai {
   const ContentEnNonHoMai._();
 
@@ -16,11 +14,11 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'singing at the top of my lungs in the shower',
+      text: 'sung at the top of my lungs in the shower',
       tone: ContentTone.normal,
     ),
     (
-      text: 'I pretended to know a song so I wouldn\'t make a fool of myself',
+      text: 'pretended to know a song so I wouldn\'t make a fool of myself',
       tone: ContentTone.normal,
     ),
     (text: 'forgotten a close friend\'s birthday', tone: ContentTone.normal),
@@ -31,19 +29,19 @@ class ContentEnNonHoMai {
     (text: 'dyed my hair a ridiculous color', tone: ContentTone.normal),
     (text: 'sent a message to the wrong person', tone: ContentTone.normal),
     (
-      text: 'I pretended to laugh at a joke I didn\'t understand',
+      text: 'pretended to laugh at a joke I didn\'t understand',
       tone: ContentTone.normal,
     ),
-    (text: 'spoken aloud to himself', tone: ContentTone.normal),
-    (text: 'I cried while watching a movie', tone: ContentTone.normal),
+    (text: 'spoken aloud to myself', tone: ContentTone.normal),
+    (text: 'cried while watching a movie', tone: ContentTone.normal),
     (text: 'watched an entire season in one day', tone: ContentTone.normal),
     (text: 'ate the pizza with a fork and knife', tone: ContentTone.normal),
     (text: 'put pineapple on the pizza', tone: ContentTone.normal),
     (text: 'cooked something inedible', tone: ContentTone.normal),
-    (text: 'I burned dinner', tone: ContentTone.normal),
+    (text: 'burned dinner', tone: ContentTone.normal),
     (text: 'forgot to turn off the stove', tone: ContentTone.normal),
     (text: 'locked the keys inside the house', tone: ContentTone.normal),
-    (text: 'I forgot where I had parked', tone: ContentTone.normal),
+    (text: 'forgot where I had parked', tone: ContentTone.normal),
     (text: 'got a ticket', tone: ContentTone.normal),
     (
       text: 'pretended not to see an acquaintance on the street',
@@ -52,15 +50,14 @@ class ContentEnNonHoMai {
     (text: 'made up an excuse not to go out', tone: ContentTone.normal),
     (text: 'canceled a plan at the last minute', tone: ContentTone.normal),
     (
-      text:
-          'I said, "I\'ll be there in five minutes," while I was still at home',
+      text: 'said "I\'ll be there in five minutes," while still at home',
       tone: ContentTone.normal,
     ),
     (text: 'went grocery shopping while hungry', tone: ContentTone.normal),
-    (text: 'I bought something I\'ve never used', tone: ContentTone.normal),
-    (text: 'I spent too much on something useless', tone: ContentTone.normal),
+    (text: 'bought something I\'ve never used', tone: ContentTone.normal),
+    (text: 'spent too much on something useless', tone: ContentTone.normal),
     (text: 'won a prize', tone: ContentTone.normal),
-    (text: 'sung at karaoke', tone: ContentTone.normal),
+    (text: 'sung karaoke', tone: ContentTone.normal),
     (text: 'danced without music', tone: ContentTone.normal),
     (
       text: 'played an instrument in front of someone',
@@ -69,7 +66,7 @@ class ContentEnNonHoMai {
     (text: 'slept at the airport', tone: ContentTone.normal),
     (text: 'slept in the car', tone: ContentTone.normal),
     (text: 'slept in a tent', tone: ContentTone.normal),
-    (text: 'I went for a swim in the ocean at night', tone: ContentTone.normal),
+    (text: 'went for a swim in the ocean at night', tone: ContentTone.normal),
     (text: 'was afraid of the dark as an adult', tone: ContentTone.normal),
     (text: 'slept with the light on', tone: ContentTone.normal),
     (text: 'screamed because of a nightmare', tone: ContentTone.normal),
@@ -90,7 +87,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I blamed someone else for something that was my fault',
+      text: 'blamed someone else for something that was my fault',
       tone: ContentTone.normal,
     ),
     (text: 'copied from a class test', tone: ContentTone.normal),
@@ -100,18 +97,18 @@ class ContentEnNonHoMai {
     ),
     (text: 'sent an email without the attachment', tone: ContentTone.normal),
     (
-      text: 'I got a person\'s name wrong while I was talking to them',
+      text: 'got a person\'s name wrong while I was talking to them',
       tone: ContentTone.normal,
     ),
     (text: 'forgot an important password', tone: ContentTone.normal),
-    (text: 'I searched for my name on the internet', tone: ContentTone.normal),
+    (text: 'searched for my name on the internet', tone: ContentTone.normal),
     (text: 'blocked someone on social media', tone: ContentTone.normal),
     (
       text: 'posted something and deleted it after five minutes',
       tone: ContentTone.normal,
     ),
     (
-      text: 'I pretended my phone was dead so I wouldn\'t have to answer',
+      text: 'pretended my phone was dead so I wouldn\'t have to answer',
       tone: ContentTone.normal,
     ),
     (
@@ -131,9 +128,9 @@ class ContentEnNonHoMai {
       text: 'spoken to an animal as if it understood everything',
       tone: ContentTone.normal,
     ),
-    (text: 'I named my car', tone: ContentTone.normal),
+    (text: 'named my car', tone: ContentTone.normal),
     (
-      text: 'I made a promise that I knew I wouldn\'t keep',
+      text: 'made a promise that I knew I wouldn\'t keep',
       tone: ContentTone.normal,
     ),
     (text: 'lied about my age', tone: ContentTone.normal),
@@ -147,7 +144,7 @@ class ContentEnNonHoMai {
     (text: 'asked for a raise', tone: ContentTone.normal),
     (text: 'changed jobs out of the blue', tone: ContentTone.normal),
     (
-      text: 'I had an interview for a job I didn\'t want',
+      text: 'had an interview for a job I didn\'t want',
       tone: ContentTone.normal,
     ),
     (
@@ -165,18 +162,18 @@ class ContentEnNonHoMai {
     (text: 'memorized a scene from a movie', tone: ContentTone.normal),
     (text: 'lost a stupid bet', tone: ContentTone.normal),
     (text: 'won at cards by cheating', tone: ContentTone.normal),
-    (text: 'Broken phone screen', tone: ContentTone.normal),
+    (text: 'had a broken phone screen', tone: ContentTone.normal),
     (text: 'left my phone at a bar', tone: ContentTone.normal),
     (text: 'crashed into a spotless glass door', tone: ContentTone.normal),
     (
       text:
-          'I waved to someone who was actually waving to the person behind me',
+          'waved to someone who was actually waving to the person behind me',
       tone: ContentTone.normal,
     ),
     (text: 'pulled on a door that said "push"', tone: ContentTone.normal),
     (
       text:
-          'I frantically searched for my phone while I was holding it in my hand',
+          'frantically searched for my phone while I was holding it in my hand',
       tone: ContentTone.normal,
     ),
     (
@@ -189,12 +186,12 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I listened to my voice again in a voice message and felt ashamed',
+      text: 'listened to my voice again in a voice message and felt ashamed',
       tone: ContentTone.normal,
     ),
     (
       text:
-          'I pretended to be on the phone so I wouldn\'t have to talk to someone',
+          'pretended to be on the phone so I wouldn\'t have to talk to someone',
       tone: ContentTone.normal,
     ),
     (text: 'applauded as the plane landed', tone: ContentTone.normal),
@@ -203,14 +200,14 @@ class ContentEnNonHoMai {
       text: 'stumbled in public and kept walking as if nothing had happened',
       tone: ContentTone.normal,
     ),
-    (text: 'I set ten alarms and ignored them all', tone: ContentTone.normal),
+    (text: 'set ten alarms and ignored them all', tone: ContentTone.normal),
     (
-      text: 'I Googled my symptoms and convinced myself I had a rare disease',
+      text: 'Googled my symptoms and convinced myself I had a rare disease',
       tone: ContentTone.normal,
     ),
-    (text: 'Crying Over a Commercial', tone: ContentTone.normal),
+    (text: 'cried over a commercial', tone: ContentTone.normal),
     (
-      text: 'I replied, "You too," to the waiter who wished me bon appétit',
+      text: 'replied, "You too," to the waiter who wished me bon appétit',
       tone: ContentTone.normal,
     ),
     (
@@ -228,13 +225,13 @@ class ContentEnNonHoMai {
     ),
     (
       text:
-          'I said, "One last episode, then I\'m going to sleep," and then watched the sunrise',
+          'said, "One last episode, then I\'m going to sleep," and then watched the sunrise',
       tone: ContentTone.normal,
     ),
-    (text: 'I forgot because I had gone into a room', tone: ContentTone.normal),
+    (text: 'forgot because I had gone into a room', tone: ContentTone.normal),
     (
       text:
-          'I laughed to myself as I thought back on an embarrassing moment from years ago',
+          'laughed to myself as I thought back on an embarrassing moment from years ago',
       tone: ContentTone.normal,
     ),
     (
@@ -248,16 +245,16 @@ class ContentEnNonHoMai {
     ),
     (text: 'argued loudly with the GPS', tone: ContentTone.normal),
     (
-      text: 'I reread a message twenty times before sending it',
+      text: 'reread a message twenty times before sending it',
       tone: ContentTone.normal,
     ),
     (
       text:
-          'I just asked for a quick trim and came out of the hair salon unrecognizable',
+          'asked for a quick trim and came out of the hair salon unrecognizable',
       tone: ContentTone.normal,
     ),
     (
-      text: 'I\'ve spent hours watching videos of animals',
+      text: 'spent hours watching videos of animals',
       tone: ContentTone.normal,
     ),
     (
@@ -269,7 +266,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I clicked "OK" just to end the discussion',
+      text: 'clicked "OK" just to end the discussion',
       tone: ContentTone.normal,
     ),
     (text: 'put on my pajamas at 6:00 p.m.', tone: ContentTone.normal),
@@ -288,7 +285,7 @@ class ContentEnNonHoMai {
     ),
     (text: 'talked to the houseplants', tone: ContentTone.normal),
     (
-      text: 'I blamed the dog for something I had done',
+      text: 'blamed the dog for something I had done',
       tone: ContentTone.normal,
     ),
     (
@@ -296,17 +293,17 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I hid the desserts so I wouldn\'t have to share them',
+      text: 'hid the desserts so I wouldn\'t have to share them',
       tone: ContentTone.normal,
     ),
     (
       text:
-          'I opened the fridge ten times, hoping to find something new to eat',
+          'opened the fridge ten times, hoping to find something new to eat',
       tone: ContentTone.normal,
     ),
     (
       text:
-          'I used the excuse "I have to get up early tomorrow" to leave a party',
+          'used the excuse "I have to get up early tomorrow" to leave a party',
       tone: ContentTone.normal,
     ),
     (
@@ -314,7 +311,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I ordered takeout after forgetting to defrost dinner',
+      text: 'ordered takeout after forgetting to defrost dinner',
       tone: ContentTone.normal,
     ),
     (
@@ -330,12 +327,12 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I\'ve started ten books without finishing a single one',
+      text: 'started ten books without finishing a single one',
       tone: ContentTone.normal,
     ),
     (text: '"liked" a post without reading it', tone: ContentTone.normal),
     (
-      text: 'I took a hundred identical photos just to choose one',
+      text: 'took a hundred identical photos just to choose one',
       tone: ContentTone.normal,
     ),
     (
@@ -344,7 +341,7 @@ class ContentEnNonHoMai {
     ),
     (text: 'used a filter on every photo posted', tone: ContentTone.normal),
     (
-      text: 'I\'ve re-read my stories more times than I care to admit',
+      text: 're-read my stories more times than I care to admit',
       tone: ContentTone.normal,
     ),
     (
@@ -357,7 +354,7 @@ class ContentEnNonHoMai {
     ),
     (text: 'won an imaginary argument in the shower', tone: ContentTone.normal),
     (
-      text: 'I\'ve given my pet ten different nicknames',
+      text: 'given my pet ten different nicknames',
       tone: ContentTone.normal,
     ),
     (
@@ -369,7 +366,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I wore mismatched socks, hoping no one would notice',
+      text: 'wore mismatched socks, hoping no one would notice',
       tone: ContentTone.normal,
     ),
     (text: 'slept with a stuffed animal as an adult', tone: ContentTone.normal),
@@ -378,18 +375,18 @@ class ContentEnNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'I ran up the stairs after turning off the light',
+      text: 'ran up the stairs after turning off the light',
       tone: ContentTone.normal,
     ),
     (
-      text: 'I was thrilled to find a parking spot on the first try',
+      text: 'was thrilled to find a parking spot on the first try',
       tone: ContentTone.normal,
     ),
     (text: 'kissed someone on the first night', tone: ContentTone.mix),
     (text: 'had a crush on someone in this group', tone: ContentTone.mix),
     (text: 'had a crush on a friend\'s partner', tone: ContentTone.mix),
     (
-      text: 'A message sent to an ex in the middle of the night',
+      text: 'sent a message to an ex in the middle of the night',
       tone: ContentTone.mix,
     ),
     (text: 'replied to an ex after months of silence', tone: ContentTone.mix),
@@ -397,7 +394,7 @@ class ContentEnNonHoMai {
       text: 'pretended to be asleep to avoid a moment of intimacy',
       tone: ContentTone.mix,
     ),
-    (text: 'I lied to the person I was dating', tone: ContentTone.mix),
+    (text: 'lied to the person I was dating', tone: ContentTone.mix),
     (text: 'checked a partner\'s phone', tone: ContentTone.mix),
     (text: 'had two appointments on the same day', tone: ContentTone.mix),
     (text: 'flirted with two people on the same night', tone: ContentTone.mix),
@@ -420,13 +417,13 @@ class ContentEnNonHoMai {
       text: 'stayed overnight at the home of someone I had just met',
       tone: ContentTone.mix,
     ),
-    (text: 'I lost track of how much I\'d had to drink', tone: ContentTone.mix),
+    (text: 'lost track of how much I\'d had to drink', tone: ContentTone.mix),
     (text: 'done something embarrassing while drunk', tone: ContentTone.mix),
     (
-      text: 'The next morning, I regret the messages I sent the night before',
+      text: 'regretted the messages I sent the night before',
       tone: ContentTone.mix,
     ),
-    (text: 'I\'ve forgotten parts of an entire evening', tone: ContentTone.mix),
+    (text: 'forgotten parts of an entire evening', tone: ContentTone.mix),
     (text: 'sung on the street at four in the morning', tone: ContentTone.mix),
     (text: 'went swimming without a swimsuit', tone: ContentTone.mix),
     (
@@ -435,9 +432,9 @@ class ContentEnNonHoMai {
     ),
     (text: 'forgot to close the bathroom door', tone: ContentTone.mix),
     (text: 'told a huge lie on a first date', tone: ContentTone.mix),
-    (text: 'pretend to be single', tone: ContentTone.mix),
+    (text: 'pretended to be single', tone: ContentTone.mix),
     (
-      text: 'I checked out my ex\'s new partner\'s profile',
+      text: 'checked out my ex\'s new partner\'s profile',
       tone: ContentTone.mix,
     ),
     (text: 'had a public argument with a partner', tone: ContentTone.mix),
@@ -447,7 +444,7 @@ class ContentEnNonHoMai {
     ),
     (text: 'kissed someone as part of a bet', tone: ContentTone.mix),
     (
-      text: 'I regret an answer I gave to "Truth or Dare"',
+      text: 'regret an answer I gave to "Truth or Dare"',
       tone: ContentTone.mix,
     ),
     (
@@ -456,39 +453,39 @@ class ContentEnNonHoMai {
     ),
     (text: 'had a fling at work', tone: ContentTone.mix),
     (
-      text: 'I wrote to my boss about things I shouldn\'t have',
+      text: 'wrote to my boss about things I shouldn\'t have',
       tone: ContentTone.mix,
     ),
     (text: 'stood someone up without letting them know', tone: ContentTone.mix),
     (
       text:
-          'I said, "Want to come up for a drink?" knowing full well what I meant',
+          'said, "Want to come up for a drink?" knowing full well what I meant',
       tone: ContentTone.mix,
     ),
     (text: 'kissed someone in a club bathroom', tone: ContentTone.mix),
     (
       text:
-          'I sat through an entire movie at the theater without watching a single scene',
+          'sat through an entire movie at the theater without watching a single scene',
       tone: ContentTone.mix,
     ),
     (text: 'kept an embarrassing photo of a friend', tone: ContentTone.mix),
     (
-      text: 'viewed someone\'s profile up to three years ago',
+      text: 'looked at someone\'s profile from three years ago',
       tone: ContentTone.mix,
     ),
-    (text: 'I commented on a post just to get noticed', tone: ContentTone.mix),
+    (text: 'commented on a post just to get noticed', tone: ContentTone.mix),
     (
-      text: 'I lied about where I was spending the evening',
+      text: 'lied about where I was spending the evening',
       tone: ContentTone.mix,
     ),
-    (text: 'I said I was home when I was actually out', tone: ContentTone.mix),
-    (text: 'I hid a relationship from my family', tone: ContentTone.mix),
+    (text: 'said I was home when I was actually out', tone: ContentTone.mix),
+    (text: 'hid a relationship from my family', tone: ContentTone.mix),
     (
-      text: 'I kissed someone whose name I couldn\'t remember',
+      text: 'kissed someone whose name I couldn\'t remember',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I asked a friend to call me so I could get out of a date',
+      text: 'asked a friend to call me so I could get out of a date',
       tone: ContentTone.mix,
     ),
     (
@@ -496,32 +493,32 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I ended the evening at a place I don\'t remember',
+      text: 'ended the evening at a place I don\'t remember',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I gave my number to someone I had just met at a club',
+      text: 'gave my number to someone I had just met at a club',
       tone: ContentTone.mix,
     ),
     (text: 'told a lie during this game', tone: ContentTone.mix),
     (text: 'ghosted someone without explanation', tone: ContentTone.mix),
-    (text: 'I reread an old chat out of nostalgia', tone: ContentTone.mix),
+    (text: 'reread an old chat out of nostalgia', tone: ContentTone.mix),
     (
       text:
-          'I liked a photo from three years ago while stalking someone late at night',
+          'liked a photo from three years ago while stalking someone late at night',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I made up an imaginary partner just to get rid of someone',
+      text: 'made up an imaginary partner just to get rid of someone',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I practiced pickup lines in front of the mirror',
+      text: 'practiced pickup lines in front of the mirror',
       tone: ContentTone.mix,
     ),
     (text: 'kissed a friend\'s ex', tone: ContentTone.mix),
     (
-      text: 'I asked a friend to find out if anyone liked me',
+      text: 'asked a friend to find out if anyone liked me',
       tone: ContentTone.mix,
     ),
     (
@@ -531,15 +528,15 @@ class ContentEnNonHoMai {
     (text: 'had a one-night stand', tone: ContentTone.mix),
     (
       text:
-          'I took the walk of shame while still wearing the clothes from the night before',
+          'took the walk of shame while still wearing the clothes from the night before',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I sent a photo that I would never send to my family',
+      text: 'sent a photo that I would never send to my family',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I had a very explicit dream about someone in this room',
+      text: 'had a very explicit dream about someone in this room',
       tone: ContentTone.mix,
     ),
     (
@@ -547,20 +544,20 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I spent the night out and lied about where I was',
+      text: 'spent the night out and lied about where I was',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I saved a contact under a fake name so I wouldn\'t get caught',
+      text: 'saved a contact under a fake name so I wouldn\'t get caught',
       tone: ContentTone.mix,
     ),
     (
       text: 'kissed someone just because it was midnight on New Year\'s Eve',
       tone: ContentTone.mix,
     ),
-    (text: 'I sexted late into the night', tone: ContentTone.mix),
+    (text: 'sexted late into the night', tone: ContentTone.mix),
     (
-      text: 'I started a conversation that turned into sexting',
+      text: 'started a conversation that turned into sexting',
       tone: ContentTone.mix,
     ),
     (
@@ -570,7 +567,7 @@ class ContentEnNonHoMai {
     (text: 'had a fantasy about a coworker', tone: ContentTone.mix),
     (
       text:
-          'I went for a massage, but it turned out to be something completely different',
+          'went for a massage, but it turned out to be something completely different',
       tone: ContentTone.mix,
     ),
     (
@@ -578,11 +575,11 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I bought underwear thinking about who would see it',
+      text: 'bought underwear thinking about who would see it',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I was flirting at the gym instead of working out',
+      text: 'was flirting at the gym instead of working out',
       tone: ContentTone.mix,
     ),
     (
@@ -592,7 +589,7 @@ class ContentEnNonHoMai {
     (text: 'kissed someone in the elevator', tone: ContentTone.mix),
     (text: 'took a shower with someone else', tone: ContentTone.mix),
     (
-      text: 'I shared a bed with a friend, wondering if anything would happen',
+      text: 'shared a bed with a friend, wondering if anything would happen',
       tone: ContentTone.mix,
     ),
     (text: 'kissed someone during a game like this', tone: ContentTone.mix),
@@ -601,7 +598,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I didn\'t say a word in front of someone I liked',
+      text: 'didn\'t say a word in front of someone I liked',
       tone: ContentTone.mix,
     ),
     (text: 'paid a bold compliment to a stranger', tone: ContentTone.mix),
@@ -610,7 +607,7 @@ class ContentEnNonHoMai {
     (text: 'faked an orgasm', tone: ContentTone.mix),
     (
       text:
-          'I\'ve sexted with someone I\'ve known for less than twenty-four hours',
+          'sexted with someone I\'ve known for less than twenty-four hours',
       tone: ContentTone.mix,
     ),
     (text: 'was the first to ask for a risqué photo', tone: ContentTone.mix),
@@ -621,7 +618,7 @@ class ContentEnNonHoMai {
     (text: 'had sex in a public place', tone: ContentTone.mix),
     (
       text:
-          'The windows of a car were fogged up, and it wasn\'t because of the cold',
+          'had the windows of a car fog up, and it wasn\'t because of the cold',
       tone: ContentTone.mix,
     ),
     (
@@ -629,12 +626,12 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I spent the night with someone whose name I couldn\'t remember',
+      text: 'spent the night with someone whose name I couldn\'t remember',
       tone: ContentTone.mix,
     ),
     (
       text:
-          'I ran into an acquaintance during my walk of shame and said hi as if nothing had happened',
+          'ran into an acquaintance during my walk of shame and said hi as if nothing had happened',
       tone: ContentTone.mix,
     ),
     (
@@ -666,7 +663,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I flirted with someone to get them to buy me something',
+      text: 'flirted with someone to get them to buy me something',
       tone: ContentTone.mix,
     ),
     (
@@ -674,19 +671,19 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (text: 'used a pickup line I found on the internet', tone: ContentTone.mix),
-    (text: 'picked up at the gym', tone: ContentTone.mix),
-    (text: 'picked up at a wedding', tone: ContentTone.mix),
-    (text: 'picked up at the supermarket', tone: ContentTone.mix),
+    (text: 'picked someone up at the gym', tone: ContentTone.mix),
+    (text: 'picked someone up at a wedding', tone: ContentTone.mix),
+    (text: 'picked someone up at the supermarket', tone: ContentTone.mix),
     (text: 'kissed my best friend (male or female)', tone: ContentTone.mix),
     (text: 'felt attracted to a friend\'s partner', tone: ContentTone.mix),
     (text: 'had sex with a coworker', tone: ContentTone.mix),
     (
-      text: 'I had a relationship with someone much older than me',
+      text: 'had a relationship with someone much older than me',
       tone: ContentTone.mix,
     ),
     (text: 'lied about my body count', tone: ContentTone.mix),
     (
-      text: 'I forgot someone\'s name while we were in bed',
+      text: 'forgot someone\'s name while we were in bed',
       tone: ContentTone.mix,
     ),
     (
@@ -699,11 +696,11 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I sent a message that was too direct without thinking about it',
+      text: 'sent a message that was too direct without thinking about it',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I reread my sexting messages and felt a sense of pride',
+      text: 'reread my sexting messages and felt a sense of pride',
       tone: ContentTone.mix,
     ),
     (
@@ -711,15 +708,15 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'I checked my phone while the other person was sleeping next to me',
+      text: 'checked my phone while the other person was sleeping next to me',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I searched online for ways to improve my performance in bed',
+      text: 'searched online for ways to improve my performance in bed',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I asked a friend for an honest opinion about my talents',
+      text: 'asked a friend for an honest opinion about my talents',
       tone: ContentTone.mix,
     ),
     (text: 'watched an adult movie with friends', tone: ContentTone.mix),
@@ -729,10 +726,10 @@ class ContentEnNonHoMai {
     ),
     (text: 'had sex in the shower', tone: ContentTone.mix),
     (text: 'had sex on someone else\'s couch', tone: ContentTone.mix),
-    (text: 'I made noise on purpose so they would hear', tone: ContentTone.mix),
-    (text: 'I had to hide quickly when someone arrived', tone: ContentTone.mix),
+    (text: 'made noise on purpose so they would hear', tone: ContentTone.mix),
+    (text: 'had to hide quickly when someone arrived', tone: ContentTone.mix),
     (
-      text: 'I put my running clothes back on and put on the wrong T-shirt',
+      text: 'put my running clothes back on and then put on the wrong T-shirt',
       tone: ContentTone.mix,
     ),
     (text: 'left visible marks on someone\'s neck', tone: ContentTone.mix),
@@ -745,31 +742,30 @@ class ContentEnNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text:
-          'I rated a night out after talking about it with my friends the next day',
+      text: 'rated a night out with my friends the next day',
       tone: ContentTone.mix,
     ),
-    (text: 'I made a list of my exes with my friends', tone: ContentTone.mix),
-    (text: 'Ran into a one-night stand at work', tone: ContentTone.mix),
+    (text: 'made a list of my exes with my friends', tone: ContentTone.mix),
+    (text: 'ran into a one-night stand at work', tone: ContentTone.mix),
     (
       text: 'flirted with two people at the same time on the same night',
       tone: ContentTone.mix,
     ),
     (
-      text: 'I used a dating app while sitting next to my friends',
+      text: 'used a dating app while sitting next to my friends',
       tone: ContentTone.mix,
     ),
     (
       text:
-          'played a match without ever writing anything, for fear of taking the first step',
+          'matched with someone without ever messaging them, for fear of making the first move',
       tone: ContentTone.mix,
     ),
-    (text: 'I made the first move and was rejected', tone: ContentTone.mix),
+    (text: 'made the first move and was rejected', tone: ContentTone.mix),
     (
-      text: 'I kissed someone in the rain and felt like I was in a movie',
+      text: 'kissed someone in the rain and felt like I was in a movie',
       tone: ContentTone.mix,
     ),
-    (text: 'I set up a "chance" meeting with my crush', tone: ContentTone.mix),
+    (text: 'set up a "chance" meeting with my crush', tone: ContentTone.mix),
     (
       text: 'offered a massage with obvious ulterior motives',
       tone: ContentTone.mix,
@@ -793,23 +789,23 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'had a multiple orgasm during the same sexual encounter',
+      text: 'had multiple orgasms during the same sexual encounter',
       tone: ContentTone.hot,
     ),
     (
-      text: 'faked an orgasm to make her partner finish sooner',
+      text: 'faked an orgasm to make my partner finish sooner',
       tone: ContentTone.hot,
     ),
     (text: 'reached orgasm through oral sex alone', tone: ContentTone.hot),
     (
-      text: 'I ejaculated or shot farther than I thought I would',
+      text: 'ejaculated or came farther than I thought I would',
       tone: ContentTone.hot,
     ),
     (text: 'swallowed my partner\'s semen', tone: ContentTone.hot),
     (text: 'spit out the semen after oral sex', tone: ContentTone.hot),
     (text: 'had oral sex with a partner I had just met', tone: ContentTone.hot),
     (
-      text: 'I received oral sex while I was on the phone',
+      text: 'received oral sex while I was on the phone',
       tone: ContentTone.hot,
     ),
     (text: 'had oral sex in the car', tone: ContentTone.hot),
@@ -821,7 +817,7 @@ class ContentEnNonHoMai {
     (text: 'tried rimming with a partner', tone: ContentTone.hot),
     (text: 'had sex in the doggy-style position', tone: ContentTone.hot),
     (text: 'tried the 69 position', tone: ContentTone.hot),
-    (text: 'had sex under the shower', tone: ContentTone.hot),
+    (text: 'had sex in the shower', tone: ContentTone.hot),
     (text: 'had sex in the bathtub', tone: ContentTone.hot),
     (text: 'had sex in the pool', tone: ContentTone.hot),
     (text: 'made love on a beach at night', tone: ContentTone.hot),
@@ -845,31 +841,31 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (text: 'used a sex toy with a partner', tone: ContentTone.hot),
-    (text: 'I used a vibrator on myself', tone: ContentTone.hot),
-    (text: 'I used a dildo with my partner', tone: ContentTone.hot),
+    (text: 'used a vibrator on myself', tone: ContentTone.hot),
+    (text: 'used a dildo with my partner', tone: ContentTone.hot),
     (text: 'tried a cock ring during sex', tone: ContentTone.hot),
     (text: 'used an anal plug', tone: ContentTone.hot),
     (text: 'used handcuffs during sex', tone: ContentTone.hot),
     (
-      text: 'I tied someone up, or I let myself be tied up during sex',
+      text: 'tied someone up or let myself be tied up during sex',
       tone: ContentTone.hot,
     ),
     (text: 'tried rope bondage', tone: ContentTone.hot),
     (text: 'wore a blindfold during sex', tone: ContentTone.hot),
-    (
-      text: 'tried spanking, spanking someone, or being spanked',
-      tone: ContentTone.hot,
-    ),
+    (text: 'tried spanking someone or being spanked', tone: ContentTone.hot),
     (text: 'pulled their partner\'s hair during sex', tone: ContentTone.hot),
     (
-      text: 'I tried soft choking by placing a hand on his neck',
+      text: 'tried light choking by placing a hand on my partner\'s neck',
       tone: ContentTone.hot,
     ),
     (
-      text: 'said dirty words to their partner during sex',
+      text: 'said dirty things to their partner during sex',
       tone: ContentTone.hot,
     ),
-    (text: 'had some dirty talk on the phone', tone: ContentTone.hot),
+    (
+      text: 'had phone sex or engaged in dirty talk over the phone',
+      tone: ContentTone.hot,
+    ),
     (text: 'played an erotic role-playing game in bed', tone: ContentTone.hot),
     (
       text: 'wore a costume for a sexual role-playing game',
@@ -883,10 +879,7 @@ class ContentEnNonHoMai {
       text: 'applied hot candle wax to their partner\'s body',
       tone: ContentTone.hot,
     ),
-    (
-      text: 'tried out the ice game during the preliminaries',
-      tone: ContentTone.hot,
-    ),
+    (text: 'tried ice play during foreplay', tone: ContentTone.hot),
     (
       text: 'licked cream or chocolate off their partner\'s body',
       tone: ContentTone.hot,
@@ -898,10 +891,10 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (text: 'had sex three times in the same night', tone: ContentTone.hot),
-    (text: 'had an all-night sex marathon', tone: ContentTone.hot),
+    (text: 'had sex all night', tone: ContentTone.hot),
     (text: 'sent a nude photo to someone', tone: ContentTone.hot),
     (text: 'received an unexpected nude photo', tone: ContentTone.hot),
-    (text: 'I filmed a video of myself masturbating', tone: ContentTone.hot),
+    (text: 'filmed a video of myself masturbating', tone: ContentTone.hot),
     (text: 'filmed a sexual encounter to rewatch it', tone: ContentTone.hot),
     (text: 'watched a steamy video made with an ex', tone: ContentTone.hot),
     (text: 'engaged in sexting during work hours', tone: ContentTone.hot),
@@ -915,7 +908,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'masturbated someone under a table at a restaurant',
+      text: 'masturbated someone under a restaurant table',
       tone: ContentTone.hot,
     ),
     (
@@ -930,7 +923,7 @@ class ContentEnNonHoMai {
       text: 'had sex knowing that someone might have heard us',
       tone: ContentTone.hot,
     ),
-    (text: 'watched another couple have sex in person', tone: ContentTone.hot),
+    (text: 'watched another couple have sex', tone: ContentTone.hot),
     (text: 'had sex while someone was watching', tone: ContentTone.hot),
     (text: 'swapped partners with another couple', tone: ContentTone.hot),
     (text: 'took part in an orgy', tone: ContentTone.hot),
@@ -949,39 +942,42 @@ class ContentEnNonHoMai {
       text: 'had a relationship based solely on sex, without any feelings',
       tone: ContentTone.hot,
     ),
-    (text: 'had a friend with benefits', tone: ContentTone.hot),
+    (text: 'had a friends-with-benefits relationship', tone: ContentTone.hot),
     (text: 'reached orgasm using only a sex toy', tone: ContentTone.hot),
     (text: 'had a one-night stand with a stranger', tone: ContentTone.hot),
-    (text: 'picked someone up just to sleep with them', tone: ContentTone.hot),
+    (
+      text: 'picked someone up just to have sex with them',
+      tone: ContentTone.hot,
+    ),
     (text: 'used a dating app just to find sex', tone: ContentTone.hot),
     (
-      text: 'had sex without clearly remembering the partner\'s name',
+      text: 'had sex without clearly remembering my partner\'s name',
       tone: ContentTone.hot,
     ),
-    (text: 'I had sex with someone much older than me', tone: ContentTone.hot),
+    (text: 'had sex with someone much older than me', tone: ContentTone.hot),
+    (text: 'had sex with someone much younger than me', tone: ContentTone.hot),
     (
-      text: 'I\'ve had sex with someone much younger than me',
-      tone: ContentTone.hot,
-    ),
-    (
-      text: 'had a secret crush on a friend of my partner\'s',
+      text: 'had a secret crush on a friend of my partner',
       tone: ContentTone.hot,
     ),
     (text: 'daydreamed about someone in this room', tone: ContentTone.hot),
     (
       text:
-          'I had a sexual fantasy about an ex of mine while having sex with my current partner',
+          'had a sexual fantasy about an ex of mine while having sex with my current partner',
       tone: ContentTone.hot,
     ),
-    (text: 'I imagined a celebrity while having sex', tone: ContentTone.hot),
+    (text: 'imagined a celebrity while having sex', tone: ContentTone.hot),
     (
-      text: 'I fantasized about being watched while having sex',
+      text: 'fantasized about being watched while having sex',
       tone: ContentTone.hot,
     ),
     (text: 'had a fantasy about a threesome', tone: ContentTone.hot),
-    (text: 'I felt aroused watching two people kiss', tone: ContentTone.hot),
     (
-      text: 'I discovered a fetish I didn\'t realize I had',
+      text: 'felt aroused while watching two people kiss',
+      tone: ContentTone.hot,
+    ),
+    (
+      text: 'discovered a fetish I didn\'t realize I had',
       tone: ContentTone.hot,
     ),
     (text: 'had a foot fetish', tone: ContentTone.hot),
@@ -994,18 +990,15 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'I tried out a bit of exhibitionism by showing myself at a window',
+      text: 'tried a bit of exhibitionism by exposing myself at a window',
       tone: ContentTone.hot,
     ),
     (
       text:
-          'I had sex with the light on in front of the mirror so I could watch myself',
+          'had sex with the light on in front of the mirror so I could watch myself',
       tone: ContentTone.hot,
     ),
-    (
-      text: 'used a mirror to watch ourselves during sex',
-      tone: ContentTone.hot,
-    ),
+    (text: 'used a mirror to watch ourselves have sex', tone: ContentTone.hot),
     (
       text: 'masturbated while thinking about a coworker',
       tone: ContentTone.hot,
@@ -1025,14 +1018,11 @@ class ContentEnNonHoMai {
     ),
     (text: 'had sex while menstruating', tone: ContentTone.hot),
     (
-      text: 'We took a shower together after sex and then started over',
+      text: 'took a shower together after sex and then started over',
       tone: ContentTone.hot,
     ),
-    (text: 'used the lubricant for the first time', tone: ContentTone.hot),
-    (
-      text: 'I tried a lubricant that warms you up or makes you tingle',
-      tone: ContentTone.hot,
-    ),
+    (text: 'used lubricant for the first time', tone: ContentTone.hot),
+    (text: 'tried a lubricant that warms or tingles', tone: ContentTone.hot),
     (text: 'used flavored condoms', tone: ContentTone.hot),
     (
       text: 'forgot to use a condom in the heat of the moment',
@@ -1047,36 +1037,33 @@ class ContentEnNonHoMai {
     ),
     (
       text:
-          'I tried blindfolded sex at a party without knowing who was touching me',
+          'tried blindfolded sex at a party without knowing who was touching me',
       tone: ContentTone.hot,
     ),
     (
       text:
-          'I\'ve been in a gangbang or been the center of attention for several people',
+          'been in a gangbang or been the center of attention for several people',
       tone: ContentTone.hot,
     ),
     (
-      text: 'stripped someone completely naked with my teeth',
+      text: 'stripped someone completely naked using my teeth',
       tone: ContentTone.hot,
     ),
     (
-      text: 'tore off his partner\'s clothes in the heat of the moment',
+      text: 'tore off my partner\'s clothes in the heat of the moment',
       tone: ContentTone.hot,
     ),
     (text: 'performed a lap dance for someone', tone: ContentTone.hot),
     (text: 'received a lap dance at an adult club', tone: ContentTone.hot),
     (text: 'paid for a private lap dance', tone: ContentTone.hot),
     (text: 'attended a live adult show', tone: ContentTone.hot),
-    (text: 'I tried pegging with my partner', tone: ContentTone.hot),
+    (text: 'tried pegging with my partner', tone: ContentTone.hot),
     (text: 'used a whip or a crop during sex', tone: ContentTone.hot),
-    (text: 'I tried the nipple clamps', tone: ContentTone.hot),
-    (
-      text: 'Have you tried wax play or temperature play?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'tried nipple clamps', tone: ContentTone.hot),
+    (text: 'tried wax play or temperature play', tone: ContentTone.hot),
     (text: 'had an orgasm just from nipple stimulation', tone: ContentTone.hot),
     (
-      text: 'have experienced squirting or made a partner squirt',
+      text: 'experienced squirting or made a partner squirt',
       tone: ContentTone.hot,
     ),
     (
@@ -1090,7 +1077,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'We masturbated together while looking at each other',
+      text: 'masturbated together while looking at each other',
       tone: ContentTone.hot,
     ),
     (
@@ -1098,7 +1085,7 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (text: 'had sex leaning against the bathroom sink', tone: ContentTone.hot),
-    (text: 'I tried the cowgirl position from above', tone: ContentTone.hot),
+    (text: 'tried the cowgirl position', tone: ContentTone.hot),
     (
       text: 'had sex on a washing machine while it was spinning',
       tone: ContentTone.hot,
@@ -1112,12 +1099,12 @@ class ContentEnNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'I accidentally sent racy messages to the wrong person',
+      text: 'accidentally sent racy messages to the wrong person',
       tone: ContentTone.hot,
     ),
     (text: 'had sex in a very crowded public place', tone: ContentTone.hot),
     (
-      text: 'I\'ve tried edging by stopping just before orgasm several times',
+      text: 'tried edging by stopping just before orgasm several times',
       tone: ContentTone.hot,
     ),
   ];
