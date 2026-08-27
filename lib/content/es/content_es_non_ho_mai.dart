@@ -9,10 +9,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (text: 'dormido hasta después del mediodía', tone: ContentTone.normal),
-    (
-      text: 'comido algo que se había caído al suelo',
-      tone: ContentTone.normal,
-    ),
+    (text: 'comido algo que se había caído al suelo', tone: ContentTone.normal),
     (text: 'cantado a todo pulmón bajo la ducha', tone: ContentTone.normal),
     (
       text: 'fingido conocer una canción para no quedar mal',
@@ -26,10 +23,7 @@ class ContentEsNonHoMai {
     (text: 'viajado solo', tone: ContentTone.normal),
     (text: 'roto un hueso', tone: ContentTone.normal),
     (text: 'hecho un tatuaje', tone: ContentTone.normal),
-    (
-      text: 'teñido el pelo de un color absurdo',
-      tone: ContentTone.normal,
-    ),
+    (text: 'teñido el pelo de un color absurdo', tone: ContentTone.normal),
     (
       text: 'enviado un mensaje a la persona equivocada',
       tone: ContentTone.normal,
@@ -44,29 +38,17 @@ class ContentEsNonHoMai {
     (text: 'comido la pizza con cubiertos', tone: ContentTone.normal),
     (text: 'puesto piña en la pizza', tone: ContentTone.normal),
     (text: 'cocinado algo que no se podía comer', tone: ContentTone.normal),
-    (text: 'se me ha quemado la cena', tone: ContentTone.normal),
-    (
-      text: 'se me olvidó que había dejado el fogón encendido',
-      tone: ContentTone.normal,
-    ),
+    (text: 'quemado la cena', tone: ContentTone.normal),
+    (text: 'olvidado el fogón encendido', tone: ContentTone.normal),
     (text: 'dejado las llaves dentro de casa', tone: ContentTone.normal),
-    (
-      text: 'se me había olvidado dónde había aparcado el coche',
-      tone: ContentTone.normal,
-    ),
-    (text: 'me han puesto una multa', tone: ContentTone.normal),
+    (text: 'olvidado dónde había aparcado el coche', tone: ContentTone.normal),
+    (text: 'recibido una multa', tone: ContentTone.normal),
     (
       text: 'hecho como si no viera a un conocido por la calle',
       tone: ContentTone.normal,
     ),
-    (
-      text: 'inventado una excusa para no salir',
-      tone: ContentTone.normal,
-    ),
-    (
-      text: 'cancelado un plan en el último momento',
-      tone: ContentTone.normal,
-    ),
+    (text: 'inventado una excusa para no salir', tone: ContentTone.normal),
+    (text: 'cancelado un plan en el último momento', tone: ContentTone.normal),
     (
       text: 'dicho «llegaré en cinco minutos» cuando todavía estaba en casa',
       tone: ContentTone.normal,
@@ -84,11 +66,8 @@ class ContentEsNonHoMai {
     (text: 'dormido en el aeropuerto', tone: ContentTone.normal),
     (text: 'dormido en el coche', tone: ContentTone.normal),
     (text: 'dormido en una tienda de campaña', tone: ContentTone.normal),
-    (text: 'bañado en el mar por la noche', tone: ContentTone.normal),
-    (
-      text: 'tenido miedo a la oscuridad de adulto',
-      tone: ContentTone.normal,
-    ),
+    (text: 'me he bañado en el mar por la noche', tone: ContentTone.normal),
+    (text: 'tenido miedo a la oscuridad de adulto', tone: ContentTone.normal),
     (text: 'dormido con la luz encendida', tone: ContentTone.normal),
     (text: 'gritado por una pesadilla', tone: ContentTone.normal),
     (text: 'caminado mientras dormía', tone: ContentTone.normal),
@@ -108,7 +87,7 @@ class ContentEsNonHoMai {
     (text: 'le he derramado algo encima a alguien', tone: ContentTone.normal),
     (text: 'roto algo valioso sin decirlo', tone: ContentTone.normal),
     (
-      text: 'echado la culpa a otra persona por algo que me había pasado a mí',
+      text: 'echado la culpa a otra persona por algo que había hecho yo',
       tone: ContentTone.normal,
     ),
     (text: 'copiado en un examen', tone: ContentTone.normal),
@@ -136,15 +115,17 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'fingido que el móvil se había quedado sin batería para no contestar',
+      text:
+          'fingido que el móvil se había quedado sin batería para no contestar',
       tone: ContentTone.normal,
     ),
     (
-      text: 'respondido al cabo de unos días fingiendo que no había visto el mensaje',
+      text:
+          'respondido al cabo de unos días fingiendo que no había visto el mensaje',
       tone: ContentTone.normal,
     ),
     (
-      text: 'utilizado il wifi de otra persona sin pedir permiso',
+      text: 'utilizado el wifi de otra persona sin pedir permiso',
       tone: ContentTone.normal,
     ),
     (
@@ -183,7 +164,8 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'comido en un restaurante de comida rápida dos veces en el mismo día',
+      text:
+          'comido en un restaurante de comida rápida dos veces en el mismo día',
       tone: ContentTone.normal,
     ),
     (text: 'tomado un helado para desayunar', tone: ContentTone.normal),
@@ -208,7 +190,8 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'saludado a alguien que, en realidad, estaba saludando a la persona que estaba detrás de mí',
+      text:
+          'saludado a alguien que, en realidad, estaba saludando a la persona que estaba detrás de mí',
       tone: ContentTone.normal,
     ),
     (
@@ -224,15 +207,18 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'enviado un mensaje de voz de cinco minutos para algo que dura diez segundos',
+      text:
+          'enviado un mensaje de voz de cinco minutos para algo que dura diez segundos',
       tone: ContentTone.normal,
     ),
     (
-      text: 'vuelto a escuchar mi voz en un mensaje de voz y me he sentido avergonzado',
+      text:
+          'vuelto a escuchar mi voz en un mensaje de voz y me he sentido avergonzado',
       tone: ContentTone.normal,
     ),
     (
-      text: 'fingido estar hablando por teléfono para no tener que hablar con alguien',
+      text:
+          'fingido estar hablando por teléfono para no tener que hablar con alguien',
       tone: ContentTone.normal,
     ),
     (text: 'aplaudido al aterrizar el avión', tone: ContentTone.normal),
@@ -241,15 +227,14 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'tropezado en público y he seguido caminando como si nada hubiera pasado',
+      text:
+          'tropezado en público y he seguido caminando como si nada hubiera pasado',
       tone: ContentTone.normal,
     ),
+    (text: 'puesto diez alarmas e ignorado todas', tone: ContentTone.normal),
     (
-      text: 'puesto diez alarmas e ignorado todas',
-      tone: ContentTone.normal,
-    ),
-    (
-      text: 'buscado mis síntomas en Google y convencido de que padecía una enfermedad rara',
+      text:
+          'buscado mis síntomas en Google y convencido de que padecía una enfermedad rara',
       tone: ContentTone.normal,
     ),
     (text: 'llorado por un anuncio', tone: ContentTone.normal),
@@ -279,11 +264,12 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'lo he olvidado porque había entrado en una habitación',
+      text: 'he olvidado por qué había entrado en una habitación',
       tone: ContentTone.normal,
     ),
     (
-      text: 'reído para mis adentros al recordar una situación embarazosa de hace años',
+      text:
+          'reído para mis adentros al recordar una situación embarazosa de hace años',
       tone: ContentTone.normal,
     ),
     (
@@ -295,10 +281,7 @@ class ContentEsNonHoMai {
       text: 'pedido una pizza entera solo para mí y me la he comido toda',
       tone: ContentTone.normal,
     ),
-    (
-      text: 'discutido en voz alta con el navegador',
-      tone: ContentTone.normal,
-    ),
+    (text: 'discutido en voz alta con el navegador', tone: ContentTone.normal),
     (
       text: 'he releído un mensaje veinte veces antes de enviarlo',
       tone: ContentTone.normal,
@@ -321,7 +304,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'he pulsado «Aceptar» solo para cerrar una discusión',
+      text: 'he enviado «ok» solo para cerrar una discusión',
       tone: ContentTone.normal,
     ),
     (
@@ -341,7 +324,8 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'dicho «nos vemos pronto» con la esperanza de no volver a ver a esa persona',
+      text:
+          'dicho «nos vemos pronto» con la esperanza de no volver a ver a esa persona',
       tone: ContentTone.normal,
     ),
     (text: 'hablado con las plantas de casa', tone: ContentTone.normal),
@@ -358,11 +342,13 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'abierto la nevera diez veces con la esperanza de encontrar algo nuevo para comer',
+      text:
+          'abierto la nevera diez veces con la esperanza de encontrar algo nuevo para comer',
       tone: ContentTone.normal,
     ),
     (
-      text: 'utilizado la scusa «mañana me tengo que levantar temprano» para irme de una fiesta',
+      text:
+          'utilizado la excusa «mañana me tengo que levantar temprano» para irme de una fiesta',
       tone: ContentTone.normal,
     ),
     (
@@ -370,7 +356,8 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'pedido comida para llevar porque se me había olvidado descongelar la cena',
+      text:
+          'pedido comida para llevar porque se me había olvidado descongelar la cena',
       tone: ContentTone.normal,
     ),
     (
@@ -436,7 +423,8 @@ class ContentEsNonHoMai {
       tone: ContentTone.normal,
     ),
     (
-      text: 'puesto unos calcetines desparejados con la esperanza de que nadie se diera cuenta',
+      text:
+          'puesto unos calcetines desparejados con la esperanza de que nadie se diera cuenta',
       tone: ContentTone.normal,
     ),
     (text: 'dormido con un peluche de adulto', tone: ContentTone.normal),
@@ -466,10 +454,7 @@ class ContentEsNonHoMai {
       text: 'he fingido estar dormido para evitar un momento de intimidad',
       tone: ContentTone.mix,
     ),
-    (
-      text: 'he mentido sobre la persona con la que salía',
-      tone: ContentTone.mix,
-    ),
+    (text: 'he mentido a la persona con la que salía', tone: ContentTone.mix),
     (text: 'he revisado el móvil de mi pareja', tone: ContentTone.mix),
     (text: 'he tenido dos citas el mismo día', tone: ContentTone.mix),
     (
@@ -511,7 +496,8 @@ class ContentEsNonHoMai {
     ),
     (text: 'he hecho algo vergonzoso estando borracho', tone: ContentTone.mix),
     (
-      text: 'a la mañana siguiente, echado de menos los mensajes de la noche anterior',
+      text:
+          'me he arrepentido a la mañana siguiente de los mensajes de la noche anterior',
       tone: ContentTone.mix,
     ),
     (text: 'me he olvidado de partes de toda una noche', tone: ContentTone.mix),
@@ -603,7 +589,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'terminado la noche en un sitio che no recuerdo',
+      text: 'terminado la noche en un sitio que no recuerdo',
       tone: ContentTone.mix,
     ),
     (
@@ -635,7 +621,7 @@ class ContentEsNonHoMai {
     ),
     (text: 'me he besado con la ex de un amigo', tone: ContentTone.mix),
     (
-      text: 'le he pedido a un amigo que averiguara si le gustaba a alguien',
+      text: 'le he pedido a un amigo que averiguara si yo le gustaba a alguien',
       tone: ContentTone.mix,
     ),
     (
@@ -691,8 +677,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text:
-          'me he dado un masaje y he acabado haciendo algo totalmente diferente',
+      text: 'he hecho un masaje que acabó en algo totalmente diferente',
       tone: ContentTone.mix,
     ),
     (
@@ -700,7 +685,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'he comprado ropa interior pensando en quién la vería',
+      text: 'comprado lencería pensando en quién la vería',
       tone: ContentTone.mix,
     ),
     (
@@ -760,7 +745,7 @@ class ContentEsNonHoMai {
     ),
     (
       text:
-          'se han empañado las ventanillas de un coche por una razón que no era el frío',
+          'he empañado las ventanillas de un coche por una razón que no era el frío',
       tone: ContentTone.mix,
     ),
     (
@@ -788,7 +773,7 @@ class ContentEsNonHoMai {
     ),
     (text: 'he besado a una persona de mi mismo sexo', tone: ContentTone.mix),
     (
-      text: 'he echado de menos a alguien de los que están aquí presentes',
+      text: 'he deseado a alguien de los que están aquí presentes',
       tone: ContentTone.mix,
     ),
     (text: 'he tenido un sueño erótico sobre un amigo', tone: ContentTone.mix),
@@ -803,7 +788,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.mix,
     ),
     (
-      text: 'dicho «te quiero» solo para che acabara la noche',
+      text: 'dicho «te quiero» solo para que acabara la noche',
       tone: ContentTone.mix,
     ),
     (
@@ -909,7 +894,7 @@ class ContentEsNonHoMai {
     ),
     (
       text:
-          'me he vuelto a poner la ropa de correr y me he equivocado de camiseta',
+          'me he vuelto a poner la ropa a toda prisa y me he equivocado de camiseta',
       tone: ContentTone.mix,
     ),
     (
@@ -944,12 +929,12 @@ class ContentEsNonHoMai {
     ),
     (
       text:
-          'he utilizado una aplicación de citas mientras estaba sentado junto a mis amigos',
+          'he utilizado una aplicación de citas mientras estaba sentado junto a mis padres',
       tone: ContentTone.mix,
     ),
     (
       text:
-          'he estado en una partida en la que no he escrito nada por miedo a dar el primer paso',
+          'he tenido un match sin escribir nunca por miedo a dar el primer paso',
       tone: ContentTone.mix,
     ),
     (
@@ -1148,7 +1133,10 @@ class ContentEsNonHoMai {
     (text: 'he enviado una foto desnuda a alguien', tone: ContentTone.hot),
     (text: 'he recibido una foto desnuda inesperada', tone: ContentTone.hot),
     (text: 'he grabado un vídeo mientras me masturbaba', tone: ContentTone.hot),
-    (text: 'he grabado un vídeo para volver a verlo', tone: ContentTone.hot),
+    (
+      text: 'he grabado una relación sexual para volver a verla',
+      tone: ContentTone.hot,
+    ),
     (text: 'he visto un vídeo picante que grabó una ex', tone: ContentTone.hot),
     (
       text: 'he enviado mensajes de carácter sexual durante el horario laboral',
@@ -1431,7 +1419,7 @@ class ContentEsNonHoMai {
       tone: ContentTone.hot,
     ),
     (
-      text: 'me han dejado un chupetón en un sitio embarazoso',
+      text: 'le he dejado un chupetón a alguien en un sitio embarazoso',
       tone: ContentTone.hot,
     ),
     (

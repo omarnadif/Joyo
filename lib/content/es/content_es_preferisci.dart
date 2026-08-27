@@ -37,7 +37,7 @@ class ContentEsPreferisci {
     (a: 'Saber siempre la verdad', b: 'Vivir feliz en una ilusión'),
     (a: 'Un año sabático', b: 'Jubilarse un año antes'),
     (a: 'Hablar todos los idiomas', b: 'Tocar todos los instrumentos'),
-    (a: 'No sentirte nunca avergonzado', b: 'Nunca sientas miedo'),
+    (a: 'No sentirte nunca avergonzado', b: 'No sentir nunca miedo'),
     (a: 'Revivir tu mejor día', b: 'Eliminar el peor'),
     (
       a: 'Empezar a convivir al cabo de un mes',
@@ -55,7 +55,7 @@ class ContentEsPreferisci {
     ),
     (a: 'Decir siempre lo que piensas', b: 'No poder hablar nunca más'),
     (a: 'Sin calefacción en invierno', b: 'Sin aire acondicionado en verano'),
-    (a: 'Mi plato favorito en cada comida', b: 'Nunca más tu plato favorito'),
+    (a: 'Tu plato favorito en cada comida', b: 'Nunca más tu plato favorito'),
     (
       a: 'Ya no habrá necesidad de dormir',
       b: 'Ya no habrá necesidad de comer nunca más',
@@ -142,7 +142,7 @@ class ContentEsPreferisci {
     ),
     (a: 'Borrar un remordimiento', b: 'Asegurarte el éxito en el futuro'),
     (
-      a: 'La cola que mueve cuando estás contento',
+      a: 'Una cola que meneas cuando estás contento',
       b: 'Que se te caigan las orejas cuando estás triste',
     ),
     (a: 'Dejar el café para siempre', b: 'Dejar el chocolate'),
@@ -184,7 +184,7 @@ class ContentEsPreferisci {
     ),
     (a: 'Tu pareja lee tus pensamientos', b: 'Tú lees los suyos'),
     (
-      a: 'El socio elegido por tus amigos',
+      a: 'La pareja elegida por tus amigos',
       b: 'Pareja elegida por un algoritmo',
     ),
     (
@@ -343,7 +343,7 @@ class ContentEsPreferisci {
     (a: 'Ser invisible una hora al día', b: 'Volar diez minutos al día'),
     (
       a: 'Cocinar para diez personas todas las noches',
-      b: 'Fregar diez platos cada noche',
+      b: 'Fregar los platos de diez personas cada noche',
     ),
     (
       a: 'Una mochila pesada, pero con todo lo necesario',
@@ -546,7 +546,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Un limón con la persona que tienes a la izquierda',
+      a: 'Un morreo con la persona que tienes a la izquierda',
       b: 'Un baile lento y sensual con la persona que tienes a tu derecha',
       tone: ContentTone.mix,
     ),
@@ -592,7 +592,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Te ha salido un «match» con tu ex en una app',
-      b: 'Encontrar a tu jefe en una aplicación',
+      b: 'Te ha salido un «match» con tu jefe en una app',
       tone: ContentTone.mix,
     ),
     (
@@ -631,7 +631,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Hacer que lea los mensajes con su ex',
+      a: 'Hacer que lean los mensajes con tu ex',
       b: 'Mostrar las fotos con tu ex',
       tone: ContentTone.mix,
     ),
@@ -681,7 +681,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Una cara B espectacular',
+      a: 'Un buen culo espectacular',
       b: 'Un escote digno de aplausos',
       tone: ContentTone.mix,
     ),
@@ -702,7 +702,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Dejar que dos de los presentes te hagan la corte',
-      b: 'Lanzar el ojo a dos personas que están juntas',
+      b: 'Lanzar el ojo a dos personas presentes a la vez',
       tone: ContentTone.mix,
     ),
     (
@@ -984,7 +984,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Fingir siempre los orgasmos',
-      b: 'No volver a hacerlo nunca más',
+      b: 'No volver a correrte nunca más',
       tone: ContentTone.hot,
     ),
     (
@@ -1010,7 +1010,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Una noche con tu ídolo del cine',
-      b: 'Una noche con tu ex mejor amigo',
+      b: 'Una noche con tu mejor ex',
       tone: ContentTone.hot,
     ),
     (
@@ -1055,7 +1055,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Que te chupen los dedos de los pies',
-      b: 'Chúpale tú las suyas',
+      b: 'Chúpale tú los suyos',
       tone: ContentTone.hot,
     ),
     (
@@ -1069,7 +1069,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sexo con la mascarilla puesta',
+      a: 'Sexo con el antifaz puesto',
       b: 'Sexo en la oscuridad total',
       tone: ContentTone.hot,
     ),
@@ -1105,7 +1105,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Una mamada mientras él conduce',
-      b: 'Una paja en el cine',
+      b: 'Un dedito en el cine',
       tone: ContentTone.hot,
     ),
     (
@@ -1130,7 +1130,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Una mamada con los ojos vendados',
-      b: 'Una relación a ciegas',
+      b: 'Una relación con los ojos vendados',
       tone: ContentTone.hot,
     ),
     (
@@ -1250,7 +1250,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Un fin de semana de sexo sin hablar',
-      b: 'Un fin de semana de mimos y sol, sin sexo',
+      b: 'Un fin de semana de solo mimos, sin sexo',
       tone: ContentTone.mix,
     ),
     (
@@ -1289,7 +1289,7 @@ class ContentEsPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Cómo seducir a un desconocido en diez minutos',
+      a: 'Seducir a un desconocido en diez minutos',
       b: 'Dejarte seducir sin decir ni una palabra',
       tone: ContentTone.mix,
     ),
@@ -1400,7 +1400,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Di el apodo sexy que le pones a tu pareja',
-      b: 'Expresar lo que tu pareja te aporta',
+      b: 'Di el apodo que tu pareja te pone a ti',
       tone: ContentTone.mix,
     ),
     (
@@ -1465,7 +1465,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Seducir a la persona que te gusta usando solo emojis',
-      b: 'Seducirlo con una sola vocal embarazosa',
+      b: 'Seducirlo con un solo mensaje de voz embarazoso',
       tone: ContentTone.mix,
     ),
     (
@@ -1480,7 +1480,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Confiesa tu fantasía con un famoso',
-      b: 'Escuchar la opinión de la persona que tienes delante',
+      b: 'Escuchar la fantasía de la persona que tienes delante',
       tone: ContentTone.mix,
     ),
     (
@@ -1666,7 +1666,7 @@ class ContentEsPreferisci {
     ),
     (
       a: 'Que te la metan hasta el fondo en la boca',
-      b: 'Tú te encargas de ello hasta el final',
+      b: 'Metértela hasta el fondo tú',
       tone: ContentTone.hot,
     ),
     (a: 'Garganta profunda', b: 'Sentarse en la cara', tone: ContentTone.hot),
@@ -1777,7 +1777,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Que te abracen suavemente por el cuello',
+      a: 'Que te aprieten el cuello suavemente',
       b: 'Tú le aprietas las muñecas',
       tone: ContentTone.hot,
     ),
@@ -1787,7 +1787,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sexo con el pelo recogido',
+      a: 'Sexo con tirones de pelo',
       b: 'Sexo con las uñas en la espalda',
       tone: ContentTone.hot,
     ),
@@ -1807,7 +1807,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Un vibrador que se comparten por turnos',
+      a: 'Un vibrador que se comparte por turnos',
       b: 'Dos juguetes a la vez',
       tone: ContentTone.hot,
     ),
@@ -1817,7 +1817,7 @@ class ContentEsPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Hacer que te muerdas el labio hasta que te sangre',
+      a: 'Que te muerdan el labio hasta hacerlo sangrar',
       b: 'Morderle el cuello con ímpetu',
       tone: ContentTone.hot,
     ),

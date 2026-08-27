@@ -84,7 +84,7 @@ class ContentFrChiLoPotrebbeFare {
       text: 'Qui cuisinerait pour vingt personnes sans aucune raison ?',
       tone: ContentTone.normal,
     ),
-    (text: 'Qui ferait bouillir l\'eau des pâtes ?', tone: ContentTone.normal),
+    (text: 'Qui ferait brûler l\'eau des pâtes ?', tone: ContentTone.normal),
     (
       text: 'Qui serait prêt à goûter n\'importe quoi, même le plus étrange ?',
       tone: ContentTone.normal,
@@ -597,7 +597,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Qui utiliserait des voyelles juste pour répondre « ok » ?',
+      text: 'Qui utiliserait des messages vocaux juste pour répondre « ok » ?',
       tone: ContentTone.normal,
     ),
     (
@@ -978,7 +978,7 @@ class ContentFrChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (
-      text: 'Qui n\'a pas un fantasme qu\'il n\'a jamais osé avouer ?',
+      text: 'Qui aurait un fantasme qu\'il n\'a jamais osé avouer ?',
       tone: ContentTone.mix,
     ),
     (
@@ -1049,7 +1049,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui se laisserait convaincre de donner un baiser « à la machine » à un ami ?',
+          'Qui se laisserait convaincre de donner un bisou sur les lèvres à un ami ?',
       tone: ContentTone.mix,
     ),
     (
@@ -1151,7 +1151,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui utiliserait le parfum de la compagne d\'un ami comme prétexte pour se rapprocher d\'elle ?',
+          'Qui utiliserait le parfum du partenaire d\'un ami comme prétexte pour se rapprocher ?',
       tone: ContentTone.mix,
     ),
     (
@@ -1298,8 +1298,8 @@ class ContentFrChiLoPotrebbeFare {
       text: 'Qui enverrait un message audacieux pour ensuite tout effacer ?',
       tone: ContentTone.mix,
     ),
-    (text: 'Qui arriverait le plus vite ?', tone: ContentTone.hot),
-    (text: 'Qui mettrait le plus de temps à arriver ?', tone: ContentTone.hot),
+    (text: 'Qui viendrait le plus vite ?', tone: ContentTone.hot),
+    (text: 'Qui mettrait le plus de temps à venir ?', tone: ContentTone.hot),
     (text: 'Qui a simulé un orgasme pour en finir ?', tone: ContentTone.hot),
     (
       text: 'Qui n\'a jamais eu d\'orgasme avec un partenaire ?',
@@ -1673,7 +1673,7 @@ class ContentFrChiLoPotrebbeFare {
     ),
     (
       text:
-          'Qui a déjà eu des relations sexuelles en sachant que quelqu\'un pouvait vous entendre ?',
+          'Qui a déjà eu des relations sexuelles en sachant que quelqu\'un pouvait l\'entendre ?',
       tone: ContentTone.hot,
     ),
     (
@@ -1736,10 +1736,7 @@ class ContentFrChiLoPotrebbeFare {
       text: 'Qui a déjà essayé de faire l\'amour sous la douche en glissant ?',
       tone: ContentTone.hot,
     ),
-    (
-      text: 'Qui a envoyé une photo osée à un ex alors qu\'il était ivre ?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'Qui a envoyé une photo osée à un ex ivre ?', tone: ContentTone.hot),
     (
       text:
           'Qui a déjà eu des relations sexuelles le jour d\'un enterrement ou d\'un événement solennel ?',

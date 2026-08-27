@@ -180,9 +180,9 @@ class ContentDeApp {
     'impostore.vote_registered': 'Stimme gespeichert',
     'impostore.caught': 'Der Impostor wurde entlarvt',
     'impostore.escaped': 'Der Impostor ist ungestraft davongekommen',
-    'impostore.word_was': 'Das geheime Wort ist',
+    'impostore.word_was': 'Das geheime Wort war',
     'impostore.guessed_it': 'Richtig geraten: „{guess}“ · +3 Punkte',
-    'impostore.said': 'Er hatte gesagt: „{guess}“',
+    'impostore.said': 'Gesagt wurde: „{guess}“',
     'impostore.points_caught':
         '+2 für diejenigen, die für den Impostor gestimmt haben',
     'impostore.points_escaped': '+5 für den Impostor',

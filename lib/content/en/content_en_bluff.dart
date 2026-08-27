@@ -130,7 +130,7 @@ class ContentEnBluff {
     'I talked in my sleep and revealed a secret that was supposed to remain secret.',
     'I used to sleepwalk all over the house when I was a kid.',
     'I woke up in a different part of the house than where I had fallen asleep.',
-    'I slept soundly on a bench in a public park that afternoon.',
+    'I slept soundly on a bench in a public park in the afternoon.',
     'I spent an entire day without speaking to anyone.',
     'I had a long conversation with a stranger for two hours during a train ride.',
     'I returned a wallet full of money that I had found on the street.',

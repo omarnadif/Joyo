@@ -56,7 +56,10 @@ class ContentEnPreferisci {
     (a: 'Shaved Eyebrows for a Year', b: 'Neon-green hair for a year'),
     (a: 'Losing one\'s sense of smell', b: 'Losing Your Sense of Taste'),
     (a: 'Cartoon voice', b: 'A laugh that makes everyone feel awkward'),
-    (a: 'Timeline visible to parents', b: 'Chats Read by Your Boss'),
+    (
+      a: 'Browsing history visible to your parents',
+      b: 'Chats Read by Your Boss',
+    ),
     (a: 'Burping at the end of every sentence', b: 'Laughing like a goat'),
     (
       a: 'Using a stranger\'s toothbrush',
@@ -86,7 +89,7 @@ class ContentEnPreferisci {
     ),
     (a: 'Living Underwater', b: 'Living in Space'),
     (
-      a: 'Chased for the rest of his life by a killer snail',
+      a: 'Chased for the rest of your life by a killer snail',
       b: 'A clown who stares at you every night',
     ),
     (a: 'Talking to Animals', b: 'Checking the Weather'),
@@ -102,7 +105,7 @@ class ContentEnPreferisci {
     (a: 'King of the World for a Day', b: 'A Normal Person Forever'),
     (
       a: 'Knowing everything but feeling nothing',
-      b: 'Trying Everything but Understanding Nothing',
+      b: 'Feeling everything but understanding nothing',
     ),
     (a: 'Erase a Regret', b: 'Ensure Your Future Success'),
     (
@@ -275,7 +278,10 @@ class ContentEnPreferisci {
       a: 'Being Invisible for One Hour a Day',
       b: 'Flying for Ten Minutes a Day',
     ),
-    (a: 'Cooking for Ten Every Night', b: 'Washing Ten Dishes Every Night'),
+    (
+      a: 'Cooking for Ten Every Night',
+      b: 'Washing the dishes for ten every night',
+    ),
     (
       a: 'A heavy backpack, but with everything I need',
       b: 'A lightweight backpack, but never quite the right one',
@@ -450,7 +456,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Forgetting Your First Time',
-      b: 'To remember her every single day',
+      b: 'To remember it every single day',
       tone: ContentTone.mix,
     ),
     (
@@ -554,7 +560,7 @@ class ContentEnPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Sensitive audio message sent to the wrong person',
+      a: 'Steamy audio message sent to the wrong person',
       b: 'Getting One from Your Boss',
       tone: ContentTone.mix,
     ),
@@ -600,7 +606,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Confessing a steamy dream about someone who\'s present',
-      b: 'Letting Someone Here Tell Their Side of the Story',
+      b: 'Having someone present confess a steamy dream about you',
       tone: ContentTone.mix,
     ),
     (
@@ -630,7 +636,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Let two people there flirt with you',
-      b: 'Flirting with two people who are together',
+      b: 'Flirting with two people present at the same time',
       tone: ContentTone.mix,
     ),
     (
@@ -640,7 +646,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Kisses with a Bite',
-      b: 'Kisses That Feel the Same Forever',
+      b: 'Nothing but pecks forever',
       tone: ContentTone.mix,
     ),
     (
@@ -706,7 +712,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Having yourself filmed while you do it',
-      b: 'Don\'t ever do that again',
+      b: 'Never doing it again',
       tone: ContentTone.mix,
     ),
     (a: 'Lick everywhere', b: 'To be licked all over', tone: ContentTone.mix),
@@ -736,11 +742,7 @@ class ContentEnPreferisci {
       b: 'No More Oral Sex',
       tone: ContentTone.hot,
     ),
-    (
-      a: 'Always receive oral',
-      b: 'Always give oral',
-      tone: ContentTone.hot,
-    ),
+    (a: 'Always receive oral', b: 'Always give oral', tone: ContentTone.hot),
     (
       a: 'Oral sex that ends in the mouth',
       b: 'Oral sex that ends on the face',
@@ -788,7 +790,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'To be gently whipped',
-      b: 'Spanking Your Partner',
+      b: 'Whipping your partner',
       tone: ContentTone.hot,
     ),
     (
@@ -798,7 +800,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'You\'re wearing a collar and a leash',
-      b: 'Passing Them to Your Partner',
+      b: 'Putting them on your partner',
       tone: ContentTone.hot,
     ),
     (
@@ -918,7 +920,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Squirting in front of him',
-      b: 'To see it coming onto your body',
+      b: 'To watch him come onto your body',
       tone: ContentTone.hot,
     ),
     (a: 'Anal sex', b: 'Double Penetration', tone: ContentTone.hot),
@@ -934,7 +936,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'A Night with Your Favorite Movie Star',
-      b: 'A Night with Your Ex-Best Friend',
+      b: 'A Night with Your Best Ex',
       tone: ContentTone.hot,
     ),
     (
@@ -1056,7 +1058,7 @@ class ContentEnPreferisci {
     (a: 'Ice on bare skin', b: 'Hot wax on the body', tone: ContentTone.hot),
     (
       a: 'Bite until you leave marks',
-      b: 'Scratch your back deeply',
+      b: 'Scratch their back deeply',
       tone: ContentTone.hot,
     ),
     (
@@ -1150,7 +1152,7 @@ class ContentEnPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Say your passphrase out loud',
+      a: 'Say your safe word out loud',
       b: 'Imitate your favorite position',
       tone: ContentTone.mix,
     ),
@@ -1166,7 +1168,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'A weekend of sex without talking',
-      b: 'A weekend of pampering without sex',
+      b: 'A weekend of just cuddling without sex',
       tone: ContentTone.mix,
     ),
     (
@@ -1406,7 +1408,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Get a clearly visible hickey',
-      b: 'Do something nice for the person next to you',
+      b: 'Give one to the person next to you',
       tone: ContentTone.mix,
     ),
     (
@@ -1421,7 +1423,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Kissing the shyest person in the group',
-      b: 'Kissing the boldest girl in the group',
+      b: 'Kissing the boldest person in the group',
       tone: ContentTone.mix,
     ),
     (
@@ -1467,7 +1469,7 @@ class ContentEnPreferisci {
     ),
     (
       a: 'A threesome with an escort',
-      b: 'A plan involving three people and a friend',
+      b: 'A threesome with a friend',
       tone: ContentTone.hot,
     ),
     (
@@ -1648,12 +1650,12 @@ class ContentEnPreferisci {
     ),
     (
       a: 'Sex with scented oil everywhere',
-      b: 'Sex scenes covered in foam',
+      b: 'Sex covered in foam',
       tone: ContentTone.hot,
     ),
     (
       a: 'Have him be seduced by another woman right in front of you',
-      b: 'If you seduce someone else in front of him',
+      b: 'Seducing someone else in front of him',
       tone: ContentTone.hot,
     ),
     (
@@ -1677,7 +1679,7 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'To have your neck gently caressed',
+      a: 'To have your neck gently squeezed',
       b: 'You hold his wrists',
       tone: ContentTone.hot,
     ),
@@ -1687,7 +1689,7 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sex with my hair pulled back',
+      a: 'Sex with your hair pulled',
       b: 'Sex with fingernails on the back',
       tone: ContentTone.hot,
     ),
@@ -1712,12 +1714,12 @@ class ContentEnPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sex on a tied-up chair',
+      a: 'Sex tied to a chair',
       b: 'Sex Standing Up by the Window',
       tone: ContentTone.hot,
     ),
     (
-      a: 'To make you bite your lip until it bleeds',
+      a: 'To have your lip bitten until it bleeds',
       b: 'Bite his neck fiercely',
       tone: ContentTone.hot,
     ),

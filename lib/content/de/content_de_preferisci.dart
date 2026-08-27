@@ -81,7 +81,7 @@ class ContentDePreferisci {
       b: 'Ein Lachen, das alle in Verlegenheit bringt',
     ),
     (
-      a: 'Eine für deine Eltern sichtbare Chronologie',
+      a: 'Ein für deine Eltern sichtbarer Browserverlauf',
       b: 'Chatnachrichten, die dein Chef gelesen hat',
     ),
     (a: 'Am Ende jedes Satzes rülpsen', b: 'Wie eine Ziege lachen'),
@@ -286,7 +286,7 @@ class ContentDePreferisci {
       b: 'Nie wieder Wasser, nur noch Erfrischungsgetränke',
     ),
     (a: 'Ein einziges Musikgenre fürs Leben', b: 'Nur eine App auf dem Handy'),
-    (a: 'Im Smoking am Strand', b: 'In Kostümen zu einer Hochzeit'),
+    (a: 'Im Smoking am Strand', b: 'Im Badeanzug zu einer Hochzeit'),
     (
       a: 'Kochen wie ein Sternekoch',
       b: 'Ein Haus haben, das sich von selbst reinigt',
@@ -384,7 +384,7 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Die Galerie der Gruppe anzeigen',
+      a: 'Der Gruppe deine Galerie zeigen',
       b: 'Deine Chats laut vorlesen lassen',
       tone: ContentTone.mix,
     ),
@@ -471,7 +471,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Erzähl uns von deiner seltsamsten Fantasie',
-      b: 'Hör dir an, was derjenige rechts von dir zu sagen hat',
+      b: 'Hör dir die Fantasie der Person rechts von dir an',
       tone: ContentTone.mix,
     ),
     (
@@ -681,7 +681,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Einen erotischen Traum über eine anwesende Person gestehen',
-      b: 'Jemanden, der hier anwesend ist, dazu bringen, dies über dich zu bezeugen',
+      b: 'Eine anwesende Person dazu bringen, einen erotischen Traum über dich zu gestehen',
       tone: ContentTone.mix,
     ),
     (
@@ -808,7 +808,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Ihn/Sie es schlucken lassen',
-      b: 'Ihn dazu bringen, es ihm ins Gesicht zu spucken',
+      b: 'Ihn es sich selbst ins Gesicht spucken lassen',
       tone: ContentTone.hot,
     ),
     (
@@ -863,7 +863,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Ein Unbekannter sieht dich kommen',
-      b: 'Sie sehen, wie ein Fremder kommt',
+      b: 'Du siehst, wie ein Fremder kommt',
       tone: ContentTone.hot,
     ),
     (
@@ -1029,7 +1029,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Partnertausch mit Freunden',
-      b: 'Austausch mit völlig Fremden',
+      b: 'Partnertausch mit völlig Fremden',
       tone: ContentTone.hot,
     ),
     (
@@ -1119,7 +1119,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Ihn eine Stunde lang mit Blicken verführen',
-      b: 'Ihm sofort anspringen',
+      b: 'Ihn sofort anspringen',
       tone: ContentTone.hot,
     ),
     (
@@ -1199,7 +1199,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Ein Finger mehr beim Geschlechtsverkehr',
-      b: 'Eine weitere Sprache beim Sex',
+      b: 'Eine Zunge mehr beim Sex',
       tone: ContentTone.hot,
     ),
     (
@@ -1259,7 +1259,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Ein Wochenende voller Sex ohne Worte',
-      b: 'Ein Wochenende voller Verwöhnung und Sonnenschein, ganz ohne Sex',
+      b: 'Ein Wochenende voller Kuscheln, ganz ohne Sex',
       tone: ContentTone.mix,
     ),
     (
@@ -1443,7 +1443,7 @@ class ContentDePreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Nur heiße Dates, aber nie mehr als eine Sekunde',
+      a: 'Nur heiße Dates, aber nie ein zweites Date',
       b: 'Nur romantische Verabredungen, aber ohne Funken',
       tone: ContentTone.mix,
     ),
@@ -1474,7 +1474,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Denjenigen, den du magst, nur mit Emojis verführen',
-      b: 'Ihn mit einem einzigen peinlichen Vokal verführen',
+      b: 'Ihn mit einer einzigen peinlichen Sprachnachricht verführen',
       tone: ContentTone.mix,
     ),
     (
@@ -1499,7 +1499,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Dir einen gut sichtbaren Knutschfleck verpassen lassen',
-      b: 'Mach doch mal einen für jemanden, der dir nahesteht',
+      b: 'Mach doch mal einen für die Person, die neben dir sitzt',
       tone: ContentTone.mix,
     ),
     (
@@ -1613,7 +1613,7 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Leiser Sex, damit du nichts hörst',
+      a: 'Leiser Sex, damit man dich nicht hört',
       b: 'Lauter, hemmungsloser Sex',
       tone: ContentTone.hot,
     ),
@@ -1679,7 +1679,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Dich ganz tief in den Mund nehmen lassen',
-      b: 'Es bis zum Ende durchziehen müssen',
+      b: 'Ihn ganz tief in den Mund nehmen',
       tone: ContentTone.hot,
     ),
     (a: 'Deep Throat', b: 'Facesitting', tone: ContentTone.hot),
@@ -1761,7 +1761,7 @@ class ContentDePreferisci {
     ),
     (
       a: 'Sex mit duftendem Öl am ganzen Körper',
-      b: 'Geschlechtsteile, die mit Schaum bedeckt sind',
+      b: 'Sex, bei dem ihr mit Schaum bedeckt seid',
       tone: ContentTone.hot,
     ),
     (
@@ -1790,7 +1790,7 @@ class ContentDePreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Sanft am Hals umarmt werden',
+      a: 'Sich sanft den Hals zusammendrücken lassen',
       b: 'Seine Handgelenke festhalten',
       tone: ContentTone.hot,
     ),

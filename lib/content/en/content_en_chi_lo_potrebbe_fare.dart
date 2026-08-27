@@ -935,10 +935,7 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who would give their first kiss without thinking twice?',
       tone: ContentTone.mix,
     ),
-    (
-      text: 'Who has a secret crush on someone?',
-      tone: ContentTone.mix,
-    ),
+    (text: 'Who has a secret crush on someone?', tone: ContentTone.mix),
     (
       text: 'Who would try to hit on the bartender just to get a free drink?',
       tone: ContentTone.mix,
@@ -1512,10 +1509,7 @@ class ContentEnChiLoPotrebbeFare {
       text: 'Who has ever given a lap dance to a partner?',
       tone: ContentTone.hot,
     ),
-    (
-      text: 'Who would strip down right now just to prove a point?',
-      tone: ContentTone.hot,
-    ),
+    (text: 'Who would strip down right now for a bet?', tone: ContentTone.hot),
     (
       text:
           'Who has had sex with the music turned up full blast so no one would hear them?',

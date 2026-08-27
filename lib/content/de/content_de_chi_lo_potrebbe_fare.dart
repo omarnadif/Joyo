@@ -305,7 +305,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde einen Hot-Dog-Wettessen-Wettbewerb gewinnen?',
+      text: 'Wer würde ein Hot-Dog-Wettessen gewinnen?',
       tone: ContentTone.normal,
     ),
     (
@@ -627,7 +627,7 @@ class ContentDeChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: 'Wer würde Vokale schon verwenden, um mit „ok“ zu antworten?',
+      text: 'Wer würde sogar für ein „ok“ eine Sprachnachricht schicken?',
       tone: ContentTone.normal,
     ),
     (
@@ -856,7 +856,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer würde schon die Einzelheiten des ersten Dates in der Gruppenchat-Gruppe erzählen?',
+          'Wer würde schon die Einzelheiten des ersten Dates im Gruppenchat erzählen?',
       tone: ContentTone.mix,
     ),
     (
@@ -1394,7 +1394,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer hat seinen Partner in weniger als fünf Minuten zum Höhepunkt gebracht?',
+          'Wer hat seinen Partner in weniger als fünf Minuten mit dem Mund zum Höhepunkt gebracht?',
       tone: ContentTone.hot,
     ),
     (
@@ -1489,7 +1489,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer hat schon einmal ein leichtes Erstickungsgefühl im Bett verspürt?',
+          'Wer hat schon einmal leichtes erotisches Würgen im Bett ausprobiert?',
       tone: ContentTone.hot,
     ),
     (
@@ -1500,7 +1500,7 @@ class ContentDeChiLoPotrebbeFare {
       text: 'Wer würde beim Sex schon genaue Anweisungen geben?',
       tone: ContentTone.hot,
     ),
-    (text: 'Wer hat schon ein Passwort parat?', tone: ContentTone.hot),
+    (text: 'Wer hat schon ein Safeword parat?', tone: ContentTone.hot),
     (
       text: 'Wer würde sich die Haare ziehen lassen, ohne sich zu beschweren?',
       tone: ContentTone.hot,
@@ -1771,7 +1771,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer hat schon einmal bei voller Lautstärke Musik gehört, um nicht gehört zu werden?',
+          'Wer hat schon einmal bei voller Lautstärke Sex gehabt, um nicht gehört zu werden?',
       tone: ContentTone.hot,
     ),
     (
@@ -1821,7 +1821,7 @@ class ContentDeChiLoPotrebbeFare {
     ),
     (
       text:
-          'Wer hat sich schon einmal beim Masturbieren vorgestellt, dass gerade jemand hier sitzt?',
+          'Wer hat sich schon einmal beim Masturbieren an jemanden gedacht, der gerade hier sitzt?',
       tone: ContentTone.hot,
     ),
     (

@@ -87,10 +87,10 @@ class ContentFrPreferisci {
       b: 'Un rire qui met tout le monde mal à l\'aise',
     ),
     (
-      a: 'Chronologie visible par les parents',
+      a: 'Historique visible par les parents',
       b: 'Conversations lues par ton patron',
     ),
-    (a: 'Rotter à la fin de chaque phrase', b: 'Rire comme une chèvre'),
+    (a: 'Roter à la fin de chaque phrase', b: 'Rire comme une chèvre'),
     (
       a: 'Utiliser la brosse à dents d\'un inconnu',
       b: 'Boire dans son verre déjà utilisé',
@@ -134,7 +134,7 @@ class ContentFrPreferisci {
       a: 'Poursuivi toute sa vie par un escargot tueur',
       b: 'Un clown qui te fixe chaque nuit',
     ),
-    (a: 'Parler aux animaux', b: 'Consulter la météo'),
+    (a: 'Parler aux animaux', b: 'Contrôler la météo'),
     (
       a: 'Danser dès que la musique commence',
       b: 'Pleurer quand quelqu\'un rit',
@@ -280,7 +280,7 @@ class ContentFrPreferisci {
     (a: 'Être toujours sous-estimé', b: 'Être toujours surestimé'),
     (
       a: 'Redécouvrir ta série préférée comme si c\'était la première fois',
-      b: 'Découvrez en avant-première chaque finale',
+      b: 'Découvrir en avant-première chaque finale',
     ),
     (a: 'Ne parler qu\'en criant', b: 'Ne parler qu\'à voix basse'),
     (
@@ -313,7 +313,10 @@ class ContentFrPreferisci {
       a: 'N\'écouter qu\'un seul genre musical toute ta vie',
       b: 'N\'avoir qu\'une seule application sur ton téléphone',
     ),
-    (a: 'Porter un smoking à la plage', b: 'Porter un costume à un mariage'),
+    (
+      a: 'Porter un smoking à la plage',
+      b: 'Porter un maillot de bain à un mariage',
+    ),
     (
       a: 'Cuisiner comme un chef étoilé',
       b: 'Une maison qui se nettoie toute seule',
@@ -377,7 +380,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Savoir très bien danser sur une seule chanson',
-      b: 'Danser comme ça sur n\'importe quelle chanson',
+      b: 'Danser comme ci comme ça sur n\'importe quelle chanson',
     ),
     (
       a: 'Pouvoir lire dans les pensées des chiens',
@@ -573,7 +576,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Oublier ta première fois',
-      b: 'Me souvenir d\'elle chaque jour',
+      b: 'T\'en souvenir chaque jour',
       tone: ContentTone.mix,
     ),
     (
@@ -682,7 +685,7 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Faire lire tes messages à ton ex',
+      a: 'Faire lire tes messages avec ton ex',
       b: 'Montrer tes photos avec ton ex',
       tone: ContentTone.mix,
     ),
@@ -732,7 +735,7 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Une face B à tomber par terre',
+      a: 'Un beau derrière à tomber par terre',
       b: 'Un décolleté qui mérite des applaudissements',
       tone: ContentTone.mix,
     ),
@@ -763,7 +766,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Des baisers avec une petite morsure',
-      b: 'Des baisers langoureux pour toujours',
+      b: 'Des bisous rapides pour toujours',
       tone: ContentTone.mix,
     ),
     (
@@ -996,7 +999,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Une vidéo osée de toi qui fait le tour du web',
-      b: 'Voir tes discussions coquettes circuler',
+      b: 'Voir tes discussions coquines circuler',
       tone: ContentTone.hot,
     ),
     (
@@ -1056,8 +1059,8 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Une soirée avec ta star de cinéma préférée',
-      b: 'Une nuit avec ton ancien meilleur ami',
+      a: 'Une nuit avec ta star de cinéma préférée',
+      b: 'Une nuit avec ton meilleur ex',
       tone: ContentTone.hot,
     ),
     (
@@ -1101,7 +1104,7 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Te faire lécher les orteils',
+      a: 'Te faire sucer les orteils',
       b: 'C\'est toi qui vas les sucer',
       tone: ContentTone.hot,
     ),
@@ -1122,7 +1125,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Exprimer à haute voix tes fantasmes',
-      b: 'En créer une au hasard',
+      b: 'En réaliser un au hasard',
       tone: ContentTone.hot,
     ),
     (
@@ -1152,7 +1155,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Une fellation pendant qu\'il conduit',
-      b: 'Une petite branlette au cinéma',
+      b: 'Un doigté au cinéma',
       tone: ContentTone.hot,
     ),
     (
@@ -1166,7 +1169,7 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Du sexe à trois, position après position',
+      a: 'Du sexe en trois positions à la suite',
       b: 'Une heure dans la même position',
       tone: ContentTone.hot,
     ),
@@ -1281,8 +1284,8 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Prononcez à voix haute votre mot de sécurité',
-      b: 'Imitons ta position préférée',
+      a: 'Prononce à voix haute ton mot de sécurité',
+      b: 'Mime ta position préférée',
       tone: ContentTone.mix,
     ),
     (
@@ -1332,7 +1335,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Une rencontre interdite avec le professeur de danse',
-      b: 'Une rencontre interdite avec le barman du bar près de chez moi',
+      b: 'Une rencontre interdite avec le barman du bar près de chez toi',
       tone: ContentTone.mix,
     ),
     (
@@ -1356,8 +1359,8 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Raconte le rêve que tu n\'as jamais réalisé',
-      b: 'La réaliser ce soir avec une personne présente',
+      a: 'Raconte le fantasme que tu n\'as jamais réalisé',
+      b: 'Le réaliser ce soir avec une personne présente',
       tone: ContentTone.mix,
     ),
     (
@@ -1366,7 +1369,7 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Faire l\'amour avec la plus belle personne que j\'aie jamais vue',
+      a: 'Faire l\'amour avec la plus belle personne que tu aies jamais vue',
       b: 'Une expérience sexuelle inoubliable avec la personne que tu aimes vraiment',
       tone: ContentTone.mix,
     ),
@@ -1381,7 +1384,7 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Une année d\'aventures ensoleillées sans lendemain',
+      a: 'Une année rien que d\'aventures sans lendemain',
       b: 'Une année passée à attendre la bonne personne',
       tone: ContentTone.mix,
     ),
@@ -1426,7 +1429,7 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Révélez l\'objet le plus osé que vous possédez',
+      a: 'Révèle l\'objet le plus osé que tu possèdes',
       b: 'Le montrer au groupe',
       tone: ContentTone.mix,
     ),
@@ -1447,7 +1450,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Dis le surnom sexy que tu donnes à ton partenaire',
-      b: 'Dire ce que ton partenaire t\'apporte',
+      b: 'Dire celui que ton partenaire te donne',
       tone: ContentTone.mix,
     ),
     (
@@ -1486,7 +1489,7 @@ class ContentFrPreferisci {
       tone: ContentTone.mix,
     ),
     (
-      a: 'Indiquez combien de personnes présentes vous trouveriez attirantes',
+      a: 'Indique combien de personnes présentes tu trouverais attirantes',
       b: 'Demander à chacun de te dire s\'il te trouve attirant',
       tone: ContentTone.mix,
     ),
@@ -1512,7 +1515,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Séduire la personne qui te plaît en utilisant uniquement des emojis',
-      b: 'Le séduire avec une seule voyelle gênante',
+      b: 'Le séduire avec un seul message vocal gênant',
       tone: ContentTone.mix,
     ),
     (
@@ -1596,7 +1599,7 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Relations sexuelles avec un mot de passe de sécurité',
+      a: 'Relations sexuelles avec un mot de sécurité',
       b: 'Sexe sans limites convenues',
       tone: ContentTone.hot,
     ),
@@ -1651,7 +1654,7 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Des rapports sexuels en silence pour que tu ne m\'entendes pas',
+      a: 'Des rapports sexuels en silence pour ne pas te faire entendre',
       b: 'Du sexe bruyant et débridé',
       tone: ContentTone.hot,
     ),
@@ -1709,7 +1712,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Te faire prendre tout au fond dans la bouche',
-      b: 'C\'est à toi de le mener jusqu\'au bout',
+      b: 'C\'est à toi de le prendre jusqu\'au fond',
       tone: ContentTone.hot,
     ),
     (a: 'Gorge profonde', b: 'Face sitting', tone: ContentTone.hot),
@@ -1736,7 +1739,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Se faire passer pour des inconnus à l\'hôtel',
-      b: 'Faites semblant d\'être des voisins curieux',
+      b: 'Fais semblant d\'être des voisins curieux',
       tone: ContentTone.hot,
     ),
     (
@@ -1761,7 +1764,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Faire un plan à trois avec celui qui te plaît',
-      b: 'Faire un plan à trois avec celle qui te plaît',
+      b: 'Faire un plan à trois avec la personne qui lui plaît',
       tone: ContentTone.hot,
     ),
     (
@@ -1796,7 +1799,7 @@ class ContentFrPreferisci {
     ),
     (
       a: 'Le laisser se faire séduire par une autre devant toi',
-      b: 'Le séduire avec une autre personne devant lui',
+      b: 'Séduire toi-même quelqu\'un d\'autre devant lui',
       tone: ContentTone.hot,
     ),
     (
@@ -1820,7 +1823,7 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Te faire caresser doucement le cou',
+      a: 'Te faire serrer doucement le cou',
       b: 'C\'est toi qui lui serres les poignets',
       tone: ContentTone.hot,
     ),
@@ -1830,7 +1833,7 @@ class ContentFrPreferisci {
       tone: ContentTone.hot,
     ),
     (
-      a: 'Avoir des relations sexuelles avec les cheveux attachés',
+      a: 'Avoir des relations sexuelles avec les cheveux tirés',
       b: 'Avoir des relations sexuelles avec les ongles dans le dos',
       tone: ContentTone.hot,
     ),

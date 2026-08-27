@@ -47,7 +47,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.normal,
     ),
     (
-      text: '¿Quién se perdería el pasaporte en el aeropuerto?',
+      text: '¿Quién perdería el pasaporte en el aeropuerto?',
       tone: ContentTone.normal,
     ),
     (
@@ -943,8 +943,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.mix,
     ),
     (
-      text:
-          '¿Quién no tiene alguna fantasía que nunca se haya atrevido a confesar?',
+      text: '¿Quién tendría una fantasía que nunca se ha atrevido a confesar?',
       tone: ContentTone.mix,
     ),
     (
@@ -1279,7 +1278,7 @@ class ContentEsChiLoPotrebbeFare {
     ),
     (text: '¿Quién grita más cuando se corre?', tone: ContentTone.hot),
     (
-      text: '¿Quién es capaz de hacerlo varias veces seguidas?',
+      text: '¿Quién es capaz de correrse varias veces seguidas?',
       tone: ContentTone.hot,
     ),
     (
@@ -1316,7 +1315,10 @@ class ContentEsChiLoPotrebbeFare {
       text: '¿Quién disfruta más que le practiquen sexo oral?',
       tone: ContentTone.hot,
     ),
-    (text: '¿Quién ha recibido sexo oral en el coche?', tone: ContentTone.hot),
+    (
+      text: '¿Quién ha practicado sexo oral en el coche?',
+      tone: ContentTone.hot,
+    ),
     (
       text:
           '¿Quién ha hecho que su pareja se corra con el sexo oral en menos de cinco minutos?',
@@ -1574,7 +1576,7 @@ class ContentEsChiLoPotrebbeFare {
           '¿Quién tiene una fantasía sexual de la que le da vergüenza hablar?',
       tone: ContentTone.hot,
     ),
-    (text: '¿A quién le gusta alguien de este grupo?', tone: ContentTone.hot),
+    (text: '¿Quién fantasea con alguien de este grupo?', tone: ContentTone.hot),
     (
       text: '¿A quién le gustaría probar el sexo en público al menos una vez?',
       tone: ContentTone.hot,
@@ -1680,7 +1682,7 @@ class ContentEsChiLoPotrebbeFare {
       tone: ContentTone.hot,
     ),
     (
-      text: '¿Quién deja siempre los juguetes sexuales a la vista?',
+      text: '¿Quién deja siempre los chupetones a la vista?',
       tone: ContentTone.hot,
     ),
     (
