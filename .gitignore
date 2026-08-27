@@ -59,3 +59,7 @@ supabase/.temp
 
 # stringa di connessione al database (contiene la password postgres)
 supabase/.db_url
+
+# Artefatti di planning generati da Claude Code (non versionare)
+.artifacts/
+*.artifact.md

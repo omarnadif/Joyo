@@ -1,7 +1,7 @@
-import 'package:joyo/content/content_de.dart';
-import 'package:joyo/content/content_en.dart';
-import 'package:joyo/content/content_es.dart';
-import 'package:joyo/content/content_fr.dart';
+import 'package:joyo/content/de/content_de_app.dart';
+import 'package:joyo/content/en/content_en_app.dart';
+import 'package:joyo/content/es/content_es_app.dart';
+import 'package:joyo/content/fr/content_fr_app.dart';
 import 'package:joyo/content/ita/content_it_app.dart';
 import 'app_locale.dart';
 
@@ -15,12 +15,12 @@ class AppTexts {
 
   static Map<String, String> of(AppLocale locale) => switch (locale) {
     AppLocale.it => ContentItApp.ui,
-    AppLocale.en => ContentEn.ui,
-    AppLocale.es => ContentEs.ui,
-    AppLocale.fr => ContentFr.ui,
-    AppLocale.de => ContentDe.ui,
+    AppLocale.en => ContentEnApp.ui,
+    AppLocale.es => ContentEsApp.ui,
+    AppLocale.fr => ContentFrApp.ui,
+    AppLocale.de => ContentDeApp.ui,
   };
 
   /// Ripiego comune quando una chiave manca nella lingua scelta.
-  static Map<String, String> get fallback => ContentEn.ui;
+  static Map<String, String> get fallback => ContentEnApp.ui;
 }

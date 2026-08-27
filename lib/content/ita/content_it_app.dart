@@ -12,13 +12,17 @@ class ContentItApp {
     'common.loading': 'Un attimo…',
     'common.you': 'tu',
     'onboarding.slide1.title': 'La serata prende\nuna piega inaspettata',
-    'onboarding.slide1.body': 'Ognuno col suo telefono, tutti nella stessa stanza. Joyo collega gli schermi, voi create il caos.',
+    'onboarding.slide1.body':
+        'Ognuno col suo telefono, tutti nella stessa stanza. Joyo collega gli schermi, voi create il caos.',
     'onboarding.slide2.title': 'Codice alla mano,\nsi entra nel vivo',
-    'onboarding.slide2.body': 'Apri la stanza, urla il codice e guarda gli amici fiondarsi dentro in pochi secondi.',
+    'onboarding.slide2.body':
+        'Apri la stanza, urla il codice e guarda gli amici fiondarsi dentro in pochi secondi.',
     'onboarding.slide3.title': 'Sei giochi per\nnon annoiarsi mai',
-    'onboarding.slide3.body': 'Vota i tuoi amici, inventa balle colossali o sfida la sorte con la bottiglia. Velocità massima.',
+    'onboarding.slide3.body':
+        'Vota i tuoi amici, inventa balle colossali o sfida la sorte con la bottiglia. Velocità massima.',
     'onboarding.slide4.title': 'Decidi tu\nquanto osare',
-    'onboarding.slide4.body': 'Modalità Normale per scaldarsi, Mix per movimentare la serata, Hot per quando cadono le maschere.',
+    'onboarding.slide4.body':
+        'Modalità Normale per scaldarsi, Mix per movimentare la serata, Hot per quando cadono le maschere.',
     'onboarding.language': 'In che lingua giocate?',
     'onboarding.start': 'INIZIA',
     'onboarding.skip': 'Salta',
@@ -52,10 +56,12 @@ class ContentItApp {
     'lobby.waiting_host': 'L\'host sta scegliendo il gioco…',
     'lobby.which_game': 'A cosa giochiamo?',
     'lobby.remove_player': 'Rimuovere {name}?',
-    'lobby.remove_player_body': 'Usalo se qualcuno ha chiuso l\'app senza uscire. Potrà sempre rientrare con il codice.',
+    'lobby.remove_player_body':
+        'Usalo se qualcuno ha chiuso l\'app senza uscire. Potrà sempre rientrare con il codice.',
     'lobby.remove': 'Rimuovi',
     'lobby.exit_host_title': 'Chiudere la stanza?',
-    'lobby.exit_host_body': 'La stanza si chiude per tutti: gli altri giocatori tornano alla home.',
+    'lobby.exit_host_body':
+        'La stanza si chiude per tutti: gli altri giocatori tornano alla home.',
     'lobby.exit_title': 'Uscire dalla stanza?',
     'lobby.exit_body': 'Gli altri giocatori ti vedranno uscire.',
     'lobby.stay': 'Resta',
@@ -69,7 +75,8 @@ class ContentItApp {
     'mode.normale': 'Normale',
     'mode.mix': 'Mix',
     'mode.hot': 'Hot',
-    'mode.normale.desc': 'Perfetta per rompere il ghiaccio senza troppi traumi.',
+    'mode.normale.desc':
+        'Perfetta per rompere il ghiaccio senza troppi traumi.',
     'mode.mix.desc': 'I giochi ruotano e il ritmo incalza. Tenetevi forte.',
     'mode.hot.desc': 'Senza freni. Da giocare solo se siete pronti a tutto.',
     'settings.rounds': 'Round per partita',
@@ -89,7 +96,8 @@ class ContentItApp {
     'game.coming_soon': 'In arrivo',
     'podium.title': 'Fine partita',
     'podium.winner': 'Vince {name}',
-    'podium.no_scores': 'Questo gioco non assegna punti: nessuna classifica, solo la partita.',
+    'podium.no_scores':
+        'Questo gioco non assegna punti: nessuna classifica, solo la partita.',
     'podium.points': '{n} punti',
     'podium.points_one': '{n} punto',
     'preferisci.name': 'Preferisci',
@@ -103,7 +111,8 @@ class ContentItApp {
     'non_ho_mai.prompt': 'Non ho mai…',
     'non_ho_mai.done': 'L\'HO FATTO',
     'non_ho_mai.never': 'MAI',
-    'non_ho_mai.anonymous': 'Nessuno vedrà cosa hai risposto: si vede solo il conteggio.',
+    'non_ho_mai.anonymous':
+        'Nessuno vedrà cosa hai risposto: si vede solo il conteggio.',
     'non_ho_mai.nobody': 'Nessuno l\'ha fatto',
     'non_ho_mai.count': '{n} su {total}',
     'non_ho_mai.guess_who': 'Ora tocca a voi capire chi',
@@ -125,7 +134,8 @@ class ContentItApp {
     'bluff.name': 'Bluff Story',
     'bluff.tagline': 'Mentire è un\'arte. Riesci a non farti beccare?',
     'bluff.writing': '{name} sta scrivendo\nun fatto vero su di sé',
-    'bluff.your_turn_body': 'Scrivi un fatto vero su di te. Il gioco ci metterà in mezzo due bugie: gli altri dovranno indovinare qual è il tuo.',
+    'bluff.your_turn_body':
+        'Scrivi un fatto vero su di te. Il gioco ci metterà in mezzo due bugie: gli altri dovranno indovinare qual è il tuo.',
     'bluff.hint': 'Scrivi qui…',
     'bluff.send': 'MANDA LA TUA VERITÀ',
     'bluff.too_short': 'Scrivi qualcosa di un po\' più lungo.',
@@ -138,23 +148,27 @@ class ContentItApp {
     'bluff.nobody_guessed': 'Nessuno ha indovinato: {name} vi ha fregati tutti',
     'bluff.guessed': '{n} hanno indovinato',
     'bluff.guessed_one': '{n} ha indovinato',
-    'bluff.scoring': '+2 a chi ha indovinato · +1 a {name} per ogni bluff riuscito',
+    'bluff.scoring':
+        '+2 a chi ha indovinato · +1 a {name} per ogni bluff riuscito',
     'bluff.ai_working': 'Sto inventando due bugie…',
     'bluff.ai_working_sub': 'su misura per la storia di {name}',
     'impostore.name': 'Impostore',
     'impostore.tagline': 'Un intruso tra noi. Trovalo prima che sia tardi.',
     'impostore.only_you': 'Solo tu vedi questo',
     'impostore.you_are': 'Sei l\'impostore',
-    'impostore.you_are_body': 'Non conosci la parola. Ascolta, improvvisa e non farti scoprire: se indovini la parola alla fine recuperi punti.',
+    'impostore.you_are_body':
+        'Non conosci la parola. Ascolta, improvvisa e non farti scoprire: se indovini la parola alla fine recuperi punti.',
     'impostore.the_word': 'La parola è',
     'impostore.one_doesnt': 'Uno di voi non la conosce.',
     'impostore.round_of_words': 'Giro di parole',
-    'impostore.round_of_words_body': 'A turno, ognuno dice una sola parola legata al segreto.\nTroppo precisa e l\'impostore capisce, troppo vaga e sembrate voi l\'impostore.',
+    'impostore.round_of_words_body':
+        'A turno, ognuno dice una sola parola legata al segreto.\nTroppo precisa e l\'impostore capisce, troppo vaga e sembrate voi l\'impostore.',
     'impostore.your_word': 'La tua parola: {word}',
     'impostore.to_vote': 'PASSA AL VOTO',
     'impostore.who': 'Chi è l\'impostore?',
     'impostore.guess_hint': 'La parola segreta era…',
-    'impostore.guess_body': 'Sei l\'impostore: prova a indovinare la parola. Se ti scoprono ma la azzecchi, recuperi punti.',
+    'impostore.guess_body':
+        'Sei l\'impostore: prova a indovinare la parola. Se ti scoprono ma la azzecchi, recuperi punti.',
     'impostore.confirm': 'CONFERMA',
     'impostore.vote_registered': 'Voto registrato',
     'impostore.caught': 'Impostore smascherato',
@@ -167,7 +181,8 @@ class ContentItApp {
     'impostore.votes': '{n} voti',
     'impostore.votes_one': '{n} voto',
     'premium.title': 'Contenuti su misura',
-    'premium.body': 'In "Chi lo potrebbe fare" e "Bluff Story" le frasi vengono scritte sul vostro gruppo invece che pescate da un elenco.',
+    'premium.body':
+        'In "Chi lo potrebbe fare" e "Bluff Story" le frasi vengono scritte sul vostro gruppo invece che pescate da un elenco.',
     'premium.active': 'AI attiva in questa stanza',
     'premium.active_body': 'Domande e bugie generate sul vostro gruppo',
     'premium.unlock': 'SBLOCCA',
@@ -177,7 +192,8 @@ class ContentItApp {
     'premium.unlocked': 'AI sbloccata per questa stanza',
     'premium.ad_reward': 'Hai guadagnato un contenuto AI',
     'premium.ad_incomplete': 'Annuncio non completato.',
-    'premium.no_store': 'Acquisti non disponibili qui: servono Google Play o App Store.',
+    'premium.no_store':
+        'Acquisti non disponibili qui: servono Google Play o App Store.',
     'premium.ads_mobile_only': 'Gli annunci funzionano solo su telefono.',
   };
 }

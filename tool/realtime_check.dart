@@ -25,21 +25,35 @@ Future<void> main(List<String> args) async {
 
   var failures = 0;
   void check(String label, bool ok, [String detail = '']) {
-    stdout.writeln('${ok ? 'OK  ' : 'FAIL'}  $label${detail.isEmpty ? '' : ' — $detail'}');
+    stdout.writeln(
+      '${ok ? 'OK  ' : 'FAIL'}  $label${detail.isEmpty ? '' : ' — $detail'}',
+    );
     if (!ok) failures++;
   }
 
   try {
     await host.auth.signInAnonymously();
     await guest.auth.signInAnonymously();
-    check('due sessioni anonime distinte',
-        host.auth.currentUser!.id != guest.auth.currentUser!.id);
+    check(
+      'due sessioni anonime distinte',
+      host.auth.currentUser!.id != guest.auth.currentUser!.id,
+    );
 
-    final created = (await host.rpc('create_room',
-        params: {'p_name': 'Host', 'p_color': 'lime'}) as List).first as Map<String, dynamic>;
+    final created =
+        (await host.rpc(
+                      'create_room',
+                      params: {'p_name': 'Host', 'p_color': 'lime'},
+                    )
+                    as List)
+                .first
+            as Map<String, dynamic>;
     final roomId = created['room_id'] as String;
     final code = created['room_code'] as String;
-    check('stanza creata con codice a 6 caratteri', code.length == 6, 'codice $code');
+    check(
+      'stanza creata con codice a 6 caratteri',
+      code.length == 6,
+      'codice $code',
+    );
 
     // l'host si mette in ascolto come fa la lobby
     final seen = <List<String>>[];
@@ -49,28 +63,39 @@ Future<void> main(List<String> args) async {
         .eq('room_id', roomId)
         .order('joined_at', ascending: true)
         .listen((rows) {
-      // Stessa deduplica del client: Realtime può riconsegnare l'INSERT di una
-      // riga già presente nello snapshot iniziale.
-      final byId = <String, String>{
-        for (final row in rows) row['id'] as String: row['name'] as String,
-      };
-      seen.add(byId.values.toList());
-      stdout.writeln('      emissione: ${byId.entries.map((e) => "${e.value}#${e.key.substring(0, 4)}").join(' | ')}');
-    });
+          // Stessa deduplica del client: Realtime può riconsegnare l'INSERT di una
+          // riga già presente nello snapshot iniziale.
+          final byId = <String, String>{
+            for (final row in rows) row['id'] as String: row['name'] as String,
+          };
+          seen.add(byId.values.toList());
+          stdout.writeln(
+            '      emissione: ${byId.entries.map((e) => "${e.value}#${e.key.substring(0, 4)}").join(' | ')}',
+          );
+        });
 
     await Future<void>.delayed(const Duration(seconds: 2));
-    check('primo snapshot ricevuto', seen.isNotEmpty && seen.last.length == 1,
-        seen.isEmpty ? 'nessun evento' : seen.last.join(', '));
+    check(
+      'primo snapshot ricevuto',
+      seen.isNotEmpty && seen.last.length == 1,
+      seen.isEmpty ? 'nessun evento' : seen.last.join(', '),
+    );
 
     // arriva il secondo giocatore
-    await guest.rpc('join_room',
-        params: {'p_code': code, 'p_name': 'Giulia', 'p_color': 'coral'});
+    await guest.rpc(
+      'join_room',
+      params: {'p_code': code, 'p_name': 'Giulia', 'p_color': 'coral'},
+    );
 
     final gotSecond = await _waitFor(
-        () => seen.isNotEmpty && seen.last.length == 2,
-        const Duration(seconds: 10));
-    check('l\'host vede entrare il secondo giocatore in tempo reale', gotSecond,
-        seen.isEmpty ? 'nessun evento' : seen.last.join(', '));
+      () => seen.isNotEmpty && seen.last.length == 2,
+      const Duration(seconds: 10),
+    );
+    check(
+      'l\'host vede entrare il secondo giocatore in tempo reale',
+      gotSecond,
+      seen.isEmpty ? 'nessun evento' : seen.last.join(', '),
+    );
 
     // stato stanza: il guest deve vedere partire il gioco senza toccare nulla
     final roomEvents = <String>[];
@@ -79,10 +104,12 @@ Future<void> main(List<String> args) async {
         .stream(primaryKey: ['id'])
         .eq('id', roomId)
         .listen((rows) {
-      roomEvents.add(rows.isEmpty
-          ? 'stanza-chiusa'
-          : '${rows.first['status']}/${rows.first['active_game']}');
-    });
+          roomEvents.add(
+            rows.isEmpty
+                ? 'stanza-chiusa'
+                : '${rows.first['status']}/${rows.first['active_game']}',
+          );
+        });
     await Future<void>.delayed(const Duration(seconds: 2));
 
     await host
@@ -91,38 +118,55 @@ Future<void> main(List<String> args) async {
         .eq('id', roomId);
 
     final gotStart = await _waitFor(
-        () => roomEvents.isNotEmpty && roomEvents.last == 'in_game/preferisci',
-        const Duration(seconds: 10));
-    check('il giocatore non-host riceve l\'avvio del gioco', gotStart,
-        roomEvents.isEmpty ? 'nessun evento' : roomEvents.last);
+      () => roomEvents.isNotEmpty && roomEvents.last == 'in_game/preferisci',
+      const Duration(seconds: 10),
+    );
+    check(
+      'il giocatore non-host riceve l\'avvio del gioco',
+      gotStart,
+      roomEvents.isEmpty ? 'nessun evento' : roomEvents.last,
+    );
 
     // uscita dalla stanza: gli altri lo vedono sparire
-    final guestPlayer = (await guest
-        .from('players')
-        .select('id')
-        .eq('room_id', roomId)
-        .eq('user_id', guest.auth.currentUser!.id)).first['id'] as String;
+    final guestPlayer =
+        (await guest
+                    .from('players')
+                    .select('id')
+                    .eq('room_id', roomId)
+                    .eq('user_id', guest.auth.currentUser!.id))
+                .first['id']
+            as String;
     await guest.from('players').delete().eq('id', guestPlayer);
 
     final gotLeave = await _waitFor(
-        () => seen.isNotEmpty && seen.last.length == 1,
-        const Duration(seconds: 10));
-    check('l\'host vede uscire il giocatore in tempo reale', gotLeave,
-        seen.isEmpty ? 'nessun evento' : seen.last.join(', '));
+      () => seen.isNotEmpty && seen.last.length == 1,
+      const Duration(seconds: 10),
+    );
+    check(
+      'l\'host vede uscire il giocatore in tempo reale',
+      gotLeave,
+      seen.isEmpty ? 'nessun evento' : seen.last.join(', '),
+    );
 
     // il guest rientra, così la chiusura della stanza lo trova dentro
-    await guest.rpc('join_room',
-        params: {'p_code': code, 'p_name': 'Giulia', 'p_color': 'coral'});
+    await guest.rpc(
+      'join_room',
+      params: {'p_code': code, 'p_name': 'Giulia', 'p_color': 'coral'},
+    );
     await Future<void>.delayed(const Duration(seconds: 2));
 
     // l'host chiude la stanza: il guest deve accorgersene, altrimenti resta
     // appeso su una schermata di attesa (è successo davvero in Fase 2)
     await host.from('rooms').delete().eq('id', roomId);
     final gotClose = await _waitFor(
-        () => roomEvents.isNotEmpty && roomEvents.last == 'stanza-chiusa',
-        const Duration(seconds: 10));
-    check('il guest vede la stanza chiudersi', gotClose,
-        roomEvents.isEmpty ? 'nessun evento' : roomEvents.last);
+      () => roomEvents.isNotEmpty && roomEvents.last == 'stanza-chiusa',
+      const Duration(seconds: 10),
+    );
+    check(
+      'il guest vede la stanza chiudersi',
+      gotClose,
+      roomEvents.isEmpty ? 'nessun evento' : roomEvents.last,
+    );
 
     await sub.cancel();
     await roomSub.cancel();
@@ -134,9 +178,11 @@ Future<void> main(List<String> args) async {
     await guest.dispose();
   }
 
-  stdout.writeln(failures == 0
-      ? '\nTutti i controlli realtime superati.'
-      : '\n$failures controlli falliti.');
+  stdout.writeln(
+    failures == 0
+        ? '\nTutti i controlli realtime superati.'
+        : '\n$failures controlli falliti.',
+  );
   exit(failures == 0 ? 0 : 1);
 }
 

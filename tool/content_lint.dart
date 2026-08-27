@@ -278,9 +278,7 @@ Future<List<_LtMatch>> _languageToolCheck(
     final replacement = replacements.isNotEmpty
         ? (replacements.first as Map<String, dynamic>)['value'] as String?
         : null;
-    results.add(
-      _LtMatch(index, match['message'] as String, replacement),
-    );
+    results.add(_LtMatch(index, match['message'] as String, replacement));
   }
   return results;
 }
@@ -350,10 +348,10 @@ Future<List<String>> _deeplTranslateBatched(
       start,
       (start + batchSize).clamp(0, texts.length),
     );
-    final body = _formEncode({
-      'source_lang': 'IT',
-      'target_lang': targetLang,
-    }, repeated: {'text': batch});
+    final body = _formEncode(
+      {'source_lang': 'IT', 'target_lang': targetLang},
+      repeated: {'text': batch},
+    );
     final response = await _post(
       '$host/v2/translate',
       body,
@@ -361,7 +359,9 @@ Future<List<String>> _deeplTranslateBatched(
     );
     final decoded = jsonDecode(response) as Map<String, dynamic>;
     final translations = decoded['translations'] as List;
-    out.addAll(translations.map((t) => (t as Map<String, dynamic>)['text'] as String));
+    out.addAll(
+      translations.map((t) => (t as Map<String, dynamic>)['text'] as String),
+    );
   }
   return out;
 }
@@ -388,9 +388,9 @@ Future<String> _post(String url, String body, {String? authHeader}) async {
         request.headers.set(HttpHeaders.authorizationHeader, authHeader);
       }
       request.write(body);
-      final response = await request
-          .close()
-          .timeout(const Duration(seconds: 30));
+      final response = await request.close().timeout(
+        const Duration(seconds: 30),
+      );
       final text = await response.transform(utf8.decoder).join();
       if (response.statusCode >= 300) {
         throw HttpException('$url → HTTP ${response.statusCode}: $text');
@@ -399,7 +399,9 @@ Future<String> _post(String url, String body, {String? authHeader}) async {
     } catch (e) {
       if (attempt >= _maxRetries) rethrow;
       final wait = Duration(seconds: 5 * (attempt + 1));
-      stderr.writeln('  (errore transitorio, riprovo fra ${wait.inSeconds}s: $e)');
+      stderr.writeln(
+        '  (errore transitorio, riprovo fra ${wait.inSeconds}s: $e)',
+      );
       await Future<void>.delayed(wait);
     } finally {
       client.close();

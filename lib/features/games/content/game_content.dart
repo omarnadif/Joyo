@@ -1,9 +1,6 @@
 import '../../../core/i18n/app_locale.dart';
 import 'package:joyo/content/content_tone.dart';
-import 'package:joyo/content/content_de.dart';
-import 'package:joyo/content/content_en.dart';
-import 'package:joyo/content/content_es.dart';
-import 'package:joyo/content/content_fr.dart';
+
 import 'package:joyo/content/ita/content_it_bluff.dart';
 import 'package:joyo/content/ita/content_it_chi_lo_potrebbe_fare.dart';
 import 'package:joyo/content/ita/content_it_impostore.dart';
@@ -11,15 +8,41 @@ import 'package:joyo/content/ita/content_it_non_ho_mai.dart';
 import 'package:joyo/content/ita/content_it_obbligo_o_verita.dart';
 import 'package:joyo/content/ita/content_it_preferisci.dart';
 
+import 'package:joyo/content/en/content_en_bluff.dart';
+import 'package:joyo/content/en/content_en_chi_lo_potrebbe_fare.dart';
+import 'package:joyo/content/en/content_en_impostore.dart';
+import 'package:joyo/content/en/content_en_non_ho_mai.dart';
+import 'package:joyo/content/en/content_en_obbligo_o_verita.dart';
+import 'package:joyo/content/en/content_en_preferisci.dart';
+
+import 'package:joyo/content/es/content_es_bluff.dart';
+import 'package:joyo/content/es/content_es_chi_lo_potrebbe_fare.dart';
+import 'package:joyo/content/es/content_es_impostore.dart';
+import 'package:joyo/content/es/content_es_non_ho_mai.dart';
+import 'package:joyo/content/es/content_es_obbligo_o_verita.dart';
+import 'package:joyo/content/es/content_es_preferisci.dart';
+
+import 'package:joyo/content/fr/content_fr_bluff.dart';
+import 'package:joyo/content/fr/content_fr_chi_lo_potrebbe_fare.dart';
+import 'package:joyo/content/fr/content_fr_impostore.dart';
+import 'package:joyo/content/fr/content_fr_non_ho_mai.dart';
+import 'package:joyo/content/fr/content_fr_obbligo_o_verita.dart';
+import 'package:joyo/content/fr/content_fr_preferisci.dart';
+
+import 'package:joyo/content/de/content_de_bluff.dart';
+import 'package:joyo/content/de/content_de_chi_lo_potrebbe_fare.dart';
+import 'package:joyo/content/de/content_de_impostore.dart';
+import 'package:joyo/content/de/content_de_non_ho_mai.dart';
+import 'package:joyo/content/de/content_de_obbligo_o_verita.dart';
+import 'package:joyo/content/de/content_de_preferisci.dart';
+
 /// Punto unico da cui i giochi prendono i contenuti nella lingua del gruppo.
 ///
-/// Le altre quattro lingue hanno un solo file (`content_xx.dart`) con tutti
-/// i giochi; l'italiano, essendo la lingua di partenza e la più ricca, è
-/// diviso per gioco dentro `content/ita/` (`content_it_non_ho_mai.dart`,
-/// `content_it_chi_lo_potrebbe_fare.dart`, ecc.). Le altre quattro hanno la
-/// parità completa (stesse quantità per ogni gioco e tono, tradotte 1:1 dai
-/// pool italiani). Ampliarle significa aggiungere righe a `content_xx.dart`
-/// (o al file italiano del gioco corrispondente), senza toccare il resto
+/// Ogni lingua vive, come l'italiano, in file divisi per gioco dentro
+/// `content/<lingua>/` (`content_en_non_ho_mai.dart`, `content_fr_preferisci.dart`,
+/// ecc.), con una classe per gioco. I pool sono tradotti 1:1 dai pool italiani,
+/// nello stesso ordine e con lo stesso tono a ogni indice: ampliarli significa
+/// aggiungere righe al file del gioco corrispondente, senza toccare il resto
 /// dell'app.
 class GameContent {
   const GameContent._();
@@ -27,20 +50,20 @@ class GameContent {
   static List<({String text, String tone})> nonHoMai(AppLocale locale) =>
       switch (locale) {
         AppLocale.it => ContentItNonHoMai.nonHoMai,
-        AppLocale.en => ContentEn.nonHoMai,
-        AppLocale.es => ContentEs.nonHoMai,
-        AppLocale.fr => ContentFr.nonHoMai,
-        AppLocale.de => ContentDe.nonHoMai,
+        AppLocale.en => ContentEnNonHoMai.nonHoMai,
+        AppLocale.es => ContentEsNonHoMai.nonHoMai,
+        AppLocale.fr => ContentFrNonHoMai.nonHoMai,
+        AppLocale.de => ContentDeNonHoMai.nonHoMai,
       };
 
   static List<({String text, String tone})> chiLoPotrebbeFare(
     AppLocale locale,
   ) => switch (locale) {
     AppLocale.it => ContentItChiLoPotrebbeFare.chiLoPotrebbeFare,
-    AppLocale.en => ContentEn.chiLoPotrebbeFare,
-    AppLocale.es => ContentEs.chiLoPotrebbeFare,
-    AppLocale.fr => ContentFr.chiLoPotrebbeFare,
-    AppLocale.de => ContentDe.chiLoPotrebbeFare,
+    AppLocale.en => ContentEnChiLoPotrebbeFare.chiLoPotrebbeFare,
+    AppLocale.es => ContentEsChiLoPotrebbeFare.chiLoPotrebbeFare,
+    AppLocale.fr => ContentFrChiLoPotrebbeFare.chiLoPotrebbeFare,
+    AppLocale.de => ContentDeChiLoPotrebbeFare.chiLoPotrebbeFare,
   };
 
   // Se a una lingua manca il mazzo di un tono si ripiega su quello italiano:
@@ -49,10 +72,10 @@ class GameContent {
   static List<String> obblighi(AppLocale locale, String tone) =>
       switch (locale) {
         AppLocale.it => ContentItObbligoOVerita.obblighi[tone],
-        AppLocale.en => ContentEn.obblighi[tone],
-        AppLocale.es => ContentEs.obblighi[tone],
-        AppLocale.fr => ContentFr.obblighi[tone],
-        AppLocale.de => ContentDe.obblighi[tone],
+        AppLocale.en => ContentEnObbligoOVerita.obblighi[tone],
+        AppLocale.es => ContentEsObbligoOVerita.obblighi[tone],
+        AppLocale.fr => ContentFrObbligoOVerita.obblighi[tone],
+        AppLocale.de => ContentDeObbligoOVerita.obblighi[tone],
       } ??
       ContentItObbligoOVerita.obblighi[tone] ??
       const <String>[];
@@ -60,28 +83,28 @@ class GameContent {
   static List<String> verita(AppLocale locale, String tone) =>
       switch (locale) {
         AppLocale.it => ContentItObbligoOVerita.verita[tone],
-        AppLocale.en => ContentEn.verita[tone],
-        AppLocale.es => ContentEs.verita[tone],
-        AppLocale.fr => ContentFr.verita[tone],
-        AppLocale.de => ContentDe.verita[tone],
+        AppLocale.en => ContentEnObbligoOVerita.verita[tone],
+        AppLocale.es => ContentEsObbligoOVerita.verita[tone],
+        AppLocale.fr => ContentFrObbligoOVerita.verita[tone],
+        AppLocale.de => ContentDeObbligoOVerita.verita[tone],
       } ??
       ContentItObbligoOVerita.verita[tone] ??
       const <String>[];
 
   static List<String> bluffFakes(AppLocale locale) => switch (locale) {
     AppLocale.it => ContentItBluff.bluffFakes,
-    AppLocale.en => ContentEn.bluffFakes,
-    AppLocale.es => ContentEs.bluffFakes,
-    AppLocale.fr => ContentFr.bluffFakes,
-    AppLocale.de => ContentDe.bluffFakes,
+    AppLocale.en => ContentEnBluff.bluffFakes,
+    AppLocale.es => ContentEsBluff.bluffFakes,
+    AppLocale.fr => ContentFrBluff.bluffFakes,
+    AppLocale.de => ContentDeBluff.bluffFakes,
   };
 
   static List<String> impostoreWords(AppLocale locale) => switch (locale) {
     AppLocale.it => ContentItImpostore.impostoreWords,
-    AppLocale.en => ContentEn.impostoreWords,
-    AppLocale.es => ContentEs.impostoreWords,
-    AppLocale.fr => ContentFr.impostoreWords,
-    AppLocale.de => ContentDe.impostoreWords,
+    AppLocale.en => ContentEnImpostore.impostoreWords,
+    AppLocale.es => ContentEsImpostore.impostoreWords,
+    AppLocale.fr => ContentFrImpostore.impostoreWords,
+    AppLocale.de => ContentDeImpostore.impostoreWords,
   };
 
   static ({
@@ -93,10 +116,22 @@ class GameContent {
       pairs: ContentItPreferisci.preferisciPairs,
       hot: ContentItPreferisci.preferisciHot,
     ),
-    AppLocale.en => (pairs: ContentEn.preferisciPairs, hot: ContentEn.preferisciHot),
-    AppLocale.es => (pairs: ContentEs.preferisciPairs, hot: ContentEs.preferisciHot),
-    AppLocale.fr => (pairs: ContentFr.preferisciPairs, hot: ContentFr.preferisciHot),
-    AppLocale.de => (pairs: ContentDe.preferisciPairs, hot: ContentDe.preferisciHot),
+    AppLocale.en => (
+      pairs: ContentEnPreferisci.preferisciPairs,
+      hot: ContentEnPreferisci.preferisciHot,
+    ),
+    AppLocale.es => (
+      pairs: ContentEsPreferisci.preferisciPairs,
+      hot: ContentEsPreferisci.preferisciHot,
+    ),
+    AppLocale.fr => (
+      pairs: ContentFrPreferisci.preferisciPairs,
+      hot: ContentFrPreferisci.preferisciHot,
+    ),
+    AppLocale.de => (
+      pairs: ContentDePreferisci.preferisciPairs,
+      hot: ContentDePreferisci.preferisciHot,
+    ),
   };
 
   /// Coppie di "Preferisci" nella lingua del gruppo, col tono per il filtro
@@ -207,6 +242,9 @@ class GameContent {
     if (i != null && i < pool.length && _normalAligned(pool[i].tone)) {
       return (a: pool[i].a, b: pool[i].b);
     }
-    return (a: content['a'] as String? ?? '—', b: content['b'] as String? ?? '—');
+    return (
+      a: content['a'] as String? ?? '—',
+      b: content['b'] as String? ?? '—',
+    );
   }
 }

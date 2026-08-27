@@ -31,12 +31,13 @@ Future<void> main(List<String> args) async {
     exit(64);
   }
 
-  final files = Directory(_migrationsDir)
-      .listSync()
-      .whereType<File>()
-      .where((f) => f.path.endsWith('.sql'))
-      .toList()
-    ..sort((a, b) => a.path.compareTo(b.path));
+  final files =
+      Directory(_migrationsDir)
+          .listSync()
+          .whereType<File>()
+          .where((f) => f.path.endsWith('.sql'))
+          .toList()
+        ..sort((a, b) => a.path.compareTo(b.path));
 
   if (files.isEmpty) {
     stdout.writeln('Nessuna migrazione in $_migrationsDir.');

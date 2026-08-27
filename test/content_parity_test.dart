@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:joyo/core/i18n/app_locale.dart';
-import 'package:joyo/content/content_de.dart';
-import 'package:joyo/content/content_en.dart';
-import 'package:joyo/content/content_es.dart';
-import 'package:joyo/content/content_fr.dart';
+import 'package:joyo/content/de/content_de_preferisci.dart';
+import 'package:joyo/content/en/content_en_preferisci.dart';
+import 'package:joyo/content/es/content_es_preferisci.dart';
+import 'package:joyo/content/fr/content_fr_preferisci.dart';
 import 'package:joyo/content/ita/content_it_preferisci.dart';
 import 'package:joyo/features/games/content/game_content.dart';
 import 'package:joyo/content/content_tone.dart';
@@ -11,10 +11,10 @@ import 'package:joyo/content/content_tone.dart';
 List<({String a, String b})> _preferisciPairs(AppLocale locale) =>
     switch (locale) {
       AppLocale.it => ContentItPreferisci.preferisciPairs,
-      AppLocale.en => ContentEn.preferisciPairs,
-      AppLocale.es => ContentEs.preferisciPairs,
-      AppLocale.fr => ContentFr.preferisciPairs,
-      AppLocale.de => ContentDe.preferisciPairs,
+      AppLocale.en => ContentEnPreferisci.preferisciPairs,
+      AppLocale.es => ContentEsPreferisci.preferisciPairs,
+      AppLocale.fr => ContentFrPreferisci.preferisciPairs,
+      AppLocale.de => ContentDePreferisci.preferisciPairs,
     };
 
 /// L'italiano è la lingua di riferimento: le altre quattro devono avere le

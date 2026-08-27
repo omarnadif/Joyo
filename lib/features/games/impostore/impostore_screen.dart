@@ -50,7 +50,8 @@ class ImpostoreScreen extends ConsumerWidget {
         // La parola in tutte le lingue (i pool sono allineati 1:1): serve al
         // server per accettare l'ipotesi dell'impostore in qualsiasi lingua.
         final answers = [
-          for (final l in AppLocale.values) GameContent.impostoreWords(l)[index],
+          for (final l in AppLocale.values)
+            GameContent.impostoreWords(l)[index],
         ];
         await ctx.repository.startImpostoreRound(
           roomId: ctx.room.id,
@@ -155,7 +156,11 @@ class _PlayingState extends ConsumerState<_Playing> {
 }
 
 class _SecretCard extends StatelessWidget {
-  const _SecretCard({required this.secret, required this.word, required this.t});
+  const _SecretCard({
+    required this.secret,
+    required this.word,
+    required this.t,
+  });
 
   final Map<String, dynamic>? secret;
 
