@@ -7,8 +7,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/i18n/i18n.dart';
 import '../../../core/supabase/supabase_providers.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/avatar_catalog.dart';
 import '../../../core/ui/aura.dart';
 import '../../../core/ui/joyo_ui.dart';
+import '../../games/widgets/player_chip.dart';
 import '../data/room_repository.dart';
 import '../state/room_providers.dart';
 import 'room_shell.dart';
@@ -29,6 +31,7 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
   final _nameController = TextEditingController();
   final _codeController = TextEditingController();
   String _color = JoyoColors.avatarPalette.keys.first;
+  String? _avatar;
   bool _busy = false;
   String? _error;
 
@@ -50,6 +53,10 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
       setState(() => _error = t('join.error_name'));
       return;
     }
+    if (_avatar == null) {
+      setState(() => _error = t('join.error_avatar'));
+      return;
+    }
     if (_isJoin && code.length != 6) {
       setState(() => _error = t('join.error_code'));
       return;
@@ -65,9 +72,15 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
       await ref.read(anonSessionProvider.future);
 
       final repo = ref.read(roomRepositoryProvider);
+      final avatar = _avatar!;
       final session = _isJoin
-          ? await repo.joinRoom(code: code, name: name, color: _color)
-          : await repo.createRoom(name: name, color: _color);
+          ? await repo.joinRoom(
+              code: code,
+              name: name,
+              color: _color,
+              avatar: avatar,
+            )
+          : await repo.createRoom(name: name, color: _color, avatar: avatar);
 
       if (!mounted) return;
       ref.read(roomSessionProvider.notifier).enter(session);
@@ -150,6 +163,29 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
                               color: entry.value,
                               selected: _color == entry.key,
                               onTap: () => setState(() => _color = entry.key),
+                            ),
+                        ],
+                      ),
+                    ),
+
+                    const SizedBox(height: 28),
+                    RiseIn(delayMs: 200, child: Eyebrow(t('join.avatar'))),
+                    const SizedBox(height: 12),
+                    RiseIn(
+                      delayMs: 240,
+                      child: Wrap(
+                        spacing: 14,
+                        runSpacing: 14,
+                        children: [
+                          for (final key in AvatarCatalog.keys)
+                            GestureDetector(
+                              onTap: () => setState(() => _avatar = key),
+                              child: AvatarCircle(
+                                avatar: key,
+                                color: accent,
+                                size: 60,
+                                selected: _avatar == key,
+                              ),
                             ),
                         ],
                       ),

@@ -3,7 +3,7 @@ class ContentDeApp {
 
   static const Map<String, String> ui = {
     'app.tagline':
-        'Das Partyspiel, bei dem\njeder mit seinem eigenen Handy spielt.',
+        'Das Partyspiel, bei dem\nalle verbunden sind.',
     'common.retry': 'Erneut versuchen',
     'common.cancel': 'Abbrechen',
     'common.continue': 'WEITER',
@@ -35,6 +35,8 @@ class ContentDeApp {
     'join.name_question': 'Wie heißt du?',
     'join.name_hint': 'Dein Name',
     'join.color': 'Deine Farbe',
+    'join.avatar': 'Wähle deinen Avatar',
+    'join.error_avatar': 'Wähle einen Avatar.',
     'join.code': 'Raumcode',
     'join.cta_create': 'RAUM ERSTELLEN',
     'join.cta_join': 'BEITRETEN',

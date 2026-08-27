@@ -4,6 +4,7 @@ class Player {
     required this.id,
     required this.name,
     required this.color,
+    required this.avatar,
     required this.isHost,
     required this.score,
     required this.joinedAt,
@@ -13,6 +14,7 @@ class Player {
     id: map['id'] as String,
     name: map['name'] as String,
     color: map['color'] as String,
+    avatar: map['avatar'] as String? ?? 'tan_m',
     isHost: map['is_host'] as bool? ?? false,
     score: (map['score'] as num?)?.toInt() ?? 0,
     joinedAt: DateTime.parse(map['joined_at'] as String),
@@ -21,6 +23,7 @@ class Player {
   final String id;
   final String name;
   final String color;
+  final String avatar;
   final bool isHost;
   final int score;
   final DateTime joinedAt;

@@ -18,6 +18,7 @@ dependencies:
   in_app_purchase: ^3.2.3
   google_mobile_ads: 7.0.0
   shared_preferences: ^2.5.5
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
   flutter_test:
@@ -37,3 +38,5 @@ flutter:
     - assets/games/
     # Il marchio Joyo al neon, mostrato in home. Fondo trasparente.
     - assets/brand/
+    # Avatar giocatore (personas flat, SVG). Scelti nella join.
+    - assets/avatars/

@@ -3,7 +3,7 @@ class ContentEsApp {
 
   static const Map<String, String> ui = {
     'app.tagline':
-        'El juego de fiesta donde\ncada uno juega con su propio móvil.',
+        'El juego de fiesta donde\ntodos están conectados.',
     'common.retry': 'REINTENTAR',
     'common.cancel': 'CANCELAR',
     'common.continue': 'CONTINUAR',
@@ -35,6 +35,8 @@ class ContentEsApp {
     'join.name_question': '¿Cómo te llamas?',
     'join.name_hint': 'Introduce tu nombre',
     'join.color': 'Elige tu color',
+    'join.avatar': 'Elige tu avatar',
+    'join.error_avatar': 'Elige un avatar.',
     'join.code': 'Código de la sala',
     'join.cta_create': 'CREAR LA SALA',
     'join.cta_join': 'ENTRAR',

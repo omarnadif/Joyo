@@ -2,7 +2,7 @@ class ContentEnApp {
   const ContentEnApp._();
 
   static const Map<String, String> ui = {
-    'app.tagline': 'The party game where\neveryone plays on their own phone.',
+    'app.tagline': 'The party game where\neveryone is connected.',
     'common.retry': 'TRY AGAIN',
     'common.cancel': 'CANCEL',
     'common.continue': 'CONTINUE',
@@ -11,7 +11,7 @@ class ContentEnApp {
     'common.you': 'you',
     'onboarding.slide1.title': 'The night is about to\ntake a new turn',
     'onboarding.slide1.body':
-        'Everyone plays on their own phone, but you all play together. Joyo brings everything together — you take it from there.',
+        'Everyone plays on their own phone, but you all play together. Joyo brings everything together, you take it from there.',
     'onboarding.slide2.title': 'One code and\nyou’re in',
     'onboarding.slide2.body':
         'Create a room, share the code and get your friends in. You’ll be ready to play in seconds.',
@@ -34,6 +34,8 @@ class ContentEnApp {
     'join.name_question': 'What’s your name?',
     'join.name_hint': 'Enter your name',
     'join.color': 'Choose your color',
+    'join.avatar': 'Choose your avatar',
+    'join.error_avatar': 'Pick an avatar.',
     'join.code': 'Room code',
     'join.cta_create': 'CREATE ROOM',
     'join.cta_join': 'JOIN',

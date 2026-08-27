@@ -2,15 +2,14 @@ class ContentFrApp {
   const ContentFrApp._();
 
   static const Map<String, String> ui = {
-    'app.tagline': 'Le jeu de soirée où\nchacun joue sur son propre téléphone.',
+    'app.tagline': 'Le jeu de soirée où\ntout le monde est connecté.',
     'common.retry': 'RÉESSAYER',
     'common.cancel': 'ANNULER',
     'common.continue': 'CONTINUER',
     'common.back_home': 'RETOUR À L’ACCUEIL',
     'common.loading': 'Un instant…',
     'common.you': 'toi',
-    'onboarding.slide1.title':
-        'La soirée est sur le point de\nchanger de rythme',
+    'onboarding.slide1.title': 'La soirée va bientôt\nchanger de rythme',
     'onboarding.slide1.body':
         'Chacun joue sur son propre téléphone, mais vous jouez tous ensemble. Joyo rassemble tout le monde, à vous de jouer.',
     'onboarding.slide2.title': 'Un code et\nvous êtes dedans',
@@ -35,6 +34,8 @@ class ContentFrApp {
     'join.name_question': 'Comment tu t’appelles ?',
     'join.name_hint': 'Entre ton prénom',
     'join.color': 'Choisis ta couleur',
+    'join.avatar': 'Choisis ton avatar',
+    'join.error_avatar': 'Choisis un avatar.',
     'join.code': 'Code de la salle',
     'join.cta_create': 'CRÉER LA SALLE',
     'join.cta_join': 'REJOINDRE',

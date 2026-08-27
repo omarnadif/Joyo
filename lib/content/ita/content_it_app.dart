@@ -2,7 +2,7 @@ class ContentItApp {
   const ContentItApp._();
 
   static const Map<String, String> ui = {
-    'app.tagline': 'Il party game dove\nognuno ha il suo telefono.',
+    'app.tagline': 'Il party game dove\ntutti sono connessi.',
     'common.retry': 'RIPROVA',
     'common.cancel': 'ANNULLA',
     'common.continue': 'CONTINUA',
@@ -41,6 +41,8 @@ class ContentItApp {
     'join.name_question': 'Come ti chiami?',
     'join.name_hint': 'Inserisci il tuo nome',
     'join.color': 'Scegli il tuo colore',
+    'join.avatar': 'Scegli il tuo avatar',
+    'join.error_avatar': 'Scegli un avatar.',
     'join.code': 'Codice della stanza',
     'join.cta_create': 'CREA LA STANZA',
     'join.cta_join': 'ENTRA',
