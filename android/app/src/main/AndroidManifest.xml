@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <!-- AdMob App ID reale (console AdMob, app "Joyo"). Gli unit id di
-             interstitial/rewarded restano invece su --dart-define: senza flag
+             interstitial/rewarded restano invece su dart-define: senza flag
              si usano gli id di test di Google, così le build di sviluppo non
              servono annunci veri. -->
         <meta-data

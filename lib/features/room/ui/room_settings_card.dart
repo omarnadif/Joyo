@@ -72,9 +72,31 @@ class RoomSettingsCard extends ConsumerWidget {
             ],
           ),
           const SizedBox(height: 10),
-          Text(
-            t('mode.${room.mode.id}.desc'),
-            style: text.bodySmall?.copyWith(color: JoyoColors.textSecondary),
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            curve: Curves.easeOut,
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+            decoration: BoxDecoration(
+              color: room.mode.color.withValues(alpha: 0.08),
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(
+                color: room.mode.color.withValues(alpha: 0.20),
+              ),
+            ),
+            child: Row(
+              children: [
+                Icon(room.mode.icon, size: 16, color: room.mode.color),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    t('mode.${room.mode.id}.desc'),
+                    style: text.bodySmall?.copyWith(
+                      color: JoyoColors.textPrimary.withValues(alpha: 0.85),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
           const SizedBox(height: 18),
           Text(
@@ -175,6 +197,11 @@ class _ModeTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Mix e Hot devono invogliare anche da spente: tengono il loro colore,
+    // un velo di gradiente e un alone leggero; il lucchetto è solo un badge
+    // d'angolo, non sostituisce l'identità della modalità.
+    final premium = mode != GameMode.normale;
+
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
@@ -182,38 +209,100 @@ class _ModeTile extends StatelessWidget {
         curve: Curves.easeOut,
         padding: const EdgeInsets.symmetric(vertical: 14),
         decoration: BoxDecoration(
-          color: selected
-              ? mode.color.withValues(alpha: 0.18)
-              : JoyoColors.surfaceHigh,
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: selected
+                ? [
+                    mode.color.withValues(alpha: 0.30),
+                    mode.color.withValues(alpha: 0.10),
+                  ]
+                : [
+                    Color.lerp(
+                      JoyoColors.surfaceHigh,
+                      mode.color,
+                      premium ? 0.10 : 0,
+                    )!,
+                    JoyoColors.surfaceHigh,
+                  ],
+          ),
           borderRadius: BorderRadius.circular(18),
           border: Border.all(
-            color: selected ? mode.color : Colors.transparent,
+            color: selected
+                ? mode.color
+                : premium
+                ? mode.color.withValues(alpha: 0.30)
+                : Colors.transparent,
             width: 2,
           ),
           boxShadow: selected
               ? [
                   BoxShadow(
-                    color: mode.color.withValues(alpha: 0.3),
-                    blurRadius: 22,
+                    color: mode.color.withValues(alpha: 0.35),
+                    blurRadius: 24,
+                    spreadRadius: -6,
+                  ),
+                ]
+              : premium
+              ? [
+                  BoxShadow(
+                    color: mode.color.withValues(alpha: 0.16),
+                    blurRadius: 18,
                     spreadRadius: -6,
                   ),
                 ]
               : null,
         ),
-        child: Column(
+        child: Stack(
+          clipBehavior: Clip.none,
           children: [
-            Icon(
-              locked ? Icons.lock_rounded : mode.icon,
-              size: 20,
-              color: selected ? mode.color : JoyoColors.textSecondary,
-            ),
-            const SizedBox(height: 6),
-            Text(
-              label,
-              style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                color: selected ? mode.color : JoyoColors.textSecondary,
+            SizedBox(
+              width: double.infinity,
+              child: Column(
+                children: [
+                  AnimatedScale(
+                    scale: selected ? 1.15 : 1,
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeOut,
+                    child: Icon(
+                      mode.icon,
+                      size: 22,
+                      color: selected
+                          ? mode.color
+                          : premium
+                          ? mode.color.withValues(alpha: 0.9)
+                          : JoyoColors.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    label,
+                    style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                      color: selected ? mode.color : JoyoColors.textSecondary,
+                    ),
+                  ),
+                ],
               ),
             ),
+            if (locked)
+              Positioned(
+                top: -8,
+                right: 6,
+                child: Container(
+                  width: 20,
+                  height: 20,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: JoyoColors.surface,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: mode.color.withValues(alpha: 0.5),
+                      width: 1.2,
+                    ),
+                  ),
+                  child: Icon(Icons.lock_rounded, size: 11, color: mode.color),
+                ),
+              ),
           ],
         ),
       ),

@@ -243,6 +243,9 @@ class ContentItApp {
     'paywall.premium_name': 'Premium',
     'paywall.premium_desc':
         'Mix, Hot, partite più lunghe e niente pubblicità.',
+    'paywall.best_value': 'Il più scelto',
+    'paywall.feat_modes': 'Modalità Mix e Hot',
+    'paywall.feat_rounds': 'Partite più lunghe',
     'paywall.per_month': '/mese',
     'paywall.active': 'Attivo',
     'paywall.subscribe': 'ABBONATI',
