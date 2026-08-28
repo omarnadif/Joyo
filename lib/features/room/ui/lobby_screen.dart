@@ -9,7 +9,6 @@ import '../../../core/ui/joyo_ui.dart';
 import '../../../core/ui/game_art.dart';
 import '../../games/game_catalog.dart';
 import '../../games/widgets/player_chip.dart';
-import '../../premium/premium_card.dart';
 import '../data/models/player.dart';
 import '../data/models/room.dart';
 import '../state/room_providers.dart';
@@ -64,11 +63,6 @@ class LobbyScreen extends ConsumerWidget {
                       RiseIn(
                         delayMs: 60,
                         child: RoomSettingsCard(room: room, isHost: isHost),
-                      ),
-                      const SizedBox(height: 12),
-                      RiseIn(
-                        delayMs: 120,
-                        child: PremiumCard(room: room, isHost: isHost),
                       ),
                       const SizedBox(height: 26),
 

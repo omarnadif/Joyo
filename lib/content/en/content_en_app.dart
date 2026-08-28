@@ -200,5 +200,33 @@ class ContentEnApp {
     'premium.no_store':
         'Purchases aren’t available here. Use Google Play or the App Store.',
     'premium.ads_mobile_only': 'Ads are only available on mobile.',
+
+    'shop.badge': 'Premium',
+    'shop.title': 'Unlock Mix and Hot',
+    'shop.body':
+        'Mix and Hot are premium modes. Watch 3 ads to unlock them for one game.',
+    'shop.progress': '{n}/3 ads',
+    'shop.watch': 'WATCH AN AD',
+    'shop.unlocked': 'Mix and Hot unlocked for one game',
+    'shop.host_only': 'Only the host can unlock them.',
+    'shop.go_premium': 'Or go Premium',
+    'shop.page_title': 'Shop',
+    'shop.free_title': 'Unlock with ads',
+    'shop.in_room_only': 'Available in a room, as host.',
+    'shop.games': '{n} premium games ready',
+    'endgame.promo': 'Want more sparkle and fewer ads?',
+    'endgame.shop_cta': 'DISCOVER PREMIUM',
+
+    'paywall.title': 'Go Premium',
+    'paywall.no_ads_name': 'No ads',
+    'paywall.no_ads_desc': 'Play without ads.',
+    'paywall.premium_name': 'Premium',
+    'paywall.premium_desc': 'Mix, Hot, longer games and no ads.',
+    'paywall.per_month': '/month',
+    'paywall.active': 'Active',
+    'paywall.subscribe': 'SUBSCRIBE',
+    'paywall.restore': 'Restore purchases',
+    'paywall.restored': 'Subscription restored',
+    'paywall.nothing_restored': 'No subscription to restore',
   };
 }

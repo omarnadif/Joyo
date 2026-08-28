@@ -998,7 +998,7 @@ class ContentDeNonHoMai {
     (text: 'Rimming mit einem Partner ausprobiert', tone: ContentTone.hot),
     (text: 'Sex in der Hündchenstellung gehabt', tone: ContentTone.hot),
     (text: 'die 69er-Stellung ausprobiert', tone: ContentTone.hot),
-    (text: 'unter der Dusche Sex gehabt', tone: ContentTone.hot),
+    (text: 'mit jemandem einen Porno geschaut', tone: ContentTone.hot),
     (text: 'Sex in der Badewanne gehabt', tone: ContentTone.hot),
     (text: 'im Schwimmbad Sex gehabt', tone: ContentTone.hot),
     (text: 'nachts am Strand Liebe gemacht', tone: ContentTone.hot),

@@ -991,7 +991,7 @@ class ContentFrNonHoMai {
     (text: 'essayé le rimming avec un partenaire', tone: ContentTone.hot),
     (text: 'fait l\'amour en levrette', tone: ContentTone.hot),
     (text: 'essayé la position du 69', tone: ContentTone.hot),
-    (text: 'fait l\'amour sous la douche', tone: ContentTone.hot),
+    (text: 'regardé un porno avec quelqu\'un', tone: ContentTone.hot),
     (text: 'fait l\'amour dans la baignoire', tone: ContentTone.hot),
     (text: 'fait l\'amour dans la piscine', tone: ContentTone.hot),
     (text: 'fait l\'amour sur une plage, la nuit', tone: ContentTone.hot),

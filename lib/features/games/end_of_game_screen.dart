@@ -6,6 +6,8 @@ import '../../core/theme/app_colors.dart';
 import '../../core/ui/confetti.dart';
 import '../../core/ui/joyo_ui.dart';
 import '../premium/ads/ads_service.dart';
+import '../premium/entitlements.dart';
+import '../premium/shop_screen.dart';
 import '../room/data/models/player.dart';
 import '../room/data/models/room.dart';
 import '../room/state/room_providers.dart';
@@ -90,6 +92,19 @@ class EndOfGameScreen extends ConsumerWidget {
               ],
             ),
           ),
+          if (!ref.watch(hasPremiumProvider)) ...[
+            const SizedBox(height: 12),
+            Text(
+              t('endgame.promo'),
+              textAlign: TextAlign.center,
+              style: text.bodyMedium?.copyWith(color: JoyoColors.textSecondary),
+            ),
+            const SizedBox(height: 10),
+            JoyoGhostButton(
+              label: t('endgame.shop_cta'),
+              onPressed: () => openShop(context),
+            ),
+          ],
           const SizedBox(height: 12),
           if (isHost)
             JoyoButton(
@@ -99,9 +114,10 @@ class EndOfGameScreen extends ConsumerWidget {
               // l'interstiziale il widget può uscire dall'albero e `ref` non
               // sarebbe più utilizzabile.
               onPressed: () async {
+                final noAds = ref.read(noAdsProvider);
                 final ads = ref.read(adsServiceProvider);
                 final repo = ref.read(roomRepositoryProvider);
-                await ads.showInterstitial();
+                if (!noAds) await ads.showInterstitial();
                 await repo.backToLobby(room.id);
               },
             )

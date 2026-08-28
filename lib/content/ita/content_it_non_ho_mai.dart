@@ -853,7 +853,7 @@ class ContentItNonHoMai {
     (text: 'provato il rimming con un partner', tone: ContentTone.hot),
     (text: 'fatto sesso nella posizione della pecorina', tone: ContentTone.hot),
     (text: 'provato la posizione del 69', tone: ContentTone.hot),
-    (text: 'fatto sesso sotto la doccia', tone: ContentTone.hot),
+    (text: 'guardato un porno insieme a qualcuno', tone: ContentTone.hot),
     (text: 'fatto sesso nella vasca da bagno', tone: ContentTone.hot),
     (text: 'fatto sesso in piscina', tone: ContentTone.hot),
     (text: 'fatto l\'amore su una spiaggia di notte', tone: ContentTone.hot),

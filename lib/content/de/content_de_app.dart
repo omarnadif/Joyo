@@ -210,5 +210,33 @@ class ContentDeApp {
     'premium.no_store':
         'Käufe sind hier nicht verfügbar. Nutze Google Play oder den App Store.',
     'premium.ads_mobile_only': 'Werbung ist nur auf dem Handy verfügbar.',
+
+    'shop.badge': 'Premium',
+    'shop.title': 'Mix und Hot freischalten',
+    'shop.body':
+        'Mix und Hot sind Premium-Modi. Schau 3 Werbungen, um sie für eine Runde freizuschalten.',
+    'shop.progress': '{n}/3 Werbungen',
+    'shop.watch': 'WERBUNG ANSEHEN',
+    'shop.unlocked': 'Mix und Hot für eine Runde freigeschaltet',
+    'shop.host_only': 'Nur der Host kann sie freischalten.',
+    'shop.go_premium': 'Oder hol dir Premium',
+    'shop.page_title': 'Shop',
+    'shop.free_title': 'Mit Werbung freischalten',
+    'shop.in_room_only': 'In einem Raum verfügbar, als Host.',
+    'shop.games': '{n} Premium-Spiele bereit',
+    'endgame.promo': 'Mehr Funken und weniger Werbung?',
+    'endgame.shop_cta': 'PREMIUM ENTDECKEN',
+
+    'paywall.title': 'Hol dir Premium',
+    'paywall.no_ads_name': 'Keine Werbung',
+    'paywall.no_ads_desc': 'Spiele ohne Werbung.',
+    'paywall.premium_name': 'Premium',
+    'paywall.premium_desc': 'Mix, Hot, längere Spiele und keine Werbung.',
+    'paywall.per_month': '/Monat',
+    'paywall.active': 'Aktiv',
+    'paywall.subscribe': 'ABONNIEREN',
+    'paywall.restore': 'Käufe wiederherstellen',
+    'paywall.restored': 'Abo wiederhergestellt',
+    'paywall.nothing_restored': 'Kein Abo zum Wiederherstellen',
   };
 }

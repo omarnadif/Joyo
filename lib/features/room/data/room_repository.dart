@@ -129,16 +129,18 @@ class RoomRepository {
     params: {'p_room': roomId, 'p_game': gameType},
   );
 
-  /// Solo l'host: modalità e numero di round della partita.
+  /// Solo l'host: modalità e numero di round della partita. Passa da una RPC
+  /// perché mode/tone/rounds_total non sono più scrivibili dal client: il
+  /// server verifica host e permessi premium (Mix/Hot e round >10). Il tono lo
+  /// deriva il server dalla modalità. Rilancia 'LOCKED' se non sbloccato.
   Future<void> updateSettings({
     required String roomId,
     String? mode,
-    String? tone,
     int? roundsTotal,
-  }) async => await _client
-      .from('rooms')
-      .update({'mode': ?mode, 'tone': ?tone, 'rounds_total': ?roundsTotal})
-      .eq('id', roomId);
+  }) async => await _client.rpc(
+    'update_room_settings',
+    params: {'p_room': roomId, 'p_mode': ?mode, 'p_rounds': ?roundsTotal},
+  );
 
   /// Solo l'host: cambia gioco senza toccare i round giocati (modalità Mix).
   Future<void> setActiveGame({

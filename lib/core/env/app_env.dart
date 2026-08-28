@@ -22,6 +22,18 @@ class AppEnv {
     defaultValue: 'joyo_premium_ai_room',
   );
 
+  /// Abbonamento mensile "niente pubblicità".
+  static const String noAdsProductId = String.fromEnvironment(
+    'NO_ADS_PRODUCT_ID',
+    defaultValue: 'joyo_no_ads',
+  );
+
+  /// Abbonamento mensile "premium completo": modalità, round e niente pubblicità.
+  static const String premiumSubProductId = String.fromEnvironment(
+    'PREMIUM_SUB_PRODUCT_ID',
+    defaultValue: 'joyo_premium',
+  );
+
   /// Sblocca le schermate premium in sviluppo (`--dart-define=DEV_UNLOCK_PREMIUM=true`);
   /// vale solo sul client, il server rifiuta comunque le generazioni AI non pagate.
   static const bool devUnlockPremium = bool.fromEnvironment(

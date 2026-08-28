@@ -6,6 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/i18n/i18n.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
+import '../../premium/ads/ads_service.dart';
+import '../../premium/entitlements.dart';
 import '../../room/data/models/player.dart';
 import '../../room/data/models/room.dart';
 import '../../room/state/room_providers.dart';
@@ -334,6 +336,12 @@ class _RoundGameState extends ConsumerState<RoundGame> {
 
   /// Avanti di un round; in Mix cambia anche gioco cambiando `active_game`.
   Future<void> _advance(Room room, List<Player> players, Round round) async {
+    // Interstiziale leggero ogni 3 round (dopo il 3°, 6°, 9°…). Quello di fine
+    // partita è a parte, sul podio. Saltato per gli abbonati no-ads/premium;
+    // non blocca il flusso se non è pronto.
+    if (round.roundNumber % 3 == 0 && !ref.read(noAdsProvider)) {
+      await ref.read(adsServiceProvider).showInterstitial();
+    }
     if (room.mode.rotatesGames) {
       final next = GameCatalog.randomPlayable(exclude: widget.gameId);
       await ref

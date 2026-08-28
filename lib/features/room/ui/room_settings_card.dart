@@ -5,6 +5,8 @@ import '../../../core/i18n/i18n.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
 import '../../games/game_mode.dart';
+import '../../premium/entitlements.dart';
+import '../../premium/shop_screen.dart';
 import '../data/models/room.dart';
 import '../state/room_providers.dart';
 
@@ -23,6 +25,7 @@ class RoomSettingsCard extends ConsumerWidget {
     final text = Theme.of(context).textTheme;
     final t = ref.watch(tProvider);
     final repo = ref.read(roomRepositoryProvider);
+    final premiumUnlocked = ref.watch(premiumUnlockedProvider);
 
     // Scritture non attese (il feedback è la card via Realtime), ma un errore
     // non deve sparire in silenzio.
@@ -44,22 +47,24 @@ class RoomSettingsCard extends ConsumerWidget {
           Row(
             children: [
               for (final mode in GameMode.values) ...[
+                // Mix e Hot sono premium: se non sbloccate, toccarle apre lo
+                // shop invece di selezionarle.
                 Expanded(
                   child: _ModeTile(
                     mode: mode,
                     label: t('mode.${mode.id}'),
                     selected: room.mode == mode,
-                    // Il tono si scrive insieme alla modalità: è ciò che l'AI
-                    // legge da `rooms.tone`, o resterebbe normal anche in Hot.
-                    onTap: isHost
-                        ? () => update(
+                    locked: mode != GameMode.normale && !premiumUnlocked,
+                    onTap: !isHost
+                        ? null
+                        : (mode != GameMode.normale && !premiumUnlocked)
+                        ? () => openShop(context)
+                        : () => update(
                             () => repo.updateSettings(
                               roomId: room.id,
                               mode: mode.id,
-                              tone: mode.primaryTone,
                             ),
-                          )
-                        : null,
+                          ),
                   ),
                 ),
                 if (mode != GameMode.values.last) const SizedBox(width: 8),
@@ -81,22 +86,73 @@ class RoomSettingsCard extends ConsumerWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
+              // Oltre 10 round è premium: bloccato apre lo shop.
               for (final count in _roundOptions)
                 _RoundChip(
                   label: '$count',
                   selected: room.roundsTotal == count,
-                  onTap: isHost
-                      ? () => update(
+                  locked: count > 10 && !premiumUnlocked,
+                  onTap: !isHost
+                      ? null
+                      : (count > 10 && !premiumUnlocked)
+                      ? () => openShop(context)
+                      : () => update(
                           () => repo.updateSettings(
                             roomId: room.id,
                             roundsTotal: count,
                           ),
-                        )
-                      : null,
+                        ),
                 ),
             ],
           ),
+          const SizedBox(height: 16),
+          _PremiumFooter(t: t),
         ],
+      ),
+    );
+  }
+}
+
+/// Accesso allo shop dalla lobby: mostra lo stato premium o invita ad abbonarsi
+/// (e permette il ripristino su un nuovo dispositivo).
+class _PremiumFooter extends ConsumerWidget {
+  const _PremiumFooter({required this.t});
+
+  final Translator t;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final text = Theme.of(context).textTheme;
+    final isPremium = ref.watch(hasPremiumProvider);
+
+    if (isPremium) {
+      return Row(
+        children: [
+          const Icon(
+            Icons.workspace_premium_rounded,
+            color: JoyoColors.aqua,
+            size: 18,
+          ),
+          const SizedBox(width: 8),
+          Text(
+            t('paywall.active'),
+            style: text.bodySmall?.copyWith(color: JoyoColors.aqua),
+          ),
+        ],
+      );
+    }
+
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: TextButton.icon(
+        onPressed: () => openShop(context),
+        icon: const Icon(
+          Icons.workspace_premium_rounded,
+          size: 18,
+          color: JoyoColors.violet,
+        ),
+        label: Text(t('paywall.title')),
+        style: TextButton.styleFrom(padding: EdgeInsets.zero),
       ),
     );
   }
@@ -108,11 +164,13 @@ class _ModeTile extends StatelessWidget {
     required this.label,
     required this.selected,
     required this.onTap,
+    this.locked = false,
   });
 
   final GameMode mode;
   final String label;
   final bool selected;
+  final bool locked;
   final VoidCallback? onTap;
 
   @override
@@ -145,7 +203,7 @@ class _ModeTile extends StatelessWidget {
         child: Column(
           children: [
             Icon(
-              mode.icon,
+              locked ? Icons.lock_rounded : mode.icon,
               size: 20,
               color: selected ? mode.color : JoyoColors.textSecondary,
             ),
@@ -168,10 +226,12 @@ class _RoundChip extends StatelessWidget {
     required this.label,
     required this.selected,
     required this.onTap,
+    this.locked = false,
   });
 
   final String label;
   final bool selected;
+  final bool locked;
   final VoidCallback? onTap;
 
   @override
@@ -191,11 +251,24 @@ class _RoundChip extends StatelessWidget {
             width: 2,
           ),
         ),
-        child: Text(
-          label,
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            color: selected ? JoyoColors.violet : JoyoColors.textSecondary,
-          ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (locked) ...[
+              const Icon(
+                Icons.lock_rounded,
+                size: 13,
+                color: JoyoColors.textSecondary,
+              ),
+              const SizedBox(width: 5),
+            ],
+            Text(
+              label,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: selected ? JoyoColors.violet : JoyoColors.textSecondary,
+              ),
+            ),
+          ],
         ),
       ),
     );

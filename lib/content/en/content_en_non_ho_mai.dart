@@ -790,7 +790,7 @@ class ContentEnNonHoMai {
     (text: 'tried rimming with a partner', tone: ContentTone.hot),
     (text: 'had sex in the doggy-style position', tone: ContentTone.hot),
     (text: 'tried the 69 position', tone: ContentTone.hot),
-    (text: 'had sex in the shower', tone: ContentTone.hot),
+    (text: 'watched porn with someone', tone: ContentTone.hot),
     (text: 'had sex in the bathtub', tone: ContentTone.hot),
     (text: 'had sex in the pool', tone: ContentTone.hot),
     (text: 'made love on a beach at night', tone: ContentTone.hot),

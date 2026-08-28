@@ -12,6 +12,7 @@ import '../../core/ui/game_art.dart';
 import '../../core/ui/joyo_ui.dart';
 import '../diagnostics/diagnostics_screen.dart';
 import '../games/game_catalog.dart';
+import '../premium/shop_screen.dart';
 import '../room/ui/join_flow_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -35,7 +36,11 @@ class HomeScreen extends ConsumerWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
-                children: [_LanguageChip(t: t)],
+                children: [
+                  const _ShopButton(),
+                  const SizedBox(width: 10),
+                  _LanguageChip(t: t),
+                ],
               ),
               const SizedBox(height: 8),
               RiseIn(child: _Wordmark(t: t)),
@@ -193,6 +198,27 @@ class _BrandMarkState extends State<_BrandMark>
           ),
         );
       },
+    );
+  }
+}
+
+/// Pillola shop in home: stesso stile della lingua, con un carrello.
+class _ShopButton extends StatelessWidget {
+  const _ShopButton();
+
+  @override
+  Widget build(BuildContext context) {
+    return GlowCard(
+      accent: JoyoColors.violet,
+      glow: 0.4,
+      radius: 16,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      onTap: () => openShop(context),
+      child: const Icon(
+        Icons.shopping_cart_rounded,
+        size: 18,
+        color: JoyoColors.textSecondary,
+      ),
     );
   }
 }

@@ -208,5 +208,33 @@ class ContentEsApp {
         'Las compras no están disponibles aquí. Usa Google Play o App Store.',
     'premium.ads_mobile_only':
         'Los anuncios solo están disponibles en el móvil.',
+
+    'shop.badge': 'Premium',
+    'shop.title': 'Desbloquea Mix y Hot',
+    'shop.body':
+        'Mix y Hot son modos premium. Mira 3 anuncios para desbloquearlos durante una partida.',
+    'shop.progress': '{n}/3 anuncios',
+    'shop.watch': 'VER UN ANUNCIO',
+    'shop.unlocked': 'Mix y Hot desbloqueados para una partida',
+    'shop.host_only': 'Solo el anfitrión puede desbloquearlos.',
+    'shop.go_premium': 'O pásate a Premium',
+    'shop.page_title': 'Tienda',
+    'shop.free_title': 'Desbloquea con anuncios',
+    'shop.in_room_only': 'Disponible en una sala, como anfitrión.',
+    'shop.games': '{n} partidas premium listas',
+    'endgame.promo': '¿Quieres más chispa y menos anuncios?',
+    'endgame.shop_cta': 'DESCUBRE PREMIUM',
+
+    'paywall.title': 'Pásate a Premium',
+    'paywall.no_ads_name': 'Sin anuncios',
+    'paywall.no_ads_desc': 'Juega sin anuncios.',
+    'paywall.premium_name': 'Premium',
+    'paywall.premium_desc': 'Mix, Hot, partidas más largas y sin anuncios.',
+    'paywall.per_month': '/mes',
+    'paywall.active': 'Activo',
+    'paywall.subscribe': 'SUSCRIBIRSE',
+    'paywall.restore': 'Restaurar compras',
+    'paywall.restored': 'Suscripción restaurada',
+    'paywall.nothing_restored': 'No hay suscripción que restaurar',
   };
 }

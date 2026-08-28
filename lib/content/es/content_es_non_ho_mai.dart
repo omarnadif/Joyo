@@ -1011,7 +1011,7 @@ class ContentEsNonHoMai {
     (text: 'he probado el rimming con una pareja', tone: ContentTone.hot),
     (text: 'he tenido sexo en la postura del perrito', tone: ContentTone.hot),
     (text: 'he probado la postura del 69', tone: ContentTone.hot),
-    (text: 'he tenido sexo bajo la ducha', tone: ContentTone.hot),
+    (text: 'visto porno con alguien', tone: ContentTone.hot),
     (text: 'he tenido sexo en la bañera', tone: ContentTone.hot),
     (text: 'he tenido sexo en la piscina', tone: ContentTone.hot),
     (text: 'he hecho el amor en una playa por la noche', tone: ContentTone.hot),

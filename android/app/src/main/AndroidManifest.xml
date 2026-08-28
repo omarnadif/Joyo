@@ -27,12 +27,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <!-- AdMob: questo è l'App ID di TEST di Google. Prima della
-             pubblicazione va sostituito con quello vero della console AdMob,
-             altrimenti gli annunci non vengono serviti. -->
+        <!-- AdMob App ID reale (console AdMob, app "Joyo"). Gli unit id di
+             interstitial/rewarded restano invece su --dart-define: senza flag
+             si usano gli id di test di Google, così le build di sviluppo non
+             servono annunci veri. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-2109864769102110~8296016273"/>
 
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->

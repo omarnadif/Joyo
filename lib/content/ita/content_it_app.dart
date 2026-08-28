@@ -220,5 +220,34 @@ class ContentItApp {
     'premium.no_store':
         'Gli acquisti non sono disponibili qui. Usa Google Play o App Store.',
     'premium.ads_mobile_only': 'Gli annunci sono disponibili solo su telefono.',
+
+    'shop.badge': 'Premium',
+    'shop.title': 'Sblocca Mix e Hot',
+    'shop.body':
+        'Mix e Hot sono modalità premium. Guarda 3 annunci per sbloccarle per una partita.',
+    'shop.progress': '{n}/3 annunci',
+    'shop.watch': 'GUARDA UN ANNUNCIO',
+    'shop.unlocked': 'Mix e Hot sbloccate per una partita',
+    'shop.host_only': 'Solo l\'host può sbloccarle.',
+    'shop.go_premium': 'Oppure passa a Premium',
+    'shop.page_title': 'Shop',
+    'shop.free_title': 'Sblocca con gli annunci',
+    'shop.in_room_only': 'Disponibile in una stanza, come host.',
+    'shop.games': '{n} partite premium pronte',
+    'endgame.promo': 'Vuoi più scintille e meno pubblicità?',
+    'endgame.shop_cta': 'SCOPRI PREMIUM',
+
+    'paywall.title': 'Passa a Premium',
+    'paywall.no_ads_name': 'Niente pubblicità',
+    'paywall.no_ads_desc': 'Gioca senza annunci.',
+    'paywall.premium_name': 'Premium',
+    'paywall.premium_desc':
+        'Mix, Hot, partite più lunghe e niente pubblicità.',
+    'paywall.per_month': '/mese',
+    'paywall.active': 'Attivo',
+    'paywall.subscribe': 'ABBONATI',
+    'paywall.restore': 'Ripristina acquisti',
+    'paywall.restored': 'Abbonamento ripristinato',
+    'paywall.nothing_restored': 'Nessun abbonamento da ripristinare',
   };
 }
