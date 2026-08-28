@@ -156,7 +156,7 @@ class ContentItApp {
         'Scrivi una verità su di te. Noi aggiungeremo due bugie. Gli altri dovranno capire qual è quella vera.',
     'bluff.hint': 'Scrivi la tua verità…',
     'bluff.send': 'INVIA LA TUA VERITÀ',
-    'bluff.too_short': 'Scrivi qualcosa di più completo.',
+    'bluff.too_short': 'Scrivi almeno 30 caratteri.',
     'bluff.which_true': 'Qual è la verità di {name}?',
     'bluff.in_play': 'La tua storia è in gioco',
     'bluff.dont_tell': 'Non far capire agli altri qual è quella vera.',
@@ -168,6 +168,11 @@ class ContentItApp {
     'bluff.guessed': '{n} hanno indovinato',
     'bluff.guessed_one': '{n} ha indovinato',
     'bluff.scoring': '+2 a chi indovina · +1 a {name} per ogni bluff riuscito',
+    'bluff.multilang_title': 'Lingue diverse al tavolo',
+    'bluff.multilang_body':
+        'Nel gruppo si gioca in lingue diverse: le bugie escono tradotte, ma '
+        'la frase vera resta nella lingua di chi la scrive e può farsi '
+        'riconoscere subito.',
     'bluff.ai_working': 'Preparo due bugie…',
     'bluff.ai_working_sub': 'pensate per la storia di {name}',
 

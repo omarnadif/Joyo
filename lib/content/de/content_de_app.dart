@@ -145,7 +145,7 @@ class ContentDeApp {
         'Schreib eine Wahrheit über dich. Wir fügen zwei Lügen hinzu. Die anderen müssen herausfinden, welche Aussage wirklich stimmt.',
     'bluff.hint': 'Schreib deine Wahrheit…',
     'bluff.send': 'TEILE DEINE WAHRHEIT',
-    'bluff.too_short': 'Schreib etwas ausführlicher.',
+    'bluff.too_short': 'Schreib mindestens 30 Zeichen.',
     'bluff.which_true': 'Welche Aussage über {name} ist wahr?',
     'bluff.in_play': 'Deine Geschichte ist im Spiel',
     'bluff.dont_tell': 'Verrate nicht, welche Aussage die Wahrheit ist.',
@@ -158,6 +158,11 @@ class ContentDeApp {
     'bluff.guessed_one': '{n} hat es erraten',
     'bluff.scoring':
         '+2 für jede richtige Antwort · +1 für {name} für jeden erfolgreichen Bluff',
+    'bluff.multilang_title': 'Verschiedene Sprachen am Tisch',
+    'bluff.multilang_body':
+        'Eure Gruppe spielt in verschiedenen Sprachen: Die Lügen erscheinen '
+        'übersetzt, aber der wahre Satz bleibt in der Sprache der Person, '
+        'die ihn schreibt, und kann sofort auffallen.',
     'bluff.ai_working': 'Ich erfinde zwei Lügen…',
     'bluff.ai_working_sub': 'passend zu {name}s Geschichte',
     'impostore.name': 'Impostor',

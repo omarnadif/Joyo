@@ -3,11 +3,14 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/i18n/app_locale.dart';
 import '../../../core/i18n/i18n.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
 import '../../premium/ai_content_repository.dart';
+import '../../room/data/models/player.dart';
 import '../../room/data/models/room.dart';
+import '../../room/state/room_providers.dart';
 import '../content/game_content.dart';
 import '../data/game_models.dart';
 import '../engine/pool_picker.dart';
@@ -18,7 +21,7 @@ import '../widgets/player_chip.dart';
 /// aggiunge due bugie plausibili e gli altri indovinano quale sia il vero.
 ///
 /// Punti: 2 a chi indovina, 1 al narratore per ogni persona che ha ingannato.
-class BluffStoryScreen extends ConsumerWidget {
+class BluffStoryScreen extends ConsumerStatefulWidget {
   const BluffStoryScreen({required this.room, super.key});
 
   static const String gameId = 'bluff_story';
@@ -28,16 +31,53 @@ class BluffStoryScreen extends ConsumerWidget {
   final Room room;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<BluffStoryScreen> createState() => _BluffStoryScreenState();
+}
+
+class _BluffStoryScreenState extends ConsumerState<BluffStoryScreen> {
+  /// Avviso lingue miste già mostrato: una volta sola per apertura del gioco.
+  bool _multilangWarned = false;
+
+  /// Con lingue diverse al tavolo la verità (testo libero) stona rispetto alle
+  /// bugie tradotte: meglio dirlo subito, appena si apre il gioco.
+  void _maybeWarnMultilang(List<Player> players, Translator t) {
+    if (_multilangWarned || players.length < 2) return;
+    final locales = players.map((p) => p.locale).toSet();
+    if (locales.length < 2) return;
+    _multilangWarned = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      showDialog<void>(
+        context: context,
+        builder: (context) => AlertDialog(
+          backgroundColor: JoyoColors.surfaceHigh,
+          title: Text(t('bluff.multilang_title')),
+          content: Text(t('bluff.multilang_body')),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text(t('common.continue')),
+            ),
+          ],
+        ),
+      );
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final room = widget.room;
     final t = ref.watch(tProvider);
     final locale = ref.watch(localeProvider);
+    final players = ref.watch(playersProvider(room.id)).value;
+    if (players != null) _maybeWarnMultilang(players, t);
 
     return RoundGame(
       room: room,
-      gameId: gameId,
-      accent: accent,
+      gameId: BluffStoryScreen.gameId,
+      accent: BluffStoryScreen.accent,
       title: t('bluff.name'),
-      votingWindow: turnWindow,
+      votingWindow: BluffStoryScreen.turnWindow,
       showVoteCounter: false,
       shouldClose: _everyoneAnswered,
       awards: _awards,
@@ -91,20 +131,47 @@ int _stableHash(String value) {
   return hash;
 }
 
-/// Le tre affermazioni nell'ordine in cui le vede tutto il gruppo.
-List<String> _statements(RoundGameState state, String truth) {
-  final items = <String>[
-    truth,
-    state.content['fake1'] as String? ?? '',
-    state.content['fake2'] as String? ?? '',
-  ];
-  items.sort(
-    (a, b) => _stableHash(
-      state.round.id + a,
-    ).compareTo(_stableHash(state.round.id + b)),
-  );
-  return items;
+/// L'ordine delle tre affermazioni, identico su ogni telefono.
+///
+/// Si calcola sulle CHIAVI (truth/fake1/fake2), non sui testi: le bugie del
+/// pool escono a ogni telefono nella propria lingua, e un ordine basato sul
+/// testo divergerebbe tra i telefoni facendo puntare i voti alla frase sbagliata.
+List<String> _orderedKeys(RoundGameState state) =>
+    <String>['truth', 'fake1', 'fake2']..sort(
+      (a, b) => _stableHash(
+        state.round.id + a,
+      ).compareTo(_stableHash(state.round.id + b)),
+    );
+
+/// Posizione della verità nell'ordine comune (per i punti, non serve la lingua).
+int _truthIndex(RoundGameState state) => _orderedKeys(state).indexOf('truth');
+
+/// Testo di un'affermazione nella lingua di chi guarda: le bugie del pool si
+/// localizzano per indice (i pool sono allineati 1:1 tra le lingue), quelle
+/// riscritte dall'AI restano come sono. La verità è testo libero del narratore.
+String _statementText(
+  RoundGameState state,
+  AppLocale locale,
+  String key,
+  String truth,
+) {
+  if (key == 'truth') return truth;
+  final fallback = state.content[key] as String? ?? '';
+  if (state.content['ai'] == true) return fallback;
+  final pool = GameContent.bluffFakes(locale);
+  final i = (state.content[key == 'fake1' ? 'i' : 'i2'] as num?)?.toInt();
+  return (i != null && i >= 0 && i < pool.length) ? pool[i] : fallback;
 }
+
+/// Le tre affermazioni nell'ordine in cui le vede tutto il gruppo.
+List<({String key, String text})> _statements(
+  RoundGameState state,
+  AppLocale locale,
+  String truth,
+) => [
+  for (final key in _orderedKeys(state))
+    (key: key, text: _statementText(state, locale, key, truth)),
+];
 
 bool _everyoneAnswered(RoundGameState state) {
   final teller = state.content['teller'] as String?;
@@ -124,7 +191,7 @@ Map<String, int> _awards(RoundGameState state) {
   final truth = _truthOf(state);
   if (teller == null || truth == null) return const {};
 
-  final truthIndex = _statements(state, truth).indexOf(truth);
+  final truthIndex = _truthIndex(state);
   final result = <String, int>{};
   var fooled = 0;
 
@@ -246,7 +313,7 @@ class _PlayingState extends ConsumerState<_Playing> {
       );
     }
 
-    final statements = _statements(state, truth);
+    final statements = _statements(state, t.locale, truth);
     final myPick = (state.myValue?['pick'] as num?)?.toInt();
 
     if (amTeller) {
@@ -267,9 +334,9 @@ class _PlayingState extends ConsumerState<_Playing> {
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: _StatementCard(
-                text: statement,
-                highlighted: statement == truth,
-                label: statement == truth ? t('bluff.your_truth') : null,
+                text: statement.text,
+                highlighted: statement.key == 'truth',
+                label: statement.key == 'truth' ? t('bluff.your_truth') : null,
               ),
             ),
           const Spacer(),
@@ -301,7 +368,7 @@ class _PlayingState extends ConsumerState<_Playing> {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 12),
                   child: _StatementCard(
-                    text: statements[i],
+                    text: statements[i].text,
                     selected: myPick == i,
                     dimmed: myPick != null && myPick != i,
                     onTap: state.hasVoted
@@ -339,7 +406,7 @@ class _WriteTruthState extends State<_WriteTruth> {
 
   Future<void> _send() async {
     final value = _controller.text.trim();
-    if (value.length < 8) {
+    if (value.length < 30) {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text(widget.t('bluff.too_short'))));
@@ -473,8 +540,8 @@ class _Result extends StatelessWidget {
       );
     }
 
-    final statements = _statements(state, truth);
-    final truthIndex = statements.indexOf(truth);
+    final statements = _statements(state, t.locale, truth);
+    final truthIndex = _truthIndex(state);
     final picks = <int, List<Vote>>{};
     for (final vote in state.votes) {
       final pick = vote.value['pick'];
@@ -496,7 +563,7 @@ class _Result extends StatelessWidget {
           const SizedBox(height: 16),
           for (var i = 0; i < statements.length; i++) ...[
             _StatementCard(
-              text: statements[i],
+              text: statements[i].text,
               highlighted: i == truthIndex,
               label: i == truthIndex ? t('bluff.true_label') : null,
             ),

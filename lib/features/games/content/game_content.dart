@@ -141,14 +141,13 @@ class GameContent {
     return (raw == null || raw < 0) ? null : raw;
   }
 
-  // Solo il pool `normal` è allineato 1:1 tra le lingue: mix/hot NON si
-  // localizzano per indice, o il gruppo voterebbe frasi diverse.
-  static bool _normalAligned(String tone) => tone == ContentTone.normal;
+  // Tutti i pool (normal/mix/hot) sono allineati 1:1 tra le lingue: stesso
+  // ordine e stesso conteggio, così l'indice dell'host localizza in ogni lingua.
 
   static String nonHoMaiText(AppLocale locale, Map<String, dynamic> content) {
     final pool = nonHoMai(locale);
     final i = _poolIndex(content);
-    return (i != null && i < pool.length && _normalAligned(pool[i].tone))
+    return (i != null && i < pool.length)
         ? pool[i].text
         : content['text'] as String? ?? '—';
   }
@@ -159,7 +158,7 @@ class GameContent {
   ) {
     final pool = chiLoPotrebbeFare(locale);
     final i = _poolIndex(content);
-    return (i != null && i < pool.length && _normalAligned(pool[i].tone))
+    return (i != null && i < pool.length)
         ? pool[i].text
         : content['text'] as String? ?? '—';
   }
@@ -171,7 +170,7 @@ class GameContent {
   ) {
     final pool = obblighi(locale, tone);
     final i = _poolIndex(content);
-    return (i != null && i < pool.length && _normalAligned(tone))
+    return (i != null && i < pool.length)
         ? pool[i]
         : content['obbligo'] as String? ?? '—';
   }
@@ -186,7 +185,7 @@ class GameContent {
     final pool = verita(locale, tone);
     final raw = (content['i2'] as num?)?.toInt();
     final i = raw == null ? null : raw - veritaOffset;
-    return (i != null && i >= 0 && i < pool.length && _normalAligned(tone))
+    return (i != null && i >= 0 && i < pool.length)
         ? pool[i]
         : content['verita'] as String? ?? '—';
   }
@@ -205,7 +204,7 @@ class GameContent {
   ) {
     final pool = preferisciEntries(locale);
     final i = _poolIndex(content);
-    if (i != null && i < pool.length && _normalAligned(pool[i].tone)) {
+    if (i != null && i < pool.length) {
       return (a: pool[i].a, b: pool[i].b);
     }
     return (

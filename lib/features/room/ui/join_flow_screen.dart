@@ -73,14 +73,23 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
 
       final repo = ref.read(roomRepositoryProvider);
       final avatar = _avatar!;
+      // La lingua viaggia col giocatore: serve a Bluff Story per avvisare i
+      // tavoli multilingua.
+      final locale = ref.read(localeProvider).code;
       final session = _isJoin
           ? await repo.joinRoom(
               code: code,
               name: name,
               color: _color,
               avatar: avatar,
+              locale: locale,
             )
-          : await repo.createRoom(name: name, color: _color, avatar: avatar);
+          : await repo.createRoom(
+              name: name,
+              color: _color,
+              avatar: avatar,
+              locale: locale,
+            );
 
       if (!mounted) return;
       ref.read(roomSessionProvider.notifier).enter(session);

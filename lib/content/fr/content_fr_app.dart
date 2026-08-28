@@ -142,7 +142,7 @@ class ContentFrApp {
         'Écris une vérité sur toi. Nous ajouterons deux mensonges. Les autres devront trouver laquelle est vraie.',
     'bluff.hint': 'Écris ta vérité…',
     'bluff.send': 'ENVOYER TA VÉRITÉ',
-    'bluff.too_short': 'Écris quelque chose de plus complet.',
+    'bluff.too_short': 'Écris au moins 30 caractères.',
     'bluff.which_true': 'Quelle est la vérité sur {name} ?',
     'bluff.in_play': 'Ton histoire est en jeu',
     'bluff.dont_tell': 'Ne laisse pas les autres deviner laquelle est vraie.',
@@ -154,6 +154,11 @@ class ContentFrApp {
     'bluff.guessed_one': '{n} a trouvé',
     'bluff.scoring':
         '+2 à chaque bonne réponse · +1 à {name} pour chaque bluff réussi',
+    'bluff.multilang_title': 'Des langues différentes à table',
+    'bluff.multilang_body':
+        'Votre groupe joue dans des langues différentes : les mensonges '
+        'sortent traduits, mais la phrase vraie reste dans la langue de la '
+        'personne qui l\'écrit et peut se faire repérer aussitôt.',
     'bluff.ai_working': 'Je prépare deux mensonges…',
     'bluff.ai_working_sub': 'pensés pour l’histoire de {name}',
     'impostore.name': 'Imposteur',

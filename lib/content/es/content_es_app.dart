@@ -144,7 +144,7 @@ class ContentEsApp {
         'Escribe una verdad sobre ti. Nosotros añadiremos dos mentiras. Los demás tendrán que descubrir cuál es la verdadera.',
     'bluff.hint': 'Escribe tu verdad…',
     'bluff.send': 'ENVÍA TU VERDAD',
-    'bluff.too_short': 'Escribe algo más completo.',
+    'bluff.too_short': 'Escribe al menos 30 caracteres.',
     'bluff.which_true': '¿Cuál es la verdad de {name}?',
     'bluff.in_play': 'Tu historia está en juego',
     'bluff.dont_tell': 'No dejes que los demás descubran cuál es la verdadera.',
@@ -157,6 +157,11 @@ class ContentEsApp {
     'bluff.guessed_one': '{n} ha acertado',
     'bluff.scoring':
         '+2 para quien acierte · +1 para {name} por cada farol conseguido',
+    'bluff.multilang_title': 'Idiomas distintos en la mesa',
+    'bluff.multilang_body':
+        'Vuestro grupo juega en idiomas distintos: las mentiras salen '
+        'traducidas, pero la frase verdadera queda en el idioma de quien la '
+        'escribe y puede delatarse al instante.',
     'bluff.ai_working': 'Preparando dos mentiras…',
     'bluff.ai_working_sub': 'pensadas para la historia de {name}',
     'impostore.name': 'Impostor',

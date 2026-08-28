@@ -56,10 +56,12 @@ class RoomRepository {
     required String name,
     required String color,
     required String avatar,
+    required String locale,
   }) => _rpcSession('create_room', {
     'p_name': name,
     'p_color': color,
     'p_avatar': avatar,
+    'p_locale': locale,
   });
 
   Future<RoomSession> joinRoom({
@@ -67,11 +69,13 @@ class RoomRepository {
     required String name,
     required String color,
     required String avatar,
+    required String locale,
   }) => _rpcSession('join_room', {
     'p_code': code.toUpperCase(),
     'p_name': name,
     'p_color': color,
     'p_avatar': avatar,
+    'p_locale': locale,
   });
 
   Future<RoomSession> _rpcSession(

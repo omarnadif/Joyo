@@ -138,7 +138,7 @@ class ContentEnApp {
         'Write a truth about yourself. We’ll add two lies. Everyone else has to figure out which one is true.',
     'bluff.hint': 'Write your truth…',
     'bluff.send': 'SHARE YOUR TRUTH',
-    'bluff.too_short': 'Write something more complete.',
+    'bluff.too_short': 'Write at least 30 characters.',
     'bluff.which_true': 'Which one is the truth about {name}?',
     'bluff.in_play': 'Your story is in play',
     'bluff.dont_tell': 'Don’t let the others figure out which one is true.',
@@ -150,6 +150,11 @@ class ContentEnApp {
     'bluff.guessed_one': '{n} guessed correctly',
     'bluff.scoring':
         '+2 for each correct guess · +1 to {name} for every successful bluff',
+    'bluff.multilang_title': 'Different languages at the table',
+    'bluff.multilang_body':
+        'Your group is playing in different languages: the lies come out '
+        'translated, but the true line stays in the language of whoever '
+        'wrote it and may give itself away right away.',
     'bluff.ai_working': 'Creating two lies…',
     'bluff.ai_working_sub': 'designed around {name}’s story',
     'impostore.name': 'Impostor',
