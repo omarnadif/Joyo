@@ -7,7 +7,6 @@ import '../../../core/i18n/app_locale.dart';
 import '../../../core/i18n/i18n.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
-import '../../premium/ai_content_repository.dart';
 import '../../room/data/models/player.dart';
 import '../../room/data/models/room.dart';
 import '../../room/state/room_providers.dart';
@@ -101,9 +100,6 @@ class _BluffStoryScreenState extends ConsumerState<BluffStoryScreen> {
           'fake2': fakes[second],
           'i': first,
           'i2': second,
-          // Con l'AI le bugie vengono riscritte sul testo vero: finché la
-          // chiave manca, il round è "in preparazione".
-          if (!ctx.room.canUseAi) 'ai': false,
         };
       },
       votingBuilder: (context, state) => _Playing(state: state, t: t),
@@ -147,8 +143,8 @@ List<String> _orderedKeys(RoundGameState state) =>
 int _truthIndex(RoundGameState state) => _orderedKeys(state).indexOf('truth');
 
 /// Testo di un'affermazione nella lingua di chi guarda: le bugie del pool si
-/// localizzano per indice (i pool sono allineati 1:1 tra le lingue), quelle
-/// riscritte dall'AI restano come sono. La verità è testo libero del narratore.
+/// localizzano per indice (i pool sono allineati 1:1 tra le lingue). La verità
+/// è testo libero del narratore.
 String _statementText(
   RoundGameState state,
   AppLocale locale,
@@ -157,7 +153,6 @@ String _statementText(
 ) {
   if (key == 'truth') return truth;
   final fallback = state.content[key] as String? ?? '';
-  if (state.content['ai'] == true) return fallback;
   final pool = GameContent.bluffFakes(locale);
   final i = (state.content[key == 'fake1' ? 'i' : 'i2'] as num?)?.toInt();
   return (i != null && i >= 0 && i < pool.length) ? pool[i] : fallback;
@@ -208,55 +203,14 @@ Map<String, int> _awards(RoundGameState state) {
   return result;
 }
 
-class _Playing extends ConsumerStatefulWidget {
+class _Playing extends StatelessWidget {
   const _Playing({required this.state, required this.t});
 
   final RoundGameState state;
   final Translator t;
 
   @override
-  ConsumerState<_Playing> createState() => _PlayingState();
-}
-
-class _PlayingState extends ConsumerState<_Playing> {
-  String? _upgradingRoundId;
-
-  /// L'host sostituisce le bugie del pool con due scritte dall'AI; se l'AI non
-  /// risponde marca comunque il round come "deciso" per ripartire con le bugie
-  /// generiche.
-  Future<void> _upgradeWithAi(RoundGameState state, String truth) async {
-    if (_upgradingRoundId == state.round.id) return;
-    _upgradingRoundId = state.round.id;
-
-    try {
-      final fakes = await ref
-          .read(aiContentRepositoryProvider)
-          .bluffStoryFakes(
-            roomId: state.room.id,
-            truth: truth,
-            tone: state.room.tone,
-          );
-
-      await state.repository.updateContent(
-        roundId: state.round.id,
-        content: {
-          ...state.content,
-          if (fakes != null) 'fake1': fakes[0],
-          if (fakes != null) 'fake2': fakes[1],
-          'ai': fakes != null,
-        },
-      );
-    } catch (_) {
-      // Riarma il guard per riprovare: senza, tutti resterebbero sullo spinner
-      // "AI al lavoro" fino allo scadere del tempo.
-      _upgradingRoundId = null;
-    }
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final state = widget.state;
-    final t = widget.t;
     final text = Theme.of(context).textTheme;
     final tellerId = state.content['teller'] as String?;
     final teller = tellerId == null ? null : state.playerById(tellerId);
@@ -286,31 +240,6 @@ class _PlayingState extends ConsumerState<_Playing> {
                 ],
               ),
             );
-    }
-
-    // Round con AI: finché le bugie su misura non sono pronte non si vota,
-    // altrimenti chi ha già scelto si ritroverebbe opzioni diverse.
-    if (!state.content.containsKey('ai')) {
-      if (state.isHost) {
-        Future.microtask(() {
-          if (mounted) _upgradeWithAi(state, truth);
-        });
-      }
-      return Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const CircularProgressIndicator(color: JoyoColors.amber),
-            const SizedBox(height: 20),
-            Text(t('bluff.ai_working'), style: text.titleMedium),
-            const SizedBox(height: 6),
-            Text(
-              t('bluff.ai_working_sub', {'name': teller.name}),
-              style: text.bodySmall?.copyWith(color: JoyoColors.textSecondary),
-            ),
-          ],
-        ),
-      );
     }
 
     final statements = _statements(state, t.locale, truth);

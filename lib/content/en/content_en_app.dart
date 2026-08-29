@@ -155,8 +155,6 @@ class ContentEnApp {
         'Your group is playing in different languages: the lies come out '
         'translated, but the true line stays in the language of whoever '
         'wrote it and may give itself away right away.',
-    'bluff.ai_working': 'Creating two lies…',
-    'bluff.ai_working_sub': 'designed around {name}’s story',
     'impostore.name': 'Impostor',
     'impostore.tagline': 'One of you has different information.',
     'impostore.only_you': 'Only you can see this',
@@ -197,6 +195,9 @@ class ContentEnApp {
     'premium.unlocked': 'AI unlocked for this room',
     'premium.ad_reward': 'You’ve unlocked AI content',
     'premium.ad_incomplete': 'Ad not completed.',
+    'premium.ad_limit': 'Ad limit reached for today. Try again tomorrow!',
+    'premium.bank_full':
+        'You already have the maximum premium games: play those before earning more.',
     'premium.no_store':
         'Purchases aren’t available here. Use Google Play or the App Store.',
     'premium.ads_mobile_only': 'Ads are only available on mobile.',
@@ -229,6 +230,8 @@ class ContentEnApp {
     'paywall.active': 'Active',
     'paywall.subscribe': 'SUBSCRIBE',
     'paywall.restore': 'Restore purchases',
+    'shop.privacy': 'Privacy Policy',
+    'shop.ad_privacy': 'Ads privacy options',
     'paywall.restored': 'Subscription restored',
     'paywall.nothing_restored': 'No subscription to restore',
   };

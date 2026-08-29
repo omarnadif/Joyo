@@ -10,7 +10,17 @@ import 'ads_service_unsupported.dart'
 /// premio per una domanda AI. L'implementazione vera è solo su Android/iOS
 /// (google_mobile_ads usa dart:io); altrove `createAdsService` ripiega a vuoto.
 abstract class AdsService {
+  /// Raccoglie il consenso GDPR (Google UMP) dove richiesto e poi avvia
+  /// l'SDK; senza consenso in EEA/UK gli annunci restano spenti.
   Future<void> initialize();
+
+  /// True quando Google impone di offrire un punto di rientro alle opzioni
+  /// privacy (utenti EEA/UK): in quel caso mostrare un link che chiama
+  /// [showPrivacyOptions], ad esempio nello shop o nelle impostazioni.
+  Future<bool> isPrivacyOptionsRequired();
+
+  /// Riapre il form UMP per rivedere il consenso già dato.
+  Future<void> showPrivacyOptions();
 
   /// Interstiziale di fine partita; non blocca il flusso se non è pronto.
   Future<void> showInterstitial();

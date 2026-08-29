@@ -159,8 +159,6 @@ class ContentFrApp {
         'Votre groupe joue dans des langues différentes : les mensonges '
         'sortent traduits, mais la phrase vraie reste dans la langue de la '
         'personne qui l\'écrit et peut se faire repérer aussitôt.',
-    'bluff.ai_working': 'Je prépare deux mensonges…',
-    'bluff.ai_working_sub': 'pensés pour l’histoire de {name}',
     'impostore.name': 'Imposteur',
     'impostore.tagline': 'L’un de vous joue avec des informations différentes.',
     'impostore.only_you': 'Toi seul peux voir ça',
@@ -201,6 +199,9 @@ class ContentFrApp {
     'premium.unlocked': 'IA débloquée pour cette salle',
     'premium.ad_reward': 'Tu as obtenu un contenu généré par l’IA',
     'premium.ad_incomplete': 'Publicité non terminée.',
+    'premium.ad_limit': 'Limite de publicités atteinte pour aujourd\'hui. Reviens demain !',
+    'premium.bank_full':
+        'Tu as déjà le maximum de parties premium : joue-les avant d\'en gagner d\'autres.',
     'premium.no_store':
         'Les achats ne sont pas disponibles ici. Utilise Google Play ou l’App Store.',
     'premium.ads_mobile_only':
@@ -234,6 +235,8 @@ class ContentFrApp {
     'paywall.active': 'Actif',
     'paywall.subscribe': 'S’ABONNER',
     'paywall.restore': 'Restaurer les achats',
+    'shop.privacy': 'Politique de confidentialité',
+    'shop.ad_privacy': 'Options de confidentialité des annonces',
     'paywall.restored': 'Abonnement restauré',
     'paywall.nothing_restored': 'Aucun abonnement à restaurer',
   };

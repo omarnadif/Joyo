@@ -6,7 +6,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/i18n/i18n.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
-import '../../premium/ai_content_repository.dart';
 import '../../room/data/models/player.dart';
 import '../../room/data/models/room.dart';
 import '../content/game_content.dart';
@@ -34,21 +33,6 @@ class ChiLoPotrebbeFareScreen extends ConsumerWidget {
       accent: accent,
       title: t('chi.name'),
       buildContent: (ctx) async {
-        // Con il premium (o un credito da annuncio) la domanda è costruita
-        // sui nomi presenti; se l'AI non risponde si pesca dal pool fisso.
-        if (ctx.room.canUseAi) {
-          final generated = await ref
-              .read(aiContentRepositoryProvider)
-              .chiLoPotrebbeFare(
-                roomId: ctx.room.id,
-                players: [for (final p in ctx.players) p.name],
-                tone: ctx.room.mode.primaryTone,
-              );
-          if (generated != null) {
-            return {'text': generated, 'i': -1, 'ai': true};
-          }
-        }
-
         final entries = GameContent.chiLoPotrebbeFare(locale);
         final allowed = ctx.room.mode.indexesFor(entries, (e) => e.tone);
         // Se la lingua non ha domande nei toni ammessi si pesca da tutto il
@@ -61,7 +45,7 @@ class ChiLoPotrebbeFareScreen extends ConsumerWidget {
             .toList();
         final pool = fresh.isEmpty ? candidates : fresh;
         final index = pool[Random().nextInt(pool.length)];
-        return {'text': entries[index].text, 'i': index, 'ai': false};
+        return {'text': entries[index].text, 'i': index};
       },
       votingBuilder: (context, state) => _Voting(state: state, t: t),
       resultBuilder: (context, state) => _Result(state: state, t: t),

@@ -11,6 +11,12 @@ class UnsupportedAdsService implements AdsService {
   Future<void> initialize() async {}
 
   @override
+  Future<bool> isPrivacyOptionsRequired() async => false;
+
+  @override
+  Future<void> showPrivacyOptions() async {}
+
+  @override
   Future<void> showInterstitial() async {}
 
   @override

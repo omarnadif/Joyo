@@ -1,4 +1,3 @@
-import '../../../../core/env/app_env.dart';
 import '../../../games/game_mode.dart';
 
 enum RoomStatus {
@@ -21,8 +20,6 @@ class Room {
     required this.code,
     required this.status,
     required this.activeGame,
-    required this.isPremiumAi,
-    required this.aiCredits,
     required this.tone,
     required this.mode,
     required this.roundsTotal,
@@ -33,8 +30,6 @@ class Room {
     code: map['code'] as String,
     status: RoomStatus.fromDb(map['status'] as String),
     activeGame: map['active_game'] as String?,
-    isPremiumAi: map['is_premium_ai'] as bool? ?? false,
-    aiCredits: (map['ai_credits'] as num?)?.toInt() ?? 0,
     tone: map['tone'] as String? ?? 'normal',
     mode: GameMode.fromId(map['mode'] as String?),
     roundsTotal: (map['rounds_total'] as num?)?.toInt() ?? 10,
@@ -44,17 +39,9 @@ class Room {
   final String code;
   final RoomStatus status;
   final String? activeGame;
-  final bool isPremiumAi;
-
-  /// Contenuti AI singoli, guadagnati guardando un annuncio.
-  final int aiCredits;
-
   final String tone;
 
   /// Normale, Mix o Hot: decide contenuti e rotazione dei giochi.
   final GameMode mode;
   final int roundsTotal;
-
-  /// Se la stanza può usare l'AI: premium, crediti da annuncio o flag di sviluppo.
-  bool get canUseAi => isPremiumAi || aiCredits > 0 || AppEnv.devUnlockPremium;
 }

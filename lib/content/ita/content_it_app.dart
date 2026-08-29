@@ -173,8 +173,6 @@ class ContentItApp {
         'Nel gruppo si gioca in lingue diverse: le bugie escono tradotte, ma '
         'la frase vera resta nella lingua di chi la scrive e può farsi '
         'riconoscere subito.',
-    'bluff.ai_working': 'Preparo due bugie…',
-    'bluff.ai_working_sub': 'pensate per la storia di {name}',
 
     'impostore.name': 'Impostore',
     'impostore.tagline': 'Uno di voi sta giocando con informazioni diverse.',
@@ -217,6 +215,9 @@ class ContentItApp {
     'premium.unlocked': 'AI sbloccata per questa stanza',
     'premium.ad_reward': 'Hai ottenuto un contenuto AI',
     'premium.ad_incomplete': 'Annuncio non completato.',
+    'premium.ad_limit': 'Limite di annunci raggiunto per oggi. Riprova domani!',
+    'premium.bank_full':
+        'Hai già il massimo di partite premium: gioca quelle prima di guadagnarne altre.',
     'premium.no_store':
         'Gli acquisti non sono disponibili qui. Usa Google Play o App Store.',
     'premium.ads_mobile_only': 'Gli annunci sono disponibili solo su telefono.',
@@ -250,6 +251,8 @@ class ContentItApp {
     'paywall.active': 'Attivo',
     'paywall.subscribe': 'ABBONATI',
     'paywall.restore': 'Ripristina acquisti',
+    'shop.privacy': 'Privacy policy',
+    'shop.ad_privacy': 'Opzioni privacy annunci',
     'paywall.restored': 'Abbonamento ripristinato',
     'paywall.nothing_restored': 'Nessun abbonamento da ripristinare',
   };

@@ -163,8 +163,6 @@ class ContentDeApp {
         'Eure Gruppe spielt in verschiedenen Sprachen: Die Lügen erscheinen '
         'übersetzt, aber der wahre Satz bleibt in der Sprache der Person, '
         'die ihn schreibt, und kann sofort auffallen.',
-    'bluff.ai_working': 'Ich erfinde zwei Lügen…',
-    'bluff.ai_working_sub': 'passend zu {name}s Geschichte',
     'impostore.name': 'Impostor',
     'impostore.tagline':
         'Einer von euch kennt die Wahrheit nicht. Findet den Impostor.',
@@ -207,6 +205,9 @@ class ContentDeApp {
     'premium.unlocked': 'KI für diesen Raum freigeschaltet',
     'premium.ad_reward': 'Du hast KI-Inhalte freigeschaltet',
     'premium.ad_incomplete': 'Werbung nicht vollständig angesehen.',
+    'premium.ad_limit': 'Werbelimit für heute erreicht. Versuch es morgen wieder!',
+    'premium.bank_full':
+        'Du hast schon die maximale Zahl an Premium-Partien: spiel sie erst, bevor du neue verdienst.',
     'premium.no_store':
         'Käufe sind hier nicht verfügbar. Nutze Google Play oder den App Store.',
     'premium.ads_mobile_only': 'Werbung ist nur auf dem Handy verfügbar.',
@@ -239,6 +240,8 @@ class ContentDeApp {
     'paywall.active': 'Aktiv',
     'paywall.subscribe': 'ABONNIEREN',
     'paywall.restore': 'Käufe wiederherstellen',
+    'shop.privacy': 'Datenschutzerklärung',
+    'shop.ad_privacy': 'Datenschutzoptionen für Werbung',
     'paywall.restored': 'Abo wiederhergestellt',
     'paywall.nothing_restored': 'Kein Abo zum Wiederherstellen',
   };

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../core/env/app_env.dart';
 import '../../core/i18n/i18n.dart';
@@ -26,8 +28,15 @@ class ShopScreen extends ConsumerStatefulWidget {
 class _ShopScreenState extends ConsumerState<ShopScreen> {
   bool _busy = false;
 
+  // Google impone un punto di rientro alle opzioni privacy solo in EEA/UK:
+  // altrove il link non compare.
+  bool _privacyOptionsRequired = false;
+
   // Numero di annunci per sbloccare una partita.
   static const _adsPerGame = 3;
+
+  static final _privacyPolicyUrl =
+      Uri.parse('https://omarnadif.github.io/joyo-legal/');
 
   // Prezzi di riserva se lo store non risponde (in dev/desktop).
   static const _fallbackPrice = {
@@ -40,6 +49,9 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
   void initState() {
     super.initState();
     _loadPrices();
+    ref.read(adsServiceProvider).isPrivacyOptionsRequired().then((required) {
+      if (mounted && required) setState(() => _privacyOptionsRequired = true);
+    });
   }
 
   Future<void> _loadPrices() async {
@@ -134,6 +146,17 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
         return;
       }
       await ref.read(premiumCreditsProvider.notifier).grantAd();
+    } on PostgrestException catch (e) {
+      // Limiti del server sui crediti da annuncio: messaggi dedicati per i due
+      // casi che un utente reale può incontrare, "riprova" per il resto.
+      if (mounted) {
+        final key = e.message.contains('DAILY_LIMIT')
+            ? 'premium.ad_limit'
+            : e.message.contains('BANK_FULL')
+            ? 'premium.bank_full'
+            : 'common.retry';
+        messenger.showSnackBar(SnackBar(content: Text(t(key))));
+      }
     } catch (_) {
       if (mounted) {
         messenger.showSnackBar(SnackBar(content: Text(t('common.retry'))));
@@ -222,6 +245,33 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
                   child: Text(t('paywall.restore')),
                 ),
               ),
+              Center(
+                child: TextButton(
+                  onPressed: () => launchUrl(
+                    _privacyPolicyUrl,
+                    mode: LaunchMode.externalApplication,
+                  ),
+                  child: Text(
+                    t('shop.privacy'),
+                    style: text.bodySmall?.copyWith(
+                      color: JoyoColors.textSecondary,
+                    ),
+                  ),
+                ),
+              ),
+              if (_privacyOptionsRequired)
+                Center(
+                  child: TextButton(
+                    onPressed: () =>
+                        ref.read(adsServiceProvider).showPrivacyOptions(),
+                    child: Text(
+                      t('shop.ad_privacy'),
+                      style: text.bodySmall?.copyWith(
+                        color: JoyoColors.textSecondary,
+                      ),
+                    ),
+                  ),
+                ),
             ],
           ),
         ),

@@ -162,8 +162,6 @@ class ContentEsApp {
         'Vuestro grupo juega en idiomas distintos: las mentiras salen '
         'traducidas, pero la frase verdadera queda en el idioma de quien la '
         'escribe y puede delatarse al instante.',
-    'bluff.ai_working': 'Preparando dos mentiras…',
-    'bluff.ai_working_sub': 'pensadas para la historia de {name}',
     'impostore.name': 'Impostor',
     'impostore.tagline': 'Uno de vosotros juega con información diferente.',
     'impostore.only_you': 'Solo tú puedes verlo',
@@ -204,6 +202,9 @@ class ContentEsApp {
     'premium.unlocked': 'IA desbloqueada para esta sala',
     'premium.ad_reward': 'Has obtenido contenido generado por IA',
     'premium.ad_incomplete': 'Anuncio no completado.',
+    'premium.ad_limit': 'Límite de anuncios alcanzado por hoy. ¡Vuelve mañana!',
+    'premium.bank_full':
+        'Ya tienes el máximo de partidas premium: juega esas antes de ganar más.',
     'premium.no_store':
         'Las compras no están disponibles aquí. Usa Google Play o App Store.',
     'premium.ads_mobile_only':
@@ -237,6 +238,8 @@ class ContentEsApp {
     'paywall.active': 'Activo',
     'paywall.subscribe': 'SUSCRIBIRSE',
     'paywall.restore': 'Restaurar compras',
+    'shop.privacy': 'Política de privacidad',
+    'shop.ad_privacy': 'Opciones de privacidad de anuncios',
     'paywall.restored': 'Suscripción restaurada',
     'paywall.nothing_restored': 'No hay suscripción que restaurar',
   };
