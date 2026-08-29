@@ -2,7 +2,9 @@
 
 Legenda: ✅ fatto · ⬜ da fare · ⚠️ importante/bloccante
 
-Stato app: `version 1.0.0+1` · Android `com.blueinhope.joyo` · cartella `ios/` presente.
+Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS (rinominato da `com.mmih.joyo` il 2026-08-31, prima di ogni pubblicazione — non più cambiabile dopo).
+
+> ⚠️ Nel working tree ci sono file non committati: `age_gate.dart` (nuovo) e `room_settings_card.dart` — l'age gate segnato ✅ in §6 esiste solo in locale finché non viene committato.
 
 ---
 
@@ -26,17 +28,24 @@ Stato app: `version 1.0.0+1` · Android `com.blueinhope.joyo` · cartella `ios/`
   - `joyo_premium` — €3,99/mese
 - ⬜ Scheda store: titolo, descrizione breve/lunga (idealmente IT/EN/ES/FR/DE), icona, feature graphic, screenshot.
 - ⬜ **Data safety form**: dichiarare i dati raccolti (Supabase: nome/colore/avatar; AdMob: identificatori pubblicità).
+- ⚠️⬜ **Dichiarazione trader UE (DSA)**: obbligatoria perché l'app monetizza; indirizzo/email/telefono diventano pubblici sulla scheda. Senza, Google blocca la distribuzione in UE.
+- ⬜ URL privacy policy nella scheda: https://omarnadif.github.io/joyo-legal/
 - ⚠️⬜ **Content rating**: questionario IARC. Con i contenuti "Hot" espliciti la classificazione sarà alta (probabile 18+/Mature). Da compilare onestamente.
 - ⬜ Target API level conforme al minimo richiesto da Google (usa `flutter.targetSdkVersion` aggiornato).
 - ⬜ Pubblicare su **testing track** (internal → closed) prima della produzione.
 
-## 3. Apple App Store (solo se pubblichi anche iOS)
+## 3. Apple App Store
 
-- ⬜ Apple Developer Program (99$/anno).
-- ⬜ App Store Connect: creare l'app + le **subscription** equivalenti (auto-renewable) `joyo_no_ads`, `joyo_premium`.
+- ✅ Apple Developer Program attivo (2026-08-31, Apple ID gestion.blueinhope@gmail.com, Individual).
+- ✅ Identifier `com.blueinhope.joyo` registrato + app "Joyo" creata su App Store Connect (SKU `joyo-001`).
+- ✅ **Pipeline senza Mac**: Codemagic → TestFlight (`codemagic.yaml`; integrazione ASC `joyo-asc` con key ZC46MKLX66; variabili sicure `ENV_JSON` e `CERTIFICATE_PRIVATE_KEY` nel gruppo `joyo_env`).
+- ⬜ **Prima build TestFlight verde**: l'ultima lanciata (firma esplicita `fetch-signing-files --create`) è da verificare. Se fallisce ancora sulla firma → controllare accordi pendenti in ASC (Accordi, tasse e banche).
+- ⬜ Al primo upload: domanda **crittografia/export compliance** (solo HTTPS standard → esente), poi link pubblico TestFlight per l'iPhone.
+- ⬜ Creare le **subscription** auto-renewable `joyo_no_ads`, `joyo_premium` in ASC (+ accettare il Paid Applications Agreement in Accordi, tasse e banche — serve conto bancario).
 - ⬜ Verifica ricevuta iOS (App Store Server API) nella Edge Function, oltre a quella Google.
-- ⚠️⬜ **App Tracking Transparency (ATT)**: prompt richiesto per usare l'IDFA con annunci personalizzati; aggiungere `NSUserTrackingUsageDescription` e la richiesta.
-- ⬜ Pulsante "Ripristina acquisti" già presente ✅ (richiesto da Apple).
+- ✅ **ATT**: `NSUserTrackingUsageDescription` in Info.plist; il prompt lo gestisce il form UMP dove serve.
+- ✅ Pulsante "Ripristina acquisti" presente (richiesto da Apple).
+- ⬜ Scheda store: privacy labels, rating 17+, URL privacy policy, dichiarazione trader UE (DSA).
 
 ## 4. Pubblicità (AdMob)
 
@@ -47,15 +56,15 @@ Stato app: `version 1.0.0+1` · Android `com.blueinhope.joyo` · cartella `ios/`
   in debug/profile girano SEMPRE gli id di test (anche con env.json pieno), e una
   release senza id veri si blocca sulla schermata "configurazione mancante".
 - ✅ **Consenso GDPR / UMP**: integrato in `ads_service_mobile.dart` (form mostrato prima di caricare gli annunci, gate su `canRequestAds`, riapertura da "opzioni privacy"). Va configurato anche il messaggio UMP nella console AdMob (Privacy e messaggi → GDPR) perché il form appaia davvero.
-- ⬜ Collegare l'app AdMob alla scheda Play Store (dentro AdMob) per il fill pieno.
+- ⬜ Collegare le app AdMob alle schede store pubblicate (dentro AdMob) per il fill pieno.
 - ⬜ Pubblicare **app-ads.txt** sul dominio dello sviluppatore.
-- ⬜ iOS `Info.plist`: `GADApplicationIdentifier` con l'App ID iOS (se pubblichi iOS) + SKAdNetwork ids.
+- ✅ iOS: app AdMob creata (App ID `~9659546328` nell'`Info.plist`) + 50 SKAdNetwork ids + unit id iOS (interstitial `/5071338127`, rewarded `/5608620670`) in `env.ios.json` (gitignorato, replicato nel secret `ENV_JSON` su Codemagic).
 
 ## 5. Build & configurazione app
 
 - ✅ **Firma di release** Android: keystore in `android/upload-keystore.jks` + password in `android/key.properties` (entrambi fuori da git — **vanno salvati in un backup esterno**). La build di release fallisce con errore chiaro se mancano.
 - ⬜ Verificare che `DEV_UNLOCK_PREMIUM` **non** sia passato nelle build di release (di default è `false`, ok se non lo si passa).
-- ⬜ Build con `--dart-define-from-file=env.json` (SUPABASE_URL/ANON_KEY) + gli unit id AdMob.
+- ⬜ Build Android con `--dart-define-from-file=env.json`; iOS usa `env.ios.json` (via secret ENV_JSON su Codemagic) — i due file differiscono solo per gli unit id AdMob.
 - ⬜ Bumpare `version` a ogni submit (`1.0.0+1` → `+2`…).
 - ⬜ Icona app e splash definitivi.
 
@@ -78,7 +87,14 @@ Stato app: `version 1.0.0+1` · Android `com.blueinhope.joyo` · cartella `ios/`
 
 ### Bloccanti veri prima del "vai live"
 1. ⚠️ Verifica ricevuta reale (§1) — altrimenti abbonamenti falsificabili.
-2. ⚠️ Prodotti su Play Console (§2) — altrimenti non si compra nulla.
-3. ✅ Consenso UMP/GDPR per gli annunci (§4) — in app; resta la configurazione del messaggio in console AdMob.
-4. ✅ Privacy policy (§6) — pubblicata e linkata in app; da incollare nelle console store.
-5. ✅ Firma di release Android (§5) — fatta il 2026-08-29.
+2. ⚠️ Prodotti/subscription su Play Console **e** App Store Connect (§2, §3) — altrimenti non si compra nulla.
+3. ⚠️ Dichiarazione trader UE su entrambe le console (§2, §3) — senza, niente distribuzione in Europa.
+4. ⚠️ Messaggio UMP/GDPR da configurare nella console AdMob (Privacy e messaggi → GDPR) — il codice in app c'è, ma senza il messaggio pubblicato in console il form non appare e in EEA gli annunci restano spenti.
+5. ✅ Consenso UMP/GDPR in app (§4).
+6. ✅ Privacy policy (§6) — pubblicata e linkata in app; da incollare nelle console store.
+7. ✅ Firma di release Android (§5) — fatta il 2026-08-29.
+
+### Prossimi 3 passi concreti (aggiornato 2026-08-31)
+1. Verificare l'esito della prima build Codemagic → TestFlight (email a gestion.blueinhope@gmail.com).
+2. Committare age gate (`age_gate.dart` + `room_settings_card.dart`).
+3. Configurare il messaggio GDPR nella console AdMob (Privacy e messaggi) per entrambe le app.
