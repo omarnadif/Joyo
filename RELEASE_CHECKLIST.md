@@ -39,8 +39,10 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ Apple Developer Program attivo (2026-08-31, Apple ID gestion.blueinhope@gmail.com, Individual).
 - ✅ Identifier `com.blueinhope.joyo` registrato + app "Joyo" creata su App Store Connect (SKU `joyo-001`).
 - ✅ **Pipeline senza Mac**: Codemagic → TestFlight (`codemagic.yaml`; integrazione ASC `joyo-asc` con key ZC46MKLX66; variabili sicure `ENV_JSON` e `CERTIFICATE_PRIVATE_KEY` nel gruppo `joyo_env`).
-- ⬜ **Prima build TestFlight verde**: l'ultima lanciata (firma esplicita `fetch-signing-files --create`) è da verificare. Se fallisce ancora sulla firma → controllare accordi pendenti in ASC (Accordi, tasse e banche).
-- ⬜ Al primo upload: domanda **crittografia/export compliance** (solo HTTPS standard → esente), poi link pubblico TestFlight per l'iPhone.
+- ✅ **Prima build verde** (2026-08-29, build #10): IPA firmato e caricato su App Store Connect (app id 6806622931), elaborazione completata.
+- ⬜ **Test information su ASC**: l'invio automatico a TestFlight beta review fallisce finché mancano Feedback Email + contatto beta review → https://appstoreconnect.apple.com/apps/6806622931/testflight/test-info
+- ✅ Export compliance: `ITSAppUsesNonExemptEncryption=false` in Info.plist (solo HTTPS standard).
+- ⬜ Gruppo tester esterno con **link pubblico TestFlight** per l'iPhone (prima build esterna passa dalla beta review Apple, ~24-48h).
 - ⬜ Creare le **subscription** auto-renewable `joyo_no_ads`, `joyo_premium` in ASC (+ accettare il Paid Applications Agreement in Accordi, tasse e banche — serve conto bancario).
 - ⬜ Verifica ricevuta iOS (App Store Server API) nella Edge Function, oltre a quella Google.
 - ✅ **ATT**: `NSUserTrackingUsageDescription` in Info.plist; il prompt lo gestisce il form UMP dove serve.
