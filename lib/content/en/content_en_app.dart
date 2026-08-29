@@ -79,6 +79,10 @@ class ContentEnApp {
     'mode.normale.desc': 'The basic rules. The easiest way to get started.',
     'mode.mix.desc': 'More variety, more pace and a few extra surprises.',
     'mode.hot.desc': 'More direct, more personal. Only if you’re ready.',
+    'age.title': 'Adult content',
+    'age.body':
+        'The Mix and Hot modes contain explicit content intended for adults. Do you confirm that all players are at least 18 years old?',
+    'age.confirm': 'I CONFIRM',
     'settings.rounds': 'Rounds per game',
     'game.round_of': 'Round {n} of {total}',
     'game.preparing': 'Getting the round ready…',

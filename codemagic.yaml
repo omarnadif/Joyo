@@ -1,0 +1,46 @@
+# Build iOS su Mac cloud → TestFlight. Non c'è un Mac locale: la firma la fa
+# Codemagic con la API key di App Store Connect (integrazione "joyo-asc" da
+# creare in Codemagic → Teams → Integrations → Developer Portal).
+#
+# Prerequisiti una tantum, nell'ordine:
+#  1. App Store Connect: creare l'app (bundle id com.blueinhope.joyo).
+#  2. App Store Connect → Utenti e accesso → Chiavi API: creare una chiave
+#     con ruolo App Manager e caricarla in Codemagic come integrazione "joyo-asc".
+#  3. Codemagic → variabili di gruppo "joyo_env": variabile segreta ENV_JSON
+#     con dentro il contenuto di env.json (chiavi Supabase + unit id AdMob iOS).
+workflows:
+  ios-testflight:
+    name: iOS → TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: joyo-asc
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.blueinhope.joyo
+      flutter: stable
+      groups:
+        - joyo_env
+    scripts:
+      - name: Ricrea env.json dal secret
+        script: |
+          echo "$ENV_JSON" > "$CM_BUILD_DIR/env.json"
+      - name: Dipendenze
+        script: |
+          flutter pub get
+      - name: Firma automatica
+        script: |
+          xcode-project use-profiles
+      - name: Build IPA
+        script: |
+          flutter build ipa --release \
+            --dart-define-from-file=env.json \
+            --build-number=$BUILD_NUMBER \
+            --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        auth: integrations
+        submit_to_testflight: true

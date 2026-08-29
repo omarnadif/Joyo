@@ -82,6 +82,10 @@ class ContentFrApp {
         'Plus de variété, plus de rythme et quelques surprises en plus.',
     'mode.hot.desc':
         'Plus direct, plus personnel. Seulement si vous êtes prêts.',
+    'age.title': 'Contenu pour adultes',
+    'age.body':
+        'Les modes Mix et Hot contiennent du contenu explicite réservé aux adultes. Confirmes-tu que tous les joueurs ont au moins 18 ans ?',
+    'age.confirm': 'JE CONFIRME',
     'settings.rounds': 'Manches par partie',
     'game.round_of': 'Manche {n} sur {total}',
     'game.preparing': 'Préparation de la manche…',

@@ -45,13 +45,12 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-	<!-- AdMob App ID iOS. ATTENZIONE: questo è l'ID DI TEST di Google.
-	     L'ID vero è per-piattaforma: in console AdMob va creata l'app iOS
-	     di Joyo e il suo ID (ca-app-pub-2109864769102110~XXXXXXXXXX)
-	     va incollato qui prima della release. Senza questa chiave l'app
-	     iOS crasha all'avvio con google_mobile_ads. -->
+	<!-- AdMob App ID dell'app iOS "Joyo" (console AdMob). Senza questa
+	     chiave l'app iOS crasha all'avvio con google_mobile_ads. Gli unit
+	     id di interstitial/rewarded restano su dart-define come su Android:
+	     senza flag girano gli id di test di Google. -->
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<string>ca-app-pub-2109864769102110~9659546328</string>
 	<!-- Richiesto da Apple per il prompt App Tracking Transparency, che il
 	     form di consenso UMP mostra dove serve. -->
 	<key>NSUserTrackingUsageDescription</key>

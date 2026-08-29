@@ -18,7 +18,7 @@ val keystoreProperties = Properties().apply {
 }
 
 android {
-    namespace = "com.mmih.joyo"
+    namespace = "com.blueinhope.joyo"
     compileSdk = flutter.compileSdkVersion
     // I plugin (google_mobile_ads, in_app_purchase, ecc.) richiedono un NDK
     // più nuovo di quello proposto dal Flutter Gradle Plugin.
@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.mmih.joyo"
+        applicationId = "com.blueinhope.joyo"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

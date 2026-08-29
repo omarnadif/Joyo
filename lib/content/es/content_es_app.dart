@@ -82,6 +82,10 @@ class ContentEsApp {
         'Las reglas básicas. La forma más sencilla de empezar.',
     'mode.mix.desc': 'Más variedad, más ritmo y alguna sorpresa más.',
     'mode.hot.desc': 'Más directo, más personal. Solo si estáis preparados.',
+    'age.title': 'Contenido para adultos',
+    'age.body':
+        'Los modos Mix y Hot contienen contenido explícito para mayores de edad. ¿Confirmas que todos los jugadores tienen al menos 18 años?',
+    'age.confirm': 'CONFIRMO',
     'settings.rounds': 'Rondas por partida',
     'game.round_of': 'Ronda {n} de {total}',
     'game.preparing': 'Preparando la ronda…',

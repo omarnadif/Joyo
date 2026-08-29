@@ -2,7 +2,7 @@
 
 Legenda: ✅ fatto · ⬜ da fare · ⚠️ importante/bloccante
 
-Stato app: `version 1.0.0+1` · Android `com.mmih.joyo` · cartella `ios/` presente.
+Stato app: `version 1.0.0+1` · Android `com.blueinhope.joyo` · cartella `ios/` presente.
 
 ---
 
@@ -63,7 +63,7 @@ Stato app: `version 1.0.0+1` · Android `com.mmih.joyo` · cartella `ios/` prese
 
 - ✅ **Privacy policy** pubblica in 5 lingue: https://omarnadif.github.io/joyo-legal/ (repo `omarnadif/joyo-legal`), linkata in app nello shop. Da incollare nei campi privacy di Play Console / App Store Connect quando si crea la scheda.
 - ⬜ Termini di servizio (consigliato).
-- ⬜ Verifica età / disclaimer contenuti adulti (modalità Hot).
+- ✅ Verifica età: dialog 18+ alla prima selezione di Mix/Hot (`age_gate.dart`, conferma memorizzata per dispositivo), testi nelle 5 lingue.
 
 ## 7. Test finale (device reale)
 

@@ -1,4 +1,4 @@
-package com.mmih.joyo
+package com.blueinhope.joyo
 
 import io.flutter.embedding.android.FlutterActivity
 

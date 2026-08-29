@@ -83,6 +83,10 @@ class ContentDeApp {
     'mode.mix.desc':
         'Mehr Abwechslung, mehr Überraschungen und ein schnelleres Tempo.',
     'mode.hot.desc': 'Direkter und persönlicher. Nur, wenn ihr bereit seid.',
+    'age.title': 'Inhalte für Erwachsene',
+    'age.body':
+        'Die Modi Mix und Hot enthalten explizite Inhalte für Volljährige. Bestätigst du, dass alle Mitspieler mindestens 18 Jahre alt sind?',
+    'age.confirm': 'ICH BESTÄTIGE',
     'settings.rounds': 'Runden pro Spiel',
     'game.round_of': 'Runde {n} von {total}',
     'game.preparing': 'Runde wird vorbereitet…',

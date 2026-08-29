@@ -90,6 +90,10 @@ class ContentItApp {
     'mode.normale.desc': 'Le regole base. Il modo più semplice per iniziare.',
     'mode.mix.desc': 'Più varietà, più ritmo e qualche sorpresa in più.',
     'mode.hot.desc': 'Più diretto, più personale. Solo se siete pronti.',
+    'age.title': 'Contenuti per adulti',
+    'age.body':
+        'Le modalità Mix e Hot contengono contenuti espliciti, adatti a un pubblico maggiorenne. Confermi che tutti i giocatori hanno almeno 18 anni?',
+    'age.confirm': 'CONFERMO',
 
     'settings.rounds': 'Round per partita',
     'game.round_of': 'Round {n} di {total}',
