@@ -20,6 +20,16 @@ workflows:
       groups:
         - joyo_env
     scripts:
+      - name: Verifica variabili del gruppo joyo_env
+        script: |
+          set -e
+          if [ -z "$ENV_JSON" ]; then
+            echo "ERRORE: ENV_JSON mancante — controlla il gruppo joyo_env in Codemagic"; exit 1
+          fi
+          if [ -z "$CERTIFICATE_PRIVATE_KEY" ]; then
+            echo "ERRORE: CERTIFICATE_PRIVATE_KEY mancante — controlla il gruppo joyo_env in Codemagic"; exit 1
+          fi
+          echo "Variabili ok"
       - name: Ricrea env.json dal secret
         script: |
           echo "$ENV_JSON" > "$CM_BUILD_DIR/env.json"
@@ -32,10 +42,12 @@ workflows:
       # sicura CERTIFICATE_PRIVATE_KEY nel gruppo joyo_env.
       - name: Firma - fetch/crea certificato e profilo
         script: |
+          set -e
           keychain initialize
           app-store-connect fetch-signing-files "com.blueinhope.joyo" \
             --type IOS_APP_STORE \
             --platform IOS \
+            --certificate-key=@env:CERTIFICATE_PRIVATE_KEY \
             --create
           keychain add-certificates
           xcode-project use-profiles
