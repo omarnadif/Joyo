@@ -16,9 +16,6 @@ workflows:
     integrations:
       app_store_connect: joyo-asc
     environment:
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.blueinhope.joyo
       flutter: stable
       groups:
         - joyo_env
@@ -29,8 +26,18 @@ workflows:
       - name: Dipendenze
         script: |
           flutter pub get
-      - name: Firma automatica
+      # Firma esplicita via cli invece del blocco ios_signing: crea da sola
+      # certificato e provisioning profile mancanti (--create) e soprattutto
+      # lascia l'errore vero nel log della build. Richiede la variabile
+      # sicura CERTIFICATE_PRIVATE_KEY nel gruppo joyo_env.
+      - name: Firma - fetch/crea certificato e profilo
         script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "com.blueinhope.joyo" \
+            --type IOS_APP_STORE \
+            --platform IOS \
+            --create
+          keychain add-certificates
           xcode-project use-profiles
       - name: Build IPA
         script: |
