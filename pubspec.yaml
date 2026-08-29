@@ -32,6 +32,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  # google_mobile_ads è solo CocoaPods e va in conflitto con i plugin già
+  # migrati a Swift Package Manager (webview_flutter_wkwebview) — senza questa
+  # config `pod install` fallisce nella build iOS su Codemagic.
+  config:
+    enable-swift-package-manager: false
+
   assets:
     # Illustrazioni dei giochi: fondo nero, montate in blend "screen".
     # I giochi senza file qui dentro usano il disegno vettoriale in
