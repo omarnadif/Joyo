@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Supabase (REST + websocket realtime) e download dei font -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Notifiche locali (promemoria "torna a giocare"): permesso runtime su
+         Android 13+, e boot per far sopravvivere i promemoria al riavvio. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <application
         android:label="Joyo"
         android:name="${applicationName}"

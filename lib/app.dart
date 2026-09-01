@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/env/app_env.dart';
+import 'core/notifications/notifications_service.dart';
 import 'core/theme/app_colors.dart';
 import 'core/theme/app_theme.dart';
 import 'features/diagnostics/missing_config_screen.dart';
@@ -39,6 +40,10 @@ class _Entry extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (!AppEnv.isConfigured) return const MissingConfigScreen();
+
+    // Tiene vivo il gestore notifiche: riprogramma il promemoria a ogni avvio
+    // e reagisce all'interruttore in Impostazioni.
+    ref.watch(notificationsServiceProvider);
 
     final onboarded = ref.watch(onboardingProvider);
     return switch (onboarded) {

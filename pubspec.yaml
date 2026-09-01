@@ -21,6 +21,8 @@ dependencies:
   url_launcher: ^6.3.1
   flutter_svg: ^2.0.10+1
   audioplayers: ^6.7.1
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
 
 dev_dependencies:
   flutter_test:

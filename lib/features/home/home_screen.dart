@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -14,9 +15,10 @@ import '../../core/ui/joyo_ui.dart';
 import '../diagnostics/diagnostics_screen.dart';
 import '../games/game_catalog.dart';
 import '../premium/entitlements.dart';
-import '../premium/premium_promo_dialog.dart';
+import '../premium/premium_promo_screen.dart';
 import '../premium/shop_screen.dart';
 import '../room/ui/join_flow_screen.dart';
+import '../settings/settings_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -38,7 +40,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Future<void> _maybeShowPromo() async {
     if (ref.read(premiumPromoShownProvider)) return;
     try {
-      await ref.read(entitlementsProvider.future);
+      // Aspettiamo i diritti solo per un attimo: così il popup non lampeggia
+      // per un abbonato, ma su rete lenta non resta bloccato a lungo. Se scade
+      // il timeout mostriamo comunque (i controlli premium qui sotto valgono).
+      await ref
+          .read(entitlementsProvider.future)
+          .timeout(const Duration(milliseconds: 1500));
+    } on TimeoutException catch (_) {
+      // Diritti ancora in arrivo: proseguiamo, tanto si esce se già premium.
     } catch (_) {
       // Se i diritti non si caricano, meglio non insistere col promo.
       return;
@@ -47,6 +56,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     if (ref.read(premiumPromoShownProvider)) return;
     if (ref.read(hasPremiumProvider)) return;
     ref.read(premiumPromoShownProvider.notifier).markShown();
+    // Popup a pagina piena: l'abbonamento si fa qui, senza aprire lo Shop.
     await showPremiumPromo(context);
   }
 
@@ -67,11 +77,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             padding: const EdgeInsets.fromLTRB(24, 16, 24, 32),
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const _ShopButton(),
-                  const SizedBox(width: 10),
                   _LanguageChip(t: t),
+                  Row(
+                    children: const [
+                      _ShopButton(),
+                      SizedBox(width: 10),
+                      _SettingsButton(),
+                    ],
+                  ),
                 ],
               ),
               const SizedBox(height: 8),
@@ -249,6 +264,27 @@ class _ShopButton extends StatelessWidget {
       onTap: () => openShop(context),
       child: const Icon(
         Icons.shopping_cart_rounded,
+        size: 18,
+        color: JoyoColors.textSecondary,
+      ),
+    );
+  }
+}
+
+/// Pillola impostazioni in home: stesso stile dello shop, con un ingranaggio.
+class _SettingsButton extends StatelessWidget {
+  const _SettingsButton();
+
+  @override
+  Widget build(BuildContext context) {
+    return GlowCard(
+      accent: JoyoColors.violet,
+      glow: 0.4,
+      radius: 16,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      onTap: () => openSettings(context),
+      child: const Icon(
+        Icons.settings_rounded,
         size: 18,
         color: JoyoColors.textSecondary,
       ),

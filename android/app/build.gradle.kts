@@ -27,6 +27,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        // Richiesto da flutter_local_notifications (usa API java.time su
+        // Android vecchi tramite desugaring).
+        isCoreLibraryDesugaringEnabled = true
     }
 
     defaultConfig {
@@ -52,12 +55,24 @@ android {
 
     buildTypes {
         release {
-            // Mai firmare una release con la chiave di debug: meglio un errore
-            // chiaro di una build non pubblicabile.
-            check(keystorePropertiesFile.exists()) {
-                "Manca android/key.properties: la build di release richiede il keystore (vedi RELEASE_CHECKLIST.md)."
+            // Firma la release solo se il keystore c'è. Il controllo bloccante
+            // sta in taskGraph (sotto): così `check()` non viene valutato in
+            // configurazione — altrimenti farebbe fallire anche assembleDebug.
+            if (keystorePropertiesFile.exists()) {
+                signingConfig = signingConfigs.getByName("release")
             }
-            signingConfig = signingConfigs.getByName("release")
+        }
+    }
+}
+
+// Mai firmare una release con la chiave di debug: se si sta assemblando una
+// release senza keystore, fallisci con un errore chiaro. Va valutato a
+// task-graph pronto, non in configurazione, per non toccare le build di debug.
+gradle.taskGraph.whenReady {
+    val buildingRelease = allTasks.any { it.name.contains("Release") }
+    if (buildingRelease) {
+        check(keystorePropertiesFile.exists()) {
+            "Manca android/key.properties: la build di release richiede il keystore (vedi RELEASE_CHECKLIST.md)."
         }
     }
 }
@@ -70,4 +85,10 @@ kotlin {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Libreria di desugaring per le API java.time usate da
+    // flutter_local_notifications sui dispositivi Android più vecchi.
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }

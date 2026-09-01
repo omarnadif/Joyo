@@ -36,7 +36,9 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
   static const _adsPerGame = 3;
 
   static final _privacyPolicyUrl =
-      Uri.parse('https://omarnadif.github.io/joyo-legal/');
+      Uri.parse('https://omarnadif.github.io/joyo-legal/privacy-policy/');
+  static final _termsUrl =
+      Uri.parse('https://omarnadif.github.io/joyo-legal/terms/');
 
   // Prezzi di riserva se lo store non risponde (in dev/desktop).
   static const _fallbackPrice = {
@@ -246,17 +248,41 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
                 ),
               ),
               Center(
-                child: TextButton(
-                  onPressed: () => launchUrl(
-                    _privacyPolicyUrl,
-                    mode: LaunchMode.externalApplication,
-                  ),
-                  child: Text(
-                    t('shop.privacy'),
-                    style: text.bodySmall?.copyWith(
-                      color: JoyoColors.textSecondary,
+                child: Wrap(
+                  alignment: WrapAlignment.center,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    TextButton(
+                      onPressed: () => launchUrl(
+                        _termsUrl,
+                        mode: LaunchMode.inAppBrowserView,
+                      ),
+                      child: Text(
+                        t('paywall.terms'),
+                        style: text.bodySmall?.copyWith(
+                          color: JoyoColors.textSecondary,
+                        ),
+                      ),
                     ),
-                  ),
+                    Text(
+                      '·',
+                      style: text.bodySmall?.copyWith(
+                        color: JoyoColors.textSecondary,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => launchUrl(
+                        _privacyPolicyUrl,
+                        mode: LaunchMode.inAppBrowserView,
+                      ),
+                      child: Text(
+                        t('shop.privacy'),
+                        style: text.bodySmall?.copyWith(
+                          color: JoyoColors.textSecondary,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               if (_privacyOptionsRequired)

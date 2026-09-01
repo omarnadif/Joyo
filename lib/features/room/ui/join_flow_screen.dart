@@ -189,11 +189,23 @@ class _JoinFlowScreenState extends ConsumerState<JoinFlowScreen> {
                           for (final key in AvatarCatalog.keys)
                             GestureDetector(
                               onTap: () => setState(() => _avatar = key),
-                              child: AvatarCircle(
-                                avatar: key,
-                                color: accent,
-                                size: 60,
-                                selected: _avatar == key,
+                              // Quando c'è una scelta, gli altri si attenuano e
+                              // rimpiccioliscono: quello scelto risalta subito.
+                              child: AnimatedOpacity(
+                                duration: const Duration(milliseconds: 160),
+                                opacity: _avatar == null || _avatar == key
+                                    ? 1
+                                    : 0.4,
+                                child: AnimatedScale(
+                                  duration: const Duration(milliseconds: 160),
+                                  scale: _avatar == key ? 1.12 : 1,
+                                  child: AvatarCircle(
+                                    avatar: key,
+                                    color: accent,
+                                    size: 60,
+                                    selected: _avatar == key,
+                                  ),
+                                ),
                               ),
                             ),
                         ],

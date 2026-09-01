@@ -74,6 +74,7 @@ class AvatarCircle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ring = (size * 0.09).clamp(2.0, 5.0);
+    final line = (size * 0.035).clamp(1.0, 2.5); // spessore dei bordi neri
     return Container(
       width: size,
       height: size,
@@ -81,23 +82,37 @@ class AvatarCircle extends StatelessWidget {
       decoration: BoxDecoration(
         color: color,
         shape: BoxShape.circle,
-        border: selected
-            ? Border.all(color: JoyoColors.textPrimary, width: 3)
-            : null,
+        // Bordo esterno sempre nero. La selezione si legge dall'alone e dallo
+        // scale, non dal colore del bordo.
+        border: Border.all(color: Colors.black, width: line),
         boxShadow: selected
             ? [
+                // Alone bianco per staccare dal viola dello sfondo, più un
+                // secondo alone col colore dell'avatar per dargli energia.
                 BoxShadow(
-                  color: color.withValues(alpha: 0.55),
-                  blurRadius: 22,
-                  spreadRadius: -2,
+                  color: JoyoColors.textPrimary.withValues(alpha: 0.45),
+                  blurRadius: 10,
+                  spreadRadius: 1,
+                ),
+                BoxShadow(
+                  color: color.withValues(alpha: 0.65),
+                  blurRadius: 26,
+                  spreadRadius: 1,
                 ),
               ]
             : null,
       ),
-      child: ClipOval(
-        child: SvgPicture.asset(
-          AvatarCatalog.asset(avatar),
-          fit: BoxFit.cover,
+      // Bordo interno nero fra l'anello colorato e il volto.
+      child: Container(
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          border: Border.all(color: Colors.black, width: line),
+        ),
+        child: ClipOval(
+          child: SvgPicture.asset(
+            AvatarCatalog.asset(avatar),
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );
