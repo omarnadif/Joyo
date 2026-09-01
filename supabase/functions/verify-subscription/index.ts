@@ -1,16 +1,20 @@
 // Joyo — verifica abbonamento e scrittura entitlement.
 //
-// Il client, dopo un acquisto/ripristino, manda il purchase_token e il
-// product_id ('joyo_no_ads' | 'joyo_premium'). Qui si verifica la ricevuta e
-// si scrive la riga in entitlements (user_id = utente autenticato) con la
-// scadenza dell'abbonamento. Il client non può scrivere entitlements: i
-// permessi sono revocati e la RLS lascia solo la lettura delle proprie righe.
+// Il client, dopo un acquisto/ripristino, manda platform ('android' | 'ios'),
+// product_id ('joyo_no_ads' | 'joyo_premium') e purchase_token (il token Play
+// su Android, la ricevuta base64 su iOS). Qui la ricevuta viene verificata
+// PRESSO lo store e si scrive la riga in entitlements (user_id = utente
+// autenticato) con la scadenza reale dell'abbonamento. Il client non può
+// scrivere entitlements: i permessi sono revocati e la RLS lascia solo la
+// lettura delle proprie righe.
 //
-// ATTENZIONE prima del rilascio: la verifica reale della ricevuta è ancora da
-// fare (vedi VERIFICA_ABBONAMENTO). Finché è uno stub, un client modificato
-// può scrivere un entitlement con un token inventato. Serve un service account
-// Google e una chiamata a purchases.subscriptionsv2.get (Android) / verifyReceipt
-// (iOS) per leggere la vera scadenza.
+// Secrets richiesti (supabase secrets set ...):
+//  - GOOGLE_SERVICE_ACCOUNT: JSON completo della chiave del service account
+//    (Play Console → API access) con permesso su Android Publisher.
+//  - APPLE_SHARED_SECRET: shared secret dell'app (App Store Connect → App →
+//    Informazioni app → Shared secret specifico per l'app).
+// Senza il secret della piattaforma richiesta la verifica FALLISCE (fail
+// closed): meglio un acquisto da riprovare che un diritto falsificabile.
 //
 // Deploy: supabase functions deploy verify-subscription
 
@@ -22,8 +26,11 @@ const cors = {
 };
 
 const PRODUCTS = ['joyo_no_ads', 'joyo_premium'];
+const ANDROID_PACKAGE = 'com.blueinhope.joyo';
+const IOS_BUNDLE_ID = 'com.blueinhope.joyo';
 
 type Body = {
+  platform: string;
   product_id: string;
   purchase_token: string;
 };
@@ -34,6 +41,190 @@ function json(payload: unknown, status = 200) {
     headers: { ...cors, 'content-type': 'application/json' },
   });
 }
+
+// ---------------------------------------------------------------------------
+// Google: service account JWT → access token → purchases.subscriptionsv2.get
+// ---------------------------------------------------------------------------
+
+function base64UrlEncode(bytes: Uint8Array): string {
+  let ascii = '';
+  for (const b of bytes) ascii += String.fromCharCode(b);
+  return btoa(ascii).replaceAll('+', '-').replaceAll('/', '_').replaceAll('=', '');
+}
+
+/// Firma un JWT RS256 con la chiave privata PEM del service account.
+async function signGoogleJwt(email: string, privateKeyPem: string): Promise<string> {
+  const now = Math.floor(Date.now() / 1000);
+  const header = { alg: 'RS256', typ: 'JWT' };
+  const claims = {
+    iss: email,
+    scope: 'https://www.googleapis.com/auth/androidpublisher',
+    aud: 'https://oauth2.googleapis.com/token',
+    iat: now,
+    exp: now + 3600,
+  };
+  const encoder = new TextEncoder();
+  const unsigned =
+    base64UrlEncode(encoder.encode(JSON.stringify(header))) +
+    '.' +
+    base64UrlEncode(encoder.encode(JSON.stringify(claims)));
+
+  const pem = privateKeyPem
+    .replace('-----BEGIN PRIVATE KEY-----', '')
+    .replace('-----END PRIVATE KEY-----', '')
+    .replaceAll('\\n', '')
+    .replaceAll('\n', '')
+    .trim();
+  const der = Uint8Array.from(atob(pem), (c) => c.charCodeAt(0));
+  const key = await crypto.subtle.importKey(
+    'pkcs8',
+    der,
+    { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' },
+    false,
+    ['sign'],
+  );
+  const signature = new Uint8Array(
+    await crypto.subtle.sign('RSASSA-PKCS1-v1_5', key, encoder.encode(unsigned)),
+  );
+  return unsigned + '.' + base64UrlEncode(signature);
+}
+
+async function googleAccessToken(): Promise<string | null> {
+  const raw = Deno.env.get('GOOGLE_SERVICE_ACCOUNT');
+  if (!raw) return null;
+  let account: { client_email: string; private_key: string };
+  try {
+    account = JSON.parse(raw);
+  } catch {
+    console.error('GOOGLE_SERVICE_ACCOUNT non è JSON valido');
+    return null;
+  }
+  const jwt = await signGoogleJwt(account.client_email, account.private_key);
+  const response = await fetch('https://oauth2.googleapis.com/token', {
+    method: 'POST',
+    headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer',
+      assertion: jwt,
+    }),
+  });
+  if (!response.ok) {
+    console.error('Token Google rifiutato:', response.status, await response.text());
+    return null;
+  }
+  const data = await response.json();
+  return typeof data.access_token === 'string' ? data.access_token : null;
+}
+
+type VerifyResult =
+  | { ok: true; expiresAt: string }
+  | { ok: false; error: 'VERIFY_UNAVAILABLE' | 'INVALID_PURCHASE' };
+
+/// Verifica un token di abbonamento Play: il token deve esistere, riferirsi al
+/// prodotto richiesto ed essere attivo (o in grace period). Torna la scadenza
+/// vera (expiryTime dell'ultima line item del prodotto).
+async function verifyAndroid(productId: string, token: string): Promise<VerifyResult> {
+  const accessToken = await googleAccessToken();
+  if (!accessToken) return { ok: false, error: 'VERIFY_UNAVAILABLE' };
+
+  const url =
+    `https://androidpublisher.googleapis.com/androidpublisher/v3/applications/` +
+    `${ANDROID_PACKAGE}/purchases/subscriptionsv2/tokens/${encodeURIComponent(token)}`;
+  const response = await fetch(url, {
+    headers: { Authorization: `Bearer ${accessToken}` },
+  });
+  if (!response.ok) {
+    // 404/400: token inesistente o malformato → acquisto non valido.
+    console.error('subscriptionsv2.get:', response.status, await response.text());
+    return { ok: false, error: 'INVALID_PURCHASE' };
+  }
+  const sub = await response.json();
+
+  const state = sub.subscriptionState as string | undefined;
+  const active =
+    state === 'SUBSCRIPTION_STATE_ACTIVE' || state === 'SUBSCRIPTION_STATE_IN_GRACE_PERIOD';
+  if (!active) return { ok: false, error: 'INVALID_PURCHASE' };
+
+  const items: Array<{ productId?: string; expiryTime?: string }> = sub.lineItems ?? [];
+  const item = items.find((i) => i.productId === productId);
+  if (!item?.expiryTime) return { ok: false, error: 'INVALID_PURCHASE' };
+
+  const expiry = new Date(item.expiryTime);
+  if (!(expiry.getTime() > Date.now())) return { ok: false, error: 'INVALID_PURCHASE' };
+  return { ok: true, expiresAt: expiry.toISOString() };
+}
+
+// ---------------------------------------------------------------------------
+// Apple: verifyReceipt (prod, con fallback sandbox per le build TestFlight)
+// ---------------------------------------------------------------------------
+
+async function appleVerifyReceipt(
+  endpoint: string,
+  receipt: string,
+  sharedSecret: string,
+): Promise<Record<string, unknown> | null> {
+  const response = await fetch(endpoint, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({
+      'receipt-data': receipt,
+      password: sharedSecret,
+      'exclude-old-transactions': true,
+    }),
+  });
+  if (!response.ok) {
+    console.error('verifyReceipt:', response.status, await response.text());
+    return null;
+  }
+  return await response.json();
+}
+
+/// Verifica una ricevuta iOS: bundle id giusto e abbonamento del prodotto
+/// richiesto non scaduto. Torna la scadenza più recente per quel prodotto.
+async function verifyIos(productId: string, receipt: string): Promise<VerifyResult> {
+  const sharedSecret = Deno.env.get('APPLE_SHARED_SECRET');
+  if (!sharedSecret) return { ok: false, error: 'VERIFY_UNAVAILABLE' };
+
+  let data = await appleVerifyReceipt(
+    'https://buy.itunes.apple.com/verifyReceipt',
+    receipt,
+    sharedSecret,
+  );
+  // 21007: ricevuta sandbox mandata all'endpoint di produzione (TestFlight e
+  // review Apple usano sandbox) → si riprova sull'endpoint sandbox.
+  if (data && data.status === 21007) {
+    data = await appleVerifyReceipt(
+      'https://sandbox.itunes.apple.com/verifyReceipt',
+      receipt,
+      sharedSecret,
+    );
+  }
+  if (!data) return { ok: false, error: 'VERIFY_UNAVAILABLE' };
+  if (data.status !== 0) {
+    console.error('verifyReceipt status:', data.status);
+    return { ok: false, error: 'INVALID_PURCHASE' };
+  }
+
+  const receiptInfo = data.receipt as { bundle_id?: string } | undefined;
+  if (receiptInfo?.bundle_id !== IOS_BUNDLE_ID) {
+    return { ok: false, error: 'INVALID_PURCHASE' };
+  }
+
+  const latest = (data.latest_receipt_info ?? []) as Array<{
+    product_id?: string;
+    expires_date_ms?: string;
+  }>;
+  let expiryMs = 0;
+  for (const tx of latest) {
+    if (tx.product_id !== productId) continue;
+    const ms = Number(tx.expires_date_ms ?? 0);
+    if (ms > expiryMs) expiryMs = ms;
+  }
+  if (!(expiryMs > Date.now())) return { ok: false, error: 'INVALID_PURCHASE' };
+  return { ok: true, expiresAt: new Date(expiryMs).toISOString() };
+}
+
+// ---------------------------------------------------------------------------
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: cors });
@@ -47,11 +238,14 @@ Deno.serve(async (req) => {
   } catch {
     return json({ error: 'BAD_REQUEST' }, 400);
   }
-  if (!body.product_id || !body.purchase_token) {
+  if (!body.product_id || !body.purchase_token || !body.platform) {
     return json({ error: 'BAD_REQUEST' }, 400);
   }
   if (!PRODUCTS.includes(body.product_id)) {
     return json({ error: 'UNKNOWN_PRODUCT' }, 400);
+  }
+  if (body.platform !== 'android' && body.platform !== 'ios') {
+    return json({ error: 'UNKNOWN_PLATFORM' }, 400);
   }
 
   const asUser = createClient(
@@ -63,15 +257,14 @@ Deno.serve(async (req) => {
   const user = userData?.user;
   if (!user) return json({ error: 'AUTH_REQUIRED' }, 401);
 
-  // VERIFICA_ABBONAMENTO: qui va la chiamata alla Google Play Developer API
-  // (purchases.subscriptionsv2.get) con un service account, per confermare che
-  // purchase_token sia reale, riferito a product_id e attivo, e leggerne la
-  // vera scadenza. Senza, la scadenza è simulata e il diritto è falsificabile.
-  const verified = true;
-  if (!verified) return json({ error: 'INVALID_PURCHASE' }, 402);
-
-  // Stub: 30 giorni da adesso. Con la verifica reale diventa expiryTimeMillis.
-  const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+  const result = body.platform === 'android'
+    ? await verifyAndroid(body.product_id, body.purchase_token)
+    : await verifyIos(body.product_id, body.purchase_token);
+  if (!result.ok) {
+    // VERIFY_UNAVAILABLE = configurazione server mancante/errore store (503,
+    // il client può riprovare); INVALID_PURCHASE = ricevuta non valida (402).
+    return json({ error: result.error }, result.error === 'VERIFY_UNAVAILABLE' ? 503 : 402);
+  }
 
   const admin = createClient(
     Deno.env.get('SUPABASE_URL')!,
@@ -84,12 +277,12 @@ Deno.serve(async (req) => {
       {
         user_id: user.id,
         product: body.product_id,
-        expires_at: expiresAt,
+        expires_at: result.expiresAt,
         updated_at: new Date().toISOString(),
       },
       { onConflict: 'user_id,product' },
     );
   if (error) return json({ error: 'WRITE_FAILED' }, 500);
 
-  return json({ ok: true, product: body.product_id, expires_at: expiresAt });
+  return json({ ok: true, product: body.product_id, expires_at: result.expiresAt });
 });

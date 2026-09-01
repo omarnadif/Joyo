@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -36,7 +37,14 @@ class EntitlementsRepository {
     try {
       final response = await _client.functions.invoke(
         'verify-subscription',
-        body: {'product_id': productId, 'purchase_token': purchaseToken},
+        body: {
+          'product_id': productId,
+          'purchase_token': purchaseToken,
+          // La Edge Function verifica presso lo store giusto.
+          'platform': defaultTargetPlatform == TargetPlatform.iOS
+              ? 'ios'
+              : 'android',
+        },
       );
       final data = response.data;
       return data is Map && data['ok'] == true;

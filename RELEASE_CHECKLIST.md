@@ -4,7 +4,6 @@ Legenda: ✅ fatto · ⬜ da fare · ⚠️ importante/bloccante
 
 Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS (rinominato da `com.mmih.joyo` il 2026-08-31, prima di ogni pubblicazione — non più cambiabile dopo).
 
-> ⚠️ Nel working tree ci sono file non committati: `age_gate.dart` (nuovo) e `room_settings_card.dart` — l'age gate segnato ✅ in §6 esiste solo in locale finché non viene committato.
 
 ---
 
@@ -13,10 +12,9 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ Migrazioni DB applicate (0015–0019): shop, gate premium, entitlements, crediti per-utente.
 - ✅ Gate server-side: `mode`/`rounds` scrivibili solo via RPC; Mix/Hot e round >10 protetti.
 - ✅ Edge Function deployata e attiva: `verify-subscription` (le funzioni AI `unlock-premium` e `generate-content` sono state rimosse — da eliminare anche dal progetto Supabase se ancora deployate).
-- ⚠️⬜ **Verifica ricevuta REALE**: `verify-subscription` ha `const verified = true` (stub). Con lo stub un client modificato può falsificare un abbonamento.
-  - Creare un **service account Google** (Play Console → API access) con permesso su Android Publisher.
-  - In `verify-subscription`: chiamare `purchases.subscriptionsv2.get` per confermare token+prodotto e leggere la scadenza vera (`expiryTimeMillis`) invece dei 30 giorni fissi.
-  - Salvare la chiave come secret: `supabase secrets set GOOGLE_SERVICE_ACCOUNT=...`.
+- ⚠️🔶 **Verifica ricevuta REALE**: codice scritto e DEPLOYATO (2026-09-01) in `verify-subscription` — Android via `purchases.subscriptionsv2.get`, iOS via `verifyReceipt` (fallback sandbox per TestFlight), scadenza vera dallo store, fail-closed se mancano i secret.
+  - ✅ iOS operativa: secret `APPLE_SHARED_SECRET` impostato (shared secret specifico dell'app da ASC).
+  - ⬜ Android: creare un **service account Google** (Play Console → API access) con permesso su Android Publisher → `supabase secrets set GOOGLE_SERVICE_ACCOUNT='<json completo>' --project-ref tbwugcdflftkvbovhuty` (bloccato dall'accesso Google).
 - ✅ **Rate limit sui crediti da annuncio** (migration 0020, applicata il 2026-08-29): `grant_mode_unlock` ora impone 15s minimi fra due annunci, max 30/giorno e max 10 partite in banca — il loop "crediti gratis" via RPC non conviene più. Upgrade futuro possibile: verifica SSV di AdMob (callback server-side firmata da Google) per la prova crittografica che l'annuncio sia stato visto.
 - ⬜ Job/logica di **scadenza & rinnovo** abbonamenti (RTDN – Real-time Developer Notifications di Google) per aggiornare `entitlements.expires_at` a rinnovo/cancellazione. In alternativa il client riverifica al lancio.
 
@@ -40,11 +38,11 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ Identifier `com.blueinhope.joyo` registrato + app "Joyo" creata su App Store Connect (SKU `joyo-001`).
 - ✅ **Pipeline senza Mac**: Codemagic → TestFlight (`codemagic.yaml`; integrazione ASC `joyo-asc` con key ZC46MKLX66; variabili sicure `ENV_JSON` e `CERTIFICATE_PRIVATE_KEY` nel gruppo `joyo_env`).
 - ✅ **Prima build verde** (2026-08-29, build #10): IPA firmato e caricato su App Store Connect (app id 6806622931), elaborazione completata.
-- ⬜ **Test information su ASC**: l'invio automatico a TestFlight beta review fallisce finché mancano Feedback Email + contatto beta review → https://appstoreconnect.apple.com/apps/6806622931/testflight/test-info
+- ✅ **Test information su ASC** compilate (2026-09-01): Feedback Email + contatto beta review.
 - ✅ Export compliance: `ITSAppUsesNonExemptEncryption=false` in Info.plist (solo HTTPS standard).
-- ⬜ Gruppo tester esterno con **link pubblico TestFlight** per l'iPhone (prima build esterna passa dalla beta review Apple, ~24-48h).
+- ✅ Gruppo tester esterno con **link pubblico TestFlight** creato (2026-09-01) — la prima build esterna passa dalla beta review Apple, ~24-48h.
 - ⬜ Creare le **subscription** auto-renewable `joyo_no_ads`, `joyo_premium` in ASC (+ accettare il Paid Applications Agreement in Accordi, tasse e banche — serve conto bancario).
-- ⬜ Verifica ricevuta iOS (App Store Server API) nella Edge Function, oltre a quella Google.
+- ✅ Verifica ricevuta iOS nella Edge Function: deployata e operativa (verifyReceipt + fallback sandbox, secret impostato il 2026-09-01).
 - ✅ **ATT**: `NSUserTrackingUsageDescription` in Info.plist; il prompt lo gestisce il form UMP dove serve.
 - ✅ Pulsante "Ripristina acquisti" presente (richiesto da Apple).
 - ⬜ Scheda store: privacy labels, rating 17+, URL privacy policy, dichiarazione trader UE (DSA).
@@ -88,7 +86,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 ---
 
 ### Bloccanti veri prima del "vai live"
-1. ⚠️ Verifica ricevuta reale (§1) — altrimenti abbonamenti falsificabili.
+1. ⚠️ Verifica ricevuta reale (§1) — deployata; iOS operativa, per Android manca solo il secret del service account Google.
 2. ⚠️ Prodotti/subscription su Play Console **e** App Store Connect (§2, §3) — altrimenti non si compra nulla.
 3. ⚠️ Dichiarazione trader UE su entrambe le console (§2, §3) — senza, niente distribuzione in Europa.
 4. ⚠️ Messaggio UMP/GDPR da configurare nella console AdMob (Privacy e messaggi → GDPR) — il codice in app c'è, ma senza il messaggio pubblicato in console il form non appare e in EEA gli annunci restano spenti.
