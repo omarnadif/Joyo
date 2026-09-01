@@ -9,6 +9,7 @@ import '../../premium/entitlements.dart';
 import '../../premium/shop_screen.dart';
 import '../data/models/room.dart';
 import '../state/room_providers.dart';
+import 'age_gate.dart';
 
 /// Modalità e durata della partita: le vedono tutti, le cambia solo l'host, con
 /// la descrizione della modalità scelta bene in vista.
@@ -36,6 +37,16 @@ class RoomSettingsCard extends ConsumerWidget {
       });
     }
 
+    // Mix e Hot hanno contenuti espliciti: la prima volta serve la conferma
+    // 18+, poi resta memorizzata sul dispositivo.
+    Future<void> selectMode(GameMode mode) async {
+      if (mode != GameMode.normale) {
+        if (!await ensureAdultConfirmed(context, t)) return;
+        if (!context.mounted) return;
+      }
+      update(() => repo.updateSettings(roomId: room.id, mode: mode.id));
+    }
+
     return GlowCard(
       accent: room.mode.color,
       glow: 0.6,
@@ -59,12 +70,7 @@ class RoomSettingsCard extends ConsumerWidget {
                         ? null
                         : (mode != GameMode.normale && !premiumUnlocked)
                         ? () => openShop(context)
-                        : () => update(
-                            () => repo.updateSettings(
-                              roomId: room.id,
-                              mode: mode.id,
-                            ),
-                          ),
+                        : () => selectMode(mode),
                   ),
                 ),
                 if (mode != GameMode.values.last) const SizedBox(width: 8),

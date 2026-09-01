@@ -20,6 +20,7 @@ dependencies:
   shared_preferences: ^2.5.5
   url_launcher: ^6.3.1
   flutter_svg: ^2.0.10+1
+  audioplayers: ^6.7.1
 
 dev_dependencies:
   flutter_test:
@@ -47,3 +48,5 @@ flutter:
     - assets/brand/
     # Avatar giocatore (personas flat, SVG). Scelti nella join.
     - assets/avatars/
+    # Effetti sonori: fruscio card, ruota che gira, ding, tocco.
+    - assets/sounds/

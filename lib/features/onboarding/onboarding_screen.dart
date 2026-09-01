@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/audio/sound_service.dart';
+import '../../core/haptics/haptics_service.dart';
 import '../../core/i18n/app_locale.dart';
 import '../../core/i18n/i18n.dart';
 import '../../core/theme/app_colors.dart';
@@ -26,6 +28,7 @@ class OnboardingScreen extends ConsumerStatefulWidget {
 class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   final _controller = PageController();
   double _page = 0;
+  int _lastIndex = 0;
 
   static const _accents = [
     JoyoColors.violet,
@@ -38,7 +41,15 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   void initState() {
     super.initState();
     _controller.addListener(() {
-      setState(() => _page = _controller.page ?? 0);
+      final page = _controller.page ?? 0;
+      setState(() => _page = page);
+      // Un fruscio a ogni pagina superata, come sfogliando delle carte.
+      final index = page.round();
+      if (index != _lastIndex) {
+        _lastIndex = index;
+        ref.read(soundServiceProvider).play(Sfx.swish);
+        ref.read(hapticsServiceProvider).fire(Haptic.selection);
+      }
     });
   }
 

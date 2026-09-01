@@ -96,7 +96,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 6. ✅ Privacy policy (§6) — pubblicata e linkata in app; da incollare nelle console store.
 7. ✅ Firma di release Android (§5) — fatta il 2026-08-29.
 
-### Prossimi 3 passi concreti (aggiornato 2026-08-31)
-1. Verificare l'esito della prima build Codemagic → TestFlight (email a gestion.blueinhope@gmail.com).
-2. Committare age gate (`age_gate.dart` + `room_settings_card.dart`).
+### Prossimi 3 passi concreti (ri-check completo 2026-08-30)
+1. Committare age gate (`age_gate.dart` + `room_settings_card.dart`) — esiste solo in locale.
+2. Compilare le **test information su ASC** (Feedback Email + contatto beta review) → sblocca l'invio a TestFlight.
 3. Configurare il messaggio GDPR nella console AdMob (Privacy e messaggi) per entrambe le app.

@@ -1,14 +1,17 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/audio/sound_service.dart';
+import '../../../core/haptics/haptics_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../room/data/models/player.dart';
 import '../widgets/player_chip.dart';
 
 /// La bottiglia che gira: il risultato arriva già scelto dentro il round e
 /// l'animazione si limita a fermarsi su quel nome, identica su ogni telefono.
-class BottleWheel extends StatefulWidget {
+class BottleWheel extends ConsumerStatefulWidget {
   const BottleWheel({
     required this.players,
     required this.targetId,
@@ -25,10 +28,10 @@ class BottleWheel extends StatefulWidget {
   final VoidCallback onFinished;
 
   @override
-  State<BottleWheel> createState() => _BottleWheelState();
+  ConsumerState<BottleWheel> createState() => _BottleWheelState();
 }
 
-class _BottleWheelState extends State<BottleWheel>
+class _BottleWheelState extends ConsumerState<BottleWheel>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
     vsync: this,
@@ -43,9 +46,17 @@ class _BottleWheelState extends State<BottleWheel>
   void initState() {
     super.initState();
     _controller.addStatusListener((status) {
-      if (status == AnimationStatus.completed) widget.onFinished();
+      if (status == AnimationStatus.completed) {
+        // Ding + colpetto sull'atterraggio della bottiglia.
+        ref.read(soundServiceProvider).play(Sfx.ding);
+        ref.read(hapticsServiceProvider).fire(Haptic.medium);
+        widget.onFinished();
+      }
     });
     _controller.forward();
+    // Il treno di click dura quanto lo spin (3.2s), così accompagna la
+    // decelerazione della bottiglia.
+    ref.read(soundServiceProvider).play(Sfx.spin);
   }
 
   @override

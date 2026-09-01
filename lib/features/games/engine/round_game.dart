@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/audio/sound_service.dart';
+import '../../../core/haptics/haptics_service.dart';
 import '../../../core/i18n/i18n.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/ui/joyo_ui.dart';
@@ -153,6 +155,11 @@ class _RoundGameState extends ConsumerState<RoundGame> {
   bool _creatingRound = false;
   int? _lastRequestedNumber;
 
+  /// Ultima combinazione round+reveal per cui si è suonato: serve a dare il
+  /// fruscio (nuova card) e il ding (reveal) una volta sola per transizione,
+  /// non a ogni rebuild.
+  String? _lastSoundKey;
+
   /// Ultimo stato visto da `_drive`: il timer di scadenza legge questo, non lo
   /// stato catturato alla creazione, altrimenti chiuderebbe il round con i voti
   /// del primo build (quasi sempre zero) e i punti da reveal andrebbero persi.
@@ -210,6 +217,20 @@ class _RoundGameState extends ConsumerState<RoundGame> {
         ? null
         : votes.where((v) => v.playerId == me.id).firstOrNull;
     final pending = _pending.forRound(round.id);
+
+    // Suono di transizione della card: ding al reveal, fruscio quando arriva un
+    // round nuovo. La prima card della partita resta silenziosa (solo memorizza
+    // la chiave), così non parte un suono all'ingresso nel gioco.
+    final soundKey = '${round.id}-${round.isRevealed}';
+    if (_lastSoundKey != null && _lastSoundKey != soundKey) {
+      ref
+          .read(soundServiceProvider)
+          .play(round.isRevealed ? Sfx.ding : Sfx.swish);
+      ref
+          .read(hapticsServiceProvider)
+          .fire(round.isRevealed ? Haptic.medium : Haptic.selection);
+    }
+    _lastSoundKey = soundKey;
 
     final state = RoundGameState(
       room: room,
@@ -426,6 +447,8 @@ class _RoundGameState extends ConsumerState<RoundGame> {
     Map<String, dynamic> value,
   ) async {
     if (me == null) return;
+    ref.read(soundServiceProvider).play(Sfx.tap);
+    ref.read(hapticsServiceProvider).fire(Haptic.selection);
     setState(() => _pending.set(round.id, value));
     try {
       await ref

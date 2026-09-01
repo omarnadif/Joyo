@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/haptics/haptics_service.dart';
 import '../../core/i18n/app_locale.dart';
 import '../../core/i18n/i18n.dart';
 import '../../core/supabase/supabase_providers.dart';
@@ -12,14 +13,45 @@ import '../../core/ui/game_art.dart';
 import '../../core/ui/joyo_ui.dart';
 import '../diagnostics/diagnostics_screen.dart';
 import '../games/game_catalog.dart';
+import '../premium/entitlements.dart';
+import '../premium/premium_promo_dialog.dart';
 import '../premium/shop_screen.dart';
 import '../room/ui/join_flow_screen.dart';
 
-class HomeScreen extends ConsumerWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends ConsumerState<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _maybeShowPromo());
+  }
+
+  /// Propone l'abbonamento all'apertura, una sola volta per avvio e solo a chi
+  /// non è già premium. Aspetta che i diritti siano letti dal server, così la
+  /// finestra non lampeggia per un abbonato.
+  Future<void> _maybeShowPromo() async {
+    if (ref.read(premiumPromoShownProvider)) return;
+    try {
+      await ref.read(entitlementsProvider.future);
+    } catch (_) {
+      // Se i diritti non si caricano, meglio non insistere col promo.
+      return;
+    }
+    if (!mounted) return;
+    if (ref.read(premiumPromoShownProvider)) return;
+    if (ref.read(hasPremiumProvider)) return;
+    ref.read(premiumPromoShownProvider.notifier).markShown();
+    await showPremiumPromo(context);
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final text = Theme.of(context).textTheme;
     final t = ref.watch(tProvider);
     // Il login anonimo parte all'apertura così la sessione è già pronta quando si preme "Crea stanza".
@@ -102,6 +134,7 @@ class HomeScreen extends ConsumerWidget {
   }
 
   void _open(BuildContext context, JoinFlowMode mode) {
+    ref.read(hapticsServiceProvider).fire(Haptic.light);
     Navigator.of(
       context,
     ).push(MaterialPageRoute<void>(builder: (_) => JoinFlowScreen(mode: mode)));
