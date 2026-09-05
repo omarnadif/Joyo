@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, TargetPlatform;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -25,8 +27,13 @@ class ShopScreen extends ConsumerStatefulWidget {
   ConsumerState<ShopScreen> createState() => _ShopScreenState();
 }
 
-class _ShopScreenState extends ConsumerState<ShopScreen> {
+class _ShopScreenState extends ConsumerState<ShopScreen>
+    with WidgetsBindingObserver {
   bool _busy = false;
+
+  // Android: il codice si riscatta nel Play Store; al rientro nell'app si
+  // rifà un ripristino così l'abbonamento appena riscattato viene registrato.
+  bool _awaitingPlayRedeem = false;
 
   // Google impone un punto di rientro alle opzioni privacy solo in EEA/UK:
   // altrove il link non compare.
@@ -39,6 +46,12 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
       Uri.parse('https://omarnadif.github.io/joyo-legal/privacy-policy/');
   static final _termsUrl =
       Uri.parse('https://omarnadif.github.io/joyo-legal/terms/');
+  static final _playRedeemUrl = Uri.parse('https://play.google.com/redeem');
+
+  static const _productIds = {
+    AppEnv.noAdsProductId,
+    AppEnv.premiumSubProductId,
+  };
 
   // Prezzi di riserva se lo store non risponde (in dev/desktop).
   static const _fallbackPrice = {
@@ -50,10 +63,25 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _loadPrices();
     ref.read(adsServiceProvider).isPrivacyOptionsRequired().then((required) {
       if (mounted && required) setState(() => _privacyOptionsRequired = true);
     });
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && _awaitingPlayRedeem) {
+      _awaitingPlayRedeem = false;
+      _restore();
+    }
   }
 
   Future<void> _loadPrices() async {
@@ -101,10 +129,7 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
     try {
       final purchases = ref.read(purchaseServiceProvider);
       final repo = ref.read(entitlementsRepositoryProvider);
-      final restored = await purchases.restoreSubscriptions(const {
-        AppEnv.noAdsProductId,
-        AppEnv.premiumSubProductId,
-      });
+      final restored = await purchases.restoreSubscriptions(_productIds);
       var any = false;
       for (final item in restored) {
         final ok = await repo.verify(
@@ -125,6 +150,47 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
     } finally {
       if (mounted) setState(() => _busy = false);
     }
+  }
+
+  /// Codici offerta dello store (mese gratis, sconto): su iOS il foglio Apple
+  /// in-app, su Android la pagina di riscatto del Play Store.
+  Future<void> _redeemCode() async {
+    final t = ref.read(tProvider);
+    final messenger = ScaffoldMessenger.of(context);
+    final purchases = ref.read(purchaseServiceProvider);
+    // Catturato prima delle attese: resta usabile anche se la pagina viene
+    // chiusa mentre il foglio è aperto, così l'abbonamento viene registrato.
+    final repo = ref.read(entitlementsRepositoryProvider);
+
+    if (defaultTargetPlatform != TargetPlatform.iOS) {
+      _awaitingPlayRedeem = true;
+      await launchUrl(_playRedeemUrl, mode: LaunchMode.externalApplication);
+      messenger.showSnackBar(
+        SnackBar(content: Text(t('paywall.redeem_android_hint'))),
+      );
+      return;
+    }
+
+    if (!await purchases.isAvailable()) {
+      messenger.showSnackBar(SnackBar(content: Text(t('premium.no_store'))));
+      return;
+    }
+    messenger.showSnackBar(
+      SnackBar(content: Text(t('paywall.redeem_ios_hint'))),
+    );
+    final redeemed = await purchases.presentRedeemSheet(_productIds);
+    var any = false;
+    for (final item in redeemed) {
+      final ok = await repo.verify(
+        productId: item.productId,
+        purchaseToken: item.token,
+      );
+      any = any || ok;
+    }
+    if (!any || !mounted) return;
+    await ref.read(entitlementsProvider.notifier).refresh();
+    if (!mounted) return;
+    messenger.showSnackBar(SnackBar(content: Text(t('paywall.active'))));
   }
 
   Future<void> _watchAd() async {
@@ -242,9 +308,19 @@ class _ShopScreenState extends ConsumerState<ShopScreen> {
 
               const SizedBox(height: 18),
               Center(
-                child: TextButton(
-                  onPressed: _busy ? null : _restore,
-                  child: Text(t('paywall.restore')),
+                child: Wrap(
+                  alignment: WrapAlignment.center,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    TextButton(
+                      onPressed: _busy ? null : _restore,
+                      child: Text(t('paywall.restore')),
+                    ),
+                    TextButton(
+                      onPressed: _busy ? null : _redeemCode,
+                      child: Text(t('paywall.redeem')),
+                    ),
+                  ],
                 ),
               ),
               Center(
