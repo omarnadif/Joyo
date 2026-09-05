@@ -42,11 +42,12 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ **Test information su ASC** compilate (2026-09-01): Feedback Email + contatto beta review.
 - ✅ Export compliance: `ITSAppUsesNonExemptEncryption=false` in Info.plist (solo HTTPS standard).
 - ✅ Gruppo tester esterno con **link pubblico TestFlight** creato (2026-09-01) — la prima build esterna passa dalla beta review Apple, ~24-48h.
-- ⬜ Creare le **subscription** auto-renewable `joyo_no_ads`, `joyo_premium` in ASC (+ accettare il Paid Applications Agreement in Accordi, tasse e banche — serve conto bancario).
+- ✅ Paid Apps Agreement **attivo** (2026-09-01), banca e W-8BEN attivi; dichiarazione trader UE (DSA) inviata il 2026-09-02, verifica Apple in corso.
+- ⬜ Creare le **subscription** auto-renewable `joyo_no_ads`, `joyo_premium` in ASC (Monetizzazione → Abbonamenti: gruppo `Joyo`, durata 1 mese, prezzi 1,99/3,99 €, localizzazioni IT/EN, screenshot+note review, Premium livello 1). Primo invio insieme alla versione 1.0.
 - ✅ Verifica ricevuta iOS nella Edge Function: deployata e operativa (verifyReceipt + fallback sandbox, secret impostato il 2026-09-01).
 - ✅ **ATT**: `NSUserTrackingUsageDescription` in Info.plist; il prompt lo gestisce il form UMP dove serve.
 - ✅ Pulsante "Ripristina acquisti" presente (richiesto da Apple).
-- ⬜ Scheda store: privacy labels, rating 17+, URL privacy policy, dichiarazione trader UE (DSA).
+- ⬜ Scheda store: privacy labels, rating 17+, URL privacy policy (trader UE già inviata, vedi sopra).
 
 ## 4. Pubblicità (AdMob)
 
