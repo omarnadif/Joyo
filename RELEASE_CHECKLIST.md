@@ -50,6 +50,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ Pulsante "Ripristina acquisti" presente (richiesto da Apple).
 - ✅ Informazioni app (2026-09-05): nome EN `Joyo: Party Game with Friends`, sottotitolo `One code. Everyone plays.`, diritti contenuti No, età **16+** (17+ su OS < 26, scelta dell'utente), categoria Giochi/Casual.
 - ✅ Privacy dell'app compilata (9 tipi di dato, tracking solo su ID dispositivo e dati pubblicitari); URL privacy da confermare pubblicato.
+- ⬜ **Codici offerta** su `joyo_premium` (Prezzi abbonamento → Visualizza tutti i prezzi → Codici offerta): offerta A "1 mese gratis" e offerta B "20% per 3 mesi" (pay as you go), codici personalizzati; riscattabili solo ad app pubblicata. In app c'è già "Riscatta un codice" (commit ebd5149). Google Play: codici promozionali quando torna l'accesso.
 - ⬜ Scheda versione 1.0: screenshot iPhone 6,5" (li fa l'utente), testi promo/descrizione/keyword da STORE_LISTING.md (IT+FR+EN minimo), URL assistenza, versione `1.0.0`, copyright, note review, rilascio manuale.
 - ⬜ Nuova build Codemagic con il fix StoreKit 1 (commit 57327ea) → scegliere la build nella pagina 1.0 → aggiungere la versione alla bozza → **Invia per la verifica**.
 
