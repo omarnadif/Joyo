@@ -18,7 +18,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
   - ⬜ Android: creare un **service account Google** (Play Console → API access) con permesso su Android Publisher → `supabase secrets set GOOGLE_SERVICE_ACCOUNT='<json completo>' --project-ref tbwugcdflftkvbovhuty` (bloccato dall'accesso Google).
 - ✅ **Rate limit sui crediti da annuncio** (migration 0020, applicata il 2026-08-29): `grant_mode_unlock` ora impone 15s minimi fra due annunci, max 30/giorno e max 10 partite in banca — il loop "crediti gratis" via RPC non conviene più. Upgrade futuro possibile: verifica SSV di AdMob (callback server-side firmata da Google) per la prova crittografica che l'annuncio sia stato visto.
 - ✅ **Scadenza & rinnovo** (2026-09-05): migration 0024 + `verify-subscription` in modalità refresh; il client riverifica a ogni avvio (rinnovi e disdette aggiornano `expires_at`). Upgrade futuro: RTDN/App Store Server Notifications.
-- ⬜ **Da applicare sul server** (commit 1eff77a): `dart run tool/migrate.dart` (0021 status stanza solo via RPC, 0022 award_points svela, 0023 RLS schema_migrations, 0024 token entitlements) e `npx supabase functions deploy verify-subscription --project-ref tbwugcdflftkvbovhuty`. La build con questo commit richiede le migrazioni applicate (nuove RPC finish_game/back_to_lobby).
+- ✅ **Applicato sul server il 2026-09-05**: migrazioni 0021–0024 (status stanza solo via RPC, award_points svela, RLS schema_migrations, token entitlements) e `verify-subscription` rideployata con modalità refresh (smoke test ok). Le build precedenti a 1eff77a non possono più chiudere una partita: usare solo build nuove.
 
 ## 2. Google Play Console
 
