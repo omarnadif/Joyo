@@ -43,11 +43,14 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ Export compliance: `ITSAppUsesNonExemptEncryption=false` in Info.plist (solo HTTPS standard).
 - ✅ Gruppo tester esterno con **link pubblico TestFlight** creato (2026-09-01) — la prima build esterna passa dalla beta review Apple, ~24-48h.
 - ✅ Paid Apps Agreement **attivo** (2026-09-01), banca e W-8BEN attivi; dichiarazione trader UE (DSA) inviata il 2026-09-02, verifica Apple in corso.
-- ⬜ Creare le **subscription** auto-renewable `joyo_no_ads`, `joyo_premium` in ASC (Monetizzazione → Abbonamenti: gruppo `Joyo`, durata 1 mese, prezzi 1,99/3,99 €, localizzazioni IT/EN, screenshot+note review, Premium livello 1). Primo invio insieme alla versione 1.0.
+- ✅ **Subscription create in ASC** (2026-09-05): gruppo `Joyo` (id 22361339), `joyo_premium` livello 1 a 3,99 €, `joyo_no_ads` livello 2 a 1,99 €, 1 mese, localizzazioni IT/EN/ES/FR/DE, screenshot review `tool/shop_shot.dart`. Già in bozza di invio con il gruppo; manca solo la versione 1.0 nella bozza.
 - ✅ Verifica ricevuta iOS nella Edge Function: deployata e operativa (verifyReceipt + fallback sandbox, secret impostato il 2026-09-01).
 - ✅ **ATT**: `NSUserTrackingUsageDescription` in Info.plist; il prompt lo gestisce il form UMP dove serve.
 - ✅ Pulsante "Ripristina acquisti" presente (richiesto da Apple).
-- ⬜ Scheda store: privacy labels, rating 17+, URL privacy policy (trader UE già inviata, vedi sopra).
+- ✅ Informazioni app (2026-09-05): nome EN `Joyo: Party Game with Friends`, sottotitolo `One code. Everyone plays.`, diritti contenuti No, età **16+** (17+ su OS < 26, scelta dell'utente), categoria Giochi/Casual.
+- ✅ Privacy dell'app compilata (9 tipi di dato, tracking solo su ID dispositivo e dati pubblicitari); URL privacy da confermare pubblicato.
+- ⬜ Scheda versione 1.0: screenshot iPhone 6,5" (li fa l'utente), testi promo/descrizione/keyword da STORE_LISTING.md (IT+FR+EN minimo), URL assistenza, versione `1.0.0`, copyright, note review, rilascio manuale.
+- ⬜ Nuova build Codemagic con il fix StoreKit 1 (commit 57327ea) → scegliere la build nella pagina 1.0 → aggiungere la versione alla bozza → **Invia per la verifica**.
 
 ## 4. Pubblicità (AdMob)
 
