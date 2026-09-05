@@ -16,6 +16,8 @@ dependencies:
   flutter_riverpod: ^3.3.2
   google_fonts: ^8.1.0
   in_app_purchase: ^3.2.3
+  # Solo per InAppPurchaseStoreKitPlatform.enableStoreKit1() in main.dart.
+  in_app_purchase_storekit: ^0.4.8
   google_mobile_ads: 7.0.0
   shared_preferences: ^2.5.5
   url_launcher: ^6.3.1
