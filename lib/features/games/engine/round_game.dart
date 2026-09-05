@@ -418,8 +418,8 @@ class _RoundGameState extends ConsumerState<RoundGame> {
     }
   }
 
-  /// Assegna i punti e poi svela, in quest'ordine: la RPC dei punti accetta
-  /// solo round ancora aperti.
+  /// Chiude il round. Con punti da assegnare, award_points li assegna e
+  /// svela nella stessa transazione (0022): un retry non può raddoppiarli.
   Future<void> _closeRound(RoundGameState state) async {
     if (_closingRoundId == state.round.id) return;
     _closingRoundId = state.round.id;
@@ -428,9 +428,8 @@ class _RoundGameState extends ConsumerState<RoundGame> {
       final awards = widget.awards?.call(state);
       if (awards != null && awards.isNotEmpty) {
         await repo.awardPoints(roundId: state.round.id, awards: awards);
-      }
-      // I giochi con punteggio sul server svelano da sé il round.
-      if (widget.onClose case final onClose?) {
+      } else if (widget.onClose case final onClose?) {
+        // I giochi con punteggio sul server svelano da sé il round.
         await onClose(state);
       } else {
         await repo.revealRound(state.round.id);

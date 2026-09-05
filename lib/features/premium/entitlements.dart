@@ -28,6 +28,27 @@ class EntitlementsRepository {
     };
   }
 
+  /// Vero se esiste almeno una riga (anche scaduta): solo in quel caso vale la
+  /// pena chiedere allo store lo stato aggiornato.
+  Future<bool> hasAnyRow() async {
+    final rows = await _client.from('entitlements').select('product').limit(1);
+    return rows.isNotEmpty;
+  }
+
+  /// Chiede alla Edge Function di riverificare presso lo store gli abbonamenti
+  /// già registrati (rinnovi, disdette) usando il token conservato lato
+  /// server. Nessun prompt allo store sul dispositivo. Errori ignorati: al
+  /// peggio resta la scadenza precedente.
+  Future<void> refreshFromStore() async {
+    try {
+      await _client.functions
+          .invoke('verify-subscription', body: const {'refresh': true})
+          .timeout(const Duration(seconds: 8));
+    } catch (_) {
+      // Offline o store non raggiungibile: si riprova al prossimo avvio.
+    }
+  }
+
   /// Manda ricevuta + prodotto alla Edge Function, che verifica e scrive
   /// l'entitlement. Torna true se il diritto è stato registrato.
   Future<bool> verify({
@@ -59,13 +80,19 @@ final entitlementsRepositoryProvider = Provider<EntitlementsRepository>(
 );
 
 /// Stato dei diritti attivi dell'utente. Si carica dopo il login anonimo e si
-/// ricarica dopo un acquisto o un ripristino ([refresh]).
+/// ricarica dopo un acquisto o un ripristino ([refresh]). A ogni avvio, se
+/// l'utente ha già un abbonamento registrato, lo riverifica presso lo store
+/// così rinnovi e disdette aggiornano la scadenza.
 class EntitlementsNotifier extends AsyncNotifier<Set<String>> {
   @override
   Future<Set<String>> build() async {
     // Serve un utente autenticato per leggere le proprie righe.
     await ref.watch(anonSessionProvider.future);
-    return ref.read(entitlementsRepositoryProvider).activeProducts();
+    final repo = ref.read(entitlementsRepositoryProvider);
+    if (!kIsWeb && await repo.hasAnyRow()) {
+      await repo.refreshFromStore();
+    }
+    return repo.activeProducts();
   }
 
   Future<void> refresh() async {

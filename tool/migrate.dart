@@ -51,6 +51,10 @@ Future<void> main(List<String> args) async {
         name       text primary key,
         applied_at timestamptz not null default now()
       );
+      -- Mai raggiungibile con la chiave pubblica (vedi 0023): cancellare una
+      -- riga farebbe rieseguire una migrazione.
+      alter table public.schema_migrations enable row level security;
+      revoke all on table public.schema_migrations from public, anon, authenticated;
     ''');
 
     final applied = <String>{

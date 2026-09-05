@@ -16,6 +16,11 @@
 // Senza il secret della piattaforma richiesta la verifica FALLISCE (fail
 // closed): meglio un acquisto da riprovare che un diritto falsificabile.
 //
+// Modalità refresh ({ refresh: true }): riverifica presso lo store tutti gli
+// abbonamenti già registrati dell'utente usando il token conservato in
+// entitlements, e riallinea expires_at (rinnovi, disdette). Il client la
+// chiama a ogni avvio; non serve alcun prompt dello store sul dispositivo.
+//
 // Deploy: supabase functions deploy verify-subscription
 
 import { createClient } from 'jsr:@supabase/supabase-js@2';
@@ -30,9 +35,10 @@ const ANDROID_PACKAGE = 'com.blueinhope.joyo';
 const IOS_BUNDLE_ID = 'com.blueinhope.joyo';
 
 type Body = {
-  platform: string;
-  product_id: string;
-  purchase_token: string;
+  platform?: string;
+  product_id?: string;
+  purchase_token?: string;
+  refresh?: boolean;
 };
 
 function json(payload: unknown, status = 200) {
@@ -117,7 +123,7 @@ async function googleAccessToken(): Promise<string | null> {
 }
 
 type VerifyResult =
-  | { ok: true; expiresAt: string }
+  | { ok: true; expiresAt: string; token?: string }
   | { ok: false; error: 'VERIFY_UNAVAILABLE' | 'INVALID_PURCHASE' };
 
 /// Verifica un token di abbonamento Play: il token deve esistere, riferirsi al
@@ -221,7 +227,14 @@ async function verifyIos(productId: string, receipt: string): Promise<VerifyResu
     if (ms > expiryMs) expiryMs = ms;
   }
   if (!(expiryMs > Date.now())) return { ok: false, error: 'INVALID_PURCHASE' };
-  return { ok: true, expiresAt: new Date(expiryMs).toISOString() };
+  // latest_receipt è la ricevuta aggiornata coi rinnovi: conservandola le
+  // riverifiche successive partono dallo stato più recente.
+  const latestReceipt = typeof data.latest_receipt === 'string' ? data.latest_receipt : undefined;
+  return { ok: true, expiresAt: new Date(expiryMs).toISOString(), token: latestReceipt };
+}
+
+function verifyWithStore(platform: string, productId: string, token: string): Promise<VerifyResult> {
+  return platform === 'android' ? verifyAndroid(productId, token) : verifyIos(productId, token);
 }
 
 // ---------------------------------------------------------------------------
@@ -238,14 +251,17 @@ Deno.serve(async (req) => {
   } catch {
     return json({ error: 'BAD_REQUEST' }, 400);
   }
-  if (!body.product_id || !body.purchase_token || !body.platform) {
-    return json({ error: 'BAD_REQUEST' }, 400);
-  }
-  if (!PRODUCTS.includes(body.product_id)) {
-    return json({ error: 'UNKNOWN_PRODUCT' }, 400);
-  }
-  if (body.platform !== 'android' && body.platform !== 'ios') {
-    return json({ error: 'UNKNOWN_PLATFORM' }, 400);
+  const isRefresh = body.refresh === true;
+  if (!isRefresh) {
+    if (!body.product_id || !body.purchase_token || !body.platform) {
+      return json({ error: 'BAD_REQUEST' }, 400);
+    }
+    if (!PRODUCTS.includes(body.product_id)) {
+      return json({ error: 'UNKNOWN_PRODUCT' }, 400);
+    }
+    if (body.platform !== 'android' && body.platform !== 'ios') {
+      return json({ error: 'UNKNOWN_PLATFORM' }, 400);
+    }
   }
 
   const asUser = createClient(
@@ -257,20 +273,21 @@ Deno.serve(async (req) => {
   const user = userData?.user;
   if (!user) return json({ error: 'AUTH_REQUIRED' }, 401);
 
-  const result = body.platform === 'android'
-    ? await verifyAndroid(body.product_id, body.purchase_token)
-    : await verifyIos(body.product_id, body.purchase_token);
+  const admin = createClient(
+    Deno.env.get('SUPABASE_URL')!,
+    Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!,
+  );
+
+  if (isRefresh) return await refreshEntitlements(admin, user.id);
+
+  const result = await verifyWithStore(body.platform!, body.product_id!, body.purchase_token!);
   if (!result.ok) {
     // VERIFY_UNAVAILABLE = configurazione server mancante/errore store (503,
     // il client può riprovare); INVALID_PURCHASE = ricevuta non valida (402).
     return json({ error: result.error }, result.error === 'VERIFY_UNAVAILABLE' ? 503 : 402);
   }
 
-  const admin = createClient(
-    Deno.env.get('SUPABASE_URL')!,
-    Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!,
-  );
-
+  const now = new Date().toISOString();
   const { error } = await admin
     .from('entitlements')
     .upsert(
@@ -278,7 +295,10 @@ Deno.serve(async (req) => {
         user_id: user.id,
         product: body.product_id,
         expires_at: result.expiresAt,
-        updated_at: new Date().toISOString(),
+        platform: body.platform,
+        purchase_token: result.token ?? body.purchase_token,
+        last_checked_at: now,
+        updated_at: now,
       },
       { onConflict: 'user_id,product' },
     );
@@ -286,3 +306,62 @@ Deno.serve(async (req) => {
 
   return json({ ok: true, product: body.product_id, expires_at: result.expiresAt });
 });
+
+// ---------------------------------------------------------------------------
+// Refresh: riverifica gli abbonamenti registrati con il token conservato.
+//  - ok            → expires_at aggiornata (rinnovo avvenuto o scadenza uguale);
+//  - INVALID       → lo store dice scaduto/disdetto: expires_at = adesso;
+//  - UNAVAILABLE   → store/config non raggiungibile: riga lasciata com'è.
+// Le righe senza token (registrate prima di 0024) restano come sono finché
+// l'utente non rifà "Ripristina acquisti".
+// ---------------------------------------------------------------------------
+
+type EntitlementRow = {
+  product: string;
+  platform: string | null;
+  purchase_token: string | null;
+  expires_at: string;
+};
+
+async function refreshEntitlements(
+  admin: ReturnType<typeof createClient>,
+  userId: string,
+): Promise<Response> {
+  const { data, error } = await admin
+    .from('entitlements')
+    .select('product, platform, purchase_token, expires_at')
+    .eq('user_id', userId);
+  if (error) return json({ error: 'READ_FAILED' }, 500);
+
+  const rows = (data ?? []) as EntitlementRow[];
+  const active: string[] = [];
+  const now = new Date();
+
+  for (const row of rows) {
+    if (!row.platform || !row.purchase_token) {
+      if (new Date(row.expires_at) > now) active.push(row.product);
+      continue;
+    }
+    const result = await verifyWithStore(row.platform, row.product, row.purchase_token);
+    if (!result.ok && result.error === 'VERIFY_UNAVAILABLE') {
+      if (new Date(row.expires_at) > now) active.push(row.product);
+      continue;
+    }
+    const expiresAt = result.ok ? result.expiresAt : now.toISOString();
+    const update: Record<string, unknown> = {
+      expires_at: expiresAt,
+      last_checked_at: now.toISOString(),
+      updated_at: now.toISOString(),
+    };
+    if (result.ok && result.token) update.purchase_token = result.token;
+    const { error: writeError } = await admin
+      .from('entitlements')
+      .update(update)
+      .eq('user_id', userId)
+      .eq('product', row.product);
+    if (writeError) console.error('refresh write:', row.product, writeError.message);
+    if (result.ok) active.push(row.product);
+  }
+
+  return json({ ok: true, products: active });
+}

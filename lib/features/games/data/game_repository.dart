@@ -83,8 +83,8 @@ class GameRepository {
     'value': value,
   });
 
-  /// Solo l'host: assegna i punti, *prima* del reveal, perché la RPC accetta
-  /// solo round aperti (così resta idempotente se l'host ripete).
+  /// Solo l'host: assegna i punti e svela il round nella stessa transazione
+  /// (idempotente: su un round già svelato non fa nulla).
   Future<void> awardPoints({
     required String roundId,
     required Map<String, int> awards,
@@ -99,11 +99,10 @@ class GameRepository {
       .update({'status': 'revealed'})
       .eq('id', roundId);
 
-  /// Solo l'host: fine partita, si va al podio.
-  Future<void> finishGame(String roomId) async => await _client
-      .from('rooms')
-      .update({'status': 'finished'})
-      .eq('id', roomId);
+  /// Solo l'host: fine partita, si va al podio. Passa da RPC perché
+  /// rooms.status non è più scrivibile dal client (0021).
+  Future<void> finishGame(String roomId) async =>
+      await _client.rpc('finish_game', params: {'p_room': roomId});
 
   /// Impostore: round creato sul server, perché parola e ruolo non devono
   /// passare dal telefono dell'host (che potrebbe essere l'impostore).

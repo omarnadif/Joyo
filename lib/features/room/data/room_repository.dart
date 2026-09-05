@@ -151,11 +151,10 @@ class RoomRepository {
       .update({'active_game': gameType})
       .eq('id', roomId);
 
-  /// Solo l'host: riporta tutti in lobby.
-  Future<void> backToLobby(String roomId) async => await _client
-      .from('rooms')
-      .update({'status': 'lobby', 'active_game': null})
-      .eq('id', roomId);
+  /// Solo l'host: riporta tutti in lobby. Passa da RPC perché rooms.status
+  /// non è più scrivibile dal client (0021).
+  Future<void> backToLobby(String roomId) async =>
+      await _client.rpc('back_to_lobby', params: {'p_room': roomId});
 
   Future<void> leaveRoom(String playerId) async =>
       await _client.from('players').delete().eq('id', playerId);
