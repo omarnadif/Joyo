@@ -55,7 +55,7 @@ Future<void> main(List<String> args) async {
       -- riga farebbe rieseguire una migrazione.
       alter table public.schema_migrations enable row level security;
       revoke all on table public.schema_migrations from public, anon, authenticated;
-    ''');
+    ''', queryMode: QueryMode.simple);
 
     final applied = <String>{
       for (final row in await connection.execute(
