@@ -63,3 +63,6 @@ supabase/.db_url
 # Artefatti di planning generati da Claude Code (non versionare)
 .artifacts/
 *.artifact.md
+
+# Segreti locali (chiave cert iOS per Codemagic, ecc.) — mai in git
+secrets/

@@ -7,7 +7,12 @@
 #  2. App Store Connect → Utenti e accesso → Chiavi API: creare una chiave
 #     con ruolo App Manager e caricarla in Codemagic come integrazione "joyo-asc".
 #  3. Codemagic → variabili di gruppo "joyo_env": variabile segreta ENV_JSON
-#     con dentro il contenuto di env.json (chiavi Supabase + unit id AdMob iOS).
+#     con dentro il contenuto di env.ios.json (chiavi Supabase + unit id AdMob
+#     iOS) e CERTIFICATE_PRIVATE_KEY (chiave RSA privata del certificato di
+#     distribuzione; se se ne genera una nuova, --create crea un nuovo cert).
+#
+# Account Codemagic: contact.blueinhope@gmail.com (dal 2026-09-27; il progetto
+# è stato ricreato da zero dopo il cambio account).
 workflows:
   ios-testflight:
     name: iOS → TestFlight
@@ -51,11 +56,19 @@ workflows:
             --create
           keychain add-certificates
           xcode-project use-profiles
+      # Il build number viene da App Store Connect e non dal contatore di
+      # Codemagic: così un nuovo progetto Codemagic (contatore che riparte da 1)
+      # non produce numeri già usati, che ASC rifiuterebbe.
       - name: Build IPA
         script: |
+          set -e
+          LATEST=$(app-store-connect get-latest-testflight-build-number 6806622931 2>/dev/null || echo 0)
+          LATEST=${LATEST:-0}
+          BUILD_NUMBER_ASC=$((LATEST + 1))
+          echo "Ultimo build su ASC: $LATEST -> uso $BUILD_NUMBER_ASC"
           flutter build ipa --release \
             --dart-define-from-file=env.json \
-            --build-number=$BUILD_NUMBER \
+            --build-number=$BUILD_NUMBER_ASC \
             --export-options-plist=/Users/builder/export_options.plist
     artifacts:
       - build/ios/ipa/*.ipa
