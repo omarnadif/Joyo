@@ -40,6 +40,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ Identifier `com.blueinhope.joyo` registrato + app "Joyo" creata su App Store Connect (SKU `joyo-001`).
 - ✅ **Pipeline senza Mac**: Codemagic → TestFlight (`codemagic.yaml`; chiave ASC 22F47DYRU3 (Team key App Manager, 2026-09-27) passata come variabili `APP_STORE_CONNECT_*` nel gruppo `joyo_env`, senza integrazione di team; variabili sicure `ENV_JSON` e `CERTIFICATE_PRIVATE_KEY` nel gruppo `joyo_env`).
 - ✅ **Prima build verde** (2026-08-29, build #10): IPA firmato e caricato su App Store Connect (app id 6806622931), elaborazione completata.
+- ✅ **Progetto Codemagic ricreato nel nuovo account** contact.blueinhope (2026-09-27, app Codemagic `6ab986b9cbc0a33c0a111761`): primo build verde con nuovo certificato di distribuzione (chiave in `secrets/`, fuori da git) e build number letto da ASC. ⬜ Revocare il token API Codemagic usato in sessione e mettere Secret su `ENV_JSON`.
 - ✅ **Test information su ASC** compilate (2026-09-01): Feedback Email + contatto beta review.
 - ✅ Export compliance: `ITSAppUsesNonExemptEncryption=false` in Info.plist (solo HTTPS standard).
 - ✅ Gruppo tester esterno con **link pubblico TestFlight** creato (2026-09-01) — la prima build esterna passa dalla beta review Apple, ~24-48h.
