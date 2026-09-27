@@ -36,7 +36,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 
 ## 3. Apple App Store
 
-- ✅ Apple Developer Program attivo (2026-08-31, Apple ID gestion.blueinhope@gmail.com, Individual).
+- ✅ Apple Developer Program attivo (2026-08-31, Individual). Apple ID `contact.blueinhope@gmail.com` (dal 2026-09-27; prima `gestion.blueinhope@gmail.com` — tutti gli account, Google/AdMob/Apple, sono passati alla nuova email).
 - ✅ Identifier `com.blueinhope.joyo` registrato + app "Joyo" creata su App Store Connect (SKU `joyo-001`).
 - ✅ **Pipeline senza Mac**: Codemagic → TestFlight (`codemagic.yaml`; integrazione ASC `joyo-asc` con key ZC46MKLX66; variabili sicure `ENV_JSON` e `CERTIFICATE_PRIVATE_KEY` nel gruppo `joyo_env`).
 - ✅ **Prima build verde** (2026-08-29, build #10): IPA firmato e caricato su App Store Connect (app id 6806622931), elaborazione completata.
@@ -56,8 +56,9 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 
 ## 4. Pubblicità (AdMob)
 
-- ✅ AdMob App ID reale nel `AndroidManifest.xml`.
-- ✅ Unit id (interstitial `.../6211893933`, rewarded `.../7209175637`) noti; in dev restano gli id di test.
+- ✅ **Account AdMob cambiato il 2026-09-27** (`contact.blueinhope@gmail.com`, publisher `ca-app-pub-9793629548525754`): app e unit ricreate, id aggiornati nel repo (manifest, Info.plist, `env.json`, `env.ios.json`). ⬜ Da rifare nel nuovo account: secret `ENV_JSON` su Codemagic, messaggio UMP/GDPR, collegamento alle schede store, app-ads.txt.
+- ✅ AdMob App ID reale nel `AndroidManifest.xml` (`~2512211676`).
+- ✅ Unit id Android (interstitial `.../1666033860`, rewarded `.../7572966662`) noti; in dev restano gli id di test.
 - ✅ **Unit id reali in release**: sono in `env.json` (gitignorato), quindi il solito
   `flutter build appbundle --dart-define-from-file=env.json` basta. Doppia rete:
   in debug/profile girano SEMPRE gli id di test (anche con env.json pieno), e una
@@ -65,7 +66,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 - ✅ **Consenso GDPR / UMP**: integrato in `ads_service_mobile.dart` (form mostrato prima di caricare gli annunci, gate su `canRequestAds`, riapertura da "opzioni privacy"). Va configurato anche il messaggio UMP nella console AdMob (Privacy e messaggi → GDPR) perché il form appaia davvero.
 - ⬜ Collegare le app AdMob alle schede store pubblicate (dentro AdMob) per il fill pieno.
 - ⬜ Pubblicare **app-ads.txt** sul dominio dello sviluppatore.
-- ✅ iOS: app AdMob creata (App ID `~9659546328` nell'`Info.plist`) + 50 SKAdNetwork ids + unit id iOS (interstitial `/5071338127`, rewarded `/5608620670`) in `env.ios.json` (gitignorato, replicato nel secret `ENV_JSON` su Codemagic).
+- ✅ iOS: app AdMob creata (App ID `~6166542343` nell'`Info.plist`) + 50 SKAdNetwork ids + unit id iOS (interstitial `/6521017136`, rewarded `/8283413106`) in `env.ios.json` (gitignorato). ⬜ Replicare il nuovo `env.ios.json` nel secret `ENV_JSON` su Codemagic.
 
 ## 5. Build & configurazione app
 

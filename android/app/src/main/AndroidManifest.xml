@@ -37,7 +37,7 @@
              servono annunci veri. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2109864769102110~8296016273"/>
+            android:value="ca-app-pub-9793629548525754~2512211676"/>
 
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->

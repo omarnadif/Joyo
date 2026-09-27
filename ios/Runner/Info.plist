@@ -52,7 +52,7 @@
 	     id di interstitial/rewarded restano su dart-define come su Android:
 	     senza flag girano gli id di test di Google. -->
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-2109864769102110~9659546328</string>
+	<string>ca-app-pub-9793629548525754~6166542343</string>
 	<!-- Richiesto da Apple per il prompt App Tracking Transparency, che il
 	     form di consenso UMP mostra dove serve. -->
 	<key>NSUserTrackingUsageDescription</key>

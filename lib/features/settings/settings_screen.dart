@@ -21,7 +21,7 @@ class _Links {
   static final Uri? rate = null;
 
   // Email di supporto: apre l'app di posta con destinatario già compilato.
-  static const contactEmail = 'gestion.blueinhope@gmail.com';
+  static const contactEmail = 'contact.blueinhope@gmail.com';
 }
 
 /// Apre la pagina Impostazioni.
