@@ -1,15 +1,19 @@
 # Build iOS su Mac cloud → TestFlight. Non c'è un Mac locale: la firma la fa
-# Codemagic con la API key di App Store Connect (integrazione "joyo-asc" da
-# creare in Codemagic → Teams → Integrations → Developer Portal).
+# Codemagic con la API key di App Store Connect, passata come variabili
+# d'ambiente (niente integrazione di team: tutto sta nel gruppo "joyo_env").
 #
 # Prerequisiti una tantum, nell'ordine:
 #  1. App Store Connect: creare l'app (bundle id com.blueinhope.joyo).
-#  2. App Store Connect → Utenti e accesso → Chiavi API: creare una chiave
-#     con ruolo App Manager e caricarla in Codemagic come integrazione "joyo-asc".
-#  3. Codemagic → variabili di gruppo "joyo_env": variabile segreta ENV_JSON
-#     con dentro il contenuto di env.ios.json (chiavi Supabase + unit id AdMob
-#     iOS) e CERTIFICATE_PRIVATE_KEY (chiave RSA privata del certificato di
-#     distribuzione; se se ne genera una nuova, --create crea un nuovo cert).
+#  2. App Store Connect → Utenti e accesso → Integrazioni → Chiavi del team:
+#     creare una chiave con ruolo App Manager e scaricare il .p8.
+#  3. Codemagic → variabili dell'app, gruppo "joyo_env", tutte Secret:
+#       ENV_JSON                          contenuto di env.ios.json
+#       CERTIFICATE_PRIVATE_KEY           chiave RSA privata del certificato di
+#                                         distribuzione (con --create ne crea uno)
+#       APP_STORE_CONNECT_ISSUER_ID       Issuer ID della pagina Chiavi API
+#       APP_STORE_CONNECT_KEY_IDENTIFIER  Key ID della chiave (es. 22F47DYRU3)
+#       APP_STORE_CONNECT_PRIVATE_KEY     contenuto del file AuthKey_<KeyID>.p8
+#     I tool app-store-connect leggono le APP_STORE_CONNECT_* da soli.
 #
 # Account Codemagic: contact.blueinhope@gmail.com (dal 2026-09-27; il progetto
 # è stato ricreato da zero dopo il cambio account).
@@ -18,8 +22,6 @@ workflows:
     name: iOS → TestFlight
     instance_type: mac_mini_m2
     max_build_duration: 60
-    integrations:
-      app_store_connect: joyo-asc
     environment:
       flutter: stable
       groups:
@@ -34,6 +36,11 @@ workflows:
           if [ -z "$CERTIFICATE_PRIVATE_KEY" ]; then
             echo "ERRORE: CERTIFICATE_PRIVATE_KEY mancante — controlla il gruppo joyo_env in Codemagic"; exit 1
           fi
+          for v in APP_STORE_CONNECT_ISSUER_ID APP_STORE_CONNECT_KEY_IDENTIFIER APP_STORE_CONNECT_PRIVATE_KEY; do
+            if [ -z "${!v}" ]; then
+              echo "ERRORE: $v mancante — controlla il gruppo joyo_env in Codemagic"; exit 1
+            fi
+          done
           echo "Variabili ok"
       - name: Ricrea env.json dal secret
         script: |
@@ -74,7 +81,9 @@ workflows:
       - build/ios/ipa/*.ipa
     publishing:
       app_store_connect:
-        auth: integration
+        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        key_id: $APP_STORE_CONNECT_KEY_IDENTIFIER
+        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
         submit_to_testflight: true
         beta_groups:
           - io

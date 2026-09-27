@@ -38,7 +38,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 
 - ✅ Apple Developer Program attivo (2026-08-31, Individual). Apple ID `contact.blueinhope@gmail.com` (dal 2026-09-27; prima `gestion.blueinhope@gmail.com` — tutti gli account, Google/AdMob/Apple, sono passati alla nuova email).
 - ✅ Identifier `com.blueinhope.joyo` registrato + app "Joyo" creata su App Store Connect (SKU `joyo-001`).
-- ✅ **Pipeline senza Mac**: Codemagic → TestFlight (`codemagic.yaml`; integrazione ASC `joyo-asc` con key ZC46MKLX66; variabili sicure `ENV_JSON` e `CERTIFICATE_PRIVATE_KEY` nel gruppo `joyo_env`).
+- ✅ **Pipeline senza Mac**: Codemagic → TestFlight (`codemagic.yaml`; chiave ASC 22F47DYRU3 (Team key App Manager, 2026-09-27) passata come variabili `APP_STORE_CONNECT_*` nel gruppo `joyo_env`, senza integrazione di team; variabili sicure `ENV_JSON` e `CERTIFICATE_PRIVATE_KEY` nel gruppo `joyo_env`).
 - ✅ **Prima build verde** (2026-08-29, build #10): IPA firmato e caricato su App Store Connect (app id 6806622931), elaborazione completata.
 - ✅ **Test information su ASC** compilate (2026-09-01): Feedback Email + contatto beta review.
 - ✅ Export compliance: `ITSAppUsesNonExemptEncryption=false` in Info.plist (solo HTTPS standard).
