@@ -57,7 +57,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 
 ## 4. Pubblicità (AdMob)
 
-- ✅ **Account AdMob cambiato il 2026-09-27** (`contact.blueinhope@gmail.com`, publisher `ca-app-pub-9793629548525754`): app e unit ricreate, id aggiornati nel repo (manifest, Info.plist, `env.json`, `env.ios.json`). ⬜ Da rifare nel nuovo account: secret `ENV_JSON` su Codemagic, messaggio UMP/GDPR, collegamento alle schede store, app-ads.txt.
+- ✅ **Account AdMob cambiato il 2026-09-27** (`contact.blueinhope@gmail.com`, publisher `ca-app-pub-9793629548525754`): app e unit ricreate, id aggiornati nel repo (manifest, Info.plist, `env.json`, `env.ios.json`). ✅ Secret `ENV_JSON` su Codemagic e messaggi UMP (GDPR per entrambe le app + IDFA iOS) pubblicati il 2026-09-28. ⬜ Collegamento alle schede store, app-ads.txt.
 - ✅ AdMob App ID reale nel `AndroidManifest.xml` (`~2512211676`).
 - ✅ Unit id Android (interstitial `.../1666033860`, rewarded `.../7572966662`) noti; in dev restano gli id di test.
 - ✅ **Unit id reali in release**: sono in `env.json` (gitignorato), quindi il solito
@@ -98,7 +98,7 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 1. ⚠️ Verifica ricevuta reale (§1) — deployata; iOS operativa, per Android manca solo il secret del service account Google.
 2. ⚠️ Prodotti/subscription su Play Console **e** App Store Connect (§2, §3) — altrimenti non si compra nulla.
 3. ⚠️ Dichiarazione trader UE su entrambe le console (§2, §3) — senza, niente distribuzione in Europa.
-4. ⚠️ Messaggio UMP/GDPR da configurare nella console AdMob (Privacy e messaggi → GDPR) — il codice in app c'è, ma senza il messaggio pubblicato in console il form non appare e in EEA gli annunci restano spenti.
+4. ✅ Messaggio UMP/GDPR pubblicato nella console AdMob del nuovo account (2026-09-28), con IDFA per iOS.
 5. ✅ Consenso UMP/GDPR in app (§4).
 6. ✅ Privacy policy (§6) — pubblicata e linkata in app; da incollare nelle console store.
 7. ✅ Firma di release Android (§5) — fatta il 2026-08-29.
@@ -106,4 +106,4 @@ Stato app: `version 1.0.0+1` · bundle id `com.blueinhope.joyo` su Android e iOS
 ### Prossimi 3 passi concreti (ri-check completo 2026-08-30)
 1. Committare age gate (`age_gate.dart` + `room_settings_card.dart`) — esiste solo in locale.
 2. Compilare le **test information su ASC** (Feedback Email + contatto beta review) → sblocca l'invio a TestFlight.
-3. Configurare il messaggio GDPR nella console AdMob (Privacy e messaggi) per entrambe le app.
+3. ✅ Messaggio GDPR AdMob pubblicato (2026-09-28).
